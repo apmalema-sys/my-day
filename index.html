@@ -254,6 +254,7 @@
         <button class="btn" id="insp-share">Send to CoWork</button>
         <button class="btn alt" id="insp-copy">Copy report</button>
         <button class="btn warn" id="insp-finish">Finish &amp; start new inspection</button>
+        <button class="btn ghost" id="insp-settings" style="font-size:.82rem;">⚙︎ Sync email: not set</button>
       </div>
     </section>
 
@@ -341,15 +342,25 @@
   <button class="btn ghost" data-close>Cancel</button>
 </div>
 
+<!-- settings sheet -->
+<div class="sheet" id="sheet-settings">
+  <h3>Inspection sync</h3>
+  <div class="field"><label>Send inspections to (email)</label><input type="email" id="in-sync" placeholder="you@example.com" autocomplete="off" inputmode="email" /></div>
+  <p style="font-size:.78rem;color:var(--muted);line-height:1.45;margin:-4px 0 14px;">Saved only on this device. "Send to CoWork" opens a pre-addressed email here; your CoWork task reads that inbox and logs the report. Leave blank to share/copy instead.</p>
+  <button class="btn" id="btn-save-sync">Save</button>
+  <button class="btn ghost" data-close>Cancel</button>
+</div>
+
 <div class="toast" id="toast"></div>
 
 <script>
 "use strict";
-const LS_TASKS="myday.tasks.v1",LS_POMO="myday.pomo.v1",LS_EVT="myday.events.v1",LS_INSP="myday.inspection.v1",LS_INSPH="myday.insphistory.v1";
-/* SYNC_EMAIL: where "Send to CoWork" mails the inspection report. A scheduled
-   CoWork task reads this inbox and logs reports to memory. Blanked in the public
-   build so the address isn't exposed on a public URL. */
+const LS_TASKS="myday.tasks.v1",LS_POMO="myday.pomo.v1",LS_EVT="myday.events.v1",LS_INSP="myday.inspection.v1",LS_INSPH="myday.insphistory.v1",LS_SYNC="myday.syncemail.v1";
+/* SYNC_EMAIL: build-time DEFAULT for "Send to CoWork". Blanked in the public
+   build so the address isn't exposed on a public URL — there the user sets it
+   once on-device via Settings (stored in localStorage, never in the source). */
 const SYNC_EMAIL="";
+function getSyncEmail(){return (localStorage.getItem(LS_SYNC)||SYNC_EMAIL||"").trim();}
 
 /* SEED:START (managed by generators/refresh_seed.py — edit there, not here) */
 const SEED=[];
@@ -535,6 +546,7 @@ function renderInspect(){
   }).join("");
   document.getElementById("insp-sections").innerHTML=html;
   document.getElementById("insp-prog").innerHTML=`<b>${checked}</b> of ${total} checks complete`;
+  updateSyncLabel();
 }
 document.getElementById("insp-sections").addEventListener("click",e=>{
   const c=e.target.closest(".icheck");if(!c)return;const k=c.dataset.k;
@@ -574,14 +586,16 @@ document.getElementById("insp-copy").addEventListener("click",async()=>{
 document.getElementById("insp-share").addEventListener("click",async()=>{
   const md=inspReport();
   const subj="[Pit Inspection] "+insp.date+" — "+insp.shift;
-  if(SYNC_EMAIL){
+  const email=getSyncEmail();
+  if(email){
     // open a pre-addressed email; the scheduled CoWork task picks it up by subject
-    location.href="mailto:"+encodeURIComponent(SYNC_EMAIL)+"?subject="+encodeURIComponent(subj)+"&body="+encodeURIComponent(md);
+    location.href="mailto:"+encodeURIComponent(email)+"?subject="+encodeURIComponent(subj)+"&body="+encodeURIComponent(md);
     toast("Opening email — just press Send");
     return;
   }
+  // no sync email set yet — offer to set one, then fall back to share/copy
   if(navigator.share){try{await navigator.share({title:subj,text:md});}catch(e){}}
-  else{try{await navigator.clipboard.writeText(md);toast("Copied — share it into CoWork");}catch(e){fallbackCopy(md);}}
+  else{try{await navigator.clipboard.writeText(md);toast("Copied — set a sync email in ⚙︎ for one-tap");}catch(e){fallbackCopy(md);}}
 });
 function fallbackCopy(text){
   const ta=document.createElement("textarea");ta.value=text;document.body.appendChild(ta);ta.select();
@@ -597,13 +611,21 @@ document.getElementById("insp-finish").addEventListener("click",()=>{
 });
 
 /* ---------- add sheets ---------- */
-const overlay=document.getElementById("overlay"),sheetTask=document.getElementById("sheet-task"),sheetEvt=document.getElementById("sheet-evt");
+const overlay=document.getElementById("overlay"),sheetTask=document.getElementById("sheet-task"),sheetEvt=document.getElementById("sheet-evt"),sheetSet=document.getElementById("sheet-settings");
 let newPri="high";
 function syncPri(){document.querySelectorAll(".priopt").forEach(o=>o.classList.toggle("sel",o.dataset.p===newPri));}
 function openTaskSheet(){document.getElementById("in-title").value="";document.getElementById("in-due").value="";newPri="high";syncPri();overlay.classList.add("show");sheetTask.classList.add("show");setTimeout(()=>document.getElementById("in-title").focus(),300);}
 function openEvtSheet(){document.getElementById("in-etitle").value="";document.getElementById("in-time").value="";document.getElementById("in-edate").value=todayStr();overlay.classList.add("show");sheetEvt.classList.add("show");setTimeout(()=>document.getElementById("in-time").focus(),300);}
-function closeSheets(){overlay.classList.remove("show");sheetTask.classList.remove("show");sheetEvt.classList.remove("show");}
+function openSetSheet(){document.getElementById("in-sync").value=getSyncEmail();overlay.classList.add("show");sheetSet.classList.add("show");setTimeout(()=>document.getElementById("in-sync").focus(),300);}
+function closeSheets(){overlay.classList.remove("show");sheetTask.classList.remove("show");sheetEvt.classList.remove("show");sheetSet.classList.remove("show");}
 overlay.addEventListener("click",closeSheets);
+function updateSyncLabel(){const e=getSyncEmail();document.getElementById("insp-settings").textContent="⚙︎ Sync email: "+(e||"not set");}
+document.getElementById("insp-settings").addEventListener("click",openSetSheet);
+document.getElementById("btn-save-sync").addEventListener("click",()=>{
+  const v=document.getElementById("in-sync").value.trim();
+  if(v)localStorage.setItem(LS_SYNC,v);else localStorage.removeItem(LS_SYNC);
+  closeSheets();updateSyncLabel();vibe(15);toast(v?"Sync email saved":"Sync email cleared");
+});
 document.querySelectorAll("[data-close]").forEach(b=>b.addEventListener("click",closeSheets));
 document.getElementById("priopts").addEventListener("click",e=>{const o=e.target.closest(".priopt");if(!o)return;newPri=o.dataset.p;syncPri();});
 document.getElementById("btn-save-task").addEventListener("click",()=>{
