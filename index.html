@@ -346,6 +346,10 @@
 <script>
 "use strict";
 const LS_TASKS="myday.tasks.v1",LS_POMO="myday.pomo.v1",LS_EVT="myday.events.v1",LS_INSP="myday.inspection.v1",LS_INSPH="myday.insphistory.v1";
+/* SYNC_EMAIL: where "Send to CoWork" mails the inspection report. A scheduled
+   CoWork task reads this inbox and logs reports to memory. Blanked in the public
+   build so the address isn't exposed on a public URL. */
+const SYNC_EMAIL="";
 
 /* SEED:START (managed by generators/refresh_seed.py — edit there, not here) */
 const SEED=[];
@@ -569,7 +573,14 @@ document.getElementById("insp-copy").addEventListener("click",async()=>{
 });
 document.getElementById("insp-share").addEventListener("click",async()=>{
   const md=inspReport();
-  if(navigator.share){try{await navigator.share({title:"Daily Pit Inspection — "+insp.date,text:md});}catch(e){}}
+  const subj="[Pit Inspection] "+insp.date+" — "+insp.shift;
+  if(SYNC_EMAIL){
+    // open a pre-addressed email; the scheduled CoWork task picks it up by subject
+    location.href="mailto:"+encodeURIComponent(SYNC_EMAIL)+"?subject="+encodeURIComponent(subj)+"&body="+encodeURIComponent(md);
+    toast("Opening email — just press Send");
+    return;
+  }
+  if(navigator.share){try{await navigator.share({title:subj,text:md});}catch(e){}}
   else{try{await navigator.clipboard.writeText(md);toast("Copied — share it into CoWork");}catch(e){fallbackCopy(md);}}
 });
 function fallbackCopy(text){
