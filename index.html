@@ -348,6 +348,16 @@
   <div class="field"><label>Send inspections to (email)</label><input type="email" id="in-sync" placeholder="you@example.com" autocomplete="off" inputmode="email" /></div>
   <p style="font-size:.78rem;color:var(--muted);line-height:1.45;margin:-4px 0 14px;">Saved only on this device. "Send to CoWork" opens a pre-addressed email here; your CoWork task reads that inbox and logs the report. Leave blank to share/copy instead.</p>
   <button class="btn" id="btn-save-sync">Save</button>
+  <button class="btn alt" id="open-import" style="margin-top:8px;">Import tasks (paste code)…</button>
+  <button class="btn ghost" data-close>Cancel</button>
+</div>
+
+<!-- import sheet -->
+<div class="sheet" id="sheet-import">
+  <h3>Import tasks</h3>
+  <div class="field"><label>Paste your import code</label><textarea id="in-import" class="inotes" style="min-height:120px;margin-top:0;" placeholder="Paste the code you were given…"></textarea></div>
+  <p style="font-size:.78rem;color:var(--muted);line-height:1.45;margin:-4px 0 14px;">Adds tasks to this device. Duplicates (same title) are skipped, so it's safe to run more than once.</p>
+  <button class="btn" id="btn-do-import">Import</button>
   <button class="btn ghost" data-close>Cancel</button>
 </div>
 
@@ -488,7 +498,7 @@ function renderTasks(){
     if(a.due&&b.due)return a.due<b.due?-1:1;return 0;
   });
   const el=document.getElementById("task-list");
-  el.innerHTML=list.length?list.map(taskHTML).join(""):`<div class="empty"><div class="big">✓</div>No tasks here.</div>`;
+  el.innerHTML=list.length?list.map(taskHTML).join(""):`<div class="empty"><div class="big">✓</div>No tasks here.<br><button class="btn alt" id="import-trigger" style="margin-top:16px;max-width:240px;">Import my tasks</button></div>`;
   attachSwipe(el);
 }
 
@@ -611,14 +621,41 @@ document.getElementById("insp-finish").addEventListener("click",()=>{
 });
 
 /* ---------- add sheets ---------- */
-const overlay=document.getElementById("overlay"),sheetTask=document.getElementById("sheet-task"),sheetEvt=document.getElementById("sheet-evt"),sheetSet=document.getElementById("sheet-settings");
+const overlay=document.getElementById("overlay"),sheetTask=document.getElementById("sheet-task"),sheetEvt=document.getElementById("sheet-evt"),sheetSet=document.getElementById("sheet-settings"),sheetImp=document.getElementById("sheet-import");
 let newPri="high";
 function syncPri(){document.querySelectorAll(".priopt").forEach(o=>o.classList.toggle("sel",o.dataset.p===newPri));}
 function openTaskSheet(){document.getElementById("in-title").value="";document.getElementById("in-due").value="";newPri="high";syncPri();overlay.classList.add("show");sheetTask.classList.add("show");setTimeout(()=>document.getElementById("in-title").focus(),300);}
 function openEvtSheet(){document.getElementById("in-etitle").value="";document.getElementById("in-time").value="";document.getElementById("in-edate").value=todayStr();overlay.classList.add("show");sheetEvt.classList.add("show");setTimeout(()=>document.getElementById("in-time").focus(),300);}
 function openSetSheet(){document.getElementById("in-sync").value=getSyncEmail();overlay.classList.add("show");sheetSet.classList.add("show");setTimeout(()=>document.getElementById("in-sync").focus(),300);}
-function closeSheets(){overlay.classList.remove("show");sheetTask.classList.remove("show");sheetEvt.classList.remove("show");sheetSet.classList.remove("show");}
+function openImpSheet(){document.getElementById("in-import").value="";closeSheets();overlay.classList.add("show");sheetImp.classList.add("show");setTimeout(()=>document.getElementById("in-import").focus(),300);}
+function closeSheets(){overlay.classList.remove("show");sheetTask.classList.remove("show");sheetEvt.classList.remove("show");sheetSet.classList.remove("show");sheetImp.classList.remove("show");}
 overlay.addEventListener("click",closeSheets);
+/* ---- import tasks (paste code: raw JSON or base64 of {"tasks":[...]}) ---- */
+function parseImport(text){
+  text=(text||"").trim();if(!text)return null;
+  let o=null;
+  try{o=JSON.parse(text);}catch(e){}
+  if(!o){try{o=JSON.parse(decodeURIComponent(escape(atob(text.replace(/\s+/g,"")))));}catch(e){}}
+  return o;
+}
+function doImport(text){
+  const o=parseImport(text);
+  const incoming=Array.isArray(o)?o:(o&&Array.isArray(o.tasks)?o.tasks:null);
+  if(!incoming){toast("That code didn't look right");return;}
+  const existing=new Set(tasks.map(t=>t.title));
+  let added=0;
+  incoming.forEach((t,i)=>{
+    const title=(t.title||"").trim();if(!title||existing.has(title))return;
+    existing.add(title);
+    tasks.push({id:Date.now()+i,title,pri:t.pri||"medium",area:t.area||"",due:t.due||"",done:false,created:Date.now()+i});
+    added++;
+  });
+  saveTasks();closeSheets();curFilter="all";document.querySelectorAll(".filt").forEach(x=>x.classList.toggle("on",x.dataset.f==="all"));renderAll();renderTasks();
+  vibe([10,30,10]);toast(added?added+" tasks imported":"Already up to date — nothing new");
+}
+document.getElementById("open-import").addEventListener("click",openImpSheet);
+document.getElementById("btn-do-import").addEventListener("click",()=>doImport(document.getElementById("in-import").value));
+document.getElementById("task-list").addEventListener("click",e=>{if(e.target.closest("#import-trigger"))openImpSheet();});
 function updateSyncLabel(){const e=getSyncEmail();document.getElementById("insp-settings").textContent="⚙︎ Sync email: "+(e||"not set");}
 document.getElementById("insp-settings").addEventListener("click",openSetSheet);
 document.getElementById("btn-save-sync").addEventListener("click",()=>{
