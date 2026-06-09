@@ -399,6 +399,45 @@ let events=load(LS_EVT,[]);
 function saveTasks(){localStorage.setItem(LS_TASKS,JSON.stringify(tasks));}
 function saveEvents(){localStorage.setItem(LS_EVT,JSON.stringify(events));}
 
+/* ---- live sync from tasks.json (published from tasks.md by a CoWork task) ----
+   One-way: tasks.md -> app. Source tasks carry a stable `key` and src:true.
+   Each load: upsert source tasks (refresh text/priority/due, keep your done-state),
+   drop source tasks that left tasks.md, and never touch tasks you added yourself. */
+function mergeSource(source,sourceEvents){
+  if(Array.isArray(source)){
+    const byKey={};tasks.forEach(t=>{if(t.key)byKey[t.key]=t;});
+    const keys=new Set();
+    source.forEach((s,i)=>{
+      if(!s||!s.key||!s.title)return;keys.add(s.key);
+      const ex=byKey[s.key];
+      if(ex){ex.title=s.title;ex.pri=s.pri||ex.pri;ex.area=s.area||"";ex.due=s.due||"";ex.src=true;}
+      else tasks.push({id:Date.now()+i,key:s.key,title:s.title,pri:s.pri||"medium",area:s.area||"",due:s.due||"",done:false,src:true,created:Date.now()+i});
+    });
+    tasks=tasks.filter(t=>!(t.src&&!keys.has(t.key)));  // drop tasks removed from tasks.md
+    saveTasks();
+  }
+  if(Array.isArray(sourceEvents)){
+    const byKey={};events.forEach(e=>{if(e.key)byKey[e.key]=e;});
+    const keys=new Set();
+    sourceEvents.forEach((s,i)=>{
+      if(!s||!s.key||!s.title||!s.time)return;keys.add(s.key);
+      const ex=byKey[s.key];
+      if(ex){ex.title=s.title;ex.time=s.time;ex.date=s.date||ex.date;ex.src=true;}
+      else events.push({id:Date.now()+1000+i,key:s.key,date:s.date||todayStr(),time:s.time,title:s.title,done:false,src:true});
+    });
+    events=events.filter(e=>!(e.src&&!keys.has(e.key)));
+    saveEvents();
+  }
+  renderAll();
+}
+function syncFromServer(){
+  if(!location.protocol.startsWith("http"))return; // single-file/AirDrop build has its own seed
+  fetch("data.json?t="+Date.now(),{cache:"no-store"})
+    .then(r=>r.ok?r.json():null)
+    .then(d=>{if(d)mergeSource(d.tasks,d.events);})
+    .catch(()=>{});
+}
+
 /* ---------- helpers ---------- */
 function todayStr(){const d=new Date();return d.getFullYear()+"-"+String(d.getMonth()+1).padStart(2,"0")+"-"+String(d.getDate()).padStart(2,"0");}
 function fmtDue(due){
@@ -729,6 +768,8 @@ document.querySelectorAll(".mode").forEach(m=>m.addEventListener("click",()=>set
 /* ---------- boot ---------- */
 renderToday();showPomo();paint();
 document.getElementById("hdr-date").textContent=new Date().toLocaleDateString("en-AU",{weekday:"long",day:"numeric",month:"long"});
+syncFromServer();                         // pull current tasks/schedule from tasks.md (published as data.json)
+document.addEventListener("visibilitychange",()=>{if(!document.hidden)syncFromServer();}); // refresh when reopened
 </script>
 </body>
 </html>

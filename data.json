@@ -1,0 +1,125 @@
+{
+  "tasks": [
+    {
+      "key": "d4934957c0",
+      "title": "Reconstruct ROM-PAD platform catchment berm (Tue crusher maintenance window)",
+      "pri": "urgent",
+      "area": "Mining-Ops",
+      "due": "2026-06-09"
+    },
+    {
+      "key": "92f1980f0d",
+      "title": "Confirm EX-262 1000H service has started — get firm start & return date",
+      "pri": "urgent",
+      "area": "Mining-Ops",
+      "due": "2026-06-08"
+    },
+    {
+      "key": "4d58e21309",
+      "title": "Raise EX-262 DHPMA electrical fault on the WO before it goes back on shift",
+      "pri": "urgent",
+      "area": "Mining-Ops",
+      "due": "2026-06-08"
+    },
+    {
+      "key": "12cde31a35",
+      "title": "Stage 4 weekly ore target 56,575t — 38,245t remaining, hit by Monday",
+      "pri": "urgent",
+      "area": "Mining-Ops",
+      "due": "2026-06-08"
+    },
+    {
+      "key": "a8691acd55",
+      "title": "EX-262 handover to drilling through 608/609 (night shift: berms, sheeting, signage)",
+      "pri": "high",
+      "area": "Mining-Ops",
+      "due": "2026-06-07"
+    },
+    {
+      "key": "364cc29c57",
+      "title": "Expedite MG-266 grader parts — get ETA from workshop/procurement today",
+      "pri": "high",
+      "area": "Mining-Ops",
+      "due": "2026-06-08"
+    },
+    {
+      "key": "3257d0d10c",
+      "title": "Contact Mansarah re MG-85 grader fault & repair pathway",
+      "pri": "high",
+      "area": "Mining-Ops",
+      "due": "2026-06-08"
+    },
+    {
+      "key": "f5f37415eb",
+      "title": "Confirm EX-263 GET tooth replaced + hydraulic temp cleared",
+      "pri": "high",
+      "area": "Mining-Ops",
+      "due": "2026-06-08"
+    },
+    {
+      "key": "81ac7e84da",
+      "title": "Procure & install water cooler at Go-Line ahead of summer (before 15 Jun)",
+      "pri": "high",
+      "area": "Mining-Ops",
+      "due": "2026-06-15"
+    },
+    {
+      "key": "b1be46f7b3",
+      "title": "Clean drilling area on blasted highspots 885RL North — targeted drilling Wed",
+      "pri": "medium",
+      "area": "Mining-Ops",
+      "due": "2026-06-10"
+    },
+    {
+      "key": "e20f558a72",
+      "title": "Implement block-limit marking system before mining (avoid over-dig)",
+      "pri": "high",
+      "area": "Mining-Ops",
+      "due": ""
+    },
+    {
+      "key": "506426866d",
+      "title": "Treat half-done trim blocks on 890–885 before they become a drilling problem",
+      "pri": "high",
+      "area": "Mining-Ops",
+      "due": ""
+    },
+    {
+      "key": "c1aa923a5e",
+      "title": "Chase Zahid for DT-282 spare axle ETA (final drive down 17 days)",
+      "pri": "medium",
+      "area": "Mining-Ops",
+      "due": ""
+    },
+    {
+      "key": "fd8d05badf",
+      "title": "Confirm SANY trucks Saturday no-op is approved roster or dispatch gap",
+      "pri": "medium",
+      "area": "Mining-Ops",
+      "due": ""
+    },
+    {
+      "key": "53a3af763c",
+      "title": "Activate new CAT 777 trucks AGC-5039 / AGC-5040 if operators available",
+      "pri": "medium",
+      "area": "Mining-Ops",
+      "due": ""
+    },
+    {
+      "key": "e86883b307",
+      "title": "Rectify: no emergency contact posted at Go-Line notice board",
+      "pri": "high",
+      "area": "Safety",
+      "due": ""
+    },
+    {
+      "key": "5cf4ef245e",
+      "title": "Remind Gio & Yudi to share floor data with Maaden surveyors (standing)",
+      "pri": "low",
+      "area": "Mining-Ops",
+      "due": ""
+    }
+  ],
+  "events": [],
+  "generated": "2026-06-09T06:03:53"
+}
