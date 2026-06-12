@@ -1,95 +1,123 @@
 {
   "tasks": [
     {
-      "title": "Issue NCR to Sharafat for MG-85 grader incident",
+      "title": "Push overspill materials — EX-253 + 4 trucks",
+      "pri": "urgent",
+      "area": "Mining-Ops",
+      "due": "2026-06-12",
+      "key": "cf621ac3ae"
+    },
+    {
+      "title": "Proceed with chemical road spraying",
+      "pri": "urgent",
+      "area": "Mining-Ops",
+      "due": "2026-06-12",
+      "key": "292e3bc054"
+    },
+    {
+      "title": "Stage 4 ramp overspill loading — confirm all resources ready (4 DTs, CAT 777, EX-6015, dozer)",
+      "pri": "urgent",
+      "area": "Mining-Ops",
+      "due": "2026-06-12",
+      "key": "3322b78a1b"
+    },
+    {
+      "title": "Issue NCR to Sharafat — MG-85 grader incident",
       "pri": "urgent",
       "area": "Mining-Ops",
       "due": "",
-      "key": "c536d31b15"
+      "key": "87097e3006"
     },
     {
       "title": "Block 780-135 hanging rocks — clean",
       "pri": "urgent",
       "area": "Mining-Ops",
-      "due": "2026-06-09",
+      "due": "",
       "key": "35a99a45a4"
     },
     {
-      "title": "Sub-economic material screening check at stockpile (16:30–17:00)",
+      "title": "Sub-economic material screening — visit stockpile 16:30, organise screen unit move to sheeting area",
       "pri": "urgent",
       "area": "Mining-Ops",
-      "due": "2026-06-09",
-      "key": "fd7d5d275b"
+      "due": "",
+      "key": "9bf907b800"
     },
     {
-      "title": "Borrow Pit final 5% clearance",
+      "title": "Crusher maintenance window — move screen unit to sub-economic sheeting area",
       "pri": "urgent",
       "area": "Mining-Ops",
-      "due": "2026-06-09",
-      "key": "ffcdbb1e74"
+      "due": "",
+      "key": "ce64bcc25c"
     },
     {
-      "title": "Borrow Pit closeout — sign-off, photos, handover note",
+      "title": "Block 770-143 Stage 4 drilling area cleanup",
       "pri": "urgent",
       "area": "Mining-Ops",
-      "due": "2026-06-09",
-      "key": "ed5cda4f38"
+      "due": "",
+      "key": "b1b5e086d4"
     },
     {
-      "title": "Follow up with Maaden geologist re: white demarcation tape — 07:45 meeting",
+      "title": "Structure Stage 6 intersection traffic management plan",
       "pri": "urgent",
       "area": "Mining-Ops",
-      "due": "2026-06-10",
-      "key": "4b62560380"
+      "due": "",
+      "key": "580925e239"
     },
     {
-      "title": "Block 770-143 (Stage 4) drilling area cleanup — morning prep for drilling",
+      "title": "Confirm Stage 6 intersection traffic management implemented",
       "pri": "urgent",
       "area": "Mining-Ops",
-      "due": "2026-06-10",
-      "key": "a3f0a9a857"
+      "due": "",
+      "key": "7d223d45f7"
     },
     {
-      "title": "Structure traffic management plan for Stage 6 intersection near-miss",
+      "title": "Borrow Pit Clearance — final 5%",
       "pri": "urgent",
       "area": "Mining-Ops",
-      "due": "2026-06-10",
-      "key": "8278c5ae49"
+      "due": "",
+      "key": "3f5bd36d1a"
     },
     {
-      "title": "Confirm Stage 6 intersection traffic management implementation done",
+      "title": "Borrow Pit Clearance — closeout (sign-off, photos, handover note)",
       "pri": "urgent",
       "area": "Mining-Ops",
-      "due": "2026-06-10",
-      "key": "70bc8cc1e9"
+      "due": "",
+      "key": "93c94fb278"
     },
     {
-      "title": "Overtime hours for excavator operator Jamil — 09:30 meeting",
+      "title": "Process overtime hours for excavator operator Jamil",
       "pri": "urgent",
       "area": "Admin-PA",
-      "due": "2026-06-10",
-      "key": "1991f499a3"
+      "due": "",
+      "key": "cb46e5a70a"
     },
     {
-      "title": "Review overtime setup for dispatchers Naeem, Shakeel, Malik, Mohsin — 09:30 meeting",
+      "title": "Review overtime setup for dispatchers Naeem, Shakeel, Malik, Mohsin",
       "pri": "urgent",
       "area": "Admin-PA",
-      "due": "2026-06-10",
-      "key": "841da57587"
+      "due": "",
+      "key": "08b9b64d54"
     },
     {
-      "title": "Move screen unit to sheeting area during crusher maintenance window",
+      "title": "South Dump 950 RL — get design review sign-off, then begin North dump",
       "pri": "urgent",
       "area": "Mining-Ops",
-      "due": "2026-06-10",
-      "key": "7efa081890"
+      "due": "",
+      "key": "6bbbcccb50"
     },
     {
-      "title": "Stage 4 ramp overspill loading — confirm 4 DTs + CAT 777 + operators for today",
-      "pri": "urgent",
+      "title": "Assign two mechanics to strip EX-263 — root cause hydraulic temp/low power fault",
+      "pri": "high",
       "area": "Mining-Ops",
       "due": "2026-06-12",
-      "key": "f011f86fd3"
+      "key": "4c43e9483d"
+    },
+    {
+      "title": "Send EX-123 slew ring to Zahid — push for 3-day turnaround",
+      "pri": "high",
+      "area": "Mining-Ops",
+      "due": "2026-06-12",
+      "key": "8f5f1efff7"
     },
     {
       "title": "EX-263 hydraulic temperature — monitor each shift, escalate if fault frequency increases",
@@ -99,6 +127,27 @@
       "key": "7b2b64ce70"
     },
     {
+      "title": "Procure and install water cooler at Go-Line meeting area before summer season",
+      "pri": "high",
+      "area": "Admin-PA",
+      "due": "2026-06-15",
+      "key": "cfd0f7e168"
+    },
+    {
+      "title": "Hammer scaling at inaccessible Stage 6 area — no LVs in access zone",
+      "pri": "high",
+      "area": "Mining-Ops",
+      "due": "",
+      "key": "51ea1086e3"
+    },
+    {
+      "title": "Push sub-economic mining on block 641 — establish proper geotech access in Stage 6",
+      "pri": "high",
+      "area": "Mining-Ops",
+      "due": "",
+      "key": "5baac35f9c"
+    },
+    {
       "title": "Expedite MG-266 grader parts — chase ETA from workshop/procurement",
       "pri": "high",
       "area": "Mining-Ops",
@@ -106,25 +155,25 @@
       "key": "45977ef1c9"
     },
     {
-      "title": "Request GS-142 repair status from Zahid electrical shop (at shop since Nov 2025)",
+      "title": "GS-142 generator status update from Zahid — 7 months at external shop",
       "pri": "high",
       "area": "Mining-Ops",
       "due": "",
-      "key": "e03508124f"
+      "key": "41f807892f"
     },
     {
-      "title": "Get engineering decision on GS-48/GS-49 — repair or decommission",
+      "title": "Get engineering decision on GS-48/49 generators — repair or decommission",
       "pri": "high",
       "area": "Mining-Ops",
       "due": "",
-      "key": "5cda9c7e7b"
+      "key": "97b9df96c3"
     },
     {
-      "title": "Raise crusher MTD shortfall at next HOD meeting — plan revision may be needed",
+      "title": "Raise crusher MTD shortfall at HOD meeting — assess if plan needs formal revision",
       "pri": "high",
       "area": "Mining-Ops",
       "due": "",
-      "key": "e8a4b3a27e"
+      "key": "3203668570"
     },
     {
       "title": "Assign dedicated haul stream to crusher bin when level drops below half at shift handover",
@@ -134,151 +183,102 @@
       "key": "351209b56f"
     },
     {
-      "title": "Monitor 770-160-177-2 SHG balance daily — brief shift boss when balance falls below 1000t",
+      "title": "Monitor SHG block 770-160-177-2 balance daily — brief shift boss when below 1,000t",
       "pri": "high",
       "area": "Mining-Ops",
       "due": "",
-      "key": "3da3126385"
+      "key": "b50e93f6ad"
     },
     {
-      "title": "Block 770-160-177-1 — confirm closed or final pass planned for 50t balance",
+      "title": "Inform survey team to extend INX-SUM boundary to capture North dump hauling area",
       "pri": "high",
       "area": "Mining-Ops",
       "due": "",
-      "key": "5928cac855"
+      "key": "e4f0ae2734"
     },
     {
-      "title": "Inform Maaden survey team to extend INX-SUM boundary to capture North dump area",
+      "title": "Truck factor calibration — controlled exercise comparing Stage 4 vs Stage 6 load readings",
       "pri": "high",
       "area": "Mining-Ops",
       "due": "",
-      "key": "27499b4d42"
+      "key": "3adbf54b45"
     },
     {
-      "title": "Block 632 alternative ramp position — decide to avoid ore sterilisation, consult grade control",
+      "title": "Investigate and close survey vs. truck count discrepancy (35,000 m³ gap)",
       "pri": "high",
       "area": "Mining-Ops",
       "due": "",
-      "key": "f4e2bdfa47"
+      "key": "741a1e27c9"
     },
     {
-      "title": "North Dump — finalize access ramp (started but never completed)",
+      "title": "Decide alternative ramp position for Block 632 — avoid ore sterilisation",
       "pri": "high",
       "area": "Mining-Ops",
       "due": "",
-      "key": "34a204872e"
+      "key": "9b74cd169b"
     },
     {
-      "title": "North Dump — prepare dumping levels (bunds, tipping pattern, dozer support)",
+      "title": "Set up container whiteboard for recording daily plan commitments and deviations",
       "pri": "high",
       "area": "Mining-Ops",
       "due": "",
-      "key": "e282ccf9e1"
+      "key": "838a782660"
     },
     {
-      "title": "North Dump — install proper traffic signs on main ramp",
+      "title": "Follow up white demarcation tape supply with Maaden geologist",
       "pri": "high",
       "area": "Mining-Ops",
       "due": "",
-      "key": "e2e64e52c7"
+      "key": "9d5c596086"
     },
     {
-      "title": "South Dump 950 RL — follow up on design review sign-off before dumping can begin",
+      "title": "Organise lucky draw and team morale meeting for June 18",
       "pri": "high",
-      "area": "Mining-Ops",
-      "due": "",
-      "key": "512ae0b929"
+      "area": "Admin-PA",
+      "due": "2026-06-18",
+      "key": "0ed205986a"
     },
     {
-      "title": "Mine Stage 4 ramp overspill material",
-      "pri": "high",
-      "area": "Mining-Ops",
-      "due": "",
-      "key": "8f9ea8e7ce"
-    },
-    {
-      "title": "Manufacture reflective poles at 2m height for exclusion-tyre visibility",
-      "pri": "high",
-      "area": "Mining-Ops",
-      "due": "",
-      "key": "686271a6d9"
-    },
-    {
-      "title": "Drilling area cleanup 885RL North — complete edge cleanup in break windows",
-      "pri": "high",
+      "title": "Drilling area cleanup 885RL North — complete edge cleanup in daily break windows",
+      "pri": "medium",
       "area": "Mining-Ops",
       "due": "2026-06-13",
-      "key": "7ee4cb48e0"
+      "key": "abaeaba884"
     },
     {
-      "title": "Water cooler at Go-Line meeting area — procure and install before 15 Jun summer season",
-      "pri": "high",
-      "area": "Mining-Ops",
-      "due": "2026-06-15",
-      "key": "89d60d7346"
-    },
-    {
-      "title": "Watch for negative waste balances in closed blocks — flag to geology if continuing",
+      "title": "Stage 6 Temporal Lamp development — clear and prep current running board area",
       "pri": "medium",
       "area": "Mining-Ops",
       "due": "",
-      "key": "68b52b481e"
+      "key": "67ddb3cf1c"
     },
     {
-      "title": "Confirm DR-297 500H service date with drill team (Jun 6 or Jun 7)",
+      "title": "Confirm DR-297 500H service date — June 6 or June 7, correct workshop record",
       "pri": "medium",
       "area": "Mining-Ops",
       "due": "",
-      "key": "2aab5c4b77"
+      "key": "e595471b6a"
     },
     {
-      "title": "Ex262 5-day service — reschedule once workshop manpower available",
+      "title": "Confirm SHG block 770-160-177-1 status — closed out or final pass for 50t balance",
       "pri": "medium",
       "area": "Mining-Ops",
       "due": "",
-      "key": "ead0fc8100"
+      "key": "b3aba32276"
     },
     {
-      "title": "Implement block-limit marking system before mining to prevent over-dig",
+      "title": "Follow up NCR/Wayne paperwork for Mansourah transfer — check with Richard",
       "pri": "medium",
-      "area": "Mining-Ops",
+      "area": "Admin-PA",
       "due": "",
-      "key": "3c4a9d74c7"
+      "key": "f5dd067817"
     },
     {
-      "title": "Treat half-done trim blocks on 890-885 and adjacent lower blocks",
+      "title": "Follow up Sidney emergency leave situation — confirm leave status",
       "pri": "medium",
-      "area": "Mining-Ops",
+      "area": "Admin-PA",
       "due": "",
-      "key": "231a2becc3"
-    },
-    {
-      "title": "Prepare project to fix deforming road south of Stage 6 (road to SW dump)",
-      "pri": "medium",
-      "area": "Mining-Ops",
-      "due": "",
-      "key": "e5c532589d"
-    },
-    {
-      "title": "Main ramp repair — plan targeted 350 m3/day water allocation to highest-dust sections",
-      "pri": "medium",
-      "area": "Mining-Ops",
-      "due": "",
-      "key": "5ca3fdac98"
-    },
-    {
-      "title": "Main ramp repair — explore alternative water sources to supplement Plant 350 m3/day",
-      "pri": "medium",
-      "area": "Mining-Ops",
-      "due": "",
-      "key": "0c87cfc33b"
-    },
-    {
-      "title": "Dust chemical stock check with procurement",
-      "pri": "medium",
-      "area": "Mining-Ops",
-      "due": "",
-      "key": "13bba5309b"
+      "key": "713ab6925e"
     }
   ],
   "events": [
@@ -333,14 +333,14 @@
     {
       "date": "2026-06-13",
       "time": "08:00",
-      "title": "Weekly Crusher planned maintenance",
-      "key": "bf0c1a28f4"
+      "title": "Daily Mining review meeting with Maaden Team",
+      "key": "f68871146a"
     },
     {
       "date": "2026-06-13",
       "time": "08:00",
-      "title": "Daily Mining review meeting with Maaden Team",
-      "key": "f68871146a"
+      "title": "Weekly Crusher planned maintenance",
+      "key": "bf0c1a28f4"
     },
     {
       "date": "2026-06-13",
@@ -537,14 +537,14 @@
     {
       "date": "2026-06-16",
       "time": "08:00",
-      "title": "Weekly Crusher planned maintenance",
-      "key": "ba2a5b4665"
+      "title": "Daily Mining review meeting with Maaden Team",
+      "key": "e6db19e976"
     },
     {
       "date": "2026-06-16",
       "time": "08:00",
-      "title": "Daily Mining review meeting with Maaden Team",
-      "key": "e6db19e976"
+      "title": "Weekly Crusher planned maintenance",
+      "key": "ba2a5b4665"
     },
     {
       "date": "2026-06-16",
@@ -587,6 +587,12 @@
       "time": "19:00",
       "title": "Evening call with kids",
       "key": "e90bc9433e"
+    },
+    {
+      "date": "2026-06-17",
+      "time": "05:30",
+      "title": "Morning Pit Drive",
+      "key": "4b33ed0fd2"
     },
     {
       "date": "2026-06-17",
@@ -686,24 +692,6 @@
     },
     {
       "date": "2026-06-18",
-      "time": "10:00",
-      "title": "Daily Morning Pit Drive",
-      "key": "33b345f449"
-    },
-    {
-      "date": "2026-06-18",
-      "time": "14:30",
-      "title": "HOD meeting preparation",
-      "key": "f9f0a0b896"
-    },
-    {
-      "date": "2026-06-18",
-      "time": "15:00",
-      "title": "Weekly JRAR ADW HOD Safety meeting",
-      "key": "d9d75ccef3"
-    },
-    {
-      "date": "2026-06-18",
       "time": "16:30",
       "title": "System updates and Tech know how",
       "key": "c2bba28da2"
@@ -719,7 +707,31 @@
       "time": "19:00",
       "title": "Evening call with kids",
       "key": "caf9f3e822"
+    },
+    {
+      "date": "2026-06-19",
+      "time": "05:00",
+      "title": "Maombi ya Alfajiri - Ijumaa",
+      "key": "c0a19a5515"
+    },
+    {
+      "date": "2026-06-19",
+      "time": "16:30",
+      "title": "System updates and Tech know how",
+      "key": "6a1086a34d"
+    },
+    {
+      "date": "2026-06-19",
+      "time": "18:00",
+      "title": "Prayer time and Dinner",
+      "key": "14d5224389"
+    },
+    {
+      "date": "2026-06-19",
+      "time": "19:00",
+      "title": "Evening call with kids",
+      "key": "a0094d36b3"
     }
   ],
-  "generated": "2026-06-12T11:07:29"
+  "generated": "2026-06-12T12:15:12"
 }
