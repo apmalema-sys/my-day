@@ -116,22 +116,58 @@
   .insp-field{width:100%;background:var(--card2);border:1px solid var(--line);border-radius:10px;padding:10px 12px;color:var(--txt);font-size:.9rem;font-family:inherit;margin-bottom:8px;}
   .insp-field:focus{outline:none;border-color:var(--accent);}
   .isect{background:var(--card);border:1px solid var(--line);border-radius:14px;margin-bottom:12px;overflow:hidden;}
-  .isect-head{display:flex;align-items:center;justify-content:space-between;padding:13px 14px;}
+  .isect-head{display:flex;align-items:center;justify-content:space-between;padding:13px 14px;border-bottom:1px solid var(--line);}
   .isect-head h3{font-size:.95rem;font-weight:700;}
   .isect-head .cnt{font-size:.72rem;color:var(--muted);font-weight:700;}
-  .isect-body{padding:0 14px 12px;}
-  .icheck{display:flex;align-items:flex-start;gap:11px;padding:9px 0;border-top:1px solid var(--line);}
-  .icheck .box{width:22px;height:22px;border-radius:6px;flex-shrink:0;border:2px solid var(--line);display:flex;align-items:center;justify-content:center;margin-top:1px;}
-  .icheck .box svg{width:12px;height:12px;opacity:0;}
-  .icheck.on .box{background:var(--low);border-color:var(--low);}
-  .icheck.on .box svg{opacity:1;}
-  .icheck .ilabel{font-size:.9rem;line-height:1.3;}
-  .icheck.on .ilabel{color:var(--muted);}
+  .isub-label{font-size:.68rem;font-weight:700;letter-spacing:.07em;text-transform:uppercase;color:var(--muted);padding:9px 14px 5px;background:var(--card2);border-bottom:1px solid var(--line);}
+  .irow{padding:10px 14px;border-bottom:1px solid var(--line);}
+  .irow:last-child{border-bottom:none;}
+  .irow-label{font-size:.88rem;color:var(--txt);line-height:1.3;margin-bottom:8px;}
+  .irow-ctrl{display:flex;align-items:center;gap:7px;}
+  .yn{padding:6px 11px;border-radius:8px;font-size:.75rem;font-weight:700;font-family:inherit;border:1px solid var(--line);background:var(--card2);color:var(--muted);flex-shrink:0;}
+  .yn.yes.on{background:#16a34a;border-color:#16a34a;color:#fff;}
+  .yn.no.on{background:#dc2626;border-color:#dc2626;color:#fff;}
+  .yn.na.on{background:#6b7280;border-color:#6b7280;color:#fff;}
+  .icomment{flex:1;min-width:0;background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:6px 9px;color:var(--txt);font-size:.82rem;font-family:inherit;}
+  .icomment::placeholder{color:var(--muted);}
+  .icomment:focus{outline:none;border-color:var(--accent);}
+  .icomment.flagged{border-color:#dc2626;background:rgba(220,38,38,.07);}
+  .icomment.flagged::placeholder{color:#f87171;}
+  .insp-summary{background:var(--card);border:1px solid var(--line);border-radius:14px;margin-bottom:8px;overflow:hidden;}
+  .sum-head{padding:10px 14px;border-bottom:1px solid var(--line);}
+  .sum-head h3{font-size:.88rem;font-weight:700;}
+  .sum-table{width:100%;border-collapse:collapse;font-size:.78rem;}
+  .sum-table td,.sum-table th{padding:7px 10px;border-bottom:1px solid var(--line);}
+  .sum-table tr:last-child td{border-bottom:none;}
+  .sum-sec{color:var(--txt);font-weight:600;}
+  .sum-hdr{font-size:.65rem;font-weight:700;text-transform:uppercase;color:var(--muted);text-align:center;}
+  .sum-y{color:#16a34a;font-weight:700;text-align:center;}
+  .sum-n{color:#dc2626;font-weight:700;text-align:center;}
+  .sum-na{color:#9ca3af;font-weight:700;text-align:center;}
   .inotes{width:100%;background:var(--card2);border:1px solid var(--line);border-radius:10px;padding:10px 12px;color:var(--txt);font-size:.88rem;font-family:inherit;margin-top:10px;min-height:46px;resize:vertical;}
   .inotes:focus{outline:none;border-color:var(--accent);}
   .insp-actions{display:flex;flex-direction:column;gap:10px;margin:6px 4px 10px;}
   .insp-prog{font-size:.82rem;color:var(--muted);text-align:center;margin-bottom:6px;font-weight:600;}
   .insp-prog b{color:var(--low);}
+  /* ---- events log ---- */
+  .evcard{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:13px 14px;margin-bottom:10px;}
+  .evcard.running{border-color:#dc2626;border-width:2px;}
+  .evcard-top{display:flex;align-items:center;gap:8px;margin-bottom:6px;flex-wrap:wrap;}
+  .evtype{font-size:.68rem;font-weight:700;padding:3px 9px;border-radius:6px;text-transform:uppercase;flex-shrink:0;}
+  .evtype.breakdown{background:rgba(220,38,38,.18);color:#f87171;}
+  .evtype.delay{background:rgba(245,158,11,.18);color:#fbbf24;}
+  .ev-equip{font-size:.88rem;font-weight:700;color:var(--txt);flex:1;min-width:0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
+  .ev-dur{font-size:.78rem;font-weight:700;color:var(--muted);white-space:nowrap;}
+  .ev-live{font-size:.72rem;font-weight:700;color:#dc2626;}
+  .ev-desc{font-size:.9rem;color:var(--txt);margin-bottom:4px;line-height:1.3;}
+  .ev-times{font-size:.78rem;color:var(--muted);}
+  .ev-notes{font-size:.82rem;color:var(--muted);margin-top:4px;font-style:italic;}
+  .evlog-empty{text-align:center;padding:48px 20px;color:var(--muted);}
+  .evlog-empty .big{font-size:2.2rem;margin-bottom:10px;}
+  .evlog-totals{display:flex;gap:10px;margin-bottom:12px;}
+  .evlog-total{flex:1;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:10px 12px;text-align:center;}
+  .evlog-total .etn{font-size:1.3rem;font-weight:800;color:var(--txt);}
+  .evlog-total .etl{font-size:.68rem;color:var(--muted);font-weight:600;text-transform:uppercase;margin-top:2px;}
 
   .btn{width:100%;padding:14px;border:none;border-radius:14px;background:var(--accent);color:#fff;font-size:.98rem;font-weight:700;font-family:inherit;}
   .btn:active{transform:scale(.98);}
@@ -238,7 +274,8 @@
           <button class="shiftbtn" data-shift="Night">☾ Night</button>
         </div>
         <input class="insp-field" id="insp-weather" placeholder="Weather / visibility" />
-        <input class="insp-field" id="insp-crews" placeholder="Crews on shift" style="margin-bottom:0" />
+        <input class="insp-field" id="insp-blockid" placeholder="Block ID" />
+        <input class="insp-field" id="insp-dumping" placeholder="Dumping" style="margin-bottom:0" />
       </div>
       <div class="insp-prog" id="insp-prog"></div>
       <div id="insp-sections"></div>
@@ -250,6 +287,7 @@
         <h3 style="font-size:.95rem;font-weight:700;margin-bottom:10px;">Notes for management</h3>
         <textarea class="inotes" id="insp-mgmt" placeholder="Anything management needs to know" style="margin-top:0"></textarea>
       </div>
+      <div id="insp-summary"></div>
       <div class="insp-actions">
         <button class="btn" id="insp-share">Send to CoWork</button>
         <button class="btn alt" id="insp-copy">Copy report</button>
@@ -284,6 +322,20 @@
         <div class="sessions">Completed today: <b id="pomo-count">0</b> sessions</div>
       </div>
     </section>
+
+    <!-- EVENTS LOG -->
+    <section class="view" id="view-events">
+      <div class="evlog-totals">
+        <div class="evlog-total"><div class="etn" id="ev-tot-count">0</div><div class="etl">Events</div></div>
+        <div class="evlog-total"><div class="etn" id="ev-tot-bkdn">0h 0m</div><div class="etl">Breakdown</div></div>
+        <div class="evlog-total"><div class="etn" id="ev-tot-delay">0h 0m</div><div class="etl">Delay</div></div>
+      </div>
+      <div id="evlog-list"></div>
+      <div class="insp-actions" style="margin-top:4px;">
+        <button class="btn" id="evlog-share">Send report to CoWork</button>
+        <button class="btn alt" id="evlog-copy">Copy report</button>
+      </div>
+    </section>
   </main>
 
   <button class="fab" id="fab" aria-label="Add">+</button>
@@ -292,6 +344,10 @@
     <button class="tab active" data-v="today">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><path d="M9 22V12h6v10"/></svg>
       <span class="lbl">Today</span>
+    </button>
+    <button class="tab" data-v="events">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+      <span class="lbl">Events</span>
     </button>
     <button class="tab" data-v="schedule">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>
@@ -358,6 +414,26 @@
   <div class="field"><label>Paste your import code</label><textarea id="in-import" class="inotes" style="min-height:120px;margin-top:0;" placeholder="Paste the code you were given…"></textarea></div>
   <p style="font-size:.78rem;color:var(--muted);line-height:1.45;margin:-4px 0 14px;">Adds tasks to this device. Duplicates (same title) are skipped, so it's safe to run more than once.</p>
   <button class="btn" id="btn-do-import">Import</button>
+</div>
+
+<!-- event log sheet -->
+<div class="sheet" id="sheet-log">
+  <h3>Log event</h3>
+  <div class="field"><label>Type</label>
+    <div class="shiftrow" id="log-type-row">
+      <button class="shiftbtn on" data-lt="breakdown">Breakdown</button>
+      <button class="shiftbtn" data-lt="delay">Delay</button>
+    </div>
+  </div>
+  <div class="field"><label>Equipment / unit</label><input type="text" id="in-equip" placeholder="e.g. EX-263, DT-282" autocomplete="off" /></div>
+  <div class="field"><label>Description</label><input type="text" id="in-evdesc" placeholder="What happened?" autocomplete="off" /></div>
+  <div class="row2">
+    <div class="field"><label>Start time</label><input type="time" id="in-evstart" /></div>
+    <div class="field"><label>Date</label><input type="date" id="in-evdate" /></div>
+  </div>
+  <div class="field"><label>Notes (optional)</label><input type="text" id="in-evnotes" placeholder="Additional details" autocomplete="off" /></div>
+  <button class="btn" id="btn-save-log">Start event timer</button>
+  <button class="btn ghost" data-close style="margin-top:6px;">Cancel</button>
   <button class="btn ghost" data-close>Cancel</button>
 </div>
 
@@ -377,13 +453,91 @@ const SEED=[];
 /* SEED:END */
 
 const INSPECT_SECTIONS=[
-  {key:"safety",title:"Safety",items:["FLRAs completed by all crews","Toolbox talk delivered","Prior-shift safety actions closed","No unaddressed hazards on the floor"]},
-  {key:"loading",title:"Loading areas",items:["Faces inspected — toe, oversize, fragmentation","GET status checked (teeth / lips)","Backloading / queueing checked","Operator setup & spotting OK"]},
-  {key:"roads",title:"Ramps & haul roads",items:["Main ramp surface OK","High spots cleared / graded","Dust suppression adequate","Switchbacks & in-pit roads OK"]},
-  {key:"equipment",title:"Equipment",items:["Down units logged with next step","Critical-watch units checked","Standby units accounted for"]},
-  {key:"dumps",title:"Dumps",items:["Tip-head stability OK","Bund / windrow condition OK","Lighting OK (night shift)","Dump sequence on plan"]},
-  {key:"crusher",title:"Crusher feed",items:["Feed rate vs target reviewed","Stockpile level OK","Plant constraints noted"]},
-  {key:"production",title:"Production",items:["Tonnes vs target reviewed","Ore / waste split checked","Cycle / availability check"]},
+  {key:"safety",title:"Safety",subs:[
+    {label:"Documentation",items:[
+      "FLRA completed for the Task",
+      "Pre-Use inspection done and signed",
+      "Operator Permit Valid for the task",
+    ]},
+    {label:"Hazards & incidents",items:[
+      "Operator PPE compilant",
+      "Safety berm up to standard - 1.5m",
+      "No geotechnical hazards around working area",
+    ]},
+  ]},
+  {key:"production",title:"Production",subs:[
+    {label:"Targets & volumes",items:[
+      "Shift Mining target clear and shared",
+      "Mining Equipment split follows Daily Plan",
+      "Critical activities Communicated and Tracked",
+    ]},
+    {label:"Fleet",items:[
+      "Number of Prime Excavators according to Plan",
+      "Number of DT according to Plan",
+      "Cycle times - Excavators & DT Logged",
+    ]},
+  ]},
+  {key:"loading",title:"Loading areas",subs:[
+    {label:"Face conditions",items:[
+      "Bench height within approved design - DT height",
+      "Loading Pad free of loose rocks, spilled materials and debris",
+      "Adequate working width for DT Swing and Clearance",
+    ]},
+    {label:"Equipment & fill",items:[
+      "GET visual check - Good condition",
+      "No Excessive Queue at the loading area",
+      "Bucket fill adequate",
+      "Dump truck fill adequate",
+      "Excavator Swing angle optimized <90 degrees",
+      "Dig rate consistent with target productivity for current materials",
+    ]},
+    {label:"Traffic",items:[
+      "Access road to loading area Acceptable - No Sharp rocks and High-spots",
+      "LV parking area designated",
+    ]},
+  ]},
+  {key:"roads",title:"Ramps & haul roads",subs:[
+    {label:"Surface conditions",items:[
+      "Main ramp surface acceptable",
+      "Road berms continuous and Height compliant",
+      "No road spillages from overloaded or sharp turns",
+    ]},
+    {label:"Environment",items:[
+      "Dust suppression adequate",
+      "Speed limit, Intersections and directional signs legible and in place",
+    ]},
+  ]},
+  {key:"equipment",title:"Equipment",subs:[
+    {label:"Critical fleet",items:[
+      "Water trucks available and positioned",
+      "In-pit breakdowns logged and being actioned",
+    ]},
+    {label:"Support fleet",items:[
+      "Wheel Dozer - WD145 available and working",
+      "Grader - (MG85/MG266) available and working",
+    ]},
+  ]},
+  {key:"dumps",title:"Dumps",subs:[
+    {label:"Safety",items:[
+      "Push-up berm present, continuous and height compliant",
+      "Traffic control plan in place - Incoming and Outgoing lanes",
+      "LV parking area designated",
+      "Dump approach road free of spillages and in graded condition",
+    ]},
+    {label:"Compliance",items:[
+      "Dump sequence vs plan OK",
+    ]},
+  ]},
+  {key:"crusher",title:"Crusher feed",subs:[
+    {label:"Feed quality",items:[
+      "Ore blend vs plan - Clear from the Operators",
+      "Push-up berm at pad edges present and height compliant",
+    ]},
+    {label:"Operations",items:[
+      "Rock breaker available for oversize rocks breaking",
+      "ROM pad access road clear and in acceptable condition",
+    ]},
+  ]},
 ];
 
 /* ---------- storage ---------- */
@@ -420,10 +574,10 @@ function mergeSource(source,sourceEvents){
     const byKey={};events.forEach(e=>{if(e.key)byKey[e.key]=e;});
     const keys=new Set();
     sourceEvents.forEach((s,i)=>{
-      if(!s||!s.key||!s.title||!s.time)return;keys.add(s.key);
+      if(!s||!s.key||!s.title)return;keys.add(s.key);  // time may be "" for all-day events
       const ex=byKey[s.key];
-      if(ex){ex.title=s.title;ex.time=s.time;ex.date=s.date||ex.date;ex.src=true;}
-      else events.push({id:Date.now()+1000+i,key:s.key,date:s.date||todayStr(),time:s.time,title:s.title,done:false,src:true});
+      if(ex){ex.title=s.title;ex.time=s.time||"";ex.date=s.date||ex.date;ex.src=true;}
+      else events.push({id:Date.now()+1000+i,key:s.key,date:s.date||todayStr(),time:s.time||"",title:s.title,done:false,src:true});
     });
     events=events.filter(e=>!(e.src&&!keys.has(e.key)));
     saveEvents();
@@ -570,42 +724,79 @@ document.getElementById("sched-list").addEventListener("click",e=>{
 });
 
 /* ---------- INSPECTION ---------- */
-function blankInsp(){return {date:todayStr(),shift:"Day",weather:"",crews:"",checks:{},notes:{},next:"",mgmt:""};}
+function blankInsp(){return {date:todayStr(),shift:"Day",weather:"",blockId:"",dumping:"",yn:{},comments:{},next:"",mgmt:""};}
 let insp=load(LS_INSP,null);
 if(!insp||insp.date!==todayStr()){/* keep draft across same day only as a soft default */ if(!insp)insp=blankInsp();}
 function saveInsp(){localStorage.setItem(LS_INSP,JSON.stringify(insp));}
+function renderSummary(){
+  const rows=INSPECT_SECTIONS.map(sec=>{
+    let idx=0,yes=0,no=0,na=0;
+    sec.subs.forEach(sub=>{sub.items.forEach(()=>{const v=insp.yn[sec.key+"."+idx];if(v==="yes")yes++;else if(v==="no")no++;else if(v==="na")na++;idx++;});});
+    return `<tr><td class="sum-sec">${sec.title}</td><td class="sum-y">${yes}</td><td class="sum-n">${no}</td><td class="sum-na">${na}</td></tr>`;
+  }).join("");
+  document.getElementById("insp-summary").innerHTML=`<div class="insp-summary">
+    <div class="sum-head"><h3>Inspection summary</h3></div>
+    <table class="sum-table"><tr><th class="sum-sec" style="text-align:left">Section</th><th class="sum-hdr">YES</th><th class="sum-hdr">NO</th><th class="sum-hdr">N/A</th></tr>${rows}</table>
+  </div>`;
+}
+let pendingFocusKey=null;
 function renderInspect(){
   document.querySelectorAll(".shiftbtn").forEach(b=>b.classList.toggle("on",b.dataset.shift===insp.shift));
   document.getElementById("insp-weather").value=insp.weather||"";
-  document.getElementById("insp-crews").value=insp.crews||"";
+  document.getElementById("insp-blockid").value=insp.blockId||"";
+  document.getElementById("insp-dumping").value=insp.dumping||"";
   document.getElementById("insp-next").value=insp.next||"";
   document.getElementById("insp-mgmt").value=insp.mgmt||"";
-  let total=0,checked=0;
+  let totalItems=0,yesCount=0;
   const html=INSPECT_SECTIONS.map(sec=>{
-    const rows=sec.items.map((it,i)=>{
-      const k=sec.key+"."+i;const on=!!insp.checks[k];total++;if(on)checked++;
-      return `<div class="icheck ${on?'on':''}" data-k="${k}"><div class="box">${CHECK_SVG}</div><div class="ilabel">${esc(it)}</div></div>`;
+    let idx=0,secYes=0,secTotal=0;
+    const subsHtml=sec.subs.map(sub=>{
+      const rowsHtml=sub.items.map(item=>{
+        const k=sec.key+"."+idx;
+        const yn=insp.yn[k];
+        const comment=esc(insp.comments[k]||"");
+        if(yn==="yes")secYes++;
+        secTotal++;totalItems++;idx++;
+        if(yn==="yes")yesCount++;
+        const isNo=yn==="no";
+        return `<div class="irow">
+          <div class="irow-label">${esc(item)}</div>
+          <div class="irow-ctrl">
+            <button class="yn yes${yn==='yes'?' on':''}" data-yn="yes" data-k="${k}">YES</button>
+            <button class="yn no${yn==='no'?' on':''}" data-yn="no" data-k="${k}">NO</button>
+            <button class="yn na${yn==='na'?' on':''}" data-yn="na" data-k="${k}">N/A</button>
+            <input class="icomment${isNo?' flagged':''}" type="text" placeholder="${isNo?'Action required…':'Comment…'}" value="${comment}" data-ck="${k}" />
+          </div>
+        </div>`;
+      }).join("");
+      return `<div class="isub-label">${esc(sub.label)}</div>${rowsHtml}`;
     }).join("");
-    const sc=sec.items.filter((it,i)=>insp.checks[sec.key+"."+i]).length;
     return `<div class="isect">
-      <div class="isect-head"><h3>${sec.title}</h3><span class="cnt">${sc}/${sec.items.length}</span></div>
-      <div class="isect-body">${rows}
-        <textarea class="inotes" data-notes="${sec.key}" placeholder="Notes for ${sec.title.toLowerCase()}…">${esc(insp.notes[sec.key]||"")}</textarea>
-      </div></div>`;
+      <div class="isect-head"><h3>${sec.title}</h3><span class="cnt">${secYes}/${secTotal}</span></div>
+      ${subsHtml}
+    </div>`;
   }).join("");
   document.getElementById("insp-sections").innerHTML=html;
-  document.getElementById("insp-prog").innerHTML=`<b>${checked}</b> of ${total} checks complete`;
+  document.getElementById("insp-prog").innerHTML=`<b>${yesCount}</b> of ${totalItems} checks complete`;
+  renderSummary();
   updateSyncLabel();
+  if(pendingFocusKey){const inp=document.querySelector(`.icomment[data-ck="${pendingFocusKey}"]`);if(inp)inp.focus();pendingFocusKey=null;}
 }
 document.getElementById("insp-sections").addEventListener("click",e=>{
-  const c=e.target.closest(".icheck");if(!c)return;const k=c.dataset.k;
-  insp.checks[k]=!insp.checks[k];vibe(8);saveInsp();renderInspect();
+  const btn=e.target.closest(".yn");if(!btn)return;
+  const k=btn.dataset.k,yn=btn.dataset.yn;
+  insp.yn[k]=insp.yn[k]===yn?undefined:yn;
+  pendingFocusKey=(insp.yn[k]==="no")?k:null;
+  vibe(8);saveInsp();renderInspect();
 });
 document.getElementById("insp-sections").addEventListener("input",e=>{
-  const ta=e.target.closest("[data-notes]");if(!ta)return;insp.notes[ta.dataset.notes]=ta.value;saveInsp();
+  const inp=e.target.closest(".icomment");if(!inp)return;
+  insp.comments[inp.dataset.ck]=inp.value;saveInsp();
 });
 document.querySelectorAll(".shiftbtn").forEach(b=>b.addEventListener("click",()=>{insp.shift=b.dataset.shift;saveInsp();renderInspect();}));
-["weather","crews"].forEach(f=>document.getElementById("insp-"+f).addEventListener("input",e=>{insp[f]=e.target.value;saveInsp();}));
+document.getElementById("insp-weather").addEventListener("input",e=>{insp.weather=e.target.value;saveInsp();});
+document.getElementById("insp-blockid").addEventListener("input",e=>{insp.blockId=e.target.value;saveInsp();});
+document.getElementById("insp-dumping").addEventListener("input",e=>{insp.dumping=e.target.value;saveInsp();});
 document.getElementById("insp-next").addEventListener("input",e=>{insp.next=e.target.value;saveInsp();});
 document.getElementById("insp-mgmt").addEventListener("input",e=>{insp.mgmt=e.target.value;saveInsp();});
 
@@ -614,13 +805,26 @@ function inspReport(){
   let md=`# Daily Pit Inspection — ${insp.date}\n\n`;
   md+=`**Shift:** ${insp.shift}  \n**Superintendent:** Peter Anthony  \n`;
   if(insp.weather)md+=`**Weather / visibility:** ${insp.weather}  \n`;
-  if(insp.crews)md+=`**Crews on shift:** ${insp.crews}  \n`;
+  if(insp.blockId)md+=`**Block ID:** ${insp.blockId}  \n`;
+  if(insp.dumping)md+=`**Dumping:** ${insp.dumping}  \n`;
   md+=`**Logged:** ${stamp}\n\n---\n\n`;
   INSPECT_SECTIONS.forEach(sec=>{
-    md+=`## ${sec.title}\n`;
-    sec.items.forEach((it,i)=>{md+=`- [${insp.checks[sec.key+"."+i]?"x":" "}] ${it}\n`;});
-    if((insp.notes[sec.key]||"").trim())md+=`\n_Notes:_ ${insp.notes[sec.key].trim()}\n`;
-    md+=`\n`;
+    md+=`## ${sec.title}\n\n`;
+    let idx=0;
+    sec.subs.forEach(sub=>{
+      md+=`### ${sub.label}\n\n`;
+      sub.items.forEach(item=>{
+        const k=sec.key+"."+idx;
+        const yn=insp.yn[k];
+        const comment=(insp.comments[k]||"").trim();
+        const status=yn==="yes"?"YES":yn==="no"?"NO":yn==="na"?"N/A":"—";
+        md+=`**${item}:** ${status}`;
+        if(comment)md+=` — ${comment}`;
+        md+=`\n`;
+        idx++;
+      });
+      md+=`\n`;
+    });
   });
   if((insp.next||"").trim())md+=`## Plan for next shift\n${insp.next.trim()}\n\n`;
   if((insp.mgmt||"").trim())md+=`## Notes for management\n${insp.mgmt.trim()}\n\n`;
@@ -660,14 +864,14 @@ document.getElementById("insp-finish").addEventListener("click",()=>{
 });
 
 /* ---------- add sheets ---------- */
-const overlay=document.getElementById("overlay"),sheetTask=document.getElementById("sheet-task"),sheetEvt=document.getElementById("sheet-evt"),sheetSet=document.getElementById("sheet-settings"),sheetImp=document.getElementById("sheet-import");
+const overlay=document.getElementById("overlay"),sheetTask=document.getElementById("sheet-task"),sheetEvt=document.getElementById("sheet-evt"),sheetSet=document.getElementById("sheet-settings"),sheetImp=document.getElementById("sheet-import"),sheetLog=document.getElementById("sheet-log");
 let newPri="high";
 function syncPri(){document.querySelectorAll(".priopt").forEach(o=>o.classList.toggle("sel",o.dataset.p===newPri));}
 function openTaskSheet(){document.getElementById("in-title").value="";document.getElementById("in-due").value="";newPri="high";syncPri();overlay.classList.add("show");sheetTask.classList.add("show");setTimeout(()=>document.getElementById("in-title").focus(),300);}
 function openEvtSheet(){document.getElementById("in-etitle").value="";document.getElementById("in-time").value="";document.getElementById("in-edate").value=todayStr();overlay.classList.add("show");sheetEvt.classList.add("show");setTimeout(()=>document.getElementById("in-time").focus(),300);}
 function openSetSheet(){document.getElementById("in-sync").value=getSyncEmail();overlay.classList.add("show");sheetSet.classList.add("show");setTimeout(()=>document.getElementById("in-sync").focus(),300);}
 function openImpSheet(){document.getElementById("in-import").value="";closeSheets();overlay.classList.add("show");sheetImp.classList.add("show");setTimeout(()=>document.getElementById("in-import").focus(),300);}
-function closeSheets(){overlay.classList.remove("show");sheetTask.classList.remove("show");sheetEvt.classList.remove("show");sheetSet.classList.remove("show");sheetImp.classList.remove("show");}
+function closeSheets(){overlay.classList.remove("show");sheetTask.classList.remove("show");sheetEvt.classList.remove("show");sheetSet.classList.remove("show");sheetImp.classList.remove("show");sheetLog.classList.remove("show");}
 overlay.addEventListener("click",closeSheets);
 /* ---- import tasks (paste code: raw JSON or base64 of {"tasks":[...]}) ---- */
 function parseImport(text){
@@ -716,7 +920,7 @@ document.getElementById("btn-save-evt").addEventListener("click",()=>{
 });
 
 /* ---------- tabs ---------- */
-const titles={today:"My Day",schedule:"Schedule",tasks:"Tasks",inspect:"Pit Inspection",focus:"Focus"};
+const titles={today:"My Day",schedule:"Schedule",tasks:"Tasks",inspect:"Pit Inspection",focus:"Focus",events:"Events log"};
 let activeView="today";
 document.querySelectorAll(".tab").forEach(tab=>{
   tab.addEventListener("click",()=>{
@@ -729,16 +933,134 @@ document.querySelectorAll(".tab").forEach(tab=>{
     if(v==="today"||v==="schedule"){dEl.textContent=new Date().toLocaleDateString("en-AU",{weekday:"long",day:"numeric",month:"long"});}
     else if(v==="tasks"){dEl.textContent=tasks.filter(t=>!t.done).length+" active";}
     else if(v==="inspect"){dEl.textContent="Tick · note · close";}
+    else if(v==="events"){dEl.textContent=new Date().toLocaleDateString("en-AU",{weekday:"long",day:"numeric",month:"long"});}
     else dEl.textContent="Pomodoro timer";
-    if(v==="today")renderToday();else if(v==="schedule")renderSchedule();else if(v==="tasks")renderTasks();else if(v==="inspect")renderInspect();
+    if(v==="today")renderToday();else if(v==="schedule")renderSchedule();else if(v==="tasks")renderTasks();else if(v==="inspect")renderInspect();else if(v==="events")renderEvents();
   });
 });
-document.getElementById("fab").addEventListener("click",()=>{activeView==="schedule"?openEvtSheet():openTaskSheet();});
+document.getElementById("fab").addEventListener("click",()=>{if(activeView==="schedule")openEvtSheet();else if(activeView==="events")openLogSheet();else openTaskSheet();});
 document.getElementById("today-list").addEventListener("click",onTap);
 document.getElementById("task-list").addEventListener("click",onTap);
 document.getElementById("filters").addEventListener("click",e=>{const b=e.target.closest(".filt");if(!b)return;curFilter=b.dataset.f;document.querySelectorAll(".filt").forEach(x=>x.classList.toggle("on",x===b));renderTasks();});
 
 function renderAll(){renderToday();if(activeView==="tasks")renderTasks();if(activeView==="schedule")renderSchedule();}
+
+/* ---------- events log ---------- */
+const LS_EVLOG="myday.evlog.v1";
+let evlog=load(LS_EVLOG,[]);
+function saveEvlog(){localStorage.setItem(LS_EVLOG,JSON.stringify(evlog));}
+function fmtDur(ms){if(ms<0||isNaN(ms))return "—";const h=Math.floor(ms/3600000),m=Math.floor((ms%3600000)/60000);return h>0?`${h}h ${m}m`:`${m}m`;}
+function isoToHM(iso){const d=new Date(iso);return String(d.getHours()).padStart(2,"0")+":"+String(d.getMinutes()).padStart(2,"0");}
+function renderEvents(){
+  const today=todayStr();
+  const list=evlog.filter(e=>e.startDate===today);
+  const el=document.getElementById("evlog-list");
+  const now=Date.now();
+  let bkdnMs=0,delayMs=0;
+  if(!list.length){
+    el.innerHTML=`<div class="evlog-empty"><div class="big">⚡</div>No events logged yet.<br>Tap + to log a breakdown or delay.</div>`;
+  } else {
+    el.innerHTML=list.slice().reverse().map(ev=>{
+      const running=!ev.stopIso;
+      const dur=running?(now-new Date(ev.startIso).getTime()):(new Date(ev.stopIso)-new Date(ev.startIso));
+      if(ev.type==="breakdown")bkdnMs+=running?(now-new Date(ev.startIso).getTime()):dur;
+      else delayMs+=running?(now-new Date(ev.startIso).getTime()):dur;
+      const stopStr=running?`<span class="ev-live">● LIVE</span>`:`<span class="ev-dur">${fmtDur(dur)}</span>`;
+      const timeStr=running?`Started ${isoToHM(ev.startIso)}`:`${isoToHM(ev.startIso)} → ${isoToHM(ev.stopIso)}`;
+      return `<div class="evcard${running?" running":""}">
+        <div class="evcard-top">
+          <span class="evtype ${ev.type}">${ev.type==="breakdown"?"Breakdown":"Delay"}</span>
+          <span class="ev-equip">${esc(ev.equipment)}</span>
+          ${stopStr}
+        </div>
+        <div class="ev-desc">${esc(ev.description)}</div>
+        <div class="ev-times">${timeStr}</div>
+        ${ev.notes?`<div class="ev-notes">${esc(ev.notes)}</div>`:""}
+        ${running?`<button class="btn warn" data-stop="${ev.id}" style="margin-top:10px;font-size:.85rem;">Stop timer</button>`:""}
+      </div>`;
+    }).join("");
+    list.forEach(ev=>{
+      const running=!ev.stopIso;
+      const dur=running?(now-new Date(ev.startIso)):(new Date(ev.stopIso)-new Date(ev.startIso));
+      if(ev.type==="breakdown")bkdnMs+=dur; else delayMs+=dur;
+    });
+  }
+  document.getElementById("ev-tot-count").textContent=list.length;
+  document.getElementById("ev-tot-bkdn").textContent=fmtDur(bkdnMs);
+  document.getElementById("ev-tot-delay").textContent=fmtDur(delayMs);
+  document.getElementById("evlog-list").addEventListener("click",e=>{
+    const btn=e.target.closest("[data-stop]");if(!btn)return;
+    const id=Number(btn.dataset.stop);const ev=evlog.find(x=>x.id===id);
+    if(ev&&!ev.stopIso){ev.stopIso=new Date().toISOString();saveEvlog();renderEvents();vibe([10,30,10]);toast("Event stopped — "+fmtDur(new Date(ev.stopIso)-new Date(ev.startIso)));}
+  });
+}
+let newLogType="breakdown";
+function openLogSheet(){
+  newLogType="breakdown";
+  document.querySelectorAll("#log-type-row .shiftbtn").forEach(b=>b.classList.toggle("on",b.dataset.lt==="breakdown"));
+  document.getElementById("in-equip").value="";
+  document.getElementById("in-evdesc").value="";
+  document.getElementById("in-evnotes").value="";
+  document.getElementById("in-evstart").value=nowHM();
+  document.getElementById("in-evdate").value=todayStr();
+  overlay.classList.add("show");sheetLog.classList.add("show");
+  setTimeout(()=>document.getElementById("in-equip").focus(),300);
+}
+document.getElementById("log-type-row").addEventListener("click",e=>{
+  const b=e.target.closest(".shiftbtn");if(!b)return;
+  newLogType=b.dataset.lt;
+  document.querySelectorAll("#log-type-row .shiftbtn").forEach(x=>x.classList.toggle("on",x===b));
+});
+document.getElementById("btn-save-log").addEventListener("click",()=>{
+  const equip=document.getElementById("in-equip").value.trim();
+  const desc=document.getElementById("in-evdesc").value.trim();
+  const startTime=document.getElementById("in-evstart").value;
+  const startDate=document.getElementById("in-evdate").value||todayStr();
+  if(!desc){toast("Add a description");document.getElementById("in-evdesc").focus();return;}
+  const [hh,mm]=startTime?startTime.split(":").map(Number):[new Date().getHours(),new Date().getMinutes()];
+  const startIso=new Date(startDate+"T"+String(hh).padStart(2,"0")+":"+String(mm).padStart(2,"0")+":00").toISOString();
+  evlog.push({id:Date.now(),type:newLogType,equipment:equip,description:desc,startDate,startIso,stopIso:null,notes:document.getElementById("in-evnotes").value.trim()});
+  saveEvlog();closeSheets();renderEvents();vibe(15);toast("Event started — tap Stop when done");
+});
+function evlogReport(){
+  const today=todayStr();
+  const list=evlog.filter(e=>e.startDate===today);
+  const d=new Date();const stamp=d.toLocaleString("en-AU",{dateStyle:"medium",timeStyle:"short"});
+  let md=`# Events Log — ${today}\n\n**Superintendent:** Peter Anthony  \n**Logged:** ${stamp}\n\n---\n\n`;
+  if(!list.length){md+=`_No events logged today._\n`;return md;}
+  let bkdnMs=0,delayMs=0;
+  list.forEach((ev,i)=>{
+    const running=!ev.stopIso;
+    const dur=running?(Date.now()-new Date(ev.startIso)):(new Date(ev.stopIso)-new Date(ev.startIso));
+    if(ev.type==="breakdown")bkdnMs+=dur;else delayMs+=dur;
+    md+=`## ${i+1}. ${ev.description} (${ev.type==="breakdown"?"Breakdown":"Delay"})\n`;
+    if(ev.equipment)md+=`**Equipment:** ${ev.equipment}  \n`;
+    md+=`**Start:** ${isoToHM(ev.startIso)}  \n`;
+    md+=ev.stopIso?`**Stop:** ${isoToHM(ev.stopIso)}  \n**Duration:** ${fmtDur(dur)}\n`:`**Status:** In progress\n`;
+    if(ev.notes)md+=`**Notes:** ${ev.notes}\n`;
+    md+=`\n`;
+  });
+  md+=`---\n## Summary\n- Total events: ${list.length}\n- Total breakdown time: ${fmtDur(bkdnMs)}\n- Total delay time: ${fmtDur(delayMs)}\n\n_Sign-off: Peter Anthony — Mining Superintendent_\n`;
+  return md;
+}
+document.getElementById("evlog-copy").addEventListener("click",async()=>{
+  const md=evlogReport();try{await navigator.clipboard.writeText(md);toast("Report copied");}catch(e){fallbackCopy(md);}
+});
+document.getElementById("evlog-share").addEventListener("click",async()=>{
+  const md=evlogReport();
+  const subj="[Events Log] "+todayStr();
+  const email=getSyncEmail();
+  if(email){location.href="mailto:"+encodeURIComponent(email)+"?subject="+encodeURIComponent(subj)+"&body="+encodeURIComponent(md);toast("Opening email — just press Send");return;}
+  if(navigator.share){try{await navigator.share({title:subj,text:md});}catch(e){}}
+  else{try{await navigator.clipboard.writeText(md);toast("Copied — set a sync email in ⚙︎ for one-tap");}catch(e){fallbackCopy(md);}}
+});
+let evlogTick=null;
+document.querySelectorAll(".tab").forEach(tab=>{
+  tab.addEventListener("click",()=>{
+    if(tab.dataset.v==="events"){evlogTick=setInterval(()=>{if(evlog.some(e=>e.startDate===todayStr()&&!e.stopIso))renderEvents();},30000);}
+    else{clearInterval(evlogTick);}
+  });
+});
 
 /* ---------- pomodoro ---------- */
 const DUR={focus:25*60,short:5*60,long:15*60},LABEL={focus:"Focus",short:"Short break",long:"Long break"};
