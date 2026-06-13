@@ -725,7 +725,79 @@
       "time": "19:00",
       "title": "Evening call with kids",
       "key": "a0094d36b3"
+    },
+    {
+      "date": "2026-06-20",
+      "time": "05:30",
+      "title": "Morning Pit Drive",
+      "key": "b82574c820"
+    },
+    {
+      "date": "2026-06-20",
+      "time": "06:10",
+      "title": "Toolbox and Lineup Meeting",
+      "key": "72ad93fff6"
+    },
+    {
+      "date": "2026-06-20",
+      "time": "06:30",
+      "title": "Day Shift Start up monitoring",
+      "key": "78eeacc656"
+    },
+    {
+      "date": "2026-06-20",
+      "time": "07:15",
+      "title": "Daily JRAR ADW Production Report Review",
+      "key": "0e2b13f238"
+    },
+    {
+      "date": "2026-06-20",
+      "time": "08:00",
+      "title": "Weekly Crusher planned maintenance",
+      "key": "fca2b8fab6"
+    },
+    {
+      "date": "2026-06-20",
+      "time": "08:00",
+      "title": "Daily Mining review meeting with Maaden Team",
+      "key": "5eaec65c98"
+    },
+    {
+      "date": "2026-06-20",
+      "time": "09:00",
+      "title": "JRAR ADW Office work and Action Trackers",
+      "key": "0140e19944"
+    },
+    {
+      "date": "2026-06-20",
+      "time": "10:00",
+      "title": "Daily Morning Pit Drive",
+      "key": "79db91dfa0"
+    },
+    {
+      "date": "2026-06-20",
+      "time": "15:00",
+      "title": "Daily Nightshift planning and Shift paperwork",
+      "key": "21432580e7"
+    },
+    {
+      "date": "2026-06-20",
+      "time": "16:30",
+      "title": "System updates and Tech know how",
+      "key": "7dd13f4c4e"
+    },
+    {
+      "date": "2026-06-20",
+      "time": "18:00",
+      "title": "Prayer time and Dinner",
+      "key": "dfb2166477"
+    },
+    {
+      "date": "2026-06-20",
+      "time": "19:00",
+      "title": "Evening call with kids",
+      "key": "27088cd5c4"
     }
   ],
-  "generated": "2026-06-13T09:02:00"
+  "generated": "2026-06-13T09:06:53"
 }
