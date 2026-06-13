@@ -36,6 +36,13 @@
       "key": "d5bf92a0b3"
     },
     {
+      "title": "Confirm Block 641 sub-economic mining complete",
+      "pri": "urgent",
+      "area": "Mining-Ops",
+      "due": "2026-06-13",
+      "key": "6f5d7a13ab"
+    },
+    {
       "title": "Monitor EX-123 slew ring repair — chase Zahid regularly for ETA",
       "pri": "urgent",
       "area": "Mining-Ops",
@@ -153,6 +160,13 @@
       "area": "Mining-Ops",
       "due": "",
       "key": "828cc32470"
+    },
+    {
+      "title": "Report bin-level findings — confirm or rule out prayer times as cause",
+      "pri": "medium",
+      "area": "Mining-Ops",
+      "due": "",
+      "key": "860373410b"
     },
     {
       "title": "Follow up geologist re: white demarcation tape availability — June 18",
@@ -715,5 +729,5 @@
       "key": "27088cd5c4"
     }
   ],
-  "generated": "2026-06-13T11:50:23"
+  "generated": "2026-06-13T16:25:06"
 }
