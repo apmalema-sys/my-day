@@ -1092,6 +1092,8 @@ renderToday();showPomo();paint();
 document.getElementById("hdr-date").textContent=new Date().toLocaleDateString("en-AU",{weekday:"long",day:"numeric",month:"long"});
 syncFromServer();                         // pull current tasks/schedule from tasks.md (published as data.json)
 document.addEventListener("visibilitychange",()=>{if(!document.hidden)syncFromServer();}); // refresh when reopened
+window.addEventListener("pageshow",e=>{if(e.persisted)syncFromServer();}); // iOS bfcache restore
+setInterval(syncFromServer,5*60*1000);    // fallback: refresh every 5 min while app is open
 </script>
 </body>
 </html>
