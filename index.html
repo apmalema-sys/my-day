@@ -285,6 +285,10 @@
       </div>
       <div class="hint">Swipe right to complete, left to delete.</div>
       <div id="task-list"></div>
+      <div class="insp-actions" style="margin:12px 4px 4px;" id="tasks-actions">
+        <button class="btn" id="tasks-share">Send done tasks to CoWork</button>
+        <button class="btn alt" id="tasks-copy">Copy done tasks report</button>
+      </div>
     </section>
 
     <!-- INSPECT -->
@@ -1168,6 +1172,41 @@ document.getElementById("evlog-share").addEventListener("click",async()=>{
   if(navigator.share){try{await navigator.share({title:subj,text:md});}catch(e){}}
   else{try{await navigator.clipboard.writeText(md);toast("Copied — set a sync email in ⚙︎ for one-tap");}catch(e){fallbackCopy(md);}}
 });
+
+/* ---------- DONE TASKS REPORT ---------- */
+function doneTasksReport(){
+  const d=new Date();
+  const stamp=d.toLocaleString("en-AU",{dateStyle:"medium",timeStyle:"short"});
+  const done=tasks.filter(t=>t.done).sort((a,b)=>(b.doneAt||0)-(a.doneAt||0));
+  let md=`# Done Tasks — ${todayStr()}\n\n**Superintendent:** Peter Anthony  \n**Logged:** ${stamp}\n\n---\n\n`;
+  if(!done.length){
+    md+=`_No tasks completed._\n\n---\n_Sign-off: Peter Anthony — Mining Superintendent_\n`;
+    return md;
+  }
+  done.forEach((t,i)=>{
+    const when=t.doneAt?new Date(t.doneAt).toLocaleString("en-AU",{dateStyle:"short",timeStyle:"short"}):"";
+    md+=`${i+1}. **${t.title}**`;
+    if(t.pri&&t.pri!=="medium")md+=` (${t.pri})`;
+    if(t.area)md+=` · ${t.area}`;
+    if(when)md+=` · Completed ${when}`;
+    md+=`\n`;
+  });
+  md+=`\n---\n_${done.length} task${done.length===1?"":"s"} completed. Sign-off: Peter Anthony — Mining Superintendent_\n`;
+  return md;
+}
+document.getElementById("tasks-copy").addEventListener("click",async()=>{
+  const md=doneTasksReport();
+  try{await navigator.clipboard.writeText(md);toast("Done tasks report copied");}
+  catch(e){fallbackCopy(md);}
+});
+document.getElementById("tasks-share").addEventListener("click",async()=>{
+  const md=doneTasksReport();
+  const subj="[Done Tasks] "+todayStr();
+  const email=getSyncEmail();
+  if(email){location.href="mailto:"+encodeURIComponent(email)+"?subject="+encodeURIComponent(subj)+"&body="+encodeURIComponent(md);toast("Opening email — just press Send");return;}
+  if(navigator.share){try{await navigator.share({title:subj,text:md});}catch(e){}}
+  else{try{await navigator.clipboard.writeText(md);toast("Copied — set a sync email in ⚙︎ for one-tap");}catch(e){fallbackCopy(md);}}
+});
 let evlogTick=null;
 document.querySelectorAll(".tab").forEach(tab=>{
   tab.addEventListener("click",()=>{
@@ -1206,8 +1245,6 @@ renderToday();showPomo();paint();
 document.getElementById("hdr-date").textContent=new Date().toLocaleDateString("en-AU",{weekday:"long",day:"numeric",month:"long"});
 syncFromServer();                         // pull current tasks/schedule from tasks.md (published as data.json)
 document.addEventListener("visibilitychange",()=>{if(!document.hidden)syncFromServer();}); // refresh when reopened
-window.addEventListener("pageshow",e=>{if(e.persisted)syncFromServer();}); // iOS bfcache restore
-setInterval(syncFromServer,5*60*1000);    // fallback: refresh every 5 min while app is open
 </script>
 </body>
 </html>
