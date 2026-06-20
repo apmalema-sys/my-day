@@ -124,10 +124,11 @@
   .irow:last-child{border-bottom:none;}
   .irow-label{font-size:.88rem;color:var(--txt);line-height:1.3;margin-bottom:8px;}
   .irow-ctrl{display:flex;align-items:center;gap:7px;}
-  .yn{padding:6px 11px;border-radius:8px;font-size:.75rem;font-weight:700;font-family:inherit;border:1px solid var(--line);background:var(--card2);color:var(--muted);flex-shrink:0;}
-  .yn.yes.on{background:#16a34a;border-color:#16a34a;color:#fff;}
-  .yn.no.on{background:#dc2626;border-color:#dc2626;color:#fff;}
-  .yn.na.on{background:#6b7280;border-color:#6b7280;color:#fff;}
+  .rating-sel{flex-shrink:0;width:70px;border:2px solid var(--line);border-radius:8px;padding:5px 2px;background:var(--card2);color:var(--txt);font-size:.85rem;font-weight:700;font-family:inherit;text-align:center;}
+  .rating-sel:focus{outline:none;border-color:var(--accent);}
+  .rating-sel.r-low{border-color:#dc2626;background:rgba(220,38,38,.09);}
+  .rating-sel.r-mid{border-color:#ff9f43;background:rgba(255,159,67,.09);}
+  .rating-sel.r-high{border-color:#16a34a;background:rgba(22,163,74,.09);}
   .icomment{flex:1;min-width:0;background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:6px 9px;color:var(--txt);font-size:.82rem;font-family:inherit;}
   .icomment::placeholder{color:var(--muted);}
   .icomment:focus{outline:none;border-color:var(--accent);}
@@ -136,14 +137,34 @@
   .insp-summary{background:var(--card);border:1px solid var(--line);border-radius:14px;margin-bottom:8px;overflow:hidden;}
   .sum-head{padding:10px 14px;border-bottom:1px solid var(--line);}
   .sum-head h3{font-size:.88rem;font-weight:700;}
-  .sum-table{width:100%;border-collapse:collapse;font-size:.78rem;}
-  .sum-table td,.sum-table th{padding:7px 10px;border-bottom:1px solid var(--line);}
-  .sum-table tr:last-child td{border-bottom:none;}
-  .sum-sec{color:var(--txt);font-weight:600;}
-  .sum-hdr{font-size:.65rem;font-weight:700;text-transform:uppercase;color:var(--muted);text-align:center;}
-  .sum-y{color:#16a34a;font-weight:700;text-align:center;}
-  .sum-n{color:#dc2626;font-weight:700;text-align:center;}
-  .sum-na{color:#9ca3af;font-weight:700;text-align:center;}
+  .sum-bars{padding:14px 14px 10px;}
+  .sum-bar-row{margin-bottom:11px;}
+  .sum-bar-row:last-child{margin-bottom:0;}
+  .sum-bar-meta{display:flex;justify-content:space-between;font-size:.75rem;font-weight:600;margin-bottom:5px;}
+  .sum-bar-name{color:var(--txt);}
+  .sum-bar-pct{color:var(--muted);}
+  .sum-bar-bg{background:var(--card2);border-radius:999px;height:7px;overflow:hidden;}
+  .sum-bar-fg{height:100%;border-radius:999px;transition:width .4s ease;}
+  .sum-total{text-align:center;padding:14px 14px 16px;border-top:1px solid var(--line);}
+  .sum-total-score{font-size:2.6rem;font-weight:800;line-height:1;}
+  .sum-total-label{font-size:.7rem;color:var(--muted);font-weight:700;text-transform:uppercase;letter-spacing:.06em;margin-top:4px;}
+  .sum-total-sub{font-size:.78rem;color:var(--muted);margin-top:6px;}
+  /* hazard identification */
+  .hazard-item{display:flex;align-items:flex-start;gap:8px;padding:9px 14px;border-bottom:1px solid var(--line);}
+  .hazard-body{flex:1;min-width:0;}
+  .hazard-text{font-size:.88rem;color:var(--txt);line-height:1.3;margin-bottom:5px;}
+  .hazard-action{width:100%;background:var(--card2);border:1px solid var(--line);border-radius:7px;padding:5px 9px;color:var(--txt);font-size:.8rem;font-family:inherit;}
+  .hazard-action:focus{outline:none;border-color:var(--accent);}
+  .hazard-del{background:none;border:none;color:var(--muted);font-size:1.2rem;padding:0 4px;flex-shrink:0;margin-top:1px;opacity:.6;}
+  .hazard-add-row{display:flex;gap:8px;padding:10px 14px;border-top:1px solid var(--line);}
+  .hazard-add-input{flex:1;background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:8px 10px;color:var(--txt);font-size:.88rem;font-family:inherit;}
+  .hazard-add-input:focus{outline:none;border-color:var(--accent);}
+  .hazard-add-btn{flex-shrink:0;background:var(--accent);border:none;border-radius:8px;color:#fff;padding:8px 13px;font-size:.82rem;font-weight:700;font-family:inherit;}
+  /* count observation row */
+  .count-row{display:flex;align-items:center;gap:10px;padding:10px 14px;}
+  .count-label{flex:1;font-size:.88rem;color:var(--txt);}
+  .count-input{width:70px;background:var(--card2);border:2px solid var(--line);border-radius:8px;padding:5px 4px;color:var(--txt);font-size:.88rem;font-weight:700;font-family:inherit;text-align:center;}
+  .count-input:focus{outline:none;border-color:var(--accent);}
   .inotes{width:100%;background:var(--card2);border:1px solid var(--line);border-radius:10px;padding:10px 12px;color:var(--txt);font-size:.88rem;font-family:inherit;margin-top:10px;min-height:46px;resize:vertical;}
   .inotes:focus{outline:none;border-color:var(--accent);}
   .insp-actions{display:flex;flex-direction:column;gap:10px;margin:6px 4px 10px;}
@@ -454,27 +475,20 @@ const SEED=[];
 
 const INSPECT_SECTIONS=[
   {key:"safety",title:"Safety",subs:[
-    {label:"Documentation",items:[
-      "FLRA completed for the Task",
-      "Pre-Use inspection done and signed",
-      "Operator Permit Valid for the task",
-    ]},
     {label:"Hazards & incidents",items:[
-      "Operator PPE compilant",
+      "Operator PPE compliant",
       "Safety berm up to standard - 1.5m",
       "No geotechnical hazards around working area",
     ]},
+    {label:"Hazard identification",type:"hazards"},
   ]},
   {key:"production",title:"Production",subs:[
-    {label:"Targets & volumes",items:[
-      "Shift Mining target clear and shared",
-      "Mining Equipment split follows Daily Plan",
-      "Critical activities Communicated and Tracked",
-    ]},
     {label:"Fleet",items:[
       "Number of Prime Excavators according to Plan",
       "Number of DT according to Plan",
-      "Cycle times - Excavators & DT Logged",
+    ]},
+    {label:"Observations",type:"counts",items:[
+      {label:"Trucks underloads observed",key:"trucks_underloads"},
     ]},
   ]},
   {key:"loading",title:"Loading areas",subs:[
@@ -724,19 +738,43 @@ document.getElementById("sched-list").addEventListener("click",e=>{
 });
 
 /* ---------- INSPECTION ---------- */
-function blankInsp(){return {date:todayStr(),shift:"Day",weather:"",blockId:"",dumping:"",yn:{},comments:{},next:"",mgmt:""};}
+function blankInsp(){return {date:todayStr(),shift:"Day",weather:"",blockId:"",dumping:"",yn:{},comments:{},hazards:[],counts:{},next:"",mgmt:""};}
 let insp=load(LS_INSP,null);
 if(!insp||insp.date!==todayStr()){/* keep draft across same day only as a soft default */ if(!insp)insp=blankInsp();}
 function saveInsp(){localStorage.setItem(LS_INSP,JSON.stringify(insp));}
+function barColor(p){return p>=90?'#16a34a':p>=75?'#4f8cff':p>=50?'#ff9f43':'#ff5c6c';}
 function renderSummary(){
-  const rows=INSPECT_SECTIONS.map(sec=>{
-    let idx=0,yes=0,no=0,na=0;
-    sec.subs.forEach(sub=>{sub.items.forEach(()=>{const v=insp.yn[sec.key+"."+idx];if(v==="yes")yes++;else if(v==="no")no++;else if(v==="na")na++;idx++;});});
-    return `<tr><td class="sum-sec">${sec.title}</td><td class="sum-y">${yes}</td><td class="sum-n">${no}</td><td class="sum-na">${na}</td></tr>`;
+  let totalRated=0,totalScore=0,totalItems=0;
+  const bars=INSPECT_SECTIONS.map(sec=>{
+    let idx=0,secRated=0,secScore=0,secItems=0;
+    sec.subs.forEach(sub=>{
+      if(sub.type==="hazards"||sub.type==="counts")return;
+      sub.items.forEach(()=>{
+        const raw=insp.yn[sec.key+"."+idx];
+        const n=(raw!==undefined&&raw!==""&&!isNaN(parseInt(raw)))?parseInt(raw):null;
+        secItems++;totalItems++;
+        if(n!==null){secRated++;secScore+=n;totalRated++;totalScore+=n;}
+        idx++;
+      });
+    });
+    const pct=secRated>0?Math.round((secScore/(secRated*10))*100):0;
+    const col=secRated>0?barColor(pct):'var(--line)';
+    const label=secRated>0?pct+'%':'—';
+    return `<div class="sum-bar-row">
+      <div class="sum-bar-meta"><span class="sum-bar-name">${esc(sec.title)}</span><span class="sum-bar-pct">${label}</span></div>
+      <div class="sum-bar-bg"><div class="sum-bar-fg" style="width:${secRated>0?pct:0}%;background:${col};"></div></div>
+    </div>`;
   }).join("");
+  const overallPct=totalRated>0?Math.round((totalScore/(totalRated*10))*100):0;
+  const overallCol=totalRated>0?barColor(overallPct):'var(--muted)';
   document.getElementById("insp-summary").innerHTML=`<div class="insp-summary">
     <div class="sum-head"><h3>Inspection summary</h3></div>
-    <table class="sum-table"><tr><th class="sum-sec" style="text-align:left">Section</th><th class="sum-hdr">YES</th><th class="sum-hdr">NO</th><th class="sum-hdr">N/A</th></tr>${rows}</table>
+    <div class="sum-bars">${bars}</div>
+    <div class="sum-total">
+      <div class="sum-total-score" style="color:${overallCol}">${totalRated>0?overallPct+'%':'—'}</div>
+      <div class="sum-total-label">Overall score</div>
+      <div class="sum-total-sub">${totalRated} of ${totalItems} checks rated</div>
+    </div>
   </div>`;
 }
 let pendingFocusKey=null;
@@ -747,51 +785,109 @@ function renderInspect(){
   document.getElementById("insp-dumping").value=insp.dumping||"";
   document.getElementById("insp-next").value=insp.next||"";
   document.getElementById("insp-mgmt").value=insp.mgmt||"";
-  let totalItems=0,yesCount=0;
+  let totalItems=0,ratedCount=0,ratedScore=0;
   const html=INSPECT_SECTIONS.map(sec=>{
-    let idx=0,secYes=0,secTotal=0;
+    let idx=0,secRated=0,secScore=0,secItems=0;
     const subsHtml=sec.subs.map(sub=>{
+      /* ── hazard identification ── */
+      if(sub.type==="hazards"){
+        const hlist=insp.hazards||[];
+        const hazHtml=hlist.map((h,i)=>`<div class="hazard-item">
+          <div class="hazard-body">
+            <div class="hazard-text">${esc(h.text)}</div>
+            <input class="hazard-action icomment" type="text" placeholder="Corrective action…" value="${esc(h.action||'')}" data-ha="${i}" />
+          </div>
+          <button class="hazard-del" data-hd="${i}">×</button>
+        </div>`).join("");
+        return `<div class="isub-label">${esc(sub.label)}</div>
+        ${hazHtml}
+        <div class="hazard-add-row">
+          <input class="hazard-add-input" type="text" placeholder="Describe hazard observed…" id="hazard-add-text" />
+          <button class="hazard-add-btn" id="hazard-add-btn">+ Add</button>
+        </div>`;
+      }
+      /* ── count observations ── */
+      if(sub.type==="counts"){
+        const rowsHtml=sub.items.map(ci=>{
+          const v=(insp.counts||{})[ci.key]||"";
+          return `<div class="count-row">
+            <span class="count-label">${esc(ci.label)}</span>
+            <input class="count-input" type="number" min="0" data-ck="${ci.key}" value="${esc(String(v))}" placeholder="0" />
+          </div>`;
+        }).join("");
+        return `<div class="isub-label">${esc(sub.label)}</div>${rowsHtml}`;
+      }
+      /* ── standard rating rows ── */
       const rowsHtml=sub.items.map(item=>{
         const k=sec.key+"."+idx;
-        const yn=insp.yn[k];
+        const raw=insp.yn[k];
+        const rating=(raw!==undefined&&raw!==""&&!isNaN(parseInt(raw)))?parseInt(raw):null;
         const comment=esc(insp.comments[k]||"");
-        if(yn==="yes")secYes++;
-        secTotal++;totalItems++;idx++;
-        if(yn==="yes")yesCount++;
-        const isNo=yn==="no";
+        if(rating!==null){secRated++;secScore+=rating;ratedCount++;ratedScore+=rating;}
+        secItems++;totalItems++;idx++;
+        const rClass=rating!==null?(rating<=4?'r-low':rating<=7?'r-mid':'r-high'):'';
+        const needsComment=rating!==null&&rating<5;
+        const opts=[1,2,3,4,5,6,7,8,9,10].map(n=>`<option value="${n}"${rating===n?' selected':''}>${n}</option>`).join('');
         return `<div class="irow">
           <div class="irow-label">${esc(item)}</div>
           <div class="irow-ctrl">
-            <button class="yn yes${yn==='yes'?' on':''}" data-yn="yes" data-k="${k}">YES</button>
-            <button class="yn no${yn==='no'?' on':''}" data-yn="no" data-k="${k}">NO</button>
-            <button class="yn na${yn==='na'?' on':''}" data-yn="na" data-k="${k}">N/A</button>
-            <input class="icomment${isNo?' flagged':''}" type="text" placeholder="${isNo?'Action required…':'Comment…'}" value="${comment}" data-ck="${k}" />
+            <select class="rating-sel ${rClass}" data-k="${k}"><option value="">—</option>${opts}</select>
+            <input class="icomment${needsComment?' flagged':''}" type="text" placeholder="${needsComment?'Action required…':'Comment…'}" value="${comment}" data-ck="${k}" />
           </div>
         </div>`;
       }).join("");
       return `<div class="isub-label">${esc(sub.label)}</div>${rowsHtml}`;
     }).join("");
+    const secAvg=secRated>0?(secScore/secRated).toFixed(1):'—';
     return `<div class="isect">
-      <div class="isect-head"><h3>${sec.title}</h3><span class="cnt">${secYes}/${secTotal}</span></div>
+      <div class="isect-head"><h3>${sec.title}</h3><span class="cnt">avg ${secAvg}/10</span></div>
       ${subsHtml}
     </div>`;
   }).join("");
   document.getElementById("insp-sections").innerHTML=html;
-  document.getElementById("insp-prog").innerHTML=`<b>${yesCount}</b> of ${totalItems} checks complete`;
+  const overallPct=ratedCount>0?Math.round((ratedScore/(ratedCount*10))*100):0;
+  document.getElementById("insp-prog").innerHTML=ratedCount>0
+    ?`Overall <b>${overallPct}%</b> — ${ratedCount} of ${totalItems} checks rated`
+    :`Rate each check 1–10 to build your score`;
   renderSummary();
   updateSyncLabel();
-  if(pendingFocusKey){const inp=document.querySelector(`.icomment[data-ck="${pendingFocusKey}"]`);if(inp)inp.focus();pendingFocusKey=null;}
+  if(pendingFocusKey){const inp=document.querySelector(`.icomment[data-ck="${pendingFocusKey}"]`);if(inp){inp.focus();inp.scrollIntoView({block:'nearest'});}pendingFocusKey=null;}
 }
+document.getElementById("insp-sections").addEventListener("change",e=>{
+  const sel=e.target.closest(".rating-sel");
+  if(sel){
+    const k=sel.dataset.k,v=sel.value;
+    insp.yn[k]=v===''?undefined:parseInt(v);
+    pendingFocusKey=(v!==''&&parseInt(v)<5)?k:null;
+    vibe(8);saveInsp();renderInspect();return;
+  }
+  const cnt=e.target.closest(".count-input");
+  if(cnt){if(!insp.counts)insp.counts={};insp.counts[cnt.dataset.ck]=cnt.value;saveInsp();return;}
+});
 document.getElementById("insp-sections").addEventListener("click",e=>{
-  const btn=e.target.closest(".yn");if(!btn)return;
-  const k=btn.dataset.k,yn=btn.dataset.yn;
-  insp.yn[k]=insp.yn[k]===yn?undefined:yn;
-  pendingFocusKey=(insp.yn[k]==="no")?k:null;
-  vibe(8);saveInsp();renderInspect();
+  const addBtn=e.target.closest(".hazard-add-btn");
+  if(addBtn){
+    const inp=document.getElementById("hazard-add-text");
+    const text=(inp?inp.value:"").trim();if(!text)return;
+    if(!insp.hazards)insp.hazards=[];
+    insp.hazards.push({text,action:""});
+    saveInsp();renderInspect();vibe(8);return;
+  }
+  const del=e.target.closest(".hazard-del");
+  if(del){
+    const i=parseInt(del.dataset.hd);
+    if(insp.hazards)insp.hazards.splice(i,1);
+    saveInsp();renderInspect();vibe(8);return;
+  }
 });
 document.getElementById("insp-sections").addEventListener("input",e=>{
   const inp=e.target.closest(".icomment");if(!inp)return;
-  insp.comments[inp.dataset.ck]=inp.value;saveInsp();
+  if(inp.dataset.ha!==undefined){
+    const i=parseInt(inp.dataset.ha);
+    if(insp.hazards&&insp.hazards[i])insp.hazards[i].action=inp.value;
+    saveInsp();return;
+  }
+  if(inp.dataset.ck!==undefined){insp.comments[inp.dataset.ck]=inp.value;saveInsp();}
 });
 document.querySelectorAll(".shiftbtn").forEach(b=>b.addEventListener("click",()=>{insp.shift=b.dataset.shift;saveInsp();renderInspect();}));
 document.getElementById("insp-weather").addEventListener("input",e=>{insp.weather=e.target.value;saveInsp();});
@@ -808,16 +904,32 @@ function inspReport(){
   if(insp.blockId)md+=`**Block ID:** ${insp.blockId}  \n`;
   if(insp.dumping)md+=`**Dumping:** ${insp.dumping}  \n`;
   md+=`**Logged:** ${stamp}\n\n---\n\n`;
+  let totalRated=0,totalScore=0,totalItems=0;
   INSPECT_SECTIONS.forEach(sec=>{
     md+=`## ${sec.title}\n\n`;
     let idx=0;
     sec.subs.forEach(sub=>{
+      if(sub.type==="hazards"){
+        md+=`### Hazard identification\n\n`;
+        const hlist=insp.hazards||[];
+        if(hlist.length){hlist.forEach(h=>{md+=`- **${h.text}**`;if((h.action||"").trim())md+=` — Action: ${h.action.trim()}`;md+=`\n`;});}
+        else{md+=`_No hazards identified_\n`;}
+        md+=`\n`;return;
+      }
+      if(sub.type==="counts"){
+        md+=`### Observations\n\n`;
+        sub.items.forEach(ci=>{const v=(insp.counts||{})[ci.key];md+=`**${ci.label}:** ${v!==undefined&&v!==''?v:'—'}\n`;});
+        md+=`\n`;return;
+      }
       md+=`### ${sub.label}\n\n`;
       sub.items.forEach(item=>{
         const k=sec.key+"."+idx;
-        const yn=insp.yn[k];
+        const raw=insp.yn[k];
+        const rating=(raw!==undefined&&raw!==""&&!isNaN(parseInt(raw)))?parseInt(raw):null;
         const comment=(insp.comments[k]||"").trim();
-        const status=yn==="yes"?"YES":yn==="no"?"NO":yn==="na"?"N/A":"—";
+        totalItems++;
+        if(rating!==null){totalRated++;totalScore+=rating;}
+        const status=rating!==null?`${rating}/10`:"—";
         md+=`**${item}:** ${status}`;
         if(comment)md+=` — ${comment}`;
         md+=`\n`;
@@ -826,6 +938,8 @@ function inspReport(){
       md+=`\n`;
     });
   });
+  const overallPct=totalRated>0?Math.round((totalScore/(totalRated*10))*100):0;
+  md+=`---\n\n**Overall score: ${totalRated>0?overallPct+'%':'—'}** (${totalRated}/${totalItems} checks rated)\n\n`;
   if((insp.next||"").trim())md+=`## Plan for next shift\n${insp.next.trim()}\n\n`;
   if((insp.mgmt||"").trim())md+=`## Notes for management\n${insp.mgmt.trim()}\n\n`;
   md+=`---\n_Sign-off: Peter Anthony — Mining Superintendent_\n`;
