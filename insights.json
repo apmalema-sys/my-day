@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-23T21:55:09",
+  "generatedAt": "2026-06-23T21:57:59",
   "date": "2026-06-23",
   "runNumber": 21,
   "summary": "Total movement 71,061 t, all waste. Weekly position +13,000 t above target. MTD by survey ~63,000 t above target.",
@@ -24,8 +24,8 @@
     },
     {
       "label": "Days Remain",
-      "value": "3",
-      "delta": "in production month",
+      "value": "2",
+      "delta": "ends Jun 24",
       "good": null
     }
   ],
@@ -49,23 +49,41 @@
       "note": "Continued partial operation; full return status not confirmed."
     },
     {
+      "unit": "DT-367",
+      "type": "Haul Truck",
+      "status": "warning",
+      "note": "Final drive components arriving June 25 — repair progressing. Earlier plan showed 0% through June 29 / return "
+    },
+    {
+      "unit": "DT-128",
+      "type": "Haul Truck",
+      "status": "warning",
+      "note": "Transmission + brake fault (June 21) — status to be confirmed."
+    },
+    {
       "unit": "DT-130",
       "type": "Haul Truck",
       "status": "warning",
-      "note": "### Ancillary fleet — June 22–23"
+      "note": "Transmission warning (June 21) — status to be confirmed."
+    },
+    {
+      "unit": "GD-279",
+      "type": "Grader",
+      "status": "warning",
+      "note": "Fan bearing fault — repair in progress as of HOD June 23."
     }
   ],
   "followUps": [
     {
-      "priority": "CRITICAL",
-      "title": "HOD schedule change: meetings now Thursdays only (safety meetings contin...",
-      "body": "",
+      "priority": "HIGH",
+      "title": "Stage 4 excavator productivity ~396 BCM — slightly below target",
+      "body": "Pre-split angle changed from 75° to 90°, worsening edge burden. See blasting-and-drilling.md.",
       "action": ""
     },
     {
       "priority": "HIGH",
-      "title": "Stage 4 excavator productivity ~396 BCM — slightly below target",
-      "body": "Pre-split angle changed from 75° to 90°, worsening edge burden. See blasting-and-drilling.md.",
+      "title": "DT-367 final drives arriving June 25 — may return before July 2 forecast...",
+      "body": "",
       "action": ""
     },
     {
@@ -76,13 +94,13 @@
     },
     {
       "priority": "MONITOR",
-      "title": "DT-367 final drives arriving June 25 — may return before July 2 forecast...",
+      "title": "New fuel truck commissioned and operational",
       "body": "",
       "action": ""
     },
     {
       "priority": "MONITOR",
-      "title": "New fuel truck commissioned and operational",
+      "title": "QFCC blast result email distribution now active: before + after each bla...",
       "body": "",
       "action": ""
     }
