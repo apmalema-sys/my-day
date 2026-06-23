@@ -1,13 +1,14 @@
 {
   "date": "2026-06-23",
-  "topic": "Lost GET Recovery",
-  "title": "Stop First. Every Second After That Costs More.",
-  "body": "When a Ground Engaging Tool separates from a bucket or dozer blade, the clock starts immediately — muck moves fast through the load-and-haul cycle. The ADW procedure runs four phases in sequence: Stop, Report, Recover, Verify. Skipping or rushing any phase risks a tooth reaching the primary crusher, which means liner damage, plant downtime, and a safety event that will take days to explain.",
+  "topic": "New Foremen Onboarding",
+  "title": "New Foremen Onboarding",
+  "body": "When a new foreman is thrown straight onto an independent shift without structured preparation, you get the exact supervision-quality failures that show up repeatedly in your NCR corpus — supervisor present, didn't intervene. Four weeks of supervised practice fixes that gap; a one-day induction doesn't.",
   "keyPoints": [
-    "The operator must stop the equipment the moment GET loss is suspected — not after the pass, not after the load. Stop immediately and notify the supervisor with time and GPS location.",
-    "The Missing GET Reporting sheet must capture Equipment ID, operator name, time, GPS coordinates, and the type and count of missing GET. Incomplete reporting means Survey can't pinpoint the search zone.",
-    "If the piece isn't recovered after exhaustive effort, senior management must inform the client representative before it reaches the crusher — and the ROM Pad loader operator becomes the last human interception point, examining every feed load.",
-    "Pre-start GET inspections on all mobile equipment and daily service checks are the first line of defence. Operators trained to feel and hear a lost tooth prevent the event before it starts."
+    "The program runs four pillars — technical competence, safety and compliance leadership, shift control and decision-making, and people leadership. Assessment at Week 4 rates each pillar 1–5. A foreman who scores well on technical but poorly on leadership isn't ready.",
+    "Week 2 is where the field skills get built: match-up, spotting, road standards, hazard ID, and NCR writing under supervision. This is also where most new foremen expose gaps they didn't know they had.",
+    "The Week 4 readiness decision has three outcomes — Ready, Ready with Support, or Not Yet Ready. \"Not Yet Ready\" needs a defined path: what additional training, who signs off the second readiness call, and how long the extension runs. That path should be explicit before the program starts, not figured out when someone fails.",
+    "The 90-day post-onboarding support (weekly check-ins with the Superintendent, monthly KPI review, peer mentoring) is where the program actually cements. Week 4 is the test — the 90 days are where the standard gets held."
   ],
-  "apply": "Before first pass on your primary loading units today, physically verify that the GET inspection was signed off on the pre-start sheets. Confirm the excavator operator knows the current procedure for suspected loss — ask them what they would do first. If anyone hesitates, that's your debrief topic at the next toolbox."
+  "apply": "If you have a foreman currently in their first 90 days post-onboarding, their shift handover quality is the single clearest indicator of whether the onboarding actually landed — check it specifically at shift start and shift end, where your NCR data says incidents cluster.",
+  "generatedAt": "2026-06-23T22:06:16"
 }
