@@ -1,83 +1,90 @@
 {
-  "date": "2026-06-19",
-  "runNumber": 17,
-  "generatedAt": "2026-06-23T21:24:02",
-  "summary": "Two Important References emails arrived overnight: one from Muhammad Usman (MOM) on site operations and safety, one from Collins Amponsah re-circulating a 6-month-old Maaden complaint on HOD coverage. Together they signal two distinct risk threads — a survey production gap requiring urgent recovery, and a leadership governance gap that hasn't been resolved since December 2025.",
-  "sources": [
+  "generatedAt": "2026-06-23T21:55:09",
+  "date": "2026-06-23",
+  "runNumber": 21,
+  "summary": "Total movement 71,061 t, all waste. Weekly position +13,000 t above target. MTD by survey ~63,000 t above target.",
+  "kpis": [
     {
-      "title": "MOM — Site Operations & Safety Review (June 18, 2026)",
-      "from": "Muhammad Usman (Maaden MOM)",
-      "keyPoints": [
-        "MTD survey confirmed at 460,076 BCM — 6% behind monthly target. With ~12 production days elapsed, recovery requires sustained above-plan daily rates for the final 12 days of June.",
-        "The MOM's \"6% behind target\" framing understates the truck-vs-survey gap: trucks show 533,293 BCM MTD, meaning the survey-truck reconciliation gap is ~73,217 BCM (−13.7%). The 6% figure references survey vs the monthly production target, not the internal truck count.",
-        "5 million man-hours without a Lost Time Injury (5M LTI) achieved. Significant milestone for the JRAR contract.",
-        "MOM confirmed Sunday June 21 as the EX-123 return-to-service target. This represents a 2-day slip from the original plan. Eight consecutive days at 0% (stick cylinder leak, Date In 11-Jun-26).",
-        "Genset changeover assigned to Louw."
-      ],
-      "actions": [
-        {
-          "id": 1,
-          "action": "Confirm EX-123 stage-readiness for Sunday June 21 return — check stick cylinder repair completion status with workshop",
-          "owner": "Peter Anthony / Workshop HOD",
-          "priority": "High"
-        },
-        {
-          "id": 2,
-          "action": "Monitor daily survey rate: need ~22,400+ BCM/day survey through June 30 to close the 6% gap",
-          "owner": "Production team",
-          "priority": "High"
-        },
-        {
-          "id": 3,
-          "action": "Confirm genset changeover (Louw) completed June 19",
-          "owner": "Louw / Peter Anthony",
-          "priority": "Medium"
-        },
-        {
-          "id": 4,
-          "action": "Stage-6 cleanup crew and equipment assigned for June 19",
-          "owner": "Shift supervisor",
-          "priority": "Medium"
-        },
-        {
-          "id": 5,
-          "action": "Prepare June KPI supporting data for HO submission",
-          "owner": "Peter Anthony",
-          "priority": "Medium"
-        }
-      ]
+      "label": "MTD BCM",
+      "value": "593,278",
+      "delta": "+5.0% vs target",
+      "good": true
     },
     {
-      "title": "FW — Operational Continuity: HOD Coverage and Shift Communication",
-      "from": "Collins Amponsah (JRAR Safety Trainer / supervisor)",
-      "keyPoints": [],
-      "actions": [
-        {
-          "id": 6,
-          "action": "Establish a formal HOD coverage roster — designating named deputies before any HOD takes leave, with Collins and superintendent notified in advance",
-          "owner": "Peter Anthony + all HODs",
-          "priority": "High"
-        },
-        {
-          "id": 7,
-          "action": "Confirm current HOD coverage for this week (June 19 onwards) is in place — no simultaneous absences",
-          "owner": "Peter Anthony",
-          "priority": "High"
-        },
-        {
-          "id": 8,
-          "action": "Raise HOD coverage governance in next operations meeting as a standing agenda item",
-          "owner": "Peter Anthony",
-          "priority": "Medium"
-        },
-        {
-          "id": 9,
-          "action": "Acknowledge Collins Amponsah's re-circulation directive — confirm receipt and planned action",
-          "owner": "Peter Anthony",
-          "priority": "Medium"
-        }
-      ]
+      "label": "Survey Gap",
+      "value": "-9.4%",
+      "delta": "survey vs trucks MTD",
+      "good": false
+    },
+    {
+      "label": "Crusher MTD",
+      "value": "51%",
+      "delta": "63,278 / 124,000 LCM",
+      "good": null
+    },
+    {
+      "label": "Days Remain",
+      "value": "3",
+      "delta": "in production month",
+      "good": null
     }
   ],
-  "crossCutting": "### Survey recovery trajectory\nThe MOM email gives the official survey MTD position (460,076 BCM, 6% behind target). This aligns with but differs from the internal truck-count MTD (533,293 BCM). The ~73,000 BCM gap between trucks and survey is the persistent reconciliation issue driven by excavators loading outside survey calculation boundaries (EX-253 and EX-262 have been the recurring drivers). Closing this gap requires either getting excavators within boundary or negotiating survey methodology adjustments.\n\n### EX-123 return dependency\nThe Sunday June 21 EX-123 return is now confirmed at MOM level, meaning it is a committed deliverable. Any further slip will require proactive communication upward. The stick cylinder repair must be verified complete before Sunday's shift start.\n\n### Leadership visibility\nCollins' re-circulation email signals that both safety and operational continuity issues are being escalated through the JRAR chain. Peter Anthony sits at the intersection of both threads — HOD coverage is a leadership governance issue within his remit, and the survey recovery is a production management issue. Both have been flagged to management level.\n\n---"
+  "equipment": [
+    {
+      "unit": "EX-253",
+      "type": "Excavator",
+      "status": "scheduled",
+      "note": "Pulled June 22; service June 23. Return date TBC."
+    },
+    {
+      "unit": "EX-263",
+      "type": "Excavator",
+      "status": "returned",
+      "note": "Running alongside EX-1250 on same block as of June 22."
+    },
+    {
+      "unit": "EX-123",
+      "type": "Excavator",
+      "status": "partial",
+      "note": "Continued partial operation; full return status not confirmed."
+    },
+    {
+      "unit": "DT-130",
+      "type": "Haul Truck",
+      "status": "warning",
+      "note": "### Ancillary fleet — June 22–23"
+    }
+  ],
+  "followUps": [
+    {
+      "priority": "CRITICAL",
+      "title": "HOD schedule change: meetings now Thursdays only (safety meetings contin...",
+      "body": "",
+      "action": ""
+    },
+    {
+      "priority": "HIGH",
+      "title": "Stage 4 excavator productivity ~396 BCM — slightly below target",
+      "body": "Pre-split angle changed from 75° to 90°, worsening edge burden. See blasting-and-drilling.md.",
+      "action": ""
+    },
+    {
+      "priority": "MONITOR",
+      "title": "EX-253 pulled for planned 2,000-hour service June 22–23",
+      "body": "",
+      "action": ""
+    },
+    {
+      "priority": "MONITOR",
+      "title": "DT-367 final drives arriving June 25 — may return before July 2 forecast...",
+      "body": "",
+      "action": ""
+    },
+    {
+      "priority": "MONITOR",
+      "title": "New fuel truck commissioned and operational",
+      "body": "",
+      "action": ""
+    }
+  ]
 }
