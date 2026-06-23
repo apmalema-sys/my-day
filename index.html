@@ -124,11 +124,10 @@
   .irow:last-child{border-bottom:none;}
   .irow-label{font-size:.88rem;color:var(--txt);line-height:1.3;margin-bottom:8px;}
   .irow-ctrl{display:flex;align-items:center;gap:7px;}
-  .rating-sel{flex-shrink:0;width:70px;border:2px solid var(--line);border-radius:8px;padding:5px 2px;background:var(--card2);color:var(--txt);font-size:.85rem;font-weight:700;font-family:inherit;text-align:center;}
-  .rating-sel:focus{outline:none;border-color:var(--accent);}
-  .rating-sel.r-low{border-color:#dc2626;background:rgba(220,38,38,.09);}
-  .rating-sel.r-mid{border-color:#ff9f43;background:rgba(255,159,67,.09);}
-  .rating-sel.r-high{border-color:#16a34a;background:rgba(22,163,74,.09);}
+  .yn{padding:6px 11px;border-radius:8px;font-size:.75rem;font-weight:700;font-family:inherit;border:1px solid var(--line);background:var(--card2);color:var(--muted);flex-shrink:0;}
+  .yn.yes.on{background:#16a34a;border-color:#16a34a;color:#fff;}
+  .yn.no.on{background:#dc2626;border-color:#dc2626;color:#fff;}
+  .yn.na.on{background:#6b7280;border-color:#6b7280;color:#fff;}
   .icomment{flex:1;min-width:0;background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:6px 9px;color:var(--txt);font-size:.82rem;font-family:inherit;}
   .icomment::placeholder{color:var(--muted);}
   .icomment:focus{outline:none;border-color:var(--accent);}
@@ -217,24 +216,11 @@
   .row2{display:flex;gap:10px;}
   .row2 .field{flex:1;}
 
-  /* ---- pomodoro ---- */
-  .focus-wrap{display:flex;flex-direction:column;align-items:center;padding-top:8px;}
-  .modes{display:flex;gap:8px;margin-bottom:24px;}
-  .mode{font-size:.82rem;font-weight:700;padding:9px 16px;border-radius:999px;background:var(--card);border:1px solid var(--line);color:var(--muted);}
-  .mode.on{background:var(--accent);border-color:var(--accent);color:#fff;}
-  .ring-box{position:relative;width:256px;height:256px;margin-bottom:8px;}
-  .ring-box svg{transform:rotate(-90deg);}
-  .ring-bg{fill:none;stroke:var(--line);stroke-width:14;}
-  .ring-fg{fill:none;stroke:var(--accent);stroke-width:14;stroke-linecap:round;transition:stroke-dashoffset 1s linear,stroke .3s;}
-  .ring-label{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;}
-  .ring-label .time{font-size:3.5rem;font-weight:800;letter-spacing:-.03em;font-variant-numeric:tabular-nums;}
-  .ring-label .state{font-size:.82rem;color:var(--muted);font-weight:600;text-transform:uppercase;letter-spacing:.1em;margin-top:2px;}
-  .controls{display:flex;gap:14px;margin-top:22px;align-items:center;}
-  .ctrl{width:64px;height:64px;border-radius:50%;border:1px solid var(--line);background:var(--card);color:var(--txt);font-size:1.4rem;display:flex;align-items:center;justify-content:center;}
-  .ctrl.main{width:84px;height:84px;background:var(--accent);border-color:var(--accent);font-size:1.7rem;box-shadow:0 8px 24px rgba(79,140,255,.4);}
-  .ctrl:active{transform:scale(.93);}
-  .sessions{margin-top:20px;font-size:.82rem;color:var(--muted);font-weight:600;}
-  .sessions b{color:var(--low);}
+  /* ---- inspect sub-tabs ---- */
+  .insp-subtabs{display:flex;gap:8px;margin:2px 4px 14px;}
+  .insp-subtab{flex:1;padding:10px;border-radius:10px;background:var(--card2);border:1px solid var(--line);color:var(--muted);font-weight:700;font-size:.85rem;font-family:inherit;}
+  .insp-subtab.on{background:var(--accent);border-color:var(--accent);color:#fff;}
+  .lsr-badge{display:inline-block;font-size:.62rem;font-weight:800;background:rgba(255,92,108,.2);color:#f87171;border-radius:6px;padding:1px 6px;margin-left:6px;vertical-align:middle;}
 
   /* ---- tab bar ---- */
   nav{flex-shrink:0;display:flex;background:rgba(13,20,40,.92);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);border-top:1px solid var(--line);padding:8px 0 calc(var(--safe-bot) + 6px);}
@@ -293,58 +279,54 @@
 
     <!-- INSPECT -->
     <section class="view" id="view-inspect">
-      <div class="insp-top">
-        <div class="shiftrow">
-          <button class="shiftbtn on" data-shift="Day">☀︎ Day</button>
-          <button class="shiftbtn" data-shift="Night">☾ Night</button>
-        </div>
-        <input class="insp-field" id="insp-weather" placeholder="Weather / visibility" />
-        <input class="insp-field" id="insp-blockid" placeholder="Block ID" />
-        <input class="insp-field" id="insp-dumping" placeholder="Dumping" style="margin-bottom:0" />
+      <div class="insp-subtabs">
+        <button class="insp-subtab on" data-it="ops">Operation</button>
+        <button class="insp-subtab" data-it="lsr">LSR &amp; SOPs</button>
       </div>
-      <div class="insp-prog" id="insp-prog"></div>
-      <div id="insp-sections"></div>
-      <div class="isect" style="padding:13px 14px;">
-        <h3 style="font-size:.95rem;font-weight:700;margin-bottom:10px;">Plan for next shift</h3>
-        <textarea class="inotes" id="insp-next" placeholder="Actions to carry into next shift — owner — by when" style="margin-top:0"></textarea>
-      </div>
-      <div class="isect" style="padding:13px 14px;">
-        <h3 style="font-size:.95rem;font-weight:700;margin-bottom:10px;">Notes for management</h3>
-        <textarea class="inotes" id="insp-mgmt" placeholder="Anything management needs to know" style="margin-top:0"></textarea>
-      </div>
-      <div id="insp-summary"></div>
-      <div class="insp-actions">
-        <button class="btn" id="insp-share">Send to CoWork</button>
-        <button class="btn alt" id="insp-copy">Copy report</button>
-        <button class="btn warn" id="insp-finish">Finish &amp; start new inspection</button>
-        <button class="btn ghost" id="insp-settings" style="font-size:.82rem;">⚙︎ Sync email: not set</button>
-      </div>
-    </section>
 
-    <!-- FOCUS -->
-    <section class="view" id="view-focus">
-      <div class="focus-wrap">
-        <div class="modes">
-          <button class="mode on" data-m="focus">Focus</button>
-          <button class="mode" data-m="short">Break</button>
-          <button class="mode" data-m="long">Long</button>
-        </div>
-        <div class="ring-box">
-          <svg width="256" height="256" viewBox="0 0 256 256">
-            <circle class="ring-bg" cx="128" cy="128" r="114"></circle>
-            <circle class="ring-fg" id="ring" cx="128" cy="128" r="114"></circle>
-          </svg>
-          <div class="ring-label">
-            <div class="time" id="timer">25:00</div>
-            <div class="state" id="timer-state">Ready</div>
+      <!-- ── Operation Inspection ── -->
+      <div id="insp-ops">
+        <div class="insp-top">
+          <div class="shiftrow">
+            <button class="shiftbtn on" data-shift="Day">☀︎ Day</button>
+            <button class="shiftbtn" data-shift="Night">☾ Night</button>
           </div>
+          <input class="insp-field" id="insp-weather" placeholder="Weather / visibility" />
+          <input class="insp-field" id="insp-blockid" placeholder="Block ID" />
+          <input class="insp-field" id="insp-dumping" placeholder="Dumping" style="margin-bottom:0" />
         </div>
-        <div class="controls">
-          <button class="ctrl" id="btn-reset" aria-label="Reset">↺</button>
-          <button class="ctrl main" id="btn-play" aria-label="Start">▶</button>
-          <button class="ctrl" id="btn-skip" aria-label="Skip">⏭</button>
+        <div class="insp-prog" id="insp-prog"></div>
+        <div id="insp-sections"></div>
+        <div class="isect" style="padding:13px 14px;">
+          <h3 style="font-size:.95rem;font-weight:700;margin-bottom:10px;">Plan for next shift</h3>
+          <textarea class="inotes" id="insp-next" placeholder="Actions to carry into next shift — owner — by when" style="margin-top:0"></textarea>
         </div>
-        <div class="sessions">Completed today: <b id="pomo-count">0</b> sessions</div>
+        <div class="isect" style="padding:13px 14px;">
+          <h3 style="font-size:.95rem;font-weight:700;margin-bottom:10px;">Notes for management</h3>
+          <textarea class="inotes" id="insp-mgmt" placeholder="Anything management needs to know" style="margin-top:0"></textarea>
+        </div>
+        <div id="insp-summary"></div>
+        <div class="insp-actions">
+          <button class="btn" id="insp-share">Send to CoWork</button>
+          <button class="btn alt" id="insp-copy">Copy report</button>
+          <button class="btn warn" id="insp-finish">Finish &amp; start new inspection</button>
+          <button class="btn ghost" id="insp-settings" style="font-size:.82rem;">⚙︎ Sync email: not set</button>
+        </div>
+      </div>
+
+      <!-- ── LSR & SOPs ── -->
+      <div id="insp-lsr" style="display:none">
+        <div class="insp-prog" id="lsr-prog"></div>
+        <div id="lsr-sections"></div>
+        <div id="lsr-summary"></div>
+        <div class="isect" style="padding:13px 14px;">
+          <h3 style="font-size:.95rem;font-weight:700;margin-bottom:10px;">Shift notes</h3>
+          <textarea class="inotes" id="lsr-notes" placeholder="Overall LSR / SOP observations for this shift" style="margin-top:0"></textarea>
+        </div>
+        <div class="insp-actions">
+          <button class="btn" id="lsr-share">Send to CoWork</button>
+          <button class="btn alt" id="lsr-copy">Copy report</button>
+        </div>
       </div>
     </section>
 
@@ -385,10 +367,6 @@
     <button class="tab" data-v="inspect">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M9 14l2 2 4-4"/></svg>
       <span class="lbl">Inspect</span>
-    </button>
-    <button class="tab" data-v="focus">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="13" r="8"/><path d="M12 9v4l2 2"/><path d="M9 2h6M12 5V2"/></svg>
-      <span class="lbl">Focus</span>
     </button>
   </nav>
 </div>
@@ -554,6 +532,72 @@ const INSPECT_SECTIONS=[
     {label:"Operations",items:[
       "Rock breaker available for oversize rocks breaking",
       "ROM pad access road clear and in acceptable condition",
+    ]},
+  ]},
+];
+
+const LSR_SOP_SECTIONS=[
+  {key:"lsr_lof",title:"LSR — Line of Fire",subs:[
+    {label:"Observations",items:[
+      "No personnel in excavator swing radius during loading",
+      "No LV or personnel in active haul truck travel path",
+      "Reversing equipment using spotter or proximity detection",
+      "Spotters positioned outside line of fire at dump crest",
+      "Operators remaining in cab — no walking near operating buckets",
+    ]},
+  ]},
+  {key:"lsr_mob",title:"LSR — Mobile Equipment",subs:[
+    {label:"Observations",items:[
+      "All mobile equipment operators wearing seatbelts",
+      "LV/HV segregation maintained — LVs in designated areas only",
+      "Speed limits observed on haul roads and intersections",
+      "No operator distraction observed (phones, fatigue signs)",
+      "Safe following distance maintained between haul trucks",
+    ]},
+  ]},
+  {key:"lsr_geo",title:"LSR — Geotechnical & Ground Control",subs:[
+    {label:"Observations",items:[
+      "No loading or personnel within highwall crest exclusion zone",
+      "No visible tension cracks, overhangs, or unstable bench face",
+      "Equipment maintaining approved setback distance from bench crest",
+      "Haul trucks staying within road width — not tracking near crest edge",
+      "Water pooling or seepage at bench face reported and being monitored",
+      "Geotechnical exclusion zones marked and respected by all crews",
+    ]},
+  ]},
+  {key:"sop_ht",title:"SOP — Haul Truck Operation",subs:[
+    {label:"Compliance checks",items:[
+      "Pre-use inspection completed and signed before shift start",
+      "Truck payload within approved limits — no overloading observed",
+      "Truck speed compliant on ramps and haul roads",
+    ]},
+  ]},
+  {key:"sop_ex",title:"SOP — Excavator Operation",subs:[
+    {label:"Compliance checks",items:[
+      "Swing angle optimised — consistently below 90 degrees",
+      "Loading pad correctly set up before excavation begins",
+      "GET condition checked — no missing teeth or loose adapters",
+    ]},
+  ]},
+  {key:"sop_tm",title:"SOP — Traffic Management",subs:[
+    {label:"Compliance checks",items:[
+      "Traffic control plan visible and followed in all active areas",
+      "Directional and speed signs legible and correctly positioned",
+      "LV and HV travelling in designated lanes — no mixing observed",
+    ]},
+  ]},
+  {key:"sop_dp",title:"SOP — Dump Procedure",subs:[
+    {label:"Compliance checks",items:[
+      "Push-up berm present, continuous and height compliant at dump crest",
+      "Dump approach road clear of spillage and in graded condition",
+      "Tipping sequence follows approved dump plan",
+    ]},
+  ]},
+  {key:"sop_cr",title:"SOP — Crusher Feed & ROM Pad",subs:[
+    {label:"Compliance checks",items:[
+      "Ore blend to crusher matches approved plan",
+      "ROM pad access road clear and in acceptable condition",
+      "Push-up berm at ROM pad edges present and height compliant",
     ]},
   ]},
 ];
@@ -742,42 +786,37 @@ document.getElementById("sched-list").addEventListener("click",e=>{
 });
 
 /* ---------- INSPECTION ---------- */
-function blankInsp(){return {date:todayStr(),shift:"Day",weather:"",blockId:"",dumping:"",yn:{},comments:{},hazards:[],counts:{},next:"",mgmt:""};}
+function blankInsp(){return {date:todayStr(),shift:"Day",weather:"",blockId:"",dumping:"",yn:{},comments:{},hazards:[],counts:{},next:"",mgmt:"",lsrNotes:""};}
 let insp=load(LS_INSP,null);
 if(!insp||insp.date!==todayStr()){/* keep draft across same day only as a soft default */ if(!insp)insp=blankInsp();}
 function saveInsp(){localStorage.setItem(LS_INSP,JSON.stringify(insp));}
 function barColor(p){return p>=90?'#16a34a':p>=75?'#4f8cff':p>=50?'#ff9f43':'#ff5c6c';}
 function renderSummary(){
-  let totalRated=0,totalScore=0,totalItems=0;
+  let totYes=0,totNo=0,totNa=0;
   const bars=INSPECT_SECTIONS.map(sec=>{
-    let idx=0,secRated=0,secScore=0,secItems=0;
+    let idx=0,yes=0,no=0,na=0;
     sec.subs.forEach(sub=>{
       if(sub.type==="hazards"||sub.type==="counts")return;
-      sub.items.forEach(()=>{
-        const raw=insp.yn[sec.key+"."+idx];
-        const n=(raw!==undefined&&raw!==""&&!isNaN(parseInt(raw)))?parseInt(raw):null;
-        secItems++;totalItems++;
-        if(n!==null){secRated++;secScore+=n;totalRated++;totalScore+=n;}
-        idx++;
-      });
+      sub.items.forEach(()=>{const v=insp.yn[sec.key+"."+idx];if(v==="yes")yes++;else if(v==="no")no++;else if(v==="na")na++;idx++;});
     });
-    const pct=secRated>0?Math.round((secScore/(secRated*10))*100):0;
-    const col=secRated>0?barColor(pct):'var(--line)';
-    const label=secRated>0?pct+'%':'—';
+    totYes+=yes;totNo+=no;totNa+=na;
+    const ans=yes+no+na;const pct=ans>0?Math.round((yes/ans)*100):0;
+    const col=ans>0?barColor(pct):'var(--line)';
     return `<div class="sum-bar-row">
-      <div class="sum-bar-meta"><span class="sum-bar-name">${esc(sec.title)}</span><span class="sum-bar-pct">${label}</span></div>
-      <div class="sum-bar-bg"><div class="sum-bar-fg" style="width:${secRated>0?pct:0}%;background:${col};"></div></div>
+      <div class="sum-bar-meta"><span class="sum-bar-name">${esc(sec.title)}</span><span class="sum-bar-pct">${ans>0?pct+'%':'—'}</span></div>
+      <div class="sum-bar-bg"><div class="sum-bar-fg" style="width:${ans>0?pct:0}%;background:${col};"></div></div>
     </div>`;
   }).join("");
-  const overallPct=totalRated>0?Math.round((totalScore/(totalRated*10))*100):0;
-  const overallCol=totalRated>0?barColor(overallPct):'var(--muted)';
+  const totAns=totYes+totNo+totNa;
+  const oPct=totAns>0?Math.round((totYes/totAns)*100):0;
+  const oCol=totAns>0?barColor(oPct):'var(--muted)';
   document.getElementById("insp-summary").innerHTML=`<div class="insp-summary">
     <div class="sum-head"><h3>Inspection summary</h3></div>
     <div class="sum-bars">${bars}</div>
     <div class="sum-total">
-      <div class="sum-total-score" style="color:${overallCol}">${totalRated>0?overallPct+'%':'—'}</div>
-      <div class="sum-total-label">Overall score</div>
-      <div class="sum-total-sub">${totalRated} of ${totalItems} checks rated</div>
+      <div class="sum-total-score" style="color:${oCol}">${totAns>0?oPct+'%':'—'}</div>
+      <div class="sum-total-label">Compliance</div>
+      <div class="sum-total-sub">${totYes} YES &nbsp;·&nbsp; ${totNo} NO &nbsp;·&nbsp; ${totNa} N/A</div>
     </div>
   </div>`;
 }
@@ -789,9 +828,9 @@ function renderInspect(){
   document.getElementById("insp-dumping").value=insp.dumping||"";
   document.getElementById("insp-next").value=insp.next||"";
   document.getElementById("insp-mgmt").value=insp.mgmt||"";
-  let totalItems=0,ratedCount=0,ratedScore=0;
+  let totalItems=0,yesCount=0;
   const html=INSPECT_SECTIONS.map(sec=>{
-    let idx=0,secRated=0,secScore=0,secItems=0;
+    let idx=0,secYes=0,secTotal=0;
     const subsHtml=sec.subs.map(sub=>{
       /* ── hazard identification ── */
       if(sub.type==="hazards"){
@@ -821,54 +860,114 @@ function renderInspect(){
         }).join("");
         return `<div class="isub-label">${esc(sub.label)}</div>${rowsHtml}`;
       }
-      /* ── standard rating rows ── */
+      /* ── standard Yes / No / N/A rows ── */
       const rowsHtml=sub.items.map(item=>{
         const k=sec.key+"."+idx;
-        const raw=insp.yn[k];
-        const rating=(raw!==undefined&&raw!==""&&!isNaN(parseInt(raw)))?parseInt(raw):null;
+        const yn=insp.yn[k];
         const comment=esc(insp.comments[k]||"");
-        if(rating!==null){secRated++;secScore+=rating;ratedCount++;ratedScore+=rating;}
-        secItems++;totalItems++;idx++;
-        const rClass=rating!==null?(rating<=4?'r-low':rating<=7?'r-mid':'r-high'):'';
-        const needsComment=rating!==null&&rating<5;
-        const opts=[1,2,3,4,5,6,7,8,9,10].map(n=>`<option value="${n}"${rating===n?' selected':''}>${n}</option>`).join('');
+        if(yn==="yes")secYes++;
+        secTotal++;totalItems++;idx++;
+        if(yn==="yes")yesCount++;
+        const isNo=yn==="no";
         return `<div class="irow">
           <div class="irow-label">${esc(item)}</div>
           <div class="irow-ctrl">
-            <select class="rating-sel ${rClass}" data-k="${k}"><option value="">—</option>${opts}</select>
-            <input class="icomment${needsComment?' flagged':''}" type="text" placeholder="${needsComment?'Action required…':'Comment…'}" value="${comment}" data-ck="${k}" />
+            <button class="yn yes${yn==='yes'?' on':''}" data-yn="yes" data-k="${k}">YES</button>
+            <button class="yn no${yn==='no'?' on':''}" data-yn="no" data-k="${k}">NO</button>
+            <button class="yn na${yn==='na'?' on':''}" data-yn="na" data-k="${k}">N/A</button>
+            <input class="icomment${isNo?' flagged':''}" type="text" placeholder="${isNo?'Action required…':'Comment…'}" value="${comment}" data-ck="${k}" />
           </div>
         </div>`;
       }).join("");
       return `<div class="isub-label">${esc(sub.label)}</div>${rowsHtml}`;
     }).join("");
-    const secAvg=secRated>0?(secScore/secRated).toFixed(1):'—';
     return `<div class="isect">
-      <div class="isect-head"><h3>${sec.title}</h3><span class="cnt">avg ${secAvg}/10</span></div>
+      <div class="isect-head"><h3>${sec.title}</h3><span class="cnt">${secYes}/${secTotal}</span></div>
       ${subsHtml}
     </div>`;
   }).join("");
   document.getElementById("insp-sections").innerHTML=html;
-  const overallPct=ratedCount>0?Math.round((ratedScore/(ratedCount*10))*100):0;
-  document.getElementById("insp-prog").innerHTML=ratedCount>0
-    ?`Overall <b>${overallPct}%</b> — ${ratedCount} of ${totalItems} checks rated`
-    :`Rate each check 1–10 to build your score`;
+  document.getElementById("insp-prog").innerHTML=`<b>${yesCount}</b> of ${totalItems} checks complete`;
   renderSummary();
   updateSyncLabel();
   if(pendingFocusKey){const inp=document.querySelector(`.icomment[data-ck="${pendingFocusKey}"]`);if(inp){inp.focus();inp.scrollIntoView({block:'nearest'});}pendingFocusKey=null;}
 }
+
+/* ---------- LSR & SOPs ---------- */
+function renderLSRSummary(){
+  let totYes=0,totNo=0,totNa=0;
+  const bars=LSR_SOP_SECTIONS.map(sec=>{
+    let idx=0,yes=0,no=0,na=0;
+    sec.subs.forEach(sub=>{sub.items.forEach(()=>{const v=insp.yn[sec.key+"."+idx];if(v==="yes")yes++;else if(v==="no")no++;else if(v==="na")na++;idx++;});});
+    totYes+=yes;totNo+=no;totNa+=na;
+    const ans=yes+no+na;const pct=ans>0?Math.round((yes/ans)*100):0;
+    const col=ans>0?barColor(pct):'var(--line)';
+    return `<div class="sum-bar-row">
+      <div class="sum-bar-meta"><span class="sum-bar-name">${esc(sec.title)}</span><span class="sum-bar-pct">${ans>0?pct+'%':'—'}</span></div>
+      <div class="sum-bar-bg"><div class="sum-bar-fg" style="width:${ans>0?pct:0}%;background:${col};"></div></div>
+    </div>`;
+  }).join("");
+  const totAns=totYes+totNo+totNa;
+  const oPct=totAns>0?Math.round((totYes/totAns)*100):0;
+  const oCol=totAns>0?barColor(oPct):'var(--muted)';
+  document.getElementById("lsr-summary").innerHTML=`<div class="insp-summary">
+    <div class="sum-head"><h3>LSR &amp; SOP summary</h3></div>
+    <div class="sum-bars">${bars}</div>
+    <div class="sum-total">
+      <div class="sum-total-score" style="color:${oCol}">${totAns>0?oPct+'%':'—'}</div>
+      <div class="sum-total-label">Compliance rate</div>
+      <div class="sum-total-sub">${totYes} YES &nbsp;·&nbsp; ${totNo} NO &nbsp;·&nbsp; ${totNa} N/A</div>
+    </div>
+  </div>`;
+}
+function renderLSR(){
+  document.getElementById("lsr-notes").value=insp.lsrNotes||"";
+  let totalItems=0,yesCount=0;
+  const html=LSR_SOP_SECTIONS.map(sec=>{
+    let idx=0,secYes=0,secTotal=0;
+    const subsHtml=sec.subs.map(sub=>{
+      const rowsHtml=sub.items.map(item=>{
+        const k=sec.key+"."+idx;
+        const yn=insp.yn[k];
+        const comment=esc(insp.comments[k]||"");
+        if(yn==="yes")secYes++;
+        secTotal++;totalItems++;idx++;
+        if(yn==="yes")yesCount++;
+        const isNo=yn==="no";
+        return `<div class="irow">
+          <div class="irow-label">${esc(item)}</div>
+          <div class="irow-ctrl">
+            <button class="yn yes${yn==='yes'?' on':''}" data-yn="yes" data-k="${k}">YES</button>
+            <button class="yn no${yn==='no'?' on':''}" data-yn="no" data-k="${k}">NO</button>
+            <button class="yn na${yn==='na'?' on':''}" data-yn="na" data-k="${k}">N/A</button>
+            <input class="icomment${isNo?' flagged':''}" type="text" placeholder="${isNo?'Action required…':'Comment…'}" value="${comment}" data-ck="${k}" />
+          </div>
+        </div>`;
+      }).join("");
+      return `<div class="isub-label">${esc(sub.label)}</div>${rowsHtml}`;
+    }).join("");
+    return `<div class="isect">
+      <div class="isect-head"><h3>${sec.title}</h3><span class="cnt">${secYes}/${secTotal}</span></div>
+      ${subsHtml}
+    </div>`;
+  }).join("");
+  document.getElementById("lsr-sections").innerHTML=html;
+  document.getElementById("lsr-prog").innerHTML=`<b>${yesCount}</b> of ${totalItems} checks complete`;
+  renderLSRSummary();
+}
+
 document.getElementById("insp-sections").addEventListener("change",e=>{
-  const sel=e.target.closest(".rating-sel");
-  if(sel){
-    const k=sel.dataset.k,v=sel.value;
-    insp.yn[k]=v===''?undefined:parseInt(v);
-    pendingFocusKey=(v!==''&&parseInt(v)<5)?k:null;
-    vibe(8);saveInsp();renderInspect();return;
-  }
   const cnt=e.target.closest(".count-input");
-  if(cnt){if(!insp.counts)insp.counts={};insp.counts[cnt.dataset.ck]=cnt.value;saveInsp();return;}
+  if(cnt){if(!insp.counts)insp.counts={};insp.counts[cnt.dataset.ck]=cnt.value;saveInsp();}
 });
 document.getElementById("insp-sections").addEventListener("click",e=>{
+  const btn=e.target.closest(".yn");
+  if(btn&&btn.closest("#insp-sections")){
+    const k=btn.dataset.k,yn=btn.dataset.yn;
+    insp.yn[k]=insp.yn[k]===yn?undefined:yn;
+    pendingFocusKey=(insp.yn[k]==="no")?k:null;
+    vibe(8);saveInsp();renderInspect();return;
+  }
   const addBtn=e.target.closest(".hazard-add-btn");
   if(addBtn){
     const inp=document.getElementById("hazard-add-text");
@@ -902,7 +1001,7 @@ document.getElementById("insp-mgmt").addEventListener("input",e=>{insp.mgmt=e.ta
 
 function inspReport(){
   const d=new Date();const stamp=d.toLocaleString("en-AU",{dateStyle:"medium",timeStyle:"short"});
-  let md=`# Daily Pit Inspection — ${insp.date}\n\n`;
+  let md=`# Operation Inspection — ${insp.date}\n\n`;
   md+=`**Shift:** ${insp.shift}  \n**Superintendent:** Peter Anthony  \n`;
   if(insp.weather)md+=`**Weather / visibility:** ${insp.weather}  \n`;
   if(insp.blockId)md+=`**Block ID:** ${insp.blockId}  \n`;
@@ -928,12 +1027,11 @@ function inspReport(){
       md+=`### ${sub.label}\n\n`;
       sub.items.forEach(item=>{
         const k=sec.key+"."+idx;
-        const raw=insp.yn[k];
-        const rating=(raw!==undefined&&raw!==""&&!isNaN(parseInt(raw)))?parseInt(raw):null;
+        const yn=insp.yn[k];
         const comment=(insp.comments[k]||"").trim();
         totalItems++;
-        if(rating!==null){totalRated++;totalScore+=rating;}
-        const status=rating!==null?`${rating}/10`:"—";
+        if(yn==="yes")totalRated++;else if(yn==="no")totalScore++;
+        const status=yn==="yes"?"YES":yn==="no"?"NO":yn==="na"?"N/A":"—";
         md+=`**${item}:** ${status}`;
         if(comment)md+=` — ${comment}`;
         md+=`\n`;
@@ -942,8 +1040,9 @@ function inspReport(){
       md+=`\n`;
     });
   });
-  const overallPct=totalRated>0?Math.round((totalScore/(totalRated*10))*100):0;
-  md+=`---\n\n**Overall score: ${totalRated>0?overallPct+'%':'—'}** (${totalRated}/${totalItems} checks rated)\n\n`;
+  const totAns=totalRated+totalScore+(Object.values(insp.yn).filter(v=>v==="na").length);
+  const pct=totAns>0?Math.round((totalRated/totAns)*100):0;
+  md+=`---\n\n**Compliance: ${totAns>0?pct+'%':'—'}** (${totalRated} YES · ${totalScore} NO)\n\n`;
   if((insp.next||"").trim())md+=`## Plan for next shift\n${insp.next.trim()}\n\n`;
   if((insp.mgmt||"").trim())md+=`## Notes for management\n${insp.mgmt.trim()}\n\n`;
   md+=`---\n_Sign-off: Peter Anthony — Mining Superintendent_\n`;
@@ -980,6 +1079,70 @@ document.getElementById("insp-finish").addEventListener("click",()=>{
   insp=blankInsp();saveInsp();renderInspect();
   vibe([10,30,10]);toast("Inspection saved — new one started");
 });
+
+/* ---------- LSR report + listeners ---------- */
+function lsrReport(){
+  const d=new Date();const stamp=d.toLocaleString("en-AU",{dateStyle:"medium",timeStyle:"short"});
+  let md=`# LSR & SOP Inspection — ${insp.date}\n\n`;
+  md+=`**Shift:** ${insp.shift}  \n**Superintendent:** Peter Anthony  \n**Logged:** ${stamp}\n\n---\n\n`;
+  let totYes=0,totNo=0,totNa=0,totItems=0;
+  LSR_SOP_SECTIONS.forEach(sec=>{
+    md+=`## ${sec.title}\n\n`;
+    let idx=0;
+    sec.subs.forEach(sub=>{
+      md+=`### ${sub.label}\n\n`;
+      sub.items.forEach(item=>{
+        const k=sec.key+"."+idx;
+        const yn=insp.yn[k];
+        const comment=(insp.comments[k]||"").trim();
+        totItems++;
+        if(yn==="yes")totYes++;else if(yn==="no")totNo++;else if(yn==="na")totNa++;
+        const status=yn==="yes"?"YES":yn==="no"?"NO":yn==="na"?"N/A":"—";
+        md+=`**${item}:** ${status}`;
+        if(comment)md+=` — ${comment}`;
+        md+=`\n`;
+        idx++;
+      });
+      md+=`\n`;
+    });
+  });
+  const totAns=totYes+totNo+totNa;
+  const pct=totAns>0?Math.round((totYes/totAns)*100):0;
+  md+=`---\n\n**Compliance: ${totAns>0?pct+'%':'—'}** (${totYes} YES · ${totNo} NO · ${totNa} N/A / ${totItems} checks)\n\n`;
+  if((insp.lsrNotes||"").trim())md+=`## Shift notes\n${insp.lsrNotes.trim()}\n\n`;
+  md+=`---\n_Sign-off: Peter Anthony — Mining Superintendent_\n`;
+  return md;
+}
+document.getElementById("lsr-copy").addEventListener("click",async()=>{
+  const md=lsrReport();try{await navigator.clipboard.writeText(md);toast("LSR report copied");}catch(e){fallbackCopy(md);}
+});
+document.getElementById("lsr-share").addEventListener("click",async()=>{
+  const md=lsrReport();
+  const subj="[LSR & SOPs] "+insp.date+" — "+insp.shift;
+  const email=getSyncEmail();
+  if(email){location.href="mailto:"+encodeURIComponent(email)+"?subject="+encodeURIComponent(subj)+"&body="+encodeURIComponent(md);toast("Opening email — just press Send");return;}
+  if(navigator.share){try{await navigator.share({title:subj,text:md});}catch(e){}}
+  else{try{await navigator.clipboard.writeText(md);toast("Copied — set sync email in ⚙︎");}catch(e){fallbackCopy(md);}}
+});
+document.getElementById("lsr-notes").addEventListener("input",e=>{insp.lsrNotes=e.target.value;saveInsp();});
+document.getElementById("lsr-sections").addEventListener("click",e=>{
+  const btn=e.target.closest(".yn");if(!btn)return;
+  const k=btn.dataset.k,yn=btn.dataset.yn;
+  insp.yn[k]=insp.yn[k]===yn?undefined:yn;
+  if(insp.yn[k]==="no"){pendingFocusKey=k;}else{pendingFocusKey=null;}
+  vibe(8);saveInsp();renderLSR();
+});
+document.getElementById("lsr-sections").addEventListener("input",e=>{
+  const inp=e.target.closest(".icomment");if(!inp)return;
+  if(inp.dataset.ck!==undefined){insp.comments[inp.dataset.ck]=inp.value;saveInsp();}
+});
+document.querySelectorAll(".insp-subtab").forEach(btn=>btn.addEventListener("click",()=>{
+  inspTab=btn.dataset.it;
+  document.querySelectorAll(".insp-subtab").forEach(b=>b.classList.toggle("on",b===btn));
+  document.getElementById("insp-ops").style.display=inspTab==="ops"?"":"none";
+  document.getElementById("insp-lsr").style.display=inspTab==="lsr"?"":"none";
+  if(inspTab==="ops")renderInspect();else renderLSR();
+}));
 
 /* ---------- add sheets ---------- */
 const overlay=document.getElementById("overlay"),sheetTask=document.getElementById("sheet-task"),sheetEvt=document.getElementById("sheet-evt"),sheetSet=document.getElementById("sheet-settings"),sheetImp=document.getElementById("sheet-import"),sheetLog=document.getElementById("sheet-log");
@@ -1038,7 +1201,8 @@ document.getElementById("btn-save-evt").addEventListener("click",()=>{
 });
 
 /* ---------- tabs ---------- */
-const titles={today:"My Day",schedule:"Schedule",tasks:"Tasks",inspect:"Pit Inspection",focus:"Focus",events:"Events log"};
+const titles={today:"My Day",schedule:"Schedule",tasks:"Tasks",inspect:"Operation Inspection",events:"Events log"};
+let inspTab="ops";
 let activeView="today";
 document.querySelectorAll(".tab").forEach(tab=>{
   tab.addEventListener("click",()=>{
@@ -1046,14 +1210,14 @@ document.querySelectorAll(".tab").forEach(tab=>{
     document.querySelectorAll(".tab").forEach(t=>t.classList.toggle("active",t===tab));
     document.querySelectorAll(".view").forEach(s=>s.classList.toggle("active",s.id==="view-"+v));
     document.getElementById("hdr-title").textContent=titles[v];
-    document.getElementById("fab").style.display=(v==="inspect"||v==="focus")?"none":"flex";
+    document.getElementById("fab").style.display=v==="inspect"?"none":"flex";
     const dEl=document.getElementById("hdr-date");
     if(v==="today"||v==="schedule"){dEl.textContent=new Date().toLocaleDateString("en-AU",{weekday:"long",day:"numeric",month:"long"});}
     else if(v==="tasks"){dEl.textContent=tasks.filter(t=>!t.done).length+" active";}
-    else if(v==="inspect"){dEl.textContent="Tick · note · close";}
+    else if(v==="inspect"){dEl.textContent=inspTab==="lsr"?"LSR & SOPs":"Tick · note · close";}
     else if(v==="events"){dEl.textContent=new Date().toLocaleDateString("en-AU",{weekday:"long",day:"numeric",month:"long"});}
-    else dEl.textContent="Pomodoro timer";
-    if(v==="today")renderToday();else if(v==="schedule")renderSchedule();else if(v==="tasks")renderTasks();else if(v==="inspect")renderInspect();else if(v==="events")renderEvents();
+    else dEl.textContent="";
+    if(v==="today")renderToday();else if(v==="schedule")renderSchedule();else if(v==="tasks")renderTasks();else if(v==="inspect"){if(inspTab==="ops")renderInspect();else renderLSR();}else if(v==="events")renderEvents();
   });
 });
 document.getElementById("fab").addEventListener("click",()=>{if(activeView==="schedule")openEvtSheet();else if(activeView==="events")openLogSheet();else openTaskSheet();});
@@ -1215,33 +1379,8 @@ document.querySelectorAll(".tab").forEach(tab=>{
   });
 });
 
-/* ---------- pomodoro ---------- */
-const DUR={focus:25*60,short:5*60,long:15*60},LABEL={focus:"Focus",short:"Short break",long:"Long break"};
-let pmode="focus",remaining=DUR.focus,running=false,tick=null;
-const R=114,CIRC=2*Math.PI*R,ring=document.getElementById("ring");
-ring.style.strokeDasharray=CIRC;ring.style.strokeDashoffset=0;
-function pomoState(){let o=load(LS_POMO,{date:todayStr(),count:0});if(o.date!==todayStr())o={date:todayStr(),count:0};return o;}
-function savePomo(o){localStorage.setItem(LS_POMO,JSON.stringify(o));}
-function showPomo(){document.getElementById("pomo-count").textContent=pomoState().count;}
-function fmtT(s){return String(Math.floor(s/60)).padStart(2,"0")+":"+String(s%60).padStart(2,"0");}
-function paint(){document.getElementById("timer").textContent=fmtT(remaining);ring.style.strokeDashoffset=CIRC*(1-remaining/DUR[pmode]);ring.style.stroke=pmode==="focus"?"#4f8cff":(pmode==="short"?"#43d6a0":"#ffd24d");}
-function setMode(m,reset){pmode=m;remaining=DUR[m];document.querySelectorAll(".mode").forEach(x=>x.classList.toggle("on",x.dataset.m===m));document.getElementById("timer-state").textContent=running?LABEL[m]:"Ready";paint();if(reset)stopT();}
-function startT(){if(running)return;running=true;document.getElementById("btn-play").textContent="⏸";document.getElementById("timer-state").textContent=LABEL[pmode];tick=setInterval(()=>{remaining--;if(remaining<=0){clearInterval(tick);running=false;remaining=0;paint();finish();return;}paint();},1000);}
-function pauseT(){running=false;clearInterval(tick);document.getElementById("btn-play").textContent="▶";document.getElementById("timer-state").textContent="Paused";}
-function stopT(){running=false;clearInterval(tick);document.getElementById("btn-play").textContent="▶";}
-function finish(){
-  document.getElementById("btn-play").textContent="▶";vibe([200,100,200,100,200]);beep();
-  if(pmode==="focus"){const o=pomoState();o.count++;savePomo(o);showPomo();setMode(o.count%4===0?"long":"short",false);document.getElementById("timer-state").textContent="Break time";}
-  else{setMode("focus",false);document.getElementById("timer-state").textContent="Back to work";}
-}
-function beep(){try{const ctx=new (window.AudioContext||window.webkitAudioContext)();[0,0.18,0.36].forEach(t=>{const o=ctx.createOscillator(),g=ctx.createGain();o.connect(g);g.connect(ctx.destination);o.frequency.value=880;o.type="sine";g.gain.setValueAtTime(0.001,ctx.currentTime+t);g.gain.exponentialRampToValueAtTime(0.3,ctx.currentTime+t+0.02);g.gain.exponentialRampToValueAtTime(0.001,ctx.currentTime+t+0.15);o.start(ctx.currentTime+t);o.stop(ctx.currentTime+t+0.16);});}catch(e){}}
-document.getElementById("btn-play").addEventListener("click",()=>{running?pauseT():startT();});
-document.getElementById("btn-reset").addEventListener("click",()=>{stopT();remaining=DUR[pmode];paint();document.getElementById("timer-state").textContent="Ready";});
-document.getElementById("btn-skip").addEventListener("click",()=>{stopT();finish();});
-document.querySelectorAll(".mode").forEach(m=>m.addEventListener("click",()=>setMode(m.dataset.m,true)));
-
 /* ---------- boot ---------- */
-renderToday();showPomo();paint();
+renderToday();
 document.getElementById("hdr-date").textContent=new Date().toLocaleDateString("en-AU",{weekday:"long",day:"numeric",month:"long"});
 syncFromServer();                         // pull current tasks/schedule from tasks.md (published as data.json)
 document.addEventListener("visibilitychange",()=>{if(!document.hidden)syncFromServer();}); // refresh when reopened
