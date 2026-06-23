@@ -229,6 +229,39 @@
   .tab .lbl{font-size:.62rem;font-weight:600;}
   .tab.active{color:var(--accent2);}
 
+  /* ---- insights ---- */
+  .ins-header{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px;margin:2px 4px 14px;}
+  .ins-date{font-size:.72rem;color:var(--muted);font-weight:700;text-transform:uppercase;letter-spacing:.06em;}
+  .ins-run{font-size:.7rem;color:var(--muted);margin-top:2px;}
+  .ins-summary{font-size:.88rem;color:var(--txt);line-height:1.55;margin-top:10px;}
+  .ins-action-count{font-size:.75rem;font-weight:700;color:var(--accent2);margin-top:8px;}
+  .ins-source{background:var(--card);border:1px solid var(--line);border-radius:14px;margin:0 0 10px;}
+  .ins-source-head{padding:12px 14px;}
+  .ins-source-from{font-size:.68rem;color:var(--muted);font-weight:700;text-transform:uppercase;letter-spacing:.04em;margin-bottom:3px;}
+  .ins-source-title{font-size:.92rem;font-weight:700;color:var(--txt);}
+  .ins-kp-list{border-top:1px solid var(--line);}
+  .ins-kp{font-size:.83rem;color:var(--txt);line-height:1.4;padding:8px 14px;border-bottom:1px solid var(--line);display:flex;gap:8px;align-items:flex-start;}
+  .ins-kp:last-child{border-bottom:none;}
+  .ins-kp::before{content:"•";color:var(--accent);flex-shrink:0;line-height:1.3;}
+  .ins-actions-label{font-size:.68rem;color:var(--muted);font-weight:700;text-transform:uppercase;letter-spacing:.05em;padding:8px 14px 4px;border-top:1px solid var(--line);}
+  .ins-action-row{display:flex;align-items:flex-start;gap:9px;padding:9px 14px;border-bottom:1px solid var(--line);}
+  .ins-action-row:last-child{border-bottom:none;}
+  .ins-action-pri{font-size:.62rem;font-weight:800;text-transform:uppercase;padding:2px 7px;border-radius:6px;flex-shrink:0;margin-top:2px;}
+  .ins-action-pri.high{background:rgba(255,159,67,.15);color:var(--high);}
+  .ins-action-pri.medium{background:rgba(255,210,77,.15);color:var(--medium);}
+  .ins-action-pri.urgent{background:rgba(255,92,108,.15);color:var(--urgent);}
+  .ins-action-pri.low{background:rgba(67,214,160,.15);color:var(--low);}
+  .ins-action-text{flex:1;}
+  .ins-action-body{font-size:.84rem;color:var(--txt);line-height:1.35;}
+  .ins-action-owner{font-size:.72rem;color:var(--muted);margin-top:3px;}
+  .ins-cross{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px;margin:0 0 10px;}
+  .ins-cross h3{font-size:.72rem;color:var(--muted);font-weight:700;text-transform:uppercase;letter-spacing:.06em;margin-bottom:8px;}
+  .ins-cross-para{font-size:.84rem;color:var(--txt);line-height:1.55;margin-bottom:8px;}
+  .ins-cross-para:last-child{margin-bottom:0;}
+  .ins-stale{text-align:center;font-size:.74rem;color:var(--muted);padding:0 4px 12px;}
+  .ins-empty{text-align:center;color:var(--muted);padding:48px 20px;}
+  .ins-empty .big{font-size:2.2rem;margin-bottom:10px;}
+
   .toast{position:fixed;left:50%;bottom:calc(var(--safe-bot) + 92px);transform:translateX(-50%) translateY(20px);background:var(--card2);border:1px solid var(--line);color:var(--txt);padding:11px 18px;border-radius:12px;font-size:.85rem;font-weight:600;opacity:0;pointer-events:none;transition:all .25s;z-index:60;box-shadow:0 8px 24px rgba(0,0,0,.4);}
   .toast.show{opacity:1;transform:translateX(-50%) translateY(0);}
 </style>
@@ -337,22 +370,41 @@
         <button class="btn alt" id="evlog-copy">Copy report</button>
       </div>
     </section>
+
+    <!-- INSIGHTS -->
+    <section class="view" id="view-insights">
+      <div id="insights-content">
+        <div class="ins-empty"><div class="big">📊</div>Loading daily insights…</div>
+      </div>
+    </section>
+
+    <section class="view" id="view-lesson">
+      <div id="lesson-content"></div>
+    </section>
   </main>
 
   <button class="fab" id="fab" aria-label="Add">+</button>
 
   <nav>
+    <button class="tab" data-v="lesson">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+      <span class="lbl">Lesson</span>
+    </button>
+    <button class="tab" data-v="insights">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 20h20M7 20V10M12 20V4M17 20v-7"/></svg>
+      <span class="lbl">Insights</span>
+    </button>
     <button class="tab active" data-v="today">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><path d="M9 22V12h6v10"/></svg>
       <span class="lbl">Today</span>
     </button>
-    <button class="tab" data-v="events">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
-      <span class="lbl">Events</span>
-    </button>
     <button class="tab" data-v="tasks">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>
       <span class="lbl">Tasks</span>
+    </button>
+    <button class="tab" data-v="events">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+      <span class="lbl">Events</span>
     </button>
     <button class="tab" data-v="inspect">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M9 14l2 2 4-4"/></svg>
@@ -395,6 +447,15 @@
   <div class="field"><label>Paste your import code</label><textarea id="in-import" class="inotes" style="min-height:120px;margin-top:0;" placeholder="Paste the code you were given…"></textarea></div>
   <p style="font-size:.78rem;color:var(--muted);line-height:1.45;margin:-4px 0 14px;">Adds tasks to this device. Duplicates (same title) are skipped, so it's safe to run more than once.</p>
   <button class="btn" id="btn-do-import">Import</button>
+</div>
+
+<!-- done-comment sheet -->
+<div class="sheet" id="sheet-done">
+  <h3>Task done ✓</h3>
+  <div id="done-task-title" style="font-size:.9rem;color:var(--muted);margin:-8px 0 14px;line-height:1.4;"></div>
+  <div class="field"><label>Comment or update (optional)</label><textarea id="in-done-note" class="inotes" style="min-height:90px;margin-top:0;" placeholder="Any outcome, follow-up, or context worth logging…"></textarea></div>
+  <button class="btn" id="btn-confirm-done">Mark done</button>
+  <button class="btn ghost" id="btn-skip-done" style="margin-top:6px;">Skip — no comment</button>
 </div>
 
 <!-- event log sheet -->
@@ -689,9 +750,31 @@ function attachSwipe(container){
     });
   });
 }
-function completeTask(id){const t=tasks.find(x=>x.id===id);if(!t)return;t.done=true;t.doneAt=Date.now();vibe([10,30,10]);saveTasks();renderAll();}
+let pendingDoneId=null;
+function openDoneSheet(id){
+  const t=tasks.find(x=>x.id===id);if(!t)return;
+  pendingDoneId=id;
+  document.getElementById("done-task-title").textContent=t.title;
+  document.getElementById("in-done-note").value=t.doneNote||"";
+  overlay.classList.add("show");sheetDone.classList.add("show");
+  setTimeout(()=>document.getElementById("in-done-note").focus(),300);
+}
+function finishDone(id,note){
+  const t=tasks.find(x=>x.id===id);if(!t)return;
+  t.done=true;t.doneAt=Date.now();
+  if(note&&note.trim())t.doneNote=note.trim();
+  vibe([10,30,10]);saveTasks();renderAll();
+}
+document.getElementById("btn-confirm-done").addEventListener("click",()=>{
+  const note=document.getElementById("in-done-note").value;
+  closeSheets();finishDone(pendingDoneId,note);toast("Task marked done");
+});
+document.getElementById("btn-skip-done").addEventListener("click",()=>{
+  closeSheets();finishDone(pendingDoneId,"");toast("Task marked done");
+});
+function completeTask(id){const t=tasks.find(x=>x.id===id);if(!t)return;if(t.done)return;openDoneSheet(id);}
 function deleteTask(id){tasks=tasks.filter(x=>x.id!==id);vibe(15);saveTasks();renderAll();}
-function toggleTask(id){const t=tasks.find(x=>x.id===id);if(!t)return;t.done=!t.done;t.doneAt=t.done?Date.now():null;vibe(t.done?[10,30,10]:10);saveTasks();renderAll();}
+function toggleTask(id){const t=tasks.find(x=>x.id===id);if(!t)return;if(!t.done){openDoneSheet(id);}else{t.done=false;t.doneAt=null;t.doneNote=undefined;vibe(10);saveTasks();renderAll();}}
 
 function onTap(e){
   const sw=e.target.closest(".swipe");if(!sw)return;
@@ -754,12 +837,6 @@ function renderSchedule(){
     </div>`;
   }).join("");
 }
-document.getElementById("sched-list").addEventListener("click",e=>{
-  const ev=e.target.closest(".evt");if(!ev)return;const id=Number(ev.dataset.id);const act=e.target.closest("[data-act]")?.dataset.act;
-  const item=events.find(x=>x.id===id);if(!item)return;
-  if(act==="del"){events=events.filter(x=>x.id!==id);}else if(act==="toggle"){item.done=!item.done;vibe(10);}
-  saveEvents();renderSchedule();
-});
 
 /* ---------- INSPECTION ---------- */
 function blankInsp(){return {date:todayStr(),shift:"Day",weather:"",blockId:"",dumping:"",yn:{},comments:{},hazards:[],counts:{},cycleData:{},next:"",mgmt:"",lsrNotes:""};}
@@ -1221,14 +1298,13 @@ document.querySelectorAll(".insp-subtab").forEach(btn=>btn.addEventListener("cli
 }));
 
 /* ---------- add sheets ---------- */
-const overlay=document.getElementById("overlay"),sheetTask=document.getElementById("sheet-task"),sheetEvt=document.getElementById("sheet-evt"),sheetSet=document.getElementById("sheet-settings"),sheetImp=document.getElementById("sheet-import"),sheetLog=document.getElementById("sheet-log");
+const overlay=document.getElementById("overlay"),sheetTask=document.getElementById("sheet-task"),sheetSet=document.getElementById("sheet-settings"),sheetImp=document.getElementById("sheet-import"),sheetLog=document.getElementById("sheet-log"),sheetDone=document.getElementById("sheet-done");
 let newPri="high";
 function syncPri(){document.querySelectorAll(".priopt").forEach(o=>o.classList.toggle("sel",o.dataset.p===newPri));}
 function openTaskSheet(){document.getElementById("in-title").value="";document.getElementById("in-due").value="";newPri="high";syncPri();overlay.classList.add("show");sheetTask.classList.add("show");setTimeout(()=>document.getElementById("in-title").focus(),300);}
-function openEvtSheet(){document.getElementById("in-etitle").value="";document.getElementById("in-time").value="";document.getElementById("in-edate").value=todayStr();overlay.classList.add("show");sheetEvt.classList.add("show");setTimeout(()=>document.getElementById("in-time").focus(),300);}
 function openSetSheet(){document.getElementById("in-sync").value=getSyncEmail();overlay.classList.add("show");sheetSet.classList.add("show");setTimeout(()=>document.getElementById("in-sync").focus(),300);}
 function openImpSheet(){document.getElementById("in-import").value="";closeSheets();overlay.classList.add("show");sheetImp.classList.add("show");setTimeout(()=>document.getElementById("in-import").focus(),300);}
-function closeSheets(){overlay.classList.remove("show");sheetTask.classList.remove("show");sheetEvt.classList.remove("show");sheetSet.classList.remove("show");sheetImp.classList.remove("show");sheetLog.classList.remove("show");}
+function closeSheets(){overlay.classList.remove("show");sheetTask.classList.remove("show");sheetSet.classList.remove("show");sheetImp.classList.remove("show");sheetLog.classList.remove("show");sheetDone.classList.remove("show");}
 overlay.addEventListener("click",closeSheets);
 /* ---- import tasks (paste code: raw JSON or base64 of {"tasks":[...]}) ---- */
 function parseImport(text){
@@ -1270,14 +1346,9 @@ document.getElementById("btn-save-task").addEventListener("click",()=>{
   tasks.push({id:Date.now(),title,pri:newPri,area:"",due:document.getElementById("in-due").value,done:false,created:Date.now()});
   saveTasks();closeSheets();curFilter="all";document.querySelectorAll(".filt").forEach(x=>x.classList.toggle("on",x.dataset.f==="all"));renderAll();vibe(15);toast("Task added");
 });
-document.getElementById("btn-save-evt").addEventListener("click",()=>{
-  const title=document.getElementById("in-etitle").value.trim(),time=document.getElementById("in-time").value,date=document.getElementById("in-edate").value||todayStr();
-  if(!title||!time){toast("Add a time and an activity");return;}
-  events.push({id:Date.now(),date,time,title,done:false});saveEvents();closeSheets();renderSchedule();vibe(15);toast("Added to schedule");
-});
 
 /* ---------- tabs ---------- */
-const titles={today:"My Day",tasks:"Tasks",inspect:"Operation Inspection",events:"Events log"};
+const titles={today:"My Day",events:"Events log",insights:"Daily Insights",tasks:"Tasks",inspect:"Operation Inspection",lesson:"Daily Mining Lesson"};
 let inspTab="ops";
 let activeView="today";
 document.querySelectorAll(".tab").forEach(tab=>{
@@ -1286,14 +1357,16 @@ document.querySelectorAll(".tab").forEach(tab=>{
     document.querySelectorAll(".tab").forEach(t=>t.classList.toggle("active",t===tab));
     document.querySelectorAll(".view").forEach(s=>s.classList.toggle("active",s.id==="view-"+v));
     document.getElementById("hdr-title").textContent=titles[v];
-    document.getElementById("fab").style.display=v==="inspect"?"none":"flex";
+    document.getElementById("fab").style.display=(v==="inspect"||v==="insights"||v==="lesson")?"none":"flex";
     const dEl=document.getElementById("hdr-date");
     if(v==="today"){dEl.textContent=new Date().toLocaleDateString("en-AU",{weekday:"long",day:"numeric",month:"long"});}
     else if(v==="tasks"){dEl.textContent=tasks.filter(t=>!t.done).length+" active";}
     else if(v==="inspect"){dEl.textContent=inspTab==="lsr"?"LSR & SOPs":"Tick · note · close";}
     else if(v==="events"){dEl.textContent=new Date().toLocaleDateString("en-AU",{weekday:"long",day:"numeric",month:"long"});}
+    else if(v==="insights"){dEl.textContent=insightsData&&insightsData.date?insightsData.date:"";}
+    else if(v==="lesson"){const l=todayLesson();dEl.textContent=l?l.topic:"";}
     else dEl.textContent="";
-    if(v==="today")renderToday();else if(v==="tasks")renderTasks();else if(v==="inspect"){if(inspTab==="ops")renderInspect();else renderLSR();}else if(v==="events")renderEvents();
+    if(v==="today")renderToday();else if(v==="tasks")renderTasks();else if(v==="inspect"){if(inspTab==="ops")renderInspect();else renderLSR();}else if(v==="events")renderEvents();else if(v==="insights")renderInsights();else if(v==="lesson")renderLesson();
   });
 });
 document.getElementById("fab").addEventListener("click",()=>{if(activeView==="events")openLogSheet();else openTaskSheet();});
@@ -1430,6 +1503,7 @@ function doneTasksReport(){
     if(t.area)md+=` · ${t.area}`;
     if(when)md+=` · Completed ${when}`;
     md+=`\n`;
+    if(t.doneNote)md+=`   > ${t.doneNote}\n`;
   });
   md+=`\n---\n_${done.length} task${done.length===1?"":"s"} completed. Sign-off: Peter Anthony — Mining Superintendent_\n`;
   return md;
@@ -1455,11 +1529,151 @@ document.querySelectorAll(".tab").forEach(tab=>{
   });
 });
 
+/* ---------- INSIGHTS ---------- */
+let insightsData=null;
+function fetchInsights(){
+  if(!location.protocol.startsWith("http"))return;
+  fetch("insights.json?t="+Date.now(),{cache:"no-store"})
+    .then(r=>r.ok?r.json():null)
+    .then(d=>{if(d){insightsData=d;if(activeView==="insights")renderInsights();}})
+    .catch(()=>{});
+}
+function renderInsights(){
+  const el=document.getElementById("insights-content");
+  if(!insightsData){
+    el.innerHTML=`<div class="ins-empty"><div class="big">📊</div>No insights loaded yet.<br><small>Wiki Insights sync hasn't run today.</small></div>`;
+    return;
+  }
+  const d=insightsData;
+  const dtStr=d.date?new Date(d.date+"T00:00:00").toLocaleDateString("en-AU",{weekday:"long",day:"numeric",month:"long",year:"numeric"}):"";
+  const allActions=(d.sources||[]).flatMap(s=>s.actions||[]);
+  const stale=d.date&&d.date<todayStr();
+  let html=`<div class="ins-header">
+    <div class="ins-date">${dtStr}</div>
+    ${d.runNumber?`<div class="ins-run">Compile run #${d.runNumber}</div>`:""}
+    <div class="ins-summary">${esc(d.summary||"")}</div>
+    ${allActions.length?`<div class="ins-action-count">${allActions.length} action item${allActions.length===1?"":"s"}</div>`:""}
+  </div>`;
+  if(stale)html+=`<div class="ins-stale">Report from ${d.date} — today's compile hasn't run yet</div>`;
+  if(allActions.length){
+    html+=`<div class="sect"><h2>Action items</h2><span class="meta">${allActions.length}</span></div>`;
+    html+=`<div class="ins-source">`;
+    allActions.forEach(a=>{
+      const priRaw=(a.priority||"medium").toLowerCase().split(/[\s—\-]/)[0];
+      const pri=["urgent","high","medium","low"].includes(priRaw)?priRaw:"medium";
+      html+=`<div class="ins-action-row">
+        <span class="ins-action-pri ${pri}">${pri}</span>
+        <div class="ins-action-text">
+          <div class="ins-action-body">${esc(a.action)}</div>
+          ${a.owner?`<div class="ins-action-owner">${esc(a.owner)}</div>`:""}
+        </div>
+      </div>`;
+    });
+    html+=`</div>`;
+  }
+  if((d.sources||[]).length){
+    html+=`<div class="sect"><h2>Sources</h2><span class="meta">${d.sources.length}</span></div>`;
+    d.sources.forEach(s=>{
+      html+=`<div class="ins-source">
+        <div class="ins-source-head">
+          ${s.from?`<div class="ins-source-from">${esc(s.from)}</div>`:""}
+          <div class="ins-source-title">${esc(s.title)}</div>
+        </div>`;
+      if((s.keyPoints||[]).length){
+        html+=`<div class="ins-kp-list">`;
+        s.keyPoints.forEach(kp=>{html+=`<div class="ins-kp">${esc(kp)}</div>`;});
+        html+=`</div>`;
+      }
+      html+=`</div>`;
+    });
+  }
+  if(d.crossCutting){
+    const paras=d.crossCutting.split(/\n\n+/).map(p=>p.replace(/^###\s*/,"").replace(/\[\[([^\]]+)\]\]/g,"$1").trim()).filter(p=>p);
+    if(paras.length){
+      html+=`<div class="sect"><h2>Observations</h2></div>`;
+      html+=`<div class="ins-cross">`;
+      paras.forEach(p=>{html+=`<div class="ins-cross-para">${esc(p)}</div>`;});
+      html+=`</div>`;
+    }
+  }
+  el.innerHTML=html;
+}
+
+/* ---------- daily lesson ---------- */
+const LESSONS=[
+  {topic:"Loading Face Discipline",title:"The loading face is the heartbeat of the pit",body:"Everything downstream — haul time, cycle time, crusher feed — depends on what happens at the face. A well-dressed face with a flat floor, correct bench height, and a clear dig line gives the excavator the best chance to fill trucks consistently and fast.",keyPoints:["Keep the floor graded and free of muck outside the dig zone","A sloped or potholed floor forces the truck to spot badly and adds fill time","Expose full bench height before starting — partial benches waste passes","Flag the dig limit so operators know where to stop"],apply:"Walk your active loading area first thing on shift. Floor condition, face height, and dig limit marking — all three before the excavator swings."},
+  {topic:"Truck Spotting",title:"Bad spotting costs more time than bad hauling",body:"Every extra second a truck takes to position itself — and every repositioning swing — is dead time. The excavator idles, the fleet backs up, and your cycle time blows out. Spotting discipline is one of the highest-leverage operator skills in the pit.",keyPoints:["Single-side spotting is faster — double-side is a last resort","The spotter (or operator signal) controls the position, not the truck driver's instinct","Overshot spots that need a pull-up are the most common time waster","Target: truck in position within 30 seconds of previous truck departing"],apply:"Time spotting at one active face today. Count seconds from last truck departure to next truck in position. Anything over 45s is worth a conversation."},
+  {topic:"Backloading",title:"Backloading is a symptom, not the problem",body:"When you see backloading — trucks queuing more than one deep at the face — there's a root cause: too many trucks for the loading rate, a slow excavator, or a short haul that returns trucks faster than they can be loaded. Chasing the symptom without fixing the cause burns tyres and wastes fuel.",keyPoints:["Calculate the fleet size your loading rate can absorb before adding trucks","Short hauls need fewer trucks — more isn't better","A fast excavator with a long haul can absorb a bigger fleet","Single-face overloading is common when multiple blocks are blasted close together"],apply:"If you see a queue of 3+ trucks at any face, count the fleet on that face and estimate the loading cycle time. Do the maths — is the fleet matched?"},
+  {topic:"Ramp Discipline",title:"Ramps are not shortcuts — treat them as infrastructure",body:"Ramp conditions set the pace for everything moving material in and out of the pit. A deteriorated ramp surface forces trucks to slow down, burns more fuel on climbs, increases tyre wear, and creates safety hazards. The cost of a ramp that isn't maintained shows up in your cycle time and your tyre budget.",keyPoints:["Grade ramps proactively — after heavy rain and every 24h in high-traffic conditions","Maximum ramp grade for loaded trucks: 10% — steeper grades need formal approval","Ramp width must allow two vehicles to pass safely with clearance","Signage at top and bottom of all active ramps is non-negotiable"],apply:"Check ramp surface condition and width compliance on your primary haul route today. Flag any potholes, edge breaks, or missing signage before the next loaded run."},
+  {topic:"GET Management",title:"GET loss is a blasting problem disguised as a maintenance problem",body:"Ground Engaging Tools (GET) — teeth, adapters, side cutters — wear and break under load. But premature GET loss almost always traces back to digging conditions: oversize material, blasted rock with tight spacing, or a face that hasn't fragmented properly. Fixing GET without fixing blast design is an endless cycle.",keyPoints:["Inspect GET every 500 operating hours minimum — more frequently in abrasive or oversize material","A missing tooth can puncture a truck tyre — one event can cost more than a full GET set","Log GET replacements by face area to identify chronic locations","Raise a WO before the excavator goes back on shift after any GET replacement"],apply:"Check your GET log for the last 7 days. Is there a pattern by face location? If yes, loop in the drill-and-blast team before the next blast in that area."},
+  {topic:"Cycle Time",title:"Cycle time is the clock your production runs on",body:"Every payload delivered is one cycle. Shorten the cycle and you deliver more tonnes with the same fleet. But cycle time has four components — spot, fill, haul loaded, tip and return — and each one needs to be understood before you know where to attack.",keyPoints:["Fill time is usually the largest controllable component — a slow excavator adds directly to cycle","Haul distance is fixed by the mining plan, but road condition affects actual speed","Tip time at the crest is often underestimated — a congested dump adds 2–4 minutes","Queue time is waste — if trucks are waiting, the system is imbalanced"],apply:"Use the Cycle Time section in the Inspect tab to record a live cycle today. Compare your total to the target and find the biggest single contributor to variance."},
+  {topic:"Fleet Utilisation",title:"Availability and utilisation are not the same number",body:"Availability tells you how many hours the fleet could have worked. Utilisation tells you how many hours it actually moved material. A fleet with 90% availability and 70% utilisation has 20% of its operational hours sitting idle — usually at the face, at the dump, or waiting for a blast. That gap is your opportunity.",keyPoints:["Identify where idle time accumulates: face queues, dump congestion, or shift change gaps","Shift change is the single biggest scheduled idle — handover efficiency matters","Track utilisation by truck, not just fleet average — low outliers show problem units","A truck that is available but not dispatched is a cost with no return"],apply:"Pull today's utilisation figure. If it's below 80%, identify the top two causes of idle time and raise them in the shift handover note."},
+  {topic:"Floor Condition",title:"The floor under the truck is as important as the road above it",body:"Loading area floors take a beating — from tyre traffic, excavator tramming, and material spillage. A deteriorated floor leads to slow spotting, tyre cuts from sharp material, and unstable footing for the excavator. It also signals that the dig face is advancing without cleaning up behind it.",keyPoints:["Clean up spill and loose rock from the floor at every blast and material change","A smooth, level floor reduces spotting time and tyre damage","Excavators should not tram over truck-tyre zones with protruding rock","Grade the floor as the bench advances — don't wait for it to become unsafe"],apply:"Check the active loading floor on your primary face. Is there loose material, sharp rock, or an uneven surface outside the dig zone? Order clean-up before the next truck arrives."},
+  {topic:"Crusher Feed",title:"The crusher is the one machine you can't afford to starve",body:"The crusher converts run-of-mine material into revenue. Every hour it runs below design throughput is an hour of lost production that can't be recovered. Your job is to keep it fed — consistently sized material, at a steady rate, without the oversize that triggers the rock breaker and kills throughput.",keyPoints:["Oversize material at the crusher almost always traces back to poor blast fragmentation","A steady feed rate is more efficient than surge-and-starve patterns","ROM pad sequencing — mixing fine and coarse material — smooths the feed","Coordinate crusher scheduling with blast timing to avoid feed gaps"],apply:"Check the crusher feed rate and ROM pad levels at the start of your shift. If ROM is low, identify which active face can redirect tonnes to pad the stockpile."},
+  {topic:"Highwall Safety",title:"The highwall doesn't warn you — that's your job",body:"Highwall failures are rare but catastrophic. The hazard is invisible to an untrained eye: tension cracks, overhangs, and bench face instability develop slowly and fail without warning. The controls exist because the consequence of not having them is unacceptable.",keyPoints:["Tension cracks behind the crest must be reported immediately and the area excluded","No personnel or equipment within 1× bench height of an unsupported highwall face","Bench face inspections after every blast and after significant rain events","Geotechnical monitoring data must be reviewed before mining advances near the crest"],apply:"Walk or drive the highwall crest on your active benches today. Any tension crack, slumping, or change in face angle from the last inspection — exclude the area and notify the geotech team."},
+  {topic:"Shift Handover",title:"A bad handover multiplies itself — twice a day, every day",body:"The shift handover is your single best opportunity to pass on what the incoming superintendent actually needs to know. Not just what ran — what changed, what's at risk, what they need to watch, and what's sitting unresolved. A thin handover creates blind spots that cost time in the first hour of every shift.",keyPoints:["State: what's running, what's broken, what's coming up (blast, road works, maintenance)","Flag any safety issues or near-misses from the outgoing shift explicitly","Don't just list events — state the impact and the action required","Face-to-face handover is better than a written note alone whenever possible"],apply:"In your next handover note, add one line you wouldn't normally include: what's the one thing the incoming super most needs to watch?"},
+  {topic:"NCR Patterns",title:"NCRs are data — not just compliance paperwork",body:"A Non-Conformance Report on its own tells you something went wrong. Ten NCRs on the same piece of equipment, same face location, or same time of shift tell you something is broken in the system. The value of NCR tracking is pattern recognition — not individual incident closure.",keyPoints:["Review NCRs by category weekly, not just case-by-case","A cluster on one face area usually points to blast design, drainage, or access road quality","Equipment NCR clusters point to a maintenance or operator training issue","Time-of-shift clustering is a fatigue or handover signal"],apply:"Pull your NCR log for the last 30 days and group by category. What's the top pattern? Is there a fix that addresses the root cause rather than the individual event?"},
+  {topic:"FLRA",title:"The FLRA is most useful when conditions have changed",body:"A Field Level Risk Assessment is most powerful when the job has changed from what was planned: a different location, a different machine, unexpected ground conditions, or a new person on the task. Done properly, it takes 5 minutes and catches the hazard that wasn't in the original risk register.",keyPoints:["Trigger a fresh FLRA any time the task changes materially from the plan","Include the people doing the task — they see hazards the superintendent misses","Document it — a verbal FLRA that isn't written is unverifiable","The most common failures: skipping the FLRA when in a hurry, or completing it after the work starts"],apply:"On your next site visit, ask the crew to walk you through their FLRA for the current task. Are the controls specific to today's conditions — or generic?"},
+  {topic:"Overspill",title:"Overspill at the dump is a downstream accident waiting to happen",body:"Material that spills over the dump crest, or accumulates outside the designated tip area, creates edge instability and blocks the dump road. It's also a sign that the tip face hasn't been managed — either the berm hasn't been pushed back, or the tip point isn't being controlled.",keyPoints:["Dump berm height must be maintained at a minimum of axle height of the largest truck","Tip point must be confirmed clear and stable before each truck tips","Any truck that tips outside the designated point must be flagged immediately","Overspill onto the access ramp is a tyres and traffic hazard — stop and clear before continuing"],apply:"Check your active dump face at the start of shift. Berm height, tip point condition, and clear access road. Any deficiency — stop tipping to that point until it's corrected."},
+  {topic:"Traffic Management",title:"Traffic rules exist because physics doesn't care about urgency",body:"In an open-pit environment, a loaded haul truck at 30 km/h has enormous stopping distance. Traffic management controls — speed limits, right-of-way rules, intersection signals, berm heights — are engineered around that physics. Overriding them for productivity is one of the most common causes of fatal incidents in mining.",keyPoints:["One-way haul roads eliminate head-on risk — maintain them even when empty","Right-of-way: loaded trucks have priority over empties; excavators have priority over trucks","All intersections with restricted sight lines must have a designated spotter or barrier","Light vehicles must not enter the active mining area without notifying the operator"],apply:"Identify the highest-traffic intersection on your haul route today. Is sight distance adequate? Is right-of-way clear to all operators? Does everyone know the protocol?"},
+  {topic:"LSR — Line of Fire",title:"The line of fire is invisible until it's too late",body:"Line of fire incidents happen when a person or vehicle is in the path of moving material, moving equipment, or a stored-energy release. The hazard is often predictable — what's less predictable is where people position themselves when they're focused on something else.",keyPoints:["Never stand between an excavator and its swing arc — even when it's stationary","Keep clear of the reverse arc of all trucks — cameras don't replace spatial awareness","Suspended loads have a line of fire that extends to the full radius of the drop","Stored energy (hydraulics, pressurised lines, raised components) has a line of fire even when equipment is off"],apply:"On your next equipment inspection, identify the line of fire for at least one stored-energy source on the machine. Could someone be in that zone during normal operations?"},
+  {topic:"Pass Matching",title:"The right number of passes is a loading efficiency decision",body:"Pass matching — aligning the number of excavator bucket passes to fill a truck — determines how consistently trucks leave the face at payload target. Too few passes and you risk underloading. Too many and you add fill time and risk overloading the final pass. The sweet spot is 4–6 passes for most mining applications.",keyPoints:["Under 4 passes: high risk of underload or overload on the last partial pass","Over 6 passes: fill time extends, face productivity drops","Bucket size relative to truck payload sets your practical pass count — match them at fleet selection","Consistent pass count per truck type reduces operator decision fatigue at the face"],apply:"Ask your excavator operator what pass count they're running on each truck type today. Is it within the target range? If not, what's driving the variance?"},
+  {topic:"Fuel & Idle Time",title:"Idle time is the fuel you pay for but don't use",body:"Haul trucks burn fuel at 15–30% of operating rate even when idling. For a fleet of 10 trucks idling 2 hours per shift, that's significant fuel cost with zero payload moved. Idle time is a proxy metric for cycle time efficiency — reduce idle and cycle time usually improves.",keyPoints:["Face queuing is the biggest source of idle time — fix the queue, fix the idle","Shift change idle: trucks should be handed over at the face, not parked at the office","Engine-off at extended stops: any idle over 5 minutes in a non-operational area should mean engine off","Track idle by unit — high outliers indicate either a dispatcher problem or an operator habit"],apply:"Check the dispatch idle report for today. Which trucks have the highest idle percentage? Is the cause face queue, dump queue, or operator behaviour?"},
+  {topic:"Tyre Management",title:"A tyre failure on a loaded truck is a recovery operation, not a maintenance event",body:"Mining tyres are the most expensive consumable in a load-and-haul fleet. Premature failure from cuts, overloading, or heat build-up destroys margin. The most effective tyre management happens before the failure — through floor condition, speed discipline, and load control.",keyPoints:["Tyre cuts from sharp floor material are preventable — clean the floor","Overloading generates heat and deforms the bead — stay within payload rating","High-speed cornering on worn road surfaces causes internal delamination","Inspect tyres at every pre-start — inflation, cuts, and sidewall condition"],apply:"Walk around one truck on your shift today and look specifically at tyre condition: sidewall cuts, uneven wear, and inflation visually. What do you see that the pre-start might have missed?"},
+  {topic:"Operator Performance",title:"The operator is the most variable input in your system",body:"Equipment performance data shows the machine — but the operator drives the outcome. The same excavator with two different operators can produce a 20–30% productivity gap. Understanding why — and addressing it through coaching, not blame — is one of the highest-value activities a superintendent can do.",keyPoints:["Use fill time data to identify outlier operators at the face","Slow spotting is usually habit — one coaching conversation often fixes it","Operators who self-report hazards are your best safety asset — protect that behaviour","High-performing operators often have the most useful ideas about face setup and road condition"],apply:"Identify your top-performing and lowest-performing excavator operator by fill time this week. What's the specific technique difference? That's your coaching conversation."},
+  {topic:"ROM Pad",title:"The ROM pad is a buffer — manage it like one",body:"The run-of-mine pad sits between the pit and the crusher. Its job is to absorb timing mismatches between mining and crushing. When the ROM pad is full, you have flexibility. When it's low, every blast delay or truck breakdown flows straight through to crusher feed rate. Managing ROM level is managing production risk.",keyPoints:["Target ROM pad level: enough for 4–6 hours of crusher feed at design throughput","Monitor ROM pad level every 2 hours during production — not just at shift end","If ROM is running low, divert trucks from lower-priority faces to the pad","After a crusher shutdown, resequence ROM rehandling to match restart throughput"],apply:"Check the ROM pad volume estimate at the start of your shift. Is it within target range? What's the plan if a blast is delayed by 2 hours?"},
+  {topic:"Blast Coordination",title:"A blast without coordination is a production gap in the making",body:"Blasting stops the pit. Every minute of blast exclusion time is dead production time — excavators parked, trucks idling, the crusher slowing. The goal is not to eliminate blasts; it's to make them as short and predictable as possible so the fleet can recover quickly.",keyPoints:["Confirm blast timing with the crusher team before firing — they need time to empty the feed","Pre-position empty trucks on the ready bench to accelerate post-blast mobilisation","Blast exclusion zones must be confirmed clear before re-entry — don't rush the all-clear","Post-blast face inspection happens before equipment enters — always"],apply:"For the next blast on your shift, time the total exclusion period from stop-work to first truck at the face. That number tells you the real blast cost in production time."},
+  {topic:"Survey Reconciliation",title:"If you can't measure it, you can't improve it",body:"Survey reconciliation — comparing actual tonnes and grades moved to the mining plan — is the feedback loop that tells you whether the pit is performing to design. Without it, grade control is guesswork and production targets are aspirational. Good reconciliation data is the foundation of good planning.",keyPoints:["Survey the face after every significant blast and after every bench lift","Discrepancies between planned and actual floor levels affect drainage and road grades","Share floor data with the planning team before the next blast — they need it to design the next drill pattern","A chronic under-dig or over-dig pattern usually signals a grade control or operator discipline issue"],apply:"When did your active benches last have a survey pick-up? Are your surveyors getting the floor data they need, or is production pressure pushing them out?"},
+  {topic:"Dewatering",title:"Water in the pit is a production problem and a safety problem",body:"Surface water and groundwater in an open pit reduce trafficability, accelerate haul road deterioration, soften bench floors, and create geotechnical risk. Dewatering is not a reactive task — it's a scheduled maintenance activity that needs to run ahead of mining, not behind it.",keyPoints:["Pump capacity should match peak inflow rate plus a safety margin — not just average inflow","Pump sumps must be accessible and positioned ahead of the advancing face","After heavy rain: assess road and floor trafficability before releasing equipment","A blocked or failed pump in a low point is a rapid flooding risk — inspect daily"],apply:"Check the status of your dewatering infrastructure today. Are sumps positioned correctly for the active mining direction? When were pumps last inspected?"},
+  {topic:"Equipment Pre-Start",title:"The pre-start is a safety check, not a box-tick",body:"Pre-start inspections are most useful when the operator genuinely looks — not when they sign the form and start the engine. The difference between a compliant pre-start and an effective one is the operator's willingness to report what they find. That willingness is a product of the safety culture you maintain.",keyPoints:["Brake testing must be done at the designated brake test area — not on the ramp","Oil, water, and hydraulic levels are checked visually and confirmed with the gauge","Any defect found must be raised on a WO before the shift starts — not deferred to the next","'Engine starts, machine works' is not a pre-start — it's a warm-up"],apply:"Ask an operator today to walk you through their pre-start process. Are they checking the items on the form — or doing the form after the check? There's a difference."},
+  {topic:"Bench Design",title:"The bench is designed for a reason — mine it that way",body:"Bench height, width, and berm dimensions are set by geotechnical design and mining plan. Deviating from them — cutting benches shorter for convenience, or mining wider than planned — undermines the geotechnical assumptions that the highwall stability analysis was based on.",keyPoints:["Mining above design bench height reduces effective berm width and increases highwall risk","Under-mining a bench leaves toe material that forces the excavator to dig upward — more spillage, worse floor","Confirm bench height against the survey before starting a new cut","Any deviation from the bench design must be assessed by the planning engineer and geotech"],apply:"On your active bench, confirm the planned vs actual bench height and berm width. Are you mining to design — or has operational pressure pushed a deviation?"},
+  {topic:"Dust Suppression",title:"Dust is a health hazard before it's a visibility problem",body:"Haul road dust creates multiple compounding problems: reduced visibility causes traffic incidents, dust accumulation on roads accelerates deterioration, and silica-bearing dust is a long-term health risk. Water trucks are the primary control — and the most commonly under-resourced.",keyPoints:["Water truck frequency on primary haul roads: every 2 hours in dry conditions, more in dusty material","Wet roads are safer than dusty roads — within reason; oversaturation reduces traction","Dust from drilling operations requires wet drilling or a dust collector — open dry drilling is not acceptable","Suppression records should be kept — they're part of your dust monitoring compliance"],apply:"Check your water truck schedule for today. Are primary haul roads being treated at the correct frequency? If a water truck is down, what's the interim control?"},
+  {topic:"Material Segregation",title:"Mixing ore and waste is an expensive mistake that happens slowly",body:"Material segregation — keeping ore and waste separate — protects grade and prevents dilution. The risk is highest at the dig face where the ore-waste contact zone isn't perfectly defined, and at the dump where incorrect tipping sequences mix material that should be kept apart.",keyPoints:["Grade control marking must be confirmed before the first truck loads from a new face","Any truck that tips to the wrong destination is a dilution or ore-loss event — trace it","The ore-waste contact is the most hazardous zone — slow down, dig carefully, confirm with grade control","ROM pad rehandling sequences must respect ore-grade separation"],apply:"Confirm with your grade control team that the ore-waste contact marking on your active bench is current and visible. When was it last updated?"},
+  {topic:"Safety Observation Culture",title:"Observations only work if something happens when you make one",body:"Safety observation systems generate data. But their real value is in the response — whether the person who raised the observation sees it acted on. If observations disappear into a system and nothing changes, reporting stops. If every observation gets a visible response — even 'we looked and it's fine, here's why' — reporting increases.",keyPoints:["Close out observations within 48 hours wherever possible — even with a 'no action required' note","Patterns in observation data predict incidents — review weekly, not just when something happens","The superintendent who is seen acting on observations gets more observations","Observations that lead to nothing teach the team that raising issues is pointless"],apply:"Pull the last 10 safety observations submitted in your area. How many are closed? For those that aren't — what's the barrier to closing them?"},
+  {topic:"Maintenance Coordination",title:"Maintenance windows are production decisions, not just maintenance decisions",body:"Every planned maintenance window costs production time. Every unplanned breakdown costs more — usually 2–3× the planned maintenance duration, plus the downstream disruption. The superintendent who coordinates with maintenance proactively, not reactively, runs fewer breakdowns and loses less total production.",keyPoints:["Planned maintenance windows should be timed to low-production periods where possible","Never defer a flagged defect because it inconveniences the shift plan — it gets worse","When equipment goes to maintenance, communicate it to the fleet dispatch team immediately","A maintenance log that shows a defect was flagged and deferred, then failed, is a liability"],apply:"Check your equipment status board. Is there anything currently deferred that was flagged more than 48 hours ago? What's the plan and the risk of continuing to defer it?"},
+  {topic:"Grade Control",title:"Grade control is the bridge between the mine plan and the metallurgy",body:"Grade control sampling and marking define where the value is in each blast. Poor grade control means ore goes to waste and waste goes to the mill — both outcomes cost money. The superintendent's role is to ensure grade control has the access and time it needs to do the work properly.",keyPoints:["Grade control sampling must be completed and interpreted before loading begins — not during","Sampling points must be accessible — blast muck that's unworkable for sampling is a grade control failure","Grade changes within a blast block should be marked before loading — not estimated","When in doubt about the contact: slow down, call grade control"],apply:"How long does grade control typically take from blast to marking on your site? Is that timeline compatible with your production schedule — or is loading pressure forcing early starts?"},
+];
+function todayLesson(){return LESSONS[(new Date().getDate()-1)%LESSONS.length];}
+let lessonData=null;
+function fetchLesson(){
+  if(!location.protocol.startsWith("http"))return;
+  fetch("lesson.json?t="+Date.now(),{cache:"no-store"})
+    .then(r=>r.ok?r.json():null)
+    .then(d=>{if(d){lessonData=d;if(activeView==="lesson")renderLesson();}})
+    .catch(()=>{});
+}
+function renderLesson(){
+  const el=document.getElementById("lesson-content");
+  const l=lessonData||todayLesson();
+  const dayNum=new Date().getDate();
+  const total=LESSONS.length;
+  const isLive=!!lessonData;
+  const dateStr=isLive&&l.date?new Date(l.date+"T00:00:00").toLocaleDateString("en-AU",{weekday:"long",day:"numeric",month:"long"}):new Date().toLocaleDateString("en-AU",{weekday:"long",day:"numeric",month:"long"});
+  let html=`<div class="ins-header">
+    <div class="ins-date">${isLive?"":"Day "+dayNum+" · "}${dateStr}</div>
+    <div class="ins-run">${isLive?"KB-generated lesson":"Lesson "+((dayNum-1)%total+1)+" of "+total+" · embedded"}</div>
+    <div class="ins-summary" style="font-size:1.05rem;font-weight:700;color:var(--txt);margin-top:8px;">${esc(l.title)}</div>
+    <div class="ins-summary" style="margin-top:8px;">${esc(l.body)}</div>
+  </div>`;
+  html+=`<div class="ins-source">
+    <div class="ins-source-head"><div class="ins-source-from">Key points</div></div>
+    <div class="ins-kp-list">`;
+  l.keyPoints.forEach(kp=>{html+=`<div class="ins-kp">${esc(kp)}</div>`;});
+  html+=`</div></div>`;
+  html+=`<div class="ins-cross">
+    <h3>Apply today</h3>
+    <div class="ins-cross-para">${esc(l.apply)}</div>
+  </div>`;
+  el.innerHTML=html;
+}
+
 /* ---------- boot ---------- */
 renderToday();
 document.getElementById("hdr-date").textContent=new Date().toLocaleDateString("en-AU",{weekday:"long",day:"numeric",month:"long"});
 syncFromServer();                         // pull current tasks/schedule from tasks.md (published as data.json)
-document.addEventListener("visibilitychange",()=>{if(!document.hidden)syncFromServer();}); // refresh when reopened
+fetchInsights();                          // pull latest wiki insights (published as insights.json)
+fetchLesson();                            // pull today's KB-generated lesson (published as lesson.json)
+document.addEventListener("visibilitychange",()=>{if(!document.hidden){syncFromServer();fetchInsights();fetchLesson();}});
 </script>
 </body>
 </html>
