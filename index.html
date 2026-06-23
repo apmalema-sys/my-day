@@ -233,34 +233,62 @@
   .ins-header{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px;margin:2px 4px 14px;}
   .ins-date{font-size:.72rem;color:var(--muted);font-weight:700;text-transform:uppercase;letter-spacing:.06em;}
   .ins-run{font-size:.7rem;color:var(--muted);margin-top:2px;}
-  .ins-summary{font-size:.88rem;color:var(--txt);line-height:1.55;margin-top:10px;}
-  .ins-action-count{font-size:.75rem;font-weight:700;color:var(--accent2);margin-top:8px;}
-  .ins-source{background:var(--card);border:1px solid var(--line);border-radius:14px;margin:0 0 10px;}
-  .ins-source-head{padding:12px 14px;}
-  .ins-source-from{font-size:.68rem;color:var(--muted);font-weight:700;text-transform:uppercase;letter-spacing:.04em;margin-bottom:3px;}
-  .ins-source-title{font-size:.92rem;font-weight:700;color:var(--txt);}
-  .ins-kp-list{border-top:1px solid var(--line);}
-  .ins-kp{font-size:.83rem;color:var(--txt);line-height:1.4;padding:8px 14px;border-bottom:1px solid var(--line);display:flex;gap:8px;align-items:flex-start;}
-  .ins-kp:last-child{border-bottom:none;}
-  .ins-kp::before{content:"•";color:var(--accent);flex-shrink:0;line-height:1.3;}
-  .ins-actions-label{font-size:.68rem;color:var(--muted);font-weight:700;text-transform:uppercase;letter-spacing:.05em;padding:8px 14px 4px;border-top:1px solid var(--line);}
-  .ins-action-row{display:flex;align-items:flex-start;gap:9px;padding:9px 14px;border-bottom:1px solid var(--line);}
-  .ins-action-row:last-child{border-bottom:none;}
-  .ins-action-pri{font-size:.62rem;font-weight:800;text-transform:uppercase;padding:2px 7px;border-radius:6px;flex-shrink:0;margin-top:2px;}
-  .ins-action-pri.high{background:rgba(255,159,67,.15);color:var(--high);}
-  .ins-action-pri.medium{background:rgba(255,210,77,.15);color:var(--medium);}
-  .ins-action-pri.urgent{background:rgba(255,92,108,.15);color:var(--urgent);}
-  .ins-action-pri.low{background:rgba(67,214,160,.15);color:var(--low);}
-  .ins-action-text{flex:1;}
-  .ins-action-body{font-size:.84rem;color:var(--txt);line-height:1.35;}
-  .ins-action-owner{font-size:.72rem;color:var(--muted);margin-top:3px;}
-  .ins-cross{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px;margin:0 0 10px;}
-  .ins-cross h3{font-size:.72rem;color:var(--muted);font-weight:700;text-transform:uppercase;letter-spacing:.06em;margin-bottom:8px;}
-  .ins-cross-para{font-size:.84rem;color:var(--txt);line-height:1.55;margin-bottom:8px;}
-  .ins-cross-para:last-child{margin-bottom:0;}
+  .ins-summary{font-size:.86rem;color:var(--txt);line-height:1.5;margin-top:10px;}
   .ins-stale{text-align:center;font-size:.74rem;color:var(--muted);padding:0 4px 12px;}
   .ins-empty{text-align:center;color:var(--muted);padding:48px 20px;}
   .ins-empty .big{font-size:2.2rem;margin-bottom:10px;}
+
+  /* KPI grid */
+  .ins-kpi-grid{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin:0 0 14px;}
+  .ins-kpi{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:13px 14px;}
+  .ins-kpi-lbl{font-size:.64rem;color:var(--muted);font-weight:700;text-transform:uppercase;letter-spacing:.05em;margin-bottom:6px;}
+  .ins-kpi-val{font-size:1.42rem;font-weight:800;color:var(--accent2);line-height:1.1;}
+  .ins-kpi-sub{font-size:.68rem;color:var(--muted);margin-top:4px;line-height:1.35;}
+  .ins-kpi.good .ins-kpi-val{color:var(--low);}
+  .ins-kpi.bad .ins-kpi-val{color:var(--urgent);}
+
+  /* Follow-up area cards */
+  .ins-fup{border-radius:14px;margin:0 0 10px;overflow:hidden;}
+  .ins-fup-head{display:flex;align-items:flex-start;gap:8px;padding:12px 14px 8px;}
+  .ins-fup-pri{font-size:.59rem;font-weight:800;text-transform:uppercase;padding:2px 8px;border-radius:6px;flex-shrink:0;margin-top:2px;}
+  .ins-fup-title{font-size:.88rem;font-weight:700;color:var(--txt);flex:1;line-height:1.3;}
+  .ins-fup-body{font-size:.81rem;color:var(--txt);line-height:1.5;padding:0 14px 10px;opacity:.85;}
+  .ins-fup-action{font-size:.79rem;font-weight:600;padding:9px 14px;border-top:1px solid;}
+  .ins-fup.critical{background:rgba(255,68,68,.08);border:1px solid rgba(255,68,68,.25);}
+  .ins-fup.critical .ins-fup-pri{background:rgba(255,68,68,.18);color:var(--urgent);}
+  .ins-fup.critical .ins-fup-action{border-color:rgba(255,68,68,.15);color:var(--urgent);}
+  .ins-fup.high{background:rgba(255,124,0,.08);border:1px solid rgba(255,124,0,.25);}
+  .ins-fup.high .ins-fup-pri{background:rgba(255,124,0,.18);color:var(--high);}
+  .ins-fup.high .ins-fup-action{border-color:rgba(255,124,0,.15);color:var(--high);}
+  .ins-fup.monitor{background:rgba(67,147,214,.07);border:1px solid rgba(67,147,214,.22);}
+  .ins-fup.monitor .ins-fup-pri{background:rgba(67,147,214,.18);color:#4a9fd4;}
+  .ins-fup.monitor .ins-fup-action{border-color:rgba(67,147,214,.15);color:#4a9fd4;}
+
+  /* Equipment panel */
+  .ins-equip{background:var(--card);border:1px solid var(--line);border-radius:14px;margin:0 0 10px;}
+  .ins-equip-row{display:flex;align-items:flex-start;gap:8px;padding:10px 14px;border-bottom:1px solid var(--line);}
+  .ins-equip-row:last-child{border-bottom:none;}
+  .ins-equip-unit{font-size:.83rem;font-weight:800;color:var(--txt);min-width:56px;flex-shrink:0;padding-top:1px;}
+  .ins-equip-bdg{font-size:.57rem;font-weight:800;text-transform:uppercase;padding:2px 6px;border-radius:5px;flex-shrink:0;margin-top:2px;}
+  .ins-equip-bdg.down{background:rgba(255,68,68,.15);color:var(--urgent);}
+  .ins-equip-bdg.partial{background:rgba(255,124,0,.15);color:var(--high);}
+  .ins-equip-bdg.warning{background:rgba(212,146,26,.15);color:var(--medium);}
+  .ins-equip-bdg.scheduled{background:rgba(61,200,150,.1);color:var(--low);}
+  .ins-equip-bdg.returned{background:rgba(61,200,150,.15);color:var(--low);}
+  .ins-equip-note{font-size:.75rem;color:var(--muted);line-height:1.35;flex:1;}
+  .ins-equip-type{color:var(--muted);}
+
+  /* ---- lesson ---- */
+  .les-body{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px;margin:0 0 14px;}
+  .les-body-lbl{font-size:.64rem;color:var(--muted);font-weight:700;text-transform:uppercase;letter-spacing:.06em;margin-bottom:8px;}
+  .les-body-text{font-size:.86rem;color:var(--txt);line-height:1.55;}
+  .les-kp-list{background:var(--card);border:1px solid var(--line);border-radius:14px;margin:0 0 10px;overflow:hidden;}
+  .les-kp{font-size:.83rem;color:var(--txt);line-height:1.45;padding:10px 14px;border-bottom:1px solid var(--line);display:flex;gap:9px;align-items:flex-start;}
+  .les-kp:last-child{border-bottom:none;}
+  .les-kp::before{content:"•";color:var(--accent);flex-shrink:0;line-height:1.5;}
+  .les-apply{background:rgba(255,209,0,.06);border:1px solid rgba(255,209,0,.18);border-radius:14px;padding:14px;margin:0 0 10px;}
+  .les-apply-lbl{font-size:.64rem;color:var(--accent);font-weight:700;text-transform:uppercase;letter-spacing:.06em;margin-bottom:8px;}
+  .les-apply-text{font-size:.85rem;color:var(--txt);line-height:1.55;}
 
   .toast{position:fixed;left:50%;bottom:calc(var(--safe-bot) + 92px);transform:translateX(-50%) translateY(20px);background:var(--card2);border:1px solid var(--line);color:var(--txt);padding:11px 18px;border-radius:12px;font-size:.85rem;font-weight:600;opacity:0;pointer-events:none;transition:all .25s;z-index:60;box-shadow:0 8px 24px rgba(0,0,0,.4);}
   .toast.show{opacity:1;transform:translateX(-50%) translateY(0);}
@@ -1364,7 +1392,7 @@ document.querySelectorAll(".tab").forEach(tab=>{
     else if(v==="inspect"){dEl.textContent=inspTab==="lsr"?"LSR & SOPs":"Tick · note · close";}
     else if(v==="events"){dEl.textContent=new Date().toLocaleDateString("en-AU",{weekday:"long",day:"numeric",month:"long"});}
     else if(v==="insights"){dEl.textContent=insightsData&&insightsData.date?insightsData.date:"";}
-    else if(v==="lesson"){const l=todayLesson();dEl.textContent=l?l.topic:"";}
+    else if(v==="lesson"){const l=lessonData||todayLesson();dEl.textContent=l?l.topic:"";}
     else dEl.textContent="";
     if(v==="today")renderToday();else if(v==="tasks")renderTasks();else if(v==="inspect"){if(inspTab==="ops")renderInspect();else renderLSR();}else if(v==="events")renderEvents();else if(v==="insights")renderInsights();else if(v==="lesson")renderLesson();
   });
@@ -1546,56 +1574,67 @@ function renderInsights(){
   }
   const d=insightsData;
   const dtStr=d.date?new Date(d.date+"T00:00:00").toLocaleDateString("en-AU",{weekday:"long",day:"numeric",month:"long",year:"numeric"}):"";
-  const allActions=(d.sources||[]).flatMap(s=>s.actions||[]);
   const stale=d.date&&d.date<todayStr();
-  let html=`<div class="ins-header">
+  let html="";
+
+  // Header card
+  html+=`<div class="ins-header">
     <div class="ins-date">${dtStr}</div>
     ${d.runNumber?`<div class="ins-run">Compile run #${d.runNumber}</div>`:""}
-    <div class="ins-summary">${esc(d.summary||"")}</div>
-    ${allActions.length?`<div class="ins-action-count">${allActions.length} action item${allActions.length===1?"":"s"}</div>`:""}
+    ${d.summary?`<div class="ins-summary">${esc(d.summary)}</div>`:""}
   </div>`;
   if(stale)html+=`<div class="ins-stale">Report from ${d.date} — today's compile hasn't run yet</div>`;
-  if(allActions.length){
-    html+=`<div class="sect"><h2>Action items</h2><span class="meta">${allActions.length}</span></div>`;
-    html+=`<div class="ins-source">`;
-    allActions.forEach(a=>{
-      const priRaw=(a.priority||"medium").toLowerCase().split(/[\s—\-]/)[0];
-      const pri=["urgent","high","medium","low"].includes(priRaw)?priRaw:"medium";
-      html+=`<div class="ins-action-row">
-        <span class="ins-action-pri ${pri}">${pri}</span>
-        <div class="ins-action-text">
-          <div class="ins-action-body">${esc(a.action)}</div>
-          ${a.owner?`<div class="ins-action-owner">${esc(a.owner)}</div>`:""}
-        </div>
+
+  // KPI grid
+  const kpis=d.kpis||[];
+  if(kpis.length){
+    html+=`<div class="ins-kpi-grid">`;
+    kpis.forEach(k=>{
+      const cls=k.good===true?"good":k.good===false?"bad":"";
+      html+=`<div class="ins-kpi ${cls}">
+        <div class="ins-kpi-lbl">${esc(k.label)}</div>
+        <div class="ins-kpi-val">${esc(k.value)}</div>
+        ${k.delta?`<div class="ins-kpi-sub">${esc(k.delta)}</div>`:""}
       </div>`;
     });
     html+=`</div>`;
   }
-  if((d.sources||[]).length){
-    html+=`<div class="sect"><h2>Sources</h2><span class="meta">${d.sources.length}</span></div>`;
-    d.sources.forEach(s=>{
-      html+=`<div class="ins-source">
-        <div class="ins-source-head">
-          ${s.from?`<div class="ins-source-from">${esc(s.from)}</div>`:""}
-          <div class="ins-source-title">${esc(s.title)}</div>
-        </div>`;
-      if((s.keyPoints||[]).length){
-        html+=`<div class="ins-kp-list">`;
-        s.keyPoints.forEach(kp=>{html+=`<div class="ins-kp">${esc(kp)}</div>`;});
-        html+=`</div>`;
-      }
-      html+=`</div>`;
+
+  // Follow-up areas
+  const fups=d.followUps||[];
+  if(fups.length){
+    html+=`<div class="sect"><h2>Follow-up areas</h2><span class="meta">${fups.length}</span></div>`;
+    fups.forEach(f=>{
+      const priRaw=(f.priority||"monitor").toLowerCase();
+      const pri=priRaw==="critical"?"critical":priRaw==="high"?"high":"monitor";
+      html+=`<div class="ins-fup ${pri}">
+        <div class="ins-fup-head">
+          <span class="ins-fup-pri">${pri.toUpperCase()}</span>
+          <div class="ins-fup-title">${esc(f.title||"")}</div>
+        </div>
+        ${f.body?`<div class="ins-fup-body">${esc(f.body)}</div>`:""}
+        ${f.action?`<div class="ins-fup-action">→ ${esc(f.action)}</div>`:""}
+      </div>`;
     });
   }
-  if(d.crossCutting){
-    const paras=d.crossCutting.split(/\n\n+/).map(p=>p.replace(/^###\s*/,"").replace(/\[\[([^\]]+)\]\]/g,"$1").trim()).filter(p=>p);
-    if(paras.length){
-      html+=`<div class="sect"><h2>Observations</h2></div>`;
-      html+=`<div class="ins-cross">`;
-      paras.forEach(p=>{html+=`<div class="ins-cross-para">${esc(p)}</div>`;});
-      html+=`</div>`;
-    }
+
+  // Equipment panel
+  const equip=d.equipment||[];
+  if(equip.length){
+    html+=`<div class="sect"><h2>Equipment</h2><span class="meta">${equip.length}</span></div>`;
+    html+=`<div class="ins-equip">`;
+    equip.forEach(e=>{
+      const st=(e.status||"warning").toLowerCase();
+      const label=st.charAt(0).toUpperCase()+st.slice(1);
+      html+=`<div class="ins-equip-row">
+        <div class="ins-equip-unit">${esc(e.unit)}</div>
+        <span class="ins-equip-bdg ${st}">${label}</span>
+        <div class="ins-equip-note">${e.type?`<span class="ins-equip-type">${esc(e.type)} · </span>`:""}${esc(e.note||"")}</div>
+      </div>`;
+    });
+    html+=`</div>`;
   }
+
   el.innerHTML=html;
 }
 
@@ -1650,20 +1689,29 @@ function renderLesson(){
   const isLive=!!lessonData;
   const dateStr=isLive&&l.date?new Date(l.date+"T00:00:00").toLocaleDateString("en-AU",{weekday:"long",day:"numeric",month:"long"}):new Date().toLocaleDateString("en-AU",{weekday:"long",day:"numeric",month:"long"});
   let html=`<div class="ins-header">
-    <div class="ins-date">${isLive?"":"Day "+dayNum+" · "}${dateStr}</div>
+    <div class="ins-date">${dateStr}</div>
     <div class="ins-run">${isLive?"KB-generated lesson":"Lesson "+((dayNum-1)%total+1)+" of "+total+" · embedded"}</div>
-    <div class="ins-summary" style="font-size:1.05rem;font-weight:700;color:var(--txt);margin-top:8px;">${esc(l.title)}</div>
-    <div class="ins-summary" style="margin-top:8px;">${esc(l.body)}</div>
+    <div class="ins-summary" style="font-size:1.05rem;font-weight:700;color:var(--txt);margin-top:8px;">${esc(l.topic||l.title||"")}</div>
   </div>`;
-  html+=`<div class="ins-source">
-    <div class="ins-source-head"><div class="ins-source-from">Key points</div></div>
-    <div class="ins-kp-list">`;
-  l.keyPoints.forEach(kp=>{html+=`<div class="ins-kp">${esc(kp)}</div>`;});
-  html+=`</div></div>`;
-  html+=`<div class="ins-cross">
-    <h3>Apply today</h3>
-    <div class="ins-cross-para">${esc(l.apply)}</div>
-  </div>`;
+  if(l.body){
+    html+=`<div class="les-body">
+      <div class="les-body-lbl">Why it matters</div>
+      <div class="les-body-text">${esc(l.body)}</div>
+    </div>`;
+  }
+  const kps=l.keyPoints||[];
+  if(kps.length){
+    html+=`<div class="sect"><h2>Core lesson</h2><span class="meta">${kps.length}</span></div>`;
+    html+=`<div class="les-kp-list">`;
+    kps.forEach(kp=>{html+=`<div class="les-kp">${esc(kp)}</div>`;});
+    html+=`</div>`;
+  }
+  if(l.apply){
+    html+=`<div class="les-apply">
+      <div class="les-apply-lbl">Watch for today</div>
+      <div class="les-apply-text">${esc(l.apply)}</div>
+    </div>`;
+  }
   el.innerHTML=html;
 }
 
