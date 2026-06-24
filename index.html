@@ -133,6 +133,14 @@
   .sum-total-score{font-size:2.6rem;font-weight:800;line-height:1;}
   .sum-total-label{font-size:.7rem;color:var(--muted);font-weight:700;text-transform:uppercase;letter-spacing:.06em;margin-top:4px;}
   .sum-total-sub{font-size:.78rem;color:var(--muted);margin-top:6px;}
+  .sum-table-wrap{padding:0 14px 14px;}
+  .sum-table{width:100%;border-collapse:collapse;font-size:.77rem;}
+  .sum-table th{padding:5px 6px 4px;text-align:right;font-size:.69rem;font-weight:700;text-transform:uppercase;letter-spacing:.04em;color:var(--muted);border-bottom:1px solid var(--line);}
+  .sum-table th:first-child{text-align:left;}
+  .sum-table td{padding:5px 6px;text-align:right;border-bottom:1px solid rgba(255,255,255,.04);color:var(--muted);}
+  .sum-table td:first-child{text-align:left;color:var(--txt);font-weight:600;}
+  .sum-table td.no-flag{color:#ff5c6c;font-weight:700;}
+  .sum-tfoot td{border-top:1px solid var(--line)!important;border-bottom:none!important;color:var(--txt)!important;}
   /* hazard identification */
   .hazard-item{display:flex;align-items:flex-start;gap:8px;padding:9px 14px;border-bottom:1px solid var(--line);}
   .hazard-body{flex:1;min-width:0;}
@@ -874,15 +882,17 @@ function saveInsp(){localStorage.setItem(LS_INSP,JSON.stringify(insp));}
 function barColor(p){return p>=90?'#16a34a':p>=75?'#4f8cff':p>=50?'#ff9f43':'#ff5c6c';}
 function renderSummary(){
   let totYes=0,totNo=0,totNa=0;
+  let tableRows="";
   const bars=INSPECT_SECTIONS.map(sec=>{
     let idx=0,yes=0,no=0,na=0;
     sec.subs.forEach(sub=>{
-      if(sub.type==="hazards"||sub.type==="counts")return;
+      if(sub.type==="hazards"||sub.type==="counts"||sub.type==="cycledata"||sub.type==="cycletotal")return;
       sub.items.forEach(()=>{const v=insp.yn[sec.key+"."+idx];if(v==="yes")yes++;else if(v==="no")no++;else if(v==="na")na++;idx++;});
     });
     totYes+=yes;totNo+=no;totNa+=na;
     const ans=yes+no+na;const pct=ans>0?Math.round((yes/ans)*100):0;
     const col=ans>0?barColor(pct):'var(--line)';
+    tableRows+=`<tr><td>${esc(sec.title)}</td><td>${yes||'—'}</td><td class="${no>0?'no-flag':''}">${no||'—'}</td><td>${na||'—'}</td><td>${ans||'—'}</td><td style="color:${ans>0?col:'var(--muted)'};font-weight:600">${ans>0?pct+'%':'—'}</td></tr>`;
     return `<div class="sum-bar-row">
       <div class="sum-bar-meta"><span class="sum-bar-name">${esc(sec.title)}</span><span class="sum-bar-pct">${ans>0?pct+'%':'—'}</span></div>
       <div class="sum-bar-bg"><div class="sum-bar-fg" style="width:${ans>0?pct:0}%;background:${col};"></div></div>
@@ -894,6 +904,13 @@ function renderSummary(){
   document.getElementById("insp-summary").innerHTML=`<div class="insp-summary">
     <div class="sum-head"><h3>Inspection summary</h3></div>
     <div class="sum-bars">${bars}</div>
+    <div class="sum-table-wrap">
+      <table class="sum-table">
+        <thead><tr><th>Section</th><th>YES</th><th>NO</th><th>N/A</th><th>Ans</th><th>%</th></tr></thead>
+        <tbody>${tableRows}</tbody>
+        <tfoot><tr class="sum-tfoot"><td><b>Total</b></td><td>${totYes||'—'}</td><td class="${totNo>0?'no-flag':''}">${totNo||'—'}</td><td>${totNa||'—'}</td><td>${totAns||'—'}</td><td style="color:${oCol};font-weight:700">${totAns>0?oPct+'%':'—'}</td></tr></tfoot>
+      </table>
+    </div>
     <div class="sum-total">
       <div class="sum-total-score" style="color:${oCol}">${totAns>0?oPct+'%':'—'}</div>
       <div class="sum-total-label">Compliance</div>
@@ -1234,19 +1251,20 @@ document.getElementById("insp-copy").addEventListener("click",async()=>{
   try{await navigator.clipboard.writeText(md);toast("Report copied — paste into CoWork");}
   catch(e){fallbackCopy(md);}
 });
-document.getElementById("insp-share").addEventListener("click",async()=>{
+document.getElementById("insp-share").addEventListener("click",()=>{
   const md=inspReport();
   const subj="[Pit Inspection] "+insp.date+" — "+insp.shift;
   const email=getSyncEmail();
+  // Report body is too large for a mailto URL — copy to clipboard, open email with subject pre-filled
+  const ta=document.createElement("textarea");ta.value=md;ta.style.cssText="position:fixed;opacity:0";document.body.appendChild(ta);ta.select();
+  try{document.execCommand("copy");}catch(e){}
+  document.body.removeChild(ta);
   if(email){
-    // open a pre-addressed email; the scheduled CoWork task picks it up by subject
-    location.href="mailto:"+encodeURIComponent(email)+"?subject="+encodeURIComponent(subj)+"&body="+encodeURIComponent(md);
-    toast("Opening email — just press Send");
-    return;
+    location.href="mailto:"+encodeURIComponent(email)+"?subject="+encodeURIComponent(subj);
+    toast("Report copied — paste into the email body");
+  } else {
+    toast("Report copied — set sync email in ⚙︎");
   }
-  // no sync email set yet — offer to set one, then fall back to share/copy
-  if(navigator.share){try{await navigator.share({title:subj,text:md});}catch(e){}}
-  else{try{await navigator.clipboard.writeText(md);toast("Copied — set a sync email in ⚙︎ for one-tap");}catch(e){fallbackCopy(md);}}
 });
 function fallbackCopy(text){
   const ta=document.createElement("textarea");ta.value=text;document.body.appendChild(ta);ta.select();
