@@ -1193,6 +1193,7 @@ function inspReport(){
         sub.items.forEach(ci=>{const v=(insp.counts||{})[ci.key];md+=`**${ci.label}:** ${v!==undefined&&v!==''?v:'—'}\n`;});
         md+=`\n`;return;
       }
+      if(sub.type==="cycledata"||sub.type==="cycletotal")return;
       md+=`### ${sub.label}\n\n`;
       sub.items.forEach(item=>{
         const k=sec.key+"."+idx;
