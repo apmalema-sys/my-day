@@ -1,14 +1,15 @@
 {
-  "date": "2026-06-23",
-  "topic": "New Foremen Onboarding",
-  "title": "New Foremen Onboarding",
-  "body": "When a new foreman is thrown straight onto an independent shift without structured preparation, you get the exact supervision-quality failures that show up repeatedly in your NCR corpus — supervisor present, didn't intervene. Four weeks of supervised practice fixes that gap; a one-day induction doesn't.",
+  "date": "2026-06-24",
+  "topic": "OEE Framework",
+  "title": "OEE Framework",
+  "body": "At ADW, the trucks and excavators post 90%+ mechanical availability — yet output consistently falls short. The gap lives in Performance and Quality losses that the current workbooks capture but nobody has combined into a single number you can act on.",
   "keyPoints": [
-    "The program runs four pillars — technical competence, safety and compliance leadership, shift control and decision-making, and people leadership. Assessment at Week 4 rates each pillar 1–5. A foreman who scores well on technical but poorly on leadership isn't ready.",
-    "Week 2 is where the field skills get built: match-up, spotting, road standards, hazard ID, and NCR writing under supervision. This is also where most new foremen expose gaps they didn't know they had.",
-    "The Week 4 readiness decision has three outcomes — Ready, Ready with Support, or Not Yet Ready. \"Not Yet Ready\" needs a defined path: what additional training, who signs off the second readiness call, and how long the extension runs. That path should be explicit before the program starts, not figured out when someone fails.",
-    "The 90-day post-onboarding support (weekly check-ins with the Superintendent, monthly KPI review, peer mentoring) is where the program actually cements. Week 4 is the test — the 90 days are where the standard gets held."
+    "OEE = Availability × Performance × Quality. World-class manufacturing hits 85%; load-and-haul mining targets 65–70% as a realistic benchmark.",
+    "Availability tracks whether equipment is mechanically ready. Performance tracks whether it's working at full cycle tempo when it is ready. Quality tracks whether the output actually went to the right place.",
+    "The Performance loss at ADW — dump trucks running 15–25 points below availability — comes from \"no location,\" \"waiting for excavator,\" and standby reasons, not breakdowns. That's a dispatch and face-management problem, not a maintenance problem.",
+    "Wrong-tipping events and crusher bin-level stoppages are Quality failures in OEE terms. A truck that completed a cycle but dumped at the wrong pad produced zero good output for that cycle.",
+    "The data to compute OEE already exists: A&U workbook (Availability), running-hours log (Performance), daily production report (Quality proxy). It just hasn't been combined."
   ],
-  "apply": "If you have a foreman currently in their first 90 days post-onboarding, their shift handover quality is the single clearest indicator of whether the onboarding actually landed — check it specifically at shift start and shift end, where your NCR data says incidents cluster.",
-  "generatedAt": "2026-06-23T22:06:16"
+  "apply": "If you're tracking truck delays at the face during shift, note the standby reason code — \"waiting for excavator\" vs \"no dig location\" — because those two categories need different fixes, and separating them is the first step to closing the Performance gap.",
+  "generatedAt": "2026-06-24T05:30:46"
 }
