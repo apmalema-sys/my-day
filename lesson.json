@@ -1,15 +1,15 @@
 {
-  "date": "2026-06-24",
-  "topic": "OEE Framework",
-  "title": "OEE Framework",
-  "body": "At ADW, the trucks and excavators post 90%+ mechanical availability — yet output consistently falls short. The gap lives in Performance and Quality losses that the current workbooks capture but nobody has combined into a single number you can act on.",
+  "date": "2026-06-25",
+  "topic": "Overspill Material Management",
+  "title": "Overspill Material Management",
+  "body": "Overspill at Stage 4D and the Old South Ramp has generated seven separate risk assessments across 18 months — the mine geometry keeps creating it, and the cleanup operation itself is one of the highest-risk activities on site. Getting the controls wrong during cleaning is how you turn a maintenance task into a fatality.",
   "keyPoints": [
-    "OEE = Availability × Performance × Quality. World-class manufacturing hits 85%; load-and-haul mining targets 65–70% as a realistic benchmark.",
-    "Availability tracks whether equipment is mechanically ready. Performance tracks whether it's working at full cycle tempo when it is ready. Quality tracks whether the output actually went to the right place.",
-    "The Performance loss at ADW — dump trucks running 15–25 points below availability — comes from \"no location,\" \"waiting for excavator,\" and standby reasons, not breakdowns. That's a dispatch and face-management problem, not a maintenance problem.",
-    "Wrong-tipping events and crusher bin-level stoppages are Quality failures in OEE terms. A truck that completed a cycle but dumped at the wrong pad produced zero good output for that cycle.",
-    "The data to compute OEE already exists: A&U workbook (Availability), running-hours log (Performance), daily production report (Quality proxy). It just hasn't been combined."
+    "**Day shift only, no exceptions.** Overspill cleaning requires visual confirmation of stability above and below — night visibility is too compromised to manage that.",
+    "**No Stage 6 operations while Stage 4D is being cleaned.** The upper bench is the fall source; simultaneous activity above means uncontrolled exposure below. The dig limit is 15 m from the edge, demarcated with white tape — if it's not taped, don't start.",
+    "**Geotechnical sign-off before the excavator moves in.** If there's any question about stability, you wait for Maaden geo — this is non-negotiable under LSR 7.",
+    "**Excavator tracks perpendicular to the high wall, tramming motors at the back.** This is your quick-retreat posture. Scale loose material first, work in horizontal slices — never undercut the face.",
+    "**Treat it as a routine, not a one-off.** Seven RAs, same locations, same hazards. The recurrence is the finding. Consider whether Stage 4D/Catchment warrants a standing procedure instead of rebuilding from scratch each time."
   ],
-  "apply": "If you're tracking truck delays at the face during shift, note the standby reason code — \"waiting for excavator\" vs \"no dig location\" — because those two categories need different fixes, and separating them is the first step to closing the Performance gap.",
-  "generatedAt": "2026-06-24T05:30:46"
+  "apply": "With Stage 6 active and the south route becoming the primary exit as the entry ramp closes, traffic pressure around Stage 4D will increase — confirm the dig limit tape is in place and Stage 6 has been stood down before any cleaning work begins.",
+  "generatedAt": "2026-06-25T10:09:10"
 }
