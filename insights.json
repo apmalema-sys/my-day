@@ -1,15 +1,9 @@
 {
-  "generatedAt": "2026-06-24T15:42:37",
-  "date": "2026-06-24",
-  "runNumber": 23,
-  "summary": "**Trucks beat target by 2.1%** — 643,033 BCM against 630,030 BCM target. The truck fleet delivered above plan.",
+  "generatedAt": "2026-06-25T14:32:38",
+  "date": "2026-06-25",
+  "runNumber": 24,
+  "summary": "**June 24 final day: +31.0% survey day** — EX-253 + EX-340 both loading on heap at +4.5 m. Largest positive gap and largest absolute survey excess (+11,087 BCM) of the month.",
   "kpis": [
-    {
-      "label": "MTD BCM",
-      "value": "593,278",
-      "delta": "+5.0% vs target",
-      "good": true
-    },
     {
       "label": "Survey Gap",
       "value": "-13.0%",
@@ -24,7 +18,7 @@
     },
     {
       "label": "Days Remain",
-      "value": "1",
+      "value": "0",
       "delta": "ends Jun 24",
       "good": null
     }
@@ -76,25 +70,25 @@
   "followUps": [
     {
       "priority": "HIGH",
-      "title": "**Survey missed target by 6.6%** — 588,626 BCM, 41,404 BCM short",
-      "body": "A measurement artifact: loading outside the survey calculation area and North dump hauling outside the boundary from June 6 drove a persistent structural gap.",
+      "title": "**Month trucks at 106.0%** — 667,678 BCM, +37,648 BCM above target",
+      "body": "Strong monthly beat.",
       "action": ""
     },
     {
       "priority": "MONITOR",
-      "title": "**Month-end gap: −54,407 BCM (−9.24%)** — structurally consistent with t...",
+      "title": "**Month survey revised to 99.1%** — 624,358 BCM against 630,030 BCM target",
+      "body": "The heap-catch on the final day recovered the survey position from the provisional 93.4% to essentially target.",
+      "action": ""
+    },
+    {
+      "priority": "MONITOR",
+      "title": "**Final gap: −43,320 BCM (−6.94%)** — boundary-exclusion artifact (North...",
       "body": "",
       "action": ""
     },
     {
       "priority": "MONITOR",
-      "title": "**QIWA restrictions** now blocking normal JRAR recruitment",
-      "body": "ESAD Labour Hire arrangement for 81 employees approved by board; CEO directive to execute immediately. ADW operations unaffected in the short term but workforce pipeline constrained.",
-      "action": ""
-    },
-    {
-      "priority": "MONITOR",
-      "title": "**Truck-factor exercise** (Stage 4 vs Stage 6 calibration using 1-2 work...",
+      "title": "The reporting gap (survey figure used for contractual reporting despite ...",
       "body": "",
       "action": ""
     }
