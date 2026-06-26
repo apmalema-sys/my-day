@@ -1,94 +1,94 @@
 {
-  "generatedAt": "2026-06-25T14:32:38",
-  "date": "2026-06-25",
-  "runNumber": 24,
-  "summary": "**June 24 final day: +31.0% survey day** — EX-253 + EX-340 both loading on heap at +4.5 m. Largest positive gap and largest absolute survey excess (+11,087 BCM) of the month.",
+  "generatedAt": "2026-06-26T22:25:34",
+  "date": "2026-06-26",
+  "runNumber": 27,
+  "summary": "**Ramp 144 is the critical path item for the July production month open.** Deadline Monday June 29. Peter on vacation June 26 – July 8; Muhammad is foreman for June 26 and the weekend. The full weekend execution (Friday night → Saturday 12,000t → Sunday/Monday second cut) must proceed without interruption.",
   "kpis": [
     {
       "label": "Survey Gap",
-      "value": "-13.0%",
+      "value": "+25.8%",
       "delta": "survey vs trucks MTD",
-      "good": false
-    },
-    {
-      "label": "Crusher MTD",
-      "value": "51%",
-      "delta": "63,278 / 124,000 LCM",
-      "good": null
+      "good": true
     },
     {
       "label": "Days Remain",
-      "value": "0",
-      "delta": "ends Jun 24",
+      "value": "24",
+      "delta": "in production month",
       "good": null
     }
   ],
   "equipment": [
     {
-      "unit": "EX-253",
-      "type": "Excavator",
+      "unit": "DT-70",
+      "type": "Haul Truck",
+      "status": "warning",
+      "note": "21"
+    },
+    {
+      "unit": "DT-71",
+      "type": "Haul Truck",
+      "status": "warning",
+      "note": "24"
+    },
+    {
+      "unit": "DT-72",
+      "type": "Haul Truck",
+      "status": "warning",
+      "note": "24"
+    },
+    {
+      "unit": "DT-131",
+      "type": "Haul Truck",
       "status": "scheduled",
-      "note": "Pulled June 22; service June 23. Return date TBC."
+      "note": "9.5"
     },
     {
-      "unit": "EX-263",
-      "type": "Excavator",
-      "status": "returned",
-      "note": "Running alongside EX-1250 on same block as of June 22."
-    },
-    {
-      "unit": "EX-123",
-      "type": "Excavator",
-      "status": "partial",
-      "note": "Continued partial operation; full return status not confirmed."
-    },
-    {
-      "unit": "DT-367",
+      "unit": "DT-245",
       "type": "Haul Truck",
       "status": "warning",
-      "note": "Final drive components arriving June 25 — repair progressing. Earlier plan showed 0% through June 29 / return "
+      "note": "3.5"
     },
     {
-      "unit": "DT-128",
+      "unit": "DT-246",
       "type": "Haul Truck",
       "status": "warning",
-      "note": "Transmission + brake fault (June 21) — status to be confirmed."
+      "note": "5.5"
     },
     {
-      "unit": "DT-130",
+      "unit": "DT-281",
       "type": "Haul Truck",
       "status": "warning",
-      "note": "Transmission warning (June 21) — status to be confirmed."
+      "note": "14.5"
     },
     {
-      "unit": "GD-279",
-      "type": "Grader",
+      "unit": "DT-345",
+      "type": "Haul Truck",
       "status": "warning",
-      "note": "Fan bearing fault — repair in progress as of HOD June 23."
+      "note": "24"
     }
   ],
   "followUps": [
     {
       "priority": "HIGH",
-      "title": "**Month trucks at 106.0%** — 667,678 BCM, +37,648 BCM above target",
-      "body": "Strong monthly beat.",
+      "title": "**ROM Pad finger labels absent — active misrouting risk.** Finger 3 cont...",
+      "body": "",
       "action": ""
     },
     {
-      "priority": "MONITOR",
-      "title": "**Month survey revised to 99.1%** — 624,358 BCM against 630,030 BCM target",
-      "body": "The heap-catch on the final day recovered the survey position from the provisional 93.4% to essentially target.",
+      "priority": "HIGH",
+      "title": "**Diesel overflow = fourth refuelling-area event in corpus.** NCR 25-037...",
+      "body": "",
       "action": ""
     },
     {
-      "priority": "MONITOR",
-      "title": "**Final gap: −43,320 BCM (−6.94%)** — boundary-exclusion artifact (North...",
+      "priority": "HIGH",
+      "title": "**New production month (July cycle) starts June 25.** Previous month clo...",
       "body": "",
       "action": ""
     },
     {
       "priority": "MONITOR",
-      "title": "The reporting gap (survey figure used for contractual reporting despite ...",
+      "title": "**Block boundary escalation in 620/602.** As of June 25 morning, surveyo...",
       "body": "",
       "action": ""
     }
