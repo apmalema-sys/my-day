@@ -1,15 +1,15 @@
 {
-  "date": "2026-06-25",
-  "topic": "Overspill Material Management",
-  "title": "Overspill Material Management",
-  "body": "Overspill at Stage 4D and the Old South Ramp has generated seven separate risk assessments across 18 months — the mine geometry keeps creating it, and the cleanup operation itself is one of the highest-risk activities on site. Getting the controls wrong during cleaning is how you turn a maintenance task into a fatality.",
+  "date": "2026-06-26",
+  "topic": "People-Machinery Interaction",
+  "title": "People-Machinery Interaction",
+  "body": "PMI failures produce the worst outcomes on site — a truck that didn't see you, an operator you assumed saw you, and the result is severe or fatal. At ADW, every shift has dozens of machine-approach moments at the loading face, ROM pad, and ramps where this chain can break.",
   "keyPoints": [
-    "**Day shift only, no exceptions.** Overspill cleaning requires visual confirmation of stability above and below — night visibility is too compromised to manage that.",
-    "**No Stage 6 operations while Stage 4D is being cleaned.** The upper bench is the fall source; simultaneous activity above means uncontrolled exposure below. The dig limit is 15 m from the edge, demarcated with white tape — if it's not taped, don't start.",
-    "**Geotechnical sign-off before the excavator moves in.** If there's any question about stability, you wait for Maaden geo — this is non-negotiable under LSR 7.",
-    "**Excavator tracks perpendicular to the high wall, tramming motors at the back.** This is your quick-retreat posture. Scale loose material first, work in horizontal slices — never undercut the face.",
-    "**Treat it as a routine, not a one-off.** Seven RAs, same locations, same hazards. The recurrence is the finding. Consider whether Stage 4D/Catchment warrants a standing procedure instead of rebuilding from scratch each time."
+    "The operator must have actually seen you before you move toward any machine — not assumed to have seen you, actually seen you.",
+    "Wait for the machine to park, GET on the ground, and the operator to signal before approaching. No exceptions, no shortcuts.",
+    "No vehicle parks behind operating surface mobile equipment. Full stop.",
+    "The 50 m exclusion board is the boundary — inside 50 m, the radio call, GET-down, and signal-to-approach sequence is mandatory, not optional.",
+    "Amber strobes, headlights, and clean mirrors are required on every machine in the mining area at all times. A failed light means the machine parks until the fault is raised."
   ],
-  "apply": "With Stage 6 active and the south route becoming the primary exit as the entry ramp closes, traffic pressure around Stage 4D will increase — confirm the dig limit tape is in place and Stage 6 has been stood down before any cleaning work begins.",
-  "generatedAt": "2026-06-25T10:09:10"
+  "apply": "At the loading face and ROM pad, check whether light vehicles are sitting inside the 50 m zone without having gone through the radio-call and approach sequence — it's the most common way this rule gets quietly bent during high-tempo dig cycles.",
+  "generatedAt": "2026-06-26T11:58:38"
 }
