@@ -1,407 +1,242 @@
 {
   "tasks": [
     {
-      "title": "Dozer clean pre-split blasted portion on 890RL south",
+      "title": "Construct LV parking area at South Dump — LSR Line of Fire breach",
       "pri": "urgent",
-      "area": "Mining-Ops",
-      "due": "",
-      "key": "4483e729ef"
-    },
-    {
-      "title": "Confirm scaling feasibility on Stage 4 — high end of ramp before blasting continues",
-      "pri": "urgent",
-      "area": "Mining-Ops",
-      "due": "2026-06-24",
-      "key": "b56c13f894"
-    },
-    {
-      "title": "MG-85 operators: brief on stopping when hydraulic temp exceeds centre gauge",
-      "pri": "high",
-      "area": "Safety",
-      "due": "2026-06-24",
-      "key": "3b2f9c3de2"
-    },
-    {
-      "title": "Continue screening SE materials for Stage 4 sheeting",
-      "pri": "high",
-      "area": "Mining-Ops",
-      "due": "2026-06-24",
-      "key": "89c4964578"
-    },
-    {
-      "title": "Grader: polish running board at south dump farthest dumping point",
-      "pri": "high",
-      "area": "Mining-Ops",
-      "due": "2026-06-24",
-      "key": "c2eb4e64c3"
-    },
-    {
-      "title": "Complete sheeting at entrance of South dump",
-      "pri": "high",
-      "area": "Mining-Ops",
-      "due": "2026-06-24",
-      "key": "58152d0bab"
-    },
-    {
-      "title": "Construct guiding berms for South dump running board",
-      "pri": "high",
-      "area": "Mining-Ops",
-      "due": "2026-06-24",
-      "key": "aa798700bf"
-    },
-    {
-      "title": "Identify FLRA, PTO, and inspection forms candidates for printed booklets",
-      "pri": "high",
-      "area": "Mining-Ops",
-      "due": "2026-06-24",
-      "key": "fc02dfb864"
-    },
-    {
-      "title": "Test-load 50 empty Chemical IBCs on delivery truck — confirm safe load",
-      "pri": "high",
-      "area": "Mining-Ops",
-      "due": "2026-06-24",
-      "key": "c7ec303687"
-    },
-    {
-      "title": "Investigate slip/jump ramp feasibility at Block 157 from 760 to 750/740 RL",
-      "pri": "high",
-      "area": "Mining-Ops",
-      "due": "2026-06-24",
-      "key": "90d57fdcef"
-    },
-    {
-      "title": "Discuss with HODs: TBT timing across Safety, Training, and Production",
-      "pri": "high",
-      "area": "Mining-Ops",
-      "due": "2026-06-24",
-      "key": "8fa1b10b8e"
-    },
-    {
-      "title": "Consult IT — confirm feasibility and process for digital signatures",
-      "pri": "high",
-      "area": "Admin-PA",
-      "due": "2026-06-24",
-      "key": "5e8f12e202"
-    },
-    {
-      "title": "Fill the second lane",
-      "pri": "high",
-      "area": "Mining-Ops",
-      "due": "2026-06-25",
-      "key": "9632221aa3"
-    },
-    {
-      "title": "Arrange room change for Indonesian operators with Camp Boss and Shift Supervisor",
-      "pri": "high",
-      "area": "Admin-PA",
-      "due": "2026-06-25",
-      "key": "b6a5c619a9"
-    },
-    {
-      "title": "Complete H-20 night risk observation with Ashwin",
-      "pri": "high",
       "area": "Safety",
       "due": "2026-06-27",
-      "key": "250e9ee492"
+      "key": "c4ce0ae7b4"
     },
     {
-      "title": "Construct guiding berms and complete sheeting on the ramp",
-      "pri": "high",
+      "title": "Confirm EX-123 bucket repairs complete",
+      "pri": "urgent",
       "area": "Mining-Ops",
-      "due": "2026-06-27",
-      "key": "11628c5d26"
+      "due": "2026-06-26",
+      "key": "be099017a9"
     },
     {
-      "title": "Extend running board guiding berms — south dump",
+      "title": "Confirm EX-1200 bucket replacement complete",
+      "pri": "urgent",
+      "area": "Mining-Ops",
+      "due": "2026-06-26",
+      "key": "722b89e52b"
+    },
+    {
+      "title": "Check Block 157 cleaning status with Isaac",
+      "pri": "urgent",
+      "area": "Mining-Ops",
+      "due": "2026-06-26",
+      "key": "a6cd543a23"
+    },
+    {
+      "title": "Confirm DT-367 final drive install on track for Sunday June 29",
       "pri": "high",
       "area": "Mining-Ops",
       "due": "2026-06-28",
-      "key": "33e9eb1a50"
+      "key": "0eb5bc5fd3"
     },
     {
-      "title": "Conduct ISO IMS training for HODs (1–2 days before June 30 audit)",
-      "pri": "high",
-      "area": "Safety",
-      "due": "2026-06-28",
-      "key": "c49803ebed"
-    },
-    {
-      "title": "Install traffic signs and define updated Traffic Management Plan (North Dump + Stage 6)",
-      "pri": "high",
-      "area": "Safety",
-      "due": "2026-07-01",
-      "key": "fd4b63bbb7"
-    },
-    {
-      "title": "Complete North Diesel Bay V-Drain and report progress",
+      "title": "First cut Block 143 — 12,000 ton target",
       "pri": "high",
       "area": "Mining-Ops",
-      "due": "2026-07-15",
-      "key": "67f9dfa6f5"
+      "due": "2026-06-27",
+      "key": "12c1d08b79"
     },
     {
-      "title": "Monitor trip counts per excavator daily — flag high trips but low BCM contribution",
+      "title": "North dump: widen ramp and start dumping Saturday June 27",
+      "pri": "high",
+      "area": "Mining-Ops",
+      "due": "2026-06-27",
+      "key": "49335caa34"
+    },
+    {
+      "title": "Raise WO — DT-71 hydraulic hose",
       "pri": "high",
       "area": "Mining-Ops",
       "due": "",
-      "key": "4c9c9a69d2"
+      "key": "5b32fba785"
     },
     {
-      "title": "Submit Ma'aden ID renewal applications for team members with July-expiring IDs",
+      "title": "Raise WO — DT-72 dump box fault",
+      "pri": "high",
+      "area": "Mining-Ops",
+      "due": "",
+      "key": "3fbeaca643"
+    },
+    {
+      "title": "Raise WO — DT-345 low power",
+      "pri": "high",
+      "area": "Mining-Ops",
+      "due": "",
+      "key": "039d999f4d"
+    },
+    {
+      "title": "Confirm block boundary 620/602 — surveyor sign-off",
+      "pri": "high",
+      "area": "Mining-Ops",
+      "due": "",
+      "key": "75f342432b"
+    },
+    {
+      "title": "Review H2 2026 waste deficit recovery plan for Q3",
+      "pri": "high",
+      "area": "Mining-Ops",
+      "due": "",
+      "key": "3cec747b55"
+    },
+    {
+      "title": "Prepare ADW documentation for ISO IMS Surveillance Audit June 30",
+      "pri": "high",
+      "area": "Admin-PA",
+      "due": "2026-06-30",
+      "key": "dace8be737"
+    },
+    {
+      "title": "QIWA / ESAD: confirm ADW workforce impact and timeline",
       "pri": "high",
       "area": "Admin-PA",
       "due": "",
-      "key": "25e360246c"
+      "key": "cbcf802ab1"
     },
     {
-      "title": "Follow up with survey team — Stage 4 spillage area scan and volume estimate",
-      "pri": "medium",
+      "title": "Enforce tipping sequence at South Dump",
+      "pri": "high",
       "area": "Mining-Ops",
-      "due": "2026-06-24",
-      "key": "7846a296ce"
+      "due": "",
+      "key": "5f4b3e4251"
     },
     {
-      "title": "Sort out flagman positioning to entry road — address operators bypassing muster points",
-      "pri": "medium",
+      "title": "Reduce truck numbers at loading face Block 770-144",
+      "pri": "high",
+      "area": "Mining-Ops",
+      "due": "",
+      "key": "495dee39aa"
+    },
+    {
+      "title": "Fix Switchback 1 temporary ramp — too steep, causing road spillages",
+      "pri": "high",
+      "area": "Mining-Ops",
+      "due": "",
+      "key": "e5f4073645"
+    },
+    {
+      "title": "Investigate and fix diesel overflow at fuel area",
+      "pri": "high",
       "area": "Safety",
       "due": "",
-      "key": "7fbb8a8b27"
+      "key": "d0b711a02c"
     },
     {
-      "title": "Monitor and enforce mobile phone ban — zero tolerance for HME operators",
-      "pri": "medium",
+      "title": "Install additional lighting at diesel fuel area",
+      "pri": "high",
       "area": "Safety",
       "due": "",
-      "key": "9eb6427fac"
+      "key": "4a4d90f5b0"
     },
     {
-      "title": "Print delineator responsibility matrix and post at cleaning station",
-      "pri": "medium",
+      "title": "Add finger labels to ROM Pad Finger 2 and Finger 3",
+      "pri": "high",
+      "area": "Mining-Ops",
+      "due": "",
+      "key": "7efdc3546c"
+    },
+    {
+      "title": "Install cones/barricades around parked excavator at ROM Pad",
+      "pri": "high",
       "area": "Safety",
       "due": "",
-      "key": "9dc1d3ca8f"
+      "key": "c9c18884aa"
     },
     {
-      "title": "Road maintenance on bump areas — rip 10–15 cm, re-bed, compact over 50 m stretches",
+      "title": "Replace missing delineator at Stage 6 center beam",
+      "pri": "high",
+      "area": "Safety",
+      "due": "",
+      "key": "bd0e3ab334"
+    },
+    {
+      "title": "Fix DT-106 two non-working lights",
+      "pri": "high",
+      "area": "Mining-Ops",
+      "due": "",
+      "key": "4a2943287e"
+    },
+    {
+      "title": "Repair recurring air hose on machine in pit",
+      "pri": "high",
+      "area": "Mining-Ops",
+      "due": "",
+      "key": "dd55e1a64b"
+    },
+    {
+      "title": "Monitor DT-281 — confirm steering fault resolved before return to haul route",
       "pri": "medium",
       "area": "Mining-Ops",
       "due": "",
-      "key": "bee26b2694"
+      "key": "61e9a3fc95"
     },
     {
-      "title": "Confirm Sadiq has assigned and actioned new ramp sheeting",
+      "title": "Truck-factor calibration exercise — Stage 4 vs Stage 6",
       "pri": "medium",
       "area": "Mining-Ops",
       "due": "",
-      "key": "87cdc54021"
+      "key": "6fbe42be55"
     },
     {
-      "title": "Spray water on dusty roads and running boards daily",
+      "title": "Begin preparing 880RL precipice for drilling",
+      "pri": "medium",
+      "area": "Mining-Ops",
+      "due": "2026-07-03",
+      "key": "07397dc315"
+    },
+    {
+      "title": "Captain Road: volume figures Saturday after blasting",
+      "pri": "medium",
+      "area": "Mining-Ops",
+      "due": "2026-06-27",
+      "key": "cf03d94f39"
+    },
+    {
+      "title": "Spray chemicals on active road — Friday or Saturday",
+      "pri": "medium",
+      "area": "Mining-Ops",
+      "due": "2026-06-27",
+      "key": "4ff3275023"
+    },
+    {
+      "title": "Share digitized sub-economic stockpile boundary area for assessment",
       "pri": "medium",
       "area": "Mining-Ops",
       "due": "",
-      "key": "b1e563043c"
+      "key": "9da8c838ec"
+    },
+    {
+      "title": "Assess entrance/plant area capacity for sub-economic stockpile",
+      "pri": "medium",
+      "area": "Mining-Ops",
+      "due": "",
+      "key": "d5d29962d6"
+    },
+    {
+      "title": "Clarify fleet ID Ex102 in safety reports",
+      "pri": "low",
+      "area": "Mining-Ops",
+      "due": "",
+      "key": "985d2803b4"
     }
   ],
   "events": [
-    {
-      "date": "2026-06-23",
-      "time": "05:00",
-      "title": "Morning Pit Drive",
-      "key": "d8abc7e92e"
-    },
-    {
-      "date": "2026-06-23",
-      "time": "06:30",
-      "title": "Day Shift Start up monitoring",
-      "key": "56ac2ea777"
-    },
-    {
-      "date": "2026-06-23",
-      "time": "11:30",
-      "title": "Prayer and Lunch",
-      "key": "99d1f5cde2"
-    },
-    {
-      "date": "2026-06-23",
-      "time": "13:15",
-      "title": "Pit Drive and Inspection",
-      "key": "2b249d7321"
-    },
-    {
-      "date": "2026-06-23",
-      "time": "14:00",
-      "title": "Office reports and Analysis",
-      "key": "6497a61fc6"
-    },
-    {
-      "date": "2026-06-23",
-      "time": "14:40",
-      "title": "HOD meeting preparation",
-      "key": "8ce3ffa08e"
-    },
-    {
-      "date": "2026-06-23",
-      "time": "15:00",
-      "title": "Weekly JRAR ADW HOD Safety meeting",
-      "key": "bf617123e8"
-    },
-    {
-      "date": "2026-06-23",
-      "time": "16:00",
-      "title": "System updates and Tech know how",
-      "key": "42166c5f24"
-    },
-    {
-      "date": "2026-06-23",
-      "time": "17:00",
-      "title": "End of shift drive",
-      "key": "c3f7a334f4"
-    },
-    {
-      "date": "2026-06-23",
-      "time": "18:00",
-      "title": "Prayer time and Dinner",
-      "key": "fcbea4561e"
-    },
-    {
-      "date": "2026-06-23",
-      "time": "19:00",
-      "title": "Evening call with kids",
-      "key": "8cc299209c"
-    },
-    {
-      "date": "2026-06-23",
-      "time": "19:30",
-      "title": "Plan vacation time with kids",
-      "key": "ee42215186"
-    },
-    {
-      "date": "2026-06-24",
-      "time": "05:00",
-      "title": "Morning Pit Drive",
-      "key": "ad7f61ee60"
-    },
-    {
-      "date": "2026-06-24",
-      "time": "06:30",
-      "title": "Day Shift Start up monitoring",
-      "key": "00c3ce4551"
-    },
-    {
-      "date": "2026-06-24",
-      "time": "11:30",
-      "title": "Prayer and Lunch",
-      "key": "649dd4b057"
-    },
-    {
-      "date": "2026-06-24",
-      "time": "13:00",
-      "title": "Pit drive and Inspections",
-      "key": "d99007845a"
-    },
-    {
-      "date": "2026-06-24",
-      "time": "14:00",
-      "title": "Office work and Daily reports",
-      "key": "c90971471c"
-    },
-    {
-      "date": "2026-06-24",
-      "time": "14:30",
-      "title": "Daily Nightshift planning and Shift paperwork",
-      "key": "e9cc9be703"
-    },
-    {
-      "date": "2026-06-24",
-      "time": "15:00",
-      "title": "Underfoot inspection",
-      "key": "81f1c7b016"
-    },
-    {
-      "date": "2026-06-24",
-      "time": "17:00",
-      "title": "End of shift drive",
-      "key": "8663f96a49"
-    },
-    {
-      "date": "2026-06-24",
-      "time": "18:00",
-      "title": "Prayer time and Dinner",
-      "key": "192293befe"
-    },
-    {
-      "date": "2026-06-24",
-      "time": "19:00",
-      "title": "Evening call with kids",
-      "key": "c2deec4f35"
-    },
-    {
-      "date": "2026-06-25",
-      "time": "05:00",
-      "title": "Morning Pit Drive",
-      "key": "fd7c7781e5"
-    },
-    {
-      "date": "2026-06-25",
-      "time": "06:30",
-      "title": "Day Shift Start up monitoring",
-      "key": "49168343d4"
-    },
-    {
-      "date": "2026-06-25",
-      "time": "11:30",
-      "title": "Prayer and Lunch",
-      "key": "52aa531b3b"
-    },
-    {
-      "date": "2026-06-25",
-      "time": "13:15",
-      "title": "Pit Drive and Inspection",
-      "key": "09a745527e"
-    },
-    {
-      "date": "2026-06-25",
-      "time": "14:00",
-      "title": "Office reports and Analysis",
-      "key": "e493527a60"
-    },
-    {
-      "date": "2026-06-25",
-      "time": "14:40",
-      "title": "HOD meeting preparation",
-      "key": "475622a782"
-    },
-    {
-      "date": "2026-06-25",
-      "time": "15:00",
-      "title": "Weekly JRAR ADW HOD Safety meeting",
-      "key": "ab19577910"
-    },
-    {
-      "date": "2026-06-25",
-      "time": "17:00",
-      "title": "End of shift drive",
-      "key": "2893ac01b3"
-    },
-    {
-      "date": "2026-06-25",
-      "time": "18:00",
-      "title": "Prayer time and Dinner",
-      "key": "7d0e286323"
-    },
-    {
-      "date": "2026-06-25",
-      "time": "19:00",
-      "title": "Evening call with kids",
-      "key": "1fbf3680bf"
-    },
     {
       "date": "2026-06-26",
       "time": "05:00",
       "title": "Maombi ya Alfajiri - Ijumaa",
       "key": "11d72080b4"
+    },
+    {
+      "date": "2026-06-26",
+      "time": "16:15",
+      "title": "System updates and Tech know how",
+      "key": "887d794d2e"
     },
     {
       "date": "2026-06-26",
@@ -411,9 +246,15 @@
     },
     {
       "date": "2026-06-27",
-      "time": "05:00",
+      "time": "05:30",
       "title": "Morning Pit Drive",
-      "key": "c9c5737ded"
+      "key": "3af891099f"
+    },
+    {
+      "date": "2026-06-27",
+      "time": "06:15",
+      "title": "Toolbox and Lineup Meeting",
+      "key": "be8825e10a"
     },
     {
       "date": "2026-06-27",
@@ -423,33 +264,75 @@
     },
     {
       "date": "2026-06-27",
+      "time": "07:15",
+      "title": "Daily JRAR ADW Production Report Review",
+      "key": "b7d354408e"
+    },
+    {
+      "date": "2026-06-27",
+      "time": "08:00",
+      "title": "Daily Mining review meeting with Maaden Team",
+      "key": "65968b4a44"
+    },
+    {
+      "date": "2026-06-27",
+      "time": "08:30",
+      "title": "Daily Production Meeting",
+      "key": "59931ed265"
+    },
+    {
+      "date": "2026-06-27",
+      "time": "09:00",
+      "title": "JRAR ADW Office work and Action Trackers",
+      "key": "ac08964891"
+    },
+    {
+      "date": "2026-06-27",
+      "time": "10:00",
+      "title": "Daily Morning Pit Drive",
+      "key": "5cf602452c"
+    },
+    {
+      "date": "2026-06-27",
       "time": "11:30",
       "title": "Prayer and Lunch",
       "key": "6f651c006d"
     },
     {
       "date": "2026-06-27",
-      "time": "13:00",
+      "time": "13:45",
       "title": "Pit drive and Inspections",
-      "key": "65bcc7968c"
+      "key": "1f894b5bb9"
     },
     {
       "date": "2026-06-27",
-      "time": "14:00",
+      "time": "14:45",
       "title": "Office work and Daily reports",
-      "key": "b98024204a"
+      "key": "63f8cb3c4e"
     },
     {
       "date": "2026-06-27",
-      "time": "14:30",
+      "time": "15:15",
       "title": "Daily Nightshift planning and Shift paperwork",
-      "key": "da4688fc89"
+      "key": "571ad394d8"
     },
     {
       "date": "2026-06-27",
-      "time": "17:00",
+      "time": "15:45",
+      "title": "Operations follow up - Critical Tasks",
+      "key": "18dacc43f0"
+    },
+    {
+      "date": "2026-06-27",
+      "time": "16:15",
+      "title": "System updates and Tech know how",
+      "key": "4c1b543bd9"
+    },
+    {
+      "date": "2026-06-27",
+      "time": "17:15",
       "title": "End of shift drive",
-      "key": "e6775011c4"
+      "key": "c663052be2"
     },
     {
       "date": "2026-06-27",
@@ -459,15 +342,51 @@
     },
     {
       "date": "2026-06-28",
-      "time": "05:00",
+      "time": "05:30",
       "title": "Morning Pit Drive",
-      "key": "99d8687105"
+      "key": "1de970198b"
+    },
+    {
+      "date": "2026-06-28",
+      "time": "06:10",
+      "title": "Toolbox and Lineup Meeting",
+      "key": "7bcff40127"
     },
     {
       "date": "2026-06-28",
       "time": "06:30",
       "title": "Day Shift Start up monitoring",
       "key": "e0380122cd"
+    },
+    {
+      "date": "2026-06-28",
+      "time": "07:15",
+      "title": "Daily JRAR ADW Production Report Review",
+      "key": "71f8a85750"
+    },
+    {
+      "date": "2026-06-28",
+      "time": "08:00",
+      "title": "Daily Mining review meeting with Maaden Team",
+      "key": "b9c0cdff60"
+    },
+    {
+      "date": "2026-06-28",
+      "time": "08:30",
+      "title": "Daily Production Meeting",
+      "key": "a2218ea252"
+    },
+    {
+      "date": "2026-06-28",
+      "time": "09:00",
+      "title": "JRAR ADW Office work and Action Trackers",
+      "key": "227f0e2759"
+    },
+    {
+      "date": "2026-06-28",
+      "time": "10:00",
+      "title": "Daily Morning Pit Drive",
+      "key": "ac592fed34"
     },
     {
       "date": "2026-06-28",
@@ -489,9 +408,15 @@
     },
     {
       "date": "2026-06-28",
-      "time": "17:00",
+      "time": "16:15",
+      "title": "System updates and Tech know how",
+      "key": "3426b9a5d0"
+    },
+    {
+      "date": "2026-06-28",
+      "time": "17:15",
       "title": "End of shift drive",
-      "key": "ac46aec2e9"
+      "key": "ebe21b847e"
     },
     {
       "date": "2026-06-28",
@@ -501,9 +426,45 @@
     },
     {
       "date": "2026-06-29",
-      "time": "05:00",
+      "time": "05:30",
       "title": "Morning Pit Drive",
-      "key": "5031d76636"
+      "key": "b349b85892"
+    },
+    {
+      "date": "2026-06-29",
+      "time": "06:10",
+      "title": "Toolbox and Lineup Meeting",
+      "key": "2b86b2c119"
+    },
+    {
+      "date": "2026-06-29",
+      "time": "07:15",
+      "title": "Daily JRAR ADW Production Report Review",
+      "key": "d3602748f7"
+    },
+    {
+      "date": "2026-06-29",
+      "time": "08:00",
+      "title": "Daily Mining review meeting with Maaden Team",
+      "key": "0133da5d27"
+    },
+    {
+      "date": "2026-06-29",
+      "time": "08:30",
+      "title": "Daily Production Meeting",
+      "key": "a1ef29a089"
+    },
+    {
+      "date": "2026-06-29",
+      "time": "09:00",
+      "title": "JRAR ADW Office work and Action Trackers",
+      "key": "6100b43086"
+    },
+    {
+      "date": "2026-06-29",
+      "time": "10:00",
+      "title": "Daily Morning Pit Drive",
+      "key": "f8fd640fb5"
     },
     {
       "date": "2026-06-29",
@@ -513,27 +474,39 @@
     },
     {
       "date": "2026-06-29",
-      "time": "13:00",
+      "time": "13:45",
       "title": "Pit drive and Inspections",
-      "key": "f895e5e591"
+      "key": "254d22292b"
     },
     {
       "date": "2026-06-29",
-      "time": "14:00",
+      "time": "14:45",
       "title": "Office work and Daily reports",
-      "key": "a4b32088be"
+      "key": "4d5d10cc12"
     },
     {
       "date": "2026-06-29",
-      "time": "14:30",
+      "time": "15:15",
       "title": "Daily Nightshift planning and Shift paperwork",
-      "key": "705c1d6317"
+      "key": "a061e71fc1"
     },
     {
       "date": "2026-06-29",
-      "time": "17:00",
+      "time": "15:45",
+      "title": "Operations follow up - Critical Tasks",
+      "key": "cdf8580ffb"
+    },
+    {
+      "date": "2026-06-29",
+      "time": "16:15",
+      "title": "System updates and Tech know how",
+      "key": "ad43b23349"
+    },
+    {
+      "date": "2026-06-29",
+      "time": "17:15",
       "title": "End of shift drive",
-      "key": "0511eb7b7f"
+      "key": "aa7ffc5f54"
     },
     {
       "date": "2026-06-29",
@@ -543,15 +516,51 @@
     },
     {
       "date": "2026-06-30",
-      "time": "05:00",
+      "time": "05:30",
       "title": "Morning Pit Drive",
-      "key": "f38b629347"
+      "key": "957de00d48"
+    },
+    {
+      "date": "2026-06-30",
+      "time": "06:10",
+      "title": "Toolbox and Lineup Meeting",
+      "key": "9fb0afcf41"
     },
     {
       "date": "2026-06-30",
       "time": "06:30",
       "title": "Day Shift Start up monitoring",
       "key": "99fa8c723c"
+    },
+    {
+      "date": "2026-06-30",
+      "time": "07:15",
+      "title": "Daily JRAR ADW Production Report Review",
+      "key": "7a6b79521a"
+    },
+    {
+      "date": "2026-06-30",
+      "time": "08:00",
+      "title": "Daily Mining review meeting with Maaden Team",
+      "key": "15484ed3bd"
+    },
+    {
+      "date": "2026-06-30",
+      "time": "08:30",
+      "title": "Daily Production Meeting",
+      "key": "4521057343"
+    },
+    {
+      "date": "2026-06-30",
+      "time": "09:00",
+      "title": "JRAR ADW Office work and Action Trackers",
+      "key": "a9c4d872fe"
+    },
+    {
+      "date": "2026-06-30",
+      "time": "10:00",
+      "title": "Daily Morning Pit Drive",
+      "key": "74a1cab665"
     },
     {
       "date": "2026-06-30",
@@ -585,9 +594,15 @@
     },
     {
       "date": "2026-06-30",
-      "time": "17:00",
+      "time": "16:15",
+      "title": "System updates and Tech know how",
+      "key": "35e2b0d9c9"
+    },
+    {
+      "date": "2026-06-30",
+      "time": "17:15",
       "title": "End of shift drive",
-      "key": "6398068f90"
+      "key": "a977ecf9ea"
     },
     {
       "date": "2026-06-30",
@@ -600,7 +615,223 @@
       "time": "21:30",
       "title": "Arrange the plan",
       "key": "6cdd7238d6"
+    },
+    {
+      "date": "2026-07-01",
+      "time": "05:30",
+      "title": "Morning Pit Drive",
+      "key": "a400e02039"
+    },
+    {
+      "date": "2026-07-01",
+      "time": "06:10",
+      "title": "Toolbox and Lineup Meeting",
+      "key": "4a82661675"
+    },
+    {
+      "date": "2026-07-01",
+      "time": "06:30",
+      "title": "Day Shift Start up monitoring",
+      "key": "d122bf02e1"
+    },
+    {
+      "date": "2026-07-01",
+      "time": "07:15",
+      "title": "Daily JRAR ADW Production Report Review",
+      "key": "549bcef75a"
+    },
+    {
+      "date": "2026-07-01",
+      "time": "08:00",
+      "title": "Daily Mining review meeting with Maaden Team",
+      "key": "22e3f1e590"
+    },
+    {
+      "date": "2026-07-01",
+      "time": "08:30",
+      "title": "Daily Production Meeting",
+      "key": "6086babbcf"
+    },
+    {
+      "date": "2026-07-01",
+      "time": "09:00",
+      "title": "JRAR ADW Office work and Action Trackers",
+      "key": "6f2bf92374"
+    },
+    {
+      "date": "2026-07-01",
+      "time": "10:00",
+      "title": "Daily Morning Pit Drive",
+      "key": "61dca91ec0"
+    },
+    {
+      "date": "2026-07-01",
+      "time": "11:30",
+      "title": "Prayer and Lunch",
+      "key": "ba93fcb061"
+    },
+    {
+      "date": "2026-07-01",
+      "time": "13:45",
+      "title": "Pit drive and Inspections",
+      "key": "a65d55c8f1"
+    },
+    {
+      "date": "2026-07-01",
+      "time": "14:45",
+      "title": "Office work and Daily reports",
+      "key": "b2b8e11d07"
+    },
+    {
+      "date": "2026-07-01",
+      "time": "15:00",
+      "title": "Underfoot inspection",
+      "key": "9693eab93e"
+    },
+    {
+      "date": "2026-07-01",
+      "time": "15:15",
+      "title": "Daily Nightshift planning and Shift paperwork",
+      "key": "5819e4abc6"
+    },
+    {
+      "date": "2026-07-01",
+      "time": "15:45",
+      "title": "Operations follow up - Critical Tasks",
+      "key": "f85c80a5e0"
+    },
+    {
+      "date": "2026-07-01",
+      "time": "16:15",
+      "title": "System updates and Tech know how",
+      "key": "8ca5591bca"
+    },
+    {
+      "date": "2026-07-01",
+      "time": "17:15",
+      "title": "End of shift drive",
+      "key": "78d583db75"
+    },
+    {
+      "date": "2026-07-01",
+      "time": "18:00",
+      "title": "Prayer time and Dinner",
+      "key": "ab0b0a0f71"
+    },
+    {
+      "date": "2026-07-02",
+      "time": "05:30",
+      "title": "Morning Pit Drive",
+      "key": "24688c67de"
+    },
+    {
+      "date": "2026-07-02",
+      "time": "06:10",
+      "title": "Toolbox and Lineup Meeting",
+      "key": "d7678c40a0"
+    },
+    {
+      "date": "2026-07-02",
+      "time": "06:30",
+      "title": "Day Shift Start up monitoring",
+      "key": "a85a45f75d"
+    },
+    {
+      "date": "2026-07-02",
+      "time": "07:15",
+      "title": "Daily JRAR ADW Production Report Review",
+      "key": "857d6fa7ec"
+    },
+    {
+      "date": "2026-07-02",
+      "time": "08:00",
+      "title": "Daily Mining review meeting with Maaden Team",
+      "key": "58259e224d"
+    },
+    {
+      "date": "2026-07-02",
+      "time": "08:30",
+      "title": "Daily Production Meeting",
+      "key": "f2da224e03"
+    },
+    {
+      "date": "2026-07-02",
+      "time": "09:00",
+      "title": "JRAR ADW Office work and Action Trackers",
+      "key": "3591e8ba0f"
+    },
+    {
+      "date": "2026-07-02",
+      "time": "10:00",
+      "title": "Daily Morning Pit Drive",
+      "key": "e7654574cb"
+    },
+    {
+      "date": "2026-07-02",
+      "time": "11:30",
+      "title": "Prayer and Lunch",
+      "key": "483530e5c0"
+    },
+    {
+      "date": "2026-07-02",
+      "time": "13:15",
+      "title": "Pit Drive and Inspection",
+      "key": "9fa523f174"
+    },
+    {
+      "date": "2026-07-02",
+      "time": "14:00",
+      "title": "Office reports and Analysis",
+      "key": "f0319b182b"
+    },
+    {
+      "date": "2026-07-02",
+      "time": "14:40",
+      "title": "HOD meeting preparation",
+      "key": "9500d9ca9e"
+    },
+    {
+      "date": "2026-07-02",
+      "time": "15:00",
+      "title": "Weekly JRAR ADW HOD Safety meeting",
+      "key": "3ec58cc4ce"
+    },
+    {
+      "date": "2026-07-02",
+      "time": "16:15",
+      "title": "System updates and Tech know how",
+      "key": "5f5f3b852d"
+    },
+    {
+      "date": "2026-07-02",
+      "time": "17:15",
+      "title": "End of shift drive",
+      "key": "dd48bada80"
+    },
+    {
+      "date": "2026-07-02",
+      "time": "18:00",
+      "title": "Prayer time and Dinner",
+      "key": "3b3fc3b6d8"
+    },
+    {
+      "date": "2026-07-03",
+      "time": "05:00",
+      "title": "Maombi ya Alfajiri - Ijumaa",
+      "key": "7f629a7e5e"
+    },
+    {
+      "date": "2026-07-03",
+      "time": "16:15",
+      "title": "System updates and Tech know how",
+      "key": "15bfb348fe"
+    },
+    {
+      "date": "2026-07-03",
+      "time": "18:00",
+      "title": "Prayer time and Dinner",
+      "key": "ffc2a4076e"
     }
   ],
-  "generated": "2026-06-24T15:10:31"
+  "generated": "2026-06-26T22:25:13"
 }
