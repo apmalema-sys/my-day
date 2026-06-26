@@ -36,11 +36,11 @@
       "key": "0eb5bc5fd3"
     },
     {
-      "title": "First cut Block 143 — 12,000 ton target",
+      "title": "Saturday: first cut Block 143 — 12,000 ton target",
       "pri": "high",
       "area": "Mining-Ops",
       "due": "2026-06-27",
-      "key": "12c1d08b79"
+      "key": "e9e7eeb900"
     },
     {
       "title": "North dump: widen ramp and start dumping Saturday June 27",
@@ -50,25 +50,25 @@
       "key": "49335caa34"
     },
     {
-      "title": "Raise WO — DT-71 hydraulic hose",
+      "title": "Raise WO — DT-71 hydraulic hose (24 BD hrs)",
       "pri": "high",
       "area": "Mining-Ops",
       "due": "",
-      "key": "5b32fba785"
+      "key": "92e82071de"
     },
     {
-      "title": "Raise WO — DT-72 dump box fault",
+      "title": "Raise WO — DT-72 dump box fault (24 BD hrs)",
       "pri": "high",
       "area": "Mining-Ops",
       "due": "",
-      "key": "3fbeaca643"
+      "key": "5e0704389a"
     },
     {
-      "title": "Raise WO — DT-345 low power",
+      "title": "Raise WO — DT-345 low power (24 BD hrs)",
       "pri": "high",
       "area": "Mining-Ops",
       "due": "",
-      "key": "039d999f4d"
+      "key": "9ab8ecff3f"
     },
     {
       "title": "Confirm block boundary 620/602 — surveyor sign-off",
@@ -833,5 +833,5 @@
       "key": "ffc2a4076e"
     }
   ],
-  "generated": "2026-06-26T22:25:13"
+  "generated": "2026-06-26T23:14:44"
 }
