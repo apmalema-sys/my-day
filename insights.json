@@ -1,28 +1,46 @@
 {
-  "generatedAt": "2026-06-26T22:25:34",
-  "date": "2026-06-26",
-  "runNumber": 27,
-  "summary": "**Ramp 144 is the critical path item for the July production month open.** Deadline Monday June 29. Peter on vacation June 26 – July 8; Muhammad is foreman for June 26 and the weekend. The full weekend execution (Friday night → Saturday 12,000t → Sunday/Monday second cut) must proceed without interruption.",
+  "generatedAt": "2026-06-27T17:38:38",
+  "date": "2026-06-27",
+  "runNumber": 29,
+  "summary": "",
   "kpis": [
     {
       "label": "Survey Gap",
-      "value": "+25.8%",
+      "value": "-21.3%",
       "delta": "survey vs trucks MTD",
-      "good": true
+      "good": false
     },
     {
       "label": "Days Remain",
-      "value": "24",
+      "value": "2",
       "delta": "in production month",
       "good": null
     }
   ],
   "equipment": [
     {
+      "unit": "EX-123",
+      "type": "Excavator",
+      "status": "warning",
+      "note": "62%"
+    },
+    {
+      "unit": "EX-263",
+      "type": "Excavator",
+      "status": "warning",
+      "note": "61%"
+    },
+    {
+      "unit": "EX-262",
+      "type": "Excavator",
+      "status": "warning",
+      "note": "24"
+    },
+    {
       "unit": "DT-70",
       "type": "Haul Truck",
       "status": "warning",
-      "note": "21"
+      "note": "24"
     },
     {
       "unit": "DT-71",
@@ -37,60 +55,17 @@
       "note": "24"
     },
     {
-      "unit": "DT-131",
-      "type": "Haul Truck",
-      "status": "scheduled",
-      "note": "9.5"
-    },
-    {
-      "unit": "DT-245",
+      "unit": "DT-79",
       "type": "Haul Truck",
       "status": "warning",
-      "note": "3.5"
+      "note": "24"
     },
     {
-      "unit": "DT-246",
-      "type": "Haul Truck",
-      "status": "warning",
-      "note": "5.5"
-    },
-    {
-      "unit": "DT-281",
-      "type": "Haul Truck",
-      "status": "warning",
-      "note": "14.5"
-    },
-    {
-      "unit": "DT-345",
+      "unit": "DT-81",
       "type": "Haul Truck",
       "status": "warning",
       "note": "24"
     }
   ],
-  "followUps": [
-    {
-      "priority": "HIGH",
-      "title": "**ROM Pad finger labels absent — active misrouting risk.** Finger 3 cont...",
-      "body": "",
-      "action": ""
-    },
-    {
-      "priority": "HIGH",
-      "title": "**Diesel overflow = fourth refuelling-area event in corpus.** NCR 25-037...",
-      "body": "",
-      "action": ""
-    },
-    {
-      "priority": "HIGH",
-      "title": "**New production month (July cycle) starts June 25.** Previous month clo...",
-      "body": "",
-      "action": ""
-    },
-    {
-      "priority": "MONITOR",
-      "title": "**Block boundary escalation in 620/602.** As of June 25 morning, surveyo...",
-      "body": "",
-      "action": ""
-    }
-  ]
+  "followUps": []
 }
