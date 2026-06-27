@@ -29,25 +29,67 @@
       "key": "a6cd543a23"
     },
     {
-      "title": "Confirm DT-367 final drive install on track for Sunday June 29",
-      "pri": "high",
+      "title": "Fix EX-263 A/C — operator heat-stress risk",
+      "pri": "urgent",
       "area": "Mining-Ops",
-      "due": "2026-06-28",
-      "key": "0eb5bc5fd3"
+      "due": "2026-06-27",
+      "key": "4a59c33d72"
     },
     {
       "title": "Saturday: first cut Block 143 — 12,000 ton target",
-      "pri": "high",
+      "pri": "urgent",
       "area": "Mining-Ops",
       "due": "2026-06-27",
       "key": "e9e7eeb900"
     },
     {
       "title": "North dump: widen ramp and start dumping Saturday June 27",
-      "pri": "high",
+      "pri": "urgent",
       "area": "Mining-Ops",
       "due": "2026-06-27",
       "key": "49335caa34"
+    },
+    {
+      "title": "Captain Road: volume figures Saturday after blasting",
+      "pri": "urgent",
+      "area": "Mining-Ops",
+      "due": "2026-06-27",
+      "key": "cf03d94f39"
+    },
+    {
+      "title": "Spray chemicals on active road",
+      "pri": "urgent",
+      "area": "Mining-Ops",
+      "due": "2026-06-27",
+      "key": "e6bedf30b6"
+    },
+    {
+      "title": "Investigate WL-101 Incident (Damaged) — confirm NCR status",
+      "pri": "high",
+      "area": "Safety",
+      "due": "",
+      "key": "5e8f3380d6"
+    },
+    {
+      "title": "Confirm DT-70 flat tyre resolved — check tyre stock 777G/775G",
+      "pri": "high",
+      "area": "Mining-Ops",
+      "due": "",
+      "key": "9d78aeb633"
+    },
+    {
+      "title": "Confirm DT-81 engine warning resolved before return to haul",
+      "pri": "high",
+      "area": "Mining-Ops",
+      "due": "",
+      "key": "882cb8110d"
+    },
+    {
+      "title": "Confirm DT-367 final drive install on track for Sunday June 29",
+      "pri": "high",
+      "area": "Mining-Ops",
+      "due": "2026-06-28",
+      "key": "0eb5bc5fd3"
     },
     {
       "title": "Raise WO — DT-71 hydraulic hose (24 BD hrs)",
@@ -169,6 +211,13 @@
       "key": "dd55e1a64b"
     },
     {
+      "title": "Watch crusher Downside Problem — inspect before Saturday night shift",
+      "pri": "medium",
+      "area": "Mining-Ops",
+      "due": "",
+      "key": "70239086ee"
+    },
+    {
       "title": "Monitor DT-281 — confirm steering fault resolved before return to haul route",
       "pri": "medium",
       "area": "Mining-Ops",
@@ -188,20 +237,6 @@
       "area": "Mining-Ops",
       "due": "2026-07-03",
       "key": "07397dc315"
-    },
-    {
-      "title": "Captain Road: volume figures Saturday after blasting",
-      "pri": "medium",
-      "area": "Mining-Ops",
-      "due": "2026-06-27",
-      "key": "cf03d94f39"
-    },
-    {
-      "title": "Spray chemicals on active road — Friday or Saturday",
-      "pri": "medium",
-      "area": "Mining-Ops",
-      "due": "2026-06-27",
-      "key": "4ff3275023"
     },
     {
       "title": "Share digitized sub-economic stockpile boundary area for assessment",
@@ -226,24 +261,6 @@
     }
   ],
   "events": [
-    {
-      "date": "2026-06-26",
-      "time": "05:00",
-      "title": "Maombi ya Alfajiri - Ijumaa",
-      "key": "11d72080b4"
-    },
-    {
-      "date": "2026-06-26",
-      "time": "16:15",
-      "title": "System updates and Tech know how",
-      "key": "887d794d2e"
-    },
-    {
-      "date": "2026-06-26",
-      "time": "18:00",
-      "title": "Prayer time and Dinner",
-      "key": "6cc9d43925"
-    },
     {
       "date": "2026-06-27",
       "time": "05:30",
@@ -831,7 +848,103 @@
       "time": "18:00",
       "title": "Prayer time and Dinner",
       "key": "ffc2a4076e"
+    },
+    {
+      "date": "2026-07-04",
+      "time": "05:30",
+      "title": "Morning Pit Drive",
+      "key": "4e0bca360e"
+    },
+    {
+      "date": "2026-07-04",
+      "time": "06:10",
+      "title": "Toolbox and Lineup Meeting",
+      "key": "96b56a4bbe"
+    },
+    {
+      "date": "2026-07-04",
+      "time": "06:30",
+      "title": "Day Shift Start up monitoring",
+      "key": "c9137ead72"
+    },
+    {
+      "date": "2026-07-04",
+      "time": "07:15",
+      "title": "Daily JRAR ADW Production Report Review",
+      "key": "5dd853d1a6"
+    },
+    {
+      "date": "2026-07-04",
+      "time": "08:00",
+      "title": "Daily Mining review meeting with Maaden Team",
+      "key": "cf0bcba907"
+    },
+    {
+      "date": "2026-07-04",
+      "time": "08:30",
+      "title": "Daily Production Meeting",
+      "key": "4f250e399b"
+    },
+    {
+      "date": "2026-07-04",
+      "time": "09:00",
+      "title": "JRAR ADW Office work and Action Trackers",
+      "key": "fc41ca8076"
+    },
+    {
+      "date": "2026-07-04",
+      "time": "10:00",
+      "title": "Daily Morning Pit Drive",
+      "key": "e0f23c1e5c"
+    },
+    {
+      "date": "2026-07-04",
+      "time": "11:30",
+      "title": "Prayer and Lunch",
+      "key": "a4b7301208"
+    },
+    {
+      "date": "2026-07-04",
+      "time": "13:45",
+      "title": "Pit drive and Inspections",
+      "key": "7910736fd0"
+    },
+    {
+      "date": "2026-07-04",
+      "time": "14:45",
+      "title": "Office work and Daily reports",
+      "key": "86ea10d9bf"
+    },
+    {
+      "date": "2026-07-04",
+      "time": "15:15",
+      "title": "Daily Nightshift planning and Shift paperwork",
+      "key": "f15800a7c4"
+    },
+    {
+      "date": "2026-07-04",
+      "time": "15:45",
+      "title": "Operations follow up - Critical Tasks",
+      "key": "b434acc030"
+    },
+    {
+      "date": "2026-07-04",
+      "time": "16:15",
+      "title": "System updates and Tech know how",
+      "key": "f86f26b907"
+    },
+    {
+      "date": "2026-07-04",
+      "time": "17:15",
+      "title": "End of shift drive",
+      "key": "d318fdaed6"
+    },
+    {
+      "date": "2026-07-04",
+      "time": "18:00",
+      "title": "Prayer time and Dinner",
+      "key": "5aa2bd535b"
     }
   ],
-  "generated": "2026-06-26T23:14:44"
+  "generated": "2026-06-27T17:38:11"
 }
