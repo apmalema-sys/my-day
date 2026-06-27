@@ -1,15 +1,14 @@
 {
-  "date": "2026-06-26",
-  "topic": "People-Machinery Interaction",
-  "title": "People-Machinery Interaction",
-  "body": "PMI failures produce the worst outcomes on site — a truck that didn't see you, an operator you assumed saw you, and the result is severe or fatal. At ADW, every shift has dozens of machine-approach moments at the loading face, ROM pad, and ramps where this chain can break.",
+  "date": "2026-06-27",
+  "topic": "Production Data Stack",
+  "title": "Production Data Stack",
+  "body": "When you read the daily report in isolation, a bad utilization number tells you *what* happened but not *why* or *where to look*. Investigations stall, fixes get aimed at the wrong unit or shift, and the same problem shows up the next day.",
   "keyPoints": [
-    "The operator must have actually seen you before you move toward any machine — not assumed to have seen you, actually seen you.",
-    "Wait for the machine to park, GET on the ground, and the operator to signal before approaching. No exceptions, no shortcuts.",
-    "No vehicle parks behind operating surface mobile equipment. Full stop.",
-    "The 50 m exclusion board is the boundary — inside 50 m, the radio call, GET-down, and signal-to-approach sequence is mandatory, not optional.",
-    "Amber strobes, headlights, and clean mirrors are required on every machine in the mining area at all times. A failed light means the machine parks until the fault is raised."
+    "The four workbooks form a stack — running-hours log → A&U workbook → daily report → INX-SUM survey — and each layer answers a question the one above can't. Never pull one workbook without knowing where it sits in the chain.",
+    "When the daily report flags a bad number, read *down*: daily report tells you the number, A&U names the unit and reason, running-hours log gives you raw hours plus the operator's Emp. No, INX-SUM checks whether the ground actually moved. Going up the stack narrows cause; going down it confirms it.",
+    "Diesel burn out of ratio with running hours in the running-hours log is an early fault signal — it appears before the A&U workbook logs a breakdown reason. Spot it there and you've got time to act.",
+    "A high truck count against a low INX-SUM survey number doesn't mean the fleet underperformed — it usually means loading position fell outside the survey calculation polygon. Check before you conclude."
   ],
-  "apply": "At the loading face and ROM pad, check whether light vehicles are sitting inside the 50 m zone without having gone through the radio-call and approach sequence — it's the most common way this rule gets quietly bent during high-tempo dig cycles.",
-  "generatedAt": "2026-06-26T11:58:38"
+  "apply": "North Dump opens today (Saturday Jun 27) — if truck counts look strong but the INX-SUM daily pickup comes in low, loading position at the dump rather than fleet performance is the first place to check.",
+  "generatedAt": "2026-06-27T04:17:32"
 }
