@@ -1,14 +1,14 @@
 {
-  "date": "2026-06-27",
-  "topic": "Production Data Stack",
-  "title": "Production Data Stack",
-  "body": "When you read the daily report in isolation, a bad utilization number tells you *what* happened but not *why* or *where to look*. Investigations stall, fixes get aimed at the wrong unit or shift, and the same problem shows up the next day.",
+  "date": "2026-06-28",
+  "topic": "Production Vision 2025",
+  "title": "Production Vision 2025",
+  "body": "When the ten production vision points get treated as aspirational rather than operational, the gaps compound — poor floor levels slow dump cycles, wrong excavator position drives backloading, neglected roads cut truck speed, and the whole system underperforms in ways that are hard to trace to a single cause. The YTD waste deficit of −87.4% through May is what that compounding looks like at contract scale.",
   "keyPoints": [
-    "The four workbooks form a stack — running-hours log → A&U workbook → daily report → INX-SUM survey — and each layer answers a question the one above can't. Never pull one workbook without knowing where it sits in the chain.",
-    "When the daily report flags a bad number, read *down*: daily report tells you the number, A&U names the unit and reason, running-hours log gives you raw hours plus the operator's Emp. No, INX-SUM checks whether the ground actually moved. Going up the stack narrows cause; going down it confirms it.",
-    "Diesel burn out of ratio with running hours in the running-hours log is an early fault signal — it appears before the A&U workbook logs a breakdown reason. Spot it there and you've got time to act.",
-    "A high truck count against a low INX-SUM survey number doesn't mean the fleet underperformed — it usually means loading position fell outside the survey calculation polygon. Check before you conclude."
+    "Volume per hour, not volume per day. A fleet that works hard for six hours and idles for six is not the same as one that works steadily for twelve. Available hours are the denominator — closing the A&U gap is the job.",
+    "Excavator positioning sets the rate for the whole fleet. Wrong direction, insufficient clearance, or no bench height forces backloading and kills truck utilisation. Get the machine positioned before you send trucks in.",
+    "Mine sequentially by stripping layers. Cherry-picking faces leaves unpredictable bench heights, congests roads, and blocks grade control from managing blend — all at the same time.",
+    "Road condition is a production input, not a maintenance task. High spots and loose material on ramps and running boards cost you truck speed and tyre life. The grader's nine-plus days below 20% utilisation in June is already showing in cycle times."
   ],
-  "apply": "North Dump opens today (Saturday Jun 27) — if truck counts look strong but the INX-SUM daily pickup comes in low, loading position at the dump rather than fleet performance is the first place to check.",
-  "generatedAt": "2026-06-27T04:17:32"
+  "apply": "With Ramp 144 on deadline tomorrow and the ISO IMS audit running on site today, check that the ramp surface is properly graded — a rough ramp under audit observation compounds two problems at once.",
+  "generatedAt": "2026-06-28T05:16:44"
 }
