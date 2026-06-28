@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-06-27T17:41:05",
+  "generatedAt": "2026-06-28T05:14:19",
   "date": "2026-06-27",
   "runNumber": 29,
-  "summary": "",
+  "summary": "Total movement: 15,159 BCM / 40,929 t vs 11,455 Friday target (+32%). All waste.",
   "kpis": [
     {
       "label": "Survey Gap",
@@ -22,50 +22,81 @@
       "unit": "EX-123",
       "type": "Excavator",
       "status": "warning",
-      "note": "62%"
+      "note": "Worst excavator — boom-side hydraulic leak recurring from Jun 11"
     },
     {
       "unit": "EX-263",
       "type": "Excavator",
       "status": "warning",
-      "note": "61%"
+      "note": "Second worst — hydraulic fault cascade June 6–20 (7 distinct categories)"
     },
     {
       "unit": "EX-262",
       "type": "Excavator",
-      "status": "warning",
-      "note": "24"
+      "status": "scheduled",
+      "note": "Track replacement — day 2 of planned undercarriage job"
+    },
+    {
+      "unit": "EX-1200",
+      "type": "Excavator",
+      "status": "returned",
+      "note": "Bucket replacement — completed within shift; returned to production at Stage 6"
+    },
+    {
+      "unit": "EX-253",
+      "type": "Excavator",
+      "status": "returned",
+      "note": "Stage 4, 770-144 — opening Ramp 144"
+    },
+    {
+      "unit": "EX-340",
+      "type": "Excavator",
+      "status": "returned",
+      "note": "Stage 4, 770-164"
     },
     {
       "unit": "DT-70",
       "type": "Haul Truck",
       "status": "warning",
-      "note": "24"
+      "note": "Flat tyre — second consecutive 24-hr BD"
     },
     {
       "unit": "DT-71",
       "type": "Haul Truck",
       "status": "warning",
-      "note": "24"
-    },
-    {
-      "unit": "DT-72",
-      "type": "Haul Truck",
-      "status": "warning",
-      "note": "24"
-    },
-    {
-      "unit": "DT-79",
-      "type": "Haul Truck",
-      "status": "warning",
-      "note": "24"
-    },
-    {
-      "unit": "DT-81",
-      "type": "Haul Truck",
-      "status": "warning",
-      "note": "24"
+      "note": "Hydraulic hose — recurring, not closed from June 25"
     }
   ],
-  "followUps": []
+  "followUps": [
+    {
+      "priority": "HIGH",
+      "title": "Drilling: 1,503 m (+20% vs Friday target); no blast; broken stock 269,90...",
+      "body": "",
+      "action": ""
+    },
+    {
+      "priority": "HIGH",
+      "title": "MTD through Jun 26: 37,448 BCM vs 34,365 target (+9.0%)",
+      "body": "",
+      "action": ""
+    },
+    {
+      "priority": "HIGH",
+      "title": "DT-367 final drive: installation target Sunday June 29 (ahead of W26-27 ...",
+      "body": "",
+      "action": ""
+    },
+    {
+      "priority": "MONITOR",
+      "title": "Stage 4: 5,394 BCM — EX-253 on 770-144 (Ramp 144 opening); EX-340 on 770...",
+      "body": "",
+      "action": ""
+    },
+    {
+      "priority": "MONITOR",
+      "title": "Stage 6: 9,765 BCM — EX-263 + EX-1200 on 890-601",
+      "body": "EX-1200 bucket replacement completed within shift.",
+      "action": ""
+    }
+  ]
 }
