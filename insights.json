@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-29T16:13:25",
+  "generatedAt": "2026-06-29T16:51:52",
   "date": "2026-06-29",
   "runNumber": 30,
   "summary": "Total movement: 22,785 BCM / 61,519.5t vs 22,910 target (−0.5%). First ore day: 682 BCM (LG 124t / MG 527t / SHG 31t) from Block 143.",
@@ -19,46 +19,67 @@
   ],
   "equipment": [
     {
-      "unit": "EX-123",
+      "unit": "EX-1200",
       "type": "Excavator",
       "status": "down",
-      "note": "85.4%"
-    },
-    {
-      "unit": "EX-262",
-      "type": "Excavator",
-      "status": "down",
-      "note": "68.2% avg"
-    },
-    {
-      "unit": "EX-340",
-      "type": "Excavator",
-      "status": "down",
-      "note": "80.4%"
-    },
-    {
-      "unit": "EX-253",
-      "type": "Excavator",
-      "status": "down",
-      "note": "80.4%"
-    },
-    {
-      "unit": "EX-263",
-      "type": "Excavator",
-      "status": "down",
-      "note": "80.4%"
+      "avail": "95.8%",
+      "util": "83.3%",
+      "bd_hrs": "1",
+      "note": "Swing motor oil level low — monitor"
     },
     {
       "unit": "EX-247",
       "type": "Excavator",
       "status": "down",
-      "note": "47.9%"
+      "avail": "95.8%",
+      "util": "47.9%",
+      "bd_hrs": "1",
+      "note": "Rehandling — zero production BCM"
     },
     {
-      "unit": "EX-1200",
+      "unit": "EX-263",
+      "type": "Excavator",
+      "status": "warning",
+      "avail": "97.9%",
+      "util": "83.3%",
+      "bd_hrs": "0.5",
+      "note": "A/C recovered"
+    },
+    {
+      "unit": "EX-253",
       "type": "Excavator",
       "status": "down",
-      "note": "83.3%"
+      "avail": "97.9%",
+      "util": "58.3%",
+      "bd_hrs": "0.5",
+      "note": "Low util — face access / dispatch on blast day"
+    },
+    {
+      "unit": "EX-340",
+      "type": "Excavator",
+      "status": "scheduled",
+      "avail": "97.9%",
+      "util": "81.3%",
+      "bd_hrs": "0.5",
+      "note": "Minor daily service"
+    },
+    {
+      "unit": "EX-123",
+      "type": "Excavator",
+      "status": "partial",
+      "avail": "95.8%",
+      "util": "85.4%",
+      "bd_hrs": "1",
+      "note": "Recovered from June 27 partial BD"
+    },
+    {
+      "unit": "EX-262",
+      "type": "Excavator",
+      "status": "scheduled",
+      "avail": "0%",
+      "util": "0%",
+      "bd_hrs": "24",
+      "note": "Undercarriage maintenance — day 4 of planned outage"
     }
   ],
   "followUps": [
