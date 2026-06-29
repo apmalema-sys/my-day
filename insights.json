@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-29T16:51:52",
+  "generatedAt": "2026-06-29T17:38:18",
   "date": "2026-06-29",
   "runNumber": 30,
   "summary": "Total movement: 22,785 BCM / 61,519.5t vs 22,910 target (−0.5%). First ore day: 682 BCM (LG 124t / MG 527t / SHG 31t) from Block 143.",
@@ -25,7 +25,8 @@
       "avail": "95.8%",
       "util": "83.3%",
       "bd_hrs": "1",
-      "note": "Swing motor oil level low — monitor"
+      "note": "Swing motor oil level low — monitor",
+      "comment": ""
     },
     {
       "unit": "EX-247",
@@ -34,7 +35,8 @@
       "avail": "95.8%",
       "util": "47.9%",
       "bd_hrs": "1",
-      "note": "Rehandling — zero production BCM"
+      "note": "Rehandling — zero production BCM",
+      "comment": ""
     },
     {
       "unit": "EX-263",
@@ -43,7 +45,8 @@
       "avail": "97.9%",
       "util": "83.3%",
       "bd_hrs": "0.5",
-      "note": "A/C recovered"
+      "note": "A/C recovered",
+      "comment": ""
     },
     {
       "unit": "EX-253",
@@ -52,7 +55,8 @@
       "avail": "97.9%",
       "util": "58.3%",
       "bd_hrs": "0.5",
-      "note": "Low util — face access / dispatch on blast day"
+      "note": "Low util — face access / dispatch on blast day",
+      "comment": ""
     },
     {
       "unit": "EX-340",
@@ -61,7 +65,8 @@
       "avail": "97.9%",
       "util": "81.3%",
       "bd_hrs": "0.5",
-      "note": "Minor daily service"
+      "note": "Minor daily service",
+      "comment": ""
     },
     {
       "unit": "EX-123",
@@ -70,7 +75,8 @@
       "avail": "95.8%",
       "util": "85.4%",
       "bd_hrs": "1",
-      "note": "Recovered from June 27 partial BD"
+      "note": "Recovered from June 27 partial BD",
+      "comment": ""
     },
     {
       "unit": "EX-262",
@@ -79,7 +85,8 @@
       "avail": "0%",
       "util": "0%",
       "bd_hrs": "24",
-      "note": "Undercarriage maintenance — day 4 of planned outage"
+      "note": "Undercarriage maintenance — day 4 of planned outage",
+      "comment": "Replace Tracks"
     }
   ],
   "followUps": [
