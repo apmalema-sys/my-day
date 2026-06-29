@@ -1,14 +1,15 @@
 {
-  "date": "2026-06-28",
-  "topic": "Production Vision 2025",
-  "title": "Production Vision 2025",
-  "body": "When the ten production vision points get treated as aspirational rather than operational, the gaps compound — poor floor levels slow dump cycles, wrong excavator position drives backloading, neglected roads cut truck speed, and the whole system underperforms in ways that are hard to trace to a single cause. The YTD waste deficit of −87.4% through May is what that compounding looks like at contract scale.",
+  "date": "2026-06-29",
+  "topic": "Risk Assessment Framework",
+  "title": "Risk Assessment Framework",
+  "body": "At ADW, the gap between a safe SOP and a dangerous shift is usually a RA that got rubber-stamped or never communicated to the crew. When the controls in the RA aren't physically in place before work starts, the approval signature is worthless.",
   "keyPoints": [
-    "Volume per hour, not volume per day. A fleet that works hard for six hours and idles for six is not the same as one that works steadily for twelve. Available hours are the denominator — closing the A&U gap is the job.",
-    "Excavator positioning sets the rate for the whole fleet. Wrong direction, insufficient clearance, or no bench height forces backloading and kills truck utilisation. Get the machine positioned before you send trucks in.",
-    "Mine sequentially by stripping layers. Cherry-picking faces leaves unpredictable bench heights, congests roads, and blocks grade control from managing blend — all at the same time.",
-    "Road condition is a production input, not a maintenance task. High spots and loose material on ramps and running boards cost you truck speed and tyre life. The grader's nine-plus days below 20% utilisation in June is already showing in cycle times."
+    "The post-control risk ranking is the only number that matters — if residual risk is still High after controls are listed, the work doesn't start. That's an escalation, not a workaround.",
+    "As Load and Haul Superintendent, your signature on the RA approval chain means you've authorized the work to begin. That authority comes with accountability — verify the controls are in place, not just on paper.",
+    "RA controls feed directly into the daily pit inspection: dig limits at white tape, geotech condition, berm integrity, operator competency, spotter placement. If any of those aren't confirmed on the walkthrough, the RA is void in practice.",
+    "The FLRA (Field Level Risk Assessment) is the operator-level tool — bilingual, four steps: preparation, hazard ID, risk assessment, control sign-off. Operators should be completing this before non-routine tasks, not after.",
+    "Recurring control patterns across ADW's RA set: edge-distance restrictions, day-shift only for high-risk work, geotech inspection before start, and \"effective supervision and effective radio communication\" appear in nearly every single one."
   ],
-  "apply": "With Ramp 144 on deadline tomorrow and the ISO IMS audit running on site today, check that the ramp surface is properly graded — a rough ramp under audit observation compounds two problems at once.",
-  "generatedAt": "2026-06-28T05:16:44"
+  "apply": "With the ISO IMS Surveillance Audit running today (ADW online Jun 30), auditors will likely pull active RAs and check whether controls are physically visible on site — make sure your Stage 4 and Stage 6 edge controls, dig limits, and spotter placements match what's written.",
+  "generatedAt": "2026-06-29T14:16:14"
 }
