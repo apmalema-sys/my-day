@@ -1,15 +1,15 @@
 {
-  "date": "2026-06-29",
-  "topic": "Risk Assessment Framework",
-  "title": "Risk Assessment Framework",
-  "body": "At ADW, the gap between a safe SOP and a dangerous shift is usually a RA that got rubber-stamped or never communicated to the crew. When the controls in the RA aren't physically in place before work starts, the approval signature is worthless.",
+  "date": "2026-07-01",
+  "topic": "Safety Inspection Patterns",
+  "title": "Safety Inspection Patterns",
+  "body": "Every major NCR at ADW traces back to the same root cause: supervision quality, not equipment failure. The ROM pad wrong-tipping NCR (25-054) and the ZR-24 exclusion breach (26-012) both happened with a supervisor nearby who didn't catch it — the pattern is repeating, not a one-off.",
   "keyPoints": [
-    "The post-control risk ranking is the only number that matters — if residual risk is still High after controls are listed, the work doesn't start. That's an escalation, not a workaround.",
-    "As Load and Haul Superintendent, your signature on the RA approval chain means you've authorized the work to begin. That authority comes with accountability — verify the controls are in place, not just on paper.",
-    "RA controls feed directly into the daily pit inspection: dig limits at white tape, geotech condition, berm integrity, operator competency, spotter placement. If any of those aren't confirmed on the walkthrough, the RA is void in practice.",
-    "The FLRA (Field Level Risk Assessment) is the operator-level tool — bilingual, four steps: preparation, hazard ID, risk assessment, control sign-off. Operators should be completing this before non-routine tasks, not after.",
-    "Recurring control patterns across ADW's RA set: edge-distance restrictions, day-shift only for high-risk work, geotech inspection before start, and \"effective supervision and effective radio communication\" appear in nearly every single one."
+    "The ROM pad is the highest-stakes zone on site — it shows up in the SIF report, two major NCRs, and every monthly inspection. Unlabeled stockpile fingers next to high-grade material is a wrong-tipping risk that's already cost the site once.",
+    "Refuelling areas keep generating incidents — four now, across different parties (gas station near-miss, MG-85 wall strike, North Go-Line hoses on the floor, NCR 25-037). The common gap every time: no spotter or assistant present during fuelling.",
+    "Dust is a control-gap amplifier, not just a nuisance. It hides delineators, cuts visibility approaching the crusher, and was the stated cause in the ZR-24 breach.",
+    "Findings cluster at shift-end, shift-start, and pre-dawn — the supervision-thinnest windows. Treat handovers as higher-risk, not routine.",
+    "Recurring findings (signage, LV parking, delineators) should get written into the standing inspection checklist instead of being rediscovered every pass."
   ],
-  "apply": "With the ISO IMS Surveillance Audit running today (ADW online Jun 30), auditors will likely pull active RAs and check whether controls are physically visible on site — make sure your Stage 4 and Stage 6 edge controls, dig limits, and spotter placements match what's written.",
-  "generatedAt": "2026-06-29T14:16:14"
+  "apply": "If you're near the ROM pad or a refuelling bay, check who's actually supervising — that single missing control has caused more incidents at ADW than any equipment fault or procedure gap.",
+  "generatedAt": "2026-07-01T12:08:39"
 }
