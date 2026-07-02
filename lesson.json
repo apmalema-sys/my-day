@@ -1,15 +1,15 @@
 {
-  "date": "2026-07-01",
-  "topic": "Safety Inspection Patterns",
-  "title": "Safety Inspection Patterns",
-  "body": "Every major NCR at ADW traces back to the same root cause: supervision quality, not equipment failure. The ROM pad wrong-tipping NCR (25-054) and the ZR-24 exclusion breach (26-012) both happened with a supervisor nearby who didn't catch it — the pattern is repeating, not a one-off.",
+  "date": "2026-07-02",
+  "topic": "New Foremen Onboarding",
+  "title": "New Foremen Onboarding",
+  "body": "Push a newly promoted foreman straight into running a shift without the structured buildup, and the gaps show up exactly where ADW's NCR corpus already flags them — Stage 4, Stage 6, ROM pad — supervisors present but not catching or stopping the problem in time.",
   "keyPoints": [
-    "The ROM pad is the highest-stakes zone on site — it shows up in the SIF report, two major NCRs, and every monthly inspection. Unlabeled stockpile fingers next to high-grade material is a wrong-tipping risk that's already cost the site once.",
-    "Refuelling areas keep generating incidents — four now, across different parties (gas station near-miss, MG-85 wall strike, North Go-Line hoses on the floor, NCR 25-037). The common gap every time: no spotter or assistant present during fuelling.",
-    "Dust is a control-gap amplifier, not just a nuisance. It hides delineators, cuts visibility approaching the crusher, and was the stated cause in the ZR-24 breach.",
-    "Findings cluster at shift-end, shift-start, and pre-dawn — the supervision-thinnest windows. Treat handovers as higher-risk, not routine.",
-    "Recurring findings (signage, LV parking, delineators) should get written into the standing inspection checklist instead of being rediscovered every pass."
+    "Four pillars get rated at final assessment: technical competence, safety and compliance leadership, leadership and communication, and shift control/decision-making.",
+    "The four weeks build in order — orientation and shadowing (Week 1), field skills and NCR writing (Week 2), coaching and emergency response (Week 3), independent shift control (Week 4). Skipping ahead defeats the point.",
+    "The Week 4 readiness call is three-way, not pass/fail: ready for full duties, ready with support and oversight, or not yet ready with another training block before reassessment.",
+    "The job isn't done at Week 4 — the 90-day plan (weekly check-ins, monthly KPI review, peer mentoring) is what actually locks the habits in.",
+    "Shift handover gets taught in Week 1 on purpose — incidents cluster at shift start and end, and that's a handover-discipline problem more than anything else."
   ],
-  "apply": "If you're near the ROM pad or a refuelling bay, check who's actually supervising — that single missing control has caused more incidents at ADW than any equipment fault or procedure gap.",
-  "generatedAt": "2026-07-01T12:08:39"
+  "apply": "If you've got a foreman who hasn't been through the full four weeks yet, watch how they run shift handover and write up an NCR — those two things are exactly what this program is built to fix.",
+  "generatedAt": "2026-07-02T17:27:20"
 }
