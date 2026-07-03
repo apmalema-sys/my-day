@@ -1,15 +1,15 @@
 {
-  "date": "2026-07-02",
-  "topic": "New Foremen Onboarding",
-  "title": "New Foremen Onboarding",
-  "body": "Push a newly promoted foreman straight into running a shift without the structured buildup, and the gaps show up exactly where ADW's NCR corpus already flags them — Stage 4, Stage 6, ROM pad — supervisors present but not catching or stopping the problem in time.",
+  "date": "2026-07-03",
+  "topic": "OEE Framework",
+  "title": "OEE Framework",
+  "body": "ADW has the equipment — trucks and excavators sit at 90%+ mechanical availability — but production still falls short. If you only watch availability, you'll miss where the real losses are hiding: performance and quality.",
   "keyPoints": [
-    "Four pillars get rated at final assessment: technical competence, safety and compliance leadership, leadership and communication, and shift control/decision-making.",
-    "The four weeks build in order — orientation and shadowing (Week 1), field skills and NCR writing (Week 2), coaching and emergency response (Week 3), independent shift control (Week 4). Skipping ahead defeats the point.",
-    "The Week 4 readiness call is three-way, not pass/fail: ready for full duties, ready with support and oversight, or not yet ready with another training block before reassessment.",
-    "The job isn't done at Week 4 — the 90-day plan (weekly check-ins, monthly KPI review, peer mentoring) is what actually locks the habits in.",
-    "Shift handover gets taught in Week 1 on purpose — incidents cluster at shift start and end, and that's a handover-discipline problem more than anything else."
+    "Availability isn't the whole story. Run Time ÷ Planned Production Time only tells you the machine showed up — not that it worked hard or worked right.",
+    "The performance gap is real and it's ours to close. Truck utilization runs 15–25 points below availability, driven by \"no location\" and \"waiting for excavator\" — dispatch and face-readiness problems, not mechanical ones.",
+    "Quality losses are invisible until you name them. Wrong-tipping at the ROM pad and crusher bin-level stoppages are quality failures in OEE terms — a truck did the cycle, but the tonnes went nowhere useful.",
+    "The Kaizen finding backs this up: people and process, not equipment, are the binding constraint. Availability alone overstates what the fleet is actually delivering.",
+    "A combined OEE figure isn't computed here yet — but the raw inputs already exist across the A&U workbook, the running-hours log, and the daily production report."
   ],
-  "apply": "If you've got a foreman who hasn't been through the full four weeks yet, watch how they run shift handover and write up an NCR — those two things are exactly what this program is built to fix.",
-  "generatedAt": "2026-07-02T17:27:20"
+  "apply": "Watch dispatch sequencing at the loading face — every truck standing idle waiting on an excavator is a performance loss hiding behind a healthy availability number.",
+  "generatedAt": "2026-07-03T14:54:40"
 }
