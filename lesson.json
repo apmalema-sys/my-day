@@ -1,15 +1,15 @@
 {
-  "date": "2026-07-03",
-  "topic": "OEE Framework",
-  "title": "OEE Framework",
-  "body": "ADW has the equipment — trucks and excavators sit at 90%+ mechanical availability — but production still falls short. If you only watch availability, you'll miss where the real losses are hiding: performance and quality.",
+  "date": "2026-07-04",
+  "topic": "Blasting and Drilling",
+  "title": "Blasting and Drilling",
+  "body": "Explosives are LSR 8. A single deviation on Approved Blaster authority, exclusion-zone discipline, or contraband control turns a routine blast into a fatality risk — and the June 30 audit already found real gaps sitting underneath: an unquantified redrill cost and no formal root-cause layer above the daily spreadsheet.",
   "keyPoints": [
-    "Availability isn't the whole story. Run Time ÷ Planned Production Time only tells you the machine showed up — not that it worked hard or worked right.",
-    "The performance gap is real and it's ours to close. Truck utilization runs 15–25 points below availability, driven by \"no location\" and \"waiting for excavator\" — dispatch and face-readiness problems, not mechanical ones.",
-    "Quality losses are invisible until you name them. Wrong-tipping at the ROM pad and crusher bin-level stoppages are quality failures in OEE terms — a truck did the cycle, but the tonnes went nowhere useful.",
-    "The Kaizen finding backs this up: people and process, not equipment, are the binding constraint. Availability alone overstates what the fleet is actually delivering.",
-    "A combined OEE figure isn't computed here yet — but the raw inputs already exist across the A&U workbook, the running-hours log, and the daily production report."
+    "Only the named Approved Blaster on the Blasting Permit initiates the shot. No field substitution — if the Blaster isn't available, blasting stops, period.",
+    "Contraband box sits at least 15 m clear of the demarcated block. Phones, smoking materials, and ignition sources stay out — no \"just checking my phone\" exceptions inside the perimeter.",
+    "Exclusion zones during initiation: 300 m for personnel, 500 m for vehicles. Hold the line even when tie-up clearance is running late — that's exactly when people start drifting back in early.",
+    "Redrill rate is running ~3.4% (~2,430 of 72,000 m in June) with zero cost tracking. Every redrill is a JackRig cost, not billable to the client — flag causes as you see them (loose ground, wet/collapsing holes, fall-back material) so they can actually be categorized.",
+    "Post-blast heave — like Block 157 on June 30 — needs geotech sign-off before anything develops into that area. Don't wave it through as normal fragmentation."
   ],
-  "apply": "Watch dispatch sequencing at the loading face — every truck standing idle waiting on an excavator is a performance loss hiding behind a healthy availability number.",
-  "generatedAt": "2026-07-03T14:54:40"
+  "apply": "Stemming material stock is exhausted (~20 m³ short). If any crew is prepping the 611-614 cluster for charging, confirm stemming is physically on hand before they start — not after they've already opened holes.",
+  "generatedAt": "2026-07-04T16:22:50"
 }
