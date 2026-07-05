@@ -1,15 +1,15 @@
 {
-  "date": "2026-07-04",
-  "topic": "Blasting and Drilling",
-  "title": "Blasting and Drilling",
-  "body": "Explosives are LSR 8. A single deviation on Approved Blaster authority, exclusion-zone discipline, or contraband control turns a routine blast into a fatality risk — and the June 30 audit already found real gaps sitting underneath: an unquantified redrill cost and no formal root-cause layer above the daily spreadsheet.",
+  "date": "2026-07-05",
+  "topic": "Brake Testing",
+  "title": "Brake Testing",
+  "body": "A truck that can't stop on a loaded ramp is the fastest way to lose someone at ADW. The pre-shift brake test is the one control that catches a failing machine before it ever carries a load into the pit — skip it or wave it through and you're gambling on the highwall and the queue behind it.",
   "keyPoints": [
-    "Only the named Approved Blaster on the Blasting Permit initiates the shot. No field substitution — if the Blaster isn't available, blasting stops, period.",
-    "Contraband box sits at least 15 m clear of the demarcated block. Phones, smoking materials, and ignition sources stay out — no \"just checking my phone\" exceptions inside the perimeter.",
-    "Exclusion zones during initiation: 300 m for personnel, 500 m for vehicles. Hold the line even when tie-up clearance is running late — that's exactly when people start drifting back in early.",
-    "Redrill rate is running ~3.4% (~2,430 of 72,000 m in June) with zero cost tracking. Every redrill is a JackRig cost, not billable to the client — flag causes as you see them (loose ground, wet/collapsing holes, fall-back material) so they can actually be categorized.",
-    "Post-blast heave — like Block 157 on June 30 — needs geotech sign-off before anything develops into that area. Don't wave it through as normal fragmentation."
+    "Every surface mobile machine gets tested before shift — trucks, ADTs, water carts, graders, dozers, loaders, LDVs. No exceptions; anything unusual gets a risk-based call, not a pass.",
+    "Two checks, in order: the operator's own pull-away-and-stop check right after pre-use inspection, then the brake test ramp for structured verification.",
+    "On the ramp: dead stop on the incline using service brake, dead stop on the decline, then park brake test. \"Slows down\" is not \"dead stop\" — a soft stop is a fail.",
+    "A failed test is one path only: park immediately, lock out (LOTO), notify supervisor or Maintenance. No \"finish the shift and we'll look at it.\"",
+    "Repeat failures on the same unit aren't a nuisance — they're a signal that unit needs a deeper service intervention, not another retest."
   ],
-  "apply": "Stemming material stock is exhausted (~20 m³ short). If any crew is prepping the 611-614 cluster for charging, confirm stemming is physically on hand before they start — not after they've already opened holes.",
-  "generatedAt": "2026-07-04T16:22:50"
+  "apply": "On your morning walk, stand at the brake test ramp for a few minutes — the queue, how operators run the test, and whether anyone rolls past it tells you more about shift-start discipline than any report will.",
+  "generatedAt": "2026-07-05T05:31:22"
 }
