@@ -1,124 +1,16 @@
 {
-  "generatedAt": "2026-06-29T17:38:18",
-  "date": "2026-06-29",
-  "runNumber": 30,
-  "summary": "Total movement: 22,785 BCM / 61,519.5t vs 22,910 target (−0.5%). First ore day: 682 BCM (LG 124t / MG 527t / SHG 31t) from Block 143.",
+  "generatedAt": "2026-07-05T22:15:09",
+  "date": "2026-07-05",
+  "runNumber": null,
+  "summary": "",
   "kpis": [
     {
       "label": "Survey Gap",
       "value": "+25.7%",
       "delta": "survey vs trucks MTD",
       "good": true
-    },
-    {
-      "label": "Days Remain",
-      "value": "26",
-      "delta": "in production month",
-      "good": null
     }
   ],
-  "equipment": [
-    {
-      "unit": "EX-1200",
-      "type": "Excavator",
-      "status": "down",
-      "avail": "95.8%",
-      "util": "83.3%",
-      "bd_hrs": "1",
-      "note": "Swing motor oil level low — monitor",
-      "comment": ""
-    },
-    {
-      "unit": "EX-247",
-      "type": "Excavator",
-      "status": "down",
-      "avail": "95.8%",
-      "util": "47.9%",
-      "bd_hrs": "1",
-      "note": "Rehandling — zero production BCM",
-      "comment": ""
-    },
-    {
-      "unit": "EX-263",
-      "type": "Excavator",
-      "status": "warning",
-      "avail": "97.9%",
-      "util": "83.3%",
-      "bd_hrs": "0.5",
-      "note": "A/C recovered",
-      "comment": ""
-    },
-    {
-      "unit": "EX-253",
-      "type": "Excavator",
-      "status": "down",
-      "avail": "97.9%",
-      "util": "58.3%",
-      "bd_hrs": "0.5",
-      "note": "Low util — face access / dispatch on blast day",
-      "comment": ""
-    },
-    {
-      "unit": "EX-340",
-      "type": "Excavator",
-      "status": "scheduled",
-      "avail": "97.9%",
-      "util": "81.3%",
-      "bd_hrs": "0.5",
-      "note": "Minor daily service",
-      "comment": ""
-    },
-    {
-      "unit": "EX-123",
-      "type": "Excavator",
-      "status": "partial",
-      "avail": "95.8%",
-      "util": "85.4%",
-      "bd_hrs": "1",
-      "note": "Recovered from June 27 partial BD",
-      "comment": ""
-    },
-    {
-      "unit": "EX-262",
-      "type": "Excavator",
-      "status": "scheduled",
-      "avail": "0%",
-      "util": "0%",
-      "bd_hrs": "24",
-      "note": "Undercarriage maintenance — day 4 of planned outage",
-      "comment": "Replace Tracks"
-    }
-  ],
-  "followUps": [
-    {
-      "priority": "MONITOR",
-      "title": "Stage 4: 44.2%; Stage 6: 55.8%",
-      "body": "",
-      "action": ""
-    },
-    {
-      "priority": "MONITOR",
-      "title": "Crusher: 5h20m day maintenance + 2× bin-level-low night",
-      "body": "",
-      "action": ""
-    },
-    {
-      "priority": "MONITOR",
-      "title": "Excavators: avg 86.7% avail / 76.3% util",
-      "body": "EX-123 75% (6 BD hrs); EX-263 64.6% (8.5 BD hrs — A/C problem continuing); EX-247 rehandle; EX-1200 swing motor oil low (alert raised).",
-      "action": ""
-    },
-    {
-      "priority": "MONITOR",
-      "title": "Drilling: 2,461 m (−41m vs target); no blast",
-      "body": "Drill stock 68,612 BCM; broken stock 247,117 BCM.",
-      "action": ""
-    },
-    {
-      "priority": "MONITOR",
-      "title": "MTD through Day 3: 60,233 vs 57,275 target (+5.2%)",
-      "body": "",
-      "action": ""
-    }
-  ]
+  "equipment": [],
+  "followUps": []
 }
