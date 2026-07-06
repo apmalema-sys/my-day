@@ -22,6 +22,13 @@
       "key": "2aeb8df763"
     },
     {
+      "title": "Install give-way sign — Ex262/Ex263 junction, Stage 4",
+      "pri": "high",
+      "area": "Safety",
+      "due": "",
+      "key": "e8488e5ef0"
+    },
+    {
       "title": "Ramp grading and repairs — Switchback 1 berm below standard, road to 164/168",
       "pri": "high",
       "area": "Mining-Ops",
@@ -43,6 +50,13 @@
       "key": "2fb3c394e7"
     },
     {
+      "title": "Ramp development through block 760-157",
+      "pri": "medium",
+      "area": "Mining-Ops",
+      "due": "",
+      "key": "524fc09aa2"
+    },
+    {
       "title": "Implement weekly survey reconciliation every Wednesday",
       "pri": "medium",
       "area": "Mining-Ops",
@@ -58,192 +72,6 @@
     }
   ],
   "events": [
-    {
-      "date": "2026-07-04",
-      "time": "05:40",
-      "title": "Morning Pit Drive",
-      "key": "affa01d3ca"
-    },
-    {
-      "date": "2026-07-04",
-      "time": "06:10",
-      "title": "Toolbox and Lineup Meeting",
-      "key": "96b56a4bbe"
-    },
-    {
-      "date": "2026-07-04",
-      "time": "06:30",
-      "title": "Day Shift Start up monitoring",
-      "key": "c9137ead72"
-    },
-    {
-      "date": "2026-07-04",
-      "time": "07:15",
-      "title": "Daily JRAR ADW Production Report Review",
-      "key": "5dd853d1a6"
-    },
-    {
-      "date": "2026-07-04",
-      "time": "08:00",
-      "title": "Daily Mining review meeting with Maaden Team",
-      "key": "cf0bcba907"
-    },
-    {
-      "date": "2026-07-04",
-      "time": "08:30",
-      "title": "Daily Production Meeting",
-      "key": "4f250e399b"
-    },
-    {
-      "date": "2026-07-04",
-      "time": "09:00",
-      "title": "JRAR ADW Office work and Action Trackers",
-      "key": "fc41ca8076"
-    },
-    {
-      "date": "2026-07-04",
-      "time": "10:00",
-      "title": "Daily Morning Pit Drive",
-      "key": "e0f23c1e5c"
-    },
-    {
-      "date": "2026-07-04",
-      "time": "11:30",
-      "title": "Prayer and Lunch",
-      "key": "a4b7301208"
-    },
-    {
-      "date": "2026-07-04",
-      "time": "13:45",
-      "title": "Pit drive and Inspections",
-      "key": "7910736fd0"
-    },
-    {
-      "date": "2026-07-04",
-      "time": "14:40",
-      "title": "Office work and Daily reports",
-      "key": "03996300f3"
-    },
-    {
-      "date": "2026-07-04",
-      "time": "15:15",
-      "title": "Daily Nightshift planning and Shift paperwork",
-      "key": "f15800a7c4"
-    },
-    {
-      "date": "2026-07-04",
-      "time": "15:45",
-      "title": "Operations follow up - Critical Tasks",
-      "key": "b434acc030"
-    },
-    {
-      "date": "2026-07-04",
-      "time": "16:15",
-      "title": "System updates and Tech know how",
-      "key": "f86f26b907"
-    },
-    {
-      "date": "2026-07-04",
-      "time": "17:15",
-      "title": "End of shift drive",
-      "key": "d318fdaed6"
-    },
-    {
-      "date": "2026-07-04",
-      "time": "18:00",
-      "title": "Prayer time and Dinner",
-      "key": "5aa2bd535b"
-    },
-    {
-      "date": "2026-07-05",
-      "time": "05:40",
-      "title": "Morning Pit Drive",
-      "key": "31367ad01c"
-    },
-    {
-      "date": "2026-07-05",
-      "time": "06:10",
-      "title": "Toolbox and Lineup Meeting",
-      "key": "0efa41c620"
-    },
-    {
-      "date": "2026-07-05",
-      "time": "06:30",
-      "title": "Day Shift Start up monitoring",
-      "key": "2968bf9aee"
-    },
-    {
-      "date": "2026-07-05",
-      "time": "07:15",
-      "title": "Daily JRAR ADW Production Report Review",
-      "key": "89b48983b3"
-    },
-    {
-      "date": "2026-07-05",
-      "time": "08:00",
-      "title": "Daily Mining review meeting with Maaden Team",
-      "key": "0b8ea87cb9"
-    },
-    {
-      "date": "2026-07-05",
-      "time": "08:30",
-      "title": "Daily Production Meeting",
-      "key": "a8a7b92932"
-    },
-    {
-      "date": "2026-07-05",
-      "time": "09:00",
-      "title": "JRAR ADW Office work and Action Trackers",
-      "key": "c30df305cc"
-    },
-    {
-      "date": "2026-07-05",
-      "time": "10:00",
-      "title": "Daily Morning Pit Drive",
-      "key": "b8203919e7"
-    },
-    {
-      "date": "2026-07-05",
-      "time": "11:30",
-      "title": "Prayer and Lunch",
-      "key": "e679d2c6ad"
-    },
-    {
-      "date": "2026-07-05",
-      "time": "13:45",
-      "title": "Pit drive and Inspections",
-      "key": "5b0e9840b5"
-    },
-    {
-      "date": "2026-07-05",
-      "time": "14:40",
-      "title": "HOD meeting preparation",
-      "key": "c321dcd2b1"
-    },
-    {
-      "date": "2026-07-05",
-      "time": "15:00",
-      "title": "Weekly JRAR ADW HOD Safety meeting",
-      "key": "227ad254a5"
-    },
-    {
-      "date": "2026-07-05",
-      "time": "16:15",
-      "title": "System updates and Tech know how",
-      "key": "e797101bea"
-    },
-    {
-      "date": "2026-07-05",
-      "time": "17:15",
-      "title": "End of shift drive",
-      "key": "4468942f95"
-    },
-    {
-      "date": "2026-07-05",
-      "time": "18:00",
-      "title": "Prayer time and Dinner",
-      "key": "f25fc2533b"
-    },
     {
       "date": "2026-07-06",
       "time": "05:40",
@@ -753,7 +581,187 @@
       "time": "18:00",
       "title": "Prayer time and Dinner",
       "key": "c40df4efd6"
+    },
+    {
+      "date": "2026-07-12",
+      "time": "05:40",
+      "title": "Morning Pit Drive",
+      "key": "02ae00c7b7"
+    },
+    {
+      "date": "2026-07-12",
+      "time": "06:10",
+      "title": "Toolbox and Lineup Meeting",
+      "key": "c2e53ff3a7"
+    },
+    {
+      "date": "2026-07-12",
+      "time": "06:30",
+      "title": "Day Shift Start up monitoring",
+      "key": "5e23db5eab"
+    },
+    {
+      "date": "2026-07-12",
+      "time": "07:15",
+      "title": "Daily JRAR ADW Production Report Review",
+      "key": "4f8be2297a"
+    },
+    {
+      "date": "2026-07-12",
+      "time": "08:00",
+      "title": "Daily Mining review meeting with Maaden Team",
+      "key": "f36777db5d"
+    },
+    {
+      "date": "2026-07-12",
+      "time": "08:30",
+      "title": "Daily Production Meeting",
+      "key": "c3020bbf92"
+    },
+    {
+      "date": "2026-07-12",
+      "time": "09:00",
+      "title": "JRAR ADW Office work and Action Trackers",
+      "key": "6f8ea9bbed"
+    },
+    {
+      "date": "2026-07-12",
+      "time": "10:00",
+      "title": "Daily Morning Pit Drive",
+      "key": "ac55fdba71"
+    },
+    {
+      "date": "2026-07-12",
+      "time": "11:30",
+      "title": "Prayer and Lunch",
+      "key": "f060df4a6f"
+    },
+    {
+      "date": "2026-07-12",
+      "time": "13:45",
+      "title": "Pit drive and Inspections",
+      "key": "26c8c96e6a"
+    },
+    {
+      "date": "2026-07-12",
+      "time": "14:40",
+      "title": "HOD meeting preparation",
+      "key": "61dd406d3b"
+    },
+    {
+      "date": "2026-07-12",
+      "time": "15:00",
+      "title": "Weekly JRAR ADW HOD Safety meeting",
+      "key": "a9466ddf65"
+    },
+    {
+      "date": "2026-07-12",
+      "time": "16:15",
+      "title": "System updates and Tech know how",
+      "key": "999def88f3"
+    },
+    {
+      "date": "2026-07-12",
+      "time": "17:15",
+      "title": "End of shift drive",
+      "key": "f0c4c36887"
+    },
+    {
+      "date": "2026-07-12",
+      "time": "18:00",
+      "title": "Prayer time and Dinner",
+      "key": "2e52cc0e02"
+    },
+    {
+      "date": "2026-07-13",
+      "time": "05:40",
+      "title": "Morning Pit Drive",
+      "key": "b02ec26283"
+    },
+    {
+      "date": "2026-07-13",
+      "time": "06:10",
+      "title": "Toolbox and Lineup Meeting",
+      "key": "2ea2220540"
+    },
+    {
+      "date": "2026-07-13",
+      "time": "07:15",
+      "title": "Daily JRAR ADW Production Report Review",
+      "key": "5f02b1a6d4"
+    },
+    {
+      "date": "2026-07-13",
+      "time": "08:00",
+      "title": "Daily Mining review meeting with Maaden Team",
+      "key": "28aeb7c0f0"
+    },
+    {
+      "date": "2026-07-13",
+      "time": "08:30",
+      "title": "Daily Production Meeting",
+      "key": "464c49c8d1"
+    },
+    {
+      "date": "2026-07-13",
+      "time": "09:00",
+      "title": "JRAR ADW Office work and Action Trackers",
+      "key": "1ffeaa1186"
+    },
+    {
+      "date": "2026-07-13",
+      "time": "10:00",
+      "title": "Daily Morning Pit Drive",
+      "key": "3fd7166665"
+    },
+    {
+      "date": "2026-07-13",
+      "time": "11:30",
+      "title": "Prayer and Lunch",
+      "key": "94cc1c99c9"
+    },
+    {
+      "date": "2026-07-13",
+      "time": "13:45",
+      "title": "Pit drive and Inspections",
+      "key": "fa76020023"
+    },
+    {
+      "date": "2026-07-13",
+      "time": "14:40",
+      "title": "Office work and Daily reports",
+      "key": "a00a34ead5"
+    },
+    {
+      "date": "2026-07-13",
+      "time": "15:15",
+      "title": "Daily Nightshift planning and Shift paperwork",
+      "key": "355027721c"
+    },
+    {
+      "date": "2026-07-13",
+      "time": "15:45",
+      "title": "Operations follow up - Critical Tasks",
+      "key": "1d91a1deb9"
+    },
+    {
+      "date": "2026-07-13",
+      "time": "16:15",
+      "title": "System updates and Tech know how",
+      "key": "6ff165e36e"
+    },
+    {
+      "date": "2026-07-13",
+      "time": "17:15",
+      "title": "End of shift drive",
+      "key": "61f7f18b9a"
+    },
+    {
+      "date": "2026-07-13",
+      "time": "18:00",
+      "title": "Prayer time and Dinner",
+      "key": "509c220f00"
     }
   ],
-  "generated": "2026-07-04T16:24:58"
+  "generated": "2026-07-06T05:16:00"
 }
