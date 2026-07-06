@@ -1,74 +1,74 @@
 {
   "tasks": [
     {
-      "title": "PC-2000 return from workshop — confirm welding, track guide pin, return to service",
+      "title": "Dump and spread aggregate layer — LG Stockpile pad",
       "pri": "urgent",
       "area": "Mining-Ops",
-      "due": "2026-07-01",
-      "key": "fe0ac2c9ff"
+      "due": "2026-07-06",
+      "key": "6354c59fc1"
     },
     {
-      "title": "Install finger labels on ROM Pad Finger 2 and Finger 3",
-      "pri": "urgent",
-      "area": "Mining-Ops",
-      "due": "2026-06-30",
-      "key": "9729480f07"
-    },
-    {
-      "title": "Inspect and fix DT-106 two non-working lights",
-      "pri": "urgent",
-      "area": "Mining-Ops",
-      "due": "2026-06-30",
-      "key": "2aeb8df763"
-    },
-    {
-      "title": "Install give-way sign — Ex262/Ex263 junction, Stage 4",
-      "pri": "high",
-      "area": "Safety",
-      "due": "",
-      "key": "e8488e5ef0"
-    },
-    {
-      "title": "Ramp grading and repairs — Switchback 1 berm below standard, road to 164/168",
+      "title": "Confirm DR-125 status — broken or idle-available",
       "pri": "high",
       "area": "Mining-Ops",
       "due": "",
-      "key": "d38d6e9477"
+      "key": "6ddcd32b53"
     },
     {
-      "title": "Clear South dump approach road — rock spillages and rails blocking entrance",
-      "pri": "high",
-      "area": "Safety",
-      "due": "",
-      "key": "c0e3e62531"
-    },
-    {
-      "title": "Schedule EF-253 rockets and track work after PC-2000",
+      "title": "Confirm which survey figure (daily or MTD) drives \"on green\" meeting-room reporting",
       "pri": "high",
       "area": "Mining-Ops",
       "due": "",
-      "key": "2fb3c394e7"
+      "key": "347c42bb6d"
     },
     {
-      "title": "Ramp development through block 760-157",
+      "title": "Final grade, compact and self-inspect all three pads",
+      "pri": "high",
+      "area": "Mining-Ops",
+      "due": "2026-07-09",
+      "key": "6f9da444ac"
+    },
+    {
+      "title": "Dump and spread aggregate layer — Western Viewpoint pad",
+      "pri": "high",
+      "area": "Mining-Ops",
+      "due": "2026-07-08",
+      "key": "671e2194df"
+    },
+    {
+      "title": "Dump and spread aggregate layer — Sub-Economic Stockpile pad",
+      "pri": "high",
+      "area": "Mining-Ops",
+      "due": "2026-07-07",
+      "key": "63f4d9f5ed"
+    },
+    {
+      "title": "EX-253 \"Track link pin broke\" (Jul 2) — repair status",
       "pri": "medium",
       "area": "Mining-Ops",
       "due": "",
-      "key": "524fc09aa2"
+      "key": "26d0403b70"
     },
     {
-      "title": "Implement weekly survey reconciliation every Wednesday",
+      "title": "Confirm blocks 890-635/890-636 (Jul 2 start) — planned or reactive",
       "pri": "medium",
       "area": "Mining-Ops",
       "due": "",
-      "key": "733d5516b6"
+      "key": "bf5606dd75"
     },
     {
-      "title": "Confirm gate pass process for chemical IBC offloading",
-      "pri": "low",
-      "area": "Admin-PA",
+      "title": "Confirm what resolved the EX-123 fire suppression fault",
+      "pri": "medium",
+      "area": "Mining-Ops",
       "due": "",
-      "key": "bea20e03aa"
+      "key": "72c9c0f803"
+    },
+    {
+      "title": "DR-125 final drive problem — no repair timeline, drill fleet at 70.31%",
+      "pri": "medium",
+      "area": "Mining-Ops",
+      "due": "",
+      "key": "706d01bfa6"
     }
   ],
   "events": [
@@ -763,5 +763,5 @@
       "key": "509c220f00"
     }
   ],
-  "generated": "2026-07-06T05:16:00"
+  "generated": "2026-07-06T05:18:20"
 }
