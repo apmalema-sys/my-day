@@ -1,16 +1,128 @@
 {
-  "generatedAt": "2026-07-06T05:32:23",
+  "generatedAt": "2026-07-06T07:49:54",
   "date": "2026-07-05",
-  "runNumber": null,
-  "summary": "",
+  "runNumber": 40,
+  "summary": "July 4 production (Saturday). total 21,452 BCM / 57,920 t; waste 20,677 BCM; ore 775 BCM / 2,093 t (all LG from 760-151-1 — first ore after the July 3 zero-ore day). Target 23,469 BCM (−8.6%). Stage 4 10,695 / Stage 6 10,757. MTD 197,594 BCM (−6.5% vs target). Crusher down all 24 hrs on planned maintenance (0 BCM fed). Drilling 2,059 m (−663 vs target), no blasting. 1 hr production stop for the Maaden stand-down meeting.",
   "kpis": [
     {
+      "label": "MTD BCM",
+      "value": "197,594",
+      "delta": "-6.5% vs target",
+      "good": false
+    },
+    {
       "label": "Survey Gap",
-      "value": "+25.7%",
+      "value": "+8.8%",
       "delta": "survey vs trucks MTD",
       "good": true
+    },
+    {
+      "label": "Crusher MTD",
+      "value": "18%",
+      "delta": "21,975 / 124,000 LCM",
+      "good": null
+    },
+    {
+      "label": "Days Remain",
+      "value": "20",
+      "delta": "",
+      "good": null
     }
   ],
-  "equipment": [],
-  "followUps": []
+  "equipment": [
+    {
+      "unit": "EX-340",
+      "type": "Excavator",
+      "status": "down",
+      "avail": "50.00%",
+      "util": "",
+      "bd_hrs": "12",
+      "note": "down 12 hrs replacing the arm stick (breakdown 5:30 AM–5:30 PM), 50.00% avail — the day's worst.",
+      "comment": "Side Mirror Bolt Loose"
+    },
+    {
+      "unit": "EX-262",
+      "type": "Excavator",
+      "status": "warning",
+      "avail": "64.58%",
+      "util": "",
+      "bd_hrs": "8.5",
+      "note": "down 8.5 hrs on hydraulic low-power issues (breakdown 10:30 AM–7:00 PM) plus a faulty bucket that would not cl",
+      "comment": "Replace Tracks"
+    },
+    {
+      "unit": "EX-123",
+      "type": "Excavator",
+      "status": "down",
+      "avail": "",
+      "util": "",
+      "bd_hrs": "1.5",
+      "note": "lost 1.5 hrs — daily check plus \"Bucket Lip Shroud Missing\" logged on night shift, a GET-loss signal (see [[lo",
+      "comment": "F.S.S Active"
+    },
+    {
+      "unit": "WD-145",
+      "type": "Water Dozer",
+      "status": "scheduled",
+      "avail": "",
+      "util": "",
+      "bd_hrs": "",
+      "note": "on a planned valve-lash since July 3 6:00 PM",
+      "comment": "C/O Window L.H Glass"
+    },
+    {
+      "unit": "DZ-248",
+      "type": "Track Dozer",
+      "status": "down",
+      "avail": "",
+      "util": "",
+      "bd_hrs": "",
+      "note": "leaking since July 3 10:00 PM",
+      "comment": "Hydraulic Oil Leaking"
+    },
+    {
+      "unit": "DZ-279",
+      "type": "Track Dozer",
+      "status": "down",
+      "avail": "",
+      "util": "",
+      "bd_hrs": "4.5",
+      "note": "out 4.5 hrs on electrical. With one wheel dozer and effectively one working track dozer, there was no spare pu",
+      "comment": ""
+    },
+    {
+      "unit": "DT-110",
+      "type": "Haul Truck",
+      "status": "down",
+      "avail": "39.58%",
+      "util": "",
+      "bd_hrs": "14.5",
+      "note": "the fleet's worst at 39.58% (14.5 hrs breakdown)",
+      "comment": ""
+    },
+    {
+      "unit": "DT-107",
+      "type": "Haul Truck",
+      "status": "warning",
+      "avail": "",
+      "util": "",
+      "bd_hrs": "4.5",
+      "note": "hydraulic oil leak 4.5 hrs",
+      "comment": ""
+    }
+  ],
+  "followUps": [
+    {
+      "priority": "MONITOR",
+      "title": "Compound insight — the dozer shortage behind the ramp-fill pause",
+      "body": "The July 4 meeting note said the Northwest Ramp Fill was paused for a dozer-resource constraint. The July 4 Daily Availability Final Report shows the physical shortage: the site's single wheel dozer (WD-145) was at 39.58% on a planned valve-lash, and track dozer DZ-248 was down 23 hrs on a hydraulic oil leak — no spare push capacity. Also caught: EX-340 down 12 hrs (arm stick), EX-262 8.5 hrs (hydraulic low power), EX-123 \"Bucket Lip Shroud Missing\" (a GET-loss signal), and a fleet-wide \"tyre damage\" pattern across the 775/777 dump trucks that puts unit-level detail behind the June 28 Tire Damages reference. DR-125's \"12 hrs s/by (lack of operator)\" reading confirms the down-vs-idle contradiction resolves to \"available.\"",
+      "action": ""
+    },
+    {
+      "priority": "MONITOR",
+      "title": "Survey",
+      "body": "Day 10 (260705) +13.5%, a second straight positive day; MTD survey +8.77% over tally. Forecast: Week 28 & 29 excavator plan ~307,135 BCM; EX-104 stays fully offline; drill capacity thinnest mid-to-late W29 (DR-342 and DR-139 multi-day services).",
+      "action": ""
+    }
+  ]
 }
