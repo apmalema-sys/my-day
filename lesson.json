@@ -1,15 +1,15 @@
 {
-  "date": "2026-07-05",
-  "topic": "Brake Testing",
-  "title": "Brake Testing",
-  "body": "A truck that can't stop on a loaded ramp is the fastest way to lose someone at ADW. The pre-shift brake test is the one control that catches a failing machine before it ever carries a load into the pit — skip it or wave it through and you're gambling on the highwall and the queue behind it.",
+  "date": "2026-07-06",
+  "topic": "Common Operational Safety Baseline",
+  "title": "Common Operational Safety Baseline",
+  "body": "This is the floor every SOP stands on — PPE, pre-op checks, hooter signals, exclusion boards, speed limits. When it slips, the failures show up as the incidents you already know: LV in the line of fire, someone approaching a machine before the operator sees them, a phone in the cab. None of those are exotic. They're baseline breaches.",
   "keyPoints": [
-    "Every surface mobile machine gets tested before shift — trucks, ADTs, water carts, graders, dozers, loaders, LDVs. No exceptions; anything unusual gets a risk-based call, not a pass.",
-    "Two checks, in order: the operator's own pull-away-and-stop check right after pre-use inspection, then the brake test ramp for structured verification.",
-    "On the ramp: dead stop on the incline using service brake, dead stop on the decline, then park brake test. \"Slows down\" is not \"dead stop\" — a soft stop is a fail.",
-    "A failed test is one path only: park immediately, lock out (LOTO), notify supervisor or Maintenance. No \"finish the shift and we'll look at it.\"",
-    "Repeat failures on the same unit aren't a nuisance — they're a signal that unit needs a deeper service intervention, not another retest."
+    "Every operator does an FLRA before any task, must be trained and authorized, and has the right to refuse substandard conditions — that right-to-stop is the operator-level expression of the Life Saving Rules.",
+    "50 m Exclusion Boards go 50 m off the loading face AND on the ROM pad — they keep light vehicles out without authorization. This is the upstream cousin of the 50:30:10 GET rule at the crusher.",
+    "Approach rule is universal: be sure the operator has seen you, then wait for the machine parked, GET on the ground, and a signal to approach. Applies to everyone — supervisors and visitors included.",
+    "Hooter signals are fixed: 1 = start, 2 = forward, 3 = reverse. Sound it, wait for clear, then move.",
+    "Speed limits: 40 uphill haul/ramp, 30 downhill ramp, 10 tipping/hard park/workshop, 20 on the ROM pad — and slower when dust or visibility says so."
   ],
-  "apply": "On your morning walk, stand at the brake test ramp for a few minutes — the queue, how operators run the test, and whether anyone rolls past it tells you more about shift-start discipline than any report will.",
-  "generatedAt": "2026-07-05T05:31:22"
+  "apply": "On the loading face and ROM pad, confirm the 50 m exclusion boards are actually placed and standing — that single control is what stops an unauthorized LV drifting into the dig zone before anyone notices.",
+  "generatedAt": "2026-07-06T05:20:19"
 }
