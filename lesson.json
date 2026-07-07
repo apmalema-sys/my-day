@@ -1,15 +1,15 @@
 {
-  "date": "2026-07-06",
-  "topic": "Common Operational Safety Baseline",
-  "title": "Common Operational Safety Baseline",
-  "body": "This is the floor every SOP stands on — PPE, pre-op checks, hooter signals, exclusion boards, speed limits. When it slips, the failures show up as the incidents you already know: LV in the line of fire, someone approaching a machine before the operator sees them, a phone in the cab. None of those are exotic. They're baseline breaches.",
+  "date": "2026-07-07",
+  "topic": "Crusher Feed Procedure",
+  "title": "Crusher Feed Procedure",
+  "body": "The ROM pad is where mining meets processing, and it's the one spot where light vehicles, haul trucks, pedestrians, and a working loader all share the same ground. Get the approach discipline or the blend wrong and you either put someone in the line of fire or you send the wrong grade to the plant — both cost you the shift.",
   "keyPoints": [
-    "Every operator does an FLRA before any task, must be trained and authorized, and has the right to refuse substandard conditions — that right-to-stop is the operator-level expression of the Life Saving Rules.",
-    "50 m Exclusion Boards go 50 m off the loading face AND on the ROM pad — they keep light vehicles out without authorization. This is the upstream cousin of the 50:30:10 GET rule at the crusher.",
-    "Approach rule is universal: be sure the operator has seen you, then wait for the machine parked, GET on the ground, and a signal to approach. Applies to everyone — supervisors and visitors included.",
-    "Hooter signals are fixed: 1 = start, 2 = forward, 3 = reverse. Sound it, wait for clear, then move.",
-    "Speed limits: 40 uphill haul/ramp, 30 downhill ramp, 10 tipping/hard park/workshop, 20 on the ROM pad — and slower when dust or visibility says so."
+    "Radio first, every time. Any vehicle entering the ROM pad calls the loader operator on Channel 1 before crossing the entrance, and no radio means no entry — full stop.",
+    "The 50:30:10 GET rule is the backbone: call by radio at 50 m, inform and continue under protocol at 30 m, and never break the 10 m radius until the operator is out of the cab, visible, with the bucket grounded and radio confirmation given.",
+    "Blend is set by the foreman off the geologist's instruction, not by the operator. Current standing blend evolved to 1 SSHG + 3 MG1 (Jun 24), then 1 super + 1 SSHG + 3 MG1 (Jun 25) — but five machines was flagged as too many for the feed volume, so watch machine count against actual feed.",
+    "Hard visibility floor of 200 m. Below that, trucks return to the go-line, all ROM pad activity stops, the entrance is barricaded, and only the shift boss can give the all-clear.",
+    "Loader operator basics: enter the pile straight, bucket parallel to the floor, first gear full throttle, floor kept clean and level, and never feed with blunt GET or a bare bucket edge — that's how teeth end up in the crusher."
   ],
-  "apply": "On the loading face and ROM pad, confirm the 50 m exclusion boards are actually placed and standing — that single control is what stops an unauthorized LV drifting into the dig zone before anyone notices.",
-  "generatedAt": "2026-07-06T05:20:19"
+  "apply": "If more than three or four machines are feeding the crusher, check whether the feed volume actually justifies it — the Jun 25 review already flagged five as overcrowding the pad, and extra machines there just multiply the interaction risk without adding throughput.",
+  "generatedAt": "2026-07-07T05:24:04"
 }
