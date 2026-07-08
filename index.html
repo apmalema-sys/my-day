@@ -1454,10 +1454,10 @@ function prodMonthTotalDays(){ // production month runs 25th -> 24th; total = da
   if(now.getDate()<25){m-=1;if(m<0){m=11;y-=1;}}
   return new Date(y,m+1,0).getDate();
 }
-/* Actual monthly BCM plan target for the production month (25th→24th). This is the
-   real plan/budget figure, NOT the forecast (636,220) and NOT derived from MTD%.
-   Update this one line when the monthly plan changes. */
-const PLAN_MONTHLY_BCM=630030;
+/* Actual monthly BCM plan target for the production month (25th→24th), from the
+   Maaden "Monthly Production Plan - Jul 2026" (Total Movement 645,404 BCM, 30 prod days).
+   NOT the forecast (636,220), NOT derived. Update this one line each month. */
+const PLAN_MONTHLY_BCM=645404;
 function computeProjection(kpis){
   const bcm=kpis.find(k=>/bcm/i.test(k.label||""));
   const dr=kpis.find(k=>/days?\s*remain/i.test(k.label||""));
