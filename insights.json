@@ -1,18 +1,18 @@
 {
-  "generatedAt": "2026-07-08T18:25:11",
+  "generatedAt": "2026-07-08T18:41:58",
   "date": "2026-07-08",
   "runNumber": 41,
   "summary": "Resolved. — \"New blocks 890-635/890-636 — planned or reactive?\" Feedback: \"Were planned during the daily review meeting, we revised the weekly plan.\" Marked resolved in `QUESTIONS.md`. 2. **Flagged, not resolved** — \"Internal Audit Phase 1 findings 3/5/8 (electrical installation, emergency stop switch, pedestrian signage) — closed before 13 June?\" The linked feedback (\"All the deviations has been attended and closed except the MTD utilization...\") answers a different question (MTD utilization, not the three physical safety findings) — the Notion task was marked Done on a mismatched answer. Left open in `QUESTIONS.md` with the mismatch documented; needs a direct check with Peter. 3. \"Follow up JJ — flow meter glass at fuel bay\" — feedback confirms repair complete 2/7/2026. No KB question tied to this; no wiki change needed. 4. \"Confirm JJ investigated dust in production bus\" — feedback confirms issue sorted. No KB question tied to this; no wiki change needed. All 4 Feedback Log rows marked Status = Processed in Notion after review. No RAW ingestion, no compile pass, no `_INGESTED.md` changes — this is a lighter-weight loop for closing feedback-based open questions between full compile passes.",
   "kpis": [
     {
       "label": "MTD BCM",
-      "value": "243,629",
+      "value": "265,980",
       "delta": "-5.6% vs target",
       "good": false
     },
     {
       "label": "Survey Gap",
-      "value": "+5.7%",
+      "value": "+6.0%",
       "delta": "survey vs trucks MTD",
       "good": true
     },
@@ -24,38 +24,116 @@
     },
     {
       "label": "Days Remain",
-      "value": "18",
+      "value": "17",
       "delta": "",
       "good": null
     }
   ],
   "fleet": {
-    "exAvail": "87.11%",
+    "exAvail": "95.4%",
     "exUnits": 6,
-    "dtAvail": "94.42%",
+    "dtAvail": "96.53%",
     "dtUnits": 21,
-    "availMtd": "88.26%"
+    "availMtd": "87.74%",
+    "excavators": [
+      {
+        "unit": "EX-340",
+        "avail": "97.9%"
+      },
+      {
+        "unit": "EX-262",
+        "avail": "95.8%"
+      },
+      {
+        "unit": "EX-253",
+        "avail": "95.8%"
+      },
+      {
+        "unit": "EX-263",
+        "avail": "89.6%"
+      },
+      {
+        "unit": "EX-247",
+        "avail": "97.9%"
+      },
+      {
+        "unit": "EX-1200",
+        "avail": null
+      }
+    ],
+    "exBasis": "5/6",
+    "pdfDate": "07-07"
   },
   "equipment": [
     {
-      "unit": "EX-123",
-      "type": "Excavator",
+      "unit": "DR-139",
+      "type": "Drill",
       "status": "down",
       "avail": "0%",
       "util": "",
       "bd_hrs": "",
-      "note": "at 0% avail, 0 BCM against a 470 BCM forecast, \"Track out.\" The meeting note's Hitachi tram-in as interim cove",
-      "comment": "F.S.S Active"
+      "note": "and DR-139 all planned at **0% PA for the full Week 28** — this reframes the standing \"",
+      "comment": "Hard braking troubleshooting in  progress"
+    },
+    {
+      "unit": "EX-123",
+      "type": "Excavator",
+      "status": "warning",
+      "avail": "",
+      "util": "",
+      "bd_hrs": "24",
+      "note": "stayed down a second straight day** — 24 BD hrs, same fault, still logged as \"L.H Track Off (Track Tension Dam",
+      "comment": "L.H Track Off ( Track  Tienson  Damage )"
+    },
+    {
+      "unit": "DR-125",
+      "type": "Drill",
+      "status": "scheduled",
+      "avail": "",
+      "util": "",
+      "bd_hrs": "",
+      "note": "lack of operator\" standby question. It may not be a staffing gap at all; the machine may simply be scheduled o",
+      "comment": ""
+    },
+    {
+      "unit": "WL-101",
+      "type": "Wheel Loader",
+      "status": "down",
+      "avail": "0%",
+      "util": "",
+      "bd_hrs": "",
+      "note": "remains on the long-term down list (0% avail, \"Accident Damage,\" down since 01-Feb-26, now over five months).",
+      "comment": "Accident Damage"
     },
     {
       "unit": "DT-128",
       "type": "Haul Truck",
+      "status": "warning",
+      "avail": "",
+      "util": "",
+      "bd_hrs": "",
+      "note": "'s overheating fault (flagged July 6) closed out July 7 at 4:30 PM. New faults:",
+      "comment": "Over Heating"
+    },
+    {
+      "unit": "DT-106",
+      "type": "Haul Truck",
       "status": "down",
       "avail": "",
       "util": "",
-      "bd_hrs": "21",
-      "note": "down 21 hrs, \"Over Heating,\" breakdown from 8:30 AM — the same unit whose July 4 night shift was run by employ",
-      "comment": ""
+      "bd_hrs": "5",
+      "note": "tyre replacement (5 hrs)",
+      "comment": "Replace Tyre"
+    },
+    {
+      "unit": "DT-108",
+      "type": "Haul Truck",
+      "status": "warning",
+      "avail": "",
+      "util": "",
+      "bd_hrs": "",
+      "note": "brake air-pressure leak starting 11:00 PM (carried into July 8)",
+      "comment": "Brake Air Pressure Leaking"
     },
     {
       "unit": "DT-129",
@@ -63,59 +141,9 @@
       "status": "down",
       "avail": "",
       "util": "",
-      "bd_hrs": "4.25",
-      "note": "4.25 hrs on a low tyre-pressure breakdown (carried over from July 5, 6:45 PM to July 6, 9:45 AM).",
+      "bd_hrs": "3",
+      "note": "electrical/inspection (3 hrs)",
       "comment": ""
-    },
-    {
-      "unit": "DT-282",
-      "type": "Haul Truck",
-      "status": "down",
-      "avail": "",
-      "util": "",
-      "bd_hrs": "9.5",
-      "note": "9.5 hrs on a tyre replacement.",
-      "comment": ""
-    },
-    {
-      "unit": "DT-131",
-      "type": "Haul Truck",
-      "status": "down",
-      "avail": "",
-      "util": "",
-      "bd_hrs": "1.5",
-      "note": "1.5 hrs reverse-gear problem (night shift).",
-      "comment": ""
-    },
-    {
-      "unit": "DT-243",
-      "type": "Haul Truck",
-      "status": "warning",
-      "avail": "",
-      "util": "",
-      "bd_hrs": "3.5",
-      "note": "3.5 hrs A/C not working.",
-      "comment": ""
-    },
-    {
-      "unit": "DT-79",
-      "type": "Haul Truck",
-      "status": "down",
-      "avail": "0%",
-      "util": "",
-      "bd_hrs": "",
-      "note": "remain on the standing long-term down list (0% avail, opportune jobs pending since February and April respecti",
-      "comment": "250 H Service"
-    },
-    {
-      "unit": "DT-81",
-      "type": "Haul Truck",
-      "status": "down",
-      "avail": "0%",
-      "util": "",
-      "bd_hrs": "",
-      "note": "remain on the standing long-term down list (0% avail, opportune jobs pending since February and April respecti",
-      "comment": "C/O Eng Oil Cooler , Check Cyl Head  , C/O After Cooler"
     }
   ],
   "followUps": []
