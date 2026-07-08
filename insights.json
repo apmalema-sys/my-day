@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-08T15:23:58",
+  "generatedAt": "2026-07-08T18:04:45",
   "date": "2026-07-08",
   "runNumber": 41,
   "summary": "Resolved. — \"New blocks 890-635/890-636 — planned or reactive?\" Feedback: \"Were planned during the daily review meeting, we revised the weekly plan.\" Marked resolved in `QUESTIONS.md`. 2. **Flagged, not resolved** — \"Internal Audit Phase 1 findings 3/5/8 (electrical installation, emergency stop switch, pedestrian signage) — closed before 13 June?\" The linked feedback (\"All the deviations has been attended and closed except the MTD utilization...\") answers a different question (MTD utilization, not the three physical safety findings) — the Notion task was marked Done on a mismatched answer. Left open in `QUESTIONS.md` with the mismatch documented; needs a direct check with Peter. 3. \"Follow up JJ — flow meter glass at fuel bay\" — feedback confirms repair complete 2/7/2026. No KB question tied to this; no wiki change needed. 4. \"Confirm JJ investigated dust in production bus\" — feedback confirms issue sorted. No KB question tied to this; no wiki change needed. All 4 Feedback Log rows marked Status = Processed in Notion after review. No RAW ingestion, no compile pass, no `_INGESTED.md` changes — this is a lighter-weight loop for closing feedback-based open questions between full compile passes.",
@@ -29,6 +29,13 @@
       "good": null
     }
   ],
+  "fleet": {
+    "exAvail": "87.11%",
+    "exUnits": 8,
+    "dtAvail": "94.42%",
+    "dtUnits": 36,
+    "availMtd": "88.26%"
+  },
   "equipment": [
     {
       "unit": "EX-123",
