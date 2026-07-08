@@ -323,8 +323,8 @@
   .trend-cap{display:flex;justify-content:space-between;font-size:.7rem;color:var(--muted);margin-top:9px;font-weight:600;}
   /* MTD Plan vs Actual line chart */
   .mtd-card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px 12px 12px;margin:0 0 12px;}
-  .mtd-legend{display:flex;gap:16px;justify-content:center;font-size:.72rem;color:var(--muted);font-weight:600;margin:2px 0 4px;}
-  .mtd-legend .k{display:flex;align-items:center;gap:6px;}
+  .mtd-legend{display:flex;flex-wrap:wrap;gap:7px 12px;justify-content:center;font-size:.7rem;color:var(--muted);font-weight:600;margin:2px 0 6px;}
+  .mtd-legend .k{display:flex;align-items:center;gap:5px;}
   .mtd-legend .sw.bar{width:12px;height:12px;border-radius:2px;background:var(--accent);}
   .mtd-legend .sw.target{width:16px;height:0;border-top:2px dashed var(--txt);align-self:center;}
   .mtd-legend .sw.catchup{width:16px;height:0;border-top:2px dashed var(--high);align-self:center;}
@@ -1462,12 +1462,12 @@ function renderInsights(){
 /* ---- Production sub-tab ---- */
 function parseNum(s){const m=String(s==null?"":s).replace(/,/g,"").match(/-?\d+(\.\d+)?/);return m?parseFloat(m[0]):null;}
 function fmtInt(n){return Math.round(n).toLocaleString("en-US");}
-function mtdTrendHTML(trend,proj){ // daily actual (bars) vs target line + catch-up pace line
+function mtdTrendHTML(trend,proj){ // daily actual (bars) vs target line + Friday-aware catch-up line
   if(!Array.isArray(trend)||trend.length<1)return "";
   const pts=trend.filter(p=>p&&p.actual>0&&p.target>0);
   if(!pts.length)return "";
-  const need=proj&&proj.need>0?proj.need:null; // catch-up BCM/day to still hit monthly plan
-  const W=320,H=182,padL=36,padR=10,padT=14,padB=28;
+  const need=proj&&proj.needFull>0?proj.needFull:null; // BCM needed on a FULL working day to still hit the plan
+  const W=320,H=182,padL=34,padR=12,padT=14,padB=28;
   const plotW=W-padL-padR,plotH=H-padT-padB;
   const maxV=Math.max(...pts.flatMap(p=>[p.actual,p.target]),need||0);
   const step=5000,yMax=Math.ceil(maxV/step)*step,span=yMax||1;
@@ -1477,13 +1477,13 @@ function mtdTrendHTML(trend,proj){ // daily actual (bars) vs target line + catch
   const base=y(0);
   // gridlines + y labels at 0, half, max
   let grid="";
-  [0,yMax/2,yMax].forEach(v=>{const yy=y(v).toFixed(1);grid+=`<line x1="${padL}" y1="${yy}" x2="${W-padR}" y2="${yy}" stroke="var(--line)" stroke-width="1"/><text x="${padL-5}" y="${(y(v)+3).toFixed(1)}" text-anchor="end">${Math.round(v/1000)}k</text>`;});
+  [0,yMax/2,yMax].forEach(v=>{const yy=y(v).toFixed(1);grid+=`<line x1="${padL}" y1="${yy}" x2="${W-padR}" y2="${yy}" stroke="var(--line)" stroke-width="1"/><text x="${padL-4}" y="${(y(v)+3).toFixed(1)}" text-anchor="end">${Math.round(v/1000)}k</text>`;});
   // actual bars — green when at/above target, accent when short
   const bars=pts.map((p,i)=>{const h=Math.max(1,base-y(p.actual));const beat=p.actual>=p.target;return `<rect x="${(cx(i)-barW/2).toFixed(1)}" y="${y(p.actual).toFixed(1)}" width="${barW.toFixed(1)}" height="${h.toFixed(1)}" rx="2.5" fill="${beat?"var(--low)":"var(--accent)"}" opacity="0.92"/>`;}).join("");
-  // target reference line across the bars (per-day planned target)
+  // per-day planned target line (steps down on Fridays)
   const tline=pts.map((p,i)=>`${i?"L":"M"}${cx(i).toFixed(1)},${y(p.target).toFixed(1)}`).join(" ");
   const tdots=pts.map((p,i)=>`<circle cx="${cx(i).toFixed(1)}" cy="${y(p.target).toFixed(1)}" r="2" fill="var(--txt)"/>`).join("");
-  // catch-up pace — flat line at the BCM/day still needed to recover the monthly plan
+  // catch-up line — BCM needed on a FULL working day to still hit the plan (Fridays half; see caption)
   let catchup="";
   if(need!=null&&need<=yMax){const yy=y(need).toFixed(1);catchup=`<line x1="${padL}" y1="${yy}" x2="${W-padR}" y2="${yy}" stroke="var(--high)" stroke-width="2" stroke-dasharray="2 3"/>`;}
   const everyX=pts.length>8?2:1;
@@ -1499,13 +1499,14 @@ function mtdTrendHTML(trend,proj){ // daily actual (bars) vs target line + catch
   const varCls=lastVar<0?"bad":"good";
   const rows=pts.map(p=>{const v=p.actual-p.target,pc=v/p.target*100;const c=v<0?"bad":"good";return `<tr><td>${esc(p.label||"")}${p.half?' <span class="mtd-half">½ shift</span>':""}</td><td>${fmtInt(p.actual)}</td><td>${fmtInt(p.target)}</td><td class="${c}">${v>0?"+":""}${pc.toFixed(1)}%</td></tr>`;}).join("");
   const catchLegend=need!=null?`<span class="k"><span class="sw catchup"></span>Catch-up</span>`:"";
-  const catchCap=need!=null?` <b>Catch-up:</b> ${fmtInt(need)} BCM/day needed over the remaining ${proj.daysRemain} days to still hit the ${fmtInt(proj.monthlyTarget)} monthly plan.`:"";
+  let catchCap="";
+  if(need!=null){catchCap=` <b>Catch-up to hit the ${fmtInt(proj.monthlyTarget)} plan:</b> <b class="bad">${fmtInt(proj.needFull)} BCM</b> on each of the ${proj.fullRemain} full days left`+(proj.friRemain>0?`, <b class="bad">${fmtInt(proj.needFri)} BCM</b> on each of the ${proj.friRemain} Fridays`:"")+` (${proj.daysRemain} days remain).`;}
   return `<div class="sect"><h2>Daily production — Actual vs Target</h2><span class="meta">${pts.length} days</span></div>
     <div class="mtd-card">
       <div class="mtd-legend"><span class="k"><span class="sw bar"></span>Actual</span><span class="k"><span class="sw target"></span>Target</span>${catchLegend}</div>
       ${svg}
       <table class="mtd-tbl"><thead><tr><th>Day</th><th>Actual</th><th>Target</th><th>Var</th></tr></thead><tbody>${rows}</tbody></table>
-      <div class="mtd-cap">Daily BCM moved vs the standardized July plan target (23.5k/day; Fridays half — single shift). Latest: <b class="${varCls}">${lastVar>0?"+":""}${fmtInt(lastVar)} BCM (${lastPct>0?"+":""}${lastPct.toFixed(1)}%)</b> vs target on ${esc(last.label||"")}.${catchCap}</div>
+      <div class="mtd-cap">Bars = daily BCM vs the standardized July plan target (23.5k/day; Fridays half — single shift). Latest: <b class="${varCls}">${lastVar>0?"+":""}${fmtInt(lastVar)} BCM (${lastPct>0?"+":""}${lastPct.toFixed(1)}%)</b> vs target on ${esc(last.label||"")}.${catchCap}</div>
     </div>`;
 }
 function mdInline(s){return esc(s).replace(/\*\*(.+?)\*\*/g,"<b>$1</b>").replace(/`([^`]+)`/g,"<code>$1</code>");}
@@ -1517,6 +1518,16 @@ function prodMonthTotalDays(){ // production month runs 25th -> 24th; total = da
   const now=new Date();let y=now.getFullYear(),m=now.getMonth();
   if(now.getDate()<25){m-=1;if(m<0){m=11;y-=1;}}
   return new Date(y,m+1,0).getDate();
+}
+function prodMonthEnd(){ // the 24th that closes the current production month
+  const now=new Date();let y=now.getFullYear(),m=now.getMonth();
+  if(now.getDate()>=25)m+=1;               // started this month → closes on the 24th of next month
+  return new Date(y,m,24);
+}
+function remainingFridays(daysRemain){ // Fridays among the final `daysRemain` days of the month
+  const end=prodMonthEnd();let fri=0;
+  for(let i=0;i<daysRemain;i++){if(new Date(end.getFullYear(),end.getMonth(),end.getDate()-i).getDay()===5)fri++;}
+  return fri;
 }
 /* Actual monthly BCM plan target for the production month (25th→24th), from the
    Maaden "Monthly Production Plan - Jul 2026" (Total Movement 645,404 BCM, 30 prod days).
@@ -1532,9 +1543,18 @@ function computeProjection(kpis){
   if(elapsed<=0)return null;
   const monthlyTarget=PLAN_MONTHLY_BCM;
   const pace=mtd/elapsed,proj=pace*total;
-  const need=daysRemain>0?(monthlyTarget-mtd)/daysRemain:0;
+  // Catch-up weighted for Fridays (single/shift-change day = half a day's target). Remaining
+  // effective days = full days + half the Fridays, so you need MORE on a full day and half that
+  // on a Friday to still land the plan.
+  const friRemain=remainingFridays(daysRemain);
+  const fullRemain=Math.max(0,daysRemain-friRemain);
+  const effDays=fullRemain+friRemain*0.5;
+  const remaining=Math.max(0,monthlyTarget-mtd);
+  const needFull=effDays>0?remaining/effDays:0;   // BCM to move on each full working day
+  const needFri=needFull/2;                        // half that on each Friday
+  const need=needFull;                             // legacy field = full-day rate
   const projPct=(proj/monthlyTarget-1)*100;
-  return {daysRemain,total,elapsed,mtd,monthlyTarget,pace,proj,need,projPct};
+  return {daysRemain,total,elapsed,mtd,monthlyTarget,pace,proj,need,needFull,needFri,friRemain,fullRemain,projPct};
 }
 function renderInsProduction(el){
   const d=insightsData,kpis=d.kpis||[];
@@ -1573,11 +1593,12 @@ function renderInsProduction(el){
     html+=`<div class="proj-card">
       <div class="proj-row"><span class="k">Days remaining</span><span class="v">${proj.daysRemain} of ${proj.total}</span></div>
       <div class="proj-row"><span class="k">Current daily pace</span><span class="v">${fmtInt(proj.pace)} BCM/day</span></div>
-      <div class="proj-row"><span class="k">Pace needed for target</span><span class="v ${onPace?'good':'bad'}">${fmtInt(proj.need)} BCM/day</span></div>
+      <div class="proj-row"><span class="k">Needed — full day (×${proj.fullRemain})</span><span class="v ${onPace?'good':'bad'}">${fmtInt(proj.needFull)} BCM</span></div>
+      ${proj.friRemain>0?`<div class="proj-row"><span class="k">Needed — Friday (×${proj.friRemain})</span><span class="v ${onPace?'good':'bad'}">${fmtInt(proj.needFri)} BCM</span></div>`:""}
       <div class="proj-row"><span class="k">Projected month-end</span><span class="v ${proj.projPct<0?'bad':'good'}">${fmtInt(proj.proj)} BCM</span></div>
       <div class="proj-row"><span class="k">vs monthly target</span><span class="v ${proj.projPct<0?'bad':'good'}">${proj.projPct>0?'+':''}${proj.projPct.toFixed(1)}%</span></div>
     </div>
-    <div class="prod-note">Projection holds the current daily pace across the rest of the production month (25th→24th). "Pace needed" is the average BCM/day required over the remaining days to reach the ${fmtInt(proj.monthlyTarget)} BCM monthly plan target.</div>`;
+    <div class="prod-note">"Needed" is the BCM required per remaining day to reach the ${fmtInt(proj.monthlyTarget)} BCM monthly plan, with Fridays counted as half (single/shift-change day): ${proj.fullRemain} full days + ${proj.friRemain} Fridays left. Projected month-end holds the current pace.</div>`;
   }
   const rest=kpis.filter(k=>!/bcm/i.test(k.label||""));
   if(rest.length){
