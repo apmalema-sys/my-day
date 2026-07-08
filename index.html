@@ -190,7 +190,7 @@
   .btn.warn{background:transparent;border:1px solid var(--line);color:var(--urgent);}
 
   /* ---- fab + sheet ---- */
-  .fab{position:fixed;right:20px;bottom:calc(var(--safe-bot) + 22px);width:56px;height:56px;border-radius:50%;border:none;background:var(--accent);color:#fff;font-size:1.8rem;font-weight:300;line-height:1;box-shadow:0 8px 24px rgba(137,68,214,.4);z-index:30;display:flex;align-items:center;justify-content:center;}
+  .fab{position:fixed;right:20px;bottom:calc(var(--safe-bot) + 22px);width:56px;height:56px;border-radius:50%;border:none;background:var(--accent);color:#fff;font-size:1.8rem;font-weight:300;line-height:1;box-shadow:0 6px 18px rgba(0,0,0,.22);z-index:30;display:flex;align-items:center;justify-content:center;}
   .fab:active{transform:scale(.92);}
   .overlay{position:fixed;inset:0;background:rgba(0,0,0,.55);opacity:0;pointer-events:none;transition:opacity .25s;z-index:40;}
   .overlay.show{opacity:1;pointer-events:auto;}
@@ -226,7 +226,13 @@
   .drawer-brand{font-size:1.15rem;font-weight:800;color:var(--txt);padding:4px 14px 16px;letter-spacing:-.02em;}
   .navitem{display:flex;align-items:center;gap:15px;width:100%;padding:14px;border:none;background:none;color:var(--muted);font-family:inherit;font-size:1rem;font-weight:600;border-radius:12px;text-align:left;}
   .navitem svg{width:22px;height:22px;flex-shrink:0;}
-  .navitem.active{background:rgba(137,68,214,.12);color:var(--accent);}
+  .navitem.active{background:var(--card2);color:var(--accent);}
+  .navitem[data-v="cycles"] svg{color:#A24BD6;}
+  .navitem[data-v="insights"] svg{color:#0A84FF;}
+  .navitem[data-v="inspect"] svg{color:#34C759;}
+  .navitem[data-v="events"] svg{color:#FF9500;}
+  .navitem[data-v="handover"] svg{color:#FF3B30;}
+  .navitem[data-v="lesson"] svg{color:#30B0C7;}
 
   /* ---- insights ---- */
   .ins-header{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px;margin:2px 4px 14px;}
@@ -1090,9 +1096,19 @@ function openDrawer(){drawer.classList.add("show");drawerScrim.classList.add("sh
 function closeDrawer(){drawer.classList.remove("show");drawerScrim.classList.remove("show");}
 document.getElementById("menu-btn").addEventListener("click",openDrawer);
 drawerScrim.addEventListener("click",closeDrawer);
+/* per-section (OmniFocus-style perspective) colors: [accent, darker accent for value text] */
+const TAB_COLORS={
+  cycles:["#A24BD6","#8E3CC4"],
+  insights:["#0A84FF","#0064E0"],
+  inspect:["#34C759","#1E9E48"],
+  events:["#FF9500","#C86E00"],
+  handover:["#FF3B30","#D70015"],
+  lesson:["#30B0C7","#0E7C90"]
+};
+function applyAccent(v){const c=TAB_COLORS[v];if(!c)return;const r=document.documentElement.style;r.setProperty("--accent",c[0]);r.setProperty("--accent2",c[1]);}
 document.querySelectorAll("[data-v]").forEach(tab=>{
   tab.addEventListener("click",()=>{
-    const v=tab.dataset.v;activeView=v;closeDrawer();
+    const v=tab.dataset.v;activeView=v;closeDrawer();applyAccent(v);
     document.querySelectorAll("[data-v]").forEach(t=>t.classList.toggle("active",t===tab));
     document.querySelectorAll(".view").forEach(s=>s.classList.toggle("active",s.id==="view-"+v));
     document.getElementById("hdr-title").textContent=titles[v];
@@ -1597,6 +1613,7 @@ function renderLesson(){
 }
 
 /* ---------- boot ---------- */
+applyAccent("cycles");
 renderCycles();
 document.getElementById("hdr-title").textContent="Cycle Time Log";
 document.getElementById("hdr-date").textContent=new Date().toLocaleDateString("en-AU",{weekday:"long",day:"numeric",month:"long"});
