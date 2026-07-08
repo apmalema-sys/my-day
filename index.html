@@ -544,7 +544,10 @@
     <div class="field"><label>Block id</label><input type="text" id="cy-block" placeholder="890-635" autocomplete="off" /></div>
     <div class="field"><label>Dump id</label><input type="text" id="cy-dump" placeholder="RL-120" autocomplete="off" /></div>
   </div>
-  <div class="field"><label>Haul distance (m) — optional</label><input type="number" id="cy-dist" inputmode="numeric" placeholder="e.g. 1800" /></div>
+  <div class="row2">
+    <div class="field"><label>Haul distance (m)</label><input type="number" id="cy-dist" inputmode="numeric" placeholder="e.g. 1800" /></div>
+    <div class="field"><label>Buckets / passes</label><input type="number" id="cy-passes" inputmode="numeric" step="1" placeholder="e.g. 5" /></div>
+  </div>
   <div class="row2">
     <div class="field"><label>Spot (min)</label><input type="number" id="cy-spot" inputmode="decimal" step="0.1" /></div>
     <div class="field"><label>Load (min)</label><input type="number" id="cy-load" inputmode="decimal" step="0.1" /></div>
@@ -1138,7 +1141,7 @@ function cycleCalc(c){
   return {total,loadT,trucks};
 }
 function openCycleSheet(){
-  ["cy-exc","cy-dt","cy-block","cy-dump","cy-dist","cy-spot","cy-load","cy-haul","cy-tip","cy-ret"].forEach(id=>document.getElementById(id).value="");
+  ["cy-exc","cy-dt","cy-block","cy-dump","cy-dist","cy-passes","cy-spot","cy-load","cy-haul","cy-tip","cy-ret"].forEach(id=>document.getElementById(id).value="");
   document.getElementById("cy-preview").textContent="Total cycle: — · Trucks needed: —";
   overlay.classList.add("show");document.getElementById("sheet-cyc").classList.add("show");
   setTimeout(()=>document.getElementById("cy-exc").focus(),300);
@@ -1154,7 +1157,7 @@ document.getElementById("cy-save").addEventListener("click",()=>{
     dt:document.getElementById("cy-dt").value.trim(),
     block:document.getElementById("cy-block").value.trim(),
     dump:document.getElementById("cy-dump").value.trim(),
-    dist:cyNum("cy-dist"),
+    dist:cyNum("cy-dist"),passes:cyNum("cy-passes"),
     spot:cyNum("cy-spot"),load:cyNum("cy-load"),haul:cyNum("cy-haul"),tip:cyNum("cy-tip"),ret:cyNum("cy-ret")};
   if(cycleCalc(c).total<=0){toast("Enter at least one cycle time");return;}
   cycles.push(c);saveCycles();closeSheets();renderCycles();vibe(15);toast("Cycle logged");
@@ -1187,6 +1190,7 @@ function renderCycles(){
       <div class="cyc-metrics">
         <div class="cyc-metric"><div class="cm-n">${r.total.toFixed(1)}</div><div class="cm-l">min cycle</div></div>
         <div class="cyc-metric"><div class="cm-n">${r.loadT>0?r.trucks:"—"}</div><div class="cm-l">trucks</div></div>
+        ${c.passes?`<div class="cyc-metric"><div class="cm-n">${c.passes}</div><div class="cm-l">passes</div></div>`:""}
         ${c.dist?`<div class="cyc-metric"><div class="cm-n">${c.dist}</div><div class="cm-l">m haul</div></div>`:""}
       </div>
       <div class="cyc-parts">${parts.length?parts.join(" · ")+" min":"—"}</div>
@@ -1207,7 +1211,7 @@ function cycleReport(){
   list.forEach((c,i)=>{
     const r=cycleCalc(c);sumTotal+=r.total;if(r.loadT>0){sumTrucks+=r.trucks;nT++;}
     md+=`## ${i+1}. ${c.exc||"—"}${c.dt?" → "+c.dt:""}\n`;
-    md+=`**Block:** ${c.block||"—"}  **Dump:** ${c.dump||"—"}${c.dist?`  **Haul:** ${c.dist} m`:""}\n`;
+    md+=`**Block:** ${c.block||"—"}  **Dump:** ${c.dump||"—"}${c.dist?`  **Haul:** ${c.dist} m`:""}${c.passes?`  **Passes:** ${c.passes}`:""}\n`;
     md+=`**Cycle components (min):** Spot ${c.spot||0} · Load ${c.load||0} · Haul ${c.haul||0} · Tip ${c.tip||0} · Return ${c.ret||0}\n`;
     md+=`**Total cycle:** ${r.total.toFixed(1)} min  ·  **Loading time:** ${r.loadT.toFixed(1)} min  ·  **Trucks needed:** ${r.loadT>0?r.trucks:"—"}\n\n`;
   });
