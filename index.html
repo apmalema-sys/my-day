@@ -298,6 +298,29 @@
   .proj-row .k{color:var(--muted);} .proj-row .v{font-weight:800;color:var(--txt);}
   .proj-row .v.bad{color:var(--urgent);} .proj-row .v.good{color:var(--low);}
   .prod-note{font-size:.72rem;color:var(--muted);line-height:1.45;padding:2px 4px 14px;}
+  /* production progress bar */
+  .pbar-card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px;margin:0 0 12px;}
+  .pbar-top{display:flex;justify-content:space-between;font-size:.82rem;font-weight:800;color:var(--txt);margin-bottom:9px;}
+  .pbar-track{position:relative;height:12px;background:var(--card2);border-radius:7px;overflow:visible;}
+  .pbar-fill{height:100%;border-radius:7px;background:var(--low);transition:width .3s;}
+  .pbar-fill.bad{background:var(--urgent);}
+  .pbar-mark{position:absolute;top:-3px;bottom:-3px;width:2px;background:var(--txt);opacity:.55;}
+  .pbar-cap{display:flex;justify-content:space-between;font-size:.7rem;color:var(--muted);margin-top:8px;}
+  .pbar-cap .good{color:var(--low);font-weight:700;} .pbar-cap .bad{color:var(--urgent);font-weight:700;}
+  /* daily BCM trend */
+  .trend-card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px;margin:0 0 12px;}
+  .trend{display:flex;align-items:flex-end;gap:4px;height:70px;}
+  .trend-col{flex:1;display:flex;align-items:flex-end;height:100%;}
+  .trend-bar{width:100%;background:var(--accent2);border-radius:3px 3px 0 0;min-height:4px;}
+  .trend-cap{display:flex;justify-content:space-between;font-size:.7rem;color:var(--muted);margin-top:9px;font-weight:600;}
+  /* fleet A&U strip + fault chips */
+  .flt-au{display:flex;gap:8px;overflow-x:auto;margin:0 0 10px;padding-bottom:2px;}
+  .flt-au-cell{flex:1;min-width:74px;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:11px 6px;text-align:center;}
+  .flt-au-cell .n{font-size:1.15rem;font-weight:800;color:var(--accent2);line-height:1;}
+  .flt-au-cell .l{font-size:.58rem;color:var(--muted);font-weight:700;text-transform:uppercase;letter-spacing:.04em;margin-top:5px;}
+  .fault-wrap{display:flex;flex-wrap:wrap;gap:7px;margin:0 0 4px;}
+  .fault-chip{background:var(--card2);border:1px solid var(--line);border-radius:20px;padding:6px 12px;font-size:.78rem;color:var(--txt);}
+  .fault-chip b{color:var(--urgent);font-weight:800;margin-right:3px;}
   .flt-summary{display:grid;grid-template-columns:1fr 1fr 1fr;gap:8px;margin:0 0 14px;}
   .flt-stat{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:12px;text-align:center;}
   .flt-stat .n{font-size:1.5rem;font-weight:800;line-height:1;}
@@ -1361,11 +1384,28 @@ document.querySelectorAll("[data-v]").forEach(tab=>{
 
 /* ---------- INSIGHTS ---------- */
 let insightsData=null;
+const LS_BCMHIST="myday.bcmhist.v1";
+function recordBcm(){
+  if(!insightsData||!insightsData.date)return;
+  const k=(insightsData.kpis||[]).find(x=>/bcm/i.test(x.label||""));
+  if(!k)return;const mtd=parseNum(k.value);if(mtd==null)return;
+  const h=load(LS_BCMHIST,{});h[insightsData.date]=mtd;
+  const keys=Object.keys(h).sort();while(keys.length>45)delete h[keys.shift()];
+  localStorage.setItem(LS_BCMHIST,JSON.stringify(h));
+}
+function bcmDailySeries(){
+  const h=load(LS_BCMHIST,{});const dates=Object.keys(h).sort();const out=[];
+  for(let i=1;i<dates.length;i++){
+    const cur=h[dates[i]],prev=h[dates[i-1]];
+    out.push({date:dates[i],daily:cur>=prev?cur-prev:cur}); // cur<prev = production-month reset
+  }
+  return out.slice(-14);
+}
 function fetchInsights(){
   if(!location.protocol.startsWith("http"))return;
   fetch("insights.json?t="+Date.now(),{cache:"no-store"})
     .then(r=>r.ok?r.json():null)
-    .then(d=>{if(d){insightsData=d;if(activeView==="insights")renderInsights();}})
+    .then(d=>{if(d){insightsData=d;recordBcm();if(activeView==="insights")renderInsights();}})
     .catch(()=>{});
 }
 let insTab="production";
@@ -1408,7 +1448,7 @@ function computeProjection(kpis){
   const pace=mtd/elapsed,proj=pace*total;
   const need=daysRemain>0?(monthlyTarget-mtd)/daysRemain:0;
   const projPct=(proj/monthlyTarget-1)*100;
-  return {daysRemain,total,pace,proj,need,projPct};
+  return {daysRemain,total,elapsed,mtd,monthlyTarget,pace,proj,need,projPct};
 }
 function renderInsProduction(el){
   const d=insightsData,kpis=d.kpis||[];
@@ -1419,6 +1459,28 @@ function renderInsProduction(el){
     html+=`<div class="prod-hero"><div class="prod-hero-lbl">${esc(bcm.label)}</div><div class="prod-hero-val">${esc(bcm.value)}</div>${bcm.delta?`<div class="prod-hero-sub ${cls}">${esc(bcm.delta)}</div>`:""}</div>`;
   }
   const proj=computeProjection(kpis);
+  if(proj){
+    const pctTarget=Math.min(100,proj.mtd/proj.monthlyTarget*100);
+    const expected=Math.min(100,proj.elapsed/proj.total*100);
+    const onBar=pctTarget>=expected;
+    html+=`<div class="pbar-card">
+      <div class="pbar-top"><span>${fmtInt(proj.mtd)} BCM</span><span>target ${fmtInt(proj.monthlyTarget)}</span></div>
+      <div class="pbar-track">
+        <div class="pbar-fill ${onBar?'good':'bad'}" style="width:${pctTarget}%"></div>
+        <div class="pbar-mark" style="left:${expected}%"></div>
+      </div>
+      <div class="pbar-cap"><span>${pctTarget.toFixed(0)}% of monthly target</span><span class="${onBar?'good':'bad'}">${onBar?"on/ahead of pace":"behind pace"}</span></div>
+    </div>`;
+  }
+  const series=bcmDailySeries();
+  if(series.length>=2){
+    const max=Math.max(...series.map(s=>s.daily))||1;
+    const avg=series.reduce((a,s)=>a+s.daily,0)/series.length;
+    html+=`<div class="sect"><h2>Daily BCM — last ${series.length} days</h2></div>`;
+    html+=`<div class="trend-card"><div class="trend">`;
+    series.forEach(s=>{const h=Math.max(6,Math.round(s.daily/max*100));html+=`<div class="trend-col"><div class="trend-bar" style="height:${h}%" title="${fmtInt(s.daily)}"></div></div>`;});
+    html+=`</div><div class="trend-cap"><span>Latest ${fmtInt(series[series.length-1].daily)}</span><span>Avg ${fmtInt(avg)} BCM/day</span></div></div>`;
+  }
   if(proj){
     const onPace=proj.pace>=proj.need;
     html+=`<div class="proj-card">
@@ -1448,11 +1510,28 @@ function renderInsFleet(el){
   let down=0,part=0;
   equip.forEach(e=>{const s=(e.status||"").toLowerCase();if(s==="down")down++;else if(s==="partial")part++;});
   const ok=equip.length-down-part;
+  const totalBD=Math.round(equip.reduce((a,e)=>a+(parseFloat(e.bd_hrs)||0),0)*10)/10;
+  // fleet A&U headline (fleet-level availability comes from the insights parser when available)
+  const f=d.fleet||{};
+  const au=[];
+  if(f.availMtd)au.push(["Fleet MTD",String(f.availMtd)]);
+  if(f.exAvail)au.push([f.exUnits?`Excav (${f.exUnits})`:"Excav avail",String(f.exAvail)]);
+  if(f.dtAvail)au.push([f.dtUnits?`Trucks (${f.dtUnits})`:"Trucks avail",String(f.dtAvail)]);
+  au.push(["Breakdown",totalBD+"h"]);
+  html+=`<div class="flt-au">`+au.map(c=>`<div class="flt-au-cell"><div class="n">${esc(c[1])}</div><div class="l">${esc(c[0])}</div></div>`).join("")+`</div>`;
   html+=`<div class="flt-summary">
     <div class="flt-stat down"><div class="n">${down}</div><div class="l">Down</div></div>
     <div class="flt-stat part"><div class="n">${part}</div><div class="l">Partial</div></div>
     <div class="flt-stat ok"><div class="n">${ok}</div><div class="l">Other</div></div>
   </div>`;
+  // recurring fault patterns (clustered from equipment notes)
+  const FAULT_KEYS=[["Overheating",/over\s?heat|cooling|coolant|temp/i],["Tyres",/tyre|tire/i],["Electrical",/electric|wiring|alternator|starter|battery|switch/i],["Hydraulic",/hydraulic|hose|cylinder|leak/i],["Brakes",/brake/i],["Engine",/engine|motor/i],["Drivetrain",/axle|transmission|final drive|\bgear|track/i],["GET",/\bget\b|tooth|teeth|bucket/i],["Tyre pressure",/pressure/i]];
+  const faults={};
+  equip.forEach(e=>{const note=((e.note||"")+" "+(e.comment||"")).toLowerCase();FAULT_KEYS.forEach(([label,rx])=>{if(rx.test(note))faults[label]=(faults[label]||0)+1;});});
+  const faultList=Object.entries(faults).sort((a,b)=>b[1]-a[1]);
+  if(faultList.length){
+    html+=`<div class="sect"><h2>Fault patterns</h2></div><div class="fault-wrap">`+faultList.map(([label,n])=>`<span class="fault-chip"><b>${n}</b> ${esc(label)}</span>`).join("")+`</div>`;
+  }
   const order={down:0,partial:1,warning:2,scheduled:3,returned:4};
   const sorted=equip.slice().sort((a,b)=>((order[(a.status||"").toLowerCase()]??9)-(order[(b.status||"").toLowerCase()]??9)));
   html+=`<div class="ins-equip">`;
@@ -1498,7 +1577,19 @@ const TOOLBOX=[
   {t:"Traffic and right of way",p:["Loaded trucks have priority over empties; machines over light vehicles","One-way haul roads stay one-way even when the road looks clear","Obey the signs and the traffic plan in every active area","At blind intersections, use the spotter or the agreed protocol"]},
   {t:"Light vehicles in the pit",p:["No LV enters the active area without telling the operator first","Park only in designated areas, clear of the line of fire","Positive comms with every machine before you approach","Keep to the designated lanes — no mixing with haul traffic"]},
   {t:"Dust and visibility",p:["If you can't see the road or the next machine, slow down or stop","Water carts on primary roads — flag it if a road is dusty","Keep windscreens and mirrors clean at every break","Dust hides pedestrians and edges — treat low visibility as a stop condition"]},
-  {t:"Isolate before you touch it",p:["Lock out and tag out before any work on plant or equipment","Prove zero energy — hydraulics and raised components store energy when off","Your lock is yours; never remove someone else's","When in doubt, isolate and ask — not the other way round"]}
+  {t:"Isolate before you touch it",p:["Lock out and tag out before any work on plant or equipment","Prove zero energy — hydraulics and raised components store energy when off","Your lock is yours; never remove someone else's","When in doubt, isolate and ask — not the other way round"]},
+  {t:"GET and lost teeth",p:["Check the bucket teeth and adapters every pass-off and at pre-start","A missing tooth can puncture a truck tyre or wreck the crusher — report it now","Log where it was lost so we can trace it before it reaches the plant","Never dig with a machine that's missing GET"]},
+  {t:"Blast exclusion and re-entry",p:["Nobody and nothing inside the exclusion zone until the all-clear is given","Don't rush the re-entry — the shotfirer clears the area, not the clock","Post-blast face inspection happens before any machine goes back in","Confirm comms and misfire checks before mobilising the fleet"]},
+  {t:"Refuelling safety",p:["Engine off, no smoking, no phones at the fuel bay","Bond and earth before fuelling; watch for spills and clean them immediately","Stay with the nozzle — don't walk away mid-fuel","Report any fuel leak or damaged hose straight away"]},
+  {t:"Pinch points and hand injuries",p:["Keep hands and fingers clear of moving parts, hitches and linkages","Use the right tool, not your hand, to clear or adjust","Gloves on for handling GET, chains, and sharp edges","Think where the energy goes if it lets go — stay out of that path"]},
+  {t:"Housekeeping and spillage",p:["Clean spillage off ramps, loading pads and dump approaches — it's a tyre and traffic hazard","Loose rock on the floor slows spotting and cuts tyres","A tidy work area is a safe and productive one","Report material building up where it shouldn't be"]},
+  {t:"Radio and communication",p:["Use the correct channel and clear, standard call-outs","Confirm you've been heard — don't assume","Positive comms before any machine moves near another","If the radio's down, stop and sort it before you keep working"]},
+  {t:"Water, mud and soft ground",p:["Assess trafficability after rain before releasing equipment","Soft or boggy ground can trap or roll a machine — test the edges","Keep clear of sumps and pooled water at the bench face","Report seepage or a soft floor so it gets pumped or graded"]},
+  {t:"Night shift and lighting",p:["Check lighting plant is positioned and working before dark","Slow down — depth perception and visibility drop at night","Keep windscreens and mirrors clean; glare and dust are worse at night","Fatigue peaks in the early hours — watch yourself and your mates"]},
+  {t:"Storms and lightning",p:["Know the lightning protocol and the trigger distance","Stop high-risk work and get to a safe location when the alarm sounds","Don't shelter under or near tall equipment in a storm","Wait for the all-clear before resuming — don't gamble on the weather"]},
+  {t:"Manual handling",p:["Size up the load — get help or a machine for anything heavy or awkward","Bend the knees, keep the load close, don't twist","Clear your path and your footing before you lift","Report strains early — small injuries become big ones"]},
+  {t:"Emergency response",p:["Know the muster point and the emergency numbers for your area","Know where the nearest first-aider, extinguisher and spill kit are","In an incident: make it safe, raise the alarm, don't become the second casualty","If you're first on scene, stay calm and give a clear location"]},
+  {t:"Tyre handling and pressure",p:["Stand clear of the tyre's trajectory — never in front of a rim under pressure","Only trained, authorised people handle mining tyres","Check for cuts, bulges and correct pressure at pre-start","A hot or under-inflated tyre is a failure waiting to happen — report it"]}
 ];
 function dayOfYear(){const n=new Date();return Math.floor((n-new Date(n.getFullYear(),0,0))/86400000);}
 function renderInsSafety(el){
