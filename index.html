@@ -1555,7 +1555,7 @@ function renderInsFleet(el){
   if(f.excavators&&f.excavators.length){
     html+=`<div class="ex-avail">`+f.excavators.map(e=>{const n=e.avail?parseFloat(e.avail):null;const cls=n==null?"na":n>=85?"good":n>=60?"warn":"bad";return `<span class="ex-chip ${cls}">${esc(e.unit)} <b>${e.avail||"—"}</b></span>`;}).join("")+`</div>`;
   }
-  html+=`<div class="flt-au-hint">Excavator avail = your 6 units auto-read from the daily report${f.pdfDate?" ("+esc(f.pdfDate)+")":""}${f.exBasis?", "+esc(f.exBasis)+" reported":""}. Tap Excav / Trucks to override; trucks are yours to set (21 active).</div>`;
+  html+=`<div class="flt-au-hint">Excav = your 6 units${f.exBasis?" ("+esc(f.exBasis)+" reported)":""}; Trucks = ${f.dtBasis?esc(f.dtBasis):"active fleet"}. Auto-read from the daily report${f.pdfDate?" "+esc(f.pdfDate):""}. Tap a cell to override.</div>`;
   html+=`<div class="flt-summary">
     <div class="flt-stat down"><div class="n">${down}</div><div class="l">Down</div></div>
     <div class="flt-stat part"><div class="n">${part}</div><div class="l">Partial</div></div>
