@@ -330,6 +330,18 @@
   .les-apply-lbl{font-size:.64rem;color:var(--accent);font-weight:700;text-transform:uppercase;letter-spacing:.06em;margin-bottom:8px;}
   .les-apply-text{font-size:.85rem;color:var(--txt);line-height:1.55;}
 
+  /* ---- cycle time log ---- */
+  .cyc-card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:13px 14px;margin:0 0 10px;}
+  .cyc-card-top{display:flex;align-items:center;justify-content:space-between;gap:8px;}
+  .cyc-idline{font-size:.92rem;font-weight:800;color:var(--txt);}
+  .cyc-del{background:none;border:none;color:var(--muted);font-size:1rem;padding:2px 6px;line-height:1;font-family:inherit;}
+  .cyc-route{font-size:.76rem;color:var(--accent2);font-weight:600;margin-top:3px;}
+  .cyc-metrics{display:flex;gap:22px;margin:11px 0 9px;}
+  .cyc-metric .cm-n{font-size:1.4rem;font-weight:800;color:var(--accent2);line-height:1;}
+  .cyc-metric .cm-l{font-size:.6rem;color:var(--muted);text-transform:uppercase;letter-spacing:.05em;font-weight:700;margin-top:4px;}
+  .cyc-parts{font-size:.72rem;color:var(--muted);line-height:1.4;border-top:1px solid var(--line);padding-top:8px;}
+  .cyc-preview{background:var(--card2);border:1px solid var(--line);border-radius:10px;padding:11px 12px;font-size:.85rem;color:var(--accent2);font-weight:700;text-align:center;margin:6px 0 14px;}
+
   .toast{position:fixed;left:50%;bottom:calc(var(--safe-bot) + 92px);transform:translateX(-50%) translateY(20px);background:var(--card2);border:1px solid var(--line);color:var(--txt);padding:11px 18px;border-radius:12px;font-size:.85rem;font-weight:600;opacity:0;pointer-events:none;transition:all .25s;z-index:60;box-shadow:0 8px 24px rgba(0,0,0,.4);}
   .toast.show{opacity:1;transform:translateX(-50%) translateY(0);}
 </style>
@@ -342,8 +354,22 @@
   </header>
 
   <main>
+    <!-- CYCLES -->
+    <section class="view active" id="view-cycles">
+      <div class="evlog-totals">
+        <div class="evlog-total"><div class="etn" id="cyc-count">0</div><div class="etl">Cycles</div></div>
+        <div class="evlog-total"><div class="etn" id="cyc-avg">—</div><div class="etl">Avg min</div></div>
+        <div class="evlog-total"><div class="etn" id="cyc-trucks">—</div><div class="etl">Avg trucks</div></div>
+      </div>
+      <div id="cyc-list"></div>
+      <div class="insp-actions" style="margin-top:4px;">
+        <button class="btn" id="cyc-share">Send cycle log to CoWork</button>
+        <button class="btn alt" id="cyc-copy">Copy cycle log</button>
+      </div>
+    </section>
+
     <!-- TODAY -->
-    <section class="view active" id="view-today">
+    <section class="view" id="view-today">
       <div class="stats">
         <div class="stat overdue"><div class="n" id="st-over">0</div><div class="l">Overdue</div></div>
         <div class="stat today"><div class="n" id="st-today">0</div><div class="l">Due Today</div></div>
@@ -487,9 +513,9 @@
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 20h20M7 20V10M12 20V4M17 20v-7"/></svg>
       <span class="lbl">Insights</span>
     </button>
-    <button class="tab active" data-v="today">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><path d="M9 22V12h6v10"/></svg>
-      <span class="lbl">Today</span>
+    <button class="tab active" data-v="cycles">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M23 4v6h-6"/><path d="M1 20v-6h6"/><path d="M3.51 9a9 9 0 0 1 14.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0 0 20.49 15"/></svg>
+      <span class="lbl">Cycles</span>
     </button>
     <button class="tab" data-v="events">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
@@ -570,6 +596,31 @@
   <button class="btn" id="btn-save-log">Start event timer</button>
   <button class="btn ghost" data-close style="margin-top:6px;">Cancel</button>
   <button class="btn ghost" data-close>Cancel</button>
+</div>
+
+<div class="sheet" id="sheet-cyc" style="max-height:88vh;overflow-y:auto;">
+  <h3>Log a cycle</h3>
+  <div class="row2">
+    <div class="field"><label>Excavator</label><input type="text" id="cy-exc" placeholder="EX-123 / type" autocomplete="off" /></div>
+    <div class="field"><label>DT id</label><input type="text" id="cy-dt" placeholder="DT-128" autocomplete="off" /></div>
+  </div>
+  <div class="row2">
+    <div class="field"><label>Block id</label><input type="text" id="cy-block" placeholder="890-635" autocomplete="off" /></div>
+    <div class="field"><label>Dump id</label><input type="text" id="cy-dump" placeholder="RL-120" autocomplete="off" /></div>
+  </div>
+  <div class="field"><label>Haul distance (m) — optional</label><input type="number" id="cy-dist" inputmode="numeric" placeholder="e.g. 1800" /></div>
+  <div class="row2">
+    <div class="field"><label>Spot (min)</label><input type="number" id="cy-spot" inputmode="decimal" step="0.1" /></div>
+    <div class="field"><label>Load (min)</label><input type="number" id="cy-load" inputmode="decimal" step="0.1" /></div>
+  </div>
+  <div class="row2">
+    <div class="field"><label>Haul (min)</label><input type="number" id="cy-haul" inputmode="decimal" step="0.1" /></div>
+    <div class="field"><label>Tip (min)</label><input type="number" id="cy-tip" inputmode="decimal" step="0.1" /></div>
+  </div>
+  <div class="field"><label>Return (min)</label><input type="number" id="cy-ret" inputmode="decimal" step="0.1" /></div>
+  <div class="cyc-preview" id="cy-preview">Total cycle: — · Trucks needed: —</div>
+  <button class="btn" id="cy-save">Save cycle</button>
+  <button class="btn ghost" data-close style="margin-top:6px;">Cancel</button>
 </div>
 
 <div class="toast" id="toast"></div>
@@ -1408,7 +1459,7 @@ function syncPri(){document.querySelectorAll(".priopt").forEach(o=>o.classList.t
 function openTaskSheet(){document.getElementById("in-title").value="";document.getElementById("in-due").value="";newPri="high";syncPri();overlay.classList.add("show");sheetTask.classList.add("show");setTimeout(()=>document.getElementById("in-title").focus(),300);}
 function openSetSheet(){document.getElementById("in-sync").value=getSyncEmail();overlay.classList.add("show");sheetSet.classList.add("show");setTimeout(()=>document.getElementById("in-sync").focus(),300);}
 function openImpSheet(){document.getElementById("in-import").value="";closeSheets();overlay.classList.add("show");sheetImp.classList.add("show");setTimeout(()=>document.getElementById("in-import").focus(),300);}
-function closeSheets(){overlay.classList.remove("show");sheetTask.classList.remove("show");sheetSet.classList.remove("show");sheetImp.classList.remove("show");sheetLog.classList.remove("show");sheetDone.classList.remove("show");}
+function closeSheets(){overlay.classList.remove("show");sheetTask.classList.remove("show");sheetSet.classList.remove("show");sheetImp.classList.remove("show");sheetLog.classList.remove("show");sheetDone.classList.remove("show");document.getElementById("sheet-cyc").classList.remove("show");}
 overlay.addEventListener("click",closeSheets);
 /* ---- import tasks (paste code: raw JSON or base64 of {"tasks":[...]}) ---- */
 function parseImport(text){
@@ -1452,9 +1503,9 @@ document.getElementById("btn-save-task").addEventListener("click",()=>{
 });
 
 /* ---------- tabs ---------- */
-const titles={today:"My Day",events:"Events log",insights:"Daily Dashboard",tasks:"Tasks",inspect:"Operation Inspection",lesson:"Daily Mining Lesson",handover:"Shift Handover"};
+const titles={today:"My Day",cycles:"Cycle Time Log",events:"Events log",insights:"Daily Dashboard",tasks:"Tasks",inspect:"Operation Inspection",lesson:"Daily Mining Lesson",handover:"Shift Handover"};
 let inspTab="ops";
-let activeView="today";
+let activeView="cycles";
 document.querySelectorAll(".tab").forEach(tab=>{
   tab.addEventListener("click",()=>{
     const v=tab.dataset.v;activeView=v;
@@ -1464,6 +1515,7 @@ document.querySelectorAll(".tab").forEach(tab=>{
     document.getElementById("fab").style.display=(v==="inspect"||v==="insights"||v==="lesson"||v==="handover")?"none":"flex";
     const dEl=document.getElementById("hdr-date");
     if(v==="today"){dEl.textContent=new Date().toLocaleDateString("en-AU",{weekday:"long",day:"numeric",month:"long"});}
+    else if(v==="cycles"){dEl.textContent=new Date().toLocaleDateString("en-AU",{weekday:"long",day:"numeric",month:"long"});}
     else if(v==="tasks"){dEl.textContent=tasks.filter(t=>!t.done).length+" active";}
     else if(v==="inspect"){dEl.textContent=inspTab==="lsr"?"LSR & SOPs":"Tick · note · close";}
     else if(v==="events"){dEl.textContent=new Date().toLocaleDateString("en-AU",{weekday:"long",day:"numeric",month:"long"});}
@@ -1471,15 +1523,111 @@ document.querySelectorAll(".tab").forEach(tab=>{
     else if(v==="lesson"){const l=lessonData||todayLesson();dEl.textContent=l?l.topic:"";}
     else if(v==="handover"){dEl.textContent=ho.shift+" shift · "+todayStr();}
     else dEl.textContent="";
-    if(v==="today")renderToday();else if(v==="tasks")renderTasks();else if(v==="inspect"){if(inspTab==="ops")renderInspect();else renderLSR();}else if(v==="events")renderEvents();else if(v==="insights")renderInsights();else if(v==="lesson")renderLesson();else if(v==="handover")renderHandover();
+    if(v==="today")renderToday();else if(v==="cycles")renderCycles();else if(v==="tasks")renderTasks();else if(v==="inspect"){if(inspTab==="ops")renderInspect();else renderLSR();}else if(v==="events")renderEvents();else if(v==="insights")renderInsights();else if(v==="lesson")renderLesson();else if(v==="handover")renderHandover();
   });
 });
-document.getElementById("fab").addEventListener("click",()=>{if(activeView==="events")openLogSheet();else openTaskSheet();});
+document.getElementById("fab").addEventListener("click",()=>{if(activeView==="events")openLogSheet();else if(activeView==="cycles")openCycleSheet();else openTaskSheet();});
 document.getElementById("today-list").addEventListener("click",onTap);
 document.getElementById("task-list").addEventListener("click",onTap);
 document.getElementById("filters").addEventListener("click",e=>{const b=e.target.closest(".filt");if(!b)return;curFilter=b.dataset.f;document.querySelectorAll(".filt").forEach(x=>x.classList.toggle("on",x===b));renderTasks();});
 
 function renderAll(){renderToday();if(activeView==="tasks")renderTasks();}
+
+/* ---------- cycle time log ---------- */
+const LS_CYC="myday.cycles.v1";
+let cycles=load(LS_CYC,[]);
+function saveCycles(){localStorage.setItem(LS_CYC,JSON.stringify(cycles));}
+function cyNum(id){const v=parseFloat(document.getElementById(id).value);return isNaN(v)?0:v;}
+function cycleCalc(c){
+  const total=(c.spot||0)+(c.load||0)+(c.haul||0)+(c.tip||0)+(c.ret||0);
+  const loadT=(c.spot||0)+(c.load||0);
+  const trucks=loadT>0?Math.ceil(total/loadT):0;
+  return {total,loadT,trucks};
+}
+function openCycleSheet(){
+  ["cy-exc","cy-dt","cy-block","cy-dump","cy-dist","cy-spot","cy-load","cy-haul","cy-tip","cy-ret"].forEach(id=>document.getElementById(id).value="");
+  document.getElementById("cy-preview").textContent="Total cycle: — · Trucks needed: —";
+  overlay.classList.add("show");document.getElementById("sheet-cyc").classList.add("show");
+  setTimeout(()=>document.getElementById("cy-exc").focus(),300);
+}
+function updateCyclePreview(){
+  const r=cycleCalc({spot:cyNum("cy-spot"),load:cyNum("cy-load"),haul:cyNum("cy-haul"),tip:cyNum("cy-tip"),ret:cyNum("cy-ret")});
+  document.getElementById("cy-preview").textContent=r.total>0?`Total cycle: ${r.total.toFixed(1)} min · Trucks needed: ${r.loadT>0?r.trucks:"—"}`:"Total cycle: — · Trucks needed: —";
+}
+["cy-spot","cy-load","cy-haul","cy-tip","cy-ret"].forEach(id=>{const el=document.getElementById(id);if(el)el.addEventListener("input",updateCyclePreview);});
+document.getElementById("cy-save").addEventListener("click",()=>{
+  const c={id:Date.now(),date:todayStr(),
+    exc:document.getElementById("cy-exc").value.trim(),
+    dt:document.getElementById("cy-dt").value.trim(),
+    block:document.getElementById("cy-block").value.trim(),
+    dump:document.getElementById("cy-dump").value.trim(),
+    dist:cyNum("cy-dist"),
+    spot:cyNum("cy-spot"),load:cyNum("cy-load"),haul:cyNum("cy-haul"),tip:cyNum("cy-tip"),ret:cyNum("cy-ret")};
+  if(cycleCalc(c).total<=0){toast("Enter at least one cycle time");return;}
+  cycles.push(c);saveCycles();closeSheets();renderCycles();vibe(15);toast("Cycle logged");
+});
+function renderCycles(){
+  const today=todayStr();
+  const list=cycles.filter(c=>c.date===today).slice().reverse();
+  const el=document.getElementById("cyc-list");
+  if(!list.length){
+    el.innerHTML=`<div class="evlog-empty"><div class="big">♲</div>No cycles logged yet.<br>Tap + to log a cycle time.</div>`;
+    document.getElementById("cyc-count").textContent="0";
+    document.getElementById("cyc-avg").textContent="—";
+    document.getElementById("cyc-trucks").textContent="—";
+    return;
+  }
+  let sumTotal=0,sumTrucks=0,nTrucks=0;
+  el.innerHTML=list.map(c=>{
+    const r=cycleCalc(c);
+    sumTotal+=r.total;if(r.loadT>0){sumTrucks+=r.trucks;nTrucks++;}
+    const idline=[c.exc?esc(c.exc):"",c.dt?esc(c.dt):""].filter(Boolean).join(" · ");
+    const route=[c.block?("Block "+esc(c.block)):"",c.dump?("Dump "+esc(c.dump)):""].filter(Boolean).join(" → ");
+    const parts=[];
+    if(c.spot)parts.push("Spot "+c.spot);if(c.load)parts.push("Load "+c.load);if(c.haul)parts.push("Haul "+c.haul);if(c.tip)parts.push("Tip "+c.tip);if(c.ret)parts.push("Return "+c.ret);
+    return `<div class="cyc-card">
+      <div class="cyc-card-top">
+        <div class="cyc-idline">${idline||"—"}</div>
+        <button class="cyc-del" data-del="${c.id}" aria-label="Delete">✕</button>
+      </div>
+      ${route?`<div class="cyc-route">${route}</div>`:""}
+      <div class="cyc-metrics">
+        <div class="cyc-metric"><div class="cm-n">${r.total.toFixed(1)}</div><div class="cm-l">min cycle</div></div>
+        <div class="cyc-metric"><div class="cm-n">${r.loadT>0?r.trucks:"—"}</div><div class="cm-l">trucks</div></div>
+        ${c.dist?`<div class="cyc-metric"><div class="cm-n">${c.dist}</div><div class="cm-l">m haul</div></div>`:""}
+      </div>
+      <div class="cyc-parts">${parts.length?parts.join(" · ")+" min":"—"}</div>
+    </div>`;
+  }).join("");
+  document.getElementById("cyc-count").textContent=list.length;
+  document.getElementById("cyc-avg").textContent=(sumTotal/list.length).toFixed(1);
+  document.getElementById("cyc-trucks").textContent=nTrucks?Math.round(sumTrucks/nTrucks):"—";
+  el.querySelectorAll("[data-del]").forEach(b=>b.addEventListener("click",()=>{const id=Number(b.dataset.del);cycles=cycles.filter(x=>x.id!==id);saveCycles();renderCycles();vibe(10);toast("Cycle removed");}));
+}
+function cycleReport(){
+  const today=todayStr();
+  const list=cycles.filter(c=>c.date===today);
+  const stamp=new Date().toLocaleString("en-AU",{dateStyle:"medium",timeStyle:"short"});
+  let md=`# Cycle Time Log — ${today}\n\n**Superintendent:** Peter Anthony  \n**Logged:** ${stamp}\n\n---\n\n`;
+  if(!list.length){md+=`_No cycles logged today._\n`;return md;}
+  let sumTotal=0,sumTrucks=0,nT=0;
+  list.forEach((c,i)=>{
+    const r=cycleCalc(c);sumTotal+=r.total;if(r.loadT>0){sumTrucks+=r.trucks;nT++;}
+    md+=`## ${i+1}. ${c.exc||"—"}${c.dt?" → "+c.dt:""}\n`;
+    md+=`**Block:** ${c.block||"—"}  **Dump:** ${c.dump||"—"}${c.dist?`  **Haul:** ${c.dist} m`:""}\n`;
+    md+=`**Cycle components (min):** Spot ${c.spot||0} · Load ${c.load||0} · Haul ${c.haul||0} · Tip ${c.tip||0} · Return ${c.ret||0}\n`;
+    md+=`**Total cycle:** ${r.total.toFixed(1)} min  ·  **Loading time:** ${r.loadT.toFixed(1)} min  ·  **Trucks needed:** ${r.loadT>0?r.trucks:"—"}\n\n`;
+  });
+  md+=`---\n## Summary\n- Cycles logged: ${list.length}\n- Average cycle time: ${(sumTotal/list.length).toFixed(1)} min\n- Average trucks needed: ${nT?Math.round(sumTrucks/nT):"—"}\n\n_Trucks needed = ceil(total cycle ÷ loading time), loading time = spot + load._\n\n_Sign-off: Peter Anthony — Mining Superintendent_\n`;
+  return md;
+}
+document.getElementById("cyc-copy").addEventListener("click",async()=>{const md=cycleReport();try{await navigator.clipboard.writeText(md);toast("Cycle log copied");}catch(e){fallbackCopy(md);}});
+document.getElementById("cyc-share").addEventListener("click",async()=>{
+  const md=cycleReport(),subj="[Cycle Log] "+todayStr(),email=getSyncEmail();
+  if(email){location.href="mailto:"+encodeURIComponent(email)+"?subject="+encodeURIComponent(subj)+"&body="+encodeURIComponent(md);toast("Opening email — just press Send");return;}
+  if(navigator.share){try{await navigator.share({title:subj,text:md});}catch(e){}}
+  else{try{await navigator.clipboard.writeText(md);toast("Copied — set a sync email in ⚙︎ for one-tap");}catch(e){fallbackCopy(md);}}
+});
 
 /* ---------- events log ---------- */
 const LS_EVLOG="myday.evlog.v1";
@@ -1908,6 +2056,8 @@ function renderLesson(){
 
 /* ---------- boot ---------- */
 renderToday();
+renderCycles();
+document.getElementById("hdr-title").textContent="Cycle Time Log";
 document.getElementById("hdr-date").textContent=new Date().toLocaleDateString("en-AU",{weekday:"long",day:"numeric",month:"long"});
 syncFromServer();                         // pull current tasks/schedule from tasks.md (published as data.json)
 fetchInsights();                          // pull latest wiki insights (published as insights.json)
