@@ -157,21 +157,6 @@
   .count-label{flex:1;font-size:.88rem;color:var(--txt);}
   .count-input{width:70px;background:var(--card2);border:2px solid var(--line);border-radius:8px;padding:5px 4px;color:var(--txt);font-size:.88rem;font-weight:700;font-family:inherit;text-align:center;}
   .count-input:focus{outline:none;border-color:var(--accent);}
-  /* ---- cycle time ---- */
-  .cycle-row{display:flex;align-items:center;gap:10px;padding:10px 14px;border-bottom:1px solid var(--line);}
-  .cycle-row:last-child{border-bottom:none;}
-  .cycle-label{flex:1;font-size:.88rem;color:var(--txt);line-height:1.3;}
-  .cycle-input-wrap{display:flex;align-items:center;gap:6px;flex-shrink:0;}
-  .cycle-input{width:88px;background:var(--card2);border:2px solid var(--line);border-radius:8px;padding:6px 8px;color:var(--txt);font-size:.88rem;font-weight:700;font-family:inherit;text-align:right;}
-  .cycle-input:focus{outline:none;border-color:var(--accent);}
-  .cycle-input.text-field{text-align:left;width:140px;}
-  .cycle-suffix{font-size:.76rem;color:var(--muted);font-weight:600;min-width:30px;}
-  .cycle-calc-row{display:flex;align-items:center;justify-content:space-between;padding:11px 14px;border-bottom:1px solid var(--line);}
-  .cycle-calc-label{font-size:.88rem;color:var(--txt);}
-  .cycle-calc-val{font-size:1.1rem;font-weight:800;color:var(--accent2);}
-  .cycle-variance{padding:7px 14px;font-size:.8rem;font-weight:700;border-bottom:1px solid var(--line);}
-  .cycle-variance.good{color:#16a34a;}.cycle-variance.warn{color:#ff9f43;}.cycle-variance.bad{color:#dc2626;}
-  .cycle-note{padding:10px 14px;font-size:.76rem;color:var(--muted);line-height:1.55;}
   .inotes{width:100%;background:var(--card2);border:1px solid var(--line);border-radius:10px;padding:10px 12px;color:var(--txt);font-size:.88rem;font-family:inherit;margin-top:10px;min-height:46px;resize:vertical;}
   .inotes:focus{outline:none;border-color:var(--accent);}
   .insp-actions{display:flex;flex-direction:column;gap:10px;margin:6px 4px 10px;}
@@ -418,10 +403,6 @@
         </div>
         <div class="insp-prog" id="insp-prog"></div>
         <div id="insp-sections"></div>
-        <div class="isect" style="padding:13px 14px;">
-          <h3 style="font-size:.95rem;font-weight:700;margin-bottom:10px;">Plan for next shift</h3>
-          <textarea class="inotes" id="insp-next" placeholder="Actions to carry into next shift — owner — by when" style="margin-top:0"></textarea>
-        </div>
         <div class="isect" style="padding:13px 14px;">
           <h3 style="font-size:.95rem;font-weight:700;margin-bottom:10px;">Notes for management</h3>
           <textarea class="inotes" id="insp-mgmt" placeholder="Anything management needs to know" style="margin-top:0"></textarea>
@@ -696,25 +677,6 @@ const INSPECT_SECTIONS=[
       "Rock breaker available for oversize rocks breaking",
     ]},
   ]},
-  {key:"cycletime",title:"Cycle time",subs:[
-    {label:"Route",type:"cycledata",items:[
-      {label:"Block ID",key:"ct_block",inputType:"text",placeholder:"e.g. 885N-B3"},
-      {label:"Dump / Tip ID",key:"ct_dump",inputType:"text",placeholder:"e.g. WD-Level-4"},
-      {label:"Haul distance",key:"ct_dist",inputType:"number",placeholder:"0",suffix:"m"},
-    ]},
-    {label:"Loading cycle — excavator",type:"cycledata",items:[
-      {label:"Truck spot time",key:"ct_spot",placeholder:"0",suffix:"min"},
-      {label:"Fill time (1st to last bucket)",key:"ct_fill",placeholder:"0",suffix:"min"},
-      {label:"Passes per truck",key:"ct_passes",placeholder:"0",suffix:"passes"},
-      {label:"Queue / wait time at face",key:"ct_queue",placeholder:"0",suffix:"min"},
-    ]},
-    {label:"Haul cycle — truck",type:"cycledata",items:[
-      {label:"Loaded travel time",key:"ct_haul",placeholder:"0",suffix:"min"},
-      {label:"Tip time at crest",key:"ct_tip",placeholder:"0",suffix:"min"},
-      {label:"Return time (empty)",key:"ct_return",placeholder:"0",suffix:"min"},
-    ]},
-    {label:"Overall",type:"cycletotal"},
-  ]},
 ];
 
 const LSR_SOP_SECTIONS=[
@@ -983,7 +945,7 @@ function renderSchedule(){
 }
 
 /* ---------- INSPECTION ---------- */
-function blankInsp(){return {date:todayStr(),shift:"Day",weather:"",blockId:"",dumping:"",yn:{},comments:{},hazards:[],counts:{},cycleData:{},next:"",mgmt:"",lsrNotes:""};}
+function blankInsp(){return {date:todayStr(),shift:"Day",weather:"",blockId:"",dumping:"",yn:{},comments:{},hazards:[],counts:{},mgmt:"",lsrNotes:""};}
 let insp=load(LS_INSP,null);
 if(!insp||insp.date!==todayStr()){/* keep draft across same day only as a soft default */ if(!insp)insp=blankInsp();}
 function saveInsp(){localStorage.setItem(LS_INSP,JSON.stringify(insp));}
@@ -994,7 +956,7 @@ function renderSummary(){
   const bars=INSPECT_SECTIONS.map(sec=>{
     let idx=0,yes=0,no=0,na=0;
     sec.subs.forEach(sub=>{
-      if(sub.type==="hazards"||sub.type==="counts"||sub.type==="cycledata"||sub.type==="cycletotal")return;
+      if(sub.type==="hazards"||sub.type==="counts")return;
       sub.items.forEach(()=>{const v=insp.yn[sec.key+"."+idx];if(v==="yes")yes++;else if(v==="no")no++;else if(v==="na")na++;idx++;});
     });
     totYes+=yes;totNo+=no;totNa+=na;
@@ -1032,7 +994,6 @@ function renderInspect(){
   document.getElementById("insp-weather").value=insp.weather||"";
   document.getElementById("insp-blockid").value=insp.blockId||"";
   document.getElementById("insp-dumping").value=insp.dumping||"";
-  document.getElementById("insp-next").value=insp.next||"";
   document.getElementById("insp-mgmt").value=insp.mgmt||"";
   let totalItems=0,yesCount=0;
   const html=INSPECT_SECTIONS.map(sec=>{
@@ -1066,51 +1027,6 @@ function renderInspect(){
         }).join("");
         return `<div class="isub-label">${esc(sub.label)}</div>${rowsHtml}`;
       }
-      /* ── cycle time data fields ── */
-      if(sub.type==="cycledata"){
-        const cd=insp.cycleData||{};
-        const rowsHtml=sub.items.map(ci=>{
-          const v=cd[ci.key]||"";
-          const isText=ci.inputType==="text";
-          return `<div class="cycle-row">
-            <span class="cycle-label">${esc(ci.label)}</span>
-            <div class="cycle-input-wrap">
-              <input class="cycle-input${isText?' text-field':''}" type="${ci.inputType||'number'}" step="0.1" min="0" data-cd="${ci.key}" value="${esc(String(v))}" placeholder="${esc(ci.placeholder||'0')}" />
-              ${ci.suffix?`<span class="cycle-suffix">${esc(ci.suffix)}</span>`:''}
-            </div>
-          </div>`;
-        }).join("");
-        return `<div class="isub-label">${esc(sub.label)}</div>${rowsHtml}`;
-      }
-      /* ── cycle time overall summary ── */
-      if(sub.type==="cycletotal"){
-        const cd=insp.cycleData||{};
-        const spot=parseFloat(cd.ct_spot)||0,fill=parseFloat(cd.ct_fill)||0;
-        const haul=parseFloat(cd.ct_haul)||0,tip=parseFloat(cd.ct_tip)||0,ret=parseFloat(cd.ct_return)||0;
-        const total=spot+fill+haul+tip+ret;
-        const target=parseFloat(cd.ct_target)||0;
-        const fleet=fill>0?Math.ceil(total/fill):null;
-        let varHtml="";
-        if(total>0&&target>0){
-          const diff=total-target;
-          const cls=diff>2?"bad":diff>0?"warn":"good";
-          varHtml=`<div class="cycle-variance ${cls}">${diff>0?"+":""}${diff.toFixed(1)} min vs ${target.toFixed(1)} min target</div>`;
-        }
-        return `<div class="isub-label">Overall</div>
-        <div class="cycle-calc-row">
-          <span class="cycle-calc-label">Total cycle time</span>
-          <span class="cycle-calc-val" id="ct-total-val">${total>0?total.toFixed(1)+" min":"— min"}</span>
-        </div>
-        <div class="cycle-row">
-          <span class="cycle-label">Target cycle time</span>
-          <div class="cycle-input-wrap">
-            <input class="cycle-input" type="number" step="0.1" min="0" data-cd="ct_target" value="${esc(String(cd.ct_target||''))}" placeholder="0" />
-            <span class="cycle-suffix">min</span>
-          </div>
-        </div>
-        ${varHtml}
-        <div class="cycle-note">Total = Spot + Fill + Haul + Tip + Return. A longer haul distance means a longer haul cycle, which means more trucks are needed to keep the excavator continuously loaded. Fleet estimate for this route: <b id="ct-fleet-val">${fleet?'~'+fleet+" trucks":"— (enter fill time)"}</b>.</div>`;
-      }
       /* ── standard Yes / No / N/A rows ── */
       const rowsHtml=sub.items.map(item=>{
         const k=sec.key+"."+idx;
@@ -1142,26 +1058,6 @@ function renderInspect(){
   renderSummary();
   updateSyncLabel();
   if(pendingFocusKey){const inp=document.querySelector(`.icomment[data-ck="${pendingFocusKey}"]`);if(inp){inp.focus();inp.scrollIntoView({block:'nearest'});}pendingFocusKey=null;}
-}
-
-function updateCycleTotals(){
-  const cd=insp.cycleData||{};
-  const spot=parseFloat(cd.ct_spot)||0,fill=parseFloat(cd.ct_fill)||0;
-  const haul=parseFloat(cd.ct_haul)||0,tip=parseFloat(cd.ct_tip)||0,ret=parseFloat(cd.ct_return)||0;
-  const total=spot+fill+haul+tip+ret;
-  const target=parseFloat(cd.ct_target)||0;
-  const totalEl=document.getElementById("ct-total-val");
-  if(totalEl)totalEl.textContent=total>0?total.toFixed(1)+" min":"— min";
-  const fleetEl=document.getElementById("ct-fleet-val");
-  if(fleetEl)fleetEl.textContent=fill>0&&total>0?"~"+Math.ceil(total/fill)+" trucks":"— (enter fill time)";
-  const varEls=document.querySelectorAll(".cycle-variance");
-  varEls.forEach(el=>{
-    if(total>0&&target>0){
-      const diff=total-target;
-      el.textContent=(diff>0?"+":"")+diff.toFixed(1)+" min vs "+target.toFixed(1)+" min target";
-      el.className="cycle-variance "+(diff>2?"bad":diff>0?"warn":"good");
-    } else {el.textContent="";}
-  });
 }
 
 /* ---------- LSR & SOPs ---------- */
@@ -1255,12 +1151,6 @@ document.getElementById("insp-sections").addEventListener("click",e=>{
   }
 });
 document.getElementById("insp-sections").addEventListener("input",e=>{
-  const ci=e.target.closest(".cycle-input");
-  if(ci&&ci.dataset.cd!==undefined){
-    if(!insp.cycleData)insp.cycleData={};
-    insp.cycleData[ci.dataset.cd]=ci.value;
-    saveInsp();updateCycleTotals();return;
-  }
   const inp=e.target.closest(".icomment");if(!inp)return;
   if(inp.dataset.ha!==undefined){
     const i=parseInt(inp.dataset.ha);
@@ -1273,7 +1163,6 @@ document.querySelectorAll(".shiftbtn").forEach(b=>b.addEventListener("click",()=
 document.getElementById("insp-weather").addEventListener("input",e=>{insp.weather=e.target.value;saveInsp();});
 document.getElementById("insp-blockid").addEventListener("input",e=>{insp.blockId=e.target.value;saveInsp();});
 document.getElementById("insp-dumping").addEventListener("input",e=>{insp.dumping=e.target.value;saveInsp();});
-document.getElementById("insp-next").addEventListener("input",e=>{insp.next=e.target.value;saveInsp();});
 document.getElementById("insp-mgmt").addEventListener("input",e=>{insp.mgmt=e.target.value;saveInsp();});
 
 function inspReport(){
@@ -1301,7 +1190,6 @@ function inspReport(){
         sub.items.forEach(ci=>{const v=(insp.counts||{})[ci.key];md+=`**${ci.label}:** ${v!==undefined&&v!==''?v:'—'}\n`;});
         md+=`\n`;return;
       }
-      if(sub.type==="cycledata"||sub.type==="cycletotal")return;
       md+=`### ${sub.label}\n\n`;
       sub.items.forEach(item=>{
         const k=sec.key+"."+idx;
@@ -1321,36 +1209,6 @@ function inspReport(){
   const totAns=totalRated+totalScore+(Object.values(insp.yn).filter(v=>v==="na").length);
   const pct=totAns>0?Math.round((totalRated/totAns)*100):0;
   md+=`---\n\n**Compliance: ${totAns>0?pct+'%':'—'}** (${totalRated} YES · ${totalScore} NO)\n\n`;
-  /* ── cycle time ── */
-  const cd=insp.cycleData||{};
-  const hasCycle=cd.ct_block||cd.ct_dump||cd.ct_spot||cd.ct_fill||cd.ct_haul;
-  if(hasCycle){
-    md+=`## Cycle time\n\n`;
-    if(cd.ct_block)md+=`**Block ID:** ${cd.ct_block}  \n`;
-    if(cd.ct_dump)md+=`**Dump / Tip ID:** ${cd.ct_dump}  \n`;
-    if(cd.ct_dist)md+=`**Haul distance:** ${cd.ct_dist} m  \n`;
-    md+=`\n### Loading cycle — excavator\n\n`;
-    if(cd.ct_spot)md+=`**Spot time:** ${cd.ct_spot} min  \n`;
-    if(cd.ct_fill)md+=`**Fill time:** ${cd.ct_fill} min  \n`;
-    if(cd.ct_passes)md+=`**Passes per truck:** ${cd.ct_passes}  \n`;
-    if(cd.ct_queue)md+=`**Queue time at face:** ${cd.ct_queue} min  \n`;
-    md+=`\n### Haul cycle — truck\n\n`;
-    if(cd.ct_haul)md+=`**Loaded travel time:** ${cd.ct_haul} min  \n`;
-    if(cd.ct_tip)md+=`**Tip time:** ${cd.ct_tip} min  \n`;
-    if(cd.ct_return)md+=`**Return time:** ${cd.ct_return} min  \n`;
-    const spot=parseFloat(cd.ct_spot)||0,fill=parseFloat(cd.ct_fill)||0;
-    const haul=parseFloat(cd.ct_haul)||0,tip=parseFloat(cd.ct_tip)||0,ret=parseFloat(cd.ct_return)||0;
-    const total=spot+fill+haul+tip+ret;
-    if(total>0){
-      const target=parseFloat(cd.ct_target)||0;
-      const fleet=fill>0?Math.ceil(total/fill):null;
-      md+=`\n### Overall\n\n**Total cycle time:** ${total.toFixed(1)} min  \n`;
-      if(target>0)md+=`**Target:** ${target.toFixed(1)} min — variance ${total>target?"+":""}${(total-target).toFixed(1)} min  \n`;
-      if(fleet)md+=`**Fleet estimate:** ~${fleet} trucks needed on this route  \n`;
-    }
-    md+=`\n`;
-  }
-  if((insp.next||"").trim())md+=`## Plan for next shift\n${insp.next.trim()}\n\n`;
   if((insp.mgmt||"").trim())md+=`## Notes for management\n${insp.mgmt.trim()}\n\n`;
   md+=`---\n_Sign-off: Peter Anthony — Mining Superintendent_\n`;
   return md;
@@ -1984,7 +1842,7 @@ const LESSONS=[
   {topic:"Backloading",title:"Backloading is a symptom, not the problem",body:"When you see backloading — trucks queuing more than one deep at the face — there's a root cause: too many trucks for the loading rate, a slow excavator, or a short haul that returns trucks faster than they can be loaded. Chasing the symptom without fixing the cause burns tyres and wastes fuel.",keyPoints:["Calculate the fleet size your loading rate can absorb before adding trucks","Short hauls need fewer trucks — more isn't better","A fast excavator with a long haul can absorb a bigger fleet","Single-face overloading is common when multiple blocks are blasted close together"],apply:"If you see a queue of 3+ trucks at any face, count the fleet on that face and estimate the loading cycle time. Do the maths — is the fleet matched?"},
   {topic:"Ramp Discipline",title:"Ramps are not shortcuts — treat them as infrastructure",body:"Ramp conditions set the pace for everything moving material in and out of the pit. A deteriorated ramp surface forces trucks to slow down, burns more fuel on climbs, increases tyre wear, and creates safety hazards. The cost of a ramp that isn't maintained shows up in your cycle time and your tyre budget.",keyPoints:["Grade ramps proactively — after heavy rain and every 24h in high-traffic conditions","Maximum ramp grade for loaded trucks: 10% — steeper grades need formal approval","Ramp width must allow two vehicles to pass safely with clearance","Signage at top and bottom of all active ramps is non-negotiable"],apply:"Check ramp surface condition and width compliance on your primary haul route today. Flag any potholes, edge breaks, or missing signage before the next loaded run."},
   {topic:"GET Management",title:"GET loss is a blasting problem disguised as a maintenance problem",body:"Ground Engaging Tools (GET) — teeth, adapters, side cutters — wear and break under load. But premature GET loss almost always traces back to digging conditions: oversize material, blasted rock with tight spacing, or a face that hasn't fragmented properly. Fixing GET without fixing blast design is an endless cycle.",keyPoints:["Inspect GET every 500 operating hours minimum — more frequently in abrasive or oversize material","A missing tooth can puncture a truck tyre — one event can cost more than a full GET set","Log GET replacements by face area to identify chronic locations","Raise a WO before the excavator goes back on shift after any GET replacement"],apply:"Check your GET log for the last 7 days. Is there a pattern by face location? If yes, loop in the drill-and-blast team before the next blast in that area."},
-  {topic:"Cycle Time",title:"Cycle time is the clock your production runs on",body:"Every payload delivered is one cycle. Shorten the cycle and you deliver more tonnes with the same fleet. But cycle time has four components — spot, fill, haul loaded, tip and return — and each one needs to be understood before you know where to attack.",keyPoints:["Fill time is usually the largest controllable component — a slow excavator adds directly to cycle","Haul distance is fixed by the mining plan, but road condition affects actual speed","Tip time at the crest is often underestimated — a congested dump adds 2–4 minutes","Queue time is waste — if trucks are waiting, the system is imbalanced"],apply:"Use the Cycle Time section in the Inspect tab to record a live cycle today. Compare your total to the target and find the biggest single contributor to variance."},
+  {topic:"Cycle Time",title:"Cycle time is the clock your production runs on",body:"Every payload delivered is one cycle. Shorten the cycle and you deliver more tonnes with the same fleet. But cycle time has four components — spot, fill, haul loaded, tip and return — and each one needs to be understood before you know where to attack.",keyPoints:["Fill time is usually the largest controllable component — a slow excavator adds directly to cycle","Haul distance is fixed by the mining plan, but road condition affects actual speed","Tip time at the crest is often underestimated — a congested dump adds 2–4 minutes","Queue time is waste — if trucks are waiting, the system is imbalanced"],apply:"Use the Cycles tab to log a live cycle today. Compare your total to the target and find the biggest single contributor to variance."},
   {topic:"Fleet Utilisation",title:"Availability and utilisation are not the same number",body:"Availability tells you how many hours the fleet could have worked. Utilisation tells you how many hours it actually moved material. A fleet with 90% availability and 70% utilisation has 20% of its operational hours sitting idle — usually at the face, at the dump, or waiting for a blast. That gap is your opportunity.",keyPoints:["Identify where idle time accumulates: face queues, dump congestion, or shift change gaps","Shift change is the single biggest scheduled idle — handover efficiency matters","Track utilisation by truck, not just fleet average — low outliers show problem units","A truck that is available but not dispatched is a cost with no return"],apply:"Pull today's utilisation figure. If it's below 80%, identify the top two causes of idle time and raise them in the shift handover note."},
   {topic:"Floor Condition",title:"The floor under the truck is as important as the road above it",body:"Loading area floors take a beating — from tyre traffic, excavator tramming, and material spillage. A deteriorated floor leads to slow spotting, tyre cuts from sharp material, and unstable footing for the excavator. It also signals that the dig face is advancing without cleaning up behind it.",keyPoints:["Clean up spill and loose rock from the floor at every blast and material change","A smooth, level floor reduces spotting time and tyre damage","Excavators should not tram over truck-tyre zones with protruding rock","Grade the floor as the bench advances — don't wait for it to become unsafe"],apply:"Check the active loading floor on your primary face. Is there loose material, sharp rock, or an uneven surface outside the dig zone? Order clean-up before the next truck arrives."},
   {topic:"Crusher Feed",title:"The crusher is the one machine you can't afford to starve",body:"The crusher converts run-of-mine material into revenue. Every hour it runs below design throughput is an hour of lost production that can't be recovered. Your job is to keep it fed — consistently sized material, at a steady rate, without the oversize that triggers the rock breaker and kills throughput.",keyPoints:["Oversize material at the crusher almost always traces back to poor blast fragmentation","A steady feed rate is more efficient than surge-and-starve patterns","ROM pad sequencing — mixing fine and coarse material — smooths the feed","Coordinate crusher scheduling with blast timing to avoid feed gaps"],apply:"Check the crusher feed rate and ROM pad levels at the start of your shift. If ROM is low, identify which active face can redirect tonnes to pad the stockpile."},
