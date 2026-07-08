@@ -1,18 +1,18 @@
 {
-  "generatedAt": "2026-07-06T12:36:41",
-  "date": "2026-07-05",
-  "runNumber": 40,
-  "summary": "July 4 production (Saturday). total 21,452 BCM / 57,920 t; waste 20,677 BCM; ore 775 BCM / 2,093 t (all LG from 760-151-1 — first ore after the July 3 zero-ore day). Target 23,469 BCM (−8.6%). Stage 4 10,695 / Stage 6 10,757. MTD 197,594 BCM (−6.5% vs target). Crusher down all 24 hrs on planned maintenance (0 BCM fed). Drilling 2,059 m (−663 vs target), no blasting. 1 hr production stop for the Maaden stand-down meeting.",
+  "generatedAt": "2026-07-08T15:23:58",
+  "date": "2026-07-08",
+  "runNumber": 41,
+  "summary": "Resolved. — \"New blocks 890-635/890-636 — planned or reactive?\" Feedback: \"Were planned during the daily review meeting, we revised the weekly plan.\" Marked resolved in `QUESTIONS.md`. 2. **Flagged, not resolved** — \"Internal Audit Phase 1 findings 3/5/8 (electrical installation, emergency stop switch, pedestrian signage) — closed before 13 June?\" The linked feedback (\"All the deviations has been attended and closed except the MTD utilization...\") answers a different question (MTD utilization, not the three physical safety findings) — the Notion task was marked Done on a mismatched answer. Left open in `QUESTIONS.md` with the mismatch documented; needs a direct check with Peter. 3. \"Follow up JJ — flow meter glass at fuel bay\" — feedback confirms repair complete 2/7/2026. No KB question tied to this; no wiki change needed. 4. \"Confirm JJ investigated dust in production bus\" — feedback confirms issue sorted. No KB question tied to this; no wiki change needed. All 4 Feedback Log rows marked Status = Processed in Notion after review. No RAW ingestion, no compile pass, no `_INGESTED.md` changes — this is a lighter-weight loop for closing feedback-based open questions between full compile passes.",
   "kpis": [
     {
       "label": "MTD BCM",
-      "value": "197,594",
-      "delta": "-6.5% vs target",
+      "value": "243,629",
+      "delta": "-5.6% vs target",
       "good": false
     },
     {
       "label": "Survey Gap",
-      "value": "+8.8%",
+      "value": "+5.7%",
       "delta": "survey vs trucks MTD",
       "good": true
     },
@@ -24,105 +24,92 @@
     },
     {
       "label": "Days Remain",
-      "value": "20",
+      "value": "18",
       "delta": "",
       "good": null
     }
   ],
   "equipment": [
     {
-      "unit": "EX-340",
-      "type": "Excavator",
-      "status": "down",
-      "avail": "50.00%",
-      "util": "",
-      "bd_hrs": "12",
-      "note": "down 12 hrs replacing the arm stick (breakdown 5:30 AM–5:30 PM), 50.00% avail — the day's worst.",
-      "comment": "Side Mirror Bolt Loose"
-    },
-    {
-      "unit": "EX-262",
-      "type": "Excavator",
-      "status": "warning",
-      "avail": "64.58%",
-      "util": "",
-      "bd_hrs": "8.5",
-      "note": "down 8.5 hrs on hydraulic low-power issues (breakdown 10:30 AM–7:00 PM) plus a faulty bucket that would not cl",
-      "comment": "Replace Tracks"
-    },
-    {
       "unit": "EX-123",
       "type": "Excavator",
+      "status": "down",
+      "avail": "0%",
+      "util": "",
+      "bd_hrs": "",
+      "note": "at 0% avail, 0 BCM against a 470 BCM forecast, \"Track out.\" The meeting note's Hitachi tram-in as interim cove",
+      "comment": "F.S.S Active"
+    },
+    {
+      "unit": "DT-128",
+      "type": "Haul Truck",
+      "status": "down",
+      "avail": "",
+      "util": "",
+      "bd_hrs": "21",
+      "note": "down 21 hrs, \"Over Heating,\" breakdown from 8:30 AM — the same unit whose July 4 night shift was run by employ",
+      "comment": ""
+    },
+    {
+      "unit": "DT-129",
+      "type": "Haul Truck",
+      "status": "down",
+      "avail": "",
+      "util": "",
+      "bd_hrs": "4.25",
+      "note": "4.25 hrs on a low tyre-pressure breakdown (carried over from July 5, 6:45 PM to July 6, 9:45 AM).",
+      "comment": ""
+    },
+    {
+      "unit": "DT-282",
+      "type": "Haul Truck",
+      "status": "down",
+      "avail": "",
+      "util": "",
+      "bd_hrs": "9.5",
+      "note": "9.5 hrs on a tyre replacement.",
+      "comment": ""
+    },
+    {
+      "unit": "DT-131",
+      "type": "Haul Truck",
       "status": "down",
       "avail": "",
       "util": "",
       "bd_hrs": "1.5",
-      "note": "lost 1.5 hrs — daily check plus \"Bucket Lip Shroud Missing\" logged on night shift, a GET-loss signal (see [[lo",
-      "comment": "F.S.S Active"
-    },
-    {
-      "unit": "WD-145",
-      "type": "Water Dozer",
-      "status": "scheduled",
-      "avail": "",
-      "util": "",
-      "bd_hrs": "",
-      "note": "on a planned valve-lash since July 3 6:00 PM",
-      "comment": "C/O Window L.H Glass"
-    },
-    {
-      "unit": "DZ-248",
-      "type": "Track Dozer",
-      "status": "down",
-      "avail": "",
-      "util": "",
-      "bd_hrs": "",
-      "note": "leaking since July 3 10:00 PM",
-      "comment": "Hydraulic Oil Leaking"
-    },
-    {
-      "unit": "DZ-279",
-      "type": "Track Dozer",
-      "status": "down",
-      "avail": "",
-      "util": "",
-      "bd_hrs": "4.5",
-      "note": "out 4.5 hrs on electrical. With one wheel dozer and effectively one working track dozer, there was no spare pu",
+      "note": "1.5 hrs reverse-gear problem (night shift).",
       "comment": ""
     },
     {
-      "unit": "DT-110",
-      "type": "Haul Truck",
-      "status": "down",
-      "avail": "39.58%",
-      "util": "",
-      "bd_hrs": "14.5",
-      "note": "the fleet's worst at 39.58% (14.5 hrs breakdown)",
-      "comment": ""
-    },
-    {
-      "unit": "DT-107",
+      "unit": "DT-243",
       "type": "Haul Truck",
       "status": "warning",
       "avail": "",
       "util": "",
-      "bd_hrs": "4.5",
-      "note": "hydraulic oil leak 4.5 hrs",
+      "bd_hrs": "3.5",
+      "note": "3.5 hrs A/C not working.",
       "comment": ""
-    }
-  ],
-  "followUps": [
-    {
-      "priority": "MONITOR",
-      "title": "Compound insight — the dozer shortage behind the ramp-fill pause",
-      "body": "The July 4 meeting note said the Northwest Ramp Fill was paused for a dozer-resource constraint. The July 4 Daily Availability Final Report shows the physical shortage: the site's single wheel dozer (WD-145) was at 39.58% on a planned valve-lash, and track dozer DZ-248 was down 23 hrs on a hydraulic oil leak — no spare push capacity. Also caught: EX-340 down 12 hrs (arm stick), EX-262 8.5 hrs (hydraulic low power), EX-123 \"Bucket Lip Shroud Missing\" (a GET-loss signal), and a fleet-wide \"tyre damage\" pattern across the 775/777 dump trucks that puts unit-level detail behind the June 28 Tire Damages reference. DR-125's \"12 hrs s/by (lack of operator)\" reading confirms the down-vs-idle contradiction resolves to \"available.\"",
-      "action": ""
     },
     {
-      "priority": "MONITOR",
-      "title": "Survey",
-      "body": "Day 10 (260705) +13.5%, a second straight positive day; MTD survey +8.77% over tally. Forecast: Week 28 & 29 excavator plan ~307,135 BCM; EX-104 stays fully offline; drill capacity thinnest mid-to-late W29 (DR-342 and DR-139 multi-day services).",
-      "action": ""
+      "unit": "DT-79",
+      "type": "Haul Truck",
+      "status": "down",
+      "avail": "0%",
+      "util": "",
+      "bd_hrs": "",
+      "note": "remain on the standing long-term down list (0% avail, opportune jobs pending since February and April respecti",
+      "comment": "250 H Service"
+    },
+    {
+      "unit": "DT-81",
+      "type": "Haul Truck",
+      "status": "down",
+      "avail": "0%",
+      "util": "",
+      "bd_hrs": "",
+      "note": "remain on the standing long-term down list (0% avail, opportune jobs pending since February and April respecti",
+      "comment": "C/O Eng Oil Cooler , Check Cyl Head  , C/O After Cooler"
     }
-  ]
+  ],
+  "followUps": []
 }
