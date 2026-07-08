@@ -329,6 +329,10 @@
   .flt-au-cell.edit{cursor:pointer;}
   .flt-au-cell.edit .l{color:var(--accent);}
   .flt-au-hint{font-size:.68rem;color:var(--muted);text-align:center;line-height:1.4;margin:-4px 4px 12px;}
+  .ex-avail{display:flex;flex-wrap:wrap;gap:6px;margin:0 0 10px;}
+  .ex-chip{background:var(--card);border:1px solid var(--line);border-radius:8px;padding:5px 9px;font-size:.74rem;color:var(--muted);}
+  .ex-chip b{font-weight:800;margin-left:3px;}
+  .ex-chip.good b{color:var(--low);} .ex-chip.warn b{color:var(--high);} .ex-chip.bad b{color:var(--urgent);} .ex-chip.na b{color:var(--muted);}
   .fault-wrap{display:flex;flex-wrap:wrap;gap:7px;margin:0 0 4px;}
   .fault-chip{background:var(--card2);border:1px solid var(--line);border-radius:20px;padding:6px 12px;font-size:.78rem;color:var(--txt);}
   .fault-chip b{color:var(--urgent);font-weight:800;margin-right:3px;}
@@ -1548,7 +1552,10 @@ function renderInsFleet(el){
   au.push([f.dtUnits?`Trucks (${f.dtUnits})`:"Trucks avail",dtVal,"dt"]);
   au.push(["Breakdown",totalBD+"h",null]);
   html+=`<div class="flt-au">`+au.map(c=>`<div class="flt-au-cell${c[2]?" edit":""}"${c[2]?` data-au="${c[2]}"`:""}><div class="n">${esc(c[1])}</div><div class="l">${esc(c[0])}${c[2]?" ✎":""}</div></div>`).join("")+`</div>`;
-  html+=`<div class="flt-au-hint">Tap Excav / Trucks to set availability for your fleet (6 excavators · 21 active trucks).</div>`;
+  if(f.excavators&&f.excavators.length){
+    html+=`<div class="ex-avail">`+f.excavators.map(e=>{const n=e.avail?parseFloat(e.avail):null;const cls=n==null?"na":n>=85?"good":n>=60?"warn":"bad";return `<span class="ex-chip ${cls}">${esc(e.unit)} <b>${e.avail||"—"}</b></span>`;}).join("")+`</div>`;
+  }
+  html+=`<div class="flt-au-hint">Excavator avail = your 6 units auto-read from the daily report${f.pdfDate?" ("+esc(f.pdfDate)+")":""}${f.exBasis?", "+esc(f.exBasis)+" reported":""}. Tap Excav / Trucks to override; trucks are yours to set (21 active).</div>`;
   html+=`<div class="flt-summary">
     <div class="flt-stat down"><div class="n">${down}</div><div class="l">Down</div></div>
     <div class="flt-stat part"><div class="n">${part}</div><div class="l">Partial</div></div>
