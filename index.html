@@ -321,6 +321,7 @@
   .trend-col{flex:1;display:flex;align-items:flex-end;height:100%;}
   .trend-bar{width:100%;background:var(--accent2);border-radius:3px 3px 0 0;min-height:4px;}
   .trend-cap{display:flex;justify-content:space-between;font-size:.7rem;color:var(--muted);margin-top:9px;font-weight:600;}
+  .trend-empty{font-size:.76rem;color:var(--muted);text-align:center;padding:18px 8px;line-height:1.4;}
   /* fleet A&U strip + fault chips */
   .flt-au{display:flex;gap:8px;overflow-x:auto;margin:0 0 10px;padding-bottom:2px;}
   .flt-au-cell{flex:1;min-width:74px;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:11px 6px;text-align:center;}
@@ -1500,6 +1501,8 @@ function renderInsProduction(el){
     html+=`<div class="trend-card"><div class="trend">`;
     series.forEach(s=>{const h=Math.max(6,Math.round(s.daily/max*100));html+=`<div class="trend-col"><div class="trend-bar" style="height:${h}%" title="${fmtInt(s.daily)}"></div></div>`;});
     html+=`</div><div class="trend-cap"><span>Latest ${fmtInt(series[series.length-1].daily)}</span><span>Avg ${fmtInt(avg)} BCM/day</span></div></div>`;
+  } else {
+    html+=`<div class="sect"><h2>Daily BCM trend</h2></div><div class="trend-card"><div class="trend-empty">Builds as daily reports come in — needs 2+ days of data on this device.</div></div>`;
   }
   if(proj){
     const onPace=proj.pace>=proj.need;
@@ -1517,6 +1520,11 @@ function renderInsProduction(el){
     html+=`<div class="sect"><h2>Other KPIs</h2></div><div class="ins-kpi-grid">`;
     rest.forEach(k=>{const c=k.good===true?"good":k.good===false?"bad":"";html+=`<div class="ins-kpi ${c}"><div class="ins-kpi-lbl">${esc(k.label)}</div><div class="ins-kpi-val">${esc(k.value)}</div>${k.delta?`<div class="ins-kpi-sub">${esc(k.delta)}</div>`:""}</div>`;});
     html+=`</div>`;
+  }
+  const fups=d.followUps||[];
+  if(fups.length){
+    html+=`<div class="sect"><h2>Follow-up areas</h2><span class="meta">${fups.length}</span></div>`;
+    fups.forEach(f=>{const priRaw=(f.priority||"monitor").toLowerCase();const pri=priRaw==="critical"?"critical":priRaw==="high"?"high":"monitor";html+=`<div class="ins-fup ${pri}"><div class="ins-fup-head"><span class="ins-fup-pri">${pri.toUpperCase()}</span><div class="ins-fup-title">${esc(f.title||"")}</div></div>${f.body?`<div class="ins-fup-body">${esc(f.body)}</div>`:""}${f.action?`<div class="ins-fup-action">→ ${esc(f.action)}</div>`:""}</div>`;});
   }
   if(d.summary){
     const pts=summaryPoints(d.summary);
@@ -1650,11 +1658,6 @@ function renderInsSafety(el){
     <ul class="tb-list">${tb.p.map(x=>`<li>${esc(x)}</li>`).join("")}</ul>
     <button class="btn alt" id="tb-copy" style="font-size:.82rem;padding:10px;">Copy for crew brief</button>
   </div>`;
-  const fups=d.followUps||[];
-  if(fups.length){
-    html+=`<div class="sect"><h2>Follow-up areas</h2><span class="meta">${fups.length}</span></div>`;
-    fups.forEach(f=>{const priRaw=(f.priority||"monitor").toLowerCase();const pri=priRaw==="critical"?"critical":priRaw==="high"?"high":"monitor";html+=`<div class="ins-fup ${pri}"><div class="ins-fup-head"><span class="ins-fup-pri">${pri.toUpperCase()}</span><div class="ins-fup-title">${esc(f.title||"")}</div></div>${f.body?`<div class="ins-fup-body">${esc(f.body)}</div>`:""}${f.action?`<div class="ins-fup-action">→ ${esc(f.action)}</div>`:""}</div>`;});
-  }
   html+=`<div class="sect"><h2>Life Saving Rules</h2><span class="meta">9</span></div><div class="lsr-list">`;
   LSR9.forEach((r,i)=>{html+=`<div class="lsr-item"><span class="lsr-num">${i+1}</span><div class="lsr-txt"><b>${r[0]}</b> — <span>${r[1]}</span></div></div>`;});
   html+=`</div>`;
