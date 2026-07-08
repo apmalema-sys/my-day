@@ -286,6 +286,38 @@
   .ins-equip-note{font-size:.75rem;color:var(--muted);line-height:1.35;flex:1;}
   .ins-equip-type{color:var(--muted);}
 
+  /* ---- dashboard sub-tabs (production / fleet / safety) ---- */
+  .ins-subtabs{display:flex;gap:8px;margin:2px 4px 14px;}
+  .ins-subtab{flex:1;padding:9px 6px;border-radius:10px;background:var(--card2);border:1px solid var(--line);color:var(--muted);font-weight:700;font-size:.82rem;font-family:inherit;}
+  .ins-subtab.on{background:var(--accent);border-color:var(--accent);color:#111;}
+  .prod-hero{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:16px;margin:0 0 12px;}
+  .prod-hero-lbl{font-size:.64rem;color:var(--muted);font-weight:700;text-transform:uppercase;letter-spacing:.06em;}
+  .prod-hero-val{font-size:2.1rem;font-weight:800;color:var(--accent2);line-height:1.05;margin:5px 0 3px;}
+  .prod-hero-sub{font-size:.8rem;color:var(--muted);}
+  .prod-hero-sub.good{color:var(--low);} .prod-hero-sub.bad{color:var(--urgent);}
+  .proj-card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:6px 14px;margin:0 0 10px;}
+  .proj-row{display:flex;justify-content:space-between;align-items:baseline;padding:9px 0;border-bottom:1px solid var(--line);font-size:.86rem;}
+  .proj-row:last-child{border-bottom:none;}
+  .proj-row .k{color:var(--muted);} .proj-row .v{font-weight:800;color:var(--txt);}
+  .proj-row .v.bad{color:var(--urgent);} .proj-row .v.good{color:var(--low);}
+  .prod-note{font-size:.72rem;color:var(--muted);line-height:1.45;padding:2px 4px 14px;}
+  .flt-summary{display:grid;grid-template-columns:1fr 1fr 1fr;gap:8px;margin:0 0 14px;}
+  .flt-stat{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:12px;text-align:center;}
+  .flt-stat .n{font-size:1.5rem;font-weight:800;line-height:1;}
+  .flt-stat .l{font-size:.61rem;color:var(--muted);font-weight:700;text-transform:uppercase;letter-spacing:.05em;margin-top:5px;}
+  .flt-stat.down .n{color:var(--urgent);} .flt-stat.part .n{color:var(--high);} .flt-stat.ok .n{color:var(--low);}
+  .ins-equip-metrics{display:flex;gap:12px;margin-top:5px;font-size:.68rem;color:var(--muted);}
+  .ins-equip-metrics b{color:var(--txt);font-weight:700;}
+  .saf-since{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:16px;margin:0 0 6px;text-align:center;}
+  .saf-since .n{font-size:2.5rem;font-weight:800;color:var(--low);line-height:1;}
+  .saf-since .l{font-size:.66rem;color:var(--muted);font-weight:700;text-transform:uppercase;letter-spacing:.05em;margin-top:6px;}
+  .saf-since input{margin-top:11px;background:var(--card2);border:1px solid var(--line);border-radius:9px;padding:7px 10px;color:var(--txt);font-family:inherit;font-size:.82rem;}
+  .lsr-list{background:var(--card);border:1px solid var(--line);border-radius:14px;overflow:hidden;margin:0 0 10px;}
+  .lsr-item{display:flex;gap:10px;padding:11px 14px;border-bottom:1px solid var(--line);font-size:.83rem;line-height:1.4;}
+  .lsr-item:last-child{border-bottom:none;}
+  .lsr-num{flex-shrink:0;width:22px;height:22px;border-radius:6px;background:var(--accent);color:#111;font-weight:800;font-size:.76rem;display:flex;align-items:center;justify-content:center;}
+  .lsr-txt b{color:var(--txt);} .lsr-txt span{color:var(--muted);}
+
   /* ---- lesson ---- */
   .les-body{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px;margin:0 0 14px;}
   .les-body-lbl{font-size:.64rem;color:var(--muted);font-weight:700;text-transform:uppercase;letter-spacing:.06em;margin-bottom:8px;}
@@ -407,8 +439,13 @@
       </div>
     </section>
 
-    <!-- INSIGHTS -->
+    <!-- INSIGHTS / DASHBOARD -->
     <section class="view" id="view-insights">
+      <div class="ins-subtabs">
+        <button class="ins-subtab on" data-is="production">Production</button>
+        <button class="ins-subtab" data-is="fleet">Fleet</button>
+        <button class="ins-subtab" data-is="safety">Safety</button>
+      </div>
       <div id="insights-content">
         <div class="ins-empty"><div class="big">📊</div>Loading daily insights…</div>
       </div>
@@ -416,6 +453,26 @@
 
     <section class="view" id="view-lesson">
       <div id="lesson-content"></div>
+    </section>
+
+    <!-- HANDOVER -->
+    <section class="view" id="view-handover">
+      <div class="shiftrow" style="display:flex;gap:8px;margin:2px 4px 12px;">
+        <button class="shiftbtn on" data-hoshift="Day">☀︎ Day</button>
+        <button class="shiftbtn" data-hoshift="Night">☾ Night</button>
+      </div>
+      <div style="padding:0 4px;">
+        <div class="field"><label>Production summary</label><textarea class="inotes" id="ho-prod" style="margin-top:0;" placeholder="BCM / tonnes moved, crusher feed, key numbers vs plan"></textarea></div>
+        <div class="field"><label>Equipment down / at risk</label><textarea class="inotes" id="ho-equip" style="margin-top:0;" placeholder="Units down, ETA, workarounds"></textarea>
+          <button class="btn alt" id="ho-pull" style="margin-top:8px;font-size:.82rem;padding:9px;">＋ Pull down units from Fleet</button></div>
+        <div class="field"><label>Safety / issues this shift</label><textarea class="inotes" id="ho-issues" style="margin-top:0;" placeholder="Incidents, near-misses, hazards, LSR flags"></textarea></div>
+        <div class="field"><label>Carry-over actions</label><textarea class="inotes" id="ho-actions" style="margin-top:0;" placeholder="Unresolved items — owner — by when"></textarea></div>
+        <div class="field"><label>Plan for next shift</label><textarea class="inotes" id="ho-plan" style="margin-top:0;" placeholder="Priorities, blocks, blasts, targets"></textarea></div>
+      </div>
+      <div class="insp-actions">
+        <button class="btn" id="ho-share">Send handover to CoWork</button>
+        <button class="btn alt" id="ho-copy">Copy handover</button>
+      </div>
     </section>
   </main>
 
@@ -441,6 +498,10 @@
     <button class="tab" data-v="inspect">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M9 14l2 2 4-4"/></svg>
       <span class="lbl">Inspect</span>
+    </button>
+    <button class="tab" data-v="handover">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 1l4 4-4 4"/><path d="M3 11V9a4 4 0 0 1 4-4h14"/><path d="M7 23l-4-4 4-4"/><path d="M21 13v2a4 4 0 0 1-4 4H3"/></svg>
+      <span class="lbl">Handover</span>
     </button>
   </nav>
 </div>
@@ -1391,7 +1452,7 @@ document.getElementById("btn-save-task").addEventListener("click",()=>{
 });
 
 /* ---------- tabs ---------- */
-const titles={today:"My Day",events:"Events log",insights:"Daily Insights",tasks:"Tasks",inspect:"Operation Inspection",lesson:"Daily Mining Lesson"};
+const titles={today:"My Day",events:"Events log",insights:"Daily Dashboard",tasks:"Tasks",inspect:"Operation Inspection",lesson:"Daily Mining Lesson",handover:"Shift Handover"};
 let inspTab="ops";
 let activeView="today";
 document.querySelectorAll(".tab").forEach(tab=>{
@@ -1400,7 +1461,7 @@ document.querySelectorAll(".tab").forEach(tab=>{
     document.querySelectorAll(".tab").forEach(t=>t.classList.toggle("active",t===tab));
     document.querySelectorAll(".view").forEach(s=>s.classList.toggle("active",s.id==="view-"+v));
     document.getElementById("hdr-title").textContent=titles[v];
-    document.getElementById("fab").style.display=(v==="inspect"||v==="insights"||v==="lesson")?"none":"flex";
+    document.getElementById("fab").style.display=(v==="inspect"||v==="insights"||v==="lesson"||v==="handover")?"none":"flex";
     const dEl=document.getElementById("hdr-date");
     if(v==="today"){dEl.textContent=new Date().toLocaleDateString("en-AU",{weekday:"long",day:"numeric",month:"long"});}
     else if(v==="tasks"){dEl.textContent=tasks.filter(t=>!t.done).length+" active";}
@@ -1408,8 +1469,9 @@ document.querySelectorAll(".tab").forEach(tab=>{
     else if(v==="events"){dEl.textContent=new Date().toLocaleDateString("en-AU",{weekday:"long",day:"numeric",month:"long"});}
     else if(v==="insights"){dEl.textContent=insightsData&&insightsData.date?insightsData.date:"";}
     else if(v==="lesson"){const l=lessonData||todayLesson();dEl.textContent=l?l.topic:"";}
+    else if(v==="handover"){dEl.textContent=ho.shift+" shift · "+todayStr();}
     else dEl.textContent="";
-    if(v==="today")renderToday();else if(v==="tasks")renderTasks();else if(v==="inspect"){if(inspTab==="ops")renderInspect();else renderLSR();}else if(v==="events")renderEvents();else if(v==="insights")renderInsights();else if(v==="lesson")renderLesson();
+    if(v==="today")renderToday();else if(v==="tasks")renderTasks();else if(v==="inspect"){if(inspTab==="ops")renderInspect();else renderLSR();}else if(v==="events")renderEvents();else if(v==="insights")renderInsights();else if(v==="lesson")renderLesson();else if(v==="handover")renderHandover();
   });
 });
 document.getElementById("fab").addEventListener("click",()=>{if(activeView==="events")openLogSheet();else openTaskSheet();});
@@ -1581,77 +1643,191 @@ function fetchInsights(){
     .then(d=>{if(d){insightsData=d;if(activeView==="insights")renderInsights();}})
     .catch(()=>{});
 }
-function renderInsights(){
-  const el=document.getElementById("insights-content");
-  if(!insightsData){
-    el.innerHTML=`<div class="ins-empty"><div class="big">📊</div>No insights loaded yet.<br><small>Wiki Insights sync hasn't run today.</small></div>`;
-    return;
-  }
+let insTab="production";
+function insEmpty(el,icon,msg){el.innerHTML=`<div class="ins-empty"><div class="big">${icon}</div>${msg}</div>`;}
+function insHeaderHTML(){
   const d=insightsData;
   const dtStr=d.date?new Date(d.date+"T00:00:00").toLocaleDateString("en-AU",{weekday:"long",day:"numeric",month:"long",year:"numeric"}):"";
   const stale=d.date&&d.date<todayStr();
-  let html="";
+  let h=`<div class="ins-header"><div class="ins-date">${dtStr}</div>${d.runNumber?`<div class="ins-run">Compile run #${d.runNumber}</div>`:""}</div>`;
+  if(stale)h+=`<div class="ins-stale">Report from ${d.date} — today's compile hasn't run yet</div>`;
+  return h;
+}
+function renderInsights(){
+  const el=document.getElementById("insights-content");
+  if(!insightsData){insEmpty(el,"📊","No dashboard data yet.<br><small>Wiki Insights sync hasn't run today.</small>");return;}
+  if(insTab==="fleet")renderInsFleet(el);
+  else if(insTab==="safety")renderInsSafety(el);
+  else renderInsProduction(el);
+}
 
-  // Header card
-  html+=`<div class="ins-header">
-    <div class="ins-date">${dtStr}</div>
-    ${d.runNumber?`<div class="ins-run">Compile run #${d.runNumber}</div>`:""}
-    ${d.summary?`<div class="ins-summary">${esc(d.summary)}</div>`:""}
-  </div>`;
-  if(stale)html+=`<div class="ins-stale">Report from ${d.date} — today's compile hasn't run yet</div>`;
-
-  // KPI grid
-  const kpis=d.kpis||[];
-  if(kpis.length){
-    html+=`<div class="ins-kpi-grid">`;
-    kpis.forEach(k=>{
-      const cls=k.good===true?"good":k.good===false?"bad":"";
-      html+=`<div class="ins-kpi ${cls}">
-        <div class="ins-kpi-lbl">${esc(k.label)}</div>
-        <div class="ins-kpi-val">${esc(k.value)}</div>
-        ${k.delta?`<div class="ins-kpi-sub">${esc(k.delta)}</div>`:""}
-      </div>`;
-    });
+/* ---- Production sub-tab ---- */
+function parseNum(s){const m=String(s==null?"":s).replace(/,/g,"").match(/-?\d+(\.\d+)?/);return m?parseFloat(m[0]):null;}
+function fmtInt(n){return Math.round(n).toLocaleString("en-US");}
+function prodMonthTotalDays(){ // production month runs 25th -> 24th; total = days in the start month
+  const now=new Date();let y=now.getFullYear(),m=now.getMonth();
+  if(now.getDate()<25){m-=1;if(m<0){m=11;y-=1;}}
+  return new Date(y,m+1,0).getDate();
+}
+function computeProjection(kpis){
+  const bcm=kpis.find(k=>/bcm/i.test(k.label||""));
+  const dr=kpis.find(k=>/days?\s*remain/i.test(k.label||""));
+  if(!bcm||!dr)return null;
+  const mtd=parseNum(bcm.value),daysRemain=parseNum(dr.value);
+  const pctM=(bcm.delta&&/target/i.test(bcm.delta))?parseNum(bcm.delta):null;
+  if(mtd==null||daysRemain==null||pctM==null)return null;
+  const total=prodMonthTotalDays(),elapsed=total-daysRemain;
+  if(elapsed<=0)return null;
+  const targetMTD=mtd/(1+pctM/100);
+  const monthlyTarget=targetMTD/elapsed*total;
+  const pace=mtd/elapsed,proj=pace*total;
+  const need=daysRemain>0?(monthlyTarget-mtd)/daysRemain:0;
+  const projPct=(proj/monthlyTarget-1)*100;
+  return {daysRemain,total,pace,proj,need,projPct};
+}
+function renderInsProduction(el){
+  const d=insightsData,kpis=d.kpis||[];
+  let html=insHeaderHTML();
+  const bcm=kpis.find(k=>/bcm/i.test(k.label||""));
+  if(bcm){
+    const cls=bcm.good===false?"bad":bcm.good===true?"good":"";
+    html+=`<div class="prod-hero"><div class="prod-hero-lbl">${esc(bcm.label)}</div><div class="prod-hero-val">${esc(bcm.value)}</div>${bcm.delta?`<div class="prod-hero-sub ${cls}">${esc(bcm.delta)}</div>`:""}</div>`;
+  }
+  const proj=computeProjection(kpis);
+  if(proj){
+    const onPace=proj.pace>=proj.need;
+    html+=`<div class="proj-card">
+      <div class="proj-row"><span class="k">Days remaining</span><span class="v">${proj.daysRemain} of ${proj.total}</span></div>
+      <div class="proj-row"><span class="k">Current daily pace</span><span class="v">${fmtInt(proj.pace)} BCM/day</span></div>
+      <div class="proj-row"><span class="k">Pace needed for target</span><span class="v ${onPace?'good':'bad'}">${fmtInt(proj.need)} BCM/day</span></div>
+      <div class="proj-row"><span class="k">Projected month-end</span><span class="v ${proj.projPct<0?'bad':'good'}">${fmtInt(proj.proj)} BCM</span></div>
+      <div class="proj-row"><span class="k">vs monthly target</span><span class="v ${proj.projPct<0?'bad':'good'}">${proj.projPct>0?'+':''}${proj.projPct.toFixed(1)}%</span></div>
+    </div>
+    <div class="prod-note">Projection holds the current daily pace across the rest of the production month (25th→24th). "Pace needed" is the average BCM/day required over the remaining days to reach the monthly target implied by your MTD vs-target figure.</div>`;
+  }
+  const rest=kpis.filter(k=>!/bcm/i.test(k.label||""));
+  if(rest.length){
+    html+=`<div class="sect"><h2>Other KPIs</h2></div><div class="ins-kpi-grid">`;
+    rest.forEach(k=>{const c=k.good===true?"good":k.good===false?"bad":"";html+=`<div class="ins-kpi ${c}"><div class="ins-kpi-lbl">${esc(k.label)}</div><div class="ins-kpi-val">${esc(k.value)}</div>${k.delta?`<div class="ins-kpi-sub">${esc(k.delta)}</div>`:""}</div>`;});
     html+=`</div>`;
   }
+  if(d.summary)html+=`<div class="sect"><h2>Compile summary</h2></div><div class="ins-summary">${esc(d.summary)}</div>`;
+  el.innerHTML=html;
+}
 
-  // Follow-up areas
+/* ---- Fleet sub-tab ---- */
+function renderInsFleet(el){
+  const d=insightsData,equip=d.equipment||[];
+  let html=insHeaderHTML();
+  if(!equip.length){insEmpty(el,"🚛","No fleet data in today's report.");return;}
+  let down=0,part=0;
+  equip.forEach(e=>{const s=(e.status||"").toLowerCase();if(s==="down")down++;else if(s==="partial")part++;});
+  const ok=equip.length-down-part;
+  html+=`<div class="flt-summary">
+    <div class="flt-stat down"><div class="n">${down}</div><div class="l">Down</div></div>
+    <div class="flt-stat part"><div class="n">${part}</div><div class="l">Partial</div></div>
+    <div class="flt-stat ok"><div class="n">${ok}</div><div class="l">Other</div></div>
+  </div>`;
+  const order={down:0,partial:1,warning:2,scheduled:3,returned:4};
+  const sorted=equip.slice().sort((a,b)=>((order[(a.status||"").toLowerCase()]??9)-(order[(b.status||"").toLowerCase()]??9)));
+  html+=`<div class="ins-equip">`;
+  sorted.forEach(e=>{
+    const st=(e.status||"warning").toLowerCase(),label=st.charAt(0).toUpperCase()+st.slice(1);
+    const metrics=[];
+    if(e.avail!=null&&e.avail!=="")metrics.push(`A <b>${esc(e.avail)}</b>`);
+    if(e.util!=null&&e.util!=="")metrics.push(`U <b>${esc(e.util)}</b>`);
+    if(e.bd_hrs!=null&&e.bd_hrs!=="")metrics.push(`BD <b>${esc(e.bd_hrs)}h</b>`);
+    html+=`<div class="ins-equip-row">
+      <div class="ins-equip-unit">${esc(e.unit)}</div>
+      <span class="ins-equip-bdg ${st}">${label}</span>
+      <div class="ins-equip-note">${e.type?`<span class="ins-equip-type">${esc(e.type)}</span> · `:""}${esc(e.note||"")}${metrics.length?`<div class="ins-equip-metrics">${metrics.join("")}</div>`:""}</div>
+    </div>`;
+  });
+  html+=`</div>`;
+  el.innerHTML=html;
+}
+
+/* ---- Safety sub-tab ---- */
+const LS_INCIDENT="myday.lastincident.v1";
+const LSR9=[
+  ["Permit to Work","work that requires a permit must not start without one"],
+  ["Confined Space","entry controlled by permit and gas testing"],
+  ["Energy Isolation","hazardous energy isolated and locked out before work begins"],
+  ["Line of Fire","stay clear of moving parts, loads and pressure releases"],
+  ["Working at Height","fall protection is mandatory above the height threshold"],
+  ["Mobile Equipment","exclusion zones and people-machinery separation enforced"],
+  ["Geotechnical Ground Control","controls for high walls, batter angles and fractured ground"],
+  ["Hazardous Materials & Explosives","controls on handling, storage and transport"],
+  ["EHSS Critical Systems Bypass","never bypass safety-critical interlocks, alarms or controls"]
+];
+function daysSince(dstr){if(!dstr)return null;const then=new Date(dstr+"T00:00:00"),now=new Date();return Math.max(0,Math.floor((now-then)/86400000));}
+function renderInsSafety(el){
+  const d=insightsData;
+  let html=insHeaderHTML();
+  const inc=localStorage.getItem(LS_INCIDENT)||"",ds=daysSince(inc);
+  html+=`<div class="saf-since"><div class="n">${ds==null?"—":ds}</div><div class="l">Days since last recordable</div><input type="date" id="saf-date" value="${inc}" max="${todayStr()}"/></div>`;
   const fups=d.followUps||[];
   if(fups.length){
     html+=`<div class="sect"><h2>Follow-up areas</h2><span class="meta">${fups.length}</span></div>`;
-    fups.forEach(f=>{
-      const priRaw=(f.priority||"monitor").toLowerCase();
-      const pri=priRaw==="critical"?"critical":priRaw==="high"?"high":"monitor";
-      html+=`<div class="ins-fup ${pri}">
-        <div class="ins-fup-head">
-          <span class="ins-fup-pri">${pri.toUpperCase()}</span>
-          <div class="ins-fup-title">${esc(f.title||"")}</div>
-        </div>
-        ${f.body?`<div class="ins-fup-body">${esc(f.body)}</div>`:""}
-        ${f.action?`<div class="ins-fup-action">→ ${esc(f.action)}</div>`:""}
-      </div>`;
-    });
+    fups.forEach(f=>{const priRaw=(f.priority||"monitor").toLowerCase();const pri=priRaw==="critical"?"critical":priRaw==="high"?"high":"monitor";html+=`<div class="ins-fup ${pri}"><div class="ins-fup-head"><span class="ins-fup-pri">${pri.toUpperCase()}</span><div class="ins-fup-title">${esc(f.title||"")}</div></div>${f.body?`<div class="ins-fup-body">${esc(f.body)}</div>`:""}${f.action?`<div class="ins-fup-action">→ ${esc(f.action)}</div>`:""}</div>`;});
   }
-
-  // Equipment panel
-  const equip=d.equipment||[];
-  if(equip.length){
-    html+=`<div class="sect"><h2>Equipment</h2><span class="meta">${equip.length}</span></div>`;
-    html+=`<div class="ins-equip">`;
-    equip.forEach(e=>{
-      const st=(e.status||"warning").toLowerCase();
-      const label=st.charAt(0).toUpperCase()+st.slice(1);
-      html+=`<div class="ins-equip-row">
-        <div class="ins-equip-unit">${esc(e.unit)}</div>
-        <span class="ins-equip-bdg ${st}">${label}</span>
-        <div class="ins-equip-note">${e.type?`<span class="ins-equip-type">${esc(e.type)} · </span>`:""}${esc(e.note||"")}</div>
-      </div>`;
-    });
-    html+=`</div>`;
-  }
-
+  html+=`<div class="sect"><h2>Life Saving Rules</h2><span class="meta">9</span></div><div class="lsr-list">`;
+  LSR9.forEach((r,i)=>{html+=`<div class="lsr-item"><span class="lsr-num">${i+1}</span><div class="lsr-txt"><b>${r[0]}</b> — <span>${r[1]}</span></div></div>`;});
+  html+=`</div>`;
   el.innerHTML=html;
+  const di=document.getElementById("saf-date");
+  if(di)di.addEventListener("change",()=>{localStorage.setItem(LS_INCIDENT,di.value);renderInsights();});
 }
+document.querySelectorAll(".ins-subtab").forEach(btn=>btn.addEventListener("click",()=>{
+  insTab=btn.dataset.is;
+  document.querySelectorAll(".ins-subtab").forEach(b=>b.classList.toggle("on",b===btn));
+  renderInsights();
+}));
+
+/* ---------- shift handover ---------- */
+const LS_HO="myday.handover.v1";
+let ho=load(LS_HO,{date:todayStr(),shift:"Day",prod:"",equip:"",issues:"",actions:"",plan:""});
+if(ho.date!==todayStr()){ho={date:todayStr(),shift:ho.shift||"Day",prod:"",equip:"",issues:"",actions:"",plan:""};}
+function saveHo(){ho.date=todayStr();localStorage.setItem(LS_HO,JSON.stringify(ho));}
+function renderHandover(){
+  document.querySelectorAll("#view-handover .shiftbtn").forEach(b=>b.classList.toggle("on",b.dataset.hoshift===ho.shift));
+  ["prod","equip","issues","actions","plan"].forEach(f=>{const el=document.getElementById("ho-"+f);if(el)el.value=ho[f]||"";});
+}
+["prod","equip","issues","actions","plan"].forEach(f=>{const el=document.getElementById("ho-"+f);if(el)el.addEventListener("input",()=>{ho[f]=el.value;saveHo();});});
+document.querySelectorAll("#view-handover .shiftbtn").forEach(b=>b.addEventListener("click",()=>{
+  ho.shift=b.dataset.hoshift;saveHo();
+  document.querySelectorAll("#view-handover .shiftbtn").forEach(x=>x.classList.toggle("on",x===b));
+  document.getElementById("hdr-date").textContent=ho.shift+" shift · "+todayStr();
+}));
+const hoPullBtn=document.getElementById("ho-pull");
+if(hoPullBtn)hoPullBtn.addEventListener("click",()=>{
+  if(!insightsData||!insightsData.equipment){toast("No fleet data yet");return;}
+  const downs=insightsData.equipment.filter(e=>["down","partial"].includes((e.status||"").toLowerCase()));
+  if(!downs.length){toast("No units down in today's report");return;}
+  const lines=downs.map(e=>`${e.unit}${e.type?" ("+e.type+")":""} — ${e.status}${e.bd_hrs?", "+e.bd_hrs+"h":""}${e.note?": "+e.note:""}`);
+  const cur=document.getElementById("ho-equip");
+  cur.value=(cur.value.trim()?cur.value.trim()+"\n":"")+lines.join("\n");
+  ho.equip=cur.value;saveHo();vibe(10);toast("Pulled "+downs.length+" unit"+(downs.length===1?"":"s"));
+});
+function handoverReport(){
+  const stamp=new Date().toLocaleString("en-AU",{dateStyle:"medium",timeStyle:"short"});
+  let md=`# Shift Handover — ${todayStr()} (${ho.shift} shift)\n\n**Superintendent:** Peter Anthony  \n**Prepared:** ${stamp}\n\n---\n\n`;
+  const sec=(t,v)=>{md+=`## ${t}\n${v&&v.trim()?v.trim():"_—_"}\n\n`;};
+  sec("Production summary",ho.prod);
+  sec("Equipment down / at risk",ho.equip);
+  sec("Safety / issues this shift",ho.issues);
+  sec("Carry-over actions",ho.actions);
+  sec("Plan for next shift",ho.plan);
+  md+=`---\n_Sign-off: Peter Anthony — Mining Superintendent_\n`;
+  return md;
+}
+document.getElementById("ho-copy").addEventListener("click",async()=>{const md=handoverReport();try{await navigator.clipboard.writeText(md);toast("Handover copied");}catch(e){fallbackCopy(md);}});
+document.getElementById("ho-share").addEventListener("click",async()=>{
+  const md=handoverReport(),subj="[Shift Handover] "+todayStr()+" "+ho.shift,email=getSyncEmail();
+  if(email){location.href="mailto:"+encodeURIComponent(email)+"?subject="+encodeURIComponent(subj)+"&body="+encodeURIComponent(md);toast("Opening email — just press Send");return;}
+  if(navigator.share){try{await navigator.share({title:subj,text:md});}catch(e){}}
+  else{try{await navigator.clipboard.writeText(md);toast("Copied — set a sync email in ⚙︎ for one-tap");}catch(e){fallbackCopy(md);}}
+});
 
 /* ---------- daily lesson ---------- */
 const LESSONS=[
