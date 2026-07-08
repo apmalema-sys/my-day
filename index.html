@@ -314,6 +314,21 @@
   .lsr-item:last-child{border-bottom:none;}
   .lsr-num{flex-shrink:0;width:22px;height:22px;border-radius:6px;background:var(--accent);color:#fff;font-weight:800;font-size:.76rem;display:flex;align-items:center;justify-content:center;}
   .lsr-txt b{color:var(--txt);} .lsr-txt span{color:var(--muted);}
+  /* toolbox talk + SOP reference */
+  .tb-card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:15px;margin:0 0 14px;}
+  .tb-lbl{font-size:.62rem;color:var(--accent);font-weight:800;text-transform:uppercase;letter-spacing:.06em;margin-bottom:6px;}
+  .tb-title{font-size:1rem;font-weight:800;color:var(--txt);margin-bottom:10px;line-height:1.3;}
+  .tb-list{list-style:none;margin:0 0 10px;padding:0;}
+  .tb-list li{font-size:.85rem;color:var(--txt);line-height:1.45;padding:5px 0 5px 18px;position:relative;}
+  .tb-list li::before{content:"•";color:var(--accent);position:absolute;left:3px;font-weight:800;}
+  .sop-item{background:var(--card);border:1px solid var(--line);border-radius:12px;margin:0 0 8px;overflow:hidden;}
+  .sop-item summary{padding:13px 14px;font-size:.9rem;font-weight:700;color:var(--txt);cursor:pointer;list-style:none;display:flex;align-items:center;justify-content:space-between;gap:10px;}
+  .sop-item summary::-webkit-details-marker{display:none;}
+  .sop-item summary::after{content:"⌄";color:var(--muted);font-size:1.15rem;line-height:1;transition:transform .2s;}
+  .sop-item[open] summary::after{transform:rotate(180deg);}
+  .sop-list{list-style:none;margin:0;padding:0 14px 12px;}
+  .sop-list li{font-size:.82rem;color:var(--muted);line-height:1.45;padding:4px 0 4px 16px;position:relative;}
+  .sop-list li::before{content:"–";position:absolute;left:2px;color:var(--accent);}
 
   /* ---- lesson ---- */
   .les-body{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px;margin:0 0 14px;}
@@ -1471,11 +1486,33 @@ const LSR9=[
   ["EHSS Critical Systems Bypass","never bypass safety-critical interlocks, alarms or controls"]
 ];
 function daysSince(dstr){if(!dstr)return null;const then=new Date(dstr+"T00:00:00"),now=new Date();return Math.max(0,Math.floor((now-then)/86400000));}
+const TOOLBOX=[
+  {t:"Line of fire at the loading face",p:["Nobody in the excavator swing arc — even when it looks stopped","Stay clear of a truck's reverse path; cameras don't replace a spotter","Operators stay in the cab while buckets are moving","If you can be hit by a moving load or machine, you're in the wrong place"]},
+  {t:"Reversing and blind spots",p:["Sound the horn before starting, moving forward, and reversing","Use a spotter or proximity detection when reversing near people or edges","Make eye contact / positive comms before you move near another machine","Assume the other operator can't see you until they signal they can"]},
+  {t:"Seatbelts and cab discipline",p:["Belt on before the machine moves — every time, no exceptions","No phones in the cab while operating","Report fatigue early — a tired operator is a hazard to the whole fleet","Three points of contact getting in and out"]},
+  {t:"Speed for the conditions",p:["Wet, dusty, or rough road means slow down below the posted limit","A loaded truck needs far more stopping distance than an empty one","Slow into corners and switchbacks — don't brake mid-turn","Keep a safe following distance behind the truck ahead"]},
+  {t:"Dump crest and tip point",p:["Confirm the push-up berm is continuous and axle-height before tipping","Tip only at the marked, stable point — never over an unchecked edge","Spotter stands out of the line of fire, visible to the operator","If the edge looks soft or cracked, stop and report it"]},
+  {t:"Highwall awareness",p:["Look up before you load — check the face for cracks, overhangs, loose rock","Keep equipment the approved setback distance from the crest","Any tension crack or seepage: exclude the area and call geotech","Don't track haul trucks near the crest edge — stay within road width"]},
+  {t:"Heat and fatigue — summer",p:["Drink water before you're thirsty; keep a bottle in the cab","Know the signs of heat stress: dizziness, cramps, confusion — stop and report","Take your breaks in the shade / cooled area","Look out for your mates — heat affects judgement before you feel it"]},
+  {t:"Pre-start inspection — mean it",p:["Walk the machine — tyres, GET, leaks, lights — don't sign then look","Brake test at the designated area before the shift, not on the ramp","Any defect goes on a WO before the machine works — don't defer it","'It starts and moves' is a warm-up, not a pre-start"]},
+  {t:"Traffic and right of way",p:["Loaded trucks have priority over empties; machines over light vehicles","One-way haul roads stay one-way even when the road looks clear","Obey the signs and the traffic plan in every active area","At blind intersections, use the spotter or the agreed protocol"]},
+  {t:"Light vehicles in the pit",p:["No LV enters the active area without telling the operator first","Park only in designated areas, clear of the line of fire","Positive comms with every machine before you approach","Keep to the designated lanes — no mixing with haul traffic"]},
+  {t:"Dust and visibility",p:["If you can't see the road or the next machine, slow down or stop","Water carts on primary roads — flag it if a road is dusty","Keep windscreens and mirrors clean at every break","Dust hides pedestrians and edges — treat low visibility as a stop condition"]},
+  {t:"Isolate before you touch it",p:["Lock out and tag out before any work on plant or equipment","Prove zero energy — hydraulics and raised components store energy when off","Your lock is yours; never remove someone else's","When in doubt, isolate and ask — not the other way round"]}
+];
+function dayOfYear(){const n=new Date();return Math.floor((n-new Date(n.getFullYear(),0,0))/86400000);}
 function renderInsSafety(el){
   const d=insightsData;
   let html=insHeaderHTML();
   const inc=localStorage.getItem(LS_INCIDENT)||"",ds=daysSince(inc);
   html+=`<div class="saf-since"><div class="n">${ds==null?"—":ds}</div><div class="l">Days since last recordable</div><input type="date" id="saf-date" value="${inc}" max="${todayStr()}"/></div>`;
+  const tb=TOOLBOX[dayOfYear()%TOOLBOX.length];
+  html+=`<div class="tb-card">
+    <div class="tb-lbl">Today's toolbox talk</div>
+    <div class="tb-title">${esc(tb.t)}</div>
+    <ul class="tb-list">${tb.p.map(x=>`<li>${esc(x)}</li>`).join("")}</ul>
+    <button class="btn alt" id="tb-copy" style="font-size:.82rem;padding:10px;">Copy for crew brief</button>
+  </div>`;
   const fups=d.followUps||[];
   if(fups.length){
     html+=`<div class="sect"><h2>Follow-up areas</h2><span class="meta">${fups.length}</span></div>`;
@@ -1484,9 +1521,23 @@ function renderInsSafety(el){
   html+=`<div class="sect"><h2>Life Saving Rules</h2><span class="meta">9</span></div><div class="lsr-list">`;
   LSR9.forEach((r,i)=>{html+=`<div class="lsr-item"><span class="lsr-num">${i+1}</span><div class="lsr-txt"><b>${r[0]}</b> — <span>${r[1]}</span></div></div>`;});
   html+=`</div>`;
+  const sops=LSR_SOP_SECTIONS.filter(s=>s.key.indexOf("sop_")===0);
+  if(sops.length){
+    html+=`<div class="sect"><h2>SOPs — key points</h2><span class="meta">${sops.length}</span></div>`;
+    sops.forEach(s=>{
+      const title=s.title.replace(/^SOP — /,"");
+      const items=(s.subs[0]&&s.subs[0].items)||[];
+      html+=`<details class="sop-item"><summary>${esc(title)}</summary><ul class="sop-list">${items.map(it=>`<li>${esc(it)}</li>`).join("")}</ul></details>`;
+    });
+  }
   el.innerHTML=html;
   const di=document.getElementById("saf-date");
   if(di)di.addEventListener("change",()=>{localStorage.setItem(LS_INCIDENT,di.value);renderInsights();});
+  const tbc=document.getElementById("tb-copy");
+  if(tbc)tbc.addEventListener("click",async()=>{
+    const txt=`Toolbox Talk — ${tb.t}\n\n${tb.p.map(x=>"• "+x).join("\n")}\n\n(${todayStr()} — Peter Anthony, Mining Superintendent)`;
+    try{await navigator.clipboard.writeText(txt);toast("Toolbox talk copied");}catch(e){fallbackCopy(txt);}
+  });
 }
 document.querySelectorAll(".ins-subtab").forEach(btn=>btn.addEventListener("click",()=>{
   insTab=btn.dataset.is;
