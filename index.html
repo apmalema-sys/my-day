@@ -298,6 +298,14 @@
   .proj-row .k{color:var(--muted);} .proj-row .v{font-weight:800;color:var(--txt);}
   .proj-row .v.bad{color:var(--urgent);} .proj-row .v.good{color:var(--low);}
   .prod-note{font-size:.72rem;color:var(--muted);line-height:1.45;padding:2px 4px 14px;}
+  /* compile summary numbered list */
+  .sum-list{background:var(--card);border:1px solid var(--line);border-radius:14px;overflow:hidden;margin:0 0 8px;}
+  .sum-row{display:flex;gap:11px;padding:12px 14px;border-bottom:1px solid var(--line);}
+  .sum-row:last-child{border-bottom:none;}
+  .sum-num{flex-shrink:0;width:22px;height:22px;border-radius:6px;background:var(--accent);color:#fff;font-weight:800;font-size:.76rem;display:flex;align-items:center;justify-content:center;}
+  .sum-txt{font-size:.82rem;color:var(--txt);line-height:1.5;}
+  .sum-txt b{color:var(--txt);font-weight:700;}
+  .sum-txt code{background:var(--card2);border-radius:4px;padding:1px 5px;font-size:.9em;font-family:ui-monospace,Menlo,monospace;}
   /* production progress bar */
   .pbar-card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px;margin:0 0 12px;}
   .pbar-top{display:flex;justify-content:space-between;font-size:.82rem;font-weight:800;color:var(--txt);margin-bottom:9px;}
@@ -318,6 +326,9 @@
   .flt-au-cell{flex:1;min-width:74px;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:11px 6px;text-align:center;}
   .flt-au-cell .n{font-size:1.15rem;font-weight:800;color:var(--accent2);line-height:1;}
   .flt-au-cell .l{font-size:.58rem;color:var(--muted);font-weight:700;text-transform:uppercase;letter-spacing:.04em;margin-top:5px;}
+  .flt-au-cell.edit{cursor:pointer;}
+  .flt-au-cell.edit .l{color:var(--accent);}
+  .flt-au-hint{font-size:.68rem;color:var(--muted);text-align:center;line-height:1.4;margin:-4px 4px 12px;}
   .fault-wrap{display:flex;flex-wrap:wrap;gap:7px;margin:0 0 4px;}
   .fault-chip{background:var(--card2);border:1px solid var(--line);border-radius:20px;padding:6px 12px;font-size:.78rem;color:var(--txt);}
   .fault-chip b{color:var(--urgent);font-weight:800;margin-right:3px;}
@@ -1429,6 +1440,11 @@ function renderInsights(){
 /* ---- Production sub-tab ---- */
 function parseNum(s){const m=String(s==null?"":s).replace(/,/g,"").match(/-?\d+(\.\d+)?/);return m?parseFloat(m[0]):null;}
 function fmtInt(n){return Math.round(n).toLocaleString("en-US");}
+function mdInline(s){return esc(s).replace(/\*\*(.+?)\*\*/g,"<b>$1</b>").replace(/`([^`]+)`/g,"<code>$1</code>");}
+function summaryPoints(text){ // split the compile-summary prose on its inline "N. " numbering
+  if(!text)return [];
+  return String(text).split(/\s+(?=[1-9]\.\s)/).map(p=>p.replace(/^[1-9]\.\s*/,"").trim()).filter(Boolean);
+}
 function prodMonthTotalDays(){ // production month runs 25th -> 24th; total = days in the start month
   const now=new Date();let y=now.getFullYear(),m=now.getMonth();
   if(now.getDate()<25){m-=1;if(m<0){m=11;y-=1;}}
@@ -1498,7 +1514,15 @@ function renderInsProduction(el){
     rest.forEach(k=>{const c=k.good===true?"good":k.good===false?"bad":"";html+=`<div class="ins-kpi ${c}"><div class="ins-kpi-lbl">${esc(k.label)}</div><div class="ins-kpi-val">${esc(k.value)}</div>${k.delta?`<div class="ins-kpi-sub">${esc(k.delta)}</div>`:""}</div>`;});
     html+=`</div>`;
   }
-  if(d.summary)html+=`<div class="sect"><h2>Compile summary</h2></div><div class="ins-summary">${esc(d.summary)}</div>`;
+  if(d.summary){
+    const pts=summaryPoints(d.summary);
+    html+=`<div class="sect"><h2>Compile summary</h2>${pts.length>1?`<span class="meta">${pts.length}</span>`:""}</div>`;
+    if(pts.length>1){
+      html+=`<div class="sum-list">`+pts.map((p,i)=>`<div class="sum-row"><span class="sum-num">${i+1}</span><div class="sum-txt">${mdInline(p)}</div></div>`).join("")+`</div>`;
+    } else {
+      html+=`<div class="ins-summary">${mdInline(d.summary)}</div>`;
+    }
+  }
   el.innerHTML=html;
 }
 
@@ -1511,14 +1535,20 @@ function renderInsFleet(el){
   equip.forEach(e=>{const s=(e.status||"").toLowerCase();if(s==="down")down++;else if(s==="partial")part++;});
   const ok=equip.length-down-part;
   const totalBD=Math.round(equip.reduce((a,e)=>a+(parseFloat(e.bd_hrs)||0),0)*10)/10;
-  // fleet A&U headline (fleet-level availability comes from the insights parser when available)
+  // fleet A&U headline. Composition (6 excavators / 21 active trucks) comes from the parser;
+  // Peter sets the authoritative availability for his fleet (tap-to-edit), defaulting to the
+  // site report figure — per-unit avail for exactly these units isn't reliably in the data.
   const f=d.fleet||{};
+  const fau=load(LS_FAU,{});
+  const exVal=fau.ex||(f.exAvail?String(f.exAvail):"—");
+  const dtVal=fau.dt||(f.dtAvail?String(f.dtAvail):"—");
   const au=[];
-  if(f.availMtd)au.push(["Fleet MTD",String(f.availMtd)]);
-  if(f.exAvail)au.push([f.exUnits?`Excav (${f.exUnits})`:"Excav avail",String(f.exAvail)]);
-  if(f.dtAvail)au.push([f.dtUnits?`Trucks (${f.dtUnits})`:"Trucks avail",String(f.dtAvail)]);
-  au.push(["Breakdown",totalBD+"h"]);
-  html+=`<div class="flt-au">`+au.map(c=>`<div class="flt-au-cell"><div class="n">${esc(c[1])}</div><div class="l">${esc(c[0])}</div></div>`).join("")+`</div>`;
+  if(f.availMtd)au.push(["Fleet MTD",String(f.availMtd),null]);
+  au.push([f.exUnits?`Excav (${f.exUnits})`:"Excav avail",exVal,"ex"]);
+  au.push([f.dtUnits?`Trucks (${f.dtUnits})`:"Trucks avail",dtVal,"dt"]);
+  au.push(["Breakdown",totalBD+"h",null]);
+  html+=`<div class="flt-au">`+au.map(c=>`<div class="flt-au-cell${c[2]?" edit":""}"${c[2]?` data-au="${c[2]}"`:""}><div class="n">${esc(c[1])}</div><div class="l">${esc(c[0])}${c[2]?" ✎":""}</div></div>`).join("")+`</div>`;
+  html+=`<div class="flt-au-hint">Tap Excav / Trucks to set availability for your fleet (6 excavators · 21 active trucks).</div>`;
   html+=`<div class="flt-summary">
     <div class="flt-stat down"><div class="n">${down}</div><div class="l">Down</div></div>
     <div class="flt-stat part"><div class="n">${part}</div><div class="l">Partial</div></div>
@@ -1549,9 +1579,18 @@ function renderInsFleet(el){
   });
   html+=`</div>`;
   el.innerHTML=html;
+  el.querySelectorAll("[data-au]").forEach(c=>c.addEventListener("click",()=>{
+    const key=c.dataset.au,store=load(LS_FAU,{});
+    const v=prompt((key==="ex"?"Excavator":"Dump truck")+" availability % for your fleet:",(store[key]||"").replace("%",""));
+    if(v===null)return;
+    const s=v.trim().replace(/[^0-9.]/g,"");
+    if(s==="")delete store[key];else store[key]=s+"%";
+    localStorage.setItem(LS_FAU,JSON.stringify(store));renderInsights();
+  }));
 }
 
 /* ---- Safety sub-tab ---- */
+const LS_FAU="myday.fleetau.v1";
 const LS_INCIDENT="myday.lastincident.v1";
 const LSR9=[
   ["Permit to Work","work that requires a permit must not start without one"],
