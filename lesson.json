@@ -1,15 +1,14 @@
 {
-  "date": "2026-07-07",
-  "topic": "Crusher Feed Procedure",
-  "title": "Crusher Feed Procedure",
-  "body": "The ROM pad is where mining meets processing, and it's the one spot where light vehicles, haul trucks, pedestrians, and a working loader all share the same ground. Get the approach discipline or the blend wrong and you either put someone in the line of fire or you send the wrong grade to the plant — both cost you the shift.",
+  "date": "2026-07-08",
+  "topic": "OEE Framework",
+  "title": "OEE Framework",
+  "body": "Availability alone is lying to you right now — dump trucks and excavators sit at 90%+ mechanical availability, but utilization runs 15-25 points below that. Judge the fleet on availability only and you'll miss the real output being lost to standby time and unrecorded quality failures.",
   "keyPoints": [
-    "Radio first, every time. Any vehicle entering the ROM pad calls the loader operator on Channel 1 before crossing the entrance, and no radio means no entry — full stop.",
-    "The 50:30:10 GET rule is the backbone: call by radio at 50 m, inform and continue under protocol at 30 m, and never break the 10 m radius until the operator is out of the cab, visible, with the bucket grounded and radio confirmation given.",
-    "Blend is set by the foreman off the geologist's instruction, not by the operator. Current standing blend evolved to 1 SSHG + 3 MG1 (Jun 24), then 1 super + 1 SSHG + 3 MG1 (Jun 25) — but five machines was flagged as too many for the feed volume, so watch machine count against actual feed.",
-    "Hard visibility floor of 200 m. Below that, trucks return to the go-line, all ROM pad activity stops, the entrance is barricaded, and only the shift boss can give the all-clear.",
-    "Loader operator basics: enter the pile straight, bucket parallel to the floor, first gear full throttle, floor kept clean and level, and never feed with blunt GET or a bare bucket edge — that's how teeth end up in the crusher."
+    "OEE = Availability × Performance × Quality ÷ 10,000. Three separate loss categories — a machine can be \"available\" all shift and still produce nothing if it's standing idle waiting for a location.",
+    "The Performance gap at ADW traces to dispatch and sequencing, not mechanics — \"no location\" and \"waiting for excavator\" are the recurring standby reasons dragging utilization below availability.",
+    "Quality losses are the blind spot: ROM pad wrong-tipping and crusher bin-starvation stoppages are true output losses, but nobody's counting them as a category yet.",
+    "The Kaizen event already proved this pattern — people and process are the constraint on this fleet, not equipment condition."
   ],
-  "apply": "If more than three or four machines are feeding the crusher, check whether the feed volume actually justifies it — the Jun 25 review already flagged five as overcrowding the pad, and extra machines there just multiply the interaction risk without adding throughput.",
-  "generatedAt": "2026-07-07T05:24:04"
+  "apply": "Watch the standby gap at the loading face — a truck sitting on \"waiting for excavator\" is a Performance loss exactly like the ones dragging utilization below availability in the June data, and it's fixable with sequencing, not maintenance.",
+  "generatedAt": "2026-07-08T10:19:05"
 }
