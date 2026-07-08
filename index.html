@@ -321,6 +321,24 @@
   .trend-col{flex:1;display:flex;align-items:flex-end;height:100%;}
   .trend-bar{width:100%;background:var(--accent2);border-radius:3px 3px 0 0;min-height:4px;}
   .trend-cap{display:flex;justify-content:space-between;font-size:.7rem;color:var(--muted);margin-top:9px;font-weight:600;}
+  /* MTD Plan vs Actual line chart */
+  .mtd-card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px 12px 12px;margin:0 0 12px;}
+  .mtd-legend{display:flex;gap:16px;justify-content:center;font-size:.72rem;color:var(--muted);font-weight:600;margin:2px 0 4px;}
+  .mtd-legend .k{display:flex;align-items:center;gap:6px;}
+  .mtd-legend .sw.bar{width:12px;height:12px;border-radius:2px;background:var(--accent);}
+  .mtd-legend .sw.target{width:16px;height:0;border-top:2px dashed var(--txt);align-self:center;}
+  .mtd-legend .sw.catchup{width:16px;height:0;border-top:2px dashed var(--high);align-self:center;}
+  .mtd-chart{width:100%;height:auto;display:block;}
+  .mtd-chart text{fill:var(--muted);font-size:9px;font-family:inherit;}
+  .mtd-tbl{width:100%;border-collapse:collapse;margin-top:10px;font-size:.76rem;}
+  .mtd-tbl th{color:var(--muted);font-weight:700;text-transform:uppercase;letter-spacing:.04em;font-size:.64rem;text-align:right;padding:4px 6px;border-bottom:1px solid var(--line);}
+  .mtd-tbl th:first-child{text-align:left;}
+  .mtd-tbl td{text-align:right;padding:5px 6px;border-bottom:1px solid var(--line);color:var(--txt);font-weight:600;font-variant-numeric:tabular-nums;}
+  .mtd-tbl td:first-child{text-align:left;color:var(--muted);font-weight:700;}
+  .mtd-tbl tr:last-child td{border-bottom:none;}
+  .mtd-tbl td.good{color:var(--low);} .mtd-tbl td.bad{color:var(--urgent);}
+  .mtd-cap{font-size:.72rem;color:var(--muted);line-height:1.45;padding:8px 2px 0;}
+  .mtd-half{display:inline-block;font-size:.6rem;font-weight:700;color:var(--high);background:var(--card2);border-radius:4px;padding:1px 4px;margin-left:5px;vertical-align:middle;letter-spacing:.02em;}
   /* fleet A&U strip + fault chips */
   .flt-au{display:flex;gap:8px;overflow-x:auto;margin:0 0 10px;padding-bottom:2px;}
   .flt-au-cell{flex:1;min-width:74px;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:11px 6px;text-align:center;}
@@ -410,7 +428,7 @@
 
   <main>
     <!-- CYCLES -->
-    <section class="view active" id="view-cycles">
+    <section class="view" id="view-cycles">
       <div class="evlog-totals">
         <div class="evlog-total"><div class="etn" id="cyc-count">0</div><div class="etl">Cycles</div></div>
         <div class="evlog-total"><div class="etn" id="cyc-avg">—</div><div class="etl">Avg min</div></div>
@@ -487,7 +505,7 @@
     </section>
 
     <!-- INSIGHTS / DASHBOARD -->
-    <section class="view" id="view-insights">
+    <section class="view active" id="view-insights">
       <div class="ins-subtabs">
         <button class="ins-subtab on" data-is="production">Production</button>
         <button class="ins-subtab" data-is="fleet">Fleet</button>
@@ -528,13 +546,13 @@
   <div class="drawer-scrim" id="drawer-scrim"></div>
   <aside class="drawer" id="drawer">
     <div class="drawer-brand">My Day</div>
-    <button class="navitem active" data-v="cycles">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M23 4v6h-6"/><path d="M1 20v-6h6"/><path d="M3.51 9a9 9 0 0 1 14.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0 0 20.49 15"/></svg>
-      <span>Cycles</span>
-    </button>
-    <button class="navitem" data-v="insights">
+    <button class="navitem active" data-v="insights">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 20h20M7 20V10M12 20V4M17 20v-7"/></svg>
       <span>Insights</span>
+    </button>
+    <button class="navitem" data-v="cycles">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M23 4v6h-6"/><path d="M1 20v-6h6"/><path d="M3.51 9a9 9 0 0 1 14.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0 0 20.49 15"/></svg>
+      <span>Cycles</span>
     </button>
     <button class="navitem" data-v="inspect">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M9 14l2 2 4-4"/></svg>
@@ -1146,7 +1164,7 @@ document.querySelectorAll("[data-close]").forEach(b=>b.addEventListener("click",
 /* ---------- tabs ---------- */
 const titles={cycles:"Cycle Time Log",events:"Events log",insights:"Daily Dashboard",inspect:"Operation Inspection",lesson:"Daily Mining Lesson",handover:"Shift Handover"};
 let inspTab="ops";
-let activeView="cycles";
+let activeView="insights";
 const drawer=document.getElementById("drawer"),drawerScrim=document.getElementById("drawer-scrim");
 function openDrawer(){drawer.classList.add("show");drawerScrim.classList.add("show");}
 function closeDrawer(){drawer.classList.remove("show");drawerScrim.classList.remove("show");}
@@ -1420,7 +1438,7 @@ function fetchInsights(){
   if(!location.protocol.startsWith("http"))return;
   fetch("insights.json?t="+Date.now(),{cache:"no-store"})
     .then(r=>r.ok?r.json():null)
-    .then(d=>{if(d){insightsData=d;recordBcm();if(activeView==="insights")renderInsights();}})
+    .then(d=>{if(d){insightsData=d;recordBcm();if(activeView==="insights"){renderInsights();document.getElementById("hdr-date").textContent=d.date||"";}}})
     .catch(()=>{});
 }
 let insTab="production";
@@ -1444,6 +1462,52 @@ function renderInsights(){
 /* ---- Production sub-tab ---- */
 function parseNum(s){const m=String(s==null?"":s).replace(/,/g,"").match(/-?\d+(\.\d+)?/);return m?parseFloat(m[0]):null;}
 function fmtInt(n){return Math.round(n).toLocaleString("en-US");}
+function mtdTrendHTML(trend,proj){ // daily actual (bars) vs target line + catch-up pace line
+  if(!Array.isArray(trend)||trend.length<1)return "";
+  const pts=trend.filter(p=>p&&p.actual>0&&p.target>0);
+  if(!pts.length)return "";
+  const need=proj&&proj.need>0?proj.need:null; // catch-up BCM/day to still hit monthly plan
+  const W=320,H=182,padL=36,padR=10,padT=14,padB=28;
+  const plotW=W-padL-padR,plotH=H-padT-padB;
+  const maxV=Math.max(...pts.flatMap(p=>[p.actual,p.target]),need||0);
+  const step=5000,yMax=Math.ceil(maxV/step)*step,span=yMax||1;
+  const bw=plotW/pts.length,barW=Math.min(24,bw*0.62);
+  const cx=i=>padL+bw*(i+0.5);
+  const y=v=>padT+(1-v/span)*plotH;
+  const base=y(0);
+  // gridlines + y labels at 0, half, max
+  let grid="";
+  [0,yMax/2,yMax].forEach(v=>{const yy=y(v).toFixed(1);grid+=`<line x1="${padL}" y1="${yy}" x2="${W-padR}" y2="${yy}" stroke="var(--line)" stroke-width="1"/><text x="${padL-5}" y="${(y(v)+3).toFixed(1)}" text-anchor="end">${Math.round(v/1000)}k</text>`;});
+  // actual bars — green when at/above target, accent when short
+  const bars=pts.map((p,i)=>{const h=Math.max(1,base-y(p.actual));const beat=p.actual>=p.target;return `<rect x="${(cx(i)-barW/2).toFixed(1)}" y="${y(p.actual).toFixed(1)}" width="${barW.toFixed(1)}" height="${h.toFixed(1)}" rx="2.5" fill="${beat?"var(--low)":"var(--accent)"}" opacity="0.92"/>`;}).join("");
+  // target reference line across the bars (per-day planned target)
+  const tline=pts.map((p,i)=>`${i?"L":"M"}${cx(i).toFixed(1)},${y(p.target).toFixed(1)}`).join(" ");
+  const tdots=pts.map((p,i)=>`<circle cx="${cx(i).toFixed(1)}" cy="${y(p.target).toFixed(1)}" r="2" fill="var(--txt)"/>`).join("");
+  // catch-up pace — flat line at the BCM/day still needed to recover the monthly plan
+  let catchup="";
+  if(need!=null&&need<=yMax){const yy=y(need).toFixed(1);catchup=`<line x1="${padL}" y1="${yy}" x2="${W-padR}" y2="${yy}" stroke="var(--high)" stroke-width="2" stroke-dasharray="2 3"/>`;}
+  const everyX=pts.length>8?2:1;
+  let xlab="";
+  pts.forEach((p,i)=>{if(i%everyX===0||i===pts.length-1)xlab+=`<text x="${cx(i).toFixed(1)}" y="${H-9}" text-anchor="middle">${esc(p.label||"")}${p.half?" ½":""}</text>`;});
+  const svg=`<svg class="mtd-chart" viewBox="0 0 ${W} ${H}" preserveAspectRatio="xMidYMid meet" role="img" aria-label="Daily production actual bars versus planned target and catch-up pace">
+    ${grid}${bars}${catchup}
+    <path d="${tline}" fill="none" stroke="var(--txt)" stroke-width="2" stroke-dasharray="5 4" stroke-linejoin="round"/>
+    ${tdots}${xlab}
+  </svg>`;
+  const last=pts[pts.length-1];
+  const lastVar=last.actual-last.target,lastPct=lastVar/last.target*100;
+  const varCls=lastVar<0?"bad":"good";
+  const rows=pts.map(p=>{const v=p.actual-p.target,pc=v/p.target*100;const c=v<0?"bad":"good";return `<tr><td>${esc(p.label||"")}${p.half?' <span class="mtd-half">½ shift</span>':""}</td><td>${fmtInt(p.actual)}</td><td>${fmtInt(p.target)}</td><td class="${c}">${v>0?"+":""}${pc.toFixed(1)}%</td></tr>`;}).join("");
+  const catchLegend=need!=null?`<span class="k"><span class="sw catchup"></span>Catch-up</span>`:"";
+  const catchCap=need!=null?` <b>Catch-up:</b> ${fmtInt(need)} BCM/day needed over the remaining ${proj.daysRemain} days to still hit the ${fmtInt(proj.monthlyTarget)} monthly plan.`:"";
+  return `<div class="sect"><h2>Daily production — Actual vs Target</h2><span class="meta">${pts.length} days</span></div>
+    <div class="mtd-card">
+      <div class="mtd-legend"><span class="k"><span class="sw bar"></span>Actual</span><span class="k"><span class="sw target"></span>Target</span>${catchLegend}</div>
+      ${svg}
+      <table class="mtd-tbl"><thead><tr><th>Day</th><th>Actual</th><th>Target</th><th>Var</th></tr></thead><tbody>${rows}</tbody></table>
+      <div class="mtd-cap">Daily BCM moved vs the standardized July plan target (23.5k/day; Fridays half — single shift). Latest: <b class="${varCls}">${lastVar>0?"+":""}${fmtInt(lastVar)} BCM (${lastPct>0?"+":""}${lastPct.toFixed(1)}%)</b> vs target on ${esc(last.label||"")}.${catchCap}</div>
+    </div>`;
+}
 function mdInline(s){return esc(s).replace(/\*\*(.+?)\*\*/g,"<b>$1</b>").replace(/`([^`]+)`/g,"<code>$1</code>");}
 function summaryPoints(text){ // split the compile-summary prose on its inline "N. " numbering
   if(!text)return [];
@@ -1494,6 +1558,7 @@ function renderInsProduction(el){
       <div class="pbar-cap"><span>${pctTarget.toFixed(0)}% of monthly target</span><span class="${onBar?'good':'bad'}">${onBar?"on/ahead of pace":"behind pace"}</span></div>
     </div>`;
   }
+  html+=mtdTrendHTML(d.trend,proj);
   const series=bcmDailySeries();
   if(series.length>=2){
     const max=Math.max(...series.map(s=>s.daily))||1;
@@ -1807,10 +1872,11 @@ function renderLesson(){
 }
 
 /* ---------- boot ---------- */
-applyAccent("cycles");
-renderCycles();
-document.getElementById("hdr-title").textContent="Cycle Time Log";
-document.getElementById("hdr-date").textContent=new Date().toLocaleDateString("en-AU",{weekday:"long",day:"numeric",month:"long"});
+applyAccent("insights");                  // Insights is the home view
+renderInsights();
+document.getElementById("hdr-title").textContent=titles.insights;
+document.getElementById("hdr-date").textContent=insightsData&&insightsData.date?insightsData.date:"";
+document.getElementById("fab").style.display="none";
 fetchInsights();                          // pull latest wiki insights (published as insights.json)
 fetchLesson();                            // pull today's KB-generated lesson (published as lesson.json)
 document.addEventListener("visibilitychange",()=>{if(!document.hidden){fetchInsights();fetchLesson();}});
