@@ -321,7 +321,6 @@
   .trend-col{flex:1;display:flex;align-items:flex-end;height:100%;}
   .trend-bar{width:100%;background:var(--accent2);border-radius:3px 3px 0 0;min-height:4px;}
   .trend-cap{display:flex;justify-content:space-between;font-size:.7rem;color:var(--muted);margin-top:9px;font-weight:600;}
-  .trend-empty{font-size:.76rem;color:var(--muted);text-align:center;padding:18px 8px;line-height:1.4;}
   /* fleet A&U strip + fault chips */
   .flt-au{display:flex;gap:8px;overflow-x:auto;margin:0 0 10px;padding-bottom:2px;}
   .flt-au-cell{flex:1;min-width:74px;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:11px 6px;text-align:center;}
@@ -1455,17 +1454,19 @@ function prodMonthTotalDays(){ // production month runs 25th -> 24th; total = da
   if(now.getDate()<25){m-=1;if(m<0){m=11;y-=1;}}
   return new Date(y,m+1,0).getDate();
 }
+/* Actual monthly BCM plan target for the production month (25th→24th). This is the
+   real plan/budget figure, NOT the forecast (636,220) and NOT derived from MTD%.
+   Update this one line when the monthly plan changes. */
+const PLAN_MONTHLY_BCM=630030;
 function computeProjection(kpis){
   const bcm=kpis.find(k=>/bcm/i.test(k.label||""));
   const dr=kpis.find(k=>/days?\s*remain/i.test(k.label||""));
   if(!bcm||!dr)return null;
   const mtd=parseNum(bcm.value),daysRemain=parseNum(dr.value);
-  const pctM=(bcm.delta&&/target/i.test(bcm.delta))?parseNum(bcm.delta):null;
-  if(mtd==null||daysRemain==null||pctM==null)return null;
+  if(mtd==null||daysRemain==null)return null;
   const total=prodMonthTotalDays(),elapsed=total-daysRemain;
   if(elapsed<=0)return null;
-  const targetMTD=mtd/(1+pctM/100);
-  const monthlyTarget=targetMTD/elapsed*total;
+  const monthlyTarget=PLAN_MONTHLY_BCM;
   const pace=mtd/elapsed,proj=pace*total;
   const need=daysRemain>0?(monthlyTarget-mtd)/daysRemain:0;
   const projPct=(proj/monthlyTarget-1)*100;
@@ -1501,8 +1502,6 @@ function renderInsProduction(el){
     html+=`<div class="trend-card"><div class="trend">`;
     series.forEach(s=>{const h=Math.max(6,Math.round(s.daily/max*100));html+=`<div class="trend-col"><div class="trend-bar" style="height:${h}%" title="${fmtInt(s.daily)}"></div></div>`;});
     html+=`</div><div class="trend-cap"><span>Latest ${fmtInt(series[series.length-1].daily)}</span><span>Avg ${fmtInt(avg)} BCM/day</span></div></div>`;
-  } else {
-    html+=`<div class="sect"><h2>Daily BCM trend</h2></div><div class="trend-card"><div class="trend-empty">Builds as daily reports come in — needs 2+ days of data on this device.</div></div>`;
   }
   if(proj){
     const onPace=proj.pace>=proj.need;
@@ -1513,7 +1512,7 @@ function renderInsProduction(el){
       <div class="proj-row"><span class="k">Projected month-end</span><span class="v ${proj.projPct<0?'bad':'good'}">${fmtInt(proj.proj)} BCM</span></div>
       <div class="proj-row"><span class="k">vs monthly target</span><span class="v ${proj.projPct<0?'bad':'good'}">${proj.projPct>0?'+':''}${proj.projPct.toFixed(1)}%</span></div>
     </div>
-    <div class="prod-note">Projection holds the current daily pace across the rest of the production month (25th→24th). "Pace needed" is the average BCM/day required over the remaining days to reach the monthly target implied by your MTD vs-target figure.</div>`;
+    <div class="prod-note">Projection holds the current daily pace across the rest of the production month (25th→24th). "Pace needed" is the average BCM/day required over the remaining days to reach the ${fmtInt(proj.monthlyTarget)} BCM monthly plan target.</div>`;
   }
   const rest=kpis.filter(k=>!/bcm/i.test(k.label||""));
   if(rest.length){
