@@ -1,18 +1,18 @@
 {
-  "generatedAt": "2026-07-08T19:52:43",
-  "date": "2026-07-08",
-  "runNumber": 44,
-  "summary": "July 7 ore beat its target for the first time in July. — 5,053 BCM against a 1,822 BCM target (+3,231 BCM), while total production missed (−4.8%) and waste ran well under target. Two ore blocks contributed for the first time this month (735-178-1 and 770-164-2). EX-123 stayed down a second full day on its track fault. MTD ore gap narrowed sharply (−14.2%, from −31.6% the day before). Survey posted a clean +9.4% recovery from Day 12's −44.9% reversal (MTD +6.0%). Drill Rig daily availability fell sharply (81.51%, from 97.14%) on a new DR-139 breakdown (\"hard braking\"), distinct from the standing DR-125 pattern; a new \"lack of drilling area\" standby theme appeared on three rigs.",
+  "generatedAt": "2026-07-06T12:36:41",
+  "date": "2026-07-05",
+  "runNumber": 40,
+  "summary": "July 4 production (Saturday). total 21,452 BCM / 57,920 t; waste 20,677 BCM; ore 775 BCM / 2,093 t (all LG from 760-151-1 — first ore after the July 3 zero-ore day). Target 23,469 BCM (−8.6%). Stage 4 10,695 / Stage 6 10,757. MTD 197,594 BCM (−6.5% vs target). Crusher down all 24 hrs on planned maintenance (0 BCM fed). Drilling 2,059 m (−663 vs target), no blasting. 1 hr production stop for the Maaden stand-down meeting.",
   "kpis": [
     {
       "label": "MTD BCM",
-      "value": "265,980",
-      "delta": "-5.6% vs target",
+      "value": "197,594",
+      "delta": "-6.5% vs target",
       "good": false
     },
     {
       "label": "Survey Gap",
-      "value": "+6.0%",
+      "value": "+8.8%",
       "delta": "survey vs trucks MTD",
       "good": true
     },
@@ -24,134 +24,104 @@
     },
     {
       "label": "Days Remain",
-      "value": "17",
+      "value": "20",
       "delta": "",
       "good": null
     }
   ],
-  "fleet": {
-    "exAvail": "95.4%",
-    "exUnits": 6,
-    "dtAvail": "94.5%",
-    "dtUnits": 21,
-    "availMtd": "87.74%",
-    "excavators": [
-      {
-        "unit": "EX-340",
-        "avail": "97.9%"
-      },
-      {
-        "unit": "EX-262",
-        "avail": "95.8%"
-      },
-      {
-        "unit": "EX-253",
-        "avail": "95.8%"
-      },
-      {
-        "unit": "EX-263",
-        "avail": "89.6%"
-      },
-      {
-        "unit": "EX-247",
-        "avail": "97.9%"
-      },
-      {
-        "unit": "EX-1200",
-        "avail": null
-      }
-    ],
-    "exBasis": "5/6",
-    "pdfDate": "07-07",
-    "dtBasis": "21 active ≥8h"
-  },
   "equipment": [
     {
-      "unit": "DR-139",
-      "type": "Drill",
+      "unit": "EX-340",
+      "type": "Excavator",
       "status": "down",
-      "avail": "0%",
+      "avail": "50.00%",
       "util": "",
-      "bd_hrs": "",
-      "note": "and DR-139 all planned at **0% PA for the full Week 28** — this reframes the standing \"",
-      "comment": "Hard braking troubleshooting in  progress"
+      "bd_hrs": "12",
+      "note": "down 12 hrs replacing the arm stick (breakdown 5:30 AM–5:30 PM), 50.00% avail — the day's worst.",
+      "comment": "Side Mirror Bolt Loose"
+    },
+    {
+      "unit": "EX-262",
+      "type": "Excavator",
+      "status": "warning",
+      "avail": "64.58%",
+      "util": "",
+      "bd_hrs": "8.5",
+      "note": "down 8.5 hrs on hydraulic low-power issues (breakdown 10:30 AM–7:00 PM) plus a faulty bucket that would not cl",
+      "comment": "Replace Tracks"
     },
     {
       "unit": "EX-123",
       "type": "Excavator",
-      "status": "warning",
+      "status": "down",
       "avail": "",
       "util": "",
-      "bd_hrs": "24",
-      "note": "stayed down a second straight day** — 24 BD hrs, same fault, still logged as \"L.H Track Off (Track Tension Dam",
-      "comment": "L.H Track Off ( Track  Tienson  Damage )"
+      "bd_hrs": "1.5",
+      "note": "lost 1.5 hrs — daily check plus \"Bucket Lip Shroud Missing\" logged on night shift, a GET-loss signal (see [[lo",
+      "comment": "F.S.S Active"
     },
     {
-      "unit": "DR-125",
-      "type": "Drill",
+      "unit": "WD-145",
+      "type": "Water Dozer",
       "status": "scheduled",
       "avail": "",
       "util": "",
       "bd_hrs": "",
-      "note": "lack of operator\" standby question. It may not be a staffing gap at all; the machine may simply be scheduled o",
+      "note": "on a planned valve-lash since July 3 6:00 PM",
+      "comment": "C/O Window L.H Glass"
+    },
+    {
+      "unit": "DZ-248",
+      "type": "Track Dozer",
+      "status": "down",
+      "avail": "",
+      "util": "",
+      "bd_hrs": "",
+      "note": "leaking since July 3 10:00 PM",
+      "comment": "Hydraulic Oil Leaking"
+    },
+    {
+      "unit": "DZ-279",
+      "type": "Track Dozer",
+      "status": "down",
+      "avail": "",
+      "util": "",
+      "bd_hrs": "4.5",
+      "note": "out 4.5 hrs on electrical. With one wheel dozer and effectively one working track dozer, there was no spare pu",
       "comment": ""
     },
     {
-      "unit": "WL-101",
-      "type": "Wheel Loader",
+      "unit": "DT-110",
+      "type": "Haul Truck",
       "status": "down",
-      "avail": "0%",
+      "avail": "39.58%",
       "util": "",
-      "bd_hrs": "",
-      "note": "remains on the long-term down list (0% avail, \"Accident Damage,\" down since 01-Feb-26, now over five months).",
-      "comment": "Accident Damage"
+      "bd_hrs": "14.5",
+      "note": "the fleet's worst at 39.58% (14.5 hrs breakdown)",
+      "comment": ""
     },
     {
-      "unit": "DT-128",
+      "unit": "DT-107",
       "type": "Haul Truck",
       "status": "warning",
       "avail": "",
       "util": "",
-      "bd_hrs": "",
-      "note": "'s overheating fault (flagged July 6) closed out July 7 at 4:30 PM. New faults:",
-      "comment": "Over Heating"
-    },
-    {
-      "unit": "DT-106",
-      "type": "Haul Truck",
-      "status": "down",
-      "avail": "",
-      "util": "",
-      "bd_hrs": "5",
-      "note": "tyre replacement (5 hrs)",
-      "comment": "Replace Tyre"
-    },
-    {
-      "unit": "DT-108",
-      "type": "Haul Truck",
-      "status": "warning",
-      "avail": "",
-      "util": "",
-      "bd_hrs": "",
-      "note": "brake air-pressure leak starting 11:00 PM (carried into July 8)",
-      "comment": "Brake Air Pressure Leaking"
-    },
-    {
-      "unit": "DT-129",
-      "type": "Haul Truck",
-      "status": "down",
-      "avail": "",
-      "util": "",
-      "bd_hrs": "3",
-      "note": "electrical/inspection (3 hrs)",
+      "bd_hrs": "4.5",
+      "note": "hydraulic oil leak 4.5 hrs",
       "comment": ""
     }
   ],
   "followUps": [
     {
-      "priority": "HIGH",
-      "title": "The Week 28-29 bi-weekly plan deck landed with the pass's most consequen...",
-      "body": "",
+      "priority": "MONITOR",
+      "title": "Compound insight — the dozer shortage behind the ramp-fill pause",
+      "body": "The July 4 meeting note said the Northwest Ramp Fill was paused for a dozer-resource constraint. The July 4 Daily Availability Final Report shows the physical shortage: the site's single wheel dozer (WD-145) was at 39.58% on a planned valve-lash, and track dozer DZ-248 was down 23 hrs on a hydraulic oil leak — no spare push capacity. Also caught: EX-340 down 12 hrs (arm stick), EX-262 8.5 hrs (hydraulic low power), EX-123 \"Bucket Lip Shroud Missing\" (a GET-loss signal), and a fleet-wide \"tyre damage\" pattern across the 775/777 dump trucks that puts unit-level detail behind the June 28 Tire Damages reference. DR-125's \"12 hrs s/by (lack of operator)\" reading confirms the down-vs-idle contradiction resolves to \"available.\"",
+      "action": ""
+    },
+    {
+      "priority": "MONITOR",
+      "title": "Survey",
+      "body": "Day 10 (260705) +13.5%, a second straight positive day; MTD survey +8.77% over tally. Forecast: Week 28 & 29 excavator plan ~307,135 BCM; EX-104 stays fully offline; drill capacity thinnest mid-to-late W29 (DR-342 and DR-139 multi-day services).",
       "action": ""
     }
   ]
