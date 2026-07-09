@@ -1,14 +1,15 @@
 {
-  "date": "2026-07-08",
-  "topic": "OEE Framework",
-  "title": "OEE Framework",
-  "body": "Availability alone is lying to you right now — dump trucks and excavators sit at 90%+ mechanical availability, but utilization runs 15-25 points below that. Judge the fleet on availability only and you'll miss the real output being lost to standby time and unrecorded quality failures.",
+  "date": "2026-07-09",
+  "topic": "Dust Suppression",
+  "title": "Dust Suppression",
+  "body": "Get the water rate wrong in either direction and you pay for it. Under-water a haul road and you lose visibility, chew up equipment, and erode GET faster at the loading face. Over-water it and you've built a skating rink on a switchback — traction gone, braking distance up, rollover risk on the ramps.",
   "keyPoints": [
-    "OEE = Availability × Performance × Quality ÷ 10,000. Three separate loss categories — a machine can be \"available\" all shift and still produce nothing if it's standing idle waiting for a location.",
-    "The Performance gap at ADW traces to dispatch and sequencing, not mechanics — \"no location\" and \"waiting for excavator\" are the recurring standby reasons dragging utilization below availability.",
-    "Quality losses are the blind spot: ROM pad wrong-tipping and crusher bin-starvation stoppages are true output losses, but nobody's counting them as a category yet.",
-    "The Kaizen event already proved this pattern — people and process are the constraint on this fleet, not equipment condition."
+    "Water carts run the common safety baseline plus their own rules: no passengers without supervisor/foreman sign-off, headlights and amber strobe on at all times, clean windows/mirrors/taillights, seat belts on both operator and any authorized passenger.",
+    "Baffle plates in the tank aren't cosmetic — worn baffles let water slosh, which destabilizes the truck. That's a rollover mechanism, not just a maintenance line item.",
+    "The under/over-water trade-off is a judgement call, not a fixed setting. The cart operator is closest to the call shift-to-shift; the foreman sets the cadence at line-up based on weather, wind, and traffic.",
+    "Stopped sheeting removes a dust-suppression layer at the source — this isn't just a watering issue. It also leaves sharp rock exposed, which is a tire-cut hazard everywhere trucks spot and load.",
+    "Summer heat-work rules now apply to cart servicing itself — no offloading, refilling, or bit-changing without shade and water on hand for the spotter. That slows cart turnaround during the hottest part of shift, which means coverage gaps are more likely right when dust risk is highest."
   ],
-  "apply": "Watch the standby gap at the loading face — a truck sitting on \"waiting for excavator\" is a Performance loss exactly like the ones dragging utilization below availability in the June data, and it's fixable with sequencing, not maintenance.",
-  "generatedAt": "2026-07-08T10:19:05"
+  "apply": "If you're walking a switchback or ramp after a water cart's been through, check the surface before you sign off on it — over-watering on a grade is where the trade-off actually bites.",
+  "generatedAt": "2026-07-09T05:19:38"
 }
