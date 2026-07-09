@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-07-09T11:41:52",
+  "generatedAt": "2026-07-09T17:06:53",
   "date": "2026-07-09",
-  "runNumber": 45,
-  "summary": "1. No new Day-14 survey file (`260709-INX-SUM.xlsx`) has landed — [[survey-volume-reconciliation]] was not touched this pass. 2. **Key operational findings — July 8:** - 1. 3. July 8 total production beat target for the first time since July 6 — 23,591 BCM against a 23,469 BCM target (+0.5%) — while ore ran at 2.5x plan (4,526 BCM vs 1,822 BCM, +148%), narrowing the MTD ore gap from July 7's −14.2% to just −1.7%. 2. 4. EX-123 stayed down a third consecutive day on its left-hand track fault, still open with no close-out logged. 3. 5. DR-139's \"hard breaking\" fault escalated from a night-shift-only entry on July 7 to a full 24-hour, both-shift breakdown, dragging drill fleet availability and utilization down even as the rest of the rig fleet ran clean. - Crusher fed its best single day of the July run (3,416 BCM / 8,710.8 t) on only ~2h35m of downtime; MTD crusher stockpile throughput recovered to 21.7% of the 124,000 LCM monthly plan, from 19.4% the day before. - **Grade Control workbook data-quality flag.** The July 8 rows for blocks 735-186-1 and 770-176-2 don't reconcile against the Block Info per-block totals — the LG figures look like stale carryovers from a different block's column. 6. DT-282 — a new \"Coolant Inlet Pressure Sensor Problem,\" distinct from its earlier final-drive history, still open. 7. Motor Grader craters to 66.67% daily on MG-266's single cutting-edge-inspection stoppage — the same single-unit-class volatility seen July 6. - No Day-14 INX-SUM survey file has landed yet — the dashboard's Survey Gap KPI will keep showing the July 7 figure (+17,050 BCM, +6.0% MTD) until the next survey file arrives. - Two new Important References emails (Training calendar, Visa updates) registered at index level only — not analyzed this pass; deferred to the next full \"compile mining operations KB\" run. 8. Both articles' Last updated bumped to 2026-07-09. 9. No Notion Task Inbox query run this pass (out of scope). No tasks.md changes this pass. ---",
+  "runNumber": 46,
+  "summary": "1. No new Client Meeting Report, DPR, Block Info, Drill Meters, Grade Control, A&U, or Daily Availability Final Report — the dashboard's production and fleet KPIs are unchanged from the 45th pass's July 8 figures. 2. Important References folder not re-checked this pass; the 45th pass's two-file deferral to the next full compile stands. 3. **Key operational findings:** - 1. 4. The Day 14 survey file reverses sharply off Day 13's recovery — trucks 23,591 BCM against survey only 18,912 BCM, a −4,679 BCM (−24.7%) gap, narrowing the MTD survey surplus from +6.0% to +4.1% (+12,371 BCM). 2. 5. The comment behind the swing — EX-263, EX-1200, and EX-340 all loading on the heap area — is the same three-excavator lineup that produced Day 12's −44.9% reversal and Day 8's −14.6% gap, the third time this exact grouping has produced a negative read; single- or two-excavator heap days have produced mixed positive and moderate results by contrast. 3. 6. The July Distance report's July 8 tab filled in overnight and ties out exactly against the Client Meeting Report and Block Info totals, resolving the \"still blank\" note from the 45th pass, though it surfaces a small formula-reference quirk on block 735-178-1 (a duplicate 279 BCM \"Sub Econ\" entry matching the block's MG figure — the same duplicate-value pattern already flagged on the Grade Control workbook for this block). - The three-excavator heap-day pattern (263, 1200, 340 → negative swing) is now a standing observation worth a direct question to the survey team: does loading position for this specific excavator trio put material outside the calculation boundary more reliably than other groupings? - Block 735-178-1's recurring duplicate-value quirk (Grade Control July 8, now Distance report July 8) points at a shared formula or copy-paste error on that block's row across both workbooks — worth a direct check before either workbook's per-block breakdown is relied on again for 735-178-1 specifically. 7. Both articles' Last updated bumped to 2026-07-09. 8. No new Notion Task Inbox query run this pass (out of scope). 9. No tasks.md changes this pass. ---",
   "kpis": [
     {
       "label": "MTD BCM",
@@ -12,7 +12,7 @@
     },
     {
       "label": "Survey Gap",
-      "value": "+6.0%",
+      "value": "+4.1%",
       "delta": "survey vs trucks MTD",
       "good": true
     },
@@ -24,7 +24,7 @@
     },
     {
       "label": "Days Remain",
-      "value": "17",
+      "value": "16",
       "delta": "",
       "good": null
     }
@@ -123,116 +123,17 @@
     "pdfDate": "08-07",
     "dtBasis": "23 active ≥8h"
   },
-  "equipment": [
-    {
-      "unit": "DR-139",
-      "type": "Drill",
-      "status": "scheduled",
-      "avail": "",
-      "util": "",
-      "bd_hrs": "",
-      "note": "is now logged as **fully Down — Undercarriage, \"Hard braking troubleshooting in progress,\"** the same fault fi",
-      "comment": "Hard braking troubleshooting in  progress"
-    },
-    {
-      "unit": "DZ-249",
-      "type": "Track Dozer",
-      "status": "down",
-      "avail": "39.58%",
-      "util": "",
-      "bd_hrs": "14.5",
-      "note": "\"Track Spotter Broken.\"** 14.5 BD hrs, 39.58% avail, opened 08-Jul 3:00 PM, still open at report time (Down st",
-      "comment": "Track Spotter Broken"
-    },
-    {
-      "unit": "EX-123",
-      "type": "Excavator",
-      "status": "warning",
-      "avail": "0%",
-      "util": "",
-      "bd_hrs": "24",
-      "note": "remains down** — the report logs the same \"L.H Track Off (Track Tension Damage)\" fault with Date In 06-Jul-26 ",
-      "comment": "L.H Track Off ( Track  Tienson  Damage )"
-    },
-    {
-      "unit": "EX-247",
-      "type": "Excavator",
-      "status": "down",
-      "avail": "",
-      "util": "",
-      "bd_hrs": "2",
-      "note": "logged 2 hrs (GET — install bucket tips, 3:30-5:30 PM; plus a bucket welding job in the same window)",
-      "comment": "Install Bucket Tips"
-    },
-    {
-      "unit": "EX-253",
-      "type": "Excavator",
-      "status": "down",
-      "avail": "",
-      "util": "",
-      "bd_hrs": "3",
-      "note": "3 hrs (planned door repair 10:30",
-      "comment": ""
-    },
-    {
-      "unit": "AM-1",
-      "type": "",
-      "status": "scheduled",
-      "avail": "",
-      "util": "",
-      "bd_hrs": "",
-      "note": ":30 PM plus a 250-hr service in the same window)",
-      "comment": ""
-    },
-    {
-      "unit": "EX-262",
-      "type": "Excavator",
-      "status": "down",
-      "avail": "",
-      "util": "",
-      "bd_hrs": "3",
-      "note": "3 hrs across two separate breakdowns (hydraulic low function 7:15-8:45 AM, then grease level low 8:00-9:30 PM)",
-      "comment": "Low Function"
-    },
-    {
-      "unit": "EX-263",
-      "type": "Excavator",
-      "status": "down",
-      "avail": "",
-      "util": "",
-      "bd_hrs": "0.5",
-      "note": "0.5 hr (daily check)",
-      "comment": ""
-    }
-  ],
+  "equipment": [],
   "followUps": [
     {
-      "priority": "HIGH",
-      "title": "No Day-14 INX-SUM survey file has landed yet — the dashboard's Survey Ga...",
+      "priority": "MONITOR",
+      "title": "The three-excavator heap-day pattern (263, 1200, 340 → negative swing) i...",
       "body": "",
       "action": ""
     },
     {
       "priority": "MONITOR",
-      "title": "Crusher fed its best single day of the July run (3,416 BCM / 8,710.8 t) ...",
-      "body": "",
-      "action": ""
-    },
-    {
-      "priority": "MONITOR",
-      "title": "**Grade Control workbook data-quality flag.** The July 8 rows for blocks...",
-      "body": "",
-      "action": ""
-    },
-    {
-      "priority": "MONITOR",
-      "title": "**New faults to watch:** DZ-249 (Track Dozer) — \"Track Spotter Broken,\" ...",
-      "body": "",
-      "action": ""
-    },
-    {
-      "priority": "MONITOR",
-      "title": "Two new Important References emails (Training calendar, Visa updates) re...",
+      "title": "Block 735-178-1's recurring duplicate-value quirk (Grade Control July 8,...",
       "body": "",
       "action": ""
     }
