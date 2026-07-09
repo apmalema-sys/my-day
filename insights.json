@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-09T17:24:05",
+  "generatedAt": "2026-07-09T17:24:59",
   "date": "2026-07-09",
   "runNumber": 46,
   "summary": "1. ** - The weekly ops meeting confirms a new 1250 excavator inbound (Yambu port, Komatsu fire suppression fit, ETA end of July/first week of August) — the existing 1200 comes off-hire on arrival, opening a manpower gap until two new operators are hired. 2. Parts delays (unit 123 track tightener, 253/263 tracks/sprockets) are explicitly tied to US-Iran supply-chain tensions for the first time in this KB, including the 1250 itself having been diverted to China during an earlier round of the same tensions. - The shift-handover meeting adds Day 15 production figures (63,686t morning production, 8,140t behind target) and reports block 511's high wall closed off access overnight — the crew relocated to block 512 pending a platform-access assessment. - **Important References deep-dive (deferred by the 45th pass) completed this pass.** The visa/key-personnel tracker confirms the weekly meeting's two incoming ADW production supervisors by name and ETA — but names the incoming Belgian workshop superintendent as Michael Verselder with an ETA of \"mid of July,\" conflicting with the meeting's \"around 28 July\" estimate. 3. Neither date is confirmed (visa still pending MOFA approval). 4. Full write-up: `Outputs/important-references-analysis_2026-07-09.md`.",
@@ -167,21 +167,11 @@
     {
       "unit": "EX-253",
       "type": "Excavator",
-      "status": "down",
-      "avail": "",
-      "util": "",
-      "bd_hrs": "3",
-      "note": "3 hrs (planned door repair 10:30",
-      "comment": ""
-    },
-    {
-      "unit": "AM-1",
-      "type": "",
       "status": "scheduled",
       "avail": "",
       "util": "",
-      "bd_hrs": "",
-      "note": ":30 PM plus a 250-hr service in the same window)",
+      "bd_hrs": "3",
+      "note": "3 hrs (planned door repair 10:30 AM-1:30 PM plus a 250-hr service in the same window)",
       "comment": ""
     },
     {
@@ -202,6 +192,16 @@
       "util": "",
       "bd_hrs": "0.5",
       "note": "0.5 hr (daily check)",
+      "comment": ""
+    },
+    {
+      "unit": "EX-340",
+      "type": "Excavator",
+      "status": "down",
+      "avail": "",
+      "util": "",
+      "bd_hrs": "1",
+      "note": "1 hr (daily check). **",
       "comment": ""
     }
   ],
