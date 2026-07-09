@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-07-09T17:06:53",
+  "generatedAt": "2026-07-09T17:24:05",
   "date": "2026-07-09",
   "runNumber": 46,
-  "summary": "1. No new Client Meeting Report, DPR, Block Info, Drill Meters, Grade Control, A&U, or Daily Availability Final Report — the dashboard's production and fleet KPIs are unchanged from the 45th pass's July 8 figures. 2. Important References folder not re-checked this pass; the 45th pass's two-file deferral to the next full compile stands. 3. **Key operational findings:** - 1. 4. The Day 14 survey file reverses sharply off Day 13's recovery — trucks 23,591 BCM against survey only 18,912 BCM, a −4,679 BCM (−24.7%) gap, narrowing the MTD survey surplus from +6.0% to +4.1% (+12,371 BCM). 2. 5. The comment behind the swing — EX-263, EX-1200, and EX-340 all loading on the heap area — is the same three-excavator lineup that produced Day 12's −44.9% reversal and Day 8's −14.6% gap, the third time this exact grouping has produced a negative read; single- or two-excavator heap days have produced mixed positive and moderate results by contrast. 3. 6. The July Distance report's July 8 tab filled in overnight and ties out exactly against the Client Meeting Report and Block Info totals, resolving the \"still blank\" note from the 45th pass, though it surfaces a small formula-reference quirk on block 735-178-1 (a duplicate 279 BCM \"Sub Econ\" entry matching the block's MG figure — the same duplicate-value pattern already flagged on the Grade Control workbook for this block). - The three-excavator heap-day pattern (263, 1200, 340 → negative swing) is now a standing observation worth a direct question to the survey team: does loading position for this specific excavator trio put material outside the calculation boundary more reliably than other groupings? - Block 735-178-1's recurring duplicate-value quirk (Grade Control July 8, now Distance report July 8) points at a shared formula or copy-paste error on that block's row across both workbooks — worth a direct check before either workbook's per-block breakdown is relied on again for 735-178-1 specifically. 7. Both articles' Last updated bumped to 2026-07-09. 8. No new Notion Task Inbox query run this pass (out of scope). 9. No tasks.md changes this pass. ---",
+  "summary": "1. ** - The weekly ops meeting confirms a new 1250 excavator inbound (Yambu port, Komatsu fire suppression fit, ETA end of July/first week of August) — the existing 1200 comes off-hire on arrival, opening a manpower gap until two new operators are hired. 2. Parts delays (unit 123 track tightener, 253/263 tracks/sprockets) are explicitly tied to US-Iran supply-chain tensions for the first time in this KB, including the 1250 itself having been diverted to China during an earlier round of the same tensions. - The shift-handover meeting adds Day 15 production figures (63,686t morning production, 8,140t behind target) and reports block 511's high wall closed off access overnight — the crew relocated to block 512 pending a platform-access assessment. - **Important References deep-dive (deferred by the 45th pass) completed this pass.** The visa/key-personnel tracker confirms the weekly meeting's two incoming ADW production supervisors by name and ETA — but names the incoming Belgian workshop superintendent as Michael Verselder with an ETA of \"mid of July,\" conflicting with the meeting's \"around 28 July\" estimate. 3. Neither date is confirmed (visa still pending MOFA approval). 4. Full write-up: `Outputs/important-references-analysis_2026-07-09.md`.",
   "kpis": [
     {
       "label": "MTD BCM",
@@ -123,7 +123,88 @@
     "pdfDate": "08-07",
     "dtBasis": "23 active ≥8h"
   },
-  "equipment": [],
+  "equipment": [
+    {
+      "unit": "DR-139",
+      "type": "Drill",
+      "status": "scheduled",
+      "avail": "",
+      "util": "",
+      "bd_hrs": "",
+      "note": "is now logged as **fully Down — Undercarriage, \"Hard braking troubleshooting in progress,\"** the same fault fi",
+      "comment": "Hard braking troubleshooting in  progress"
+    },
+    {
+      "unit": "DZ-249",
+      "type": "Track Dozer",
+      "status": "down",
+      "avail": "39.58%",
+      "util": "",
+      "bd_hrs": "14.5",
+      "note": "\"Track Spotter Broken.\"** 14.5 BD hrs, 39.58% avail, opened 08-Jul 3:00 PM, still open at report time (Down st",
+      "comment": "Track Spotter Broken"
+    },
+    {
+      "unit": "EX-123",
+      "type": "Excavator",
+      "status": "warning",
+      "avail": "0%",
+      "util": "",
+      "bd_hrs": "24",
+      "note": "remains down** — the report logs the same \"L.H Track Off (Track Tension Damage)\" fault with Date In 06-Jul-26 ",
+      "comment": "L.H Track Off ( Track  Tienson  Damage )"
+    },
+    {
+      "unit": "EX-247",
+      "type": "Excavator",
+      "status": "down",
+      "avail": "",
+      "util": "",
+      "bd_hrs": "2",
+      "note": "logged 2 hrs (GET — install bucket tips, 3:30-5:30 PM; plus a bucket welding job in the same window)",
+      "comment": "Install Bucket Tips"
+    },
+    {
+      "unit": "EX-253",
+      "type": "Excavator",
+      "status": "down",
+      "avail": "",
+      "util": "",
+      "bd_hrs": "3",
+      "note": "3 hrs (planned door repair 10:30",
+      "comment": ""
+    },
+    {
+      "unit": "AM-1",
+      "type": "",
+      "status": "scheduled",
+      "avail": "",
+      "util": "",
+      "bd_hrs": "",
+      "note": ":30 PM plus a 250-hr service in the same window)",
+      "comment": ""
+    },
+    {
+      "unit": "EX-262",
+      "type": "Excavator",
+      "status": "down",
+      "avail": "",
+      "util": "",
+      "bd_hrs": "3",
+      "note": "3 hrs across two separate breakdowns (hydraulic low function 7:15-8:45 AM, then grease level low 8:00-9:30 PM)",
+      "comment": "Low Function"
+    },
+    {
+      "unit": "EX-263",
+      "type": "Excavator",
+      "status": "down",
+      "avail": "",
+      "util": "",
+      "bd_hrs": "0.5",
+      "note": "0.5 hr (daily check)",
+      "comment": ""
+    }
+  ],
   "followUps": [
     {
       "priority": "MONITOR",
