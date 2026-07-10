@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-09T17:24:59",
+  "generatedAt": "2026-07-10T13:59:07",
   "date": "2026-07-09",
   "runNumber": 46,
   "summary": "1. ** - The weekly ops meeting confirms a new 1250 excavator inbound (Yambu port, Komatsu fire suppression fit, ETA end of July/first week of August) — the existing 1200 comes off-hire on arrival, opening a manpower gap until two new operators are hired. 2. Parts delays (unit 123 track tightener, 253/263 tracks/sprockets) are explicitly tied to US-Iran supply-chain tensions for the first time in this KB, including the 1250 itself having been diverted to China during an earlier round of the same tensions. - The shift-handover meeting adds Day 15 production figures (63,686t morning production, 8,140t behind target) and reports block 511's high wall closed off access overnight — the crew relocated to block 512 pending a platform-access assessment. - **Important References deep-dive (deferred by the 45th pass) completed this pass.** The visa/key-personnel tracker confirms the weekly meeting's two incoming ADW production supervisors by name and ETA — but names the incoming Belgian workshop superintendent as Michael Verselder with an ETA of \"mid of July,\" conflicting with the meeting's \"around 28 July\" estimate. 3. Neither date is confirmed (visa still pending MOFA approval). 4. Full write-up: `Outputs/important-references-analysis_2026-07-09.md`.",
@@ -88,40 +88,40 @@
     }
   ],
   "fleet": {
-    "exAvail": "92.1%",
+    "exAvail": "92.7%",
     "exUnits": 6,
-    "dtAvail": "96.6%",
-    "dtUnits": 23,
+    "dtAvail": "95.6%",
+    "dtUnits": 21,
     "availMtd": "91.70%",
     "excavators": [
       {
         "unit": "EX-340",
-        "avail": "95.8%"
+        "avail": "91.7%"
       },
       {
         "unit": "EX-262",
-        "avail": "87.5%"
+        "avail": "95.8%"
       },
       {
         "unit": "EX-253",
-        "avail": "87.5%"
+        "avail": null
       },
       {
         "unit": "EX-263",
-        "avail": "97.9%"
+        "avail": "93.8%"
       },
       {
         "unit": "EX-247",
-        "avail": "91.7%"
+        "avail": "89.6%"
       },
       {
         "unit": "EX-1200",
         "avail": null
       }
     ],
-    "exBasis": "5/6",
-    "pdfDate": "08-07",
-    "dtBasis": "23 active ≥8h"
+    "exBasis": "4/6",
+    "pdfDate": "09-07",
+    "dtBasis": "21 active ≥8h"
   },
   "equipment": [
     {
@@ -162,7 +162,7 @@
       "util": "",
       "bd_hrs": "2",
       "note": "logged 2 hrs (GET — install bucket tips, 3:30-5:30 PM; plus a bucket welding job in the same window)",
-      "comment": "Install Bucket Tips"
+      "comment": ""
     },
     {
       "unit": "EX-253",
@@ -182,7 +182,7 @@
       "util": "",
       "bd_hrs": "3",
       "note": "3 hrs across two separate breakdowns (hydraulic low function 7:15-8:45 AM, then grease level low 8:00-9:30 PM)",
-      "comment": "Low Function"
+      "comment": ""
     },
     {
       "unit": "EX-263",
@@ -192,7 +192,7 @@
       "util": "",
       "bd_hrs": "0.5",
       "note": "0.5 hr (daily check)",
-      "comment": ""
+      "comment": "Swing Oil Level Low"
     },
     {
       "unit": "EX-340",
