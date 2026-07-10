@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-07-10T13:59:07",
-  "date": "2026-07-09",
+  "generatedAt": "2026-07-10T15:13:22",
+  "date": "2026-07-10",
   "runNumber": 46,
-  "summary": "1. ** - The weekly ops meeting confirms a new 1250 excavator inbound (Yambu port, Komatsu fire suppression fit, ETA end of July/first week of August) — the existing 1200 comes off-hire on arrival, opening a manpower gap until two new operators are hired. 2. Parts delays (unit 123 track tightener, 253/263 tracks/sprockets) are explicitly tied to US-Iran supply-chain tensions for the first time in this KB, including the 1250 itself having been diverted to China during an earlier round of the same tensions. - The shift-handover meeting adds Day 15 production figures (63,686t morning production, 8,140t behind target) and reports block 511's high wall closed off access overnight — the crew relocated to block 512 pending a platform-access assessment. - **Important References deep-dive (deferred by the 45th pass) completed this pass.** The visa/key-personnel tracker confirms the weekly meeting's two incoming ADW production supervisors by name and ETA — but names the incoming Belgian workshop superintendent as Michael Verselder with an ETA of \"mid of July,\" conflicting with the meeting's \"around 28 July\" estimate. 3. Neither date is confirmed (visa still pending MOFA approval). 4. Full write-up: `Outputs/important-references-analysis_2026-07-09.md`.",
+  "summary": "1. ** - July 9 total production 23,467 BCM against a 23,469.2 BCM target — essentially on plan (−2.2 BCM). 2. Ore ran 77% over target for a second straight day, and **MTD ore turned positive for the first time this month: +997.1 BCM (+3.9%)**, after running behind plan every prior day of July. - Crusher fed 3,592 BCM — a new best single-day feed for the July run, beating July 8's 3,416 BCM. - **DR-139 partially recovered**, from a full 24-hour, both-shift breakdown on July 8 to a day-shift-only breakdown on July 9 — night shift logged standby instead of continued breakdown. 3. The fault (\"Hard breaking troubleshooting in progress\") remains open with no Date Out, now day 3. - EX-123 stayed down a fourth straight day (\"L.H Track Off\"); DT-282 stayed down a third straight day (\"Coolant Inlet Pressure Sensor Problem\"); DZ-249 stayed down a second day (\"Track Spotter Broken\"). 4. Two new tyre-fault breakdowns hit the dump truck fleet (DT-128, 22.5 hrs; DT-244, 14.75 hrs), pulling daily dump truck availability down to 89.67% even as the overall fleet daily average (94.45%) and MTD average (91.73%) both hit new highs for the July run. - Blast No. 11 confirmed (890-643 Trim + 639 Remnant, 37,037 BCM, 21,064 kg explosive) — logged as \"yesterday's blast\" against the July 9 tab, meaning the blast happened July 8. - Day 15 survey reconciliation (260710-INX-SUM, reconciling July 9 production) read −12.4% against the truck tally — a second straight negative day, three excavators on the heap again. 5. MTD survey surplus narrowed to +3.03%, the third straight pass of narrowing (Day 13 +6.0% → Day 14 +4.1% → Day 15 +3.03%).",
   "kpis": [
     {
       "label": "MTD BCM",
@@ -12,7 +12,7 @@
     },
     {
       "label": "Survey Gap",
-      "value": "+4.1%",
+      "value": "+3.0%",
       "delta": "survey vs trucks MTD",
       "good": true
     },
@@ -24,7 +24,7 @@
     },
     {
       "label": "Days Remain",
-      "value": "16",
+      "value": "15",
       "delta": "",
       "good": null
     }
@@ -80,9 +80,9 @@
       "half": false
     },
     {
-      "date": "2026-07-08",
-      "label": "8 Jul",
-      "actual": 23591,
+      "date": "2026-07-09",
+      "label": "9 Jul",
+      "actual": 23467,
       "target": 23469,
       "half": false
     }
@@ -127,51 +127,31 @@
     {
       "unit": "DR-139",
       "type": "Drill",
-      "status": "scheduled",
-      "avail": "",
+      "status": "partial",
+      "avail": "50%",
       "util": "",
-      "bd_hrs": "",
-      "note": "is now logged as **fully Down — Undercarriage, \"Hard braking troubleshooting in progress,\"** the same fault fi",
+      "bd_hrs": "12",
+      "note": "partial recovery**: the Daily Availability Final Report still lists it Down, \"Hard braking troubleshooting in ",
       "comment": "Hard braking troubleshooting in  progress"
-    },
-    {
-      "unit": "DZ-249",
-      "type": "Track Dozer",
-      "status": "down",
-      "avail": "39.58%",
-      "util": "",
-      "bd_hrs": "14.5",
-      "note": "\"Track Spotter Broken.\"** 14.5 BD hrs, 39.58% avail, opened 08-Jul 3:00 PM, still open at report time (Down st",
-      "comment": "Track Spotter Broken"
     },
     {
       "unit": "EX-123",
       "type": "Excavator",
-      "status": "warning",
-      "avail": "0%",
+      "status": "down",
+      "avail": "",
       "util": "",
-      "bd_hrs": "24",
-      "note": "remains down** — the report logs the same \"L.H Track Off (Track Tension Damage)\" fault with Date In 06-Jul-26 ",
+      "bd_hrs": "",
+      "note": "stays down into its fourth straight day — \"L.H Track Off (Track Tension Damage),\" still open, Date In 06-Jul 7",
       "comment": "L.H Track Off ( Track  Tienson  Damage )"
     },
     {
       "unit": "EX-247",
       "type": "Excavator",
-      "status": "down",
-      "avail": "",
-      "util": "",
-      "bd_hrs": "2",
-      "note": "logged 2 hrs (GET — install bucket tips, 3:30-5:30 PM; plus a bucket welding job in the same window)",
-      "comment": ""
-    },
-    {
-      "unit": "EX-253",
-      "type": "Excavator",
       "status": "scheduled",
       "avail": "",
       "util": "",
-      "bd_hrs": "3",
-      "note": "3 hrs (planned door repair 10:30 AM-1:30 PM plus a 250-hr service in the same window)",
+      "bd_hrs": "2.5",
+      "note": "SOS action + 250-hr service + faulty seat adjustment (2.5 hrs)",
       "comment": ""
     },
     {
@@ -180,8 +160,8 @@
       "status": "down",
       "avail": "",
       "util": "",
-      "bd_hrs": "3",
-      "note": "3 hrs across two separate breakdowns (hydraulic low function 7:15-8:45 AM, then grease level low 8:00-9:30 PM)",
+      "bd_hrs": "1",
+      "note": "daily inspection (1 hr)",
       "comment": ""
     },
     {
@@ -190,8 +170,8 @@
       "status": "down",
       "avail": "",
       "util": "",
-      "bd_hrs": "0.5",
-      "note": "0.5 hr (daily check)",
+      "bd_hrs": "1.5",
+      "note": "\"Swing Oil Level Low\" breakdown (1.5 hrs)",
       "comment": "Swing Oil Level Low"
     },
     {
@@ -200,9 +180,29 @@
       "status": "down",
       "avail": "",
       "util": "",
-      "bd_hrs": "1",
-      "note": "1 hr (daily check). **",
+      "bd_hrs": "2",
+      "note": "daily inspection (2 hrs) — all short, planned or minor.",
       "comment": ""
+    },
+    {
+      "unit": "DT-128",
+      "type": "Haul Truck",
+      "status": "down",
+      "avail": "6.25%",
+      "util": "",
+      "bd_hrs": "22.5",
+      "note": "Down 22.5 hrs (6.25% avail), \"Replace Tyre (Puncture)\"** — the largest single downtime hit of the day — and",
+      "comment": "Replace Tyre ( Puncher)"
+    },
+    {
+      "unit": "DT-244",
+      "type": "Haul Truck",
+      "status": "down",
+      "avail": "",
+      "util": "",
+      "bd_hrs": "14.75",
+      "note": "Down 14.75 hrs, \"Tyre Flat P-5.\" **",
+      "comment": "Tyre Flat P-5"
     }
   ],
   "followUps": [
