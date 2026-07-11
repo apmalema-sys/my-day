@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-07-11T11:21:54",
+  "generatedAt": "2026-07-11T17:06:07",
   "date": "2026-07-11",
   "runNumber": 50,
-  "summary": "1. No new survey file (Day 16, which would reconcile July 10) has landed, and no new Workshop Daily Task PDF for July 11 — [[survey-volume-reconciliation]] was not touched this pass. 2. **Key operational findings:** - 1. 3. July 10 was a Friday roster-break day: total production 12,958 BCM against an 11,734.6 BCM Friday-scaled target (+10.4%), all waste, zero ore for the second straight day after July 9's ore-heavy run. 2. 4. MTD total sits at 325,996 BCM against a 340,303.9 BCM target — **−4.2% vs target**, narrowing slightly from July 9's −4.7% gap on the smaller Friday-scaled target; MTD ore is essentially flat to plan (+0.3%, down sharply from July 9's +3.9% surplus) since the day contributed nothing to the ore line. 3. 5. MTD crusher stockpile throughput reached 31,042.5 LCM against the 124,000 LCM monthly plan — **25.0% of plan**, up from July 9's 23.9% but still well short of a linear day-16-of-30 pace (~53%). - **DR-139 logged zero breakdown hours on both shifts for the first time since its \"Hard breaking\" fault opened July 7** — a genuine recovery signal on the production side, though the Daily Availability Final Report side of this hasn't been directly cross-checked this pass. 6. In its place, **DR-343 opened a new fault (\"Faulty drifter\" / \"Replace Drifter\"), a full 12-hour night-shift breakdown**, confirmed identically on both the drill meters report and the availability report. - EX-123 stayed down a fifth straight day (\"L.H Track Off\"). 7. Excavator fleet daily availability fell sharply to 79.51% (from 88.61% MTD) — driven by EX-123 plus a new planned 500-hour service on EX-340 (4 hrs). 8. Dump truck fleet: DT-128's tyre-puncture fault (flagged July 9) closed out July 10 at 4:45 PM; DT-244 and DT-282 both stayed down. 9. Overall daily fleet availability held at 93.37% (MTD 91.89%), the second-best reading of the July run after July 9's 94.45%. - No new INX-SUM survey file has landed for Day 16 — the MTD survey gap headline in [[survey-volume-reconciliation]] still reflects Day 15 (through July 9, +3.03%). Following the KB's established 30-day production-month convention, July 10 is production day 16 of 30 — **14 days remaining**. **Wiki updates:** [[daily-production-report]] (Day 16 update section) and [[fleet-availability-utilization]] (July 10 Daily Availability Final Report section) updated; `Last updated` bumped to 2026-07-11 on both; `Wiki/INDEX.md` refreshed for the same two articles. Grade Control workbook not re-checked this pass (block-grid layout issue stands, unchanged since the 45th pass). Distance report not updated this pass (still populated through July 8 only). Full detail in `RAW/_INGESTED.md` under \"50th compile pass.\"",
+  "summary": "1. ** - A July 11 shift-change meeting confirms the already-compiled Thursday/Friday production and drilling totals (63,361t/34,987t; 2,666m/1,512m) and adds narrative context one day ahead of the formal workbook: week-to-date behind 12,688t, ore target 17,450t remaining, 66,000t target for the day. 2. A new haul-road resurfacing plan surfaced — mixing soft/sand material into the badly hard-packed ramp road (grading alone isn't fixing it), plus a longer-term plan to build a proper graded berm road. 3. See [[daily-production-report]], [[blasting-and-drilling]], [[grading-and-road-construction]]. - An informal low-grade stockpile site visit (AI meeting note attached to a Notion task, not the Meeting Notes Database, ingested as a meeting note given its format) surfaced a cluster of dump-design and level-control gaps traced to a likely common root cause — **no confirmed formal dump design was ever done for this stockpile.** Nine action items resulted (design review, Maaden surveyor engagement, offset confirmation, dedicated ramp, level clarification via TBM, running-board control, delineator installation, sheeting-material screening). 4. See [[dump-management]] (status remains emerging). - Per the KB's non-negotiable Important References workflow (out of scope for the 50th/51st dashboard-scoped runs, applicable to this full-scope run), the two IR files deferred at index-level registration by the 50th pass were read: a 26-slide JRAR Graduate Mining Engineer Development Programme training deck on load-and-haul fundamentals (spotting time, self-spotting, cycle definitions, dispatch variance management) and its one-line forwarding email.",
   "kpis": [
     {
       "label": "MTD BCM",
@@ -12,7 +12,7 @@
     },
     {
       "label": "Survey Gap",
-      "value": "+3.0%",
+      "value": "+3.5%",
       "delta": "survey vs trucks MTD",
       "good": true
     },
@@ -24,7 +24,7 @@
     },
     {
       "label": "Days Remain",
-      "value": "15",
+      "value": "14",
       "delta": "",
       "good": null
     }
@@ -229,19 +229,13 @@
   "followUps": [
     {
       "priority": "HIGH",
-      "title": "**DR-139 logged zero breakdown hours on both shifts for the first time s...",
+      "title": "The single-excavator, moderate-offset heap pattern (263 alone, 1.75 m) b...",
       "body": "",
       "action": ""
     },
     {
-      "priority": "HIGH",
-      "title": "EX-123 stayed down a fifth straight day (\"L.H Track Off\")",
-      "body": "Excavator fleet daily availability fell sharply to 79.51% (from 88.61% MTD) — driven by EX-123 plus a new planned 500-hour service on EX-340 (4 hrs). Dump truck fleet: DT-128's tyre-puncture fault (flagged July 9) closed out July 10 at 4:45 PM; DT-244 and DT-282 both stayed down. Overall daily fleet availability held at 93.37% (MTD 91.89%), the second-best reading of the July run after July 9's 94.45%.",
-      "action": ""
-    },
-    {
       "priority": "MONITOR",
-      "title": "No new INX-SUM survey file has landed for Day 16 — the MTD survey gap he...",
+      "title": "Daily average survey for the month dipped to 98.18% of plan for the firs...",
       "body": "",
       "action": ""
     }
