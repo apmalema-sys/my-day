@@ -1,13 +1,13 @@
 {
-  "generatedAt": "2026-07-10T17:06:58",
-  "date": "2026-07-10",
-  "runNumber": 46,
-  "summary": "1. Important References folder re-checked — still 24 files, all already registered, no new content.",
+  "generatedAt": "2026-07-11T11:06:57",
+  "date": "2026-07-11",
+  "runNumber": 50,
+  "summary": "1. No new survey file (Day 16, which would reconcile July 10) has landed, and no new Workshop Daily Task PDF for July 11 — [[survey-volume-reconciliation]] was not touched this pass. 2. **Key operational findings:** - 1. 3. July 10 was a Friday roster-break day: total production 12,958 BCM against an 11,734.6 BCM Friday-scaled target (+10.4%), all waste, zero ore for the second straight day after July 9's ore-heavy run. 2. 4. MTD total sits at 325,996 BCM against a 340,303.9 BCM target — **−4.2% vs target**, narrowing slightly from July 9's −4.7% gap on the smaller Friday-scaled target; MTD ore is essentially flat to plan (+0.3%, down sharply from July 9's +3.9% surplus) since the day contributed nothing to the ore line. 3. 5. MTD crusher stockpile throughput reached 31,042.5 LCM against the 124,000 LCM monthly plan — **25.0% of plan**, up from July 9's 23.9% but still well short of a linear day-16-of-30 pace (~53%). - **DR-139 logged zero breakdown hours on both shifts for the first time since its \"Hard breaking\" fault opened July 7** — a genuine recovery signal on the production side, though the Daily Availability Final Report side of this hasn't been directly cross-checked this pass. 6. In its place, **DR-343 opened a new fault (\"Faulty drifter\" / \"Replace Drifter\"), a full 12-hour night-shift breakdown**, confirmed identically on both the drill meters report and the availability report. - EX-123 stayed down a fifth straight day (\"L.H Track Off\"). 7. Excavator fleet daily availability fell sharply to 79.51% (from 88.61% MTD) — driven by EX-123 plus a new planned 500-hour service on EX-340 (4 hrs). 8. Dump truck fleet: DT-128's tyre-puncture fault (flagged July 9) closed out July 10 at 4:45 PM; DT-244 and DT-282 both stayed down. 9. Overall daily fleet availability held at 93.37% (MTD 91.89%), the second-best reading of the July run after July 9's 94.45%. - No new INX-SUM survey file has landed for Day 16 — the MTD survey gap headline in [[survey-volume-reconciliation]] still reflects Day 15 (through July 9, +3.03%). Following the KB's established 30-day production-month convention, July 10 is production day 16 of 30 — **14 days remaining**. **Wiki updates:** [[daily-production-report]] (Day 16 update section) and [[fleet-availability-utilization]] (July 10 Daily Availability Final Report section) updated; `Last updated` bumped to 2026-07-11 on both; `Wiki/INDEX.md` refreshed for the same two articles. Grade Control workbook not re-checked this pass (block-grid layout issue stands, unchanged since the 45th pass). Distance report not updated this pass (still populated through July 8 only). Full detail in `RAW/_INGESTED.md` under \"50th compile pass.\"",
   "kpis": [
     {
       "label": "MTD BCM",
-      "value": "289,571",
-      "delta": "-5.1% vs target",
+      "value": "325,996",
+      "delta": "-4.2% vs target",
       "good": false
     },
     {
@@ -18,8 +18,8 @@
     },
     {
       "label": "Crusher MTD",
-      "value": "22%",
-      "delta": "26,904 / 124,000 LCM",
+      "value": "25%",
+      "delta": "31,042 / 124,000 LCM",
       "good": null
     },
     {
@@ -78,90 +78,73 @@
       "actual": 22785,
       "target": 23469,
       "half": false
-    },
-    {
-      "date": "2026-07-09",
-      "label": "9 Jul",
-      "actual": 23467,
-      "target": 23469,
-      "half": false
     }
   ],
   "fleet": {
-    "exAvail": "92.7%",
+    "exAvail": "95.4%",
     "exUnits": 6,
-    "dtAvail": "95.6%",
-    "dtUnits": 21,
-    "availMtd": "91.70%",
+    "dtAvail": "100.0%",
+    "dtUnits": 19,
+    "availMtd": "88.61%",
     "excavators": [
       {
         "unit": "EX-340",
-        "avail": "91.7%"
+        "avail": "83.3%"
       },
       {
         "unit": "EX-262",
-        "avail": "95.8%"
+        "avail": "97.9%"
       },
       {
         "unit": "EX-253",
-        "avail": null
+        "avail": "97.9%"
       },
       {
         "unit": "EX-263",
-        "avail": "93.8%"
+        "avail": "100.0%"
       },
       {
         "unit": "EX-247",
-        "avail": "89.6%"
+        "avail": "97.9%"
       },
       {
         "unit": "EX-1200",
         "avail": null
       }
     ],
-    "exBasis": "4/6",
-    "pdfDate": "09-07",
-    "dtBasis": "21 active ≥8h"
+    "exBasis": "5/6",
+    "pdfDate": "10-07",
+    "dtBasis": "19 active ≥8h"
   },
   "equipment": [
-    {
-      "unit": "DR-139",
-      "type": "Drill",
-      "status": "partial",
-      "avail": "50%",
-      "util": "",
-      "bd_hrs": "12",
-      "note": "partial recovery**: the Daily Availability Final Report still lists it Down, \"Hard braking troubleshooting in ",
-      "comment": "Hard braking troubleshooting in  progress"
-    },
     {
       "unit": "EX-123",
       "type": "Excavator",
       "status": "down",
-      "avail": "",
+      "avail": "0.00%",
       "util": "",
       "bd_hrs": "",
-      "note": "stays down into its fourth straight day — \"L.H Track Off (Track Tension Damage),\" still open, Date In 06-Jul 7",
+      "note": "stays down a fifth straight day** — 24 DT hrs, 0.00% avail, \"L.H Track Off (Track Tension Damage),\" Down statu",
       "comment": "L.H Track Off ( Track  Tienson  Damage )"
     },
     {
-      "unit": "EX-247",
+      "unit": "EX-340",
       "type": "Excavator",
       "status": "scheduled",
-      "avail": "",
+      "avail": "83.33%",
       "util": "",
-      "bd_hrs": "2.5",
-      "note": "SOS action + 250-hr service + faulty seat adjustment (2.5 hrs)",
+      "bd_hrs": "500",
+      "note": "new fault: 4 DT hrs, 83.33% avail, \"500 Hrs Service\"** (planned, night shift, 11-Jul 1:30 AM) — a scheduled se",
       "comment": ""
     },
     {
-      "unit": "EX-262",
-      "type": "Excavator",
-      "status": "down",
-      "avail": "",
+      "unit": "DR-343",
+      "type": "Drill",
+      "status": "warning",
+      "avail": "50.00%",
       "util": "",
-      "bd_hrs": "1",
-      "note": "daily inspection (1 hr)",
+      "bd_hrs": "",
+      "note": "new fault: \"Replace Drifter,\"** Down status, 12 DT hrs, 50.00% avail, opened 10-Jul 5:30 PM through 11-Jul 5:3",
       "comment": ""
     },
     {
@@ -170,51 +153,67 @@
       "status": "down",
       "avail": "",
       "util": "",
-      "bd_hrs": "1.5",
-      "note": "\"Swing Oil Level Low\" breakdown (1.5 hrs)",
-      "comment": "Swing Oil Level Low"
+      "bd_hrs": "",
+      "note": "'s attach-and-work-tools stops.",
+      "comment": "Replace Bucket"
     },
     {
-      "unit": "EX-340",
+      "unit": "EX-247",
       "type": "Excavator",
       "status": "down",
-      "avail": "",
+      "avail": "97.92%",
       "util": "",
-      "bd_hrs": "2",
-      "note": "daily inspection (2 hrs) — all short, planned or minor.",
+      "bd_hrs": "0.5",
+      "note": "each logged a single 0.5 hr daily-check window (97.92% avail)",
+      "comment": ""
+    },
+    {
+      "unit": "EX-253",
+      "type": "Excavator",
+      "status": "down",
+      "avail": "97.92%",
+      "util": "",
+      "bd_hrs": "0.5",
+      "note": "each logged a single 0.5 hr daily-check window (97.92% avail)",
+      "comment": ""
+    },
+    {
+      "unit": "EX-262",
+      "type": "Excavator",
+      "status": "down",
+      "avail": "97.92%",
+      "util": "",
+      "bd_hrs": "",
+      "note": "the same (97.92%).",
       "comment": ""
     },
     {
       "unit": "DT-128",
       "type": "Haul Truck",
-      "status": "down",
-      "avail": "6.25%",
+      "status": "warning",
+      "avail": "100.00%",
       "util": "",
-      "bd_hrs": "22.5",
-      "note": "Down 22.5 hrs (6.25% avail), \"Replace Tyre (Puncture)\"** — the largest single downtime hit of the day — and",
+      "bd_hrs": "33.75",
+      "note": "'s tyre-puncture fault (flagged July 9) closed out 10-Jul 4:45 PM** — 33.75 hrs total downtime across the two ",
       "comment": "Replace Tyre ( Puncher)"
-    },
-    {
-      "unit": "DT-244",
-      "type": "Haul Truck",
-      "status": "down",
-      "avail": "",
-      "util": "",
-      "bd_hrs": "14.75",
-      "note": "Down 14.75 hrs, \"Tyre Flat P-5.\" **",
-      "comment": "Tyre Flat P-5"
     }
   ],
   "followUps": [
     {
-      "priority": "MONITOR",
-      "title": "The three-excavator heap-day pattern (263, 1200, 340 → negative swing) i...",
+      "priority": "HIGH",
+      "title": "**DR-139 logged zero breakdown hours on both shifts for the first time s...",
       "body": "",
       "action": ""
     },
     {
+      "priority": "HIGH",
+      "title": "EX-123 stayed down a fifth straight day (\"L.H Track Off\")",
+      "body": "Excavator fleet daily availability fell sharply to 79.51% (from 88.61% MTD) — driven by EX-123 plus a new planned 500-hour service on EX-340 (4 hrs). Dump truck fleet: DT-128's tyre-puncture fault (flagged July 9) closed out July 10 at 4:45 PM; DT-244 and DT-282 both stayed down. Overall daily fleet availability held at 93.37% (MTD 91.89%), the second-best reading of the July run after July 9's 94.45%.",
+      "action": ""
+    },
+    {
       "priority": "MONITOR",
-      "title": "Block 735-178-1's recurring duplicate-value quirk (Grade Control July 8,...",
+      "title": "No new INX-SUM survey file has landed for Day 16 — the MTD survey gap he...",
       "body": "",
       "action": ""
     }
