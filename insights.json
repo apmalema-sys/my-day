@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-11T11:06:57",
+  "generatedAt": "2026-07-11T11:21:54",
   "date": "2026-07-11",
   "runNumber": 50,
   "summary": "1. No new survey file (Day 16, which would reconcile July 10) has landed, and no new Workshop Daily Task PDF for July 11 — [[survey-volume-reconciliation]] was not touched this pass. 2. **Key operational findings:** - 1. 3. July 10 was a Friday roster-break day: total production 12,958 BCM against an 11,734.6 BCM Friday-scaled target (+10.4%), all waste, zero ore for the second straight day after July 9's ore-heavy run. 2. 4. MTD total sits at 325,996 BCM against a 340,303.9 BCM target — **−4.2% vs target**, narrowing slightly from July 9's −4.7% gap on the smaller Friday-scaled target; MTD ore is essentially flat to plan (+0.3%, down sharply from July 9's +3.9% surplus) since the day contributed nothing to the ore line. 3. 5. MTD crusher stockpile throughput reached 31,042.5 LCM against the 124,000 LCM monthly plan — **25.0% of plan**, up from July 9's 23.9% but still well short of a linear day-16-of-30 pace (~53%). - **DR-139 logged zero breakdown hours on both shifts for the first time since its \"Hard breaking\" fault opened July 7** — a genuine recovery signal on the production side, though the Daily Availability Final Report side of this hasn't been directly cross-checked this pass. 6. In its place, **DR-343 opened a new fault (\"Faulty drifter\" / \"Replace Drifter\"), a full 12-hour night-shift breakdown**, confirmed identically on both the drill meters report and the availability report. - EX-123 stayed down a fifth straight day (\"L.H Track Off\"). 7. Excavator fleet daily availability fell sharply to 79.51% (from 88.61% MTD) — driven by EX-123 plus a new planned 500-hour service on EX-340 (4 hrs). 8. Dump truck fleet: DT-128's tyre-puncture fault (flagged July 9) closed out July 10 at 4:45 PM; DT-244 and DT-282 both stayed down. 9. Overall daily fleet availability held at 93.37% (MTD 91.89%), the second-best reading of the July run after July 9's 94.45%. - No new INX-SUM survey file has landed for Day 16 — the MTD survey gap headline in [[survey-volume-reconciliation]] still reflects Day 15 (through July 9, +3.03%). Following the KB's established 30-day production-month convention, July 10 is production day 16 of 30 — **14 days remaining**. **Wiki updates:** [[daily-production-report]] (Day 16 update section) and [[fleet-availability-utilization]] (July 10 Daily Availability Final Report section) updated; `Last updated` bumped to 2026-07-11 on both; `Wiki/INDEX.md` refreshed for the same two articles. Grade Control workbook not re-checked this pass (block-grid layout issue stands, unchanged since the 45th pass). Distance report not updated this pass (still populated through July 8 only). Full detail in `RAW/_INGESTED.md` under \"50th compile pass.\"",
@@ -78,6 +78,34 @@
       "actual": 22785,
       "target": 23469,
       "half": false
+    },
+    {
+      "date": "2026-07-07",
+      "label": "7 Jul",
+      "actual": 22351,
+      "target": 23469,
+      "half": false
+    },
+    {
+      "date": "2026-07-08",
+      "label": "8 Jul",
+      "actual": 23591,
+      "target": 23469,
+      "half": false
+    },
+    {
+      "date": "2026-07-09",
+      "label": "9 Jul",
+      "actual": 23467,
+      "target": 23469,
+      "half": false
+    },
+    {
+      "date": "2026-07-10",
+      "label": "10 Jul",
+      "actual": 12958,
+      "target": 11735,
+      "half": true
     }
   ],
   "fleet": {
