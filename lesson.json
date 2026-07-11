@@ -1,14 +1,15 @@
 {
-  "date": "2026-07-10",
-  "topic": "Dump Management",
-  "title": "Dump Management",
-  "body": "Run two dump projects at once without a clear priority call and you end up with an unfinished fill sitting half-done for weeks — bad for auditors, and a magnet for equipment straying into an area that was supposed to be closed out.",
+  "date": "2026-07-11",
+  "topic": "Equipment Inspection Regime (Pre-Start, Daily, LOTO)",
+  "title": "Equipment Inspection Regime (Pre-Start, Daily, LOTO)",
+  "body": "Every serious equipment incident at ADW traces back to one of three checks getting skipped or rubber-stamped: pre-start, daily inspection, or LOTO. Skip pre-start and a defect that should've been caught in the yard shows up mid-shift on an active face. Skip LOTO and you've got stored energy on a machine someone thinks is dead.",
   "keyPoints": [
-    "When two dump/fill jobs are live at once, finish the short, nearly-complete one before committing to the long one. A 2-3 day job left open while a month-long job grinds on looks worse on audit than a job that hasn't started yet.",
-    "The moment you pause work on any dump section, lock it down physically — cones, drums, tape — so equipment doesn't drift into the incomplete corner while attention is elsewhere.",
-    "New dump ramps get built top-down. The upper section has to be substantially complete before the next section opens, and a single-lane ramp needs widening before you can scale dumping volume through it.",
-    "Confirm the offset/limit boundary line is actually set and communicated before you shift crew priority between elevations — that's what lets one dump pause without blocking work on another."
+    "Pre-start is the operator's job, every shift, before the machine leaves parking or the workshop — it catches the obvious stuff, not the developing stuff.",
+    "Daily inspection is maintenance's deeper pass — fluids, hoses, electrical, GET wear, tires. This is where slow failures get caught before they become breakdowns.",
+    "LOTO is non-negotiable for anything stopped for work: identify energy sources, notify affected people, isolate, lock/tag with a personal lock, bleed stored energy, then verify before anyone touches it. This is LSR 3 — a violation trigger, not a suggestion.",
+    "GET wear caught at daily inspection is what keeps a lost-GET event from happening in the first place — the two procedures are linked, not separate concerns.",
+    "Friday is the planned maintenance window here. If you see multiple units down on a Friday A&U tab, check the Friday plan before assuming unplanned breakdown — it's usually scheduled, not a fleet health problem."
   ],
-  "apply": "If North Dump or Northwest Dump work comes up on shift, check whether the paused 950-fill corner still has its physical controls in place before anyone assumes it's clear to drive through.",
-  "generatedAt": "2026-07-10T08:22:39"
+  "apply": "If a unit shows a pre-start defect that also shows up as a defect trend in daily inspections, that's your leading indicator a specific machine needs deeper attention before it becomes a breakdown line item.",
+  "generatedAt": "2026-07-11T05:20:02"
 }
