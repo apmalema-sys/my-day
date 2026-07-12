@@ -1,15 +1,15 @@
 {
-  "date": "2026-07-11",
-  "topic": "Equipment Inspection Regime (Pre-Start, Daily, LOTO)",
-  "title": "Equipment Inspection Regime (Pre-Start, Daily, LOTO)",
-  "body": "Every serious equipment incident at ADW traces back to one of three checks getting skipped or rubber-stamped: pre-start, daily inspection, or LOTO. Skip pre-start and a defect that should've been caught in the yard shows up mid-shift on an active face. Skip LOTO and you've got stored energy on a machine someone thinks is dead.",
+  "date": "2026-07-12",
+  "topic": "Equipment Running Hours Log",
+  "title": "Equipment Running Hours Log",
+  "body": "This sheet is the raw source under the A&U workbook and the daily production report — every ratio you see in a meeting was built from these meter readings. When Emp. No or fuel entries get skipped at shift-change, the fault signal that would have caught idling or a developing hydraulic problem never surfaces until it's a breakdown line item.",
   "keyPoints": [
-    "Pre-start is the operator's job, every shift, before the machine leaves parking or the workshop — it catches the obvious stuff, not the developing stuff.",
-    "Daily inspection is maintenance's deeper pass — fluids, hoses, electrical, GET wear, tires. This is where slow failures get caught before they become breakdowns.",
-    "LOTO is non-negotiable for anything stopped for work: identify energy sources, notify affected people, isolate, lock/tag with a personal lock, bleed stored energy, then verify before anyone touches it. This is LSR 3 — a violation trigger, not a suggestion.",
-    "GET wear caught at daily inspection is what keeps a lost-GET event from happening in the first place — the two procedures are linked, not separate concerns.",
-    "Friday is the planned maintenance window here. If you see multiple units down on a Friday A&U tab, check the Friday plan before assuming unplanned breakdown — it's usually scheduled, not a fleet health problem."
+    "Diesel is fuel *issued*, not fuel *burned* — a unit can log large liters against zero hours (parked top-up) or low hours against high liters (idling or an early fault). Neither shows up in the A&U breakdown column. Check L/hr per unit, not just fleet totals.",
+    "Truck fleet carries ~60% of both hours and diesel on a normal day — 330-395 machine-hours, 25,000-29,000 L. If truck idling drops even 5%, that's roughly 1,300 L/day back.",
+    "The Emp. No column is the only place a named operator ties directly to a machine and shift. When an NCR or incident references a unit and time, this log tells you who was on it — pull it before you write the report, not after.",
+    "Zero-hour rows (Start = Stop) mean the unit didn't run — cross-check against the A&U breakdown-vs-standby split before assuming it was down. Roster-break Fridays and Eid-type holidays produce the same flat reading as a real fault.",
+    "Totals-row formulas can be wrong even when the sheet looks complete — one excavator diesel block was off by 1,940 L against its own row sum. Don't trust the summary cell blind; spot-check against the per-unit rows."
   ],
-  "apply": "If a unit shows a pre-start defect that also shows up as a defect trend in daily inspections, that's your leading indicator a specific machine needs deeper attention before it becomes a breakdown line item.",
-  "generatedAt": "2026-07-11T05:20:02"
+  "apply": "If you're reviewing yesterday's shift handover, pull the running-hours tab alongside it — a unit burning fuel with flat hours is often the earliest tell on a fault before it hits the breakdown log.",
+  "generatedAt": "2026-07-12T05:29:06"
 }
