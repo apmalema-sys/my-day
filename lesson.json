@@ -1,15 +1,15 @@
 {
-  "date": "2026-07-12",
-  "topic": "Equipment Running Hours Log",
-  "title": "Equipment Running Hours Log",
-  "body": "This sheet is the raw source under the A&U workbook and the daily production report — every ratio you see in a meeting was built from these meter readings. When Emp. No or fuel entries get skipped at shift-change, the fault signal that would have caught idling or a developing hydraulic problem never surfaces until it's a breakdown line item.",
+  "date": "2026-07-13",
+  "topic": "Fleet Availability and Utilization",
+  "title": "Fleet Availability and Utilization",
+  "body": "At ADW the constraint is rarely broken iron — dump trucks and primary excavators run availability in the 90s while utilization lags 15–25 points behind. That gap is recoverable production sitting idle, and an available excavator standing still costs the same lost BCM as a broken one, minus the repair bill.",
   "keyPoints": [
-    "Diesel is fuel *issued*, not fuel *burned* — a unit can log large liters against zero hours (parked top-up) or low hours against high liters (idling or an early fault). Neither shows up in the A&U breakdown column. Check L/hr per unit, not just fleet totals.",
-    "Truck fleet carries ~60% of both hours and diesel on a normal day — 330-395 machine-hours, 25,000-29,000 L. If truck idling drops even 5%, that's roughly 1,300 L/day back.",
-    "The Emp. No column is the only place a named operator ties directly to a machine and shift. When an NCR or incident references a unit and time, this log tells you who was on it — pull it before you write the report, not after.",
-    "Zero-hour rows (Start = Stop) mean the unit didn't run — cross-check against the A&U breakdown-vs-standby split before assuming it was down. Roster-break Fridays and Eid-type holidays produce the same flat reading as a real fault.",
-    "Totals-row formulas can be wrong even when the sheet looks complete — one excavator diesel block was off by 1,940 L against its own row sum. Don't trust the summary cell blind; spot-check against the per-unit rows."
+    "Read availability against utilization, never utilization alone. High avail + low util is a sequencing or dispatch problem you can fix today; low avail + low util belongs to the workshop. The two demand different responses.",
+    "Start at the summary block — the seven-fleet roll-up tells you which fleet is the day's constraint in one view before you dig into unit rows.",
+    "For available-but-idle fleets, the standby reason columns are the diagnosis: \"no job,\" \"no material,\" \"no location,\" and \"waiting for GC\" separate dispatch problems from face-access and loading-chain problems.",
+    "Don't run a machine on restarts between fault windows. EX-263 accumulated 144+ breakdown hours on the same hydraulic fault before anyone ordered a workshop strip — a recurring fault that survives three days of quick fixes needs to come out of the dig plan for root cause.",
+    "Watch the quiet fleets: water bowser and grader utilization feed straight into dust, visibility, and haul-road condition — their weakness shows up as everyone else's cycle-time loss."
   ],
-  "apply": "If you're reviewing yesterday's shift handover, pull the running-hours tab alongside it — a unit burning fuel with flat hours is often the earliest tell on a fault before it hits the breakdown log.",
-  "generatedAt": "2026-07-12T05:29:06"
+  "apply": "Drill fleet availability hit 70.83% yesterday — the July low — with DR-343 on a full 24-hour breakdown and DR-297 leaking hydraulics into the drifter; check whether those two are getting root-cause attention or just restart attempts.",
+  "generatedAt": "2026-07-13T07:23:01"
 }
