@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-07-13T17:06:35",
+  "generatedAt": "2026-07-13T17:11:39",
   "date": "2026-07-13",
-  "runNumber": 56,
-  "summary": "1. No new July 13 Client Meeting Report, Daily Availability Final Report, Block Info, Drill Meters, A&U, or DPR has landed. 2. Key operational findings: 1. 3. The Day 18 survey file (reconciling July 12) reads tally 23,126 BCM against survey 31,134 BCM — a +8,008 BCM (+25.7%) gap, the sharpest one-day reversal of the July run coming directly off Day 17's −49.9% low, and the strongest positive read since Day 9's +29.9%. 2. 4. MTD survey cushion widens from Day 17's thin +0.97% to +2.96% (trucks 374,697 BCM / survey 386,141 BCM), nearly tripling back up on the strength of the single day. 3. 5. Day 18's comment field (\"EXC 6020 (340) loading on heap +4 meters area and EXC 1200 loading outside the survey calculation area\") is word-for-word identical to Day 17's comment despite the two days reading opposite-signed swings (−49.9% vs +25.7%) — flagged as a likely stale copy-paste in the source workbook rather than a genuinely repeated loading pattern, not resolved this pass. 6. No new production or fleet workbook landed for July 13 as of this pass. 7. The dashboard's production KPIs (MTD BCM vs target, crusher stockpile throughput, days remaining) and the fleet availability table remain unchanged from the 55th pass's July 12 figures. 8. The Equipment running hours workbook's Jul-(12) tab landed (mtime 10:37) and the Grade Control workbook was re-saved (mtime 10:51, same standing block-grid layout issue since the 45th pass) — both registered in `_INGESTED.md` but out of scope for this dashboard-scoped task, deferred to a full compile pass. 9. Following the KB's established 30-day production-month convention, July 12 remains production day 18 of 30 — 12 days remaining. Wiki updates: [[survey-volume-reconciliation]] (Day 18 section, MTD gap headline) and [[daily-production-report]] (Day 18 survey-lands addendum) updated; `Last updated` bumped to 2026-07-13 on both; `Wiki/INDEX.md` refreshed for the same two articles. [[fleet-availability-utilization]] not touched (no new Daily Availability Final Report this pass). Full detail in `RAW/_INGESTED.md` under \"56th compile pass.\" ---",
+  "runNumber": 57,
+  "summary": "1. Key operational findings: Water infiltration in the 735 area now caps Stage 4 mining at 350 BCM/day — the tightest constraint figure logged in this KB to date. 2. A pump is being considered but installing it requires stopping mining first; plan is to finish the 735 area over the next two days, then pump out. 3. Wednesday's blast plan firms up: 510 and 517 in the morning, Stage 4 stops after the 510 shot to transfer machines top-side and opportunistically clear the switchback 2A single end. 4. The 164 block is flagged the top drilling/blasting priority on cost-exposure grounds. 5. DR-343's standing \"Faulty Drifter\" breakdown (open since July 11) now has a scheduled fix: a SANDVIK technician drifter overhaul running 13-19 July, per the newly-read FCST Week 29-30 production forecast — the rig is planned at 12.2% availability for Week 29 (the overhaul window) recovering to 85.4% for Week 30. 6. Equipment running hours, July 12: dump-truck fleet fell to 415.8 hrs on 30,593 L diesel — down 18.3 hrs from July 11 despite burning 1,381 L more, a worse liters-per-hour ratio worth watching. 7. Drill rigs rose to 114 hrs (night-heavy), consistent with the fleet's July 12 availability recovery. 8. Grade Control's July 12 row doesn't reconcile cleanly against Block Info's per-block total for 735-186-1 — same standing block-grid layout issue since the 45th pass, not resolved this pass. 9. A second, previously-unregistered copy of the July Distance report has appeared at a new top-level RAW path (outside the `July 26/` subfolder every other daily workbook has used) and is already populated through July 12 (ore 3.84 km / waste 3.18 km / overall 3.24 km average haul, 374,697 BCM MTD) while the original `July 26/` copy remains stuck at July 11 data. New NCR: HSEQ-NCR-ADW-26-016, a camp bus-park physical altercation between two dump-truck operators (Afraz Azam, Jaffer Vengat) during lunch break on July 12 — the first non-operational-area conduct NCR in the corpus and the first naming two co-respondent operators. Following the KB's 30-day production-month convention, July 12 remains production day 18 of 30 — 12 days remaining. Wiki updates: [[equipment-running-hours-log]], [[fleet-availability-utilization]], [[july-2026-forecast]], [[blasting-and-drilling]], [[ncr-patterns]], and [[daily-production-report]] all updated with new dated sections; all six `Last updated` bumped to 2026-07-13 (57th pass); `Wiki/INDEX.md` refreshed for the same six articles. [[survey-volume-reconciliation]] not touched (already current from the 56th pass). Full detail in `RAW/_INGESTED.md` under \"57th compile pass.\" ---",
   "kpis": [
     {
       "label": "MTD BCM",
@@ -193,19 +193,31 @@
   "followUps": [
     {
       "priority": "MONITOR",
-      "title": "No new production or fleet workbook landed for July 13 as of this pass",
-      "body": "The dashboard's production KPIs (MTD BCM vs target, crusher stockpile throughput, days remaining) and the fleet availability table remain unchanged from the 55th pass's July 12 figures.",
-      "action": ""
-    },
-    {
-      "priority": "MONITOR",
-      "title": "The Equipment running hours workbook's Jul-(12) tab landed (mtime 10:37)...",
+      "title": "Wednesday's blast plan firms up: 510 and 517 in the morning, Stage 4 sto...",
       "body": "",
       "action": ""
     },
     {
       "priority": "MONITOR",
-      "title": "Following the KB's established 30-day production-month convention, July ...",
+      "title": "DR-343's standing \"Faulty Drifter\" breakdown (open since July 11) now ha...",
+      "body": "",
+      "action": ""
+    },
+    {
+      "priority": "MONITOR",
+      "title": "Equipment running hours, July 12: dump-truck fleet fell to **415.8 hrs o...",
+      "body": "",
+      "action": ""
+    },
+    {
+      "priority": "MONITOR",
+      "title": "Grade Control's July 12 row doesn't reconcile cleanly against Block Info...",
+      "body": "",
+      "action": ""
+    },
+    {
+      "priority": "MONITOR",
+      "title": "**A second, previously-unregistered copy of the July Distance report has...",
       "body": "",
       "action": ""
     }
