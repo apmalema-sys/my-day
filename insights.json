@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-07-13T12:02:00",
+  "generatedAt": "2026-07-13T17:06:35",
   "date": "2026-07-13",
-  "runNumber": 55,
-  "summary": "1. No new survey file (Day 18, which would reconcile July 12) has landed, and the Distance report, Equipment running hours workbook, and Grade Control workbook were not updated this pass. 2. Key operational findings: 1. 3. July 12 total production reached 23,126 BCM against a 23,469.2 BCM target — essentially flat (-1.5%), but the composition is unusual: ore beat its target by 279% (6,913 BCM vs 1,822.0 BCM), the largest ore beat of the July run, while waste missed by 25.1% (16,213 BCM vs 21,647.2 BCM), the deepest single-day waste shortfall of the month. 2. 4. MTD total sits at 374,697 BCM against a 387,242.4 BCM target — -3.2% vs target, narrowing slightly from July 11's -3.4% gap; MTD ore surplus jumped to +20.1% (from +3.4%) on the day's ore beat, while the MTD waste deficit widened to -5.2%. 3. 5. MTD crusher stockpile throughput reached 34,276.5 LCM against the 124,000 LCM monthly plan — 27.6% of plan, still well short of a linear day-18-of-30 pace (~60%). 6. Motor Grader daily availability crashed to 56.25%, the lowest single-fleet reading of the day — the fleet is a single unit (MG-266), and a new \"Hyd Hose Leak\" hydraulic breakdown (10.5 hrs, 7:00 AM-5:30 PM) took the whole category well under the report's 85% target line. 7. Two new major dump-truck faults: DT-108 (\"Check Brake System, C/O Brake Pedal\") ran 15.5 hrs down, 35.42% avail — the lowest single-truck reading of the day; DT-130 (\"Tyre Puncture P-6\") went fully Down, 0.00% avail, opened 5:30 AM, still no Date Out at report time. 8. DR-297 recovers: the drifter was replaced (2:00-5:00 PM planned stop), clearing the \"Oil leaks\" fault that had cut it to 56.25% avail on July 11 — this report shows 85.42% avail. 9. DR-343 remains down, now day 3 of its \"Faulty Drifter\" breakdown (opened July 11, 5:30 AM), still no Date Out — the longest-running open drill fault in the July dataset. Drilling missed its 2,722.0 m target for a second straight day (-10.3%), though fleet avail, utilization, and average penetration all recovered sharply from July 11's readings. EX-123 stayed down a seventh straight day (\"L.H Track Off\"). Two new excavator faults: EX-262 (\"Check Grease System,\" 5 hrs) and EX-263 (\"Noise From Engine Fan,\" 4 hrs, carrying into July 13). Overall fleet daily availability eased to 89.41% (MTD 91.65%), down from July 11's 91.52%. No new INX-SUM survey file has landed for Day 18 — the MTD survey gap headline in [[survey-volume-reconciliation]] still reflects Day 17 (through July 11, +0.97%). Following the KB's established 30-day production-month convention, July 12 is production day 18 of 30 — 12 days remaining. The \"Weekly Plan WTD\" line in the Client Meeting Report (131,068 BCM) did not reset to the daily total on what should be a new-week boundary — flagged as a possible data-lag artifact in the source workbook, not resolved this pass. Wiki updates: [[daily-production-report]] (Day 18 update section) and [[fleet-availability-utilization]] (July 12 Daily Availability Final Report section) updated; `Last updated` bumped to 2026-07-13 on both; `Wiki/INDEX.md` refreshed for the same two articles. Grade Control workbook not re-checked this pass (block-grid layout issue stands, unchanged since the 45th pass). Distance report and Equipment running hours not updated this pass. Workshop Daily Task 13-Jul-2026.pdf and the FCST 2-week forecast workbook (Week 29+30) registered at index level only, out of scope for this task. Full detail in `RAW/_INGESTED.md` under \"55th compile pass.\"",
+  "runNumber": 56,
+  "summary": "1. No new July 13 Client Meeting Report, Daily Availability Final Report, Block Info, Drill Meters, A&U, or DPR has landed. 2. Key operational findings: 1. 3. The Day 18 survey file (reconciling July 12) reads tally 23,126 BCM against survey 31,134 BCM — a +8,008 BCM (+25.7%) gap, the sharpest one-day reversal of the July run coming directly off Day 17's −49.9% low, and the strongest positive read since Day 9's +29.9%. 2. 4. MTD survey cushion widens from Day 17's thin +0.97% to +2.96% (trucks 374,697 BCM / survey 386,141 BCM), nearly tripling back up on the strength of the single day. 3. 5. Day 18's comment field (\"EXC 6020 (340) loading on heap +4 meters area and EXC 1200 loading outside the survey calculation area\") is word-for-word identical to Day 17's comment despite the two days reading opposite-signed swings (−49.9% vs +25.7%) — flagged as a likely stale copy-paste in the source workbook rather than a genuinely repeated loading pattern, not resolved this pass. 6. No new production or fleet workbook landed for July 13 as of this pass. 7. The dashboard's production KPIs (MTD BCM vs target, crusher stockpile throughput, days remaining) and the fleet availability table remain unchanged from the 55th pass's July 12 figures. 8. The Equipment running hours workbook's Jul-(12) tab landed (mtime 10:37) and the Grade Control workbook was re-saved (mtime 10:51, same standing block-grid layout issue since the 45th pass) — both registered in `_INGESTED.md` but out of scope for this dashboard-scoped task, deferred to a full compile pass. 9. Following the KB's established 30-day production-month convention, July 12 remains production day 18 of 30 — 12 days remaining. Wiki updates: [[survey-volume-reconciliation]] (Day 18 section, MTD gap headline) and [[daily-production-report]] (Day 18 survey-lands addendum) updated; `Last updated` bumped to 2026-07-13 on both; `Wiki/INDEX.md` refreshed for the same two articles. [[fleet-availability-utilization]] not touched (no new Daily Availability Final Report this pass). Full detail in `RAW/_INGESTED.md` under \"56th compile pass.\" ---",
   "kpis": [
     {
       "label": "MTD BCM",
@@ -12,7 +12,7 @@
     },
     {
       "label": "Survey Gap",
-      "value": "+1.0%",
+      "value": "+3.0%",
       "delta": "survey vs trucks MTD",
       "good": true
     },
@@ -24,7 +24,7 @@
     },
     {
       "label": "Days Remain",
-      "value": "13",
+      "value": "12",
       "delta": "",
       "good": null
     }
@@ -160,114 +160,52 @@
   },
   "equipment": [
     {
-      "unit": "DT-108",
-      "type": "Haul Truck",
-      "status": "warning",
-      "avail": "35.42%",
-      "util": "",
-      "bd_hrs": "15.5",
-      "note": "new major fault: \"Check Brake System (C/O Brake Pedal),\"** Brake System breakdown, 15.5 hrs, 35.42% avail — th",
-      "comment": "Check Brake System ( C/O Brake  Pedal )"
-    },
-    {
-      "unit": "DT-130",
-      "type": "Haul Truck",
-      "status": "warning",
-      "avail": "0.00%",
-      "util": "",
-      "bd_hrs": "",
-      "note": "new fault: \"Tyre Puncture P-6,\"** Down status, 0.00% avail, opened 12-Jul 5:30 AM, no Date Out. **",
-      "comment": "Tyre Puncture P-6"
-    },
-    {
       "unit": "DR-297",
       "type": "Drill",
-      "status": "warning",
-      "avail": "56.25%",
+      "status": "down",
+      "avail": "",
       "util": "",
       "bd_hrs": "",
-      "note": "recovers**: the fault that cut it to 56.25% avail on July 11 clears — this report shows a planned \"Replace Dri",
+      "note": "'s meter readings confirm its drifter replacement (7 day + 10 night hours against the 2:00-5:00 PM stop alread",
       "comment": ""
+    },
+    {
+      "unit": "DR-343",
+      "type": "Drill",
+      "status": "scheduled",
+      "avail": "12.2%",
+      "util": "",
+      "bd_hrs": "",
+      "note": "'s \"Faulty Drifter\" fault now has a scheduled fix — a SANDVIK technician drifter overhaul running 13-19 July, ",
+      "comment": "Faulty Drifter"
     },
     {
       "unit": "EX-123",
       "type": "Excavator",
       "status": "down",
-      "avail": "0.00%",
+      "avail": "",
       "util": "",
       "bd_hrs": "",
-      "note": "stays down a seventh straight day** — 24 DT hrs, 0.00% avail, \"L.H Track Off (Track Tension Damage),\" still op",
+      "note": "both show frozen meters (0 hours both shifts), consistent with their standing breakdowns.",
       "comment": "L.H Track Off ( Track  Tienson  Damage )"
-    },
-    {
-      "unit": "EX-262",
-      "type": "Excavator",
-      "status": "warning",
-      "avail": "79.17%",
-      "util": "",
-      "bd_hrs": "5",
-      "note": "new fault**: a breakdown-tagged daily inspection plus \"Check Grease System\" lubrication stop, both 8:45 AM-1:4",
-      "comment": "Check Grease System"
-    },
-    {
-      "unit": "EX-263",
-      "type": "Excavator",
-      "status": "warning",
-      "avail": "83.33%",
-      "util": "",
-      "bd_hrs": "4",
-      "note": "new fault: \"Noise From Engine Fan,\"** Engine breakdown, night shift, 12-Jul 11:00 PM through 13-Jul 3:00 AM (4",
-      "comment": "Noise From Engine Fan"
-    },
-    {
-      "unit": "EX-247",
-      "type": "Excavator",
-      "status": "down",
-      "avail": "97.92%",
-      "util": "",
-      "bd_hrs": "1",
-      "note": "each logged a single planned daily-check window (0.5-1 hr, 95.83-97.92% avail)",
-      "comment": ""
-    },
-    {
-      "unit": "EX-253",
-      "type": "Excavator",
-      "status": "down",
-      "avail": "97.92%",
-      "util": "",
-      "bd_hrs": "1",
-      "note": "each logged a single planned daily-check window (0.5-1 hr, 95.83-97.92% avail)",
-      "comment": ""
     }
   ],
   "followUps": [
     {
-      "priority": "HIGH",
-      "title": "**Two new major dump-truck faults**: DT-108 (\"Check Brake System, C/O Br...",
-      "body": "",
-      "action": ""
-    },
-    {
-      "priority": "HIGH",
-      "title": "**DR-297 recovers**: the drifter was replaced (2:00-5:00 PM planned stop...",
-      "body": "",
+      "priority": "MONITOR",
+      "title": "No new production or fleet workbook landed for July 13 as of this pass",
+      "body": "The dashboard's production KPIs (MTD BCM vs target, crusher stockpile throughput, days remaining) and the fleet availability table remain unchanged from the 55th pass's July 12 figures.",
       "action": ""
     },
     {
       "priority": "MONITOR",
-      "title": "**Motor Grader daily availability crashed to 56.25%, the lowest single-f...",
+      "title": "The Equipment running hours workbook's Jul-(12) tab landed (mtime 10:37)...",
       "body": "",
       "action": ""
     },
     {
       "priority": "MONITOR",
-      "title": "EX-123 stayed down a seventh straight day (\"L.H Track Off\")",
-      "body": "Two new excavator faults: EX-262 (\"Check Grease System,\" 5 hrs) and EX-263 (\"Noise From Engine Fan,\" 4 hrs, carrying into July 13). Overall fleet daily availability eased to 89.41% (MTD 91.65%), down from July 11's 91.52%.",
-      "action": ""
-    },
-    {
-      "priority": "MONITOR",
-      "title": "No new INX-SUM survey file has landed for Day 18 — the MTD survey gap he...",
+      "title": "Following the KB's established 30-day production-month convention, July ...",
       "body": "",
       "action": ""
     }
