@@ -1,15 +1,14 @@
 {
-  "date": "2026-07-13",
-  "topic": "Fleet Availability and Utilization",
-  "title": "Fleet Availability and Utilization",
-  "body": "At ADW the constraint is rarely broken iron — dump trucks and primary excavators run availability in the 90s while utilization lags 15–25 points behind. That gap is recoverable production sitting idle, and an available excavator standing still costs the same lost BCM as a broken one, minus the repair bill.",
+  "date": "2026-07-14",
+  "topic": "Geotechnical Risk Register",
+  "title": "Geotechnical Risk Register",
+  "body": "When operations treats the GT risk register as \"geo's paperwork\" instead of a live production constraint, equipment ends up working under walls that are actively being scaled or monitored for movement — that's how a rockfall hazard becomes a struck-by incident instead of a controlled closeout.",
   "keyPoints": [
-    "Read availability against utilization, never utilization alone. High avail + low util is a sequencing or dispatch problem you can fix today; low avail + low util belongs to the workshop. The two demand different responses.",
-    "Start at the summary block — the seven-fleet roll-up tells you which fleet is the day's constraint in one view before you dig into unit rows.",
-    "For available-but-idle fleets, the standby reason columns are the diagnosis: \"no job,\" \"no material,\" \"no location,\" and \"waiting for GC\" separate dispatch problems from face-access and loading-chain problems.",
-    "Don't run a machine on restarts between fault windows. EX-263 accumulated 144+ breakdown hours on the same hydraulic fault before anyone ordered a workshop strip — a recurring fault that survives three days of quick fixes needs to come out of the dig plan for root cause.",
-    "Watch the quiet fleets: water bowser and grader utilization feed straight into dust, visibility, and haul-road condition — their weakness shows up as everyone else's cycle-time loss."
+    "The register scores every hazard twice — before and after controls — on the same 1–5 scale as an IBRA. Nine of 29 original hazards started Extreme; after controls, only four stay at Medium residual risk (900-level crests and switchback joint-plane areas). Those four are still open — check them on a wall walk, don't assume \"controlled\" means \"closed.\"",
+    "Two new hazards landed in the June update: HZ030 (Stage 4 catchment berm, not yet built — status \"in progress\") and HZ031 (fractured final wall, 780–770RL, scored Extreme — the first new Extreme hazard since the register was issued). Wall scaling on HZ031 is already underway.",
+    "The recurring controls are simple and repeatable: no-go/exclusion zones, 2 m bunds set back 15–20 m from the toe, no parking or stopping along the ramp or wall, and a spotter when mining near a no-go zone. If you see equipment parked tight against a wall with an open hazard, that's a direct control breach, not a judgment call.",
+    "Four systemic gaps (HZ009–HZ012) sit above individual hazards — missing geotechnical sign-off before mining, no post-scaling assessment, no final-wall acceptance form, and blast design that doesn't factor in geotech input. These are why hazards keep recurring instead of getting designed out."
   ],
-  "apply": "Drill fleet availability hit 70.83% yesterday — the July low — with DR-343 on a full 24-hour breakdown and DR-297 leaking hydraulics into the drifter; check whether those two are getting root-cause attention or just restart attempts.",
-  "generatedAt": "2026-07-13T07:23:01"
+  "apply": "HZ031's wall scaling on 780–770RL sits directly above the 770-177 loading faces — if EX-123 or EX-253 are working that bench, confirm the exclusion zone below the wall is actually enforced, not just documented.",
+  "generatedAt": "2026-07-14T05:16:53"
 }
