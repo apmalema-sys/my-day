@@ -1,15 +1,9 @@
 {
-  "generatedAt": "2026-07-13T17:11:39",
-  "date": "2026-07-13",
-  "runNumber": 57,
-  "summary": "1. Key operational findings: Water infiltration in the 735 area now caps Stage 4 mining at 350 BCM/day — the tightest constraint figure logged in this KB to date. 2. A pump is being considered but installing it requires stopping mining first; plan is to finish the 735 area over the next two days, then pump out. 3. Wednesday's blast plan firms up: 510 and 517 in the morning, Stage 4 stops after the 510 shot to transfer machines top-side and opportunistically clear the switchback 2A single end. 4. The 164 block is flagged the top drilling/blasting priority on cost-exposure grounds. 5. DR-343's standing \"Faulty Drifter\" breakdown (open since July 11) now has a scheduled fix: a SANDVIK technician drifter overhaul running 13-19 July, per the newly-read FCST Week 29-30 production forecast — the rig is planned at 12.2% availability for Week 29 (the overhaul window) recovering to 85.4% for Week 30. 6. Equipment running hours, July 12: dump-truck fleet fell to 415.8 hrs on 30,593 L diesel — down 18.3 hrs from July 11 despite burning 1,381 L more, a worse liters-per-hour ratio worth watching. 7. Drill rigs rose to 114 hrs (night-heavy), consistent with the fleet's July 12 availability recovery. 8. Grade Control's July 12 row doesn't reconcile cleanly against Block Info's per-block total for 735-186-1 — same standing block-grid layout issue since the 45th pass, not resolved this pass. 9. A second, previously-unregistered copy of the July Distance report has appeared at a new top-level RAW path (outside the `July 26/` subfolder every other daily workbook has used) and is already populated through July 12 (ore 3.84 km / waste 3.18 km / overall 3.24 km average haul, 374,697 BCM MTD) while the original `July 26/` copy remains stuck at July 11 data. New NCR: HSEQ-NCR-ADW-26-016, a camp bus-park physical altercation between two dump-truck operators (Afraz Azam, Jaffer Vengat) during lunch break on July 12 — the first non-operational-area conduct NCR in the corpus and the first naming two co-respondent operators. Following the KB's 30-day production-month convention, July 12 remains production day 18 of 30 — 12 days remaining. Wiki updates: [[equipment-running-hours-log]], [[fleet-availability-utilization]], [[july-2026-forecast]], [[blasting-and-drilling]], [[ncr-patterns]], and [[daily-production-report]] all updated with new dated sections; all six `Last updated` bumped to 2026-07-13 (57th pass); `Wiki/INDEX.md` refreshed for the same six articles. [[survey-volume-reconciliation]] not touched (already current from the 56th pass). Full detail in `RAW/_INGESTED.md` under \"57th compile pass.\" ---",
+  "generatedAt": "2026-07-14T11:06:37",
+  "date": "2026-07-14",
+  "runNumber": null,
+  "summary": "1. 2026-07-14 (Task Feedback Log pass) — 9 entries processed: two open questions resolved, the 2026-07-08 audit-closure mismatch closed out clean Lightweight feedback-log loop (not a full compile pass) — pulled the Notion Task Feedback Log, found 9 rows unprocessed (none tagged \"New,\" same gap in the row-creation flow noted on 2026-07-08; identified instead by absence of \"Processed\" status). 2. All 9 linked Tasks Database rows are already Status = Done. 3. Reviewed each and cross-checked against open KB questions. 4. Two open questions resolved directly from this pass: Internal Audit Phase 1, findings 3/5/8 (electrical installation, emergency stop switch, pedestrian signage) — the question left open on 2026-07-08 after a mismatched Task Feedback Log answer got a closure task marked Done incorrectly. 5. Peter's new feedback answers it directly: \"Electrical installation done, emergency stop switch installed and working, and haul-road pedestrian signage installed.\" All three physical safety items now confirmed closed. 6. Duplicate July Distance report workbook paths (top-level copy vs. the standing `July 26/` copy, flagged 57th pass 2026-07-13) — Peter confirmed: \"It was a file saving error, but the file has been moved to July 26.\" `July 26/` remains the single authoritative path; no dual-path tracking needed going forward. 7. Updated [[daily-production-report]] Open Questions. 8. Other 7 entries reviewed, no KB action needed (confirmations of already-Done tasks, no open question attached): quarterly inspection completed 9am (waiting on the separate close-outs report, not this task); road condition/tire-suspension cost escalation to HO — done; Richard's salary followed up with HR — done, email sent with timesheets attached; block 511 high-wall access investigated with JRAR Drilling Supervisor Malulu — mining continues until hard remain area is exposed, drilled and blasted; Michael Verselder's arrival date query — handed to HR, not Peter's scope; EHSS training-calendar names — handed to Safety Department, not Peter's scope; EX-123 parts-outage capacity replan — EX-1200 covering EX-123, EX-247 covering a sprocket issue on EX-253. 9. All 9 Task Feedback Log rows marked Processed in Notion. No new mismatches found this pass (contrast with 2026-07-08, which caught one).",
   "kpis": [
-    {
-      "label": "MTD BCM",
-      "value": "374,697",
-      "delta": "-3.2% vs target",
-      "good": false
-    },
     {
       "label": "Survey Gap",
       "value": "+3.0%",
@@ -18,8 +12,8 @@
     },
     {
       "label": "Crusher MTD",
-      "value": "28%",
-      "delta": "34,276 / 124,000 LCM",
+      "value": "30%",
+      "delta": "37,400 / 124,000 LCM",
       "good": null
     },
     {
@@ -120,14 +114,21 @@
       "actual": 23126,
       "target": 23469,
       "half": false
+    },
+    {
+      "date": "2026-07-13",
+      "label": "13 Jul",
+      "actual": 21979,
+      "target": 23469,
+      "half": false
     }
   ],
   "fleet": {
-    "exAvail": "90.4%",
+    "exAvail": "96.9%",
     "exUnits": 6,
-    "dtAvail": "95.2%",
-    "dtUnits": 22,
-    "availMtd": "86.63%",
+    "dtAvail": "98.0%",
+    "dtUnits": 21,
+    "availMtd": "90.04%",
     "excavators": [
       {
         "unit": "EX-340",
@@ -135,89 +136,139 @@
       },
       {
         "unit": "EX-262",
-        "avail": "79.2%"
+        "avail": "97.9%"
       },
       {
         "unit": "EX-253",
-        "avail": "95.8%"
+        "avail": null
       },
       {
         "unit": "EX-263",
-        "avail": "83.3%"
+        "avail": "97.9%"
       },
       {
         "unit": "EX-247",
-        "avail": "97.9%"
+        "avail": "95.8%"
       },
       {
         "unit": "EX-1200",
         "avail": null
       }
     ],
-    "exBasis": "5/6",
-    "pdfDate": "12-07",
-    "dtBasis": "22 active ≥8h"
+    "exBasis": "4/6",
+    "pdfDate": "13-07",
+    "dtBasis": "21 active ≥8h"
   },
   "equipment": [
     {
-      "unit": "DR-297",
-      "type": "Drill",
-      "status": "down",
+      "unit": "LV-048",
+      "type": "",
+      "status": "warning",
       "avail": "",
       "util": "",
       "bd_hrs": "",
-      "note": "'s meter readings confirm its drifter replacement (7 day + 10 night hours against the 2:00-5:00 PM stop alread",
-      "comment": ""
-    },
-    {
-      "unit": "DR-343",
-      "type": "Drill",
-      "status": "scheduled",
-      "avail": "12.2%",
-      "util": "",
-      "bd_hrs": "",
-      "note": "'s \"Faulty Drifter\" fault now has a scheduled fix — a SANDVIK technician drifter overhaul running 13-19 July, ",
-      "comment": "Faulty Drifter"
+      "note": "'s \"A/C Not Working\" plus \"Wheel Bearing and Front Hub Seal Leak\" fault closes out 14-Jul 3:30 AM after openin",
+      "comment": "A/C Not Working"
     },
     {
       "unit": "EX-123",
       "type": "Excavator",
       "status": "down",
+      "avail": "0.00%",
+      "util": "",
+      "bd_hrs": "",
+      "note": "stays down an eighth straight day** — 27 DT hrs, 0.00% avail, \"L.H Track Off (Track Tension Damage),\" still op",
+      "comment": "L.H Track Off ( Track  Tienson  Damage )"
+    },
+    {
+      "unit": "EX-247",
+      "type": "Excavator",
+      "status": "down",
+      "avail": "95.83%",
+      "util": "",
+      "bd_hrs": "1",
+      "note": "(0.5-1 hr, 95.83% avail, \"Daily Check\" plus a \"Coolant Level Low\" note)",
+      "comment": "Coolant Level Low"
+    },
+    {
+      "unit": "EX-262",
+      "type": "Excavator",
+      "status": "down",
+      "avail": "97.92%",
+      "util": "",
+      "bd_hrs": "0.5",
+      "note": "(0.5 hr each, 97.92% avail, daily checks)",
+      "comment": ""
+    },
+    {
+      "unit": "EX-263",
+      "type": "Excavator",
+      "status": "down",
+      "avail": "97.92%",
+      "util": "",
+      "bd_hrs": "0.5",
+      "note": "(0.5 hr each, 97.92% avail, daily checks)",
+      "comment": ""
+    },
+    {
+      "unit": "EX-340",
+      "type": "Excavator",
+      "status": "down",
+      "avail": "95.83%",
+      "util": "",
+      "bd_hrs": "1",
+      "note": "(1 hr, 95.83% avail, daily check).",
+      "comment": ""
+    },
+    {
+      "unit": "DT-108",
+      "type": "Haul Truck",
+      "status": "warning",
       "avail": "",
       "util": "",
       "bd_hrs": "",
-      "note": "both show frozen meters (0 hours both shifts), consistent with their standing breakdowns.",
-      "comment": "L.H Track Off ( Track  Tienson  Damage )"
+      "note": "'s new fault logged above), with replacement parts sourced from Zaheer carrying a 6-month lead time — the team",
+      "comment": "L.H.F Suspension Leak"
+    },
+    {
+      "unit": "DT-129",
+      "type": "Haul Truck",
+      "status": "scheduled",
+      "avail": "4.17%",
+      "util": "",
+      "bd_hrs": "23",
+      "note": "new fault: \"250 H Service\" plus \"Tyres Press Low,\"** 23 hrs, 4.17% avail. **",
+      "comment": ""
     }
   ],
   "followUps": [
     {
-      "priority": "MONITOR",
-      "title": "Wednesday's blast plan firms up: 510 and 517 in the morning, Stage 4 sto...",
+      "priority": "HIGH",
+      "title": "MTD position holds at -3.4% vs target (unchanged from July 12), but the ...",
+      "body": "",
+      "action": ""
+    },
+    {
+      "priority": "HIGH",
+      "title": "Drilling beat target for the first time since July 9: 3,048 m against a ...",
+      "body": "",
+      "action": ""
+    },
+    {
+      "priority": "HIGH",
+      "title": "**Tire and suspension spend has run 600,000 SAR over the last two months...",
+      "body": "",
+      "action": ""
+    },
+    {
+      "priority": "HIGH",
+      "title": "Two long-standing faults finally closed: **T-007's transmission oil leak...",
       "body": "",
       "action": ""
     },
     {
       "priority": "MONITOR",
-      "title": "DR-343's standing \"Faulty Drifter\" breakdown (open since July 11) now ha...",
-      "body": "",
-      "action": ""
-    },
-    {
-      "priority": "MONITOR",
-      "title": "Equipment running hours, July 12: dump-truck fleet fell to **415.8 hrs o...",
-      "body": "",
-      "action": ""
-    },
-    {
-      "priority": "MONITOR",
-      "title": "Grade Control's July 12 row doesn't reconcile cleanly against Block Info...",
-      "body": "",
-      "action": ""
-    },
-    {
-      "priority": "MONITOR",
-      "title": "**A second, previously-unregistered copy of the July Distance report has...",
+      "title": "**EX-123 stays down an eighth straight day** (\"L.H Track Off,\" open sinc...",
       "body": "",
       "action": ""
     }
