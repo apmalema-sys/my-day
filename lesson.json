@@ -1,14 +1,15 @@
 {
-  "date": "2026-07-14",
-  "topic": "Geotechnical Risk Register",
-  "title": "Geotechnical Risk Register",
-  "body": "When operations treats the GT risk register as \"geo's paperwork\" instead of a live production constraint, equipment ends up working under walls that are actively being scaled or monitored for movement — that's how a rockfall hazard becomes a struck-by incident instead of a controlled closeout.",
+  "date": "2026-07-15",
+  "topic": "Grade Control June 2026",
+  "title": "Grade Control June 2026",
+  "body": "When nobody's watching the block-by-block Balance row, ore gets left in the ground on a \"Closed\" block and nobody notices until the monthly SHG number comes up short. ADW has already lost 1,138t of SHG this way on a single block (770-160-177-1) — that's high-value feed written off because the closure call happened before the balance hit zero.",
   "keyPoints": [
-    "The register scores every hazard twice — before and after controls — on the same 1–5 scale as an IBRA. Nine of 29 original hazards started Extreme; after controls, only four stay at Medium residual risk (900-level crests and switchback joint-plane areas). Those four are still open — check them on a wall walk, don't assume \"controlled\" means \"closed.\"",
-    "Two new hazards landed in the June update: HZ030 (Stage 4 catchment berm, not yet built — status \"in progress\") and HZ031 (fractured final wall, 780–770RL, scored Extreme — the first new Extreme hazard since the register was issued). Wall scaling on HZ031 is already underway.",
-    "The recurring controls are simple and repeatable: no-go/exclusion zones, 2 m bunds set back 15–20 m from the toe, no parking or stopping along the ramp or wall, and a spotter when mining near a no-go zone. If you see equipment parked tight against a wall with an open hazard, that's a direct control breach, not a judgment call.",
-    "Four systemic gaps (HZ009–HZ012) sit above individual hazards — missing geotechnical sign-off before mining, no post-scaling assessment, no final-wall acceptance form, and blast design that doesn't factor in geotech input. These are why hazards keep recurring instead of getting designed out."
+    "Read the Balance row first, not Total Mined. A negative waste balance means you over-dug against the model; a positive ore balance on a Closed block means gold got left behind.",
+    "Don't close a block just because mining activity stopped — check the balance is actually at or near zero, especially on SHG/HG bands where the tonnage per block is small enough that one short block moves the monthly number.",
+    "Grade bands (waste → SE → LG → MG → HG → SHG) reconcile directly against the daily report's feed-blend lines — use both together, not one in isolation, to catch a block that's under-delivering.",
+    "A run of negative waste balances across multiple closed blocks isn't noise — it's the block model under-calling waste, and that throws off strip-ratio assumptions in the weekly plan.",
+    "Track which blocks sit at zero with a full balance — that's your mining sequence made visible. It tells you where the fleet is heading next, not just where it's been."
   ],
-  "apply": "HZ031's wall scaling on 780–770RL sits directly above the 770-177 loading faces — if EX-123 or EX-253 are working that bench, confirm the exclusion zone below the wall is actually enforced, not just documented.",
-  "generatedAt": "2026-07-14T05:16:53"
+  "apply": "If a face goes quiet for several days on an open SHG/HG block, don't assume it's mined out — check whether it's simply unassigned (as happened when 770-160-177-2 sat idle nine days despite carrying an easily-closeable SHG balance) before you write it off.",
+  "generatedAt": "2026-07-15T07:44:46"
 }
