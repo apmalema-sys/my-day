@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-07-15T11:06:20",
-  "date": "2026-07-14",
-  "runNumber": 61,
-  "summary": "1. No new meeting notes. 2. Important References folder re-checked: 26 files, unchanged since 2026-07-11. 3. Key operational findings: Week 28 review (carried in the new plan deck): Total Mined -4.9% vs plan, Waste -13.55%, Ore +58.65% — but HG Ore Mined came in at 0 t against a 3,592 t plan, a full miss. 4. Strip ratio landed far leaner than planned (4.01 vs 7.35). 5. Spatial Compliance 89% against a 100% target, an 11-point gap with no explanation given — the first time this metric has surfaced in this KB. 6. W29-30 equipment plan: EX-123 planned at 0% availability for the entire fortnight (168 hrs down both weeks), and DR-124, DR-125, and DR-139 all planned at 0% for the full 168-hour week — a third consecutive bi-weekly cycle where the drill roster effectively runs on 5-6 of its 8-9 nominal rigs. 7. Broken stock ledger shows 614,448 t of pre-blasted muck at the start of the fortnight, with a single 200,000 t spillage line larger than any individual production block. 8. Week 29 maintenance schedules: DR-297 booked for a 48-hour service (the fortnight's longest single job); DT-108's scheduled 250H service on 20 July lands five days after its new suspension/gasket fault (13 July); LV-048's 19 July inspection is its first workshop touch since its 18-day A/C fault closed out. 9. Part C queried the Task Feedback Log's \"All Feedback\" view (26 rows) — every row already shows Status = Processed. No unprocessed rows, no open questions to resolve, no mismatches, nothing to mark this pass. Wiki updates: [[workshop-maintenance-planning]] (new \"Week 28 review and W29-30 bi-weekly plan deck\" section, `Sources` frontmatter) — `Last updated` bumped to 2026-07-14 (61st pass); `Wiki/INDEX.md` one-line description refreshed and brought current after being stale since the 36th pass. Full detail in `RAW/_INGESTED.md` under \"61st compile pass.\" ---",
+  "generatedAt": "2026-07-15T11:33:04",
+  "date": "2026-07-15",
+  "runNumber": 62,
+  "summary": "1. Key operational findings: 1. 2. Ore collapsed to a 45.6% miss on an all-LG blend (992 BCM vs a 1,822 BCM target) — the steepest single-day ore shortfall of the July run, a sharp reversal from July 13's +347.5% beat, and the first month-to-date narrowing of the ore surplus this run (+34.3%, down from +38.8%). 2. 3. Crusher feed craters to 2,064 BCM, the lowest daily figure of the July dataset, after an 11-hour maintenance stoppage — the largest single crusher downtime entry logged this month. 3. 4. The Drill Rig fleet craters to 69.27% daily availability, a 15.73-point MTD swing and the largest single-fleet variance in the July dataset — two new drifter faults (DR-125, DR-303) land the same day as the standing DR-343 overhaul, and drilling itself misses target for the first time since July 12. 5. EX-123 stays down a ninth straight day (since July 6), DT-108 a second day, DZ-249 a seventh day, and GS-323 a 15th day — four standing faults now all running multi-day to multi-week. 6. Equipment running hours: dump-truck hours and diesel fell together for the first time in several days (369.9 hrs / 27,652 L), breaking the worsening liters-per-hour trend flagged since July 12 — worth watching whether it holds or was a one-off low-activity day. 7. HSEQ escalates the tire/suspension cost pattern by email, sent 05:20 AM the morning after the July 14 meeting first quantified it at 600,000 SAR over two months — names road condition and operator behavior as leading factors and pictures DT-244, DT-128, DT-283, and DT-366 as recent damage examples. 8. The July 14 water-usage row reads identical to the KB's previously logged June 6 record high (19 trips / 307,800 L) — worth a direct check against the site's own water-truck log before treating July 14 as a genuine second record-equalling day. 9. Grade Control picked up new July 14 entries across several block grids, continuing the standing block-grid reconciliation gap open since the 45th pass. A Quarterly Production Inspection report, checklist, and cover email landed in Safety Report — out of scope for this dashboard-scoped pass, registered at index level only, findings not summarized here. An Important References email containing a named production-department employee's personal medical/fitness-for-duty correspondence landed. Held for the next full-scope compile out of respect for employee privacy — not analyzed, summarized, or actioned this pass. No new INX-SUM survey file has landed for Day 20 (would reconcile July 14's truck count); [[survey-volume-reconciliation]] untouched this pass, its MTD gap headline still reflecting Day 19's +4.37%. Wiki updates: [[daily-production-report]] (new July 14 section — production/ore/waste variance, crusher feed and downtime, drilling, machinery, cross-source checks; `Sources` frontmatter) and [[fleet-availability-utilization]] (new July 14 Daily Availability Final Report table and fleet breakdown, Equipment running hours Jul-(14) subsection, Tire Damages escalation email note; `Sources` frontmatter) — both `Last updated` bumped to 2026-07-15 (62nd pass); `Wiki/INDEX.md` one-line descriptions refreshed for both. Full detail in `RAW/_INGESTED.md` under \"62nd compile pass.\" ---",
   "kpis": [
     {
       "label": "Survey Gap",
@@ -124,15 +124,15 @@
     }
   ],
   "fleet": {
-    "exAvail": "96.9%",
+    "exAvail": "97.5%",
     "exUnits": 6,
-    "dtAvail": "98.0%",
-    "dtUnits": 21,
-    "availMtd": "90.04%",
+    "dtAvail": "93.6%",
+    "dtUnits": 22,
+    "availMtd": "89.37%",
     "excavators": [
       {
         "unit": "EX-340",
-        "avail": "95.8%"
+        "avail": "97.9%"
       },
       {
         "unit": "EX-262",
@@ -140,55 +140,65 @@
       },
       {
         "unit": "EX-253",
-        "avail": null
-      },
-      {
-        "unit": "EX-263",
         "avail": "97.9%"
       },
       {
-        "unit": "EX-247",
+        "unit": "EX-263",
         "avail": "95.8%"
+      },
+      {
+        "unit": "EX-247",
+        "avail": "97.9%"
       },
       {
         "unit": "EX-1200",
         "avail": null
       }
     ],
-    "exBasis": "4/6",
-    "pdfDate": "13-07",
-    "dtBasis": "21 active ≥8h"
+    "exBasis": "5/6",
+    "pdfDate": "14-07",
+    "dtBasis": "22 active ≥8h"
   },
   "equipment": [
     {
-      "unit": "LV-048",
-      "type": "",
-      "status": "warning",
+      "unit": "DR-343",
+      "type": "Drill",
+      "status": "down",
       "avail": "",
       "util": "",
-      "bd_hrs": "",
-      "note": "'s \"A/C Not Working\" plus \"Wheel Bearing and Front Hub Seal Leak\" fault closes out 14-Jul 3:30 AM after openin",
-      "comment": "A/C Not Working"
+      "bd_hrs": "0",
+      "note": "both remain frozen at 0 hrs on both shifts, consistent with their standing breakdowns. Alias: [[equipment-runn",
+      "comment": "Faulty Drifter"
     },
     {
       "unit": "EX-123",
       "type": "Excavator",
       "status": "down",
-      "avail": "0.00%",
+      "avail": "",
       "util": "",
-      "bd_hrs": "",
-      "note": "stays down an eighth straight day** — 27 DT hrs, 0.00% avail, \"L.H Track Off (Track Tension Damage),\" still op",
+      "bd_hrs": "0",
+      "note": "both remain frozen at 0 hrs on both shifts, consistent with their standing breakdowns. Alias: [[equipment-runn",
       "comment": "L.H Track Off ( Track  Tienson  Damage )"
     },
     {
       "unit": "EX-247",
       "type": "Excavator",
       "status": "down",
-      "avail": "95.83%",
+      "avail": "97.92%",
       "util": "",
-      "bd_hrs": "1",
-      "note": "(0.5-1 hr, 95.83% avail, \"Daily Check\" plus a \"Coolant Level Low\" note)",
-      "comment": "Coolant Level Low"
+      "bd_hrs": "0.5",
+      "note": "(0.5 hr, 97.92% avail)",
+      "comment": ""
+    },
+    {
+      "unit": "EX-253",
+      "type": "Excavator",
+      "status": "down",
+      "avail": "97.92%",
+      "util": "",
+      "bd_hrs": "0.5",
+      "note": "(0.5 hr, 97.92% avail)",
+      "comment": ""
     },
     {
       "unit": "EX-262",
@@ -197,66 +207,68 @@
       "avail": "97.92%",
       "util": "",
       "bd_hrs": "0.5",
-      "note": "(0.5 hr each, 97.92% avail, daily checks)",
+      "note": "(0.5 hr, 97.92% avail)",
       "comment": ""
     },
     {
       "unit": "EX-263",
       "type": "Excavator",
       "status": "down",
-      "avail": "97.92%",
+      "avail": "95.83%",
       "util": "",
-      "bd_hrs": "0.5",
-      "note": "(0.5 hr each, 97.92% avail, daily checks)",
+      "bd_hrs": "1",
+      "note": "(1 hr, 95.83% avail)",
       "comment": ""
     },
     {
       "unit": "EX-340",
       "type": "Excavator",
       "status": "down",
-      "avail": "95.83%",
+      "avail": "97.92%",
       "util": "",
-      "bd_hrs": "1",
-      "note": "(1 hr, 95.83% avail, daily check).",
+      "bd_hrs": "0.5",
+      "note": "(0.5 hr, 97.92% avail) — all \"Daily Inspection, Planned.\"",
       "comment": ""
     },
     {
       "unit": "DT-108",
       "type": "Haul Truck",
-      "status": "warning",
-      "avail": "",
+      "status": "down",
+      "avail": "0.00%",
       "util": "",
-      "bd_hrs": "",
-      "note": "'s new fault logged above), with replacement parts sourced from Zaheer carrying a 6-month lead time — the team",
+      "bd_hrs": "24",
+      "note": "continues from July 13: \"L.H.F Suspension Leak\" plus \"L.H F.D Leak, T.C Gasket Leak & T.C Hose Leak,\"** Down, ",
       "comment": "L.H.F Suspension Leak"
-    },
-    {
-      "unit": "DT-129",
-      "type": "Haul Truck",
-      "status": "scheduled",
-      "avail": "4.17%",
-      "util": "",
-      "bd_hrs": "23",
-      "note": "new fault: \"250 H Service\" plus \"Tyres Press Low,\"** 23 hrs, 4.17% avail. **",
-      "comment": ""
     }
   ],
   "followUps": [
     {
-      "priority": "HIGH",
-      "title": "W29-30 equipment plan: **EX-123 planned at 0% availability for the entir...",
-      "body": "",
-      "action": ""
-    },
-    {
-      "priority": "HIGH",
-      "title": "Week 29 maintenance schedules: DR-297 booked for a 48-hour service (the ...",
+      "priority": "MONITOR",
+      "title": "EX-123 stays down a ninth straight day (since July 6), DT-108 a second d...",
       "body": "",
       "action": ""
     },
     {
       "priority": "MONITOR",
-      "title": "Broken stock ledger shows 614,448 t of pre-blasted muck at the start of ...",
+      "title": "Equipment running hours: dump-truck hours and diesel fell together for t...",
+      "body": "",
+      "action": ""
+    },
+    {
+      "priority": "MONITOR",
+      "title": "HSEQ escalates the tire/suspension cost pattern by email, sent 05:20 AM ...",
+      "body": "",
+      "action": ""
+    },
+    {
+      "priority": "MONITOR",
+      "title": "The July 14 water-usage row reads identical to the KB's previously logge...",
+      "body": "",
+      "action": ""
+    },
+    {
+      "priority": "MONITOR",
+      "title": "Grade Control picked up new July 14 entries across several block grids, ...",
       "body": "",
       "action": ""
     }
