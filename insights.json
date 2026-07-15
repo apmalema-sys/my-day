@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-07-14T17:40:04",
+  "generatedAt": "2026-07-15T11:06:20",
   "date": "2026-07-14",
-  "runNumber": 60,
-  "summary": "1. No production, fleet, or crusher workbook changed since the 59th pass. 2. Key operational findings: 1. 3. The Day 19 survey file (`260714-INX-SUM.xlsx`, reconciling July 13) reads tally 21,979 BCM against survey 28,656 BCM — a +6,677 BCM (+23.3%) gap, the second straight positive day after Day 18's +25.7%, on the largest heap offset recorded in the July dataset (EX-1200, +5 m). 2. 4. MTD survey cushion widens from Day 18's +2.96% to +4.37% (trucks 396,676 BCM / survey 414,797 BCM), the strongest MTD position since Day 9. 3. 5. A new Week 29 Geotechnical Hazard Map lands with two unscored hazard IDs (HZ-ADW-032, HZ-ADW-033) not yet in the June 2026 risk register, and a location conflict on HZ-ADW-030 — the new map places it on the 760 crest / 735 toe, while both the June register and the Week 24 map place the same ID on the 770 crest / 740 toe. 6. Following the KB's 30-day production-month convention, July 13 is production day 19 of 30 — 11 days remaining. 7. HZ-ADW-030's location conflict needs a direct check with the geotechnical engineer — either mining has progressed a bench since June and the register is stale, or the map has reused an ID on a distinct, adjacent hazard. 8. HZ-ADW-032 and HZ-ADW-033 carry a hazard description and action on the map but no likelihood/consequence score, control status, or owner — worth confirming they land in the next register refresh rather than staying field-marked only. 9. Wiki updates: [[survey-volume-reconciliation]] (Day 19 section, MTD gap headline +4.37%), [[daily-production-report]] (Day 19 survey-lands addendum), and [[geotechnical-risk-register]] (Week 29 hazard map section, two new hazard entries, HZ-ADW-030 location-conflict note) all updated with new dated sections; all three `Last updated` bumped to 2026-07-14 (60th pass); `Wiki/INDEX.md` refreshed for the same three articles. Full detail in `RAW/_INGESTED.md` under \"60th compile pass.\" ---",
+  "runNumber": 61,
+  "summary": "1. No new meeting notes. 2. Important References folder re-checked: 26 files, unchanged since 2026-07-11. 3. Key operational findings: Week 28 review (carried in the new plan deck): Total Mined -4.9% vs plan, Waste -13.55%, Ore +58.65% — but HG Ore Mined came in at 0 t against a 3,592 t plan, a full miss. 4. Strip ratio landed far leaner than planned (4.01 vs 7.35). 5. Spatial Compliance 89% against a 100% target, an 11-point gap with no explanation given — the first time this metric has surfaced in this KB. 6. W29-30 equipment plan: EX-123 planned at 0% availability for the entire fortnight (168 hrs down both weeks), and DR-124, DR-125, and DR-139 all planned at 0% for the full 168-hour week — a third consecutive bi-weekly cycle where the drill roster effectively runs on 5-6 of its 8-9 nominal rigs. 7. Broken stock ledger shows 614,448 t of pre-blasted muck at the start of the fortnight, with a single 200,000 t spillage line larger than any individual production block. 8. Week 29 maintenance schedules: DR-297 booked for a 48-hour service (the fortnight's longest single job); DT-108's scheduled 250H service on 20 July lands five days after its new suspension/gasket fault (13 July); LV-048's 19 July inspection is its first workshop touch since its 18-day A/C fault closed out. 9. Part C queried the Task Feedback Log's \"All Feedback\" view (26 rows) — every row already shows Status = Processed. No unprocessed rows, no open questions to resolve, no mismatches, nothing to mark this pass. Wiki updates: [[workshop-maintenance-planning]] (new \"Week 28 review and W29-30 bi-weekly plan deck\" section, `Sources` frontmatter) — `Last updated` bumped to 2026-07-14 (61st pass); `Wiki/INDEX.md` one-line description refreshed and brought current after being stale since the 36th pass. Full detail in `RAW/_INGESTED.md` under \"61st compile pass.\" ---",
   "kpis": [
     {
       "label": "Survey Gap",
@@ -243,20 +243,20 @@
   ],
   "followUps": [
     {
-      "priority": "MONITOR",
-      "title": "Following the KB's 30-day production-month convention, July 13 is produc...",
+      "priority": "HIGH",
+      "title": "W29-30 equipment plan: **EX-123 planned at 0% availability for the entir...",
+      "body": "",
+      "action": ""
+    },
+    {
+      "priority": "HIGH",
+      "title": "Week 29 maintenance schedules: DR-297 booked for a 48-hour service (the ...",
       "body": "",
       "action": ""
     },
     {
       "priority": "MONITOR",
-      "title": "HZ-ADW-030's location conflict needs a direct check with the geotechnica...",
-      "body": "",
-      "action": ""
-    },
-    {
-      "priority": "MONITOR",
-      "title": "HZ-ADW-032 and HZ-ADW-033 carry a hazard description and action on the m...",
+      "title": "Broken stock ledger shows 614,448 t of pre-blasted muck at the start of ...",
       "body": "",
       "action": ""
     }
