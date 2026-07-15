@@ -1,24 +1,18 @@
 {
-  "generatedAt": "2026-07-15T11:33:04",
+  "generatedAt": "2026-07-15T17:06:51",
   "date": "2026-07-15",
-  "runNumber": 62,
-  "summary": "1. Key operational findings: 1. 2. Ore collapsed to a 45.6% miss on an all-LG blend (992 BCM vs a 1,822 BCM target) — the steepest single-day ore shortfall of the July run, a sharp reversal from July 13's +347.5% beat, and the first month-to-date narrowing of the ore surplus this run (+34.3%, down from +38.8%). 2. 3. Crusher feed craters to 2,064 BCM, the lowest daily figure of the July dataset, after an 11-hour maintenance stoppage — the largest single crusher downtime entry logged this month. 3. 4. The Drill Rig fleet craters to 69.27% daily availability, a 15.73-point MTD swing and the largest single-fleet variance in the July dataset — two new drifter faults (DR-125, DR-303) land the same day as the standing DR-343 overhaul, and drilling itself misses target for the first time since July 12. 5. EX-123 stays down a ninth straight day (since July 6), DT-108 a second day, DZ-249 a seventh day, and GS-323 a 15th day — four standing faults now all running multi-day to multi-week. 6. Equipment running hours: dump-truck hours and diesel fell together for the first time in several days (369.9 hrs / 27,652 L), breaking the worsening liters-per-hour trend flagged since July 12 — worth watching whether it holds or was a one-off low-activity day. 7. HSEQ escalates the tire/suspension cost pattern by email, sent 05:20 AM the morning after the July 14 meeting first quantified it at 600,000 SAR over two months — names road condition and operator behavior as leading factors and pictures DT-244, DT-128, DT-283, and DT-366 as recent damage examples. 8. The July 14 water-usage row reads identical to the KB's previously logged June 6 record high (19 trips / 307,800 L) — worth a direct check against the site's own water-truck log before treating July 14 as a genuine second record-equalling day. 9. Grade Control picked up new July 14 entries across several block grids, continuing the standing block-grid reconciliation gap open since the 45th pass. A Quarterly Production Inspection report, checklist, and cover email landed in Safety Report — out of scope for this dashboard-scoped pass, registered at index level only, findings not summarized here. An Important References email containing a named production-department employee's personal medical/fitness-for-duty correspondence landed. Held for the next full-scope compile out of respect for employee privacy — not analyzed, summarized, or actioned this pass. No new INX-SUM survey file has landed for Day 20 (would reconcile July 14's truck count); [[survey-volume-reconciliation]] untouched this pass, its MTD gap headline still reflecting Day 19's +4.37%. Wiki updates: [[daily-production-report]] (new July 14 section — production/ore/waste variance, crusher feed and downtime, drilling, machinery, cross-source checks; `Sources` frontmatter) and [[fleet-availability-utilization]] (new July 14 Daily Availability Final Report table and fleet breakdown, Equipment running hours Jul-(14) subsection, Tire Damages escalation email note; `Sources` frontmatter) — both `Last updated` bumped to 2026-07-15 (62nd pass); `Wiki/INDEX.md` one-line descriptions refreshed for both. Full detail in `RAW/_INGESTED.md` under \"62nd compile pass.\" ---",
+  "runNumber": 63,
+  "summary": "1. No new meeting notes. 2. Important References folder re-checked: 27 files, one new since the 61st pass's confirmed check (2026-07-11) — the Zar Mohammed email, now analyzed in full. 3. Key operational findings: Day 20 survey (260715-INX-SUM, reconciling July 14): tally 21,607 BCM against survey 18,468 BCM — a −3,139 BCM (−17.0%) gap, breaking the two-day positive run (Day 18 +25.7%, Day 19 +23.3%) on a three-excavator heap-loading day (PC 2000, EX-1200, EX-1250, +2 m). 4. MTD survey cushion narrows from +4.37% to +3.46% (trucks 418,283 BCM / survey 433,265 BCM); 67.13% of the 645,404 BCM monthly target achieved, 10 days remaining. 5. July Distance report's July 14 tab lands: a waste-only day across seven blocks (led by 890-639-1/2, 222 BCM @2.9 km) plus 32 BCM of LG ore on 735-186-1 — ties to the Client Meeting Report's all-LG day exactly. 6. MTD haul-distance average through Day 19: ore 3.854 km / waste 3.181 km / overall 3.254 km over 418,283 BCM. 7. Quarterly Production Inspection (14 July, deferred from the 62nd pass) — 19 findings, five clustered at the North Go-Line diesel refuelling area (soil-filled v-drains, uncleared containment drums + a leaking bulk valve, unsecured refuelling nozzle, missing spill kit, no distribution-box signage): the densest single-location finding cluster in this KB's inspection corpus, and now a fourth consecutive quarterly cycle re-finding the same Switch Back 1/2/3 delineation and signage gaps. 8. No \"Actions Taken\" or \"Close out Evidence\" populated for any of the nineteen items. 9. Zar Mohammed medical fitness-for-duty case (deferred from the 62nd pass) — compiled in full per Peter's standing HR-sensitive-content authorization: a rompad excavator operator with a history of cerebral stroke has been cleared to return to work only with caution (close monitoring, regular follow-up, light duties only, no heavy physical work), per the treating clinic. This is the first medical-fitness case in this KB's personnel-sensitive set, distinct from the two prior conduct-based cases (Syukur, Galih Rathona). Whether the monitoring/follow-up mechanism has actually been implemented on site is unconfirmed — flagged as an open question. Part C queried the Task Feedback Log's \"All Feedback\" view (27 rows) — every row already shows Status = Processed. No unprocessed rows, no open questions to resolve, no mismatches, nothing to mark this pass. Wiki updates: [[survey-volume-reconciliation]] (new Day 20 section, MTD headline narrows to +3.46%, `Sources` frontmatter), [[daily-production-report]] (Distance report July 14 addendum, Day 20 survey addendum, `Sources` frontmatter), and [[safety-inspection-patterns]] (new Quarterly Production Inspection section, new Zar Mohammed medical fitness-for-duty section, two new Open Questions, `Sources` frontmatter) — all three `Last updated` bumped to 2026-07-15 (63rd pass); `Wiki/INDEX.md` one-line descriptions refreshed for all three. `Outputs/important-references-analysis_2026-07-15.md` filed for the Zar Mohammed case. Full detail in `RAW/_INGESTED.md` under \"63rd compile pass.\" ---",
   "kpis": [
     {
       "label": "Survey Gap",
-      "value": "+4.4%",
+      "value": "+3.5%",
       "delta": "survey vs trucks MTD",
       "good": true
     },
     {
-      "label": "Crusher MTD",
-      "value": "30%",
-      "delta": "37,400 / 124,000 LCM",
-      "good": null
-    },
-    {
       "label": "Days Remain",
-      "value": "11",
+      "value": "10",
       "delta": "",
       "good": null
     }
@@ -244,31 +238,19 @@
   "followUps": [
     {
       "priority": "MONITOR",
-      "title": "EX-123 stays down a ninth straight day (since July 6), DT-108 a second d...",
+      "title": "July Distance report's July 14 tab lands: a waste-only day across seven ...",
       "body": "",
       "action": ""
     },
     {
       "priority": "MONITOR",
-      "title": "Equipment running hours: dump-truck hours and diesel fell together for t...",
+      "title": "**Quarterly Production Inspection (14 July, deferred from the 62nd pass)...",
       "body": "",
       "action": ""
     },
     {
       "priority": "MONITOR",
-      "title": "HSEQ escalates the tire/suspension cost pattern by email, sent 05:20 AM ...",
-      "body": "",
-      "action": ""
-    },
-    {
-      "priority": "MONITOR",
-      "title": "The July 14 water-usage row reads identical to the KB's previously logge...",
-      "body": "",
-      "action": ""
-    },
-    {
-      "priority": "MONITOR",
-      "title": "Grade Control picked up new July 14 entries across several block grids, ...",
+      "title": "**Zar Mohammed medical fitness-for-duty case (deferred from the 62nd pas...",
       "body": "",
       "action": ""
     }
