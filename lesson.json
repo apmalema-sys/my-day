@@ -1,15 +1,15 @@
 {
-  "date": "2026-07-15",
-  "topic": "Grade Control June 2026",
-  "title": "Grade Control June 2026",
-  "body": "When nobody's watching the block-by-block Balance row, ore gets left in the ground on a \"Closed\" block and nobody notices until the monthly SHG number comes up short. ADW has already lost 1,138t of SHG this way on a single block (770-160-177-1) — that's high-value feed written off because the closure call happened before the balance hit zero.",
+  "date": "2026-07-16",
+  "topic": "Grading and Road Construction",
+  "title": "Grading and Road Construction",
+  "body": "A neglected high spot or a badly banked switchback doesn't just slow the haul cycle — it cracks tires, shifts payload, and turns into one of the ramp incidents that eat a shift. At ADW right now, grading alone isn't even fixing the worst sections; the base material is too hard to hold a profile, which is a different problem than routine grading covers.",
   "keyPoints": [
-    "Read the Balance row first, not Total Mined. A negative waste balance means you over-dug against the model; a positive ore balance on a Closed block means gold got left behind.",
-    "Don't close a block just because mining activity stopped — check the balance is actually at or near zero, especially on SHG/HG bands where the tonnage per block is small enough that one short block moves the monthly number.",
-    "Grade bands (waste → SE → LG → MG → HG → SHG) reconcile directly against the daily report's feed-blend lines — use both together, not one in isolation, to catch a block that's under-delivering.",
-    "A run of negative waste balances across multiple closed blocks isn't noise — it's the block model under-calling waste, and that throws off strip-ratio assumptions in the weekly plan.",
-    "Track which blocks sit at zero with a full balance — that's your mining sequence made visible. It tells you where the fleet is heading next, not just where it's been."
+    "Full brake test on the ramp before any grader enters the works — no exceptions, same as any mobile unit.",
+    "Grade in the direction of traffic flow unless the Production Foreman calls it otherwise after a risk assessment, and keep the blade retracted and ripper up while traveling to protect the machine's profile.",
+    "The 10 m no-go zone parallel to a high wall beats the grading routine every time — no unsupervised grading inside it.",
+    "Switchbacks need more than a pass or two: super-elevation, inside-radius clearance, and outside bund integrity all matter because that's where trucks lose visibility and traction.",
+    "If a section is failing because the base material won't compact (not just a surface profile issue), grading alone won't fix it — that's the soft-material resurfacing situation flagged in the July 11 shift meeting, not a routine grader job."
   ],
-  "apply": "If a face goes quiet for several days on an open SHG/HG block, don't assume it's mined out — check whether it's simply unassigned (as happened when 770-160-177-2 sat idle nine days despite carrying an easily-closeable SHG balance) before you write it off.",
-  "generatedAt": "2026-07-15T07:44:46"
+  "apply": "If a daily inspection flags a high spot or a rough switchback, check whether it's a profile problem (grade it) or a base-material problem (it needs soft material mixed in) before assigning the grader — treating the second as the first just burns hours without fixing anything.",
+  "generatedAt": "2026-07-16T06:26:45"
 }
