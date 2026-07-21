@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-07-17T17:15:06",
-  "date": "2026-07-16",
-  "runNumber": 64,
-  "summary": "1. No new meeting notes. 2. Nothing newer — confirmed with a `find -newermt` check against that timestamp, which returned only `RAW/_INGESTED.md` itself (the tracking file, touched by the 63rd pass's own registration edit). 3. No production workbook, survey file, or maintenance schedule has landed or been re-saved since the 63rd pass. 4. Important References folder re-checked: still 27 files, no new or updated files since 2026-07-15 08:39 (the Zar Mohammed email, already fully analyzed). 5. Part C queried the Task Feedback Log's \"All Feedback\" view (26 rows) — every row already shows Status = Processed. 6. No unprocessed rows, no open questions to resolve, no mismatches, nothing to mark this pass. 7. No Wiki articles touched. 8. No RAW files to register. 9. Full detail in `RAW/_INGESTED.md` under \"64th compile pass.\" ---",
+  "generatedAt": "2026-07-21T11:08:42",
+  "date": "2026-07-20",
+  "runNumber": 68,
+  "summary": "1. All three matched files or decisions already registered by prior passes: the \"Open-Pit Mine Daily Operations & Production Meeting\" (2026-07-14) and \"Mining Operations Daily Production & Safety Meeting\" (2026-07-13) both match RAW files registered previously, and the \"Meeting @Yesterday\" stub (created 2026-07-18T18:00, url c5918b82d2cb836ca6f60177e33cdfe4) is the same empty auto-generated page flagged and skipped in the 67th pass — still just two empty blocks, no transcript or summary. 2. Skipped again; not written to RAW. 3. Confirmed with `find -newermt` against that timestamp: nothing newer except `RAW/_INGESTED.md` itself (this file's own edit from the 67th pass registration). 4. No production workbook, survey file, or maintenance schedule has landed or been re-saved since the 67th pass. 5. Important References folder re-checked: still ~27 files, no new or updated files since 2026-07-15 08:39 (the Zar Mohammed email, already fully analyzed). 6. Part C queried the Task Feedback Log's \"All Feedback\" view (26 rows) — every row already shows Status = Processed. 7. No unprocessed rows, no open questions to resolve, no mismatches, nothing to mark this pass. 8. No Wiki articles touched. 9. No RAW files to register.",
   "kpis": [
     {
       "label": "Survey Gap",
@@ -118,31 +118,31 @@
     }
   ],
   "fleet": {
-    "exAvail": "97.5%",
+    "exAvail": "94.6%",
     "exUnits": 6,
-    "dtAvail": "93.6%",
-    "dtUnits": 22,
+    "dtAvail": "89.3%",
+    "dtUnits": 17,
     "availMtd": "89.37%",
     "excavators": [
       {
         "unit": "EX-340",
-        "avail": "97.9%"
-      },
-      {
-        "unit": "EX-262",
-        "avail": "97.9%"
-      },
-      {
-        "unit": "EX-253",
-        "avail": "97.9%"
-      },
-      {
-        "unit": "EX-263",
         "avail": "95.8%"
       },
       {
-        "unit": "EX-247",
+        "unit": "EX-262",
+        "avail": "95.8%"
+      },
+      {
+        "unit": "EX-253",
+        "avail": "95.8%"
+      },
+      {
+        "unit": "EX-263",
         "avail": "97.9%"
+      },
+      {
+        "unit": "EX-247",
+        "avail": "87.5%"
       },
       {
         "unit": "EX-1200",
@@ -150,8 +150,8 @@
       }
     ],
     "exBasis": "5/6",
-    "pdfDate": "14-07",
-    "dtBasis": "22 active ≥8h"
+    "pdfDate": "20-07",
+    "dtBasis": "17 active ≥8h"
   },
   "equipment": [
     {
@@ -182,7 +182,7 @@
       "util": "",
       "bd_hrs": "0.5",
       "note": "(0.5 hr, 97.92% avail)",
-      "comment": ""
+      "comment": "Hydraulic Hose Leakage"
     },
     {
       "unit": "EX-253",
@@ -212,7 +212,7 @@
       "util": "",
       "bd_hrs": "1",
       "note": "(1 hr, 95.83% avail)",
-      "comment": ""
+      "comment": "Bucket Adaptor Broken Check"
     },
     {
       "unit": "EX-340",
