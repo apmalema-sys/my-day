@@ -1,18 +1,18 @@
 {
-  "generatedAt": "2026-07-22T16:28:00",
+  "generatedAt": "2026-07-22T16:30:46",
   "date": "2026-07-22",
   "runNumber": 70,
   "summary": "1. Notion Meeting Notes Database queried for meetings created on or after 2026-07-21 — zero results. 2. No new meeting notes. 3. Production: July 21 total 19,964 BCM / 53,902.8 t against target (−14.9%), the fourth ore beat in five days (+48.0%, all SSHG off block 760-161-2). 4. MTD holds at −3.7% vs target, MTD ore surplus edges up to +28.9%. 5. The day's general comment names a \"DT incident\" stand-down (3 hrs) — the Daily Availability Final Report shows DT-109 reopening under a new \"Accident Damage\" fault, the same truck involved in the July 20 high-wall contact; no new flash report has landed for a July 21 event, so whether this is the same incident still being worked through or a second one is an open question. 6. EX-123 is down a 16th consecutive day; DR-343's drifter overhaul reaches day 11. 7. Drilling beat target a second straight day (+0.7%). 8. Day 27 survey reconciliation (file `260722-INX-SUM.xlsx`, reconciling July 21): +773 BCM (+3.7%), tightest single-day gap since Day 8; MTD survey cushion holds at +3.21%, 3 production days remaining. 9. The Week 30-31 bi-weekly plan deck (`Weekly Plan ADW W30-31.pdf`) is the pass's most consequential find. It plans EX-123 at 0% PA for the entire fortnight (through August 3) with no recovery date at all — directly contradicting the separately-issued Main Mining Assets Weekly Planned Availability workbook for the same weeks (already registered, 69th pass), which showed a recovery to 85.4% from July 30. The deck also confirms DR-124/125/139 written out a fourth consecutive bi-weekly cycle, DR-343 planned at 78% PA both weeks (implying an expected near-term return), and — a first for this KB — the deck's own Week 29 retrospective slides are image-only, carrying no extractable actual-vs-plan table. Queried the Task Feedback Log's \"All Feedback\" view (26 rows) — every row already shows Status = Processed. No unprocessed rows, no new resolutions, no mismatches. Important References re-checked: still 27 files, no new or updated content since 2026-07-15 08:39 (the Zar Mohammed email, already analyzed).",
   "kpis": [
     {
       "label": "MTD BCM",
-      "value": "545,197",
-      "delta": "-3.2% vs target",
+      "value": "565,161",
+      "delta": "-3.7% vs target",
       "good": false
     },
     {
       "label": "Survey Gap",
-      "value": "+3.1%",
+      "value": "+3.2%",
       "delta": "survey vs trucks MTD",
       "good": true
     },
@@ -25,7 +25,7 @@
     {
       "label": "Days Remain",
       "value": "3",
-      "delta": "in production month",
+      "delta": "",
       "good": null
     }
   ],
