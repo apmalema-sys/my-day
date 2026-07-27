@@ -1,31 +1,41 @@
 {
-  "generatedAt": "2026-07-27T17:14:56",
+  "generatedAt": "2026-07-27T17:48:55",
   "date": "2026-07-27",
-  "runNumber": 73,
-  "summary": "1. All three parts here came back clean against that pass. 2. Notion Meeting Notes Database queried for meetings created on or after 2026-07-20 — zero results. 3. No new meeting notes. 4. Important References folder re-confirmed at 28 files, unchanged. 5. No Wiki articles touched. 6. Queried the Task Feedback Log's \"All Feedback\" view (36 rows, sorted Date Logged descending) — every row already shows Status = Processed, most recent 2026-07-23 (the six rows the 72nd pass already resolved). 7. No unprocessed rows, no new resolutions, no mismatches.",
+  "runNumber": 74,
+  "summary": "1. The August fiscal cycle is running behind from its second day. 2. MTD sits at 41,478 BCM against a 44,510.6 BCM target, -6.8%, after Jul 26 came in at 19,964 BCM against 22,255.3, a 10.3% daily miss. 3. The crusher has moved 5,781 LCM of a 124,000 LCM monthly plan, 4.7% at day 2, held back by a single 12-hour maintenance stop on Jul 26 that is the largest crusher outage in this KB's July record. 4. Survey reconciliation opened sharply negative at -41.05% MTD, a hard reversal from the July cycle's +5.17% close, with three excavators loading on heap and overspill outside the survey boundary on both opening days. 5. Fleet availability held at 89.22% daily and 91.57% MTD, but core fleet fell to 83.41%, the weakest reading in several weeks, on Wheel Loader at 57.08% and Wheel Dozer at 54.17%. 6. EX-123 is down 21 days, DR-343 16, DT-108 14 and DT-109 6, none with a revised return date.",
   "kpis": [
     {
       "label": "MTD BCM",
-      "value": "565,161",
-      "delta": "-3.7% vs target",
+      "value": "41,478",
+      "delta": "-6.8% vs target",
       "good": false
     },
     {
       "label": "Survey Gap",
-      "value": "-53.9%",
+      "value": "-41.0%",
       "delta": "survey vs trucks MTD",
       "good": false
     },
     {
+      "label": "Crusher MTD",
+      "value": "5%",
+      "delta": "5,781 / 124,000 LCM",
+      "good": null
+    },
+    {
       "label": "Days Remain",
-      "value": "3",
+      "value": "29",
       "delta": "",
       "good": null
     }
   ],
   "trend": [],
   "fleet": {
+    "availDaily": "89.22%",
+    "availMtd": "91.57%",
+    "exAvail": "97.5%",
     "exUnits": 6,
+    "dtAvail": "83.9%",
     "dtUnits": 17,
     "excavators": [
       {
@@ -53,91 +63,75 @@
         "avail": null
       }
     ],
-    "exAvail": "97.5%",
     "exBasis": "5/6",
     "pdfDate": "26-07",
-    "dtAvail": "83.9%",
     "dtBasis": "17 active ≥8h"
   },
   "equipment": [
     {
-      "unit": "EX-123",
-      "type": "Excavator",
-      "status": "down",
-      "avail": "",
-      "util": "",
-      "bd_hrs": "",
-      "note": "decline is an isolated single-unit trend against an otherwise stable fleet, not part of a broader excavator-fl",
-      "comment": "L.H Track Off ( Track  Tienson  Damage )"
-    },
-    {
-      "unit": "EX-247",
-      "type": "Excavator",
-      "status": "scheduled",
-      "avail": "89.22%",
-      "util": "",
-      "bd_hrs": "",
-      "note": "picks up a new overnight fault (boom lights not working) hours after clearing its service. Jul 26: overall dai",
-      "comment": ""
-    },
-    {
-      "unit": "DT-108",
-      "type": "Haul Truck",
-      "status": "down",
-      "avail": "0%",
-      "util": "",
-      "bd_hrs": "",
-      "note": "and DT-109 are all planned 0% PA for the entire fortnight with no recovery date in any of them.",
-      "comment": "L.H.F Suspension Leak"
+      "unit": "DR-343",
+      "type": "Drill",
+      "status": "warning",
+      "avail": "64.58%",
+      "util": "-",
+      "bd_hrs": "8.5",
+      "note": "Down since 11-Jul, day 16. Faulty drifter, SANDVIK overhaul. Three revised return dates all missed.",
+      "comment": "Faulty Drifter"
     },
     {
       "unit": "DT-109",
       "type": "Haul Truck",
       "status": "down",
       "avail": "0%",
-      "util": "",
-      "bd_hrs": "",
-      "note": "and DT-109 are all planned 0% PA for the entire fortnight with no recovery date in any of them.",
+      "util": "0%",
+      "bd_hrs": "24",
+      "note": "Down since 21-Jul, day 6. Accident damage from the 20-Jul high-wall contact, investigation open. Reported at 1",
       "comment": "Accident Damage"
     },
     {
-      "unit": "DR-343",
-      "type": "Drill",
+      "unit": "DT-108",
+      "type": "Haul Truck",
       "status": "down",
-      "avail": "",
-      "util": "",
-      "bd_hrs": "",
-      "note": "'s return without it showing up in the actuals.",
-      "comment": "Faulty Drifter"
+      "avail": "0%",
+      "util": "0%",
+      "bd_hrs": "24",
+      "note": "Down since 13-Jul, day 14. L.H.F suspension leak plus power-train leaks. No Date Out. Reported at 100% / 0 hrs",
+      "comment": "L.H.F Suspension Leak"
     },
     {
-      "unit": "EX-104",
+      "unit": "EX-123",
       "type": "Excavator",
       "status": "down",
       "avail": "0%",
-      "util": "",
-      "bd_hrs": "",
-      "note": "and DT-109 are all planned 0% PA for the entire fortnight with no recovery date in any of them.",
-      "comment": ""
+      "util": "0%",
+      "bd_hrs": "24",
+      "note": "Down since 06-Jul, day 21. L.H track off, track tension damage. No Date Out in any report since. Reported at 1",
+      "comment": "L.H Track Off ( Track  Tienson  Damage )"
     }
   ],
   "followUps": [
     {
-      "priority": "MONITOR",
-      "title": "Part B",
-      "body": "Gap-check (`find RAW -newermt` against the 72nd pass's own registration mark) found nothing beyond three `.DS_Store` filesystem-metadata touches (not RAW content). Important References folder re-confirmed at 28 files, unchanged. No Wiki articles touched.",
+      "priority": "HIGH",
+      "title": "Long-term-down units drop out of the availability denominator",
+      "body": "The Jul 26 report tabulates EX-123, DT-108 and DT-109 at 100% availability with zero downtime hours while showing them Down with no Date Out, which is why the excavator fleet reads 97.92% on a day EX-123 was down. Fleet availability headlines describe the machines still working, not the fleet Peter actually owns.",
       "action": ""
     },
     {
       "priority": "MONITOR",
-      "title": "Part C",
-      "body": "Queried the Task Feedback Log's \"All Feedback\" view (36 rows, sorted Date Logged descending) — every row already shows Status = Processed, most recent 2026-07-23 (the six rows the 72nd pass already resolved). No unprocessed rows, no new resolutions, no mismatches.",
+      "title": "The dashboard published a month that had already closed",
+      "body": "The 72nd pass wrote its Jul 22-26 catch-up entirely in prose and dropped every phrasing `publish_insights.py` parses, so MTD BCM showed a 21 July figure of 565,161, Crusher MTD showed nothing at all, Survey Gap showed a single-day -53.9% instead of the -41.05% MTD, days remaining showed 3, and the fleet block was empty. The 17:14 publish went out on exactly those figures, confirmed against the payload in `gh-pages/insights.json`. All are restated now, from the same RAW files, in the established formats.",
       "action": ""
     },
     {
       "priority": "MONITOR",
-      "title": "Notion inbox tasks created this pass",
-      "body": "none — nothing new surfaced in Parts A, B, or C. ---",
+      "title": "The August cycle runs 31 production days, not 30",
+      "body": "The Aug Client Meeting Report carries 31 dated tabs from July (25) to Aug (24) and sets a 22,255.31 BCM daily target against the unchanged 645,404 BCM monthly figure. The July cycle ran 30 days. Every days-remaining and percent-of-month calculation for this cycle needs the longer denominator.",
+      "action": ""
+    },
+    {
+      "priority": "MONITOR",
+      "title": "Compile passes need a KPI check before they finish",
+      "body": "This drift was invisible for a full publish cycle because nothing errored and the articles themselves were correct and well sourced. Only the wording changed.",
       "action": ""
     }
   ]
