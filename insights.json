@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-22T17:07:03",
+  "generatedAt": "2026-07-27T16:39:40",
   "date": "2026-07-22",
   "runNumber": 71,
   "summary": "1. All three parts came back clean. 2. Notion Meeting Notes Database queried for meetings created on or after 2026-07-15 — one result, the \"Meeting ‣\" auto-generated stub (created 2026-07-18), still empty (no transcript, no summary) and skipped again, same as every pass since the 67th. 3. No new meeting notes. 4. No production workbook, survey file, or maintenance schedule has landed or been re-saved since. 5. Important References folder re-checked: still 27 files, no new content since 2026-07-15 (Zar Mohammed email, already analyzed). 6. No Wiki articles touched. 7. Queried the Task Feedback Log's \"All Feedback\" view (26 rows) — every row already shows Status = Processed. 8. No unprocessed rows, no new resolutions, no mismatches.",
@@ -29,195 +29,40 @@
       "good": null
     }
   ],
-  "trend": [
-    {
-      "date": "2026-06-25",
-      "label": "25 Jun",
-      "actual": 22289,
-      "target": 23469,
-      "half": false
-    },
-    {
-      "date": "2026-06-26",
-      "label": "26 Jun",
-      "actual": 15159,
-      "target": 11735,
-      "half": true
-    },
-    {
-      "date": "2026-06-27",
-      "label": "27 Jun",
-      "actual": 22785,
-      "target": 23469,
-      "half": false
-    },
-    {
-      "date": "2026-06-28",
-      "label": "28 Jun",
-      "actual": 21948,
-      "target": 23469,
-      "half": false
-    },
-    {
-      "date": "2026-07-04",
-      "label": "4 Jul",
-      "actual": 21452,
-      "target": 23469,
-      "half": false
-    },
-    {
-      "date": "2026-07-05",
-      "label": "5 Jul",
-      "actual": 23250,
-      "target": 23469,
-      "half": false
-    },
-    {
-      "date": "2026-07-06",
-      "label": "6 Jul",
-      "actual": 22785,
-      "target": 23469,
-      "half": false
-    },
-    {
-      "date": "2026-07-07",
-      "label": "7 Jul",
-      "actual": 22351,
-      "target": 23469,
-      "half": false
-    },
-    {
-      "date": "2026-07-08",
-      "label": "8 Jul",
-      "actual": 23591,
-      "target": 23469,
-      "half": false
-    },
-    {
-      "date": "2026-07-09",
-      "label": "9 Jul",
-      "actual": 23467,
-      "target": 23469,
-      "half": false
-    },
-    {
-      "date": "2026-07-10",
-      "label": "10 Jul",
-      "actual": 12958,
-      "target": 11735,
-      "half": true
-    },
-    {
-      "date": "2026-07-11",
-      "label": "11 Jul",
-      "actual": 25575,
-      "target": 23469,
-      "half": false
-    },
-    {
-      "date": "2026-07-12",
-      "label": "12 Jul",
-      "actual": 23126,
-      "target": 23469,
-      "half": false
-    },
-    {
-      "date": "2026-07-13",
-      "label": "13 Jul",
-      "actual": 21979,
-      "target": 23469,
-      "half": false
-    },
-    {
-      "date": "2026-07-14",
-      "label": "14 Jul",
-      "actual": 21607,
-      "target": 23469,
-      "half": false
-    },
-    {
-      "date": "2026-07-15",
-      "label": "15 Jul",
-      "actual": 23126,
-      "target": 23469,
-      "half": false
-    },
-    {
-      "date": "2026-07-16",
-      "label": "16 Jul",
-      "actual": 24087,
-      "target": 23469,
-      "half": false
-    },
-    {
-      "date": "2026-07-17",
-      "label": "17 Jul",
-      "actual": 11811,
-      "target": 11735,
-      "half": true
-    },
-    {
-      "date": "2026-07-18",
-      "label": "18 Jul",
-      "actual": 25172,
-      "target": 23469,
-      "half": false
-    },
-    {
-      "date": "2026-07-19",
-      "label": "19 Jul",
-      "actual": 23312,
-      "target": 23469,
-      "half": false
-    },
-    {
-      "date": "2026-07-20",
-      "label": "20 Jul",
-      "actual": 19406,
-      "target": 23469,
-      "half": false
-    },
-    {
-      "date": "2026-07-21",
-      "label": "21 Jul",
-      "actual": 19964,
-      "target": 23469,
-      "half": false
-    }
-  ],
+  "trend": [],
   "fleet": {
     "exUnits": 6,
     "dtUnits": 17,
     "excavators": [
       {
         "unit": "EX-340",
-        "avail": "95.8%"
-      },
-      {
-        "unit": "EX-262",
         "avail": "97.9%"
       },
       {
+        "unit": "EX-262",
+        "avail": "95.8%"
+      },
+      {
         "unit": "EX-253",
-        "avail": "85.4%"
+        "avail": "97.9%"
       },
       {
         "unit": "EX-263",
-        "avail": "81.2%"
+        "avail": "97.9%"
       },
       {
         "unit": "EX-247",
-        "avail": "56.2%"
+        "avail": "97.9%"
       },
       {
         "unit": "EX-1200",
         "avail": null
       }
     ],
-    "exAvail": "83.3%",
+    "exAvail": "97.5%",
     "exBasis": "5/6",
-    "pdfDate": "21-07",
-    "dtAvail": "85.5%",
+    "pdfDate": "26-07",
+    "dtAvail": "83.9%",
     "dtBasis": "17 active ≥8h"
   },
   "equipment": [
@@ -229,7 +74,7 @@
       "util": "",
       "bd_hrs": "",
       "note": "and EX-340 each run 85% PA / 92-93% UA and a combined 1,054 kt week-30 production target across the four worki",
-      "comment": "Bucket Tips Change"
+      "comment": ""
     },
     {
       "unit": "DT-244",
@@ -239,7 +84,7 @@
       "util": "",
       "bd_hrs": "",
       "note": "\"Side mirror broken\" (Jul 16) then \"Side mirror bolt loose\" (Jul 17)",
-      "comment": "Coolant Leaking"
+      "comment": ""
     },
     {
       "unit": "DT-130",
@@ -259,7 +104,7 @@
       "util": "",
       "bd_hrs": "21",
       "note": "21 BD hrs",
-      "comment": "Hydraulic Oil Leaking"
+      "comment": ""
     },
     {
       "unit": "DT-242",
@@ -269,7 +114,7 @@
       "util": "",
       "bd_hrs": "15.5",
       "note": "\"Hydraulic leakage\" (Jul 15, 15.5 BD hrs, partial; Jul 16, 24 BD hrs, full down; Jul 17, still 24 BD hrs) befo",
-      "comment": ""
+      "comment": "Check Noise From Eng  & Shut  Down ( Check )"
     },
     {
       "unit": "DT-243",
