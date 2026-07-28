@@ -1554,7 +1554,16 @@ function computeProjection(kpis){
   const needFri=needFull/2;                        // half that on each Friday
   const need=needFull;                             // legacy field = full-day rate
   const projPct=(proj/monthlyTarget-1)*100;
-  return {daysRemain,total,elapsed,mtd,monthlyTarget,pace,proj,need,needFull,needFri,friRemain,fullRemain,projPct};
+  // Target-to-date for the pace bar: read straight off the MTD KPI's own "-X% vs
+  // target" delta (already Friday-weighted correctly at the source, from the wiki's
+  // real per-day targets) rather than a naive elapsed/total calendar fraction. The
+  // naive fraction disagrees with the true target curve whenever the elapsed days
+  // and the remaining days don't carry the same proportion of half-target Fridays —
+  // it was making the bar read "ahead of pace" on stretches where every single day
+  // had actually missed its own daily target.
+  const vsPct=parseNum(bcm.delta);
+  const targetToDate=(vsPct!=null)?mtd/(1+vsPct/100):monthlyTarget*elapsed/total;
+  return {daysRemain,total,elapsed,mtd,monthlyTarget,pace,proj,need,needFull,needFri,friRemain,fullRemain,projPct,targetToDate};
 }
 function renderInsProduction(el){
   const d=insightsData,kpis=d.kpis||[];
@@ -1567,8 +1576,8 @@ function renderInsProduction(el){
   const proj=computeProjection(kpis);
   if(proj){
     const pctTarget=Math.min(100,proj.mtd/proj.monthlyTarget*100);
-    const expected=Math.min(100,proj.elapsed/proj.total*100);
-    const onBar=pctTarget>=expected;
+    const expected=Math.min(100,proj.targetToDate/proj.monthlyTarget*100);
+    const onBar=proj.mtd>=proj.targetToDate;
     html+=`<div class="pbar-card">
       <div class="pbar-top"><span>${fmtInt(proj.mtd)} BCM</span><span>target ${fmtInt(proj.monthlyTarget)}</span></div>
       <div class="pbar-track">
