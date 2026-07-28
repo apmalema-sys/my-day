@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-28T11:28:56",
+  "generatedAt": "2026-07-28T11:50:30",
   "date": "2026-07-28",
   "runNumber": 75,
   "summary": "1. Ore came in at 3,720 BCM against a 1,727.8 BCM target, +115.3%, split MG 2,511 BCM and SHG 1,209 BCM with zero LG/HG/SSHG. 2. 2. The daily total still missed by 5.0% (21,142 BCM against 22,255.3 BCM) because waste ran 15.1% under plan. 3. 3. MTD sits at 62,620 BCM against a 66,765.9 BCM target, -6.2% at day 3 of 31, with 28 days remaining in the cycle. 4. 4. Crusher stockpile throughput reached 8,599.5 LCM against the 124,000 LCM monthly plan, 6.9%, on the best single-day crusher feed of the cycle so far (3,136 BCM against ~4h25m of downtime). 5. DR-343's standing \"Faulty Drifter\" fault, open since 11-Jul, does not appear in the Jul 27 Daily Availability Final Report. 6. The unit instead logs two routine planned stops (hydraulic oil leak, daily inspection) at 83.33% availability — the first report since the fault opened in which the machine reads as working, not down. 7. No workshop confirmation of a formal close-out has landed in this KB yet; this matches the FCST Week 31-32 forecast (registered 74th pass) of recovery from Jul 23, but is flagged as an open question pending direct confirmation rather than treated as settled. 8. DT-130 develops the day's most severe single-unit fault: three simultaneous entries (1000H service, engine gasket leak, air dryer job) all opening from the same 4:00 PM timestamp with no Date Out, 43.75% availability. 9. The newly-registered Week 31 HV maintenance schedule books the same unit for a 1000H service + backlog on 28-Jul, so this likely reads as the same planned job starting a few hours early rather than an unplanned failure on top of planned work. Ancillary fleet weak spot: WD-145, the site's only Wheel Dozer, went fully down on a new brake-wear finding (27-Jul 05:30 AM) — a full-category outage with no second unit on the register. Wheel Loader also sits at 60% daily on two of five units down (WL-101 long-standing accident damage, WL-295 a bucket-arm pin/bushing job). Standing long-term faults continue unresolved and unchanged: EX-123 (track damage, day 22), DT-108 (suspension/power-train leaks, day 15), DT-109 (accident damage, day 7) — all three still excluded from their fleet's availability denominator per the mechanism this KB flagged on Jul 26. Articles updated (both `Last updated` bumped to 2026-07-28): [[daily-production-report]] (Jul 27 day section, Week 31 HV/LV maintenance schedules cross-referenced), [[fleet-availability-utilization]] (Jul 27 fleet table, DR-343 fault-clearance note, WD-145 and DT-130 detail, standing-fault day counts updated). [[survey-volume-reconciliation]] not updated — no new INX-SUM survey file has landed since Day 2 (`260727-INX-SUM.xlsx`, reconciling Jul 26). 12 RAW files registered this pass (one availability PDF, two maintenance schedules, one Workshop Daily Task PDF, and eight re-read Aug-cycle production workbooks). No new article created, no content removed or renamed. ---",
@@ -29,7 +29,29 @@
       "good": null
     }
   ],
-  "trend": [],
+  "trend": [
+    {
+      "date": "2026-07-25",
+      "label": "25 Jul",
+      "actual": 21514,
+      "target": 23469,
+      "half": false
+    },
+    {
+      "date": "2026-07-26",
+      "label": "26 Jul",
+      "actual": 19964,
+      "target": 23469,
+      "half": false
+    },
+    {
+      "date": "2026-07-27",
+      "label": "27 Jul",
+      "actual": 21142,
+      "target": 23469,
+      "half": false
+    }
+  ],
   "fleet": {
     "availDaily": "84.42%",
     "availMtd": "91.28%",
