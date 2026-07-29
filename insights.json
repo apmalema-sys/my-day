@@ -1,13 +1,13 @@
 {
-  "generatedAt": "2026-07-29T11:32:33",
-  "date": "2026-07-28",
-  "runNumber": 76,
-  "summary": "1. Notion Meeting Notes Database queried for meetings created on or after 2026-07-21 — one result, \"Personal Life Management System Walkthrough\" (created 2026-07-28 today), a personal Notion-productivity-system demo unrelated to mining operations. 2. Out of scope for this KB, skipped. 3. No new meeting notes. 4. Key operational findings The August fiscal cycle's third straight negative survey-reconciliation day lands. `260728-INX-SUM.xlsx` reconciles Jul 27: trucks 21,142 BCM (ties this KB's own Jul 27 production total) against survey 13,322 BCM, a -7,820 BCM (-58.70%) gap — the sharpest single-day read of the new cycle so far, on \"PC 2000 (262) and EXC 6020 (340) loading on heap + 5 meters area.\" MTD now stands at trucks 62,620 / survey 42,729 / -19,891 BCM (-31.76%). 5. Three days into the August cycle, every one has landed negative (-30.89%, -53.92%, -58.70%), and the survey rate now required to hit the monthly target for the rest of the cycle (21,524 BCM/day) already exceeds every daily survey figure posted this cycle. `August Distance report.xlsx`'s July (27) tab lands and cross-checks clean against Jul 27's already-compiled production figures — no discrepancy on the SHG/MG block split or the six-block waste breakdown. 6. Maaden's Mining II engineering team requested 2027 Budget Cycle data from JRAR on 5-Jul (KPI targets, 2022-Jun2026 historical performance, rated capacities, fleet renewal plans); JRAR delivered the completed workbook today. 7. This is the first multi-year historical trend and first forward-looking (2027) capacity plan in this KB. 8. Availability and utilization step up sharply for all three fleet types from 2025 onward (excavators 77.6%→91.8%→92.4% avail across 2024/2025/2026H1; trucks 89.1%→94.6%→95.1%; drills 71.9%→90.4%→90.4%). 9. The 2027 plan adds one new PC1250 excavator and stages full-life rebuilds across five 777-model dump trucks (DT-242 through DT-246), one per month March-August 2027, plus component-replacement months for four excavators and three drill rigs. The 2027 plan carries EX-123 at a flat 85.42% availability every month with no planned outage — it does not reflect the unit's actual 2026 collapse (95% May → 62% Jun → 31% Jul), which this KB has tracked since the 72nd pass. A data-quality flag: the workbook's excavator and truck MTBF figures repeat identically across four of five tracked years, reading as a placeholder rather than four independently measured years. Important References folder re-checked: still 28 files, no new content since the 72nd pass. Articles updated (all `Last updated` bumped to 2026-07-28): [[survey-volume-reconciliation]] (Day 3 section, MTD -31.76%, new Open Questions), [[daily-production-report]] (Jul 27 survey-landed update, Distance report cross-check), [[fleet-availability-utilization]] (2027 budget-cycle cross-reference, EX-123 plan-vs-actual mismatch flagged), [[workshop-maintenance-planning]] (2027 rebuild-schedule cross-reference). No content removed or renamed. Queried the Task Feedback Log's \"All Feedback\" view (33 rows, sorted Date Logged descending) — every row already shows Status \"Processed,\" most recent Date Logged 2026-07-23 (the six rows the 72nd pass resolved). The EX-123 2027-plan mismatch and DT-281's unlabeled rebuild month are both logged as open questions in the Wiki instead. ---",
+  "generatedAt": "2026-07-29T15:49:29",
+  "date": "2026-07-29",
+  "runNumber": 77,
+  "summary": "1. Ore beat plan by 97.4% (3,410 BCM against a 1,727.8 BCM target) on a single-grade MG blend, the first all-MG ore day of the new cycle, but the daily total still missed by 1.5% (21,917 BCM against 22,255.3 BCM) because waste ran 9.8% under plan. 2. 2. The crusher lost about 12h15m to maintenance, the heaviest single-day downtime of the August cycle, and fed only 1,792 BCM, the cycle's lowest daily feed — MTD crusher stockpile throughput sits at 10,863 LCM against the 124,000 LCM monthly plan, 8.8%. 3. 3. MTD production sits at 84,537 BCM against an 89,021.2 BCM target, -5.0% at day 4 of 31, with 27 days remaining in the cycle. 4. 4. Drilling posted its best day of the cycle so far, 2,898 m against a 2,581.2 m target (+12.3%), and the Daily Drill Sampling Record logged 130 samples — a new high for the entire July/August dataset, surpassing the prior July 13 high of 118. 5. DR-343's standing \"Faulty Drifter\" fault, which had cleared for the first time in the Jul 27 report after 16+ days down, reopens on Jul 28 under a different description (\"Faulty compressor oil separator element replaced, Water injection problem rectified\") — resolving last pass's open question in the negative. 6. DR-125 logs the identical fault description the same afternoon, and DR-139 separately develops a new \"Faulty percussion\" fault — three drill-fleet fault entries opening within hours of each other. 7. EX-253's Jul 27 \"Swing problem\" (previously unspecified) is confirmed Jul 28 as a hard mechanical failure — \"Swing Bearing Failure,\" 41.67% availability, a new fault entry rather than a continuation. 8. Elsewhere in the ancillary fleet, WD-145 (the site's only Wheel Dozer) fully recovers from Jul 27's full-category outage. 9. The Week 31-32 bi-weekly plan deck lands (`Weekly Plan ADW W301_32.pdf`, 28 Jul-10 Aug). EX-123 is written out for a fourth consecutive bi-weekly deck (0% PA, no recovery date); DR-124/125/139 are written out for a fifth straight deck, and the same equipment table lists a duplicate \"DR-125\" row at 78% PA alongside DR-341/342/343 — a likely copy-paste error. More notably, the deck's weekly production-schedule totals (Week 31: 410,477 t, Week 32: 412,268 t) are byte-identical to the W30-31 deck's own totals for the immediately preceding week pair, and the drill-fleet total row (782 service hrs, 53% PA) also repeats exactly — worth a direct check with JRAR planning on whether these tables are being recalculated per deck or carried forward from a template. No new INX-SUM survey file has landed for Day 4 of the August cycle (which would reconcile Jul 28's truck count); the survey MTD gap still reflects Day 3's -31.76%. This is a dashboard-scoped run (per the 74th/75th pass pattern) — Important References and the Task Feedback Log were not processed.",
   "kpis": [
     {
       "label": "MTD BCM",
-      "value": "62,620",
-      "delta": "-6.2% vs target",
+      "value": "84,537",
+      "delta": "-5.0% vs target",
       "good": false
     },
     {
@@ -18,13 +18,13 @@
     },
     {
       "label": "Crusher MTD",
-      "value": "7%",
-      "delta": "8,600 / 124,000 LCM",
+      "value": "9%",
+      "delta": "10,863 / 124,000 LCM",
       "good": null
     },
     {
       "label": "Days Remain",
-      "value": "28",
+      "value": "27",
       "delta": "",
       "good": null
     }
@@ -50,27 +50,34 @@
       "actual": 21142,
       "target": 23469,
       "half": false
+    },
+    {
+      "date": "2026-07-28",
+      "label": "28 Jul",
+      "actual": 21917,
+      "target": 23469,
+      "half": false
     }
   ],
   "fleet": {
-    "availDaily": "84.42%",
-    "availMtd": "91.28%",
-    "exAvail": "91.3%",
+    "availDaily": "82.34%",
+    "availMtd": "90.94%",
+    "exAvail": "84.8%",
     "exUnits": 6,
-    "dtAvail": "86.2%",
+    "dtAvail": "92.4%",
     "dtUnits": 17,
     "excavators": [
       {
         "unit": "EX-340",
-        "avail": "95.8%"
-      },
-      {
-        "unit": "EX-262",
         "avail": "97.9%"
       },
       {
+        "unit": "EX-262",
+        "avail": "95.8%"
+      },
+      {
         "unit": "EX-253",
-        "avail": "66.7%"
+        "avail": "41.7%"
       },
       {
         "unit": "EX-263",
@@ -78,7 +85,7 @@
       },
       {
         "unit": "EX-247",
-        "avail": "97.9%"
+        "avail": "90.6%"
       },
       {
         "unit": "EX-1200",
@@ -86,7 +93,7 @@
       }
     ],
     "exBasis": "5/6",
-    "pdfDate": "27-07",
+    "pdfDate": "28-07",
     "dtBasis": "17 active ≥8h"
   },
   "equipment": [
@@ -94,59 +101,85 @@
       "unit": "DR-343",
       "type": "Drill",
       "status": "warning",
-      "avail": "64.58%",
-      "util": "-",
-      "bd_hrs": "8.5",
-      "note": "Down since 11-Jul, day 16. Faulty drifter, SANDVIK overhaul. Three revised return dates all missed.",
+      "avail": "",
+      "util": "",
+      "bd_hrs": "",
+      "note": "'s shared compressor-oil-separator/water-injection fault (both opened the same afternoon)** — worth checking w",
+      "comment": "Worn-out shank adapter replaced"
+    },
+    {
+      "unit": "EX-253",
+      "type": "Excavator",
+      "status": "warning",
+      "avail": "",
+      "util": "",
+      "bd_hrs": "",
+      "note": "'s swing bearing failure (confirmed Jul 28) and",
+      "comment": "Swing Braring Failure"
+    },
+    {
+      "unit": "DR-125",
+      "type": "Drill",
+      "status": "down",
+      "avail": "0%",
+      "util": "",
+      "bd_hrs": "",
+      "note": "twice** — once at 0% PA (with",
+      "comment": "Faulty compressor oil separator  element replaced , Water injection  problem rectified"
+    },
+    {
+      "unit": "DR-124",
+      "type": "Drill",
+      "status": "down",
+      "avail": "78%",
+      "util": "",
+      "bd_hrs": "",
+      "note": ") and once at 78% PA (with",
       "comment": ""
     },
     {
-      "unit": "DT-109",
-      "type": "Haul Truck",
+      "unit": "DR-139",
+      "type": "Drill",
       "status": "down",
-      "avail": "0%",
-      "util": "0%",
-      "bd_hrs": "24",
-      "note": "Down since 21-Jul, day 6. Accident damage from the 20-Jul high-wall contact, investigation open. Reported at 1",
-      "comment": "Accident Damage"
+      "avail": "78%",
+      "util": "",
+      "bd_hrs": "",
+      "note": ") and once at 78% PA (with",
+      "comment": "Faulty percussion"
     },
     {
-      "unit": "DT-108",
-      "type": "Haul Truck",
+      "unit": "DR-341",
+      "type": "Drill",
       "status": "down",
-      "avail": "0%",
-      "util": "0%",
-      "bd_hrs": "24",
-      "note": "Down since 13-Jul, day 14. L.H.F suspension leak plus power-train leaks. No Date Out. Reported at 100% / 0 hrs",
-      "comment": "L.H.F Suspension Leak"
-    },
-    {
-      "unit": "EX-123",
-      "type": "Excavator",
-      "status": "down",
-      "avail": "0%",
-      "util": "0%",
-      "bd_hrs": "24",
-      "note": "Down since 06-Jul, day 21. L.H track off, track tension damage. No Date Out in any report since. Reported at 1",
-      "comment": "L.H Track Off ( Track  Tienson  Damage )"
+      "avail": "",
+      "util": "",
+      "bd_hrs": "",
+      "note": "/342/343) — a likely copy-paste error in the source document. Which reading is correct hasn't been confirmed.",
+      "comment": ""
     }
   ],
   "followUps": [
     {
-      "priority": "MONITOR",
-      "title": "`August Distance report.xlsx`'s July (27) tab lands and cross-checks cle...",
+      "priority": "HIGH",
+      "title": "DR-343's standing \"Faulty Drifter\" fault, which had cleared for the firs...",
+      "body": "",
+      "action": ""
+    },
+    {
+      "priority": "HIGH",
+      "title": "EX-253's Jul 27 \"Swing problem\" (previously unspecified) is confirmed Ju...",
+      "body": "",
+      "action": ""
+    },
+    {
+      "priority": "HIGH",
+      "title": "The Week 31-32 bi-weekly plan deck lands (`Weekly Plan ADW W301_32.pdf`,...",
       "body": "",
       "action": ""
     },
     {
       "priority": "MONITOR",
-      "title": "Maaden's Mining II engineering team requested 2027 Budget Cycle data fro...",
-      "body": "",
-      "action": ""
-    },
-    {
-      "priority": "MONITOR",
-      "title": "Important References folder re-checked: still 28 files, no new content s...",
+      "title": "No new INX-SUM survey file has landed for Day 4 of the August cycle (whi...",
       "body": "",
       "action": ""
     }
