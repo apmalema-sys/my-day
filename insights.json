@@ -1,30 +1,30 @@
 {
-  "generatedAt": "2026-07-31T11:03:02",
-  "date": "2026-07-30",
-  "runNumber": 79,
-  "summary": "1. Notion Meeting Notes Database queried for meetings created on or after 2026-07-23 — one result, the same \"Personal Life Management System Walkthrough\" personal-Notion demo already flagged out of scope by the 76th pass. 2. No new meeting notes. 3. No production workbook, survey file, maintenance schedule, or Maaden plan document has landed or been re-saved since yesterday's afternoon pass. 4. Important References folder re-checked: still 29 files, no new or updated files since the KPI/bonus email registered by the 78th pass. 5. No Wiki articles touched this pass. 6. Queried the Task Feedback Log's \"All Feedback\" view (33 rows, sorted Date Logged descending) — every row already shows Status \"Processed,\" most recent Date Logged still 2026-07-23.",
+  "generatedAt": "2026-07-31T17:12:22",
+  "date": "2026-07-31",
+  "runNumber": null,
+  "summary": "1. 2026-07-31 — Health check (delta) Audit: 25 of 45 articles read (22 modified since last check 2026-07-01 plus 3 random samples — `oee-framework`, `refuelling-area-safety-pattern`, `loto-control-of-hazardous-energy`). 2. Outputs reviewed: 2 (`important-references-analysis_2026-07-27.md`, `important-references-analysis_2026-07-29.md`). 3. RAW added since last check: ~180 files (registered per compile-pass entries above; not re-verified in this health check). 4. Writing rules loaded from `ABOUT ME/writing-rules.md`. 5. American English spellings applied (per writing rules — override the skill's default US→UK direction). 6. Direct quotes preserved verbatim. 7. Navigation files (INDEX, CHANGELOG, QUESTIONS, _INGESTED, CLAUDE.md) exempted. 8. Auto-fixed: em-dash bullets: 207 `Term —` occurrences converted to `Term:` across 14 articles (life-saving-rules, dust-suppression, ncr-patterns, july-2026-forecast, geotechnical-risk-register, safety-inspection-patterns, 2027-fleet-budget-capacity-plan, workshop-maintenance-planning, weekly-mining-plan, blasting-and-drilling, daily-production-report, fleet-availability-utilization, survey-volume-reconciliation, refuelling-area-safety-pattern) writing-rules banned-word swaps: 6 unambiguous \"going forward\" swaps (2× daily-production-report, 1× fleet-availability-utilization, 1× survey-volume-reconciliation, 1× blasting-and-drilling, 1× safety-inspection-patterns) — replaced with \"from here\" or dropped per Peter's rule backlinks: 0 repointed. 9. All 156 truly-broken references are to unregistered source files (SOPs, PTOs, IBRAs, individual NCR sources, one range-form alias `equipment-running-hours-jul15-17`) rather than wiki articles with mismatched slugs — outside the skill's auto-fix scope (repoints only where a wiki article exists with the exact slug). Logged as a pending item. RAW: 0 orphan files registered. One genuine candidate found (`Survey Data/Aug 26/260729-INX-SUM.xlsx`) but it is a binary XLSX with no frontmatter — index-level registration is a judgement call that belongs in a compile pass, not this health check. The apparent second candidate (`Suggested KPI's.docx`) is already registered under the smart-quote apostrophe variant per the 34th pass's own note — false positive. em-dash bullet artifact: `Last updated` bumped to 2026-07-31 on all 14 formatted files per the KB CLAUDE.md date-bump policy (set 2026-05-28). promotions: 0 emerging → established this pass. Reviewed 8 emerging articles; none has ≥2 truly independent RAW sources (the multi-source candidates — grade-control-june-2026 (13 sources), equipment-running-hours-log (11 sources) — cite the same repeated workbook re-read across days rather than independent sources, so held). Splitting the pattern into its own article would duplicate rather than add insight this pass. Pending judgement: Broken backlinks not fixable by slug repoint (156 unique references across 33 wiki articles): SOP/PTO/IBRA references to procedure files that were never ingested into RAW (sop-blasting, sop-drilling, sop-hydraulic-rock-breaker, pto-loading, pto-hauling, pto-tipping, etc.), 14 individual NCR-XX-XXX aliases in ncr-patterns.md that reference per-NCR source files not registered, one weird link `[[_INGESTED.md]]` in workshop-maintenance-planning.md, and one range-form alias `equipment-running-hours-jul15-17` in fleet-availability-utilization.md where individual jul15/16/17 aliases exist but no range alias does. Author call on whether to (a) drop the wiki links, (b) register the source files with proper aliases, or (c) repoint the range alias to the three individuals. One orphan RAW file: `Survey Data/Aug 26/260729-INX-SUM.xlsx` (Jul 29 survey workbook). The daily `260730-INX-SUM.xlsx` already carries Day 4 and Day 5 data (per the 80th pass CHANGELOG), which may make this file redundant. Author call: register at index level or leave as a superseded duplicate. Promotions held: grade-control-june-2026 and equipment-running-hours-log both have many sources but all are the same workbook re-read across days. Author call on whether that meets the \"independent supporting sources\" threshold for emerging → established. Two writing-rules judgement items not auto-swapped: \"world-class OEE benchmark\" (oee-framework.md L35 — technical benchmark terminology that would need a different phrasing) and \"genuinely exceptional reconciliation day\" (survey-volume-reconciliation.md L729 — the banned \"exceptional\" appears in a cautious analytical note where the replacement isn't obvious). Both flagged for the author's call. The Title Case heading heuristic flagged 22 candidates, all reviewed and confirmed legitimate proper nouns or dated report titles (Life Saving Rules, Daily Availability Final Report — [date], HOD Night Shift Observation Tour, etc.). No auto-fix applied. ---",
   "kpis": [
     {
       "label": "MTD BCM",
-      "value": "84,537",
-      "delta": "-5.0% vs target",
+      "value": "121,706",
+      "delta": "-8.9% vs target",
       "good": false
     },
     {
       "label": "Survey Gap",
-      "value": "-58.7%",
+      "value": "-31.9%",
       "delta": "survey vs trucks MTD",
       "good": false
     },
     {
       "label": "Crusher MTD",
-      "value": "9%",
-      "delta": "10,863 / 124,000 LCM",
+      "value": "14%",
+      "delta": "16,860 / 124,000 LCM",
       "good": null
     },
     {
       "label": "Days Remain",
-      "value": "27",
+      "value": "25",
       "delta": "",
       "good": null
     }
@@ -57,11 +57,25 @@
       "actual": 21917,
       "target": 23469,
       "half": false
+    },
+    {
+      "date": "2026-07-29",
+      "label": "29 Jul",
+      "actual": 18724,
+      "target": 23469,
+      "half": false
+    },
+    {
+      "date": "2026-07-30",
+      "label": "30 Jul",
+      "actual": 18445,
+      "target": 23469,
+      "half": false
     }
   ],
   "fleet": {
-    "availDaily": "82.34%",
-    "availMtd": "90.94%",
+    "availDaily": "84.15%",
+    "availMtd": "90.43%",
     "exAvail": "95.4%",
     "exUnits": 6,
     "dtAvail": "88.2%",
@@ -98,14 +112,14 @@
   },
   "equipment": [
     {
-      "unit": "DR-343",
-      "type": "Drill",
+      "unit": "EX-123",
+      "type": "Excavator",
       "status": "warning",
       "avail": "",
       "util": "",
       "bd_hrs": "",
-      "note": "'s shared compressor-oil-separator/water-injection fault (both opened the same afternoon)** — worth checking w",
-      "comment": "Drifter Failure"
+      "note": "'s status at different points in its own 24-day fault, so it cannot be trusted alone. Needs a direct check wit",
+      "comment": "Re Fit Stick Cylinder Hoses"
     },
     {
       "unit": "EX-253",
@@ -118,13 +132,23 @@
       "comment": "Swing Braring Failure"
     },
     {
+      "unit": "DR-343",
+      "type": "Drill",
+      "status": "warning",
+      "avail": "",
+      "util": "",
+      "bd_hrs": "",
+      "note": "'s shared compressor-oil-separator/water-injection fault (both opened the same afternoon):** worth checking wh",
+      "comment": "Drifter Failure"
+    },
+    {
       "unit": "DR-125",
       "type": "Drill",
       "status": "down",
       "avail": "0%",
       "util": "",
       "bd_hrs": "",
-      "note": "twice** — once at 0% PA (with",
+      "note": "twice:** once at 0% PA (with",
       "comment": ""
     },
     {
@@ -154,32 +178,32 @@
       "avail": "",
       "util": "",
       "bd_hrs": "",
-      "note": "/342/343) — a likely copy-paste error in the source document. Which reading is correct hasn't been confirmed.",
+      "note": "/342/343) — a likely copy-paste error in the source document. Which reading is correct hasn't been confirmed. ",
       "comment": ""
     }
   ],
   "followUps": [
     {
       "priority": "HIGH",
-      "title": "DR-343's standing \"Faulty Drifter\" fault, which had cleared for the firs...",
+      "title": "EX-253's status turned genuinely ambiguous on Jul 30: its \"Swing Bearing...",
       "body": "",
       "action": ""
     },
     {
       "priority": "HIGH",
-      "title": "EX-253's Jul 27 \"Swing problem\" (previously unspecified) is confirmed Ju...",
-      "body": "",
-      "action": ""
-    },
-    {
-      "priority": "HIGH",
-      "title": "The Week 31-32 bi-weekly plan deck lands (`Weekly Plan ADW W301_32.pdf`,...",
+      "title": "A new source-side rendering artifact appeared in both new Daily Availabi...",
       "body": "",
       "action": ""
     },
     {
       "priority": "MONITOR",
-      "title": "No new INX-SUM survey file has landed for Day 4 of the August cycle (whi...",
+      "title": "July's tire-replacement cost hit SAR 1,215,175.76 across 46 journal entr...",
+      "body": "",
+      "action": ""
+    },
+    {
+      "priority": "MONITOR",
+      "title": "Survey reconciliation: `260730-INX-SUM.xlsx` recovers two new days in on...",
       "body": "",
       "action": ""
     }
