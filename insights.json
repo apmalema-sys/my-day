@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-07-30T11:06:30",
-  "date": "2026-07-29",
-  "runNumber": 78,
-  "summary": "1. Notion Meeting Notes Database queried for meetings created on or after 2026-07-22 — one result, the same \"Personal Life Management System Walkthrough\" personal-Notion demo already flagged out of scope by the 76th pass. 2. No new meeting notes. 3. Key findings `FW_ KPIs Please share with your Teams.eml` (Important References) carries two items from General Manager Ivan Anthony, both requiring Peter to brief his team: the 2026 bonus rule (no pro-rata; continuous employment 1-Jan to 31-Dec-2026 required; pays March 2027) and the new JRAR Core KPI Framework — Role-Based Weighting Policy v2, effective 1-Mar-2026, EXCO/Board-approved. 4. Six weighted KPI categories (Company Performance, Safety & HSEQ, Production & Productivity, Cost Efficiency, Quality/Technical Compliance, Workforce & Training), each reweighted by role. 5. Production & Productivity carries a fleet-utilization floor of ≥85% — directly relevant to the standing EX-123/DT-108/DT-109/DR-343 long-term-down situations this KB has tracked since June. 6. First formal board-approved KPI policy in this KB's corpus. `Project Finances/P&L Ad Duwayhi 06-26.xlsx` (June 2026 Income Statement, no covering email this cycle) shows the site still losing money but by less than budgeted: June gross profit −0.864M SAR actual vs a budgeted −1.379M loss (37.4% better than plan) vs −4.644M in June 2025. 7. YTD gross profit −6.464M vs an −8.174M YTD budget (20.9% better than plan). 8. Only February posted a profitable month in the Jan-Jun trend. 9. Spareparts Consumption & Repair is the standout YTD overrun (+87.3% over budget) — the cost line most directly tied to the fleet's standing breakdown register (EX-123, DT-108, DT-109, DR-343, and the earlier DT-282/DT-346 final-drive issues). Diesel fuel is the standout saving (−19.4% under YTD budget). Not promoted to the Wiki — stays in Outputs, same treatment as the May 2026 P&L (16th pass). Workshop Daily Task 30-Jul-2026.pdf registered at index level only (image-only, consistent with every prior file of this type). Both new Important References items synthesised into `Outputs/important-references-analysis_2026-07-29.md`. Important References folder now 29 files. Queried the Task Feedback Log's \"All Feedback\" view (33 rows, sorted Date Logged descending) — every row already shows Status \"Processed,\" most recent Date Logged 2026-07-23 (the six rows the 72nd pass resolved). Landed in the Tasks Database Inbox (Status = Inbox, Assignee = Peter, Life Area/Project/dates left empty for triage). ---",
+  "generatedAt": "2026-07-31T11:03:02",
+  "date": "2026-07-30",
+  "runNumber": 79,
+  "summary": "1. Notion Meeting Notes Database queried for meetings created on or after 2026-07-23 — one result, the same \"Personal Life Management System Walkthrough\" personal-Notion demo already flagged out of scope by the 76th pass. 2. No new meeting notes. 3. No production workbook, survey file, maintenance schedule, or Maaden plan document has landed or been re-saved since yesterday's afternoon pass. 4. Important References folder re-checked: still 29 files, no new or updated files since the KPI/bonus email registered by the 78th pass. 5. No Wiki articles touched this pass. 6. Queried the Task Feedback Log's \"All Feedback\" view (33 rows, sorted Date Logged descending) — every row already shows Status \"Processed,\" most recent Date Logged still 2026-07-23.",
   "kpis": [
     {
       "label": "MTD BCM",
@@ -62,9 +62,9 @@
   "fleet": {
     "availDaily": "82.34%",
     "availMtd": "90.94%",
-    "exAvail": "84.8%",
+    "exAvail": "95.4%",
     "exUnits": 6,
-    "dtAvail": "92.4%",
+    "dtAvail": "88.2%",
     "dtUnits": 17,
     "excavators": [
       {
@@ -73,19 +73,19 @@
       },
       {
         "unit": "EX-262",
-        "avail": "95.8%"
+        "avail": "93.8%"
       },
       {
         "unit": "EX-253",
-        "avail": "41.7%"
+        "avail": "100.0%"
       },
       {
         "unit": "EX-263",
-        "avail": "97.9%"
+        "avail": "87.5%"
       },
       {
         "unit": "EX-247",
-        "avail": "90.6%"
+        "avail": "97.9%"
       },
       {
         "unit": "EX-1200",
@@ -93,7 +93,7 @@
       }
     ],
     "exBasis": "5/6",
-    "pdfDate": "28-07",
+    "pdfDate": "30-07",
     "dtBasis": "17 active ≥8h"
   },
   "equipment": [
@@ -105,7 +105,7 @@
       "util": "",
       "bd_hrs": "",
       "note": "'s shared compressor-oil-separator/water-injection fault (both opened the same afternoon)** — worth checking w",
-      "comment": "Worn-out shank adapter replaced"
+      "comment": "Drifter Failure"
     },
     {
       "unit": "EX-253",
@@ -125,7 +125,7 @@
       "util": "",
       "bd_hrs": "",
       "note": "twice** — once at 0% PA (with",
-      "comment": "Faulty compressor oil separator  element replaced , Water injection  problem rectified"
+      "comment": ""
     },
     {
       "unit": "DR-124",
@@ -145,7 +145,7 @@
       "util": "",
       "bd_hrs": "",
       "note": ") and once at 78% PA (with",
-      "comment": "Faulty percussion"
+      "comment": "Drifter Failure"
     },
     {
       "unit": "DR-341",
