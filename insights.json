@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-08-04T08:54:09",
-  "date": "2026-07-31",
+  "generatedAt": "2026-08-04T11:06:24",
+  "date": "2026-08-04",
   "runNumber": null,
-  "summary": "1. 2026-07-31 — Health check (delta) Audit: 25 of 45 articles read (22 modified since last check 2026-07-01 plus 3 random samples — `oee-framework`, `refuelling-area-safety-pattern`, `loto-control-of-hazardous-energy`). 2. Outputs reviewed: 2 (`important-references-analysis_2026-07-27.md`, `important-references-analysis_2026-07-29.md`). 3. RAW added since last check: ~180 files (registered per compile-pass entries above; not re-verified in this health check). 4. Writing rules loaded from `ABOUT ME/writing-rules.md`. 5. American English spellings applied (per writing rules — override the skill's default US→UK direction). 6. Direct quotes preserved verbatim. 7. Navigation files (INDEX, CHANGELOG, QUESTIONS, _INGESTED, CLAUDE.md) exempted. 8. Auto-fixed: em-dash bullets: 207 `Term —` occurrences converted to `Term:` across 14 articles (life-saving-rules, dust-suppression, ncr-patterns, july-2026-forecast, geotechnical-risk-register, safety-inspection-patterns, 2027-fleet-budget-capacity-plan, workshop-maintenance-planning, weekly-mining-plan, blasting-and-drilling, daily-production-report, fleet-availability-utilization, survey-volume-reconciliation, refuelling-area-safety-pattern) writing-rules banned-word swaps: 6 unambiguous \"going forward\" swaps (2× daily-production-report, 1× fleet-availability-utilization, 1× survey-volume-reconciliation, 1× blasting-and-drilling, 1× safety-inspection-patterns) — replaced with \"from here\" or dropped per Peter's rule backlinks: 0 repointed. 9. All 156 truly-broken references are to unregistered source files (SOPs, PTOs, IBRAs, individual NCR sources, one range-form alias `equipment-running-hours-jul15-17`) rather than wiki articles with mismatched slugs — outside the skill's auto-fix scope (repoints only where a wiki article exists with the exact slug). Logged as a pending item. RAW: 0 orphan files registered. One genuine candidate found (`Survey Data/Aug 26/260729-INX-SUM.xlsx`) but it is a binary XLSX with no frontmatter — index-level registration is a judgement call that belongs in a compile pass, not this health check. The apparent second candidate (`Suggested KPI's.docx`) is already registered under the smart-quote apostrophe variant per the 34th pass's own note — false positive. em-dash bullet artifact: `Last updated` bumped to 2026-07-31 on all 14 formatted files per the KB CLAUDE.md date-bump policy (set 2026-05-28). promotions: 0 emerging → established this pass. Reviewed 8 emerging articles; none has ≥2 truly independent RAW sources (the multi-source candidates — grade-control-june-2026 (13 sources), equipment-running-hours-log (11 sources) — cite the same repeated workbook re-read across days rather than independent sources, so held). Splitting the pattern into its own article would duplicate rather than add insight this pass. Pending judgement: Broken backlinks not fixable by slug repoint (156 unique references across 33 wiki articles): SOP/PTO/IBRA references to procedure files that were never ingested into RAW (sop-blasting, sop-drilling, sop-hydraulic-rock-breaker, pto-loading, pto-hauling, pto-tipping, etc.), 14 individual NCR-XX-XXX aliases in ncr-patterns.md that reference per-NCR source files not registered, one weird link `[[_INGESTED.md]]` in workshop-maintenance-planning.md, and one range-form alias `equipment-running-hours-jul15-17` in fleet-availability-utilization.md where individual jul15/16/17 aliases exist but no range alias does. Author call on whether to (a) drop the wiki links, (b) register the source files with proper aliases, or (c) repoint the range alias to the three individuals. One orphan RAW file: `Survey Data/Aug 26/260729-INX-SUM.xlsx` (Jul 29 survey workbook). The daily `260730-INX-SUM.xlsx` already carries Day 4 and Day 5 data (per the 80th pass CHANGELOG), which may make this file redundant. Author call: register at index level or leave as a superseded duplicate. Promotions held: grade-control-june-2026 and equipment-running-hours-log both have many sources but all are the same workbook re-read across days. Author call on whether that meets the \"independent supporting sources\" threshold for emerging → established. Two writing-rules judgement items not auto-swapped: \"world-class OEE benchmark\" (oee-framework.md L35 — technical benchmark terminology that would need a different phrasing) and \"genuinely exceptional reconciliation day\" (survey-volume-reconciliation.md L729 — the banned \"exceptional\" appears in a cautious analytical note where the replacement isn't obvious). Both flagged for the author's call. The Title Case heading heuristic flagged 22 candidates, all reviewed and confirmed legitimate proper nouns or dated report titles (Life Saving Rules, Daily Availability Final Report — [date], HOD Night Shift Observation Tour, etc.). No auto-fix applied. ---",
+  "summary": "1. 2026-08-04 — Pending items actioned (Peter's calls from the 2026-08-04 health check) Peter walked through the five pending judgement items from the same-day delta health check and made four calls (the fifth, promotion holds for `grade-control-june-2026` and `equipment-running-hours-log`, was not raised for a decision — held at emerging per existing practice, unchanged): 1. 2. Stray `.bak` files — deleted. 3. Removed all 7 files from `Wiki/` (`blasting-and-drilling.md.bak`, `daily-production-report.md.bak`, `fleet-availability-utilization.md.bak`, `july-2026-forecast.md.bak`, `loading-hauling-tipping.md.bak`, `safety-inspection-patterns.md.bak`, `workshop-maintenance-planning.md.bak`), left over from the 2026-07-01 quarterly health check's find-and-replace pass. 4. No live article content was affected. 2. 156 broken backlinks — dropped. 5. Swept every Wiki article for `[[...]]` references that resolve to neither a valid Wiki article filename nor a registered `_INGESTED.md` alias. 6. Found 161 occurrences across 33 files (close to the 156 counted on 2026-07-31; the small difference is normal drift between passes). 7. Stripped the double-bracket wiki-link syntax from each, leaving the reference as plain text (e.g. `[[sop-blasting]]` → `sop-blasting`) — no wording or factual content removed, just de-linked since the underlying SOP/PTO/IBRA/NCR/report source files were never ingested into RAW. 8. This includes the one range-form alias `equipment-running-hours-jul15-17`, the stray `[[_INGESTED.md]]` self-reference in `workshop-maintenance-planning.md`, and the `[[my-context-map]]` reference in `traffic-management.md` (points outside this KB, same treatment applied for consistency). 9. If the actual SOP/PTO/IBRA/NCR files are ever ingested into RAW, these plain-text references are the natural re-link points. 3. Orphan RAW file — registered. Added `Survey Data/Aug 26/260729-INX-SUM.xlsx` to `RAW/_INGESTED.md` as its own entry (alias `[[inx-sum-260729]]`), noting its Day 4 figures were already compiled via the 260730 file's cumulative sheet — this is a provenance registration, not a new data extraction. 4. Banned-word rewrites — applied, per Peter's approval: `oee-framework.md`: \"A world-class OEE benchmark in manufacturing is 85%.\" → \"A common OEE benchmark in manufacturing is 85%.\" `survey-volume-reconciliation.md`: \"...rather than a genuinely exceptional reconciliation day.\" → \"...rather than an unusually strong reconciliation result.\" Still open, carried forward: promotion holds for `grade-control-june-2026` and `equipment-running-hours-log` (same-workbook-reread-across-days, not independent sources — unchanged this pass). ---",
   "kpis": [
     {
       "label": "MTD BCM",
@@ -74,11 +74,7 @@
     }
   ],
   "fleet": {
-    "availDaily": "84.15%",
-    "availMtd": "90.43%",
-    "exAvail": "95.0%",
     "exUnits": 6,
-    "dtAvail": "91.8%",
     "dtUnits": 17,
     "excavators": [
       {
@@ -106,20 +102,22 @@
         "avail": null
       }
     ],
+    "exAvail": "95.0%",
     "exBasis": "5/6",
     "pdfDate": "02-08",
+    "dtAvail": "91.8%",
     "dtBasis": "17 active ≥8h"
   },
   "equipment": [
     {
-      "unit": "EX-123",
-      "type": "Excavator",
+      "unit": "WD-145",
+      "type": "Water Dozer",
       "status": "warning",
       "avail": "",
       "util": "",
       "bd_hrs": "",
-      "note": "'s status at different points in its own 24-day fault, so it cannot be trusted alone. Needs a direct check wit",
-      "comment": ""
+      "note": "'s brake fault (day 8) and",
+      "comment": "Check Brake Worn"
     },
     {
       "unit": "EX-253",
@@ -128,7 +126,7 @@
       "avail": "",
       "util": "",
       "bd_hrs": "",
-      "note": "'s swing bearing failure (confirmed Jul 28) and",
+      "note": "'s swing-bearing fault (day 7) have now both run longer than a week with no Date Out and no change in fault de",
       "comment": "Swing Braring Failure"
     },
     {
@@ -138,48 +136,28 @@
       "avail": "",
       "util": "",
       "bd_hrs": "",
-      "note": "'s shared compressor-oil-separator/water-injection fault (both opened the same afternoon):** worth checking wh",
+      "note": "'s current fault (day 6) is now confirmed a genuinely separate event from its two prior drifter faults** (11-J",
       "comment": "Drifter Failure"
     },
     {
-      "unit": "DR-125",
-      "type": "Drill",
+      "unit": "DT-108",
+      "type": "Haul Truck",
       "status": "down",
       "avail": "0%",
       "util": "",
       "bd_hrs": "",
-      "note": "twice:** once at 0% PA (with",
-      "comment": "Tension of feed rope and  accumulator charging"
+      "note": "are newly confirmed planned at 0% PA for a full fortnight in the FCST workbook** — the first time this article",
+      "comment": "L.H.F Suspension Leak"
     },
     {
-      "unit": "DR-124",
-      "type": "Drill",
-      "status": "down",
-      "avail": "78%",
-      "util": "",
-      "bd_hrs": "",
-      "note": ") and once at 78% PA (with",
-      "comment": ""
-    },
-    {
-      "unit": "DR-139",
-      "type": "Drill",
-      "status": "down",
-      "avail": "78%",
-      "util": "",
-      "bd_hrs": "",
-      "note": ") and once at 78% PA (with",
-      "comment": "Dust collector checked"
-    },
-    {
-      "unit": "DR-341",
-      "type": "Drill",
-      "status": "down",
+      "unit": "DT-109",
+      "type": "Haul Truck",
+      "status": "warning",
       "avail": "",
       "util": "",
       "bd_hrs": "",
-      "note": "/342/343) — a likely copy-paste error in the source document. Which reading is correct hasn't been confirmed. ",
-      "comment": ""
+      "note": "'s damage description matches the incident tracked since 20/21-Jul; worth checking whether \"In progress\" repai",
+      "comment": "Front RHS Fender, Handrail & Step  Ladder damaged due to incident"
     }
   ],
   "followUps": [
