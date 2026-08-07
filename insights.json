@@ -1,30 +1,30 @@
 {
-  "generatedAt": "2026-08-06T17:58:23",
-  "date": "2026-08-04",
-  "runNumber": null,
-  "summary": "1. 2026-08-04 — Pending items actioned (Peter's calls from the 2026-08-04 health check) Peter walked through the five pending judgement items from the same-day delta health check and made four calls (the fifth, promotion holds for `grade-control-june-2026` and `equipment-running-hours-log`, was not raised for a decision — held at emerging per existing practice, unchanged): 1. 2. Stray `.bak` files — deleted. 3. Removed all 7 files from `Wiki/` (`blasting-and-drilling.md.bak`, `daily-production-report.md.bak`, `fleet-availability-utilization.md.bak`, `july-2026-forecast.md.bak`, `loading-hauling-tipping.md.bak`, `safety-inspection-patterns.md.bak`, `workshop-maintenance-planning.md.bak`), left over from the 2026-07-01 quarterly health check's find-and-replace pass. 4. No live article content was affected. 2. 156 broken backlinks — dropped. 5. Swept every Wiki article for `[[...]]` references that resolve to neither a valid Wiki article filename nor a registered `_INGESTED.md` alias. 6. Found 161 occurrences across 33 files (close to the 156 counted on 2026-07-31; the small difference is normal drift between passes). 7. Stripped the double-bracket wiki-link syntax from each, leaving the reference as plain text (e.g. `[[sop-blasting]]` → `sop-blasting`) — no wording or factual content removed, just de-linked since the underlying SOP/PTO/IBRA/NCR/report source files were never ingested into RAW. 8. This includes the one range-form alias `equipment-running-hours-jul15-17`, the stray `[[_INGESTED.md]]` self-reference in `workshop-maintenance-planning.md`, and the `[[my-context-map]]` reference in `traffic-management.md` (points outside this KB, same treatment applied for consistency). 9. If the actual SOP/PTO/IBRA/NCR files are ever ingested into RAW, these plain-text references are the natural re-link points. 3. Orphan RAW file — registered. Added `Survey Data/Aug 26/260729-INX-SUM.xlsx` to `RAW/_INGESTED.md` as its own entry (alias `[[inx-sum-260729]]`), noting its Day 4 figures were already compiled via the 260730 file's cumulative sheet — this is a provenance registration, not a new data extraction. 4. Banned-word rewrites — applied, per Peter's approval: `oee-framework.md`: \"A world-class OEE benchmark in manufacturing is 85%.\" → \"A common OEE benchmark in manufacturing is 85%.\" `survey-volume-reconciliation.md`: \"...rather than a genuinely exceptional reconciliation day.\" → \"...rather than an unusually strong reconciliation result.\" Still open, carried forward: promotion holds for `grade-control-june-2026` and `equipment-running-hours-log` (same-workbook-reread-across-days, not independent sources — unchanged this pass). ---",
+  "generatedAt": "2026-08-07T17:06:24",
+  "date": "2026-08-07",
+  "runNumber": 83,
+  "summary": "1. Notion Meeting Notes Database queried for the last 7 days (since 2026-07-31); zero results. 2. Widened to 20 days to confirm the query itself was working — only the already-flagged \"Personal Life Management System Walkthrough\" stub came back, out of scope since the 76th pass. 3. Three items the 82nd pass (dashboard-scoped) had deferred were fully processed this pass: 1. `RE_ List of promotions ADW.eml` (Important References) — a live HR/manpower thread: Peter Hugh proposes a chargehand tier for blast/drill QAQC staff and multi-skilled operators; Abel Eben Pienaar defers any new position to the next budget cycle, current exercise is pay-category correction only. 4. Synthesised into `Outputs/important-references-analysis_2026-08-07.md`, not promoted to the Wiki (personnel-sensitive). 2. 5. Week 32 geotechnical hazard map — two new unscored hazard IDs (HZ-ADW-034, HZ-ADW-035); HZ-ADW-030 and HZ-ADW-033 drop off the map with no explanation. 3. 6. Week 32-33 Maaden bi-weekly plan deck (extracted from its distribution email, six attachments) — the standout finding: EX-123 returns to the equipment plan at ~85% PA with real forecast tonnage, ending a four-deck full write-out streak (W29-30 through W31-32). 7. Drill fleet (DR-124/125/139) written out a sixth straight deck. 8. New discrepancy: the deck writes out DT-281 and DT-282 for the fortnight, while the FCST workbook and every daily actual through Aug 6 write out DT-108 and DT-109 instead — neither DT-281 nor DT-282 has any fault history elsewhere in this KB, so this reads as a probable truck-ID error in the deck rather than a genuine second pair of trucks down. 9. Week 31 closed at 82% Spatial Compliance and 9% below target, per the deck's own distribution email. Articles updated (all bumped to 2026-08-07): [[weekly-mining-plan]] (new Week 32-33 section), [[august-2026-forecast]] (cross-reference + open question on the truck-ID discrepancy), [[geotechnical-risk-register]] (Week 32 hazard map; INDEX status label corrected from \"emerging\" to \"established,\" matching the article's own field). `Wiki/INDEX.md` refreshed for all three. Part C — Task Feedback Log: queried the \"All Feedback\" view, 32 rows returned, sorted by Date Logged descending. All 32 already marked Processed — no unprocessed rows, no Status-blank gap cases, no mismatches, no Wiki edits from this part. Newest row logged 2026-07-30, already actioned in an earlier pass. No content removed or renamed. ---",
   "kpis": [
     {
       "label": "MTD BCM",
-      "value": "121,706",
-      "delta": "-8.9% vs target",
+      "value": "256,153",
+      "delta": "-7.9% vs target",
       "good": false
     },
     {
       "label": "Survey Gap",
-      "value": "-31.9%",
+      "value": "-16.5%",
       "delta": "survey vs trucks MTD",
       "good": false
     },
     {
       "label": "Crusher MTD",
-      "value": "14%",
-      "delta": "16,860 / 124,000 LCM",
+      "value": "27%",
+      "delta": "33,801 / 124,000 LCM",
       "good": null
     },
     {
       "label": "Days Remain",
-      "value": "25",
+      "value": "18",
       "delta": "",
       "good": null
     }
@@ -74,16 +74,20 @@
     }
   ],
   "fleet": {
+    "availDaily": "83.83%",
+    "availMtd": "82.05%",
+    "exAvail": "85.4%",
     "exUnits": 6,
+    "dtAvail": "78.9%",
     "dtUnits": 17,
     "excavators": [
       {
         "unit": "EX-340",
-        "avail": "93.8%"
+        "avail": "75.0%"
       },
       {
         "unit": "EX-262",
-        "avail": "97.9%"
+        "avail": "95.8%"
       },
       {
         "unit": "EX-253",
@@ -91,7 +95,7 @@
       },
       {
         "unit": "EX-263",
-        "avail": "87.5%"
+        "avail": "60.4%"
       },
       {
         "unit": "EX-247",
@@ -102,86 +106,88 @@
         "avail": null
       }
     ],
-    "exAvail": "95.0%",
     "exBasis": "5/6",
-    "pdfDate": "02-08",
-    "dtAvail": "91.8%",
+    "pdfDate": "06-08",
     "dtBasis": "17 active ≥8h"
   },
   "equipment": [
     {
-      "unit": "WD-145",
-      "type": "Water Dozer",
+      "unit": "DR-343",
+      "type": "Drill",
+      "status": "scheduled",
+      "avail": "",
+      "util": "",
+      "bd_hrs": "",
+      "note": "'s Aug 5 forecast recovery date (from the FCST Week 32-33 workbook, \"Drifter Repair, 250H SERVICE & BACKLOG JO",
+      "comment": "Drifter Failure"
+    },
+    {
+      "unit": "EX-123",
+      "type": "Excavator",
+      "status": "down",
+      "avail": "",
+      "util": "",
+      "bd_hrs": "",
+      "note": "'s own repeated restart-and-relapse pattern in June). - **",
+      "comment": "No Start"
+    },
+    {
+      "unit": "MG-266",
+      "type": "Motor Grader",
       "status": "warning",
       "avail": "",
       "util": "",
       "bd_hrs": "",
-      "note": "'s brake fault (day 8) and",
-      "comment": "Check Brake Worn"
+      "note": "'s \"Engine Failure\" was visible in the Aug 3 report but missed by the 81st pass's own fleet update**, which fl",
+      "comment": "Engine Failure"
     },
     {
-      "unit": "EX-253",
+      "unit": "EX-102",
       "type": "Excavator",
       "status": "warning",
       "avail": "",
       "util": "",
       "bd_hrs": "",
-      "note": "'s swing-bearing fault (day 7) have now both run longer than a week with no Date Out and no change in fault de",
-      "comment": "Swing Braring Failure"
+      "note": "as that day's new fault but not the grader. Worth a standing process note: when a compile pass cites a source ",
+      "comment": "C/O Chizal"
     },
     {
-      "unit": "DR-343",
-      "type": "Drill",
+      "unit": "EX-263",
+      "type": "Excavator",
       "status": "warning",
+      "avail": "60.42%",
+      "util": "",
+      "bd_hrs": "",
+      "note": "'s Aug 6 hydraulic fault reads 60.42% avail in the Daily Availability PDF versus 56.25% in the Client Meeting ",
+      "comment": "Hyd Oil Leak ( Boom Cyl Hose Leak )"
+    },
+    {
+      "unit": "DT-185",
+      "type": "Haul Truck",
+      "status": "scheduled",
       "avail": "",
       "util": "",
       "bd_hrs": "",
-      "note": "'s current fault (day 6) is now confirmed a genuinely separate event from its two prior drifter faults** (11-J",
-      "comment": "Drifter Failure"
-    },
-    {
-      "unit": "DT-108",
-      "type": "Haul Truck",
-      "status": "down",
-      "avail": "0%",
-      "util": "",
-      "bd_hrs": "",
-      "note": "are newly confirmed planned at 0% PA for a full fortnight in the FCST workbook** — the first time this article",
-      "comment": "L.H.F Suspension Leak"
-    },
-    {
-      "unit": "DT-109",
-      "type": "Haul Truck",
-      "status": "warning",
-      "avail": "",
-      "util": "",
-      "bd_hrs": "",
-      "note": "'s damage description matches the incident tracked since 20/21-Jul; worth checking whether \"In progress\" repai",
-      "comment": "Front RHS Fender, Handrail & Step  Ladder damaged due to incident"
+      "note": "tire fire or the underlying SAR 1.2M July tire-cost escalation** — both remain open with no scheduled follow-u",
+      "comment": ""
     }
   ],
   "followUps": [
     {
       "priority": "HIGH",
-      "title": "EX-253's status turned genuinely ambiguous on Jul 30: its \"Swing Bearing...",
-      "body": "",
-      "action": ""
-    },
-    {
-      "priority": "HIGH",
-      "title": "A new source-side rendering artifact appeared in both new Daily Availabi...",
+      "title": "Survey reconciliation: `260807-INX-SUM.xlsx` recovers four days in one f...",
       "body": "",
       "action": ""
     },
     {
       "priority": "MONITOR",
-      "title": "July's tire-replacement cost hit SAR 1,215,175.76 across 46 journal entr...",
+      "title": "The Daily Drill Sampling Record workbook, stalled since Jul 31 per the 8...",
       "body": "",
       "action": ""
     },
     {
       "priority": "MONITOR",
-      "title": "Survey reconciliation: `260730-INX-SUM.xlsx` recovers two new days in on...",
+      "title": "Drilling posted its best day of the August cycle on Aug 6: 2,957 m again...",
       "body": "",
       "action": ""
     }
