@@ -1530,9 +1530,10 @@ function remainingFridays(daysRemain){ // Fridays among the final `daysRemain` d
   return fri;
 }
 /* Actual monthly BCM plan target for the production month (25th→24th), from the
-   Maaden "Monthly Production Plan - Jul 2026" (Total Movement 645,404 BCM, 30 prod days).
-   NOT the forecast (636,220), NOT derived. Update this one line each month. */
-const PLAN_MONTHLY_BCM=645404;
+   Maaden "Monthly Production Plan - Aug 2026" (Total Movement 666,785 BCM, 30 prod days).
+   Supersedes the provisional 645,404 survey-workbook figure (now revised to match).
+   NOT the JRAR internal forecast (760,247), NOT derived. Update this one line each month. */
+const PLAN_MONTHLY_BCM=666785;
 function computeProjection(kpis){
   const bcm=kpis.find(k=>/bcm/i.test(k.label||""));
   const dr=kpis.find(k=>/days?\s*remain/i.test(k.label||""));
