@@ -1,13 +1,13 @@
 {
-  "generatedAt": "2026-08-08T19:35:14",
-  "date": "2026-08-07",
-  "runNumber": 83,
-  "summary": "1. Notion Meeting Notes Database queried for the last 7 days (since 2026-07-31); zero results. 2. Widened to 20 days to confirm the query itself was working — only the already-flagged \"Personal Life Management System Walkthrough\" stub came back, out of scope since the 76th pass. 3. Three items the 82nd pass (dashboard-scoped) had deferred were fully processed this pass: 1. `RE_ List of promotions ADW.eml` (Important References) — a live HR/manpower thread: Peter Hugh proposes a chargehand tier for blast/drill QAQC staff and multi-skilled operators; Abel Eben Pienaar defers any new position to the next budget cycle, current exercise is pay-category correction only. 4. Synthesised into `Outputs/important-references-analysis_2026-08-07.md`, not promoted to the Wiki (personnel-sensitive). 2. 5. Week 32 geotechnical hazard map — two new unscored hazard IDs (HZ-ADW-034, HZ-ADW-035); HZ-ADW-030 and HZ-ADW-033 drop off the map with no explanation. 3. 6. Week 32-33 Maaden bi-weekly plan deck (extracted from its distribution email, six attachments) — the standout finding: EX-123 returns to the equipment plan at ~85% PA with real forecast tonnage, ending a four-deck full write-out streak (W29-30 through W31-32). 7. Drill fleet (DR-124/125/139) written out a sixth straight deck. 8. New discrepancy: the deck writes out DT-281 and DT-282 for the fortnight, while the FCST workbook and every daily actual through Aug 6 write out DT-108 and DT-109 instead — neither DT-281 nor DT-282 has any fault history elsewhere in this KB, so this reads as a probable truck-ID error in the deck rather than a genuine second pair of trucks down. 9. Week 31 closed at 82% Spatial Compliance and 9% below target, per the deck's own distribution email. Articles updated (all bumped to 2026-08-07): [[weekly-mining-plan]] (new Week 32-33 section), [[august-2026-forecast]] (cross-reference + open question on the truck-ID discrepancy), [[geotechnical-risk-register]] (Week 32 hazard map; INDEX status label corrected from \"emerging\" to \"established,\" matching the article's own field). `Wiki/INDEX.md` refreshed for all three. Part C — Task Feedback Log: queried the \"All Feedback\" view, 32 rows returned, sorted by Date Logged descending. All 32 already marked Processed — no unprocessed rows, no Status-blank gap cases, no mismatches, no Wiki edits from this part. Newest row logged 2026-07-30, already actioned in an earlier pass. No content removed or renamed. ---",
+  "generatedAt": "2026-08-10T11:06:49",
+  "date": "2026-08-10",
+  "runNumber": 85,
+  "summary": "1. EX-123 develops a new fault (\"Bucket Pin Line Boring,\" opened 7-Aug) that escalates from a 1-hr breakdown to a full 24-hr stand-down on both Aug 8 and 9 — running simultaneously with EX-253's standing Swing Bearing Failure (day 13+), dragging the excavator fleet to its weakest utilization readings of the cycle (65.0%/67.1%). 2. FCST Week 33-34 forecasts EX-123 returning Aug 14. 2. 3. Production misses widen for three straight days (Aug 7 -3.6%, Aug 8 -22.1%, Aug 9 -19.9%) even as ore beats target on all three (+72.2%, +56.4%, +79.4%) — a waste-side shortfall, not an ore problem. 4. MTD gap widens from -7.8% to -12.1%. 3. 5. The official Maaden Monthly Production Plan lands (666,785 BCM/1,800,318 t) — a third monthly BCM figure alongside the JRAR-internal FCST forecast (760,247 BCM, 14% higher) and the now-superseded provisional survey-workbook target (645,404 BCM, which has been revised to match Maaden's plan exactly). 6. Treated as the authoritative monthly target following the same precedence logic already applied to the weekly Maaden plan deck. 4. 7. A fourth truck ID (DT-346) enters the ongoing DT-108/109-vs-DT-281/282 discrepancy via the FCST Week 33-34 workbook, deepening rather than resolving the conflict the 83rd pass flagged. 5. 8. Blast No. 10 lands (Aug 9, 3,757 BCM) after a six-production-day blast-free run; two blasts earlier in the window (Aug 4, Aug 5) had logged explosive-kg but zero-volume fields, resolved by Blast #9 (Aug 6) populating normally — not a systemic field-population issue. 6. 9. A Class 4 property-damage NCR closes (operator Kaputo Mupeta, Coy #1870) — Maaden's investigation recommends disciplinary action; the operator's leave, held since 27-Jul pending the investigation, can now proceed. Source PDFs are image-only scans; content known only from the covering email. 7. Maaden requests a JRAR assessment of switching ADW pit traffic to left-hand drive, due 13-Aug — a genuine near-term deadline with no response drafted yet. 8. A fifth tire-cost corrective-action thread surfaces: a new standalone Flat Tire Inspection Form, moving toward registration as a JRAR corporate template. 9. A site-wide fire suppression discharge action-plan flow chart is issued to the full ADW Team — image-only source, content known only from the covering email.",
   "kpis": [
     {
       "label": "MTD BCM",
-      "value": "256,153",
-      "delta": "-7.9% vs target",
+      "value": "303,211",
+      "delta": "-12.1% vs target",
       "good": false
     },
     {
@@ -24,7 +24,7 @@
     },
     {
       "label": "Days Remain",
-      "value": "18",
+      "value": "15",
       "delta": "",
       "good": null
     }
@@ -74,20 +74,20 @@
     }
   ],
   "fleet": {
-    "availDaily": "83.83%",
-    "availMtd": "82.05%",
-    "exAvail": "85.4%",
+    "availDaily": "81.95%",
+    "availMtd": "82.57%",
+    "exAvail": "92.7%",
     "exUnits": 6,
-    "dtAvail": "78.9%",
+    "dtAvail": "90.2%",
     "dtUnits": 17,
     "excavators": [
       {
         "unit": "EX-340",
-        "avail": "75.0%"
+        "avail": "97.9%"
       },
       {
         "unit": "EX-262",
-        "avail": "95.8%"
+        "avail": "97.9%"
       },
       {
         "unit": "EX-253",
@@ -95,11 +95,11 @@
       },
       {
         "unit": "EX-263",
-        "avail": "60.4%"
+        "avail": "97.9%"
       },
       {
         "unit": "EX-247",
-        "avail": "95.8%"
+        "avail": "69.8%"
       },
       {
         "unit": "EX-1200",
@@ -107,20 +107,10 @@
       }
     ],
     "exBasis": "5/6",
-    "pdfDate": "06-08",
+    "pdfDate": "09-08",
     "dtBasis": "17 active ≥8h"
   },
   "equipment": [
-    {
-      "unit": "DR-343",
-      "type": "Drill",
-      "status": "scheduled",
-      "avail": "",
-      "util": "",
-      "bd_hrs": "",
-      "note": "'s Aug 5 forecast recovery date (from the FCST Week 32-33 workbook, \"Drifter Repair, 250H SERVICE & BACKLOG JO",
-      "comment": "Drifter Failure"
-    },
     {
       "unit": "EX-123",
       "type": "Excavator",
@@ -128,38 +118,38 @@
       "avail": "",
       "util": "",
       "bd_hrs": "",
-      "note": "'s own repeated restart-and-relapse pattern in June). - **",
-      "comment": "No Start"
+      "note": "with a specific Aug 14 return date** — worth checking this against the actual workshop timeline once available",
+      "comment": ""
     },
     {
-      "unit": "MG-266",
-      "type": "Motor Grader",
-      "status": "warning",
+      "unit": "EX-253",
+      "type": "Excavator",
+      "status": "down",
       "avail": "",
       "util": "",
       "bd_hrs": "",
-      "note": "'s \"Engine Failure\" was visible in the Aug 3 report but missed by the 81st pass's own fleet update**, which fl",
-      "comment": "Engine Failure"
+      "note": "already down** — worth a direct workshop status check on both units given the excavator fleet posted its weake",
+      "comment": "Swing Braring Failure"
     },
     {
-      "unit": "EX-102",
-      "type": "Excavator",
-      "status": "warning",
+      "unit": "DR-343",
+      "type": "Drill",
+      "status": "down",
       "avail": "",
       "util": "",
       "bd_hrs": "",
-      "note": "as that day's new fault but not the grader. Worth a standing process note: when a compile pass cites a source ",
-      "comment": "C/O Chizal"
+      "note": "'s own forecast has already missed once. - **",
+      "comment": ""
     },
     {
-      "unit": "EX-263",
-      "type": "Excavator",
-      "status": "warning",
-      "avail": "60.42%",
+      "unit": "DT-108",
+      "type": "Haul Truck",
+      "status": "down",
+      "avail": "",
       "util": "",
       "bd_hrs": "",
-      "note": "'s Aug 6 hydraulic fault reads 60.42% avail in the Daily Availability PDF versus 56.25% in the Client Meeting ",
-      "comment": "Hyd Oil Leak ( Boom Cyl Hose Leak )"
+      "note": "are). Worth a direct query on current repair status. - **The FCST Week 33-34 workbook's forward planning now n",
+      "comment": "L.H.F Suspension Leak"
     },
     {
       "unit": "DT-185",
@@ -168,7 +158,7 @@
       "avail": "",
       "util": "",
       "bd_hrs": "",
-      "note": "tire fire or the underlying SAR 1.2M July tire-cost escalation** — both remain open with no scheduled follow-u",
+      "note": "still has no traceable fault line in any Daily Availability report five days after the tire fire** — worth con",
       "comment": ""
     }
   ],
