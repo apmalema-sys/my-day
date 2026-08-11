@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-08-11T08:17:00",
-  "date": "2026-08-10",
-  "runNumber": 85,
-  "summary": "1. EX-123 develops a new fault (\"Bucket Pin Line Boring,\" opened 7-Aug) that escalates from a 1-hr breakdown to a full 24-hr stand-down on both Aug 8 and 9 — running simultaneously with EX-253's standing Swing Bearing Failure (day 13+), dragging the excavator fleet to its weakest utilization readings of the cycle (65.0%/67.1%). 2. FCST Week 33-34 forecasts EX-123 returning Aug 14. 2. 3. Production misses widen for three straight days (Aug 7 -3.6%, Aug 8 -22.1%, Aug 9 -19.9%) even as ore beats target on all three (+72.2%, +56.4%, +79.4%) — a waste-side shortfall, not an ore problem. 4. MTD gap widens from -7.8% to -12.1%. 3. 5. The official Maaden Monthly Production Plan lands (666,785 BCM/1,800,318 t) — a third monthly BCM figure alongside the JRAR-internal FCST forecast (760,247 BCM, 14% higher) and the now-superseded provisional survey-workbook target (645,404 BCM, which has been revised to match Maaden's plan exactly). 6. Treated as the authoritative monthly target following the same precedence logic already applied to the weekly Maaden plan deck. 4. 7. A fourth truck ID (DT-346) enters the ongoing DT-108/109-vs-DT-281/282 discrepancy via the FCST Week 33-34 workbook, deepening rather than resolving the conflict the 83rd pass flagged. 5. 8. Blast No. 10 lands (Aug 9, 3,757 BCM) after a six-production-day blast-free run; two blasts earlier in the window (Aug 4, Aug 5) had logged explosive-kg but zero-volume fields, resolved by Blast #9 (Aug 6) populating normally — not a systemic field-population issue. 6. 9. A Class 4 property-damage NCR closes (operator Kaputo Mupeta, Coy #1870) — Maaden's investigation recommends disciplinary action; the operator's leave, held since 27-Jul pending the investigation, can now proceed. Source PDFs are image-only scans; content known only from the covering email. 7. Maaden requests a JRAR assessment of switching ADW pit traffic to left-hand drive, due 13-Aug — a genuine near-term deadline with no response drafted yet. 8. A fifth tire-cost corrective-action thread surfaces: a new standalone Flat Tire Inspection Form, moving toward registration as a JRAR corporate template. 9. A site-wide fire suppression discharge action-plan flow chart is issued to the full ADW Team — image-only source, content known only from the covering email.",
+  "generatedAt": "2026-08-11T11:06:29",
+  "date": "2026-08-11",
+  "runNumber": 86,
+  "summary": "1. DR-343 shows no fault entry for the first time since its 29-Jul \"Drifter Failure\" opened — flagged tentative, not confirmed: this article's own record shows an identical clean-then-relapse pattern for the same unit on 27-28 Jul. 2. Waiting on the next report for a second consecutive clean day. 2. 3. EX-123, EX-253, WD-145, MG-266 all continue down on their standing faults, unchanged. 4. Two new Heavy Vehicle faults open late Aug 9 with no Date Out: WT-114 (low power) and WT-300 (tyre puncture). 3. 5. Survey Day 16 (reconciles Aug 9) posts +2,255 BCM (+10.9%) — the third positive gap of the cycle, narrowing the MTD gap from -17.6% to -15.35%. 6. The required forward rate to hit the 666,785 BCM monthly target climbs to 26,928 BCM/day, still above every daily reading posted this cycle. 4. 7. Week 33 HV/LV maintenance schedules land. 8. DR-341 (a separate rig from DR-343) gets a 72-hour drifter overhaul starting 11-Aug. 9. WT-300 — the truck with the open Aug 9 tyre-puncture fault — is booked for a tire service on 17-Aug, giving that fault a forward repair window. 5. Grade Control and August Distance report re-read: both remain on their established stale/empty patterns, no new figures.",
   "kpis": [
     {
       "label": "MTD BCM",
@@ -74,11 +74,11 @@
     }
   ],
   "fleet": {
-    "availDaily": "81.95%",
-    "availMtd": "82.57%",
-    "exAvail": "92.7%",
+    "availDaily": "84.81%",
+    "availMtd": "82.81%",
+    "exAvail": "94.6%",
     "exUnits": 6,
-    "dtAvail": "90.2%",
+    "dtAvail": "91.2%",
     "dtUnits": 17,
     "excavators": [
       {
@@ -95,11 +95,11 @@
       },
       {
         "unit": "EX-263",
-        "avail": "97.9%"
+        "avail": "79.2%"
       },
       {
         "unit": "EX-247",
-        "avail": "69.8%"
+        "avail": "97.9%"
       },
       {
         "unit": "EX-1200",
@@ -107,59 +107,39 @@
       }
     ],
     "exBasis": "5/6",
-    "pdfDate": "09-08",
+    "pdfDate": "10-08",
     "dtBasis": "17 active ≥8h"
   },
   "equipment": [
     {
-      "unit": "EX-123",
-      "type": "Excavator",
-      "status": "down",
-      "avail": "",
-      "util": "",
-      "bd_hrs": "",
-      "note": "with a specific Aug 14 return date** — worth checking this against the actual workshop timeline once available",
-      "comment": ""
-    },
-    {
-      "unit": "EX-253",
-      "type": "Excavator",
-      "status": "down",
-      "avail": "",
-      "util": "",
-      "bd_hrs": "",
-      "note": "already down** — worth a direct workshop status check on both units given the excavator fleet posted its weake",
-      "comment": "Swing Braring Failure"
-    },
-    {
       "unit": "DR-343",
       "type": "Drill",
-      "status": "down",
+      "status": "warning",
       "avail": "",
       "util": "",
       "bd_hrs": "",
-      "note": "'s own forecast has already missed once. - **",
+      "note": "'s clean Aug 9 reading needs a second consecutive clean day to confirm** — this article's own record shows an ",
       "comment": ""
     },
     {
-      "unit": "DT-108",
-      "type": "Haul Truck",
-      "status": "down",
+      "unit": "WT-114",
+      "type": "Water Truck",
+      "status": "warning",
       "avail": "",
       "util": "",
       "bd_hrs": "",
-      "note": "are). Worth a direct query on current repair status. - **The FCST Week 33-34 workbook's forward planning now n",
-      "comment": "L.H.F Suspension Leak"
+      "note": "open as new Heavy Vehicle faults late on Aug 9 with no Date Out** — worth watching the next report to see whet",
+      "comment": "Low Power"
     },
     {
-      "unit": "DT-185",
-      "type": "Haul Truck",
-      "status": "scheduled",
+      "unit": "WT-300",
+      "type": "Water Truck",
+      "status": "warning",
       "avail": "",
       "util": "",
       "bd_hrs": "",
-      "note": "still has no traceable fault line in any Daily Availability report five days after the tire fire** — worth con",
-      "comment": ""
+      "note": "open as new Heavy Vehicle faults late on Aug 9 with no Date Out** — worth watching the next report to see whet",
+      "comment": "Punture pos# 6"
     }
   ],
   "followUps": [
