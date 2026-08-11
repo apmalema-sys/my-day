@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-08-11T11:06:29",
+  "generatedAt": "2026-08-11T12:49:11",
   "date": "2026-08-11",
-  "runNumber": 86,
-  "summary": "1. DR-343 shows no fault entry for the first time since its 29-Jul \"Drifter Failure\" opened — flagged tentative, not confirmed: this article's own record shows an identical clean-then-relapse pattern for the same unit on 27-28 Jul. 2. Waiting on the next report for a second consecutive clean day. 2. 3. EX-123, EX-253, WD-145, MG-266 all continue down on their standing faults, unchanged. 4. Two new Heavy Vehicle faults open late Aug 9 with no Date Out: WT-114 (low power) and WT-300 (tyre puncture). 3. 5. Survey Day 16 (reconciles Aug 9) posts +2,255 BCM (+10.9%) — the third positive gap of the cycle, narrowing the MTD gap from -17.6% to -15.35%. 6. The required forward rate to hit the 666,785 BCM monthly target climbs to 26,928 BCM/day, still above every daily reading posted this cycle. 4. 7. Week 33 HV/LV maintenance schedules land. 8. DR-341 (a separate rig from DR-343) gets a 72-hour drifter overhaul starting 11-Aug. 9. WT-300 — the truck with the open Aug 9 tyre-puncture fault — is booked for a tire service on 17-Aug, giving that fault a forward repair window. 5. Grade Control and August Distance report re-read: both remain on their established stale/empty patterns, no new figures.",
+  "runNumber": 87,
+  "summary": "1. DR-343 posts a second consecutive clean day (Aug 10), confirming recovery from its 29-Jul Drifter Failure — the 86th pass had flagged this tentative pending a second clean day, and Aug 10 delivers it, closing the standing-fault entry this article has carried since 29-Jul. 2. 2. WT-114 and WT-300, both opened late on 9-Aug, cross into a full 24-hr down day on Aug 10 with no Date Out on either — no longer same-cycle churn, now standing faults to watch alongside EX-123, EX-253, WD-145, and MG-266, all four of which remain down unchanged. 3. 3. Two new faults open: DT-365 pulled for a tyre change-out (6.25% avail, no Date Out) and WL-295 \"Bucket Pin Noise\" (33.33% avail, closed same day) — the latter is the main driver behind the Wheel Loader fleet's drop from 93.13% to 85.83% day over day. 4. Overall daily availability holds roughly flat (84.81% to 84.91%), MTD ticks up (82.81% to 83.02%), core fleet daily improves slightly (76.82% to 77.50%) — no material shift in the fleet-wide picture despite the individual unit moves above. 5. DT-108, DT-109, DT-282, and DT-346 are all itemized down by name in this report, the same four-truck grouping the 85th pass's discrepancy tracking has been watching since Week 32-33 — DT-281 itself shows only a routine 500H service window, not a fault. 6. No other production-data files (Client Meeting Report, DPR, A&U, Block Info, Drill Meters, Drill Sampling, survey workbooks) changed since the 86th pass — nothing to update on [[daily-production-report]] or [[survey-volume-reconciliation]] this pass. 7. Articles updated (`Last updated` unchanged at 2026-08-11, same calendar day as the 86th pass): [[fleet-availability-utilization]] (Aug 10 dated section, DR-343 moved off the standing-fault register, WT-114/WT-300 status update, new DT-365/WL-295 faults, two Open Questions resolved/updated from the 86th pass, one new Open Question added). 8. This is a dashboard-scoped run (per the 74th/75th/77th/80th/82nd pass pattern) — Important References and the Task Feedback Log were not processed. 9. No content removed or renamed. ---",
   "kpis": [
     {
       "label": "MTD BCM",
@@ -74,8 +74,8 @@
     }
   ],
   "fleet": {
-    "availDaily": "84.81%",
-    "availMtd": "82.81%",
+    "availDaily": "84.91%",
+    "availMtd": "83.02%",
     "exAvail": "94.6%",
     "exUnits": 6,
     "dtAvail": "91.2%",
@@ -112,52 +112,96 @@
   },
   "equipment": [
     {
-      "unit": "DR-343",
-      "type": "Drill",
+      "unit": "DT-365",
+      "type": "Haul Truck",
       "status": "warning",
       "avail": "",
       "util": "",
       "bd_hrs": "",
-      "note": "'s clean Aug 9 reading needs a second consecutive clean day to confirm** — this article's own record shows an ",
-      "comment": ""
+      "note": "'s tyre change-out (opened 10-Aug, no Date Out) — watch the next report to see whether it resolves same-cycle ",
+      "comment": "C/O Tyres"
     },
     {
       "unit": "WT-114",
       "type": "Water Truck",
-      "status": "warning",
+      "status": "down",
       "avail": "",
       "util": "",
       "bd_hrs": "",
-      "note": "open as new Heavy Vehicle faults late on Aug 9 with no Date Out** — worth watching the next report to see whet",
+      "note": "are now two full days down with no Date Out on either** — worth flagging if either crosses a week, matching th",
       "comment": "Low Power"
     },
     {
       "unit": "WT-300",
       "type": "Water Truck",
+      "status": "down",
+      "avail": "",
+      "util": "",
+      "bd_hrs": "",
+      "note": "are now two full days down with no Date Out on either** — worth flagging if either crosses a week, matching th",
+      "comment": "Punture pos# 6"
+    },
+    {
+      "unit": "EX-253",
+      "type": "Excavator",
+      "status": "down",
+      "avail": "",
+      "util": "",
+      "bd_hrs": "",
+      "note": "and EX-123. - **MACN-018",
+      "comment": "Swing Braring Failure"
+    },
+    {
+      "unit": "WD-145",
+      "type": "Water Dozer",
+      "status": "down",
+      "avail": "",
+      "util": "",
+      "bd_hrs": "",
+      "note": "and EX-123. - **MACN-018",
+      "comment": "Check Brake Worn"
+    },
+    {
+      "unit": "EX-123",
+      "type": "Excavator",
+      "status": "down",
+      "avail": "",
+      "util": "",
+      "bd_hrs": "",
+      "note": "and EX-123. - **MACN-018",
+      "comment": ""
+    },
+    {
+      "unit": "WL-101",
+      "type": "Wheel Loader",
       "status": "warning",
       "avail": "",
       "util": "",
       "bd_hrs": "",
-      "note": "open as new Heavy Vehicle faults late on Aug 9 with no Date Out** — worth watching the next report to see whet",
-      "comment": "Punture pos# 6"
+      "note": "and DT-79 all carry an identical \"01-Feb-26 5:30 AM\" fault-open date in this report** — six months before this",
+      "comment": "Accident Damage"
+    },
+    {
+      "unit": "LV-032",
+      "type": "",
+      "status": "warning",
+      "avail": "",
+      "util": "",
+      "bd_hrs": "",
+      "note": "and DT-79 all carry an identical \"01-Feb-26 5:30 AM\" fault-open date in this report** — six months before this",
+      "comment": "Engine Failure"
     }
   ],
   "followUps": [
     {
       "priority": "HIGH",
-      "title": "Survey reconciliation: `260807-INX-SUM.xlsx` recovers four days in one f...",
+      "title": "Overall daily availability holds roughly flat (84.81% to 84.91%), MTD ti...",
       "body": "",
       "action": ""
     },
     {
       "priority": "MONITOR",
-      "title": "The Daily Drill Sampling Record workbook, stalled since Jul 31 per the 8...",
-      "body": "",
-      "action": ""
-    },
-    {
-      "priority": "MONITOR",
-      "title": "Drilling posted its best day of the August cycle on Aug 6: 2,957 m again...",
+      "title": "DT-108, DT-109, DT-282, and DT-346 are all itemized down by name in this...",
       "body": "",
       "action": ""
     }
