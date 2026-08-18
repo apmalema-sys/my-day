@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-08-17T20:04:55",
-  "date": "2026-08-11",
-  "runNumber": 87,
-  "summary": "1. DR-343 posts a second consecutive clean day (Aug 10), confirming recovery from its 29-Jul Drifter Failure — the 86th pass had flagged this tentative pending a second clean day, and Aug 10 delivers it, closing the standing-fault entry this article has carried since 29-Jul. 2. 2. WT-114 and WT-300, both opened late on 9-Aug, cross into a full 24-hr down day on Aug 10 with no Date Out on either — no longer same-cycle churn, now standing faults to watch alongside EX-123, EX-253, WD-145, and MG-266, all four of which remain down unchanged. 3. 3. Two new faults open: DT-365 pulled for a tyre change-out (6.25% avail, no Date Out) and WL-295 \"Bucket Pin Noise\" (33.33% avail, closed same day) — the latter is the main driver behind the Wheel Loader fleet's drop from 93.13% to 85.83% day over day. 4. Overall daily availability holds roughly flat (84.81% to 84.91%), MTD ticks up (82.81% to 83.02%), core fleet daily improves slightly (76.82% to 77.50%) — no material shift in the fleet-wide picture despite the individual unit moves above. 5. DT-108, DT-109, DT-282, and DT-346 are all itemized down by name in this report, the same four-truck grouping the 85th pass's discrepancy tracking has been watching since Week 32-33 — DT-281 itself shows only a routine 500H service window, not a fault. 6. No other production-data files (Client Meeting Report, DPR, A&U, Block Info, Drill Meters, Drill Sampling, survey workbooks) changed since the 86th pass — nothing to update on [[daily-production-report]] or [[survey-volume-reconciliation]] this pass. 7. Articles updated (`Last updated` unchanged at 2026-08-11, same calendar day as the 86th pass): [[fleet-availability-utilization]] (Aug 10 dated section, DR-343 moved off the standing-fault register, WT-114/WT-300 status update, new DT-365/WL-295 faults, two Open Questions resolved/updated from the 86th pass, one new Open Question added). 8. This is a dashboard-scoped run (per the 74th/75th/77th/80th/82nd pass pattern) — Important References and the Task Feedback Log were not processed. 9. No content removed or renamed. ---",
+  "generatedAt": "2026-08-18T19:50:35",
+  "date": "2026-08-18",
+  "runNumber": 88,
+  "summary": "1. The canonical copy is already at its 89th run (2026-08-18, per its own numbering); Peter has decided not to sync those 88th/89th-run changes into this Dropbox copy before this run. 2. This pass therefore runs as this copy's own next sequential run (its 88th), gap-checking against its own `RAW/_INGESTED.md` registration mark (2026-08-11 08:18/10:29, the 86th/87th passes' own cutoff) rather than the canonical copy's more current state. 3. The resulting redundancy — re-reading and re-registering files the canonical copy already processed days ago — is expected and correct per Peter's decision, not an error. 4. Key operational findings 1. 5. EX-123's Bucket Pin Line Boring fault (open since 7-Aug) and DT-108's L.H.F Suspension Leak (open since 13-Jul, 33 days — the longest single fault this KB has tracked) both close out during the 11-16 Aug window, confirmed holding across multiple clean follow-on days. 2. 6. EX-253, WD-145, MG-266, DT-109, and DT-346 all remain down unbroken across the full six-day window — EX-253 (28-Jul, day 19 as of 16-Aug) now has no forward recovery date anywhere, the first planning document to give it none since the fault opened three weeks ago. 7. DT-109 (21-Jul, day 26) is now the single longest-running open fault in the fleet-availability article. 3. 8. Five straight zero-ore production days (13-17 Aug), the longest run this KB has recorded, trace directly to a three-day blast-free gap (14-16 Aug) found in a new, more comprehensive consolidated drilling/blasting workbook — waste kept beating target through the gap, but MTD ore has been frozen at 55,273 t since 12-Aug with only 8 fiscal days left in the cycle. 4. 9. Survey reconciliation MTD gap widens to -22.85% against target through Day 23, with the required forward daily rate jumping to 35,641 BCM/day — a roughly 33% single-window climb, now well above the cycle's best day. 5. JRAR delivers its left-hand-traffic risk assessment (15-Aug, two days after Maaden's 13-Aug deadline) — recommends against an immediate right-to-left conversion, citing rockfall exposure at the Stage 5/4 cutback; proposes a two-month phased MoC if the change remains mandatory regardless. 6. The DT-108/109-vs-DT-281/282/DT-346 standing discrepancy deepens into a three-way conflict — the Maaden Weekly Plan deck writes out DT-281/DT-282 for a second straight fortnight, now directly contradicted by both the daily actuals and the FCST Week 34+35 workbook, which agree DT-109/DT-346 are the genuine write-outs. 7. A sixth tire-cost corrective-action thread lands — a data-driven Tire Performance Analysis (42 tire records) quantifies damage-related removals (19 of 42) and shows Michelin averaging 83% longer life than BKT; management has requested a cost-per-hour follow-up not yet delivered. 8. Week 32 retrospective (from the new Week 33-34 plan deck): a 13.78% mining tonnage miss against a 24.52% gold beat — the plant covering a mine-sequencing shortfall, the same pattern flagged in earlier decks. Notion Meeting Notes Database queried for the last 7 days, then widened to 30 days — only out-of-scope church/personal content returned. No mining-related meeting notes exist to pull. Full detail in `RAW/_INGESTED.md`. Important References: 32 files total, one genuinely new — a workshop-supervision role realignment email (Michael Verselder/JJ Swart/Jack Reabow covering for Louw's leave). Routine internal coverage, not a P&L/escalation/audit item; brief analysis filed to `Outputs/important-references-analysis_2026-08-18.md`. Part C — Task Feedback Log: queried the \"All Feedback\" view, 32 rows returned, sorted by Date Logged descending. All 32 rows already show `\"Status\":\"Processed\"` — no unprocessed rows, no mismatches, no Wiki edits from this part. Newest row unchanged since 2026-07-30 — consistent with the expectation that the canonical copy's own 89th run already processed this same Notion database (Notion itself is the single external source of truth, independent of which local KB copy runs the compile). All three Status Inbox, Life Area/Project/dates left empty for Peter to triage. Note: the existing standing inbox task \"Confirm why no Daily Availability report has landed for Aug 11-14 [ADW]\" is now stale/moot in this copy's context — this pass found and processed Daily Availability reports for Aug 11 through Aug 16 without issue (the reports existed in RAW all along; they simply hadn't been compiled since this copy's last run on 2026-08-11). Left untouched per the no-edit-outside-feedback-log constraint; flagged here for Peter to close manually if he agrees it's resolved. No content removed or renamed. ---",
   "kpis": [
     {
       "label": "MTD BCM",
@@ -12,15 +12,9 @@
     },
     {
       "label": "Survey Gap",
-      "value": "-16.5%",
+      "value": "+18.7%",
       "delta": "survey vs trucks MTD",
-      "good": false
-    },
-    {
-      "label": "Crusher MTD",
-      "value": "27%",
-      "delta": "33,801 / 124,000 LCM",
-      "good": null
+      "good": true
     },
     {
       "label": "Days Remain",
@@ -74,16 +68,12 @@
     }
   ],
   "fleet": {
-    "availDaily": "84.91%",
-    "availMtd": "83.02%",
-    "exAvail": "94.6%",
     "exUnits": 6,
-    "dtAvail": "91.2%",
     "dtUnits": 17,
     "excavators": [
       {
         "unit": "EX-340",
-        "avail": "97.9%"
+        "avail": "85.4%"
       },
       {
         "unit": "EX-262",
@@ -91,35 +81,97 @@
       },
       {
         "unit": "EX-253",
-        "avail": "100.0%"
+        "avail": "0.0%"
       },
       {
         "unit": "EX-263",
-        "avail": "79.2%"
+        "avail": "91.7%"
       },
       {
         "unit": "EX-247",
-        "avail": "97.9%"
+        "avail": "93.8%"
       },
       {
         "unit": "EX-1200",
         "avail": null
       }
     ],
+    "exAvail": "73.8%",
     "exBasis": "5/6",
-    "pdfDate": "10-08",
+    "pdfDate": "16-08",
+    "dtAvail": "90.2%",
     "dtBasis": "17 active ≥8h"
   },
   "equipment": [
     {
-      "unit": "DT-365",
-      "type": "Haul Truck",
+      "unit": "MG-266",
+      "type": "Motor Grader",
+      "status": "down",
+      "avail": "",
+      "util": "",
+      "bd_hrs": "",
+      "note": "given it's the site's sole active motor grader. - **The",
+      "comment": "Engine Failure"
+    },
+    {
+      "unit": "WD-145",
+      "type": "Water Dozer",
       "status": "warning",
       "avail": "",
       "util": "",
       "bd_hrs": "",
-      "note": "'s tyre change-out (opened 10-Aug, no Date Out) — watch the next report to see whether it resolves same-cycle ",
-      "comment": "C/O Tyres"
+      "note": "Check Brake Worn / Front Axle Brakes worn out, open since 27-Jul, day 20.",
+      "comment": "Front Axle Brakes worn out"
+    },
+    {
+      "unit": "EX-123",
+      "type": "Excavator",
+      "status": "warning",
+      "avail": "",
+      "util": "",
+      "bd_hrs": "",
+      "note": "'s Bucket Pin Line Boring fault, tracked as open since 7-Aug across the 85th/86th/87th passes, closes with a c",
+      "comment": "C/O Alternator Belt & Puly"
+    },
+    {
+      "unit": "DT-108",
+      "type": "Haul Truck",
+      "status": "down",
+      "avail": "",
+      "util": "",
+      "bd_hrs": "",
+      "note": "/",
+      "comment": "Brake Alarm"
+    },
+    {
+      "unit": "EX-253",
+      "type": "Excavator",
+      "status": "warning",
+      "avail": "0%",
+      "util": "",
+      "bd_hrs": "",
+      "note": "'s Swing Bearing Failure now has no forward recovery date in any source** — the FCST Week 34+35 workbook plans",
+      "comment": "Swing Braring Failure"
+    },
+    {
+      "unit": "DT-109",
+      "type": "Haul Truck",
+      "status": "down",
+      "avail": "",
+      "util": "",
+      "bd_hrs": "",
+      "note": "/",
+      "comment": "Front RHS Fender, Handrail & Step  Ladder damaged due to incident"
+    },
+    {
+      "unit": "DT-346",
+      "type": "Haul Truck",
+      "status": "down",
+      "avail": "",
+      "util": "",
+      "bd_hrs": "",
+      "note": "down",
+      "comment": "Engine Failure"
     },
     {
       "unit": "WT-114",
@@ -128,81 +180,39 @@
       "avail": "",
       "util": "",
       "bd_hrs": "",
-      "note": "are now two full days down with no Date Out on either** — worth flagging if either crosses a week, matching th",
-      "comment": "Low Power"
-    },
-    {
-      "unit": "WT-300",
-      "type": "Water Truck",
-      "status": "down",
-      "avail": "",
-      "util": "",
-      "bd_hrs": "",
-      "note": "are now two full days down with no Date Out on either** — worth flagging if either crosses a week, matching th",
-      "comment": "Punture pos# 6"
-    },
-    {
-      "unit": "EX-253",
-      "type": "Excavator",
-      "status": "down",
-      "avail": "",
-      "util": "",
-      "bd_hrs": "",
-      "note": "and EX-123. - **MACN-018",
-      "comment": "Swing Braring Failure"
-    },
-    {
-      "unit": "WD-145",
-      "type": "Water Dozer",
-      "status": "down",
-      "avail": "",
-      "util": "",
-      "bd_hrs": "",
-      "note": "and EX-123. - **MACN-018",
-      "comment": "Check Brake Worn"
-    },
-    {
-      "unit": "EX-123",
-      "type": "Excavator",
-      "status": "down",
-      "avail": "",
-      "util": "",
-      "bd_hrs": "",
-      "note": "and EX-123. - **MACN-018",
+      "note": "(dropped off, presumed resolved)",
       "comment": ""
-    },
-    {
-      "unit": "WL-101",
-      "type": "Wheel Loader",
-      "status": "warning",
-      "avail": "",
-      "util": "",
-      "bd_hrs": "",
-      "note": "and DT-79 all carry an identical \"01-Feb-26 5:30 AM\" fault-open date in this report** — six months before this",
-      "comment": "Accident Damage"
-    },
-    {
-      "unit": "LV-032",
-      "type": "",
-      "status": "warning",
-      "avail": "",
-      "util": "",
-      "bd_hrs": "",
-      "note": "and DT-79 all carry an identical \"01-Feb-26 5:30 AM\" fault-open date in this report** — six months before this",
-      "comment": "Engine Failure"
     }
   ],
   "followUps": [
     {
       "priority": "HIGH",
-      "title": "Overall daily availability holds roughly flat (84.81% to 84.91%), MTD ti...",
-      "body": "",
+      "title": "Key operational findings",
+      "body": "1. **EX-123's Bucket Pin Line Boring fault (open since 7-Aug) and DT-108's L.H.F Suspension Leak (open since 13-Jul, 33 days — the longest single fault this KB has tracked) both close out** during the 11-16 Aug window, confirmed holding across multiple clean follow-on days. 2. **EX-253, WD-145, MG-266, DT-109, and DT-346 all remain down unbroken across the full six-day window** — EX-253 (28-Jul, day 19 as of 16-Aug) now has **no forward recovery date anywhere**, the first planning document to give it none since the fault opened three weeks ago. DT-109 (21-Jul, day 26) is now the single longest-running open fault in the fleet-availability article. 3. **Five straight zero-ore production days (13-17 Aug), the longest run this KB has recorded, trace directly to a three-day blast-free gap (14-16 Aug)** found in a new, more comprehensive consolidated drilling/blasting workbook — waste kept beating target through the gap, but MTD ore has been frozen at 55,273 t since 12-Aug with only 8 fiscal days left in the cycle. 4. **Survey reconciliation MTD gap widens to -22.85% against target through Day 23**, with the required forward daily rate jumping to 35,641 BCM/day — a roughly 33% single-window climb, now well above the cycle's best day. 5. **JRAR delivers its left-hand-traffic risk assessment (15-Aug, two days after Maaden's 13-Aug deadline)** — recommends **against** an immediate right-to-left conversion, citing rockfall exposure at the Stage 5/4 cutback; proposes a two-month phased MoC if the change remains mandatory regardless. 6. **The DT-108/109-vs-DT-281/282/DT-346 standing discrepancy deepens into a three-way conflict** — the Maaden Weekly Plan deck writes out DT-281/DT-282 for a second straight fortnight, now directly contradicted by both the daily actuals and the FCST Week 34+35 workbook, which agree DT-109/DT-346 are the genuine write-outs. 7. **A sixth tire-cost corrective-action thread lands** — a data-driven Tire Performance Analysis (42 tire records) quantifies damage-related removals (19 of 42) and shows Michelin averaging 83% longer life than BKT; management has requested a cost-per-hour follow-up not yet delivered. 8. **Week 32 retrospective (from the new Week 33-34 plan deck): a 13.78% mining tonnage miss against a 24.52% gold beat** — the plant covering a mine-sequencing shortfall, the same pattern flagged in earlier decks.",
       "action": ""
     },
     {
       "priority": "MONITOR",
-      "title": "DT-108, DT-109, DT-282, and DT-346 are all itemized down by name in this...",
-      "body": "",
+      "title": "Part A (meeting notes)",
+      "body": "none new. Notion Meeting Notes Database queried for the last 7 days, then widened to 30 days — only out-of-scope church/personal content returned. No mining-related meeting notes exist to pull.",
+      "action": ""
+    },
+    {
+      "priority": "MONITOR",
+      "title": "Part B (delta-compile)",
+      "body": "35 new/updated RAW files registered — six Daily Availability Final Reports (11-16 Aug), a new consolidated drilling/blasting workbook, the Tire Performance Analysis deck and its covering email, two safety-related PPTX/EML items (PPE Compliance Standard, Uniform Colour Coding directive), the Week 33-34 Maaden plan deck bundle (six files), the JRAR left-hand-traffic risk assessment and its covering email, three Week 34 HV/LV/Workshop-Daily-Task maintenance items, the Aug 17 survey workbook and topo/survey-technician email, the FCST Week 34+35 planned-availability workbook, and eight re-read/registered production workbooks (Client Meeting Report, DPR, A&U, Block Info, Drill Sampling, DPR-and-A&U docx, Distance report, Drill Meters). Full detail in `RAW/_INGESTED.md`.",
+      "action": ""
+    },
+    {
+      "priority": "MONITOR",
+      "title": "Important References",
+      "body": "32 files total, one genuinely new — a workshop-supervision role realignment email (Michael Verselder/JJ Swart/Jack Reabow covering for Louw's leave). Routine internal coverage, not a P&L/escalation/audit item; brief analysis filed to `Outputs/important-references-analysis_2026-08-18.md`.",
+      "action": ""
+    },
+    {
+      "priority": "MONITOR",
+      "title": "Part C — Task Feedback Log",
+      "body": "queried the \"All Feedback\" view, 32 rows returned, sorted by Date Logged descending. **All 32 rows already show `\"Status\":\"Processed\"`** — no unprocessed rows, no mismatches, no Wiki edits from this part. Newest row unchanged since 2026-07-30 — consistent with the expectation that the canonical copy's own 89th run already processed this same Notion database (Notion itself is the single external source of truth, independent of which local KB copy runs the compile).",
       "action": ""
     }
   ]
