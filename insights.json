@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-19T08:51:01",
+  "generatedAt": "2026-08-19T08:52:23",
   "date": "2026-08-18",
   "runNumber": 89,
   "summary": "1. See the 88th run's entry above for the full fork-vs-canonical-copy context, which still applies unchanged. 2. Key operational findings 1. 3. Week 33 posts the strongest weekly retrospective this article has recorded — Total Mined +2.33%, Total Ore +4.68%, SHG +0.55%, MG +5.62%, LG +10.33%, Waste +2.18% against plan, and on the plant side Ore Milled +4.93%, Recovery 95.78% vs 93.87% plan, and Gold 3,611 oz against a 2,972 oz plan (+21.49%) — a clean beat across mine and plant that reverses Week 32's 13.78% mining miss. 2. 4. The DT-281/DT-282-vs-DT-108/DT-109/DT-346 equipment-table conflict now spans three consecutive Maaden bi-weekly plan decks (W32-33, W33-34, W34-35), with the daily actuals and the FCST workbook agreeing against the deck every time. 5. This has moved past a Wiki open question — flagged for direct escalation to JRAR planning. 3. 6. Drill fleet DR-124/DR-125/DR-139 written out an eighth consecutive bi-weekly deck, still 0% PA/UA across the full 168-hour week. 4. 7. Day 24 survey reconciliation posts a small +3.83% positive gap (the sixth positive reading of the August cycle), but the required forward rate still climbs to 37,044 BCM/day with 7 days left — up from 35,641 BCM/day the pass before, because the daily target itself is growing faster than the gap is closing. 5. 8. A new data anomaly surfaced on the survey workbook: the MTD Trucks Volume total (466,767 BCM) is identical between the Day 23 and Day 24 files, even though Day 24 added a real 24,831 BCM of truck volume — the Survey Volume total updated correctly. 9. Reads as the same class of stale-total-formula issue already tracked on `Aug Block Info.xlsx`, just on a different workbook and column. 6. Aug 18's ore-vs-waste split is not yet confirmed — the Client Meeting Report tab remains blank and the Distance report's Aug 18 tab reads all-zero, the same signature the confirmed zero-ore days carry, but also what a same-day filing lag would look like. 7. A personnel-sensitive item landed in `RAW/HR/` — a recommendation not to renew a named dump truck operator's contract, approved by management the same day. Notion Meeting Notes Database queried for the last 7 days — four results, all out-of-scope church/sermon content. Full detail in `RAW/_INGESTED.md`. Important References: re-checked, 32 files, no new content since the 88th pass. Part C — Task Feedback Log: queried the \"All Feedback\" view (view mode, `notion-query-data-sources`), 32 rows returned, sorted by Date Logged descending. All 32 rows already show `\"Status\":\"Processed\"` — no unprocessed rows, no mismatches, no Wiki edits from this part. Newest row unchanged since 2026-07-30. Given this is now the third straight deck showing the equipment-table conflict, the next pass should route it to the inbox if it recurs a fourth time. No content removed or renamed. ---",
@@ -72,6 +72,13 @@
       "actual": 9796,
       "target": 11907,
       "half": true
+    },
+    {
+      "date": "2026-08-01",
+      "label": "1 Aug",
+      "actual": 22723,
+      "target": 23814,
+      "half": false
     },
     {
       "date": "2026-08-02",
