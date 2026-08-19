@@ -1,13 +1,13 @@
 {
-  "generatedAt": "2026-08-19T08:52:23",
-  "date": "2026-08-18",
-  "runNumber": 89,
-  "summary": "1. See the 88th run's entry above for the full fork-vs-canonical-copy context, which still applies unchanged. 2. Key operational findings 1. 3. Week 33 posts the strongest weekly retrospective this article has recorded — Total Mined +2.33%, Total Ore +4.68%, SHG +0.55%, MG +5.62%, LG +10.33%, Waste +2.18% against plan, and on the plant side Ore Milled +4.93%, Recovery 95.78% vs 93.87% plan, and Gold 3,611 oz against a 2,972 oz plan (+21.49%) — a clean beat across mine and plant that reverses Week 32's 13.78% mining miss. 2. 4. The DT-281/DT-282-vs-DT-108/DT-109/DT-346 equipment-table conflict now spans three consecutive Maaden bi-weekly plan decks (W32-33, W33-34, W34-35), with the daily actuals and the FCST workbook agreeing against the deck every time. 5. This has moved past a Wiki open question — flagged for direct escalation to JRAR planning. 3. 6. Drill fleet DR-124/DR-125/DR-139 written out an eighth consecutive bi-weekly deck, still 0% PA/UA across the full 168-hour week. 4. 7. Day 24 survey reconciliation posts a small +3.83% positive gap (the sixth positive reading of the August cycle), but the required forward rate still climbs to 37,044 BCM/day with 7 days left — up from 35,641 BCM/day the pass before, because the daily target itself is growing faster than the gap is closing. 5. 8. A new data anomaly surfaced on the survey workbook: the MTD Trucks Volume total (466,767 BCM) is identical between the Day 23 and Day 24 files, even though Day 24 added a real 24,831 BCM of truck volume — the Survey Volume total updated correctly. 9. Reads as the same class of stale-total-formula issue already tracked on `Aug Block Info.xlsx`, just on a different workbook and column. 6. Aug 18's ore-vs-waste split is not yet confirmed — the Client Meeting Report tab remains blank and the Distance report's Aug 18 tab reads all-zero, the same signature the confirmed zero-ore days carry, but also what a same-day filing lag would look like. 7. A personnel-sensitive item landed in `RAW/HR/` — a recommendation not to renew a named dump truck operator's contract, approved by management the same day. Notion Meeting Notes Database queried for the last 7 days — four results, all out-of-scope church/sermon content. Full detail in `RAW/_INGESTED.md`. Important References: re-checked, 32 files, no new content since the 88th pass. Part C — Task Feedback Log: queried the \"All Feedback\" view (view mode, `notion-query-data-sources`), 32 rows returned, sorted by Date Logged descending. All 32 rows already show `\"Status\":\"Processed\"` — no unprocessed rows, no mismatches, no Wiki edits from this part. Newest row unchanged since 2026-07-30. Given this is now the third straight deck showing the equipment-table conflict, the next pass should route it to the inbox if it recurs a fourth time. No content removed or renamed. ---",
+  "generatedAt": "2026-08-19T10:41:48",
+  "date": "2026-08-19",
+  "runNumber": 90,
+  "summary": "1. Ore resumes after the five-day shutdown (Aug 13-17), loading 3,596 BCM against a 2,954 BCM target (+21.7%), while the total-production line clears target narrowly (+0.6%, 23,126 BCM) and waste runs 2.5% under. 2. 2. The MTD gap narrows for the first time since ore stopped — total production improves to -9.3% against target from Aug 9's -12.1%, though MTD ore itself stays deep in deficit at -15.2% with only six fiscal days left in the 31-day August cycle. 3. 3. The crusher loses 12h35m to a day-shift maintenance stop, the heaviest single-day crusher downtime since Aug 3, and still clears 1,872 BCM — stockpile-to-crusher MTD throughput sits at 60,309 LCM, 48.6% of the 124,000 LCM plan. 4. Confirm the cause of the 12h35m Aug 18 crusher maintenance stop — none of the standing fleet faults in [[fleet-availability-utilization]] currently name a crusher-side unit. 5. No new Daily Availability Final Report or survey (INX-SUM) workbook landed this pass — fleet availability holds at the 16-Aug reading (86.21% daily / 84.67% MTD) and survey reconciliation holds at Day 24 (+3.83% daily, -26.69% MTD). 6. EX-253 remained fully down all day on its standing \"Swing problem\" fault, open since 28-Jul. 7. DPR-Aug-2026.xlsx ties the Client Meeting Report exactly on waste and ore tons, stripping ratio 5.43. 8. Drilling for the day: 3,186 m / 269 holes / 144 samples, cross-checked clean across the drill meters and sampling workbooks. `Aug Block Info.xlsx` carries no Aug (18) tab at all — same stale layout issue tracked since the 45th pass. 9. Full detail in `RAW/_INGESTED.md`. Important References and the Task Feedback Log: not processed this pass — dashboard-scoped, per the 74th/75th/77th/80th/82nd/87th pass pattern. This run's brief is limited to the dashboard-facing production/fleet/survey articles. No update to [[fleet-availability-utilization]] or [[survey-volume-reconciliation]] this pass — no new source material for either since the 89th pass. No content removed or renamed. Source: KNOWLEDGE/mining_operations_kb/RAW via the librarian compile protocol. ---",
   "kpis": [
     {
       "label": "MTD BCM",
-      "value": "303,211",
-      "delta": "-12.1% vs target",
+      "value": "489,893",
+      "delta": "-9.3% vs target",
       "good": false
     },
     {
@@ -17,8 +17,14 @@
       "good": false
     },
     {
+      "label": "Crusher MTD",
+      "value": "49%",
+      "delta": "60,309 / 124,000 LCM",
+      "good": null
+    },
+    {
       "label": "Days Remain",
-      "value": "15",
+      "value": "6",
       "delta": "",
       "good": null
     }
@@ -184,6 +190,13 @@
       "actual": 24831,
       "target": 23814,
       "half": false
+    },
+    {
+      "date": "2026-08-18",
+      "label": "18 Aug",
+      "actual": 19530,
+      "target": 23814,
+      "half": false
     }
   ],
   "fleet": {
@@ -305,33 +318,21 @@
   ],
   "followUps": [
     {
-      "priority": "HIGH",
-      "title": "Key operational findings",
-      "body": "1. **Week 33 posts the strongest weekly retrospective this article has recorded** — Total Mined +2.33%, Total Ore +4.68%, SHG +0.55%, MG +5.62%, LG +10.33%, Waste +2.18% against plan, and on the plant side Ore Milled +4.93%, Recovery 95.78% vs 93.87% plan, and **Gold 3,611 oz against a 2,972 oz plan (+21.49%)** — a clean beat across mine and plant that reverses Week 32's 13.78% mining miss. 2. **The DT-281/DT-282-vs-DT-108/DT-109/DT-346 equipment-table conflict now spans three consecutive Maaden bi-weekly plan decks** (W32-33, W33-34, W34-35), with the daily actuals and the FCST workbook agreeing against the deck every time. This has moved past a Wiki open question — flagged for direct escalation to JRAR planning. 3. **Drill fleet DR-124/DR-125/DR-139 written out an eighth consecutive bi-weekly deck**, still 0% PA/UA across the full 168-hour week. 4. **Day 24 survey reconciliation posts a small +3.83% positive gap** (the sixth positive reading of the August cycle), but the required forward rate still climbs to 37,044 BCM/day with 7 days left — up from 35,641 BCM/day the pass before, because the daily target itself is growing faster than the gap is closing. 5. **A new data anomaly surfaced on the survey workbook:** the MTD Trucks Volume total (466,767 BCM) is identical between the Day 23 and Day 24 files, even though Day 24 added a real 24,831 BCM of truck volume — the Survey Volume total updated correctly. Reads as the same class of stale-total-formula issue already tracked on `Aug Block Info.xlsx`, just on a different workbook and column. 6. **Aug 18's ore-vs-waste split is not yet confirmed** — the Client Meeting Report tab remains blank and the Distance report's Aug 18 tab reads all-zero, the same signature the confirmed zero-ore days carry, but also what a same-day filing lag would look like. 7. **A personnel-sensitive item landed in `RAW/HR/`** — a recommendation not to renew a named dump truck operator's contract, approved by management the same day. Registered in RAW for the record; not compiled into the Wiki, per the same personnel-sensitive handling the 83rd pass applied to an HR promotions email.",
+      "priority": "MONITOR",
+      "title": "Confirm the cause of the 12h35m Aug 18 crusher maintenance stop — none o...",
+      "body": "",
       "action": ""
     },
     {
       "priority": "MONITOR",
-      "title": "Part A (meeting notes)",
-      "body": "none new. Notion Meeting Notes Database queried for the last 7 days — four results, all out-of-scope church/sermon content.",
+      "title": "No new Daily Availability Final Report or survey (INX-SUM) workbook land...",
+      "body": "",
       "action": ""
     },
     {
       "priority": "MONITOR",
-      "title": "Part B (delta-compile)",
-      "body": "13 new RAW files registered, all landing 19:44-19:48 on 2026-08-18 (the site's afternoon sync, after the 88th pass's own 09:44 registration cutoff) — the Day 24 survey workbook, a duplicated-location Distance report (identical by checksum in two folders), a new Grade Control August workbook (light-touch registration only, per the standing per-block layout issue), the full Week 34-35 Maaden plan deck bundle (PDF, feed plan, D&B map, two CAD files, covering email), one image-only Workshop Daily Task PDF, and the HR item above. Full detail in `RAW/_INGESTED.md`.",
-      "action": ""
-    },
-    {
-      "priority": "MONITOR",
-      "title": "Important References",
-      "body": "re-checked, 32 files, no new content since the 88th pass.",
-      "action": ""
-    },
-    {
-      "priority": "MONITOR",
-      "title": "Part C — Task Feedback Log",
-      "body": "queried the \"All Feedback\" view (view mode, `notion-query-data-sources`), 32 rows returned, sorted by Date Logged descending. **All 32 rows already show `\"Status\":\"Processed\"`** — no unprocessed rows, no mismatches, no Wiki edits from this part. Newest row unchanged since 2026-07-30.",
+      "title": "EX-253 remained fully down all day on its standing \"Swing problem\" fault...",
+      "body": "",
       "action": ""
     }
   ]
