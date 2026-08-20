@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-19T10:41:48",
+  "generatedAt": "2026-08-20T08:04:16",
   "date": "2026-08-19",
   "runNumber": 90,
   "summary": "1. Ore resumes after the five-day shutdown (Aug 13-17), loading 3,596 BCM against a 2,954 BCM target (+21.7%), while the total-production line clears target narrowly (+0.6%, 23,126 BCM) and waste runs 2.5% under. 2. 2. The MTD gap narrows for the first time since ore stopped — total production improves to -9.3% against target from Aug 9's -12.1%, though MTD ore itself stays deep in deficit at -15.2% with only six fiscal days left in the 31-day August cycle. 3. 3. The crusher loses 12h35m to a day-shift maintenance stop, the heaviest single-day crusher downtime since Aug 3, and still clears 1,872 BCM — stockpile-to-crusher MTD throughput sits at 60,309 LCM, 48.6% of the 124,000 LCM plan. 4. Confirm the cause of the 12h35m Aug 18 crusher maintenance stop — none of the standing fleet faults in [[fleet-availability-utilization]] currently name a crusher-side unit. 5. No new Daily Availability Final Report or survey (INX-SUM) workbook landed this pass — fleet availability holds at the 16-Aug reading (86.21% daily / 84.67% MTD) and survey reconciliation holds at Day 24 (+3.83% daily, -26.69% MTD). 6. EX-253 remained fully down all day on its standing \"Swing problem\" fault, open since 28-Jul. 7. DPR-Aug-2026.xlsx ties the Client Meeting Report exactly on waste and ore tons, stripping ratio 5.43. 8. Drilling for the day: 3,186 m / 269 holes / 144 samples, cross-checked clean across the drill meters and sampling workbooks. `Aug Block Info.xlsx` carries no Aug (18) tab at all — same stale layout issue tracked since the 45th pass. 9. Full detail in `RAW/_INGESTED.md`. Important References and the Task Feedback Log: not processed this pass — dashboard-scoped, per the 74th/75th/77th/80th/82nd/87th pass pattern. This run's brief is limited to the dashboard-facing production/fleet/survey articles. No update to [[fleet-availability-utilization]] or [[survey-volume-reconciliation]] this pass — no new source material for either since the 89th pass. No content removed or renamed. Source: KNOWLEDGE/mining_operations_kb/RAW via the librarian compile protocol. ---",
@@ -209,7 +209,7 @@
       },
       {
         "unit": "EX-262",
-        "avail": "97.9%"
+        "avail": "95.8%"
       },
       {
         "unit": "EX-253",
@@ -217,21 +217,21 @@
       },
       {
         "unit": "EX-263",
-        "avail": "91.7%"
+        "avail": "97.9%"
       },
       {
         "unit": "EX-247",
-        "avail": "93.8%"
+        "avail": "87.5%"
       },
       {
         "unit": "EX-1200",
         "avail": null
       }
     ],
-    "exAvail": "73.8%",
+    "exAvail": "73.3%",
     "exBasis": "5/6",
-    "pdfDate": "16-08",
-    "dtAvail": "90.2%",
+    "pdfDate": "18-08",
+    "dtAvail": "90.9%",
     "dtBasis": "17 active ≥8h"
   },
   "equipment": [
@@ -263,7 +263,7 @@
       "util": "",
       "bd_hrs": "",
       "note": "'s Bucket Pin Line Boring fault, tracked as open since 7-Aug across the 85th/86th/87th passes, closes with a c",
-      "comment": "C/O Alternator Belt & Puly"
+      "comment": ""
     },
     {
       "unit": "DT-108",
@@ -273,7 +273,7 @@
       "util": "",
       "bd_hrs": "",
       "note": "/",
-      "comment": "Brake Alarm"
+      "comment": "Check Brake System ( Scaving Pump  Replacement )"
     },
     {
       "unit": "EX-253",
