@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-20T21:18:59",
+  "generatedAt": "2026-08-29T08:42:48",
   "date": "2026-08-20",
   "runNumber": 91,
   "summary": "1. Total production clears target narrowly for a second straight day (+0.7%, 23,157 BCM), waste runs 8.9% under target, and ore beats target by +65.8% (4,898 BCM) — the strongest single-day ore beat since production resumed on Aug 18. 2. 2. MTD ore deficit narrows again, from -15.2% (Aug 18) to -11.9%, the second straight day the shortfall has closed rather than widened; MTD total production sits at -8.9%. 3. 3. Crusher stockpile-to-crusher throughput remains stuck at 49.9% of the 124,000 LCM monthly plan (barely moved from 48.6%) with only 5 fiscal days left in the 31-day cycle. 4. Survey reconciliation swings hard in 24 hours: Day 25 (Aug 19) posts the cycle's strongest positive gap yet (+16.92%), then Day 26 (Aug 20) reverses to -27.04%. 5. MTD survey gap: -59,510 BCM (-13.12%), and the required forward rate for the final 5 days climbs to roughly 42,649 BCM/day — well above every daily reading posted this cycle. 6. Two new fleet faults land: DT-108 relapses into a new brake-system fault description (front wheel jam / reseal master cylinder) without a Date Out between reports; DT-246 goes down for a coolant-alarm/ECM-engine failure, still open after two days. 7. EX-253, DT-109, and DT-346 all remain down unbroken — EX-253 now three-plus weeks down with no recovery date in any source. 8. An external EHSS alert lands from a different Maaden site (WAS Mine) — a Class 4 vehicle-reversing MVA, no injuries — shared group-wide for toolbox-talk learnings, not an ADW incident. 9. No new mining meeting notes. Two new Daily Availability Final Reports (18-Aug, 19-Aug) and two new survey workbooks (Day 25, Day 26) landed. `Workshop Daily Task 21-Aug-2026.pdf` and `Grade Control August 2026.xlsx` registered at index level only — same standing image-only / per-block-layout deferrals as every prior pass. Full detail in `RAW/_INGESTED.md`. Important References folder: re-checked, 32 files, no new content since the 89th pass. Task Feedback Log (Part C): \"All Feedback\" view queried, sorted by Date Logged descending — all 34 rows already carry `Status: Processed`, most recent dated 2026-07-30. No unprocessed rows found this pass, no Wiki edits triggered, no mismatches found. Articles updated (`Last updated` bumped to 2026-08-20): [[fleet-availability-utilization]] — Aug 18-19 dated section (DT-108 relapse, DT-246 new fault, standing long-term register). [[survey-volume-reconciliation]] — Days 25-26 dated section. [[daily-production-report]] — Aug 19 dated section. [[grade-control-june-2026]] — workbook re-read note, no new parse. [[safety-inspection-patterns]] — external WAS Mine EHSS alert. `Wiki/INDEX.md` one-line descriptions refreshed for all five articles. No content removed or renamed. Source: KNOWLEDGE/mining_operations_kb/RAW via the librarian compile protocol. ---",
@@ -29,186 +29,10 @@
       "good": null
     }
   ],
-  "trend": [
-    {
-      "date": "2026-07-25",
-      "label": "25 Jul",
-      "actual": 21514,
-      "target": 23814,
-      "half": false
-    },
-    {
-      "date": "2026-07-26",
-      "label": "26 Jul",
-      "actual": 19964,
-      "target": 23814,
-      "half": false
-    },
-    {
-      "date": "2026-07-27",
-      "label": "27 Jul",
-      "actual": 21142,
-      "target": 23814,
-      "half": false
-    },
-    {
-      "date": "2026-07-28",
-      "label": "28 Jul",
-      "actual": 21917,
-      "target": 23814,
-      "half": false
-    },
-    {
-      "date": "2026-07-29",
-      "label": "29 Jul",
-      "actual": 18724,
-      "target": 23814,
-      "half": false
-    },
-    {
-      "date": "2026-07-30",
-      "label": "30 Jul",
-      "actual": 18445,
-      "target": 23814,
-      "half": false
-    },
-    {
-      "date": "2026-07-31",
-      "label": "31 Jul",
-      "actual": 9796,
-      "target": 11907,
-      "half": true
-    },
-    {
-      "date": "2026-08-01",
-      "label": "1 Aug",
-      "actual": 22723,
-      "target": 23814,
-      "half": false
-    },
-    {
-      "date": "2026-08-02",
-      "label": "2 Aug",
-      "actual": 23033,
-      "target": 23814,
-      "half": false
-    },
-    {
-      "date": "2026-08-03",
-      "label": "3 Aug",
-      "actual": 23002,
-      "target": 23814,
-      "half": false
-    },
-    {
-      "date": "2026-08-04",
-      "label": "4 Aug",
-      "actual": 18693,
-      "target": 23814,
-      "half": false
-    },
-    {
-      "date": "2026-08-05",
-      "label": "5 Aug",
-      "actual": 19003,
-      "target": 23814,
-      "half": false
-    },
-    {
-      "date": "2026-08-06",
-      "label": "6 Aug",
-      "actual": 18197,
-      "target": 23814,
-      "half": false
-    },
-    {
-      "date": "2026-08-07",
-      "label": "7 Aug",
-      "actual": 10726,
-      "target": 11907,
-      "half": true
-    },
-    {
-      "date": "2026-08-08",
-      "label": "8 Aug",
-      "actual": 17918,
-      "target": 23814,
-      "half": false
-    },
-    {
-      "date": "2026-08-09",
-      "label": "9 Aug",
-      "actual": 18414,
-      "target": 23814,
-      "half": false
-    },
-    {
-      "date": "2026-08-11",
-      "label": "11 Aug",
-      "actual": 18073,
-      "target": 23814,
-      "half": false
-    },
-    {
-      "date": "2026-08-12",
-      "label": "12 Aug",
-      "actual": 17205,
-      "target": 23814,
-      "half": false
-    },
-    {
-      "date": "2026-08-13",
-      "label": "13 Aug",
-      "actual": 22444,
-      "target": 23814,
-      "half": false
-    },
-    {
-      "date": "2026-08-14",
-      "label": "14 Aug",
-      "actual": 12400,
-      "target": 11907,
-      "half": true
-    },
-    {
-      "date": "2026-08-15",
-      "label": "15 Aug",
-      "actual": 26133,
-      "target": 23814,
-      "half": false
-    },
-    {
-      "date": "2026-08-16",
-      "label": "16 Aug",
-      "actual": 24955,
-      "target": 23814,
-      "half": false
-    },
-    {
-      "date": "2026-08-17",
-      "label": "17 Aug",
-      "actual": 24831,
-      "target": 23814,
-      "half": false
-    },
-    {
-      "date": "2026-08-18",
-      "label": "18 Aug",
-      "actual": 19530,
-      "target": 23814,
-      "half": false
-    },
-    {
-      "date": "2026-08-19",
-      "label": "19 Aug",
-      "actual": 18259,
-      "target": 23814,
-      "half": false
-    }
-  ],
+  "trend": [],
   "fleet": {
     "exUnits": 6,
-    "dtUnits": 17,
+    "dtUnits": 21,
     "excavators": [
       {
         "unit": "EX-340",
@@ -216,7 +40,7 @@
       },
       {
         "unit": "EX-262",
-        "avail": "95.8%"
+        "avail": "97.9%"
       },
       {
         "unit": "EX-253",
@@ -224,22 +48,20 @@
       },
       {
         "unit": "EX-263",
-        "avail": "79.2%"
+        "avail": "97.9%"
       },
       {
         "unit": "EX-247",
-        "avail": "83.3%"
+        "avail": "100.0%"
       },
       {
         "unit": "EX-1200",
         "avail": null
       }
     ],
-    "exAvail": "71.2%",
+    "exAvail": "78.8%",
     "exBasis": "5/6",
-    "pdfDate": "19-08",
-    "dtAvail": "89.3%",
-    "dtBasis": "17 active ≥8h"
+    "pdfDate": "28-08"
   },
   "equipment": [
     {
@@ -250,7 +72,7 @@
       "util": "",
       "bd_hrs": "",
       "note": "'s brake-system fault changed description between the 18-Aug and 19-Aug reports (scavenging pump replacement →",
-      "comment": "Front Wheel Jam ( Reseal Master  Cyl )"
+      "comment": "Replacing Final Drive RHS"
     },
     {
       "unit": "DT-246",
@@ -260,7 +82,7 @@
       "util": "",
       "bd_hrs": "",
       "note": "'s coolant/ECM failure has no forward repair window visible in this KB yet** — worth checking the next Week 34",
-      "comment": "Coolant Alarm (  ECM Engine Failure  )"
+      "comment": ""
     },
     {
       "unit": "EX-253",
@@ -300,7 +122,7 @@
       "util": "",
       "bd_hrs": "",
       "note": "(hydraulic hose leak from pilot pump to swing control block, 19-Aug, on top of a same-day Daily Inspection) an",
-      "comment": "Hydraulic  hose leaking  from  pilot  pump  to swing  control  block"
+      "comment": "Boom Cyl Hoses Leak"
     },
     {
       "unit": "EX-263",
@@ -310,7 +132,7 @@
       "util": "",
       "bd_hrs": "",
       "note": "(main relief valve C/O, 19-Aug) both ran short breakdowns within otherwise routine days.",
-      "comment": "C/O Main Relife Valve On Block  Return Tank"
+      "comment": ""
     },
     {
       "unit": "DT-110",
@@ -320,7 +142,7 @@
       "util": "",
       "bd_hrs": "8",
       "note": "'s \"C/O Tray\" (19-Aug, 8 hrs) and",
-      "comment": "C/O Tray"
+      "comment": ""
     }
   ],
   "followUps": [
