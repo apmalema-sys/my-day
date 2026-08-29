@@ -1,15 +1,15 @@
 {
-  "date": "2026-07-16",
+  "date": "2026-08-29",
   "topic": "Grading and Road Construction",
   "title": "Grading and Road Construction",
-  "body": "A neglected high spot or a badly banked switchback doesn't just slow the haul cycle — it cracks tires, shifts payload, and turns into one of the ramp incidents that eat a shift. At ADW right now, grading alone isn't even fixing the worst sections; the base material is too hard to hold a profile, which is a different problem than routine grading covers.",
+  "body": "A high spot or a badly graded switchback doesn't just look untidy — it cracks tires, throws payload unevenly across the tray, and turns a routine ramp turn into where trucks lose traction and visibility. At ADW that's already shown up as real cost: the tire/suspension escalation this cycle is partly a road-condition problem, not just a tire problem.",
   "keyPoints": [
-    "Full brake test on the ramp before any grader enters the works — no exceptions, same as any mobile unit.",
-    "Grade in the direction of traffic flow unless the Production Foreman calls it otherwise after a risk assessment, and keep the blade retracted and ripper up while traveling to protect the machine's profile.",
-    "The 10 m no-go zone parallel to a high wall beats the grading routine every time — no unsupervised grading inside it.",
-    "Switchbacks need more than a pass or two: super-elevation, inside-radius clearance, and outside bund integrity all matter because that's where trucks lose visibility and traction.",
-    "If a section is failing because the base material won't compact (not just a surface profile issue), grading alone won't fix it — that's the soft-material resurfacing situation flagged in the July 11 shift meeting, not a routine grader job."
+    "High spots and switchbacks are the two things a daily pit inspection should always be checking for — a raised area needs the grader now, not next shift, because it compounds with every pass.",
+    "Switchbacks need more than a flat pass: super-elevation (banking), inside-radius clearance, and outside bund integrity all matter there specifically, because that's where trucks lose visibility and traction and where most ramp incidents happen.",
+    "Grade in the direction of traffic flow, diff lock on, no sharp turns with diff lock engaged, and grade spillage to the side — basic operator discipline that gets skipped when a grader's rushed.",
+    "Grading alone can't fix a base-material problem. If a road is hard-packed and won't compact right, patching with soft/sand material (or crusher screening) into the surface is the actual fix — regrading a road that's fundamentally too hard just wastes a pass.",
+    "No unsupervised grading within the 10 m high-wall no-go zone — the high-wall exclusion rule always overrides the grading routine."
   ],
-  "apply": "If a daily inspection flags a high spot or a rough switchback, check whether it's a profile problem (grade it) or a base-material problem (it needs soft material mixed in) before assigning the grader — treating the second as the first just burns hours without fixing anything.",
-  "generatedAt": "2026-07-16T06:26:45"
+  "apply": "If a switchback feels loose or trucks are cutting the inside radius on any ramp today, that's a grading and bund-integrity issue, not a driver issue — get it flagged for the grader before it turns into a near-miss.",
+  "generatedAt": "2026-08-29T09:10:34"
 }
