@@ -1,30 +1,30 @@
 {
-  "generatedAt": "2026-08-29T09:16:19",
+  "generatedAt": "2026-08-29T09:27:00",
   "date": "2026-08-29",
   "runNumber": 93,
   "summary": "1. No new mining meeting notes. 2. No file under `RAW/` has changed since — the 92nd pass's nine-day catch-up (60 files, all landing 08:13-08:35) already covers everything on disk as of this run (09:03). 3. Important References folder re-checked at 33 files, no new content. 4. No Wiki articles touched this pass. 5. Task Feedback Log (Part C): \"All Feedback\" data source queried directly — 33 rows total, all 33 already `Status: Processed`, 0 unprocessed. 6. Same result as the 92nd pass. 7. No Wiki edits, no mismatches. 8. No content removed, renamed, or updated. 9. This run exists only to confirm the KB is current; the 92nd run's entry below remains the authoritative record of today's actual changes. Source: KNOWLEDGE/mining_operations_kb/RAW via the librarian compile protocol. ---",
   "kpis": [
     {
       "label": "MTD BCM",
-      "value": "513,050",
-      "delta": "-8.9% vs target",
+      "value": "75,392",
+      "delta": "-6.3% vs target",
       "good": false
     },
     {
       "label": "Survey Gap",
-      "value": "+13.8%",
+      "value": "+0.4%",
       "delta": "survey vs trucks MTD",
       "good": true
     },
     {
       "label": "Crusher MTD",
-      "value": "49%",
-      "delta": "60,309 / 124,000 LCM",
+      "value": "8%",
+      "delta": "9,531 / 124,000 LCM",
       "good": null
     },
     {
       "label": "Days Remain",
-      "value": "5",
+      "value": "27",
       "delta": "",
       "good": null
     }
@@ -34,28 +34,28 @@
       "date": "2026-08-25",
       "label": "25 Aug",
       "actual": 22723,
-      "target": 23814,
+      "target": 22993,
       "half": false
     },
     {
       "date": "2026-08-26",
       "label": "26 Aug",
       "actual": 22475,
-      "target": 23814,
+      "target": 22993,
       "half": false
     },
     {
       "date": "2026-08-27",
       "label": "27 Aug",
       "actual": 20739,
-      "target": 23814,
+      "target": 22993,
       "half": false
     },
     {
       "date": "2026-08-28",
       "label": "28 Aug",
       "actual": 9455,
-      "target": 11907,
+      "target": 11496,
       "half": true
     }
   ],
