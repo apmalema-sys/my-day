@@ -1,13 +1,13 @@
 {
-  "generatedAt": "2026-08-30T17:05:06",
+  "generatedAt": "2026-08-30T18:03:58",
   "date": "2026-08-30",
-  "runNumber": 97,
-  "summary": "1. A new mining meeting note (30-Aug) surfaces a live production constraint: the primary crusher's hammer has a flat chisel head instead of a tapered/pointed one, and can't break rock effectively. 2. Combined with MG feed running 70-90% rock, the grizzly is choking on oversize (must be under 500mm) and the crusher group has been reporting delays for three days. 3. Fix identified — swap to a tapered/stubbed chisel, action assigned to Jack Reabow — with a feed workaround in the meantime (high-grade first to open the area, then blend low-grade with MG1 as pressure drops). 2. 4. The same meeting details Stage 4 / level 171 access sequencing (mine top-down to connect to 171, since starting from 740 wasn't possible), the 263 blast down to its last 1-2 truck trips, a dozer tipping-technique correction, and an unresolved evacuation-point discrepancy between the mapped switchback 3 point and a supervisor's verbal guidance to park at the pre-slip point instead. 3. 5. Two Important References emails carried over as unprocessed since the 94th/96th dashboard-scoped passes were closed out this pass: a six-item mine access boom gate continuous-manning action plan (all items Immediate/Closed), and an administrative generator-refuelling arrangement for Maaden's Geology core yard. 4. 6. No new production, fleet, or survey workbook landed since the 96th pass — [[daily-production-report]] and [[fleet-availability-utilization]] remain at their prior values. 7. Found the new meeting note plus the two carried-over Important References emails; no new production/fleet/survey workbook. 8. All three files registered in `RAW/_INGESTED.md` (97th compile pass) and synthesised into `Outputs/important-references-analysis_2026-08-30.md`. 9. Wiki compile: updated [[crusher-feed-procedure]] (chisel-head fault and feed workaround), [[blasting-and-drilling]] (263 wrap-up, Stage 4/level 171 access), [[loading-hauling-tipping]] (tipping-technique correction), [[traffic-management]] (evacuation-point discrepancy), and [[safety-inspection-patterns]] (boom gate plan, generator refuelling) — five articles' `Last updated` bumped to 2026-08-30. Task Feedback Log (Part C): \"All Feedback\" data source queried via SQL, sorted by Date Logged descending — most recent row dated 2026-07-30, all rows already `Status: Processed`. No Wiki edits, no mismatches. All Status = Inbox, Life Area/Project/dates left empty for Peter to triage. No content removed or renamed. Source: KNOWLEDGE/mining_operations_kb/RAW via the librarian compile protocol. ---",
+  "runNumber": 98,
+  "summary": "1. Two new meeting notes landed: a management-pressure \"August Performance & Recovery Plan\" review (August missed target by ~267,000t, the worst month since January) and the weekly safety meeting (three jump-starting violations in one week, revised ERT emergency-call routing, boom gate tightening). 2. 2. Production: Aug 29 ore beat target for the second straight day (+39.6%), narrowing the MTD ore gap from -62.5% to -39.8%. 3. Crusher downtime jumped ~65% with an explicit \"Hammer b/d\" entry — the first hard evidence tying the flat-chisel-head fault (raised 30-Aug) to a measurable production cost; the chisel swap hasn't landed yet. 3. 4. Survey: Day 5 posted negative again (-16.70%), reversing Day 4's positive read. 5. Management has escalated further — Abel Pienaar is commissioning an independent survey company to audit ADW's entire pit-survey process and has asked Peter directly to discuss the scope of work. 6. This is the most significant step yet on the recurring survey-vs-truck discrepancy (mandatory actions 25-Aug, warning 27-Aug, external audit 30-Aug). 4. 7. Fleet: excavator daily availability crashed to 66.67% on two full-day breakdowns (new EX-247 bucket repair, EX-253 now a full month down). 8. DT-108 relapsed into a new brake fault hours after recovering from a seven-day repair. 9. DT-346's status, unconfirmed since the 94th pass, is now confirmed still down (25 days). 5. Muhammad Usman's CIP skeleton-crew study (answering Abel Pienaar's 28-Aug request) quantifies ~257,000t of additional monthly production across four excavators at a 50% break-recovery scenario — close to the size of August's own shortfall, giving management a concrete, sized lever. Two genuinely new: \"Mining Operations Review: August Performance & Recovery Plan\" (a previously-empty stub, now filled in) and \"Mine Site Safety & Operations Meeting Summary\" — both written verbatim to RAW. Found a large batch of production/fleet/survey workbooks updated in place or newly landed (the site's Aug 29/30 data cycle), plus the independent-survey email and the CIP study docx. All registered in `RAW/_INGESTED.md` (98th compile pass) and synthesised into `Outputs/important-references-analysis_2026-08-30.md` (addendum to the same-day file). Task Feedback Log (Part C): \"All Feedback\" data source queried via SQL, sorted by Date Logged descending — most recent row still dated 2026-07-30, all 33 rows already `Status: Processed`. No Wiki edits, no mismatches. Both Status = Inbox, Life Area/Project/dates left empty for Peter to triage. No content removed or renamed. Source: KNOWLEDGE/mining_operations_kb/RAW via the librarian compile protocol. ---",
   "kpis": [
     {
       "label": "MTD BCM",
-      "value": "75,392",
-      "delta": "-6.3% vs target",
+      "value": "95,976",
+      "delta": "-7.2% vs target",
       "good": false
     },
     {
@@ -24,7 +24,7 @@
     },
     {
       "label": "Days Remain",
-      "value": "27",
+      "value": "26",
       "delta": "",
       "good": null
     }
@@ -57,23 +57,30 @@
       "actual": 9455,
       "target": 11496,
       "half": true
+    },
+    {
+      "date": "2026-08-29",
+      "label": "29 Aug",
+      "actual": 20584,
+      "target": 22993,
+      "half": false
     }
   ],
   "fleet": {
-    "availDaily": "88.53%",
-    "availMtd": "85.73%",
-    "exAvail": "78.8%",
+    "availDaily": "86.13%",
+    "availMtd": "85.74%",
+    "exAvail": "55.4%",
     "exUnits": 6,
-    "dtAvail": "90.39%",
+    "dtAvail": "87.32%",
     "dtUnits": 21,
     "excavators": [
       {
         "unit": "EX-340",
-        "avail": "97.9%"
+        "avail": "89.6%"
       },
       {
         "unit": "EX-262",
-        "avail": "97.9%"
+        "avail": "93.8%"
       },
       {
         "unit": "EX-253",
@@ -81,11 +88,11 @@
       },
       {
         "unit": "EX-263",
-        "avail": "97.9%"
+        "avail": "93.8%"
       },
       {
         "unit": "EX-247",
-        "avail": "100.0%"
+        "avail": "0.0%"
       },
       {
         "unit": "EX-1200",
@@ -93,18 +100,18 @@
       }
     ],
     "exBasis": "5/6",
-    "pdfDate": "28-08"
+    "pdfDate": "29-08"
   },
   "equipment": [
     {
-      "unit": "EX-253",
-      "type": "Excavator",
-      "status": "down",
+      "unit": "DT-346",
+      "type": "Haul Truck",
+      "status": "warning",
       "avail": "",
       "util": "",
       "bd_hrs": "",
-      "note": "is now a full calendar month down (28-Jul to 28-Aug) with no recovery date in any source this KB has seen** — ",
-      "comment": "Swing Braring Failure"
+      "note": "still down: \"Engine Failure\" (Opportune), open since 04-Aug 6:15 AM — 25 days down as of 29-Aug.",
+      "comment": "Engine Failure"
     },
     {
       "unit": "DT-108",
@@ -113,58 +120,28 @@
       "avail": "",
       "util": "",
       "bd_hrs": "",
-      "note": "(brake/final-drive repair, seven days, recovered 29-Aug). **Added this pass:**",
-      "comment": "Replacing Final Drive RHS"
+      "note": "'s relapse into a new brake fault the same day it recovered from a seven-day repair** — worth confirming with ",
+      "comment": "Check Brake System"
     },
     {
-      "unit": "DT-130",
-      "type": "Haul Truck",
-      "status": "scheduled",
-      "avail": "",
-      "util": "",
-      "bd_hrs": "",
-      "note": "'s new faults (brake press low; engine gasket/seal leak) have no forward repair window visible in this KB yet*",
-      "comment": "Replaced the engine oil pan gasket  and changed the engine oil"
-    },
-    {
-      "unit": "DT-128",
-      "type": "Haul Truck",
-      "status": "scheduled",
-      "avail": "",
-      "util": "",
-      "bd_hrs": "",
-      "note": "'s new faults (brake press low; engine gasket/seal leak) have no forward repair window visible in this KB yet*",
-      "comment": "Leaking On Gasket Cylinder Head  and Front Shaft Seal Camp Shaft"
-    },
-    {
-      "unit": "EX-398",
+      "unit": "EX-247",
       "type": "Excavator",
-      "status": "down",
-      "avail": "",
-      "util": "",
-      "bd_hrs": "",
-      "note": "appears in the fleet count for the first time from the 25-Aug report (Equ.Count 6 → 7), logging only routine d",
-      "comment": "No Start"
-    },
-    {
-      "unit": "DT-109",
-      "type": "Haul Truck",
-      "status": "down",
-      "avail": "",
-      "util": "",
-      "bd_hrs": "",
-      "note": "Fender/Handrail/Step Ladder damage, open since 21-Jul, roughly five and a half weeks down. **Resolved this pas",
-      "comment": "Front RHS Fender, Handrail & Step  Ladder damaged due to incident"
-    },
-    {
-      "unit": "DT-346",
-      "type": "Haul Truck",
       "status": "warning",
       "avail": "",
       "util": "",
       "bd_hrs": "",
-      "note": "drops out of the Daily Availability Final Report entirely in this nine-day batch** — either its 4-Aug engine f",
-      "comment": "Engine Failure"
+      "note": "goes down 29-Aug 5:30 AM for a bucket repair (Attach & Work Tools, plus a hydraulic hose change-out on all ten",
+      "comment": "C/O All Hoes Of Front Attach ( C/O  10x Hoes )"
+    },
+    {
+      "unit": "EX-253",
+      "type": "Excavator",
+      "status": "warning",
+      "avail": "",
+      "util": "",
+      "bd_hrs": "",
+      "note": "crosses one full month down (28-Jul to 29-Aug) with still no recovery date anywhere** — confirm whether the No",
+      "comment": "Swing Braring Failure"
     },
     {
       "unit": "EX-123",
@@ -173,39 +150,69 @@
       "avail": "",
       "util": "",
       "bd_hrs": "",
-      "note": "logs recurring electrical/aircon and no-start issues nearly every day (servo controller error, \"no start,\" bat",
+      "note": "(2.5h, bucket pin lock loose)",
+      "comment": "Bucket Pin Lock Loose"
+    },
+    {
+      "unit": "EX-262",
+      "type": "Excavator",
+      "status": "warning",
+      "avail": "",
+      "util": "",
+      "bd_hrs": "",
+      "note": "(1.5h, A/C filter clean)",
       "comment": ""
+    },
+    {
+      "unit": "EX-263",
+      "type": "Excavator",
+      "status": "scheduled",
+      "avail": "",
+      "util": "",
+      "bd_hrs": "",
+      "note": "(1.5h, hydraulic oil leak into the night shift plus a main pump service alarm)",
+      "comment": ""
+    },
+    {
+      "unit": "EX-340",
+      "type": "Excavator",
+      "status": "down",
+      "avail": "",
+      "util": "",
+      "bd_hrs": "",
+      "note": "(2.5h, daily inspection plus a broken roller).",
+      "comment": "Clean A/C Filters"
     }
   ],
   "followUps": [
     {
-      "priority": "HIGH",
-      "title": "Wiki compile",
-      "body": "updated [[crusher-feed-procedure]] (chisel-head fault and feed workaround), [[blasting-and-drilling]] (263 wrap-up, Stage 4/level 171 access), [[loading-hauling-tipping]] (tipping-technique correction), [[traffic-management]] (evacuation-point discrepancy), and [[safety-inspection-patterns]] (boom gate plan, generator refuelling) — five articles' `Last updated` bumped to 2026-08-30.",
-      "action": ""
-    },
-    {
       "priority": "MONITOR",
       "title": "Part A",
-      "body": "Notion Meeting Notes Database queried for the last 7 days — two results. \"Meeting @Today\" is the same empty auto-generated stub pattern skipped since the 67th pass. \"Mining Operations Site Meeting @Today\" is genuine and was written verbatim to `RAW/Meeting Notes/mining-operations-site-meeting-crusher-chisel-feed-blasting_2026-08-30.md`.",
+      "body": "Notion Meeting Notes Database queried for the last 7 days — three results. \"Mining Operations Site Meeting\" (30-Aug) already ingested at the 97th pass. Two genuinely new: \"Mining Operations Review: August Performance & Recovery Plan\" (a previously-empty stub, now filled in) and \"Mine Site Safety & Operations Meeting Summary\" — both written verbatim to RAW.",
       "action": ""
     },
     {
       "priority": "MONITOR",
       "title": "Part B gap-check",
-      "body": "compared RAW file mtimes against `_INGESTED.md`'s own write from the 96th pass. Found the new meeting note plus the two carried-over Important References emails; no new production/fleet/survey workbook. All three files registered in `RAW/_INGESTED.md` (97th compile pass) and synthesised into `Outputs/important-references-analysis_2026-08-30.md`.",
+      "body": "compared RAW file mtimes against `_INGESTED.md`'s own write from the 97th pass. Found a large batch of production/fleet/survey workbooks updated in place or newly landed (the site's Aug 29/30 data cycle), plus the independent-survey email and the CIP study docx. All registered in `RAW/_INGESTED.md` (98th compile pass) and synthesised into `Outputs/important-references-analysis_2026-08-30.md` (addendum to the same-day file).",
+      "action": ""
+    },
+    {
+      "priority": "MONITOR",
+      "title": "Wiki compile",
+      "body": "updated [[daily-production-report]] (Aug 29 daily/MTD, crusher downtime spike, EX-1200 data-quality flag), [[survey-volume-reconciliation]] (Day 5, independent survey audit escalation), [[fleet-availability-utilization]] (Aug 29 fleet-wide and per-unit detail, DT-346 resolved), [[blasting-and-drilling]] (Aug 29 drilling, no-blast day), [[crusher-feed-procedure]] (downtime evidence), [[kaizen-load-haul-efficiency]] (August performance review + CIP study), [[safety-inspection-patterns]] (weekly safety meeting) — seven articles' `Last updated` bumped to 2026-08-30. `Wiki/INDEX.md` one-line descriptions refreshed for all seven. `Wiki/QUESTIONS.md` gained a new dated section.",
       "action": ""
     },
     {
       "priority": "MONITOR",
       "title": "Task Feedback Log (Part C)",
-      "body": "\"All Feedback\" data source queried via SQL, sorted by Date Logged descending — most recent row dated 2026-07-30, all rows already `Status: Processed`. Nothing unprocessed. No Wiki edits, no mismatches.",
+      "body": "\"All Feedback\" data source queried via SQL, sorted by Date Logged descending — most recent row still dated 2026-07-30, all 33 rows already `Status: Processed`. Nothing unprocessed. No Wiki edits, no mismatches.",
       "action": ""
     },
     {
       "priority": "MONITOR",
       "title": "Notion inbox tasks created",
-      "body": "three — organize the crusher chisel-head replacement with Jack Reabow (the one item with a clear, unconfirmed owner and no completion date); reconcile the switchback 3 vs. pre-slip-point evacuation designation with Usman; grade/support the ramp road near the 263 blast area. All Status = Inbox, Life Area/Project/dates left empty for Peter to triage. No content removed or renamed. Source: KNOWLEDGE/mining_operations_kb/RAW via the librarian compile protocol. ---",
+      "body": "two — discuss the independent survey's scope of work with Abel Pienaar (mining vs. quantity surveyor still undecided); confirm whether the CIP skeleton-crew relief roster gets deployed. Both Status = Inbox, Life Area/Project/dates left empty for Peter to triage. No content removed or renamed. Source: KNOWLEDGE/mining_operations_kb/RAW via the librarian compile protocol. ---",
       "action": ""
     }
   ]
