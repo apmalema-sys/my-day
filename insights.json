@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-08-30T11:07:39",
-  "date": "2026-08-29",
-  "runNumber": 96,
-  "summary": "1. Survey Day 4 (Aug 29) posts a positive gap for the first time since Day 1 — trucks 9,455 BCM against survey 9,951 BCM, +496 BCM (+4.98%) — breaking the two-day negative streak (Days 2-3, -10.69% and -14.52%) that landed directly inside Abel Pienaar's 27-Aug warning that a negative survey would not be accepted again. 2. 2. The MTD-to-target percentage swung sharply in the opposite direction: from +0.37% through Day 3 to -15.15% through Day 4, as Day 1's strong +13.78% reading now carries a smaller share of a four-day average weighed down by two negative days. 3. Survey MTD sits at 74,719 BCM against an 86,036.8 BCM Target MTD, an -11,317.8 BCM shortfall. 3. 4. Trucks-vs-survey MTD reconciles cleanly at -673 BCM (-0.90%), with the trucks side (75,392 BCM) tying exactly to the September Client Meeting Report's own MTD figure through Aug 28 — no new production data landed this pass to extend that tie past day 4. 5. No new Client Meeting Report, DPR, or Daily Availability Final Report landed this pass — production and fleet-availability dashboard figures remain at their Aug 28 (day 4) values from the 94th pass. 6. Only the survey side advanced. 7. The MTD-to-target percentage's single-day swing (+0.37% to -15.15%) is a reminder that this early in a 31-day cycle, the metric is highly sensitive to which one day is carrying the four-day average — worth re-checking for stability once the cycle reaches 7-10 days of data. 8. Day 4's trucks volume (9,455 BCM) reads roughly 40% of the cycle's daily norm, the same same-day filing-lag pattern already flagged for Aug 28's total-production tab in [[daily-production-report]] — confirm at the next pass whether the underlying Client Meeting Report tab fills in higher once fully posted. 9. Two Important References emails (`MINE ACCESS BOOM GATE COMPLIANCE.eml`, `FW_ Refuel Geology Generator.eml`) landed this pass but were not processed — this run stayed dashboard-scoped per the standing pattern. Flagged for the next full \"compile mining operations KB\" pass. Four files touched since: `Survey Data/Sep 26/260829-INX-SUM.xlsx` (new, Day 4 survey), `Production report/Sep 26/September Distance report.xlsx` (re-touched, Aug 29 tab opens but is still a blank template — no usable data), and the two Important References emails noted above. No new Daily Availability Final Report, Client Meeting Report, or DPR landed. Both new/touched files registered in `RAW/_INGESTED.md` (96th compile pass). [[survey-volume-reconciliation]] updated — new Day 4 dated section, MTD headline refreshed, `Last updated` and `Sources` bumped. [[daily-production-report]] and [[fleet-availability-utilization]] left unchanged — no new source material landed for either this pass. No content removed or renamed. Important References and the Task Feedback Log were not processed this pass (dashboard-scoped, consistent with the 74th/75th/77th/80th/82nd/87th/90th/94th pass pattern). Source: KNOWLEDGE/mining_operations_kb/RAW via the librarian compile protocol. ---",
+  "generatedAt": "2026-08-30T17:05:06",
+  "date": "2026-08-30",
+  "runNumber": 97,
+  "summary": "1. A new mining meeting note (30-Aug) surfaces a live production constraint: the primary crusher's hammer has a flat chisel head instead of a tapered/pointed one, and can't break rock effectively. 2. Combined with MG feed running 70-90% rock, the grizzly is choking on oversize (must be under 500mm) and the crusher group has been reporting delays for three days. 3. Fix identified — swap to a tapered/stubbed chisel, action assigned to Jack Reabow — with a feed workaround in the meantime (high-grade first to open the area, then blend low-grade with MG1 as pressure drops). 2. 4. The same meeting details Stage 4 / level 171 access sequencing (mine top-down to connect to 171, since starting from 740 wasn't possible), the 263 blast down to its last 1-2 truck trips, a dozer tipping-technique correction, and an unresolved evacuation-point discrepancy between the mapped switchback 3 point and a supervisor's verbal guidance to park at the pre-slip point instead. 3. 5. Two Important References emails carried over as unprocessed since the 94th/96th dashboard-scoped passes were closed out this pass: a six-item mine access boom gate continuous-manning action plan (all items Immediate/Closed), and an administrative generator-refuelling arrangement for Maaden's Geology core yard. 4. 6. No new production, fleet, or survey workbook landed since the 96th pass — [[daily-production-report]] and [[fleet-availability-utilization]] remain at their prior values. 7. Found the new meeting note plus the two carried-over Important References emails; no new production/fleet/survey workbook. 8. All three files registered in `RAW/_INGESTED.md` (97th compile pass) and synthesised into `Outputs/important-references-analysis_2026-08-30.md`. 9. Wiki compile: updated [[crusher-feed-procedure]] (chisel-head fault and feed workaround), [[blasting-and-drilling]] (263 wrap-up, Stage 4/level 171 access), [[loading-hauling-tipping]] (tipping-technique correction), [[traffic-management]] (evacuation-point discrepancy), and [[safety-inspection-patterns]] (boom gate plan, generator refuelling) — five articles' `Last updated` bumped to 2026-08-30. Task Feedback Log (Part C): \"All Feedback\" data source queried via SQL, sorted by Date Logged descending — most recent row dated 2026-07-30, all rows already `Status: Processed`. No Wiki edits, no mismatches. All Status = Inbox, Life Area/Project/dates left empty for Peter to triage. No content removed or renamed. Source: KNOWLEDGE/mining_operations_kb/RAW via the librarian compile protocol. ---",
   "kpis": [
     {
       "label": "MTD BCM",
@@ -180,26 +180,32 @@
   "followUps": [
     {
       "priority": "HIGH",
-      "title": "Day 4's trucks volume (9,455 BCM) reads roughly 40% of the cycle's daily...",
-      "body": "",
+      "title": "Wiki compile",
+      "body": "updated [[crusher-feed-procedure]] (chisel-head fault and feed workaround), [[blasting-and-drilling]] (263 wrap-up, Stage 4/level 171 access), [[loading-hauling-tipping]] (tipping-technique correction), [[traffic-management]] (evacuation-point discrepancy), and [[safety-inspection-patterns]] (boom gate plan, generator refuelling) — five articles' `Last updated` bumped to 2026-08-30.",
       "action": ""
     },
     {
       "priority": "MONITOR",
-      "title": "No new Client Meeting Report, DPR, or Daily Availability Final Report la...",
-      "body": "",
+      "title": "Part A",
+      "body": "Notion Meeting Notes Database queried for the last 7 days — two results. \"Meeting @Today\" is the same empty auto-generated stub pattern skipped since the 67th pass. \"Mining Operations Site Meeting @Today\" is genuine and was written verbatim to `RAW/Meeting Notes/mining-operations-site-meeting-crusher-chisel-feed-blasting_2026-08-30.md`.",
       "action": ""
     },
     {
       "priority": "MONITOR",
-      "title": "The MTD-to-target percentage's single-day swing (+0.37% to -15.15%) is a...",
-      "body": "",
+      "title": "Part B gap-check",
+      "body": "compared RAW file mtimes against `_INGESTED.md`'s own write from the 96th pass. Found the new meeting note plus the two carried-over Important References emails; no new production/fleet/survey workbook. All three files registered in `RAW/_INGESTED.md` (97th compile pass) and synthesised into `Outputs/important-references-analysis_2026-08-30.md`.",
       "action": ""
     },
     {
       "priority": "MONITOR",
-      "title": "Two Important References emails (`MINE ACCESS BOOM GATE COMPLIANCE.eml`,...",
-      "body": "",
+      "title": "Task Feedback Log (Part C)",
+      "body": "\"All Feedback\" data source queried via SQL, sorted by Date Logged descending — most recent row dated 2026-07-30, all rows already `Status: Processed`. Nothing unprocessed. No Wiki edits, no mismatches.",
+      "action": ""
+    },
+    {
+      "priority": "MONITOR",
+      "title": "Notion inbox tasks created",
+      "body": "three — organize the crusher chisel-head replacement with Jack Reabow (the one item with a clear, unconfirmed owner and no completion date); reconcile the switchback 3 vs. pre-slip-point evacuation designation with Usman; grade/support the ramp road near the 263 blast area. All Status = Inbox, Life Area/Project/dates left empty for Peter to triage. No content removed or renamed. Source: KNOWLEDGE/mining_operations_kb/RAW via the librarian compile protocol. ---",
       "action": ""
     }
   ]
