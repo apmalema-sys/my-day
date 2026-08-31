@@ -1,15 +1,15 @@
 {
-  "date": "2026-08-29",
-  "topic": "Grading and Road Construction",
-  "title": "Grading and Road Construction",
-  "body": "A high spot or a badly graded switchback doesn't just look untidy — it cracks tires, throws payload unevenly across the tray, and turns a routine ramp turn into where trucks lose traction and visibility. At ADW that's already shown up as real cost: the tire/suspension escalation this cycle is partly a road-condition problem, not just a tire problem.",
+  "date": "2026-08-31",
+  "topic": "Hot-Season Hydraulic Fault Pattern",
+  "title": "Hot-Season Hydraulic Fault Pattern",
+  "body": "Excavators throwing hydraulic faults in the heat get worked as one-off symptom fixes — a leak here, a slow cylinder there — instead of the fleet-wide root cause they actually are. That's how a machine like EX-263 racks up seven different hydraulic faults in fourteen days: every repair addresses what's in front of the mechanic, never the pump, cooler, or circuit driving all of them.",
   "keyPoints": [
-    "High spots and switchbacks are the two things a daily pit inspection should always be checking for — a raised area needs the grader now, not next shift, because it compounds with every pass.",
-    "Switchbacks need more than a flat pass: super-elevation (banking), inside-radius clearance, and outside bund integrity all matter there specifically, because that's where trucks lose visibility and traction and where most ramp incidents happen.",
-    "Grade in the direction of traffic flow, diff lock on, no sharp turns with diff lock engaged, and grade spillage to the side — basic operator discipline that gets skipped when a grader's rushed.",
-    "Grading alone can't fix a base-material problem. If a road is hard-packed and won't compact right, patching with soft/sand material (or crusher screening) into the surface is the actual fix — regrading a road that's fundamentally too hard just wastes a pass.",
-    "No unsupervised grading within the 10 m high-wall no-go zone — the high-wall exclusion rule always overrides the grading routine."
+    "Heat stress on a hydraulic system doesn't repeat one symptom — it shows up as leaks, slow response, and valve failures on the same machine in the same week. Varied fault descriptions on one unit are a pattern, not five unrelated breakdowns.",
+    "A single-day cluster across multiple machines (three excavators plus a borrowed grader all faulting hydraulically on the same day) is a fleet signal, not coincidence — it should trigger a fleet-wide oil-temperature and cooler check, not five separate work orders.",
+    "Don't fold every fault into the heat story by default — EX-123's root cause turned out to be a mechanical slew ring failure, not hydraulics. Confirm the mechanism before you file it under \"hot season.\"",
+    "Cooler-fin dust blockage compounds heat stress in this environment — cooler condition is part of the check, not just oil temperature.",
+    "If a repair only holds for one clean production day before a new symptom appears on the same machine, that's a signal the fix addressed the symptom, not the fault."
   ],
-  "apply": "If a switchback feels loose or trucks are cutting the inside radius on any ramp today, that's a grading and bund-integrity issue, not a driver issue — get it flagged for the grader before it turns into a near-miss.",
-  "generatedAt": "2026-08-29T09:10:34"
+  "apply": "Late August is still peak heat — if an excavator throws a hydraulic fault today, check whether it's a fresh isolated issue or another entry in a chain on that same unit before signing off on a symptom-only repair.",
+  "generatedAt": "2026-08-31T13:47:50"
 }
