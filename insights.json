@@ -1,30 +1,30 @@
 {
-  "generatedAt": "2026-08-31T17:06:46",
+  "generatedAt": "2026-08-31T19:54:28",
   "date": "2026-08-31",
   "runNumber": 100,
   "summary": "1. Two new meeting notes landed — a weekly production planning meeting and a shift meeting, both 31-Aug. 2. Shovels missed the 60/20 productivity target on all six days reviewed this week; truck fleet utilization and shovel productivity were named the primary drivers of a below-plan week, with drilling also behind (4,000m needed on the day vs. a 19,000m weekly target the team called unlikely). 2. 3. The shovel-productivity shortfall produced a live disagreement rather than a shared diagnosis: one view puts Stage 4 excavators at ~80% buckets-down waiting on trucks in the confined Block 171/172 access; a counter-observation from a site walk found only one truck on the platform. 4. Both sides agreed to share queuing-time data before the next review. 5. A separate block-numbering discrepancy surfaced in the same meeting — Geology calls the block 173, blasting calls it 174, confirmed to actually be 172. 3. 6. Same day, same working area: a truck transmission failure at Block 172 (3.5-hour delay) and four tires lost to cuts/punctures, with fragmentation quality at Block 172 named as a contributing factor for the first time in this KB's tire-damage thread (previously always road condition or spillage). 4. 7. On shift: dumper 1-to-9 is stuck in a blast radius (recovery reassigned to the new superintendent since the usual contact is on training) and dumper 429 is stuck in the loading area; Dispatch was criticised directly for not communicating machine status, with updates instead coming from Peter. 8. A 720-litre diesel delay was attributed to maintenance. 9. A new overspill-bench loading proposal near a high wall (cones, 3-5m buffer, prior rock-bounce-onto-road incident cited) mirrors this KB's existing standard overspill control set almost exactly. 5. Workforce-tracking discipline was reinforced at both meetings — daily absentee tracking by name, the no-work-no-pay principle, and the clinic documentation policy (no written hospital note has ever actually been produced on site). A PM confrontation over machine bucket efficiency produced a usable coaching example (stay calm, ask what can be improved) and flagged an English-language barrier for one named foreman. Three already ingested at prior passes (Mine Site Safety & Operations Meeting Summary, Mining Operations Review: August Performance & Recovery Plan, Mining Operations Site Meeting — all 30-Aug). Two genuinely new, both created 31-Aug: \"Mining Operations Weekly Production Planning Meeting\" and \"Open-Pit Mining Operations Shift Meeting\" — both written verbatim to RAW. No other RAW file changed since — the 99th pass (a dashboard-scoped `mining-kb-compile` run) had already caught the day's production/fleet/survey workbook cycle a few hours earlier. Only the two new meeting notes registered this pass. Important References folder re-checked: 34 files, no new or updated content since the 98th pass. Task Feedback Log (Part C): \"All Feedback\" data source queried via SQL, sorted by Date Logged descending — 33 rows total, all already `Status: Processed`, most recent dated 2026-07-30. No unprocessed rows found this pass, no Wiki edits triggered, no mismatches. All Status = Inbox, Life Area/Project/dates left empty for Peter to triage. No content removed or renamed. Source: KNOWLEDGE/mining_operations_kb/RAW via the librarian compile protocol. ---",
   "kpis": [
     {
       "label": "MTD BCM",
-      "value": "95,976",
-      "delta": "-7.2% vs target",
+      "value": "115,041",
+      "delta": "-9.0% vs target",
       "good": false
     },
     {
       "label": "Survey Gap",
-      "value": "-15.2%",
+      "value": "-13.7%",
       "delta": "survey vs trucks MTD",
       "good": false
     },
     {
       "label": "Crusher MTD",
-      "value": "8%",
-      "delta": "9,531 / 124,000 LCM",
+      "value": "11%",
+      "delta": "13,244 / 124,000 LCM",
       "good": null
     },
     {
       "label": "Days Remain",
-      "value": "26",
+      "value": "25",
       "delta": "",
       "good": null
     }
@@ -62,6 +62,13 @@
       "date": "2026-08-29",
       "label": "29 Aug",
       "actual": 20584,
+      "target": 22993,
+      "half": false
+    },
+    {
+      "date": "2026-08-30",
+      "label": "30 Aug",
+      "actual": 19065,
       "target": 22993,
       "half": false
     }
