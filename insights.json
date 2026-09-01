@@ -1,13 +1,13 @@
 {
-  "generatedAt": "2026-08-31T19:54:28",
-  "date": "2026-08-31",
-  "runNumber": 100,
-  "summary": "1. Two new meeting notes landed — a weekly production planning meeting and a shift meeting, both 31-Aug. 2. Shovels missed the 60/20 productivity target on all six days reviewed this week; truck fleet utilization and shovel productivity were named the primary drivers of a below-plan week, with drilling also behind (4,000m needed on the day vs. a 19,000m weekly target the team called unlikely). 2. 3. The shovel-productivity shortfall produced a live disagreement rather than a shared diagnosis: one view puts Stage 4 excavators at ~80% buckets-down waiting on trucks in the confined Block 171/172 access; a counter-observation from a site walk found only one truck on the platform. 4. Both sides agreed to share queuing-time data before the next review. 5. A separate block-numbering discrepancy surfaced in the same meeting — Geology calls the block 173, blasting calls it 174, confirmed to actually be 172. 3. 6. Same day, same working area: a truck transmission failure at Block 172 (3.5-hour delay) and four tires lost to cuts/punctures, with fragmentation quality at Block 172 named as a contributing factor for the first time in this KB's tire-damage thread (previously always road condition or spillage). 4. 7. On shift: dumper 1-to-9 is stuck in a blast radius (recovery reassigned to the new superintendent since the usual contact is on training) and dumper 429 is stuck in the loading area; Dispatch was criticised directly for not communicating machine status, with updates instead coming from Peter. 8. A 720-litre diesel delay was attributed to maintenance. 9. A new overspill-bench loading proposal near a high wall (cones, 3-5m buffer, prior rock-bounce-onto-road incident cited) mirrors this KB's existing standard overspill control set almost exactly. 5. Workforce-tracking discipline was reinforced at both meetings — daily absentee tracking by name, the no-work-no-pay principle, and the clinic documentation policy (no written hospital note has ever actually been produced on site). A PM confrontation over machine bucket efficiency produced a usable coaching example (stay calm, ask what can be improved) and flagged an English-language barrier for one named foreman. Three already ingested at prior passes (Mine Site Safety & Operations Meeting Summary, Mining Operations Review: August Performance & Recovery Plan, Mining Operations Site Meeting — all 30-Aug). Two genuinely new, both created 31-Aug: \"Mining Operations Weekly Production Planning Meeting\" and \"Open-Pit Mining Operations Shift Meeting\" — both written verbatim to RAW. No other RAW file changed since — the 99th pass (a dashboard-scoped `mining-kb-compile` run) had already caught the day's production/fleet/survey workbook cycle a few hours earlier. Only the two new meeting notes registered this pass. Important References folder re-checked: 34 files, no new or updated content since the 98th pass. Task Feedback Log (Part C): \"All Feedback\" data source queried via SQL, sorted by Date Logged descending — 33 rows total, all already `Status: Processed`, most recent dated 2026-07-30. No unprocessed rows found this pass, no Wiki edits triggered, no mismatches. All Status = Inbox, Life Area/Project/dates left empty for Peter to triage. No content removed or renamed. Source: KNOWLEDGE/mining_operations_kb/RAW via the librarian compile protocol. ---",
+  "generatedAt": "2026-09-01T11:06:49",
+  "date": "2026-09-01",
+  "runNumber": 101,
+  "summary": "1. Aug 31 production posts the fiscal cycle's widest daily miss on the total line so far — 16,306 BCM against a 22,992.6 BCM target (-29.08%) — which the day's own tab ties directly to a 3.5-hour blasting delay from a dump-truck breakdown, even as ore beat target for a fourth straight day (+46.9%), narrowing the MTD ore gap to -10.08%. 2. 2. MTD production reaches 131,347 BCM (-12.11% vs target) through day 7 of the 31-day cycle, with 24 fiscal days remaining. 3. 3. Crusher stockpile throughput crosses 15,885 LCM against the 124,000 LCM monthly plan (12.81%) on the cycle's best daily feed yet (3,924 BCM), and overall fleet availability climbs to 86.15% as DT-106's standing tyre fault finally closes with a logged Date Out. 4. Drilling posted its weakest day of the cycle against target on Aug 31 (2,083 m vs a 2,563 m plan, -18.73%) — confirm whether this ties to the same DT breakdown and blasting delay flagged in the production tab's own comment or is an independent drilling-side shortfall. 5. DT-128 has now cycled through three distinct fault descriptions on three consecutive reports (27-Aug engine/camshaft seal, 30-Aug engine low power, 31-Aug hydraulic leak plus engine alarm) — worth a direct workshop check on whether this is one deteriorating issue being rediagnosed each shift or genuinely unrelated faults landing back to back on the same unit. 6. DT-129's transmission fault (No Gear, Trans Tank Empty) went from a report-edge flag on 30-Aug to a full 24-hour down day on 31-Aug — confirm repair timeline with the workshop. 7. Four new files under `Maaden Plans/Mitigation Plan/` and one under `Safety Report/` were found but left for the next full-scope `mining-kb-afternoon-compile` run — out of scope for this dashboard-focused pass, same convention as the 99th pass. 8. Wiki compile: updated [[daily-production-report]] (Aug 31 daily/MTD figures, fourth straight ore beat, widest daily total-line miss of the cycle, crusher stockpile throughput past 15,000 LCM) and [[fleet-availability-utilization]] (Aug 31 fleet-wide and per-unit detail, DT-106 fault closed, DT-128's third fault handoff, DZ-248 new planned outage) — two articles' `Last updated` bumped to 2026-09-01. `Wiki/INDEX.md` one-line descriptions refreshed for both. 9. No content removed or renamed. Source: KNOWLEDGE/mining_operations_kb/RAW via the librarian compile protocol. ---",
   "kpis": [
     {
       "label": "MTD BCM",
-      "value": "115,041",
-      "delta": "-9.0% vs target",
+      "value": "131,347",
+      "delta": "-12.1% vs target",
       "good": false
     },
     {
@@ -18,13 +18,13 @@
     },
     {
       "label": "Crusher MTD",
-      "value": "11%",
-      "delta": "13,244 / 124,000 LCM",
+      "value": "13%",
+      "delta": "15,885 / 124,000 LCM",
       "good": null
     },
     {
       "label": "Days Remain",
-      "value": "25",
+      "value": "24",
       "delta": "",
       "good": null
     }
@@ -71,14 +71,21 @@
       "actual": 19065,
       "target": 22993,
       "half": false
+    },
+    {
+      "date": "2026-08-31",
+      "label": "31 Aug",
+      "actual": 16306,
+      "target": 22993,
+      "half": false
     }
   ],
   "fleet": {
-    "availDaily": "87.34%",
+    "availDaily": "86.15%",
     "availMtd": "85.79%",
-    "exAvail": "75.0%",
+    "exAvail": "75.8%",
     "exUnits": 6,
-    "dtAvail": "83.30%",
+    "dtAvail": "86.07%",
     "dtUnits": 21,
     "excavators": [
       {
@@ -95,7 +102,7 @@
       },
       {
         "unit": "EX-263",
-        "avail": "81.2%"
+        "avail": "85.4%"
       },
       {
         "unit": "EX-247",
@@ -107,18 +114,18 @@
       }
     ],
     "exBasis": "5/6",
-    "pdfDate": "30-08"
+    "pdfDate": "31-08"
   },
   "equipment": [
     {
-      "unit": "EX-247",
-      "type": "Excavator",
-      "status": "down",
-      "avail": "",
+      "unit": "DT-106",
+      "type": "Haul Truck",
+      "status": "warning",
+      "avail": "56.25%",
       "util": "",
-      "bd_hrs": "",
-      "note": "'s bucket-repair job has now spanned two reports (29-Aug and 30-Aug) under the same \"Opportune\" stoppage type ",
-      "comment": "C/O All Hoes Of Front Attach ( C/O  10x Hoes ) , Backlog Jobs"
+      "bd_hrs": "10.5",
+      "note": "'s tyre fault finally closes with a logged Date Out — the first of the fleet's standing faults to resolve this",
+      "comment": "Tyre Rim Lock Off"
     },
     {
       "unit": "DT-128",
@@ -127,99 +134,87 @@
       "avail": "",
       "util": "",
       "bd_hrs": "",
-      "note": "hands off from a seven-day-old engine fault straight into a new electrical fault the same night.** The gasket/",
-      "comment": ""
+      "note": "has now cycled through three distinct fault descriptions on three consecutive reports (27-Aug engine/camshaft,",
+      "comment": "Hyd Hose Leak"
     },
     {
-      "unit": "DR-125",
-      "type": "Drill",
-      "status": "partial",
+      "unit": "DT-129",
+      "type": "Haul Truck",
+      "status": "warning",
       "avail": "0.00%",
       "util": "",
       "bd_hrs": "24",
-      "note": "takes its full daily allocation for planned work.** 24 hrs down, 0.00% avail, for a coolers change-out (Hydrau",
-      "comment": ""
+      "note": "'s Trans Alarm fault, flagged at the edge of the 30-Aug report, is now a full-day Down.** \"No Gear, Trans Tank",
+      "comment": "No Gear , Trans Tank Empty"
     },
     {
-      "unit": "EX-253",
-      "type": "Excavator",
-      "status": "partial",
-      "avail": "",
-      "util": "",
-      "bd_hrs": "",
-      "note": "remains the one genuine full-day loss: Swing Bearing Failure, open since 28-Jul 3:30 PM, now 33 days down with",
-      "comment": "Swing Braring Failure"
-    },
-    {
-      "unit": "EX-123",
-      "type": "Excavator",
-      "status": "down",
-      "avail": "",
-      "util": "",
-      "bd_hrs": "",
-      "note": "(0.5h, daily inspection)",
-      "comment": ""
-    },
-    {
-      "unit": "EX-262",
-      "type": "Excavator",
-      "status": "down",
-      "avail": "",
-      "util": "",
-      "bd_hrs": "",
-      "note": "(1h, daily inspection)",
-      "comment": ""
-    },
-    {
-      "unit": "EX-263",
-      "type": "Excavator",
-      "status": "scheduled",
-      "avail": "",
-      "util": "",
-      "bd_hrs": "",
-      "note": "(4.5h, planned 500-hour service, night shift)",
-      "comment": ""
-    },
-    {
-      "unit": "EX-340",
-      "type": "Excavator",
+      "unit": "DT-108",
+      "type": "Haul Truck",
       "status": "warning",
       "avail": "",
       "util": "",
       "bd_hrs": "",
-      "note": "(0.5h, new fuel-filter change-out — a new fault, resolved same shift).",
-      "comment": "C/O Fuel Filters"
+      "note": "on 29-Aug. Worth asking the workshop directly whether this is one deteriorating underlying issue being rediagn",
+      "comment": "C/O T.C"
+    },
+    {
+      "unit": "EX-263",
+      "type": "Excavator",
+      "status": "warning",
+      "avail": "85.42%",
+      "util": "",
+      "bd_hrs": "",
+      "note": "(Engine Oil Leak DAY 7:15-7:45 AM plus a separate Hydraulic Hose Leak NIGHT 8:00-11:00 PM, 3.5h combined, 85.4",
+      "comment": ""
+    },
+    {
+      "unit": "DT-107",
+      "type": "Haul Truck",
+      "status": "warning",
+      "avail": "75.00%",
+      "util": "",
+      "bd_hrs": "",
+      "note": "(Brake Press Low DAY 7:15-9:45 AM plus Brake Press Leak/Air Hose Leak NIGHT 6:00-9:30 PM, 6h combined, 75.00% ",
+      "comment": "Brake Press Low"
+    },
+    {
+      "unit": "DT-243",
+      "type": "Haul Truck",
+      "status": "warning",
+      "avail": "",
+      "util": "",
+      "bd_hrs": "",
+      "note": "(Hydraulic Hose Leak C/O, opens 31-Aug 10:00 PM, still running into 1-Sep 2:30 AM)",
+      "comment": "Hyd Hose Leak C/O"
+    },
+    {
+      "unit": "DT-277",
+      "type": "Haul Truck",
+      "status": "warning",
+      "avail": "",
+      "util": "",
+      "bd_hrs": "",
+      "note": "(Engine No Start, a fresh occurrence opening 1-Sep 3:30 AM at the report's edge — the same unit had an earlier",
+      "comment": "Engine No Start"
     }
   ],
   "followUps": [
     {
       "priority": "HIGH",
-      "title": "Wiki compile",
-      "body": "updated [[kaizen-load-haul-efficiency]] (shovel-productivity bottleneck, workforce-tracking discipline), [[traffic-management]] (confined Stage 4 access as productivity root cause, block-numbering discrepancy), [[tire-damage-cost-pattern]] (four tires lost at Block 172, fragmentation quality named), [[safety-inspection-patterns]] (truck transmission failure, dust-control limits, night-shift cleanup gap, clinic policy), [[overspill-material-management]] (overspill-bench loading proposal near a high wall), [[workshop-maintenance-planning]] (stuck dumpers, dispatch communication gap), [[loading-hauling-tipping]] (MG1 stockpile sequencing, daily block-movement plan), [[blasting-and-drilling]] (drilling behind weekly target, 263 drop cut), [[new-foremen-onboarding]] (PM-confrontation coaching example, language-barrier flag) — nine articles' `Last updated` bumped to 2026-08-31. `Wiki/INDEX.md` one-line descriptions refreshed for all nine. `Wiki/QUESTIONS.md` gained a new dated section with twelve new open items.",
+      "title": "DT-128 has now cycled through three distinct fault descriptions on three...",
+      "body": "",
+      "action": ""
+    },
+    {
+      "priority": "HIGH",
+      "title": "DT-129's transmission fault (No Gear, Trans Tank Empty) went from a repo...",
+      "body": "",
       "action": ""
     },
     {
       "priority": "MONITOR",
-      "title": "Part A",
-      "body": "Notion Meeting Notes Database queried for the last 7 days — five results. Three already ingested at prior passes (Mine Site Safety & Operations Meeting Summary, Mining Operations Review: August Performance & Recovery Plan, Mining Operations Site Meeting — all 30-Aug). Two genuinely new, both created 31-Aug: \"Mining Operations Weekly Production Planning Meeting\" and \"Open-Pit Mining Operations Shift Meeting\" — both written verbatim to RAW.",
-      "action": ""
-    },
-    {
-      "priority": "MONITOR",
-      "title": "Part B gap-check",
-      "body": "compared RAW file mtimes against `_INGESTED.md`'s own write from the 99th pass (14:32). No other RAW file changed since — the 99th pass (a dashboard-scoped `mining-kb-compile` run) had already caught the day's production/fleet/survey workbook cycle a few hours earlier. Only the two new meeting notes registered this pass. Important References folder re-checked: 34 files, no new or updated content since the 98th pass.",
-      "action": ""
-    },
-    {
-      "priority": "MONITOR",
-      "title": "Task Feedback Log (Part C)",
-      "body": "\"All Feedback\" data source queried via SQL, sorted by Date Logged descending — 33 rows total, all already `Status: Processed`, most recent dated 2026-07-30. No unprocessed rows found this pass, no Wiki edits triggered, no mismatches.",
-      "action": ""
-    },
-    {
-      "priority": "MONITOR",
-      "title": "Notion inbox tasks created",
-      "body": "three — confirm dumper 1-to-9's recovery from the blast radius and dumper 429's return to service; reconcile the Geology/blasting/survey block-numbering discrepancy at Block 172/173/174; sign off the risk assessment for the new overspill-bench loading operation near the high wall before it proceeds. All Status = Inbox, Life Area/Project/dates left empty for Peter to triage. No content removed or renamed. Source: KNOWLEDGE/mining_operations_kb/RAW via the librarian compile protocol. ---",
+      "title": "Drilling posted its weakest day of the cycle against target on Aug 31 (2...",
+      "body": "",
       "action": ""
     }
   ]
