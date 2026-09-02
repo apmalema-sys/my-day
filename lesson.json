@@ -1,15 +1,15 @@
 {
-  "date": "2026-09-01",
-  "topic": "In-Pit Groundwater Management",
-  "title": "In-Pit Groundwater Management",
-  "body": "Standing water on a haul road or in a working area isn't a housekeeping issue — it's a road failure and a drowning hazard waiting to happen. Without a shared, approved procedure, dewatering decisions default to whoever's on shift and how urgent it feels in the moment, which is exactly how a soft ramp or an unmarked deep sump turns into an incident.",
+  "date": "2026-09-02",
+  "topic": "Grading and Road Construction",
+  "title": "Grading and Road Construction",
+  "body": "Left alone, high spots and rough switchbacks don't stay small problems — they crack tires, shift payload, and turn ramp turns into the site's most common incident location because trucks lose visibility and traction right when they need it most.",
   "keyPoints": [
-    "Nobody enters a pond, sump, or water-filled excavation without authorisation under the confined-space/rescue procedure — depth is unknown until it's measured, treat it as a hazard by default.",
-    "Before any pump starts: confirm the discharge destination, check the receiving pond has freeboard and no embankment damage, and get Shift Supervisor authorisation. If the pond can't safely take more water, pumping doesn't start.",
-    "Standing water on a haul road gets the full sequence — stop traffic and barricade first, notify the Shift Supervisor, then assess, reroute, pump, repair, and only reopen with supervisor sign-off. Don't skip straight to \"just pump it out.\"",
-    "Any relocation or modification of pumps, pipelines, or discharge points goes through Management of Change and needs a task risk assessment — this isn't a grab-and-move job.",
-    "This SOP is still a draft (V2, circulated 25-Jul) with no approval or sign-off yet — treat it as the direction things are heading, not yet a binding procedure to cite in an NCR."
+    "High spots on haul roads, benches, or ramps cause uneven truck loading and shift payload over time if not graded out — treat them as a priority, not a routine chore.",
+    "Switchbacks need extra grading attention: super-elevation (banking), inside-radius clearance, and outside bund integrity. Most ramp incidents happen at switchbacks, not straight sections.",
+    "No unsupervised grading parallel to a high wall inside the 10 m no-go zone — the high-wall exclusion rule always overrides the grading task at hand.",
+    "Diff lock goes on when grading, but never make sharp turns with it engaged.",
+    "If a road surface is hardened past the point grading can fix — the girl is cutting but nothing changes — that's a base-material problem, not a profile problem. It needs soft material mixed in, not more grader passes."
   ],
-  "apply": "If overnight seepage or a water-truck overspray leaves pooling on a ramp or switchback, don't let a truck run through it to \"test\" depth — barricade it and call it in per the sequence above before anyone commits equipment.",
-  "generatedAt": "2026-09-01T07:14:53"
+  "apply": "When you're on the ramps, don't just eyeball the straights — check the switchback turns specifically for banking and bund integrity, since that's where a graded-but-still-hard surface will bite a truck first.",
+  "generatedAt": "2026-09-02T19:48:18"
 }
