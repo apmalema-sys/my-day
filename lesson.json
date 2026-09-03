@@ -1,15 +1,15 @@
 {
-  "date": "2026-09-02",
-  "topic": "Grading and Road Construction",
-  "title": "Grading and Road Construction",
-  "body": "Left alone, high spots and rough switchbacks don't stay small problems — they crack tires, shift payload, and turn ramp turns into the site's most common incident location because trucks lose visibility and traction right when they need it most.",
+  "date": "2026-09-03",
+  "topic": "High walls",
+  "title": "High walls",
+  "body": "A high wall doesn't announce itself before it fails — the Stage 4 crack went from \"confirmed\" to a 200mm irregular gap needing a 300m exclusion zone and roped-in operators, and the July 9 Block 511 closure shut down an entire face with no warning in the shift handover. Treat every wall as live, not as scenery.",
   "keyPoints": [
-    "High spots on haul roads, benches, or ramps cause uneven truck loading and shift payload over time if not graded out — treat them as a priority, not a routine chore.",
-    "Switchbacks need extra grading attention: super-elevation (banking), inside-radius clearance, and outside bund integrity. Most ramp incidents happen at switchbacks, not straight sections.",
-    "No unsupervised grading parallel to a high wall inside the 10 m no-go zone — the high-wall exclusion rule always overrides the grading task at hand.",
-    "Diff lock goes on when grading, but never make sharp turns with it engaged.",
-    "If a road surface is hardened past the point grading can fix — the girl is cutting but nothing changes — that's a base-material problem, not a profile problem. It needs soft material mixed in, not more grader passes."
+    "The 10 m exclusion zone from any bench edge is non-negotiable — no one enters without Foreman or Supervisor authorization, full stop.",
+    "Walls get inspected before work starts, after every blast, and after every weather event — from both inside the pit and from the top, because a slip can be invisible from one side only.",
+    "Loose material within 5 m of a bench edge is a clean-up trigger, not a \"get to it later\" item — if the excavator can't reach it from above or below, the area gets barricaded immediately.",
+    "Machines working near a high wall sit at 90 degrees to the face so they can retreat fast, and operators stay in the cab in designated dangerous areas.",
+    "Frozen material against pre-split lines, known slip zones, or fresh dykes mean daylight-only work under full supervision — no exceptions on night shift."
   ],
-  "apply": "When you're on the ramps, don't just eyeball the straights — check the switchback turns specifically for banking and bund integrity, since that's where a graded-but-still-hard surface will bite a truck first.",
-  "generatedAt": "2026-09-02T19:48:18"
+  "apply": "On your walk, cross-check that every wall active this shift has a documented post-blast or post-weather inspection logged — Block 511's July closure showed how fast a face can go from working to shut with zero notice in the handover record.",
+  "generatedAt": "2026-09-03T05:07:25"
 }
