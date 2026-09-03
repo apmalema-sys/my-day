@@ -1,18 +1,18 @@
 {
-  "generatedAt": "2026-09-01T17:06:47",
-  "date": "2026-09-01",
-  "runNumber": 102,
-  "summary": "1. Two new meeting notes landed, both 1-Sep: a daily standup and an internal justification meeting held ahead of Maaden's formal response to August's underperformance. 2. Maaden issued a formal notice of unsatisfactory August production, Ivan Anthony requested a written justification (what happened, what changes going forward), and Maaden is bringing in external \"Outliners\" consultants to assess the operation. 3. New Wiki article [[august-2026-performance-review-escalation]] synthesises the root causes named (workforce rotation, a self-described truck-allocation strategy error, tire-workshop understaffing, engine/final-drive failure, no water/dust suppressant), the structural planning disputes (top-down annual target, no September plan issued eight days into the fiscal month equivalent, a 2027 365-day-calendar request), the geological block-model-vs-drilled-grade mismatch, an unannounced crusher speed increase, and a capex gap ($8M received vs $39M requested, against Mansoura's reported $40M). 2. 4. A parallel Maaden-side thread (Week 35 planning review, Katongo Kangwa) quantifies the same underlying shortfall at 296.2 kt against the 7+5 forecast — the same figure [[kaizen-load-haul-efficiency]] already tracks as Peter's recovery-plan target, confirming both threads point at one number. 3. 5. Survey reconciliation Day 7 (file dated 1-Sep, reconciling Aug 31 production): trucks 16,306 BCM vs survey 15,067 BCM, gap narrows to -8.22% — the second straight day of improvement after Day 6's outright client rejection — though no reply to that rejection has surfaced yet. 6. MTD gap through Day 7: -7,153 BCM (-5.45%). 4. 7. The Distance report workbook's Aug 31 tab is populated with real per-block haul data for the first time, breaking a standing blank-template pattern this KB has tracked for weeks. 5. 8. Safety: LV105 skipped its mandatory morning brake test (Peter Anthony asked directly for driver statements); a new directive requires trucks to park and stop entirely — not just drive cautiously — under unsafe night dust/visibility conditions; Stage 6 is down to one working excavator because overspill has crowded out the second, with a real risk of running most of the week on one dig face if a backup area isn't ready in time. 9. Five already ingested at prior passes. One is an empty template stub (\"Meeting @Today,\" both structured-summary and transcript blocks blank) — skipped, not a real meeting note. Two genuinely new, both created 1-Sep: \"Mining Operations Daily Review Meeting\" and \"Mining Operations August Performance Review & Justification Meeting\" — both written verbatim to RAW. Found one new survey file (Day 7), three production workbooks re-touched after that write time (Distance report, Equipment running hours, Grade Control — only Distance report carried genuinely new content), and five files the 101st pass had explicitly flagged as out of scope for its dashboard-only run: one in `Safety Report/` (LV105 brake-test email) and four in `Maaden Plans/Mitigation Plan/` (the HOD meeting call, the original Maaden underperformance memo and Ivan's forward, and the Week 35 planning review thread). Important References folder re-checked: 35 files, no new or updated content since the 100th pass. Wiki compile: new article [[august-2026-performance-review-escalation]]. Task Feedback Log (Part C): \"All Feedback\" data source queried via SQL, sorted by Date Logged descending — 33 rows total, all already `Status: Processed`, most recent dated 2026-07-30. No unprocessed rows found this pass, no Wiki edits triggered, no mismatches. No content removed or renamed. Source: KNOWLEDGE/mining_operations_kb/RAW via the librarian compile protocol. ---",
+  "generatedAt": "2026-09-03T11:06:12",
+  "date": "2026-09-02",
+  "runNumber": 103,
+  "summary": "1. Five new meeting notes landed. 2. One operations meeting — new director Yaya's first site visit (1-Sep) — surfaced a ~200,000-205,000 ton survey-vs-tally discrepancy described as unprecedented, a truck complement drop from 26 to 24, and a capex figure ($5-6M approved) that conflicts with the $8M already on record from the same day's justification meeting. 3. Ivan Anthony (GM) replied formally to Maaden on 2-Sep: ADW moves to a daily stabilization and control process effective immediately; Joe Coleman joins as Project Manager 10-Sep; a high-level response plan is committed by COB 3-Sep. 4. Abel Pienaar forwarded the reply internally: \"this matter was taken very seriously.\" 3. 5. Sep 1 production: ore missed target for the first time in five days (-64.32%, breaking a four-day beat streak) on a day that also saw the cycle's largest blast (85,028 BCM) and ~14 combined hours of crusher maintenance. 6. Drilling swung to the cycle's best day (+12.48%) immediately after its worst. 4. 7. Survey Day 8 (reconciling Sep 1): gap narrows for a third straight day to -7.59%, but Abel Pienaar's reply ties the discrepancy directly to a personal trust cost with the client: \"these type of figures has become one of the reasons why they don't trust me anymore at ADW.\" 5. 8. The Weeks 36-37 bi-weekly plan landed the same afternoon the director-review meeting recorded \"we don't even have a September month plan.\" The accompanying geotechnical hazard map turns over its entire four-item hazard set for the first time in this article's tracking (HZ-ADW-032/034/035 drop, 036/037/038 appear) — one of the new hazards (a Stage 5 ramp undercut) may overlap with the same meeting's 16%-ramp-gradient safety concern. 9. Six already ingested at prior passes. One empty template stub (\"Meeting @Today,\" under the Day 2 safety-training page) skipped. Five genuinely new: the director-review meeting and four Day 1 safety-training sessions — all written verbatim to RAW. Important References folder re-checked: 35 files, no new content since the 100th pass. Task Feedback Log (Part C): \"All Feedback\" view queried (view mode, sorted by Date Logged descending) — 33 rows total, all already `Status: Processed`, most recent dated 2026-07-30. No unprocessed rows found this pass, no Wiki edits triggered, no mismatches. No content removed or renamed. Source: KNOWLEDGE/mining_operations_kb/RAW via the librarian compile protocol. ---",
   "kpis": [
     {
       "label": "MTD BCM",
-      "value": "131,347",
+      "value": "151,528",
       "delta": "-12.1% vs target",
       "good": false
     },
     {
       "label": "Survey Gap",
-      "value": "-16.7%",
+      "value": "-5.5%",
       "delta": "survey vs trucks MTD",
       "good": false
     },
@@ -24,7 +24,7 @@
     },
     {
       "label": "Days Remain",
-      "value": "24",
+      "value": "23",
       "delta": "",
       "good": null
     }
@@ -78,6 +78,13 @@
       "actual": 16306,
       "target": 22993,
       "half": false
+    },
+    {
+      "date": "2026-09-01",
+      "label": "1 Sep",
+      "actual": 20181,
+      "target": 22993,
+      "half": false
     }
   ],
   "fleet": {
@@ -85,12 +92,12 @@
     "availMtd": "85.79%",
     "exAvail": "75.8%",
     "exUnits": 6,
-    "dtAvail": "86.07%",
+    "dtAvail": "93.8%",
     "dtUnits": 21,
     "excavators": [
       {
         "unit": "EX-340",
-        "avail": "97.9%"
+        "avail": "91.7%"
       },
       {
         "unit": "EX-262",
@@ -102,7 +109,7 @@
       },
       {
         "unit": "EX-263",
-        "avail": "85.4%"
+        "avail": "91.7%"
       },
       {
         "unit": "EX-247",
@@ -114,49 +121,120 @@
       }
     ],
     "exBasis": "5/6",
-    "pdfDate": "31-08"
+    "pdfDate": "01-09",
+    "dtBasis": "21 active ≥8h"
   },
   "equipment": [
     {
-      "unit": "DT-129",
-      "type": "Haul Truck",
-      "status": "scheduled",
+      "unit": "EX-253",
+      "type": "Excavator",
+      "status": "warning",
       "avail": "",
       "util": "",
       "bd_hrs": "",
-      "note": "\" are the same unit,** confirmed against the site's own 31-Aug dispatch report in the captain's log. - **Does ",
-      "comment": "No Gear , Trans Tank Empty"
+      "note": "all currently down or long-standing). Telehandler and \"ricketer\" delays contributed roughly 346 hours of downt",
+      "comment": "Swing Braring Failure"
+    },
+    {
+      "unit": "EX-247",
+      "type": "Excavator",
+      "status": "down",
+      "avail": "",
+      "util": "",
+      "bd_hrs": "",
+      "note": "down for Attach & Work Tools (Bucket Repair) plus a Hydraulic changeout (\"C/O All Hoes Of Front Attach — 10x H",
+      "comment": "C/O All Hoes Of Front Attach ( C/O  10x Hoes ) , Backlog Jobs"
+    },
+    {
+      "unit": "EX-123",
+      "type": "Excavator",
+      "status": "down",
+      "avail": "97.92%",
+      "util": "",
+      "bd_hrs": "",
+      "note": "(97.92% avail, 0.5h Daily Inspection)",
+      "comment": ""
+    },
+    {
+      "unit": "EX-262",
+      "type": "Excavator",
+      "status": "down",
+      "avail": "95.83%",
+      "util": "",
+      "bd_hrs": "",
+      "note": "(95.83% avail, 1h Door Lock Problem, night breakdown)",
+      "comment": "Door Lock Problem"
+    },
+    {
+      "unit": "EX-263",
+      "type": "Excavator",
+      "status": "down",
+      "avail": "91.67%",
+      "util": "",
+      "bd_hrs": "",
+      "note": "(91.67% avail, 2h combined Daily Check + Hydraulic Oil Temperature High, day breakdown)",
+      "comment": "Hydraulic Oil Temperature High"
+    },
+    {
+      "unit": "EX-340",
+      "type": "Excavator",
+      "status": "warning",
+      "avail": "91.67%",
+      "util": "",
+      "bd_hrs": "",
+      "note": "(91.67% avail, 2h Engine Filter Pressure High, night breakdown, opens 02-Sep 3:00 AM) all logged short faults ",
+      "comment": "Engine Filter Pressure High"
+    },
+    {
+      "unit": "DT-108",
+      "type": "Haul Truck",
+      "status": "warning",
+      "avail": "",
+      "util": "",
+      "bd_hrs": "",
+      "note": "all currently down or long-standing). Telehandler and \"ricketer\" delays contributed roughly 346 hours of downt",
+      "comment": "C/O T.C"
+    },
+    {
+      "unit": "DT-129",
+      "type": "Haul Truck",
+      "status": "warning",
+      "avail": "",
+      "util": "",
+      "bd_hrs": "",
+      "note": "all currently down or long-standing). Telehandler and \"ricketer\" delays contributed roughly 346 hours of downt",
+      "comment": "No Gear , Trans Tank Empty ( Trans  Failer )"
     }
   ],
   "followUps": [
     {
-      "priority": "HIGH",
-      "title": "Wiki compile",
-      "body": "new article [[august-2026-performance-review-escalation]]. Updated [[daily-production-report]] (Sep 1 standup week-to-date figures, Distance report Aug 31 tab), [[fleet-availability-utilization]] (Sep 1 fleet count, ET 129/DT-129 cross-reference), [[survey-volume-reconciliation]] (Day 7 reconciliation), [[safety-inspection-patterns]] (LV105 brake-test failure, night dust/visibility stop-work directive, hanging rocks), [[tire-damage-cost-pattern]] (289h tire downtime and single-technician workshop named as an August root cause), [[overspill-material-management]] (Stage 6 single-excavator constraint, West Wall APSA overspill) — six existing articles' `Last updated` bumped to 2026-09-01, plus the new article. `Wiki/INDEX.md` refreshed for all seven articles; three stale, never-converted July-dated bullet-list entries ([[daily-production-report]], [[fleet-availability-utilization]], [[survey-volume-reconciliation]]) were replaced with current table rows — flagged for the next health check since they'd been silently out of date for weeks. `Wiki/QUESTIONS.md` gained a new dated section with ten new open items.",
-      "action": ""
-    },
-    {
-      "priority": "HIGH",
-      "title": "Tasks created (Notion inbox, Status: Inbox, judicious/non-duplicate only)",
-      "body": "\"Obtain driver statements for LV105 brake-test failure,\" \"Prepare formal justification for Ivan on August underperformance,\" \"Escalate sub-economic stockpile dump design still outstanding after 4 months\" — the first ties to a direct request to Peter Anthony by name; the other two are the highest-value action items from the August escalation thread, checked against existing tasks for duplicates before creation. No content removed or renamed. Source: KNOWLEDGE/mining_operations_kb/RAW via the librarian compile protocol. ---",
-      "action": ""
-    },
-    {
       "priority": "MONITOR",
       "title": "Part A",
-      "body": "Notion Meeting Notes Database queried for the last 7 days — eight results. Five already ingested at prior passes. One is an empty template stub (\"Meeting @Today,\" both structured-summary and transcript blocks blank) — skipped, not a real meeting note. Two genuinely new, both created 1-Sep: \"Mining Operations Daily Review Meeting\" and \"Mining Operations August Performance Review & Justification Meeting\" — both written verbatim to RAW.",
+      "body": "Notion Meeting Notes Database queried for the last 7 days — twelve results. Six already ingested at prior passes. One empty template stub (\"Meeting @Today,\" under the Day 2 safety-training page) skipped. Five genuinely new: the director-review meeting and four Day 1 safety-training sessions — all written verbatim to RAW.",
       "action": ""
     },
     {
       "priority": "MONITOR",
       "title": "Part B gap-check",
-      "body": "compared RAW file mtimes against `_INGESTED.md`'s own write from the 101st pass (Sep 1, 10:44). Found one new survey file (Day 7), three production workbooks re-touched after that write time (Distance report, Equipment running hours, Grade Control — only Distance report carried genuinely new content), and five files the 101st pass had explicitly flagged as out of scope for its dashboard-only run: one in `Safety Report/` (LV105 brake-test email) and four in `Maaden Plans/Mitigation Plan/` (the HOD meeting call, the original Maaden underperformance memo and Ivan's forward, and the Week 35 planning review thread). Important References folder re-checked: 35 files, no new or updated content since the 100th pass.",
+      "body": "(mtime against `_INGESTED.md`'s own write from the 102nd pass, Sep 1 16:51): the full Sep 1/Sep 2 production-workbook cycle, a new Week 36-37 Maaden plan bundle (plan deck, geotechnical hazard map, feed plan with a date-label inconsistency, CAD/spatial files), new HV/LV maintenance schedules, a Grade Control workbook that has moved to a new folder location, and a Mitigation Plan thread email that was overwritten in place with Ivan Anthony's genuinely new Sep 2 reply. Important References folder re-checked: 35 files, no new content since the 100th pass.",
+      "action": ""
+    },
+    {
+      "priority": "MONITOR",
+      "title": "Wiki compile",
+      "body": "updated [[daily-production-report]], [[fleet-availability-utilization]], [[survey-volume-reconciliation]], [[august-2026-performance-review-escalation]], [[weekly-mining-plan]], [[geotechnical-risk-register]], [[risk-assessment-framework]], [[workshop-maintenance-planning]], [[traffic-management]] — nine articles' `Last updated` bumped to 2026-09-02. `Wiki/INDEX.md` refreshed for all nine. `Wiki/QUESTIONS.md` gained a new dated section with ten new open items, including the capex-figure conflict and the 200-205k ton survey/tally discrepancy's measurement basis.",
       "action": ""
     },
     {
       "priority": "MONITOR",
       "title": "Task Feedback Log (Part C)",
-      "body": "\"All Feedback\" data source queried via SQL, sorted by Date Logged descending — 33 rows total, all already `Status: Processed`, most recent dated 2026-07-30. No unprocessed rows found this pass, no Wiki edits triggered, no mismatches.",
+      "body": "\"All Feedback\" view queried (view mode, sorted by Date Logged descending) — 33 rows total, all already `Status: Processed`, most recent dated 2026-07-30. No unprocessed rows found this pass, no Wiki edits triggered, no mismatches.",
+      "action": ""
+    },
+    {
+      "priority": "MONITOR",
+      "title": "Tasks created (Notion inbox, Status: Inbox, judicious/non-duplicate only)",
+      "body": "\"Reconcile the conflicting capex-approved figure ($5-6M vs $8M) from the two Sep 1 meetings\" and \"Confirm whether the Weeks 36-37 plan satisfies Maaden's outstanding September mine plan requirement\" — both new, high-value items surfaced this pass with no equivalent already in the inbox. No content removed or renamed. Source: KNOWLEDGE/mining_operations_kb/RAW via the librarian compile protocol. ---",
       "action": ""
     }
   ]
