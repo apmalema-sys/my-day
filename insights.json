@@ -1,13 +1,13 @@
 {
-  "generatedAt": "2026-09-03T17:06:15",
+  "generatedAt": "2026-09-04T11:06:12",
   "date": "2026-09-03",
-  "runNumber": 104,
-  "summary": "1. Four new meeting notes landed. 2. Three continue the corporate safety-training program into Day 2 — permit-to-work supervisor/receiver accountability, a life-saving-rule-violation scenario exercise (extreme risk), the full five-step Planned Task Observation process, four observation commands, and the Acknowledge-Explain-Coach-Agree-Follow-up feedback model — resolving the 103rd pass's open question of whether Day 2 would land as real content (it did) rather than another empty template stub. 3. The fourth is a Weekly HOD meeting summary covering a possible-sabotage equipment-failure cluster (grader engine contamination, DT-346's transmission bell housing found packed with sand, a grader elbow hose that tested as deliberately cut), smoking-area housekeeping, HR/staffing detail, and a request for emergency muster points inside the pit rather than only at outside viewpoints. 2. 4. The weekly meeting names the incoming PM-swap hire \"Joe Goldman\" — conflicting with \"Joe Coleman,\" the name in the 2-Sep Ivan Anthony reply this KB already tracks for the same ~10-Sep start. 5. The same meeting states the operation is running ~400,000 tons behind target, with survey variance (~204,000 t) as roughly half of that gap — close enough to the 200,000-205,000 ton survey-vs-tally discrepancy the 103rd pass's director-review meeting called unprecedented that it may be the same figure reframed, but not confirmed as such. 6. Also names a concrete trip-card exaggeration example (6 loads reported, ~2 actually made) and a Thales-vs-Sabah cross-referencing method now in use to catch it. 4. 7. No production workbooks, survey files, or maintenance schedules have landed since the prior pass completed. 8. Eleven already ingested at prior passes. 9. Four genuinely new — three Day 2 safety-training sessions plus the Weekly HOD meeting summary — all written verbatim to RAW. Important References folder re-checked: still 35 files, no new content since the 100th pass. Wiki compile: updated [[risk-assessment-framework]] (Day 2 PTO/permit-to-work training), [[safety-inspection-patterns]] (equipment-sabotage cluster, smoking area, NCR count, muster-point request), [[fleet-availability-utilization]] (DT-346 sand finding, grader engine, weekly maintenance status), [[survey-volume-reconciliation]] (the ~400k/~204k gap vs. the standing 200-205k figure, trip-card cross-referencing), [[august-2026-performance-review-escalation]] (PM-name conflict), [[ncr-patterns]] (year-to-date NCR count, first update since 10-Aug) — six articles' `Last updated` bumped to 2026-09-03. `Wiki/INDEX.md` one-line descriptions refreshed for all six. Task Feedback Log (Part C): \"All Feedback\" view queried (rows mode, sorted by Date Logged descending) — 33 rows total, all already `Status: Processed`, most recent dated 2026-07-30. No unprocessed rows found this pass, no Wiki edits triggered, no mismatches. No content removed or renamed. Source: KNOWLEDGE/mining_operations_kb/RAW via the librarian compile protocol. ---",
+  "runNumber": 105,
+  "summary": "1. This is a cloud-sync lag, not a missed pass — confirmed by checking every filename against the ingestion log before treating anything as new. 2. 2. Sep 2 ore posts the fiscal cycle's biggest beat yet (+98.32%), one day after its sharpest miss (-64.32%, Sep 1) — two consecutive days of extreme opposite-direction ore variance. 3. MTD ore gap narrows to -3.71%, the tightest of the cycle. 4. Drilling also set a second straight cycle record (+20.09%, beating Sep 1's own +12.48%). 3. 5. The Week 36 Geotechnical Emergency Evacuation Plan, issued by Maaden Geotechnical the same afternoon, resolves the 104th pass's open request for in-pit primary muster points — the plan formally establishes dynamic in-pit primary points and a role-based evacuation flowchart, directly answering the concern raised at the weekly HOD meeting two days earlier. 6. DT-346's fault description hasn't converged across sources. 7. The formal Sep 2 Daily Availability report still lists the standing fault simply as \"Engine Failure\" (open since 4-Aug), with no mention of the bell-housing sand finding the 104th pass's weekly meeting flagged as a possible-sabotage detail. 8. Flagged as an open question rather than assumed resolved. 5. 9. A new individual-block dig plan (750-B152) carries both a tonnage and a grade figure at the design stage — SHG 13,660 t @ 7.40 g/t, LG 4,325 t @ 0.93 g/t — a first for this KB's grade-control tracking, which has otherwise been limited to a standing per-block workbook layout issue. 6. The Day 9 survey reconciliation workbook (INX-SUM) hadn't landed as of this pass; only an image-based mineable-area map and a low-resolution broken-stock update arrived instead, the latter not integrated into sourced figures due to OCR unreliability. No new meeting notes. Important References folder re-checked: 36 files (one new — an HR webinar invite, no management-level content, registered without a dedicated analysis output). Wiki compile: updated [[daily-production-report]] (Sep 2 daily/MTD figures, ore's biggest beat of the cycle, drilling's second record day), [[fleet-availability-utilization]] (Sep 2 fleet-wide detail, DT-108/DT-130 recovery, DT-346 fault-description discrepancy, CAT980 loader arrangement), [[grade-control-june-2026]] (750-B152 dig plan), [[safety-inspection-patterns]] (RESOLVED — in-pit muster points), [[survey-volume-reconciliation]] (Day 9 gap, unintegrated broken-stock update) — five articles' `Last updated` bumped to 2026-09-03. `Wiki/INDEX.md` one-line descriptions refreshed for all five. Task Feedback Log (Part C): \"All Feedback\" view queried (rows mode, sorted by Date Logged descending) — 33 rows total, all already `Status: Processed`, most recent dated 2026-07-30. No unprocessed rows found this pass, no Wiki edits triggered, no mismatches. The equipment-sabotage investigation and muster-point items from prior passes already cover the DT-346 discrepancy and the evacuation-plan follow-up, so no duplicate tasks were created for those. No content removed or renamed. Source: KNOWLEDGE/mining_operations_kb/RAW via the librarian compile protocol. ---",
   "kpis": [
     {
       "label": "MTD BCM",
-      "value": "151,528",
-      "delta": "-12.1% vs target",
+      "value": "172,608",
+      "delta": "-11.7% vs target",
       "good": false
     },
     {
@@ -24,7 +24,7 @@
     },
     {
       "label": "Days Remain",
-      "value": "23",
+      "value": "22",
       "delta": "",
       "good": null
     }
@@ -85,15 +85,22 @@
       "actual": 20181,
       "target": 22993,
       "half": false
+    },
+    {
+      "date": "2026-09-02",
+      "label": "2 Sep",
+      "actual": 21080,
+      "target": 22993,
+      "half": false
     }
   ],
   "fleet": {
     "exUnits": 6,
-    "dtUnits": 21,
+    "dtUnits": 23,
     "excavators": [
       {
         "unit": "EX-340",
-        "avail": "91.7%"
+        "avail": "95.8%"
       },
       {
         "unit": "EX-262",
@@ -105,7 +112,7 @@
       },
       {
         "unit": "EX-263",
-        "avail": "91.7%"
+        "avail": "100.0%"
       },
       {
         "unit": "EX-247",
@@ -116,41 +123,111 @@
         "avail": null
       }
     ],
-    "exAvail": "75.8%",
+    "exAvail": "78.3%",
     "exBasis": "5/6",
-    "pdfDate": "01-09",
-    "dtAvail": "93.8%",
-    "dtBasis": "21 active ≥8h"
+    "pdfDate": "03-09",
+    "dtAvail": "94.1%",
+    "dtBasis": "23 active ≥8h"
   },
   "equipment": [
     {
-      "unit": "DT-346",
+      "unit": "DT-130",
+      "type": "Haul Truck",
+      "status": "warning",
+      "avail": "",
+      "util": "",
+      "bd_hrs": "",
+      "note": "(engine oil pan gasket + brake press low, Breakdown, open since 25-Aug) closes the same day — Date Out 02-Sep ",
+      "comment": "Tyre Puncher # 03"
+    },
+    {
+      "unit": "DT-108",
       "type": "Haul Truck",
       "status": "down",
       "avail": "",
       "util": "",
       "bd_hrs": "",
-      "note": "bell-housing sand finding and the grader-engine contamination the same root cause, or two independent contamin",
+      "note": "(Power Train, C/O T.C., Breakdown, open since 29-Aug) closes — Date Out 02-Sep 4:00 PM, day 4 total.",
+      "comment": "Gear Not Working"
+    },
+    {
+      "unit": "DT-346",
+      "type": "Haul Truck",
+      "status": "warning",
+      "avail": "",
+      "util": "",
+      "bd_hrs": "",
+      "note": "'s fault description has now appeared two ways in the same week — \"Engine Failure\" (formal Daily Availability ",
       "comment": "Engine Failure"
+    },
+    {
+      "unit": "EX-253",
+      "type": "Excavator",
+      "status": "warning",
+      "avail": "0.00%",
+      "util": "",
+      "bd_hrs": "",
+      "note": "remains down, Swing Bearing Failure, open since 28-Jul (day 36+), 0.00% avail, still no Date Out in any source",
+      "comment": "Swing Braring Failure"
+    },
+    {
+      "unit": "EX-247",
+      "type": "Excavator",
+      "status": "down",
+      "avail": "",
+      "util": "",
+      "bd_hrs": "",
+      "note": "remains down, Attach & Work Tools (Bucket Repair), Opportune, open since 29-Aug — fifth straight report withou",
+      "comment": "C/O All Hoes Of Front Attach ( C/O  10x Hoes ) , Backlog Jobs"
+    },
+    {
+      "unit": "EX-123",
+      "type": "Excavator",
+      "status": "down",
+      "avail": "97.92%",
+      "util": "",
+      "bd_hrs": "",
+      "note": "(97.92% avail, 0.5h Daily Check)",
+      "comment": "Replace Tips"
+    },
+    {
+      "unit": "EX-262",
+      "type": "Excavator",
+      "status": "down",
+      "avail": "93.75%",
+      "util": "",
+      "bd_hrs": "",
+      "note": "(93.75% avail, 1.5h Daily Check)",
+      "comment": ""
+    },
+    {
+      "unit": "EX-263",
+      "type": "Excavator",
+      "status": "down",
+      "avail": "85.42%",
+      "util": "",
+      "bd_hrs": "",
+      "note": "(85.42% avail, 3.5h Hyd Temp Hi, breakdown)",
+      "comment": "Repair Hydraulic Return Lines"
     }
   ],
   "followUps": [
     {
       "priority": "MONITOR",
       "title": "Part A",
-      "body": "Notion Meeting Notes Database queried for the last 7 days — fifteen results. Eleven already ingested at prior passes. Four genuinely new — three Day 2 safety-training sessions plus the Weekly HOD meeting summary — all written verbatim to RAW.",
+      "body": "Notion Meeting Notes Database re-queried for the last 7 days — fifteen results, identical to the 104th pass. No new meeting notes.",
       "action": ""
     },
     {
       "priority": "MONITOR",
       "title": "Part B gap-check",
-      "body": "(mtime scan of all of RAW against the 103rd pass's last write, 2026-09-02 18:46): no files found newer than that timestamp other than this pass's own Part A writes. Important References folder re-checked: still 35 files, no new content since the 100th pass.",
+      "body": "mtime scan against this file's own last write (104th pass, 16:46:26) found a full production/fleet/survey/plan batch and four emails not present when the 104th pass ran. Important References folder re-checked: 36 files (one new — an HR webinar invite, no management-level content, registered without a dedicated analysis output).",
       "action": ""
     },
     {
       "priority": "MONITOR",
       "title": "Wiki compile",
-      "body": "updated [[risk-assessment-framework]] (Day 2 PTO/permit-to-work training), [[safety-inspection-patterns]] (equipment-sabotage cluster, smoking area, NCR count, muster-point request), [[fleet-availability-utilization]] (DT-346 sand finding, grader engine, weekly maintenance status), [[survey-volume-reconciliation]] (the ~400k/~204k gap vs. the standing 200-205k figure, trip-card cross-referencing), [[august-2026-performance-review-escalation]] (PM-name conflict), [[ncr-patterns]] (year-to-date NCR count, first update since 10-Aug) — six articles' `Last updated` bumped to 2026-09-03. `Wiki/INDEX.md` one-line descriptions refreshed for all six.",
+      "body": "updated [[daily-production-report]] (Sep 2 daily/MTD figures, ore's biggest beat of the cycle, drilling's second record day), [[fleet-availability-utilization]] (Sep 2 fleet-wide detail, DT-108/DT-130 recovery, DT-346 fault-description discrepancy, CAT980 loader arrangement), [[grade-control-june-2026]] (750-B152 dig plan), [[safety-inspection-patterns]] (RESOLVED — in-pit muster points), [[survey-volume-reconciliation]] (Day 9 gap, unintegrated broken-stock update) — five articles' `Last updated` bumped to 2026-09-03. `Wiki/INDEX.md` one-line descriptions refreshed for all five.",
       "action": ""
     },
     {
@@ -162,7 +239,7 @@
     {
       "priority": "MONITOR",
       "title": "Tasks created (Notion inbox, Status: Inbox, judicious/non-duplicate only)",
-      "body": "\"Confirm incoming PM's surname - Joe Goldman vs Joe Coleman,\" \"Investigate possible equipment sabotage - grader engine, DT-346, cut hose,\" and \"Reconcile the ~400k/~204k ton weekly-meeting gap against the 200-205k ton survey discrepancy\" — all three new, no equivalent already in the inbox. No content removed or renamed. Source: KNOWLEDGE/mining_operations_kb/RAW via the librarian compile protocol. ---",
+      "body": "\"Arrange CAT980 loader (WL295) availability for 777 payload-system calibration fitment\" — new, direct request to Peter, no equivalent already in the inbox. The equipment-sabotage investigation and muster-point items from prior passes already cover the DT-346 discrepancy and the evacuation-plan follow-up, so no duplicate tasks were created for those. No content removed or renamed. Source: KNOWLEDGE/mining_operations_kb/RAW via the librarian compile protocol. ---",
       "action": ""
     }
   ]
