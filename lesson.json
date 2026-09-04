@@ -1,15 +1,15 @@
 {
-  "date": "2026-09-03",
-  "topic": "High walls",
-  "title": "High walls",
-  "body": "A high wall doesn't announce itself before it fails — the Stage 4 crack went from \"confirmed\" to a 200mm irregular gap needing a 300m exclusion zone and roped-in operators, and the July 9 Block 511 closure shut down an entire face with no warning in the shift handover. Treat every wall as live, not as scenery.",
+  "date": "2026-09-04",
+  "topic": "Hot-Season Hydraulic Fault Pattern",
+  "title": "Hot-Season Hydraulic Fault Pattern",
+  "body": "When five excavators (plus one borrowed grader) all threw hydraulic faults in the same window last June, the workshop chased each symptom separately instead of the heat-stress root cause — EX-263 alone burned six straight zero-availability days, then kept resurfacing with a new hydraulic fault every time a fix looked like it had held.",
   "keyPoints": [
-    "The 10 m exclusion zone from any bench edge is non-negotiable — no one enters without Foreman or Supervisor authorization, full stop.",
-    "Walls get inspected before work starts, after every blast, and after every weather event — from both inside the pit and from the top, because a slip can be invisible from one side only.",
-    "Loose material within 5 m of a bench edge is a clean-up trigger, not a \"get to it later\" item — if the excavator can't reach it from above or below, the area gets barricaded immediately.",
-    "Machines working near a high wall sit at 90 degrees to the face so they can retreat fast, and operators stay in the cab in designated dangerous areas.",
-    "Frozen material against pre-split lines, known slip zones, or fresh dykes mean daylight-only work under full supervision — no exceptions on night shift."
+    "Heat doesn't produce one repeating fault — it produces leaks, slow cylinders, and valve failures all from the same root cause (fluid viscosity drop, thermal stress on the circuit). A machine cycling through several different hydraulic symptoms in two weeks is one system problem, not several.",
+    "Dust-clogged cooler fins are a known summer aggravator — a fleet-wide cooler/radiator and oil-temperature check catches this before it becomes a breakdown, not after.",
+    "Don't bucket a mechanical failure with a hydraulic one just because they showed up together — EX-123's slew ring bearing failure got logged alongside hydraulic leak/cylinder symptoms, and nobody confirmed whether they were actually connected.",
+    "A symptom-by-symptom repair on a heat-stressed machine buys one clean day, then the fault comes back in a new form — EX-263 proved this twice. If a unit is on its third-plus hydraulic fault this season, it needs a full circuit strip (pump, cooler, lines), not another patch.",
+    "No comparative baseline exists yet for this pattern — start logging which units fault and which don't (EX-340, EX-253 stayed clean) so next hot season isn't guessing again."
   ],
-  "apply": "On your walk, cross-check that every wall active this shift has a documented post-blast or post-weather inspection logged — Block 511's July closure showed how fast a face can go from working to shut with zero notice in the handover record.",
-  "generatedAt": "2026-09-03T05:07:25"
+  "apply": "Any excavator throwing a hydraulic-temperature-high or leak fault today — treat it as a cooler/dust-ingress check first, not just a seal or hose swap, especially with hot-season conditions still in play.",
+  "generatedAt": "2026-09-04T13:58:23"
 }
