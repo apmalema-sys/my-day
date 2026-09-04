@@ -1,30 +1,30 @@
 {
-  "generatedAt": "2026-09-04T11:06:12",
-  "date": "2026-09-03",
-  "runNumber": 105,
-  "summary": "1. This is a cloud-sync lag, not a missed pass — confirmed by checking every filename against the ingestion log before treating anything as new. 2. 2. Sep 2 ore posts the fiscal cycle's biggest beat yet (+98.32%), one day after its sharpest miss (-64.32%, Sep 1) — two consecutive days of extreme opposite-direction ore variance. 3. MTD ore gap narrows to -3.71%, the tightest of the cycle. 4. Drilling also set a second straight cycle record (+20.09%, beating Sep 1's own +12.48%). 3. 5. The Week 36 Geotechnical Emergency Evacuation Plan, issued by Maaden Geotechnical the same afternoon, resolves the 104th pass's open request for in-pit primary muster points — the plan formally establishes dynamic in-pit primary points and a role-based evacuation flowchart, directly answering the concern raised at the weekly HOD meeting two days earlier. 6. DT-346's fault description hasn't converged across sources. 7. The formal Sep 2 Daily Availability report still lists the standing fault simply as \"Engine Failure\" (open since 4-Aug), with no mention of the bell-housing sand finding the 104th pass's weekly meeting flagged as a possible-sabotage detail. 8. Flagged as an open question rather than assumed resolved. 5. 9. A new individual-block dig plan (750-B152) carries both a tonnage and a grade figure at the design stage — SHG 13,660 t @ 7.40 g/t, LG 4,325 t @ 0.93 g/t — a first for this KB's grade-control tracking, which has otherwise been limited to a standing per-block workbook layout issue. 6. The Day 9 survey reconciliation workbook (INX-SUM) hadn't landed as of this pass; only an image-based mineable-area map and a low-resolution broken-stock update arrived instead, the latter not integrated into sourced figures due to OCR unreliability. No new meeting notes. Important References folder re-checked: 36 files (one new — an HR webinar invite, no management-level content, registered without a dedicated analysis output). Wiki compile: updated [[daily-production-report]] (Sep 2 daily/MTD figures, ore's biggest beat of the cycle, drilling's second record day), [[fleet-availability-utilization]] (Sep 2 fleet-wide detail, DT-108/DT-130 recovery, DT-346 fault-description discrepancy, CAT980 loader arrangement), [[grade-control-june-2026]] (750-B152 dig plan), [[safety-inspection-patterns]] (RESOLVED — in-pit muster points), [[survey-volume-reconciliation]] (Day 9 gap, unintegrated broken-stock update) — five articles' `Last updated` bumped to 2026-09-03. `Wiki/INDEX.md` one-line descriptions refreshed for all five. Task Feedback Log (Part C): \"All Feedback\" view queried (rows mode, sorted by Date Logged descending) — 33 rows total, all already `Status: Processed`, most recent dated 2026-07-30. No unprocessed rows found this pass, no Wiki edits triggered, no mismatches. The equipment-sabotage investigation and muster-point items from prior passes already cover the DT-346 discrepancy and the evacuation-plan follow-up, so no duplicate tasks were created for those. No content removed or renamed. Source: KNOWLEDGE/mining_operations_kb/RAW via the librarian compile protocol. ---",
+  "generatedAt": "2026-09-04T17:08:15",
+  "date": "2026-09-04",
+  "runNumber": 107,
+  "summary": "1. A 4-Sep 04:00 shift-handover meeting is the only new meeting note this pass. 2. It catches an operator bypassing the mandatory brake-check sign-off and driving straight into the pit — he denied it when first asked, then admitted it once confronted with direct observation; a formal warning is being issued. 3. The same meeting finds and fixes two drill safety gaps (no flashback arresters, an accumulator being recharged with nitrogen) the same night. 2. 4. The meeting runs its own live investigation into a ~204,000-ton production discrepancy — the third independent naming of a figure in the 200,000-205,000 ton range this KB has tracked in a week, after the 1-Sep director-review meeting's \"200,000-205,000 ton\" survey-vs-tally gap and the 3-Sep weekly HOD meeting's \"~204,000 tons of survey variance.\" This is the first source to propose a mechanism: operators suspected of logging the final hour's trips 15-20 minutes early and attributing them to the wrong hourly window. 5. By the meeting's own math, combining the affected hours nets out close to a normal trip rate — arguing against this fully explaining a discrepancy of that size, a caveat logged alongside the finding rather than treated as resolved. 3. 6. The Day 10 survey workbook (260904-INX-SUM.xlsx) finally landed, and with it Day 9's data — which never got its own standalone file, appearing only as a row inside Day 10's own table. 7. Day 9 posts the cycle's deepest gap yet (-23.64%, trucks 21,080 / survey 17,049). 8. Day 10 reverses to the cycle's first positive gap (+7.77%, trucks 20,615 / survey 22,351). 9. MTD through Day 10: trucks 193,223 BCM vs survey 182,351 BCM, -5.96%. 4. A batch of seven historical broken-stock emails (26-Aug through 1-Sep) backfilled into RAW alongside the new Sep 4 copy, all sharing the same inline-image, no-plain-text pattern already flagged as OCR-unreliable at the 105th pass — confirming this is a standing sender-side formatting choice across at least eight consecutive emails, not an isolated bad scan. 5. Truck 347 stood roughly 45 minutes at the fuel bay awaiting the diesel tanker — logged as a fifth event in the refuelling-area pattern, alongside the meeting's first concrete process fix for the fueling-delay side of that pattern (fuel immediately after the 7:00-7:30 toolbox meeting instead of 8:00, two dedicated attendants). Sixteen already ingested at prior passes. One genuinely new: the 4-Sep shift-handover meeting, written verbatim to RAW. Important References folder re-checked: 39 files, no new or updated content since the 105th/106th passes' last check. Wiki compile: updated [[survey-volume-reconciliation]] (Day 9 retroactive data, Day 10's first positive gap, MTD figures, the shift-handover meeting's 204,000-ton figure and proposed tally-timing mechanism, broken-stock OCR limitation confirmed standing), [[safety-inspection-patterns]] (brake-check bypass, drill safety gaps), [[refuelling-area-safety-pattern]] (fifth event — Truck 347 — and the first concrete fueling-timing process fix), [[kaizen-load-haul-efficiency]] (per-operator KPI framework proposal, trip-timing tally investigation), [[overspill-material-management]] (Stage 6 opening still urgent, still under-resourced) — five articles' `Last updated` bumped to 2026-09-04 (107th pass). `Wiki/INDEX.md` one-line descriptions refreshed for all five. Task Feedback Log (Part C): \"All Feedback\" view queried (rows mode, sorted by Date Logged descending) — 33 rows total, all already `Status: Processed`, most recent dated 2026-07-30. No unprocessed rows found this pass, no Wiki edits triggered, no mismatches. The 204,000-ton reconciliation question is already covered by an existing inbox task from the 104th pass, not duplicated. No content removed or renamed. Source: KNOWLEDGE/mining_operations_kb/RAW via the librarian compile protocol. ---",
   "kpis": [
     {
       "label": "MTD BCM",
-      "value": "172,608",
-      "delta": "-11.7% vs target",
+      "value": "193,223",
+      "delta": "-11.5% vs target",
       "good": false
     },
     {
       "label": "Survey Gap",
-      "value": "-5.5%",
+      "value": "-23.6%",
       "delta": "survey vs trucks MTD",
       "good": false
     },
     {
       "label": "Crusher MTD",
-      "value": "13%",
-      "delta": "15,885 / 124,000 LCM",
+      "value": "20%",
+      "delta": "24,801 / 124,000 LCM",
       "good": null
     },
     {
       "label": "Days Remain",
-      "value": "22",
+      "value": "21",
       "delta": "",
       "good": null
     }
@@ -92,10 +92,21 @@
       "actual": 21080,
       "target": 22993,
       "half": false
+    },
+    {
+      "date": "2026-09-03",
+      "label": "3 Sep",
+      "actual": 20615,
+      "target": 22993,
+      "half": false
     }
   ],
   "fleet": {
+    "availDaily": "85.74%",
+    "availMtd": "86.07%",
+    "exAvail": "78.3%",
     "exUnits": 6,
+    "dtAvail": "94.1%",
     "dtUnits": 23,
     "excavators": [
       {
@@ -123,23 +134,11 @@
         "avail": null
       }
     ],
-    "exAvail": "78.3%",
     "exBasis": "5/6",
     "pdfDate": "03-09",
-    "dtAvail": "94.1%",
     "dtBasis": "23 active ≥8h"
   },
   "equipment": [
-    {
-      "unit": "DT-130",
-      "type": "Haul Truck",
-      "status": "warning",
-      "avail": "",
-      "util": "",
-      "bd_hrs": "",
-      "note": "(engine oil pan gasket + brake press low, Breakdown, open since 25-Aug) closes the same day — Date Out 02-Sep ",
-      "comment": "Tyre Puncher # 03"
-    },
     {
       "unit": "DT-108",
       "type": "Haul Truck",
@@ -147,18 +146,18 @@
       "avail": "",
       "util": "",
       "bd_hrs": "",
-      "note": "(Power Train, C/O T.C., Breakdown, open since 29-Aug) closes — Date Out 02-Sep 4:00 PM, day 4 total.",
+      "note": "'s relapse (recovered 02-Sep 4:00 PM, down again 03-Sep 8:00 PM — under a day later) repeats the same zero-gap",
       "comment": "Gear Not Working"
     },
     {
-      "unit": "DT-346",
+      "unit": "DT-130",
       "type": "Haul Truck",
-      "status": "warning",
-      "avail": "",
+      "status": "down",
+      "avail": "85.42%",
       "util": "",
-      "bd_hrs": "",
-      "note": "'s fault description has now appeared two ways in the same week — \"Engine Failure\" (formal Daily Availability ",
-      "comment": "Engine Failure"
+      "bd_hrs": "3.5",
+      "note": "logs a same-day tyre puncture, resolved within the shift** — Tyre Puncture #03 (Breakdown), 03-Sep 4:00 PM to ",
+      "comment": "Tyre Puncher # 03"
     },
     {
       "unit": "EX-253",
@@ -167,7 +166,7 @@
       "avail": "0.00%",
       "util": "",
       "bd_hrs": "",
-      "note": "remains down, Swing Bearing Failure, open since 28-Jul (day 36+), 0.00% avail, still no Date Out in any source",
+      "note": "remains down, Swing Bearing Failure, open since 28-Jul — day 37+, 0.00% avail, still no Date Out in any source",
       "comment": "Swing Braring Failure"
     },
     {
@@ -177,57 +176,67 @@
       "avail": "",
       "util": "",
       "bd_hrs": "",
-      "note": "remains down, Attach & Work Tools (Bucket Repair), Opportune, open since 29-Aug — fifth straight report withou",
+      "note": "remains down, Attach & Work Tools (Bucket Repair) plus the ten-hose front-attachment changeout, Opportune, ope",
       "comment": "C/O All Hoes Of Front Attach ( C/O  10x Hoes ) , Backlog Jobs"
     },
     {
       "unit": "EX-123",
       "type": "Excavator",
-      "status": "down",
-      "avail": "97.92%",
+      "status": "warning",
+      "avail": "100%",
       "util": "",
       "bd_hrs": "",
-      "note": "(97.92% avail, 0.5h Daily Check)",
+      "note": "all logged short same-shift faults (daily checks, GET tip replacement, hydraulic return-line repair) at 95.83-",
       "comment": "Replace Tips"
     },
     {
       "unit": "EX-262",
       "type": "Excavator",
-      "status": "down",
-      "avail": "93.75%",
+      "status": "warning",
+      "avail": "100%",
       "util": "",
       "bd_hrs": "",
-      "note": "(93.75% avail, 1.5h Daily Check)",
+      "note": "all logged short same-shift faults (daily checks, GET tip replacement, hydraulic return-line repair) at 95.83-",
       "comment": ""
     },
     {
       "unit": "EX-263",
       "type": "Excavator",
-      "status": "down",
-      "avail": "85.42%",
+      "status": "warning",
+      "avail": "100%",
       "util": "",
       "bd_hrs": "",
-      "note": "(85.42% avail, 3.5h Hyd Temp Hi, breakdown)",
+      "note": "all logged short same-shift faults (daily checks, GET tip replacement, hydraulic return-line repair) at 95.83-",
       "comment": "Repair Hydraulic Return Lines"
+    },
+    {
+      "unit": "EX-340",
+      "type": "Excavator",
+      "status": "warning",
+      "avail": "100%",
+      "util": "",
+      "bd_hrs": "",
+      "note": "all logged short same-shift faults (daily checks, GET tip replacement, hydraulic return-line repair) at 95.83-",
+      "comment": ""
     }
   ],
   "followUps": [
     {
       "priority": "MONITOR",
       "title": "Part A",
-      "body": "Notion Meeting Notes Database re-queried for the last 7 days — fifteen results, identical to the 104th pass. No new meeting notes.",
+      "body": "Notion Meeting Notes Database queried for the last 7 days — seventeen results. Sixteen already ingested at prior passes. One genuinely new: the 4-Sep shift-handover meeting, written verbatim to RAW.",
       "action": ""
     },
     {
       "priority": "MONITOR",
       "title": "Part B gap-check",
-      "body": "mtime scan against this file's own last write (104th pass, 16:46:26) found a full production/fleet/survey/plan batch and four emails not present when the 104th pass ran. Important References folder re-checked: 36 files (one new — an HR webinar invite, no management-level content, registered without a dedicated analysis output).",
+      "body": "(mtime scan of all of RAW against `_INGESTED.md`'s own write from the 106th pass, 2026-09-04 11:07): the Day 10 INX-SUM workbook and its mineable-area map, one new broken-stock email (Sep 4), and seven backfilled historical broken-stock emails (26-Aug through 1-Sep). Important References folder re-checked: 39 files, no new or updated content since the 105th/106th passes' last check.",
       "action": ""
     },
     {
       "priority": "MONITOR",
       "title": "Wiki compile",
-      "body": "updated [[daily-production-report]] (Sep 2 daily/MTD figures, ore's biggest beat of the cycle, drilling's second record day), [[fleet-availability-utilization]] (Sep 2 fleet-wide detail, DT-108/DT-130 recovery, DT-346 fault-description discrepancy, CAT980 loader arrangement), [[grade-control-june-2026]] (750-B152 dig plan), [[safety-inspection-patterns]] (RESOLVED — in-pit muster points), [[survey-volume-reconciliation]] (Day 9 gap, unintegrated broken-stock update) — five articles' `Last updated` bumped to 2026-09-03. `Wiki/INDEX.md` one-line descriptions refreshed for all five.",
+      "body": "updated [[survey-volume-reconciliation]] (Day 9 retroactive data, Day 10's first positive gap, MTD figures, the shift-handover meeting's 204,000-ton figure and proposed tally-timing mechanism, broken-stock OCR limitation confirmed standing), [[safety-inspection-patterns]] (brake-check bypass, drill safety gaps), [[refuelling-area-safety-pattern]] (fifth event — Truck 347 — and the first concrete fueling-timing process fix), [[kaizen-load-haul-efficiency]] (per-operator KPI framework proposal, trip-timing tally investigation), [[overspill-material-management]] (Stage 6 opening still urgent, still under-resourced) — five articles' `Last updated` bumped to 2026-09-04 (107th pass). `Wiki/INDEX.md` one-line descriptions refreshed for all five.",
       "action": ""
     },
     {
@@ -239,7 +248,7 @@
     {
       "priority": "MONITOR",
       "title": "Tasks created (Notion inbox, Status: Inbox, judicious/non-duplicate only)",
-      "body": "\"Arrange CAT980 loader (WL295) availability for 777 payload-system calibration fitment\" — new, direct request to Peter, no equivalent already in the inbox. The equipment-sabotage investigation and muster-point items from prior passes already cover the DT-346 discrepancy and the evacuation-plan follow-up, so no duplicate tasks were created for those. No content removed or renamed. Source: KNOWLEDGE/mining_operations_kb/RAW via the librarian compile protocol. ---",
+      "body": "\"Develop per-operator KPI system tracking loads per shift/month against availability [ADW]\" and \"Confirm fuel-attendant timing change with Joe - fuel 7:00-7:30 after toolbox meeting [ADW]\" — both new, both linked to the shift-handover meeting via the Meeting relation. The 204,000-ton reconciliation question is already covered by an existing inbox task from the 104th pass, not duplicated. No content removed or renamed. Source: KNOWLEDGE/mining_operations_kb/RAW via the librarian compile protocol. ---",
       "action": ""
     }
   ]
