@@ -1,15 +1,15 @@
 {
-  "date": "2026-09-04",
-  "topic": "Hot-Season Hydraulic Fault Pattern",
-  "title": "Hot-Season Hydraulic Fault Pattern",
-  "body": "When five excavators (plus one borrowed grader) all threw hydraulic faults in the same window last June, the workshop chased each symptom separately instead of the heat-stress root cause — EX-263 alone burned six straight zero-availability days, then kept resurfacing with a new hydraulic fault every time a fix looked like it had held.",
+  "date": "2026-09-05",
+  "topic": "In-Pit Groundwater Management",
+  "title": "In-Pit Groundwater Management",
+  "body": "Water in the pit doesn't wait for paperwork — standing water on a haul road or a sump that overtops catches crews flat-footed if nobody's pre-planned the pump route and discharge point. Right now this is only a draft SOP under review, so whatever's protecting ADW from a bad dewatering incident today is informal practice, not an approved procedure.",
   "keyPoints": [
-    "Heat doesn't produce one repeating fault — it produces leaks, slow cylinders, and valve failures all from the same root cause (fluid viscosity drop, thermal stress on the circuit). A machine cycling through several different hydraulic symptoms in two weeks is one system problem, not several.",
-    "Dust-clogged cooler fins are a known summer aggravator — a fleet-wide cooler/radiator and oil-temperature check catches this before it becomes a breakdown, not after.",
-    "Don't bucket a mechanical failure with a hydraulic one just because they showed up together — EX-123's slew ring bearing failure got logged alongside hydraulic leak/cylinder symptoms, and nobody confirmed whether they were actually connected.",
-    "A symptom-by-symptom repair on a heat-stressed machine buys one clean day, then the fault comes back in a new form — EX-263 proved this twice. If a unit is on its third-plus hydraulic fault this season, it needs a full circuit strip (pump, cooler, lines), not another patch.",
-    "No comparative baseline exists yet for this pattern — start logging which units fault and which don't (EX-340, EX-253 stayed clean) so next hot season isn't guessing again."
+    "Before any pump starts: confirm discharge destination, pond capacity, freeboard, and embankment condition. If the receiving pond can't safely take more water, pumping does not start — full stop.",
+    "Shift handover must cover sump/pond levels, pump availability, pipeline condition and active discharge route, and any planned mining or blasting that could hit the dewatering system.",
+    "Standing water on a road or working area is a stop-work trigger: barricade, notify the shift supervisor, find an alternate route, pump it out to an approved location, repair the surface, then get authorisation before reopening to traffic. Nobody drives or walks into standing water of unknown depth.",
+    "Any relocation or modification of pumps, pipelines, or discharge points needs a risk assessment and goes through Management of Change — it's not a \"just move it\" job.",
+    "Maintenance on dewatering gear is LOTO territory: isolate, release stored pressure, verify zero energy before anyone touches it."
   ],
-  "apply": "Any excavator throwing a hydraulic-temperature-high or leak fault today — treat it as a cooler/dust-ingress check first, not just a seal or hose swap, especially with hot-season conditions still in play.",
-  "generatedAt": "2026-09-04T13:58:23"
+  "apply": "If you see pooling near a ramp toe, sump, or low point after any water-cart or rain activity, treat it as a standing-water event under this draft SOP's logic even though it's not signed off yet — barricade and escalate rather than letting equipment thread around it. This SOP is still unapproved, so don't assume a formal sump/pump system is fully in place; check what's actually built versus what's on paper.",
+  "generatedAt": "2026-09-05T05:47:08"
 }
