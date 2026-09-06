@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-09-06T11:09:31",
-  "date": "2026-09-05",
-  "runNumber": 108,
-  "summary": "1. One new meeting note this pass — a crusher-feed review naming grizzly-choking root causes in full for the first time (boulder interlocking that reads full from above while empty underneath, a design barrier limiting how far loaders can reach into the grid) and formalizing a 10% bin-trigger CCR-to-dispatch radio protocol, replacing reliance on WhatsApp for urgent low-bin escalation. 2. Sep 4 production reverses hard: ore misses target by -32.85% after two consecutive beats of +98.32% and +130.85%, the third large swing in three days. 3. Drilling keeps a fourth straight beat alive (+35.5%), but only because the daily target itself roughly halved (2,563 m to 1,281.5 m) — not a like-for-like acceleration. 4. No blast was recorded, the cycle's first blast-free day. 3. 5. Fleet: EX-247 recovers after a seven-day bucket/hose repair. 6. DT-108 relapses into its third distinct fault this week. 7. DT-79 surfaces in this KB for the first time as down since 1-Feb-26 — over seven months, worth confirming whether the record is live or stale. 8. Overall daily availability improves to 87.46% (MTD 86.42%). 4. 9. Survey Day 11 posts the cycle's deepest single-day gap yet (-53.34%, trucks 12,493 / survey 8,147) — and Abel Pienaar's response to it proposes a different kind of fix than anything logged before: dropping the truck conversion factor to 28, rather than addressing the boundary-compliance root cause. Flagged directly in [[survey-volume-reconciliation]] as a step that would shrink the reported gap without fixing why trucks and survey disagree, and would make future gaps incomparable to the Day 1-11 series already on record. 5. GM Ivan Anthony's 4-Sep email is the most detailed August root-cause analysis this KB has captured: the core issue was insufficient productive mining-face flexibility to absorb the visa-delay/breakdown disruptions, not the disruptions themselves. New precise monthly reconciliation figures (August survey 80.9% of target vs. truck tally 92.2%) sit alongside two new external-engagement commitments (an independent survey audit, and Outliers Mining Solutions for a recovery plan and optimized mining sequence) and a hard Sunday (7-Sep) deadline for a detailed action plan to Maaden. 6. A file missed by the 106th/107th passes' gap-checks was caught this pass: the wider-distribution circulation email for the already-compiled SA-185/DT-185 tire-fire flash report (5-Aug incident). No new incident content — registered for completeness. Seventeen already ingested at prior passes. One genuinely new: the crusher-feed review meeting, written verbatim to RAW. Important References folder re-checked: 39 files, no new content since the 105th pass's last check. Wiki compile: updated [[daily-production-report]] (Sep 4 figures, ore's reversal, drilling's fourth-day streak on a halved target, first blast-free day), [[fleet-availability-utilization]] (Sep 4 fleet detail, EX-247's recovery, DT-108's third fault, DT-79 surfacing), [[survey-volume-reconciliation]] (Day 11's deepest gap, the truck-factor request flagged as a measurement-masking risk), [[grade-control-june-2026]] (750-B152 revised dig plan, LG-to-MG reclassification), [[august-2026-performance-review-escalation]] (Ivan Anthony's root-cause email, Outliers engagement, Sunday deadline), [[crusher-feed-procedure]] (grizzly-choking root causes, 10% bin-trigger protocol) — six articles' `Last updated` bumped to 2026-09-05 (108th pass). `Wiki/INDEX.md` refreshed for all six. Task Feedback Log (Part C): \"All Feedback\" view queried (rows mode, sorted by Date Logged descending) — 33 rows total, all already `Status: Processed`, most recent dated 2026-07-30. No unprocessed rows found this pass, no Wiki edits triggered, no mismatches. No content removed or renamed. Source: KNOWLEDGE/mining_operations_kb/RAW via the librarian compile protocol. ---",
+  "generatedAt": "2026-09-06T20:32:28",
+  "date": "2026-09-06",
+  "runNumber": 109,
+  "summary": "1. No new meeting notes this pass — the last 7 days' Notion query returns fifteen results, all already ingested. 2. 2. Sep 5 production: ore collapses to 279 BCM / 753.3 t against a 2,954.2 BCM target — a -90.6% miss, the sharpest ore shortfall of the fiscal cycle, worse than Sep 1's prior worst of -64.32%. 3. Only one block (745-145-1) produced any ore at all. 4. The single day's miss wipes out the entire MTD ore surplus, flipping the MTD ore line from +8.29% (Sep 4) to -0.69%. 5. Drilling misses target for the first time in five days (-1.8%), and no blast was recorded for a second straight day. 3. 6. Fleet: DT-108 opens a fourth distinct fault in two weeks (Brake Jam); DZ-279 newly down; DT-129 recovers a second time. 7. The Daily Availability report's full long-standing-down register is read in one place for the first time this pass, surfacing four units — DT-79, WL-101, LV-049, MACN-018 — all down since 1-Feb-26, 216 days each, plus LT-200 crossing 100 days down for the first time. 8. Abel Pienaar delivers the detailed Maaden action plan Ivan Anthony demanded, a day ahead of the Sunday (7-Sep) deadline. 9. It names specific KPI targets (excavator/truck availability >88%, drill >85%, unscheduled downtime -20%), attributes root causes to named units (EX-253, DT-108/109/346/347), confirms only one unmined August block remains (171-735RL), and reframes Stage 6 pushback as part of the recovery strategy — consistent with Ivan Anthony's own 4-Sep framing. It does not mention Outliers Mining Solutions, adding weight to the open question of whether that engagement has actually started. 5. Maaden's own mining engineer independently issues a written ROM Bin Communication and Escalation Plan, corroborating the 5-Sep crusher-feed meeting's verbal protocol with a formal sign-off template and naming the Plant Manager and JRAR Production Manager as jointly accountable. 6. A new document type appears in RAW for the first time: a JRAR-internal \"Weekly Operational Review\" deck (distinct from the Maaden bi-weekly plan deck). It flags its own 16,709 BCM broken-stock discrepancy against the client report and explicitly marks one of its own sections as unverified \"carried forward\" content. Four earlier same-morning revisions of the deck, plus two out-of-scope stray/generated-overwrite copies in a `_to_delete` subfolder, were registered but not separately opened. 7. Grade Control September 2026.xlsx now exists as two diverging copies (Production report/ and Grade Control & Stockpiles/) — previously byte-identical, only one was refreshed this pass. Daily Drill Sampling Record-2026.xlsx did not receive a Sept 5 tab and is now a day behind every sibling daily workbook. No new meeting notes. Important References folder re-checked: 37 files, no new content since the 105th/107th/108th passes' last check. Wiki compile: updated [[daily-production-report]] (Sep 5 — ore's near-total collapse, MTD ore gap reversal, second straight blast-free day), [[fleet-availability-utilization]] (Sep 5 fleet detail, the full long-standing-down register, LT-200 crossing 100 days, four units at 216 days), [[crusher-feed-procedure]] (Maaden's written ROM Bin Communication and Escalation Plan), [[august-2026-performance-review-escalation]] (the Production Recovery Action Plan, resolving the Sunday-deadline question a day early), [[survey-volume-reconciliation]] (Day 12 hasn't landed; the new deck's 16,709 BCM discrepancy), [[weekly-mining-plan]] (the new Weekly Operational Review deck) — six articles' `Last updated` bumped to 2026-09-06 (109th pass). `Wiki/INDEX.md` refreshed for all six. Task Feedback Log (Part C): \"All Feedback\" view queried (rows mode, sorted by Date Logged descending) — 33 rows total, all already `Status: Processed`, most recent dated 2026-07-30. No unprocessed rows found this pass, no Wiki edits triggered, no mismatches. No content removed or renamed. Source: KNOWLEDGE/mining_operations_kb/RAW via the librarian compile protocol. ---",
   "kpis": [
     {
       "label": "MTD BCM",
@@ -106,6 +106,13 @@
       "actual": 12493,
       "target": 11496,
       "half": true
+    },
+    {
+      "date": "2026-09-05",
+      "label": "5 Sep",
+      "actual": 21638,
+      "target": 22993,
+      "half": false
     }
   ],
   "fleet": {
@@ -147,14 +154,24 @@
   },
   "equipment": [
     {
-      "unit": "EX-247",
-      "type": "Excavator",
+      "unit": "DZ-279",
+      "type": "Track Dozer",
       "status": "down",
       "avail": "",
       "util": "",
       "bd_hrs": "",
-      "note": "recovers after a seven-day bucket-and-hose repair** — Attach & Work Tools/Hydraulic (Bucket Repair, C/O all ho",
-      "comment": "Seat Problem"
+      "note": "(dozer) newly down** — first appearance for this unit in this article's recent-pass window.",
+      "comment": ""
+    },
+    {
+      "unit": "DT-129",
+      "type": "Haul Truck",
+      "status": "warning",
+      "avail": "",
+      "util": "",
+      "bd_hrs": "",
+      "note": "recovers a second time.** Closed 05-Sep 3:30 PM after reopening 31-Aug for No Gear/Trans Tank Empty (Transmiss",
+      "comment": "No Gear , Trans Tank Empty ( Trans  Failer )"
     },
     {
       "unit": "DT-108",
@@ -163,87 +180,77 @@
       "avail": "",
       "util": "",
       "bd_hrs": "",
-      "note": "has now logged three distinct faults inside a single week** (Power Train/Brake closing 02-Sep, Low Power/Gear ",
+      "note": "'s fourth distinct fault in two weeks, and",
       "comment": "Brake Jam"
     },
     {
-      "unit": "DT-79",
-      "type": "Haul Truck",
+      "unit": "EX-123",
+      "type": "Excavator",
       "status": "down",
       "avail": "",
       "util": "",
       "bd_hrs": "",
-      "note": "(Power Train, C/O Trans) surfaces as down since 01-Feb-26 — over seven months.** This unit hasn't appeared in ",
-      "comment": "250 H Service"
+      "note": "(Engine Not Start, 1.5h)",
+      "comment": "Engine Not Start"
     },
     {
       "unit": "EX-262",
       "type": "Excavator",
-      "status": "scheduled",
+      "status": "down",
       "avail": "",
       "util": "",
       "bd_hrs": "",
-      "note": "both logged short same-day bucket change-outs (Opportune, 3.5h and 4.5h respectively), the latter combined wit",
+      "note": "(Daily Check)",
       "comment": ""
     },
     {
       "unit": "EX-340",
       "type": "Excavator",
-      "status": "scheduled",
+      "status": "down",
       "avail": "",
       "util": "",
       "bd_hrs": "",
-      "note": "both logged short same-day bucket change-outs (Opportune, 3.5h and 4.5h respectively), the latter combined wit",
+      "note": "(Daily Check)",
       "comment": ""
     },
     {
-      "unit": "EX-253",
+      "unit": "EX-398",
       "type": "Excavator",
-      "status": "warning",
-      "avail": "0.00%",
+      "status": "down",
+      "avail": "",
       "util": "",
       "bd_hrs": "",
-      "note": "remains down, Swing Bearing Failure, open since 28-Jul — day 39+, 0.00% avail, still no Date Out in any source",
-      "comment": "Swing Braring Failure"
+      "note": "(Overheating)",
+      "comment": "Over Heating"
     },
     {
-      "unit": "DT-129",
-      "type": "Haul Truck",
-      "status": "warning",
-      "avail": "0.00%",
-      "util": "",
-      "bd_hrs": "",
-      "note": "No Gear/Trans Tank Empty (Transmission Failure), Breakdown, open since 31-Aug, day 5, still 24h/0.00% avail, n",
-      "comment": "No Gear , Trans Tank Empty ( Trans  Failer )"
-    },
-    {
-      "unit": "DT-109",
-      "type": "Haul Truck",
+      "unit": "EX-263",
+      "type": "Excavator",
       "status": "warning",
       "avail": "",
       "util": "",
       "bd_hrs": "",
-      "note": "fender/handrail/step-ladder incident damage, Opportune, open since 21-Jul, day 46.",
-      "comment": "Front RHS Fender, Handrail & Step  Ladder damaged due to incident"
+      "note": "(Hydraulic Temp High — a recurring fault type for this unit)",
+      "comment": "Hydraulic Temperature High"
     }
   ],
   "followUps": [
     {
       "priority": "HIGH",
-      "title": "Part B gap-check",
-      "body": "(mtime scan of all of RAW against `_INGESTED.md`'s own write from the 107th pass, 2026-09-04 13:03): Day 11 survey data, the FW ADW August Production email, the revised 750-B152 dig plan, and the full Sep 4 production/fleet workbook batch. Important References folder re-checked: 39 files, no new content since the 105th pass's last check.",
-      "action": ""
-    },
-    {
-      "priority": "HIGH",
       "title": "Wiki compile",
-      "body": "updated [[daily-production-report]] (Sep 4 figures, ore's reversal, drilling's fourth-day streak on a halved target, first blast-free day), [[fleet-availability-utilization]] (Sep 4 fleet detail, EX-247's recovery, DT-108's third fault, DT-79 surfacing), [[survey-volume-reconciliation]] (Day 11's deepest gap, the truck-factor request flagged as a measurement-masking risk), [[grade-control-june-2026]] (750-B152 revised dig plan, LG-to-MG reclassification), [[august-2026-performance-review-escalation]] (Ivan Anthony's root-cause email, Outliers engagement, Sunday deadline), [[crusher-feed-procedure]] (grizzly-choking root causes, 10% bin-trigger protocol) — six articles' `Last updated` bumped to 2026-09-05 (108th pass). `Wiki/INDEX.md` refreshed for all six.",
+      "body": "updated [[daily-production-report]] (Sep 5 — ore's near-total collapse, MTD ore gap reversal, second straight blast-free day), [[fleet-availability-utilization]] (Sep 5 fleet detail, the full long-standing-down register, LT-200 crossing 100 days, four units at 216 days), [[crusher-feed-procedure]] (Maaden's written ROM Bin Communication and Escalation Plan), [[august-2026-performance-review-escalation]] (the Production Recovery Action Plan, resolving the Sunday-deadline question a day early), [[survey-volume-reconciliation]] (Day 12 hasn't landed; the new deck's 16,709 BCM discrepancy), [[weekly-mining-plan]] (the new Weekly Operational Review deck) — six articles' `Last updated` bumped to 2026-09-06 (109th pass). `Wiki/INDEX.md` refreshed for all six.",
       "action": ""
     },
     {
       "priority": "MONITOR",
       "title": "Part A",
-      "body": "Notion Meeting Notes Database queried for the last 7 days — eighteen results. Seventeen already ingested at prior passes. One genuinely new: the crusher-feed review meeting, written verbatim to RAW.",
+      "body": "Notion Meeting Notes Database queried for the last 7 days — fifteen results, all already ingested at prior passes. No new meeting notes.",
+      "action": ""
+    },
+    {
+      "priority": "MONITOR",
+      "title": "Part B gap-check",
+      "body": "(mtime scan of all of RAW against `_INGESTED.md`'s own write from the 108th pass, 2026-09-05 12:00): the full Sep 5 production/fleet workbook batch, the Maaden Production Recovery Action Plan and its transmittal email, the ROM Bin Communication and Escalation Plan email, and the new Weekly Operational Review deck. Important References folder re-checked: 37 files, no new content since the 105th/107th/108th passes' last check.",
       "action": ""
     },
     {
@@ -255,7 +262,7 @@
     {
       "priority": "MONITOR",
       "title": "Tasks created (Notion inbox, Status: Inbox, judicious/non-duplicate only)",
-      "body": "\"Propose a truck-factor / survey-reconciliation solution per Abel Pienaar's request [ADW]\" and \"Engage Outliers Mining Solutions for recovery-plan and mining-sequence support per GM directive [ADW]\" — both new, no equivalent already in the inbox. No content removed or renamed. Source: KNOWLEDGE/mining_operations_kb/RAW via the librarian compile protocol. ---",
+      "body": "\"Review long-standing-down fleet units for write-off/disposal - DT-79, WL-101, LV-049, MACN-018 at 216 days; LT-200 crossing 100 days [ADW]\" — new, no equivalent already in the inbox. No content removed or renamed. Source: KNOWLEDGE/mining_operations_kb/RAW via the librarian compile protocol. ---",
       "action": ""
     }
   ]
