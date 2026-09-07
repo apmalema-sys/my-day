@@ -1,15 +1,15 @@
 {
-  "date": "2026-09-05",
-  "topic": "In-Pit Groundwater Management",
-  "title": "In-Pit Groundwater Management",
-  "body": "Water in the pit doesn't wait for paperwork — standing water on a haul road or a sump that overtops catches crews flat-footed if nobody's pre-planned the pump route and discharge point. Right now this is only a draft SOP under review, so whatever's protecting ADW from a bad dewatering incident today is informal practice, not an approved procedure.",
+  "date": "2026-09-07",
+  "topic": "Lost GET — Reporting and Recovery",
+  "title": "Lost GET — Reporting and Recovery",
+  "body": "One missed bucket tooth that rides a truck to the ROM pad and into the primary crusher turns into liner damage, days of plant downtime, and a stopped feed — all from something that costs nothing to catch at the loading face. At ADW that damage bill dwarfs the few minutes it takes to stop and check.",
   "keyPoints": [
-    "Before any pump starts: confirm discharge destination, pond capacity, freeboard, and embankment condition. If the receiving pond can't safely take more water, pumping does not start — full stop.",
-    "Shift handover must cover sump/pond levels, pump availability, pipeline condition and active discharge route, and any planned mining or blasting that could hit the dewatering system.",
-    "Standing water on a road or working area is a stop-work trigger: barricade, notify the shift supervisor, find an alternate route, pump it out to an approved location, repair the surface, then get authorisation before reopening to traffic. Nobody drives or walks into standing water of unknown depth.",
-    "Any relocation or modification of pumps, pipelines, or discharge points needs a risk assessment and goes through Management of Change — it's not a \"just move it\" job.",
-    "Maintenance on dewatering gear is LOTO territory: isolate, release stored pressure, verify zero energy before anyone touches it."
+    "Stop first, ask questions second. Any suspected GET loss halts that machine immediately — don't finish the pass \"just to be sure.\"",
+    "Isolate and report fast: supervisor cordons the area, logs time/location/GPS, and pulls in Survey, Drill & Blast, Load & Haul, and Safety together — not sequentially.",
+    "Track the material, not just the search. If it's not found on the spot, the muck's destination (pit → stockpile → ROM pad → crusher) gets documented and followed.",
+    "The ROM pad loader operator is the last line of defense — every load gets eyeballed for the missing piece before it reaches the crusher.",
+    "Prevention beats recovery: pre-start and daily GET checks, and training operators to recognize the feel/sound of a lost tooth, stop most of these before they start."
   ],
-  "apply": "If you see pooling near a ramp toe, sump, or low point after any water-cart or rain activity, treat it as a standing-water event under this draft SOP's logic even though it's not signed off yet — barricade and escalate rather than letting equipment thread around it. This SOP is still unapproved, so don't assume a formal sump/pump system is fully in place; check what's actually built versus what's on paper.",
-  "generatedAt": "2026-09-05T05:47:08"
+  "apply": "Any excavator or loader working fresh muck near the crusher feed — a quick visual GET check before it starts loading is cheaper than an afternoon with the crusher down.",
+  "generatedAt": "2026-09-07T19:49:30"
 }
