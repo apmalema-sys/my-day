@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-06T20:32:28",
+  "generatedAt": "2026-09-07T11:10:02",
   "date": "2026-09-06",
   "runNumber": 109,
   "summary": "1. No new meeting notes this pass — the last 7 days' Notion query returns fifteen results, all already ingested. 2. 2. Sep 5 production: ore collapses to 279 BCM / 753.3 t against a 2,954.2 BCM target — a -90.6% miss, the sharpest ore shortfall of the fiscal cycle, worse than Sep 1's prior worst of -64.32%. 3. Only one block (745-145-1) produced any ore at all. 4. The single day's miss wipes out the entire MTD ore surplus, flipping the MTD ore line from +8.29% (Sep 4) to -0.69%. 5. Drilling misses target for the first time in five days (-1.8%), and no blast was recorded for a second straight day. 3. 6. Fleet: DT-108 opens a fourth distinct fault in two weeks (Brake Jam); DZ-279 newly down; DT-129 recovers a second time. 7. The Daily Availability report's full long-standing-down register is read in one place for the first time this pass, surfacing four units — DT-79, WL-101, LV-049, MACN-018 — all down since 1-Feb-26, 216 days each, plus LT-200 crossing 100 days down for the first time. 8. Abel Pienaar delivers the detailed Maaden action plan Ivan Anthony demanded, a day ahead of the Sunday (7-Sep) deadline. 9. It names specific KPI targets (excavator/truck availability >88%, drill >85%, unscheduled downtime -20%), attributes root causes to named units (EX-253, DT-108/109/346/347), confirms only one unmined August block remains (171-735RL), and reframes Stage 6 pushback as part of the recovery strategy — consistent with Ivan Anthony's own 4-Sep framing. It does not mention Outliers Mining Solutions, adding weight to the open question of whether that engagement has actually started. 5. Maaden's own mining engineer independently issues a written ROM Bin Communication and Escalation Plan, corroborating the 5-Sep crusher-feed meeting's verbal protocol with a formal sign-off template and naming the Plant Manager and JRAR Production Manager as jointly accountable. 6. A new document type appears in RAW for the first time: a JRAR-internal \"Weekly Operational Review\" deck (distinct from the Maaden bi-weekly plan deck). It flags its own 16,709 BCM broken-stock discrepancy against the client report and explicitly marks one of its own sections as unverified \"carried forward\" content. Four earlier same-morning revisions of the deck, plus two out-of-scope stray/generated-overwrite copies in a `_to_delete` subfolder, were registered but not separately opened. 7. Grade Control September 2026.xlsx now exists as two diverging copies (Production report/ and Grade Control & Stockpiles/) — previously byte-identical, only one was refreshed this pass. Daily Drill Sampling Record-2026.xlsx did not receive a Sept 5 tab and is now a day behind every sibling daily workbook. No new meeting notes. Important References folder re-checked: 37 files, no new content since the 105th/107th/108th passes' last check. Wiki compile: updated [[daily-production-report]] (Sep 5 — ore's near-total collapse, MTD ore gap reversal, second straight blast-free day), [[fleet-availability-utilization]] (Sep 5 fleet detail, the full long-standing-down register, LT-200 crossing 100 days, four units at 216 days), [[crusher-feed-procedure]] (Maaden's written ROM Bin Communication and Escalation Plan), [[august-2026-performance-review-escalation]] (the Production Recovery Action Plan, resolving the Sunday-deadline question a day early), [[survey-volume-reconciliation]] (Day 12 hasn't landed; the new deck's 16,709 BCM discrepancy), [[weekly-mining-plan]] (the new Weekly Operational Review deck) — six articles' `Last updated` bumped to 2026-09-06 (109th pass). `Wiki/INDEX.md` refreshed for all six. Task Feedback Log (Part C): \"All Feedback\" view queried (rows mode, sorted by Date Logged descending) — 33 rows total, all already `Status: Processed`, most recent dated 2026-07-30. No unprocessed rows found this pass, no Wiki edits triggered, no mismatches. No content removed or renamed. Source: KNOWLEDGE/mining_operations_kb/RAW via the librarian compile protocol. ---",
@@ -118,18 +118,18 @@
   "fleet": {
     "availDaily": "87.46%",
     "availMtd": "86.42%",
-    "exAvail": "76.7%",
+    "exAvail": "76.2%",
     "exUnits": 6,
-    "dtAvail": "93.8%",
+    "dtAvail": "89.1%",
     "dtUnits": 21,
     "excavators": [
       {
         "unit": "EX-340",
-        "avail": "97.9%"
+        "avail": "95.8%"
       },
       {
         "unit": "EX-262",
-        "avail": "97.9%"
+        "avail": "95.8%"
       },
       {
         "unit": "EX-253",
@@ -137,11 +137,11 @@
       },
       {
         "unit": "EX-263",
-        "avail": "87.5%"
+        "avail": "91.7%"
       },
       {
         "unit": "EX-247",
-        "avail": "100.0%"
+        "avail": "97.9%"
       },
       {
         "unit": "EX-1200",
@@ -149,7 +149,7 @@
       }
     ],
     "exBasis": "5/6",
-    "pdfDate": "05-09",
+    "pdfDate": "06-09",
     "dtBasis": "21 active ≥8h"
   },
   "equipment": [
@@ -171,7 +171,7 @@
       "util": "",
       "bd_hrs": "",
       "note": "recovers a second time.** Closed 05-Sep 3:30 PM after reopening 31-Aug for No Gear/Trans Tank Empty (Transmiss",
-      "comment": "No Gear , Trans Tank Empty ( Trans  Failer )"
+      "comment": ""
     },
     {
       "unit": "DT-108",
@@ -191,7 +191,7 @@
       "util": "",
       "bd_hrs": "",
       "note": "(Engine Not Start, 1.5h)",
-      "comment": "Engine Not Start"
+      "comment": ""
     },
     {
       "unit": "EX-262",
@@ -201,7 +201,7 @@
       "util": "",
       "bd_hrs": "",
       "note": "(Daily Check)",
-      "comment": ""
+      "comment": "Replace Tips"
     },
     {
       "unit": "EX-340",
@@ -221,7 +221,7 @@
       "util": "",
       "bd_hrs": "",
       "note": "(Overheating)",
-      "comment": "Over Heating"
+      "comment": "100 Hr Service"
     },
     {
       "unit": "EX-263",
@@ -231,7 +231,7 @@
       "util": "",
       "bd_hrs": "",
       "note": "(Hydraulic Temp High — a recurring fault type for this unit)",
-      "comment": "Hydraulic Temperature High"
+      "comment": "Replace Tips"
     }
   ],
   "followUps": [
