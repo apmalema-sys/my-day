@@ -1,24 +1,30 @@
 {
-  "generatedAt": "2026-09-07T18:04:32",
-  "date": "2026-09-07",
-  "runNumber": 111,
-  "summary": "1. One new meeting note: a Weekly Review Meeting (7-Sep) not previously ingested. 2. Weekly commitment keeps declining for a third straight week - 440 tons two weeks ago, 414 last week, now 402 - against this week's 64,000-ton target with roughly 50,000 projected. 3. Leadership wants a recovery plan, not repeated justification. 2. 4. A proposed Stage 4/5 sequencing resolution: hold the current ramp and deplete Stage 4 ore first (finishing the 740 level south, winding up Stage 4 north to ~730m, then returning south), rather than let Stage 5 north development cut the ramp that serves Stage 4. 5. High-grade ore window narrows to roughly 12 days before Stage 4 bottom must be accessed. 3. 6. A blast filled the Stage 5 ramp with spillage (did not overflow above the ramp). 7. Clearance plan: two machines work the edge for ~2 hours with a catchment berm maintained, consistent with this KB's standard overspill controls. 8. Stage 4 port access expected to close 5-6 days while blocks 505/506 are blasted. 4. 9. Truck availability metric dispute surfaces: the team runs 21 of 24 trucks, reporting ~96% availability on the 21-truck denominator - a figure leadership (Dominic) disputes, since the full 24-truck denominator drops it to ~80-85%. Separately, \"Machine 253\" is named down for electrical issues, expected back this week - a description that does not obviously match this KB's standing EX-253 record (Swing Bearing Failure since 28-Jul, Week 38 repair forecast). ROM feed data: the flat-boulder fragment from the first ~5m of each Stage 5 cut (named at the 110th pass) now carries a loader-delay figure (5-10 min/cycle plus hammer backlog). A competing fragmentation fix surfaces - reducing Stage 5 blast benches from 10m to 5m - distinct from the top-cut-separation proposal already open. 6. 2027 budget planning opens with three volume scenarios (22M / 26M / 30M tons) under review; the team leans toward 30M (Stage 6 extension, more equipment and people) against a backdrop of high OPEX. 7. The diesel-refueling thread (110th pass's GM-level directive) gets its first visible follow-up: Jacobus Johannes Swart asks the maintenance team to inspect the fuel bay for a second dispensing nozzle. Inspection-scheduling only, no timeline yet - consistent with, not contradicting, the 110th pass's Done-status mismatch finding on the same task. 8. Task Feedback Log: no unprocessed rows this pass - the 19 rows the 110th pass closed out earlier the same day remain the most recent, all Processed. Important References folder re-checked: 37 files, no new or updated content since the 105th/107th/108th/109th/110th passes' last check. Wiki compile: updated [[weekly-mining-plan]] (production shortfall trend, Stage 4/5 sequencing proposal, 2027 budget scenarios), [[fleet-availability-utilization]] (truck-availability metric dispute, Machine 253 discrepancy), [[crusher-feed-procedure]] (ROM boulder loader-delay figure, 5-metre blast-bench proposal), [[overspill-material-management]] (Stage 5 ramp spillage and clearance), [[refuelling-area-safety-pattern]] (diesel-refueling thread follow-up) - five articles' `Last updated` bumped to 2026-09-07 (111th pass). `Wiki/INDEX.md` one-line descriptions refreshed for all five. Task Feedback Log (Part C): \"All Feedback\" data source queried directly (rows mode, sorted by Date Logged descending) - most recent row (10:26:52 UTC) already `Status: Processed`, matching the 19 rows the 110th pass closed out earlier the same day. No unprocessed rows found this pass, no Wiki edits triggered, no mismatches. No content removed or renamed from RAW. Source: KNOWLEDGE/mining_operations_kb/RAW via the librarian compile protocol. ---",
+  "generatedAt": "2026-09-11T10:25:38",
+  "date": "2026-09-11",
+  "runNumber": null,
+  "summary": "1. Total production landed within 1% of the daily target (22,754 BCM, -1.04%), but ore collapsed to -63.27% against target — the third near-zero ore day this fiscal cycle after Sep 5 (-90.6%) and Sep 8 (-93.7%), with the MTD ore cushion thinning from +10.39% (Sep 9) to +5.79% in a single day even as the total-line MTD gap itself narrowed slightly to -7.84%. 2. 2. Fleet-wide daily availability fell to 84.3% (core fleet 76.70%), driven by excavation dropping to 64.88% as EX-262 and EX-253 both stayed down the full 24 hours for a third straight day, joined by EX-340 and EX-263 losing several hours each to hydraulic and electric/aircon faults. 3. 3. A format check on [[fleet-availability-utilization]] found that the 112th-114th passes (Sep 7-9) omitted the per-fleet `| Fleet | Daily avail% | MTD avail% | Units | Total D.T hrs |` table this KB's own CLAUDE.md and the dashboard publish script both depend on — `publish_insights.py`'s `parse_fleet_au` function greps specifically for `| Excavator | ... |` and `| Dump Truck | ... |` table rows and takes the last match in the file, so without that table for three straight passes the published app's Excavator/Dump Truck fleet cards were almost certainly still showing Sep 6's stale figures (82.74%/91.90%) through the Sep 7-9 publish cycles. 4. The table is restored this pass. 5. Recommend a spot-check of the live app's fleet KPI cards to confirm whether they were in fact showing stale Sep 6 data through the Sep 7-9 publish windows, and to verify they now read Sep 10's 64.88%/91.85% figures once the next `wiki-insights-sync` publish runs. 6. EX-262's daily-report fault text still reads \"Cylinder Change Out and Hydraulic System,\" unchanged since 08-Sep, despite a same-day (10-Sep) email from JRAR's Jacobus Swart naming the actual work as a boom-welding job — worth a direct check on whether the daily report's fault-code text ever gets corrected to match. 7. No new INX-SUM survey workbook has landed for two full compile passes (114th, 115th) — Day 16 (Sep 10) remains the in-progress reading logged on 2026-09-10, longer than this article's typical one-day filing lag. 8. Worth a direct check with survey on whether Day 16 is still open or simply hasn't been filed. 9. A new `RAW/CIP/` folder appeared this pass with one file (`RE_ adw-2026-059 Launch of the ADW Re-Focusing Program.eml`) — the first CIP-labeled material this KB has seen. Left unread and out of scope for this dashboard-scoped run; flagging as a judgment call on whether `RAW/CIP/` should be added to the Important References scan going forward, since its subject line suggests site-level program content rather than routine production data. [[survey-volume-reconciliation]] was not updated — no new INX-SUM survey workbook has landed since the 114th pass. Important References and the Notion Task Feedback Log were not checked this pass; both are explicitly out of scope for this task's instructions (owned by the full-compile protocol described in the KB's own CLAUDE.md). `publish_insights.py` was NOT run this pass, per Step 3 — the `wiki-insights-sync` task publishes separately at 11:00/17:00. No content removed or renamed from RAW.",
   "kpis": [
     {
       "label": "MTD BCM",
-      "value": "205,716",
-      "delta": "-10.5% vs target",
+      "value": "339,047",
+      "delta": "-7.8% vs target",
       "good": false
     },
     {
       "label": "Survey Gap",
-      "value": "-23.6%",
+      "value": "-66.3%",
       "delta": "survey vs trucks MTD",
       "good": false
     },
     {
+      "label": "Crusher MTD",
+      "value": "28%",
+      "delta": "35,342 / 124,000 LCM",
+      "good": null
+    },
+    {
       "label": "Days Remain",
-      "value": "20",
+      "value": "14",
       "delta": "",
       "good": null
     }
@@ -114,23 +120,44 @@
       "actual": 20739,
       "target": 22993,
       "half": false
+    },
+    {
+      "date": "2026-09-07",
+      "label": "7 Sep",
+      "actual": 21266,
+      "target": 22993,
+      "half": false
+    },
+    {
+      "date": "2026-09-08",
+      "label": "8 Sep",
+      "actual": 22661,
+      "target": 22993,
+      "half": false
+    },
+    {
+      "date": "2026-09-10",
+      "label": "10 Sep",
+      "actual": 21669,
+      "target": 22993,
+      "half": false
     }
   ],
   "fleet": {
-    "availDaily": "86.45%",
-    "availMtd": "86.09%",
-    "exAvail": "76.2%",
+    "availDaily": "84.3%",
+    "availMtd": "86.12%",
+    "exAvail": "51.2%",
     "exUnits": 6,
-    "dtAvail": "93.5%",
-    "dtUnits": 21,
+    "dtAvail": "91.5%",
+    "dtUnits": 22,
     "excavators": [
       {
         "unit": "EX-340",
-        "avail": "95.8%"
+        "avail": "77.1%"
       },
       {
         "unit": "EX-262",
-        "avail": "95.8%"
+        "avail": "0.0%"
       },
       {
         "unit": "EX-253",
@@ -138,7 +165,7 @@
       },
       {
         "unit": "EX-263",
-        "avail": "91.7%"
+        "avail": "81.2%"
       },
       {
         "unit": "EX-247",
@@ -150,50 +177,120 @@
       }
     ],
     "exBasis": "5/6",
-    "pdfDate": "06-09",
-    "dtBasis": "21 active ≥8h"
+    "pdfDate": "10-09",
+    "dtBasis": "22 active ≥8h"
   },
   "equipment": [
     {
-      "unit": "EX-253",
+      "unit": "EX-262",
       "type": "Excavator",
-      "status": "returned",
+      "status": "warning",
       "avail": "",
       "util": "",
       "bd_hrs": "",
-      "note": "(down since 28-Jul, Swing Bearing Failure, Week 38 repair forecast), and if so, does \"electrical issues, opera",
+      "note": "'s boom-welding repair finish within the week, or does the standing \"cylinder change out\" fault text keep unde",
+      "comment": "Cylinder Change Out and Hydraulic  System"
+    },
+    {
+      "unit": "EX-253",
+      "type": "Excavator",
+      "status": "warning",
+      "avail": "",
+      "util": "",
+      "bd_hrs": "",
+      "note": "44d (Swing Bearing Failure, since 28-Jul)",
       "comment": "Swing Braring Failure"
+    },
+    {
+      "unit": "EX-340",
+      "type": "Excavator",
+      "status": "down",
+      "avail": "",
+      "util": "",
+      "bd_hrs": "",
+      "note": "losing 5.5h to hydraulic issues (suction manifold oil temperature high, day; hydraulic temperature high, night",
+      "comment": "A/C Not Working"
+    },
+    {
+      "unit": "EX-263",
+      "type": "Excavator",
+      "status": "warning",
+      "avail": "",
+      "util": "",
+      "bd_hrs": "",
+      "note": "losing 4.5h to electric/aircon faults (A/C not working, then A/C fan not working).",
+      "comment": ""
+    },
+    {
+      "unit": "EX-123",
+      "type": "Excavator",
+      "status": "warning",
+      "avail": "",
+      "util": "",
+      "bd_hrs": "",
+      "note": "all logged only short daily-inspection/GET stops (0-0.5h), keeping the fleet's non-faulted units clean.",
+      "comment": "Replace Bucket Tips"
+    },
+    {
+      "unit": "EX-247",
+      "type": "Excavator",
+      "status": "warning",
+      "avail": "",
+      "util": "",
+      "bd_hrs": "",
+      "note": "all logged only short daily-inspection/GET stops (0-0.5h), keeping the fleet's non-faulted units clean.",
+      "comment": "Install Bucket Tips"
+    },
+    {
+      "unit": "EX-398",
+      "type": "Excavator",
+      "status": "warning",
+      "avail": "",
+      "util": "",
+      "bd_hrs": "",
+      "note": "all logged only short daily-inspection/GET stops (0-0.5h), keeping the fleet's non-faulted units clean.",
+      "comment": ""
+    },
+    {
+      "unit": "DT-128",
+      "type": "Haul Truck",
+      "status": "warning",
+      "avail": "45.83%",
+      "util": "",
+      "bd_hrs": "",
+      "note": "was the day's worst performer at 13h down (45.83% avail) across four logged stoppages — engine oil leaking, a ",
+      "comment": "Engine Oil Leaking"
     }
   ],
   "followUps": [
     {
-      "priority": "MONITOR",
-      "title": "Part A",
-      "body": "Notion Meeting Notes Database queried for the last 7 days - one genuinely new result (the Weekly Review Meeting), the other results already ingested at the 110th pass earlier the same day.",
+      "priority": "HIGH",
+      "title": "EX-262's daily-report fault text still reads \"Cylinder Change Out and Hy...",
+      "body": "",
       "action": ""
     },
     {
       "priority": "MONITOR",
-      "title": "Part B gap-check",
-      "body": "(mtime scan of all of RAW against `_INGESTED.md`'s own write from the 110th pass, 2026-09-07 12:16): the new Weekly Review Meeting note, a re-touched diesel-refueling email thread (new replies), and one new broken-stock email (image-only, index-level registration). Important References folder re-checked: 37 files, no new or updated content since the 105th/107th/108th/109th/110th passes' last check.",
+      "title": "**Recommend a spot-check of the live app's fleet KPI cards** to confirm ...",
+      "body": "",
       "action": ""
     },
     {
       "priority": "MONITOR",
-      "title": "Wiki compile",
-      "body": "updated [[weekly-mining-plan]] (production shortfall trend, Stage 4/5 sequencing proposal, 2027 budget scenarios), [[fleet-availability-utilization]] (truck-availability metric dispute, Machine 253 discrepancy), [[crusher-feed-procedure]] (ROM boulder loader-delay figure, 5-metre blast-bench proposal), [[overspill-material-management]] (Stage 5 ramp spillage and clearance), [[refuelling-area-safety-pattern]] (diesel-refueling thread follow-up) - five articles' `Last updated` bumped to 2026-09-07 (111th pass). `Wiki/INDEX.md` one-line descriptions refreshed for all five.",
+      "title": "LT-200's true operational status remains unconfirmed; the Notion inbox t...",
+      "body": "",
       "action": ""
     },
     {
       "priority": "MONITOR",
-      "title": "Task Feedback Log (Part C)",
-      "body": "\"All Feedback\" data source queried directly (rows mode, sorted by Date Logged descending) - most recent row (10:26:52 UTC) already `Status: Processed`, matching the 19 rows the 110th pass closed out earlier the same day. No unprocessed rows found this pass, no Wiki edits triggered, no mismatches.",
+      "title": "No new INX-SUM survey workbook has landed for two full compile passes (1...",
+      "body": "",
       "action": ""
     },
     {
       "priority": "MONITOR",
-      "title": "Tasks created (Notion inbox, Status: Inbox, judicious/non-duplicate only)",
-      "body": "\"Confirm whether Machine 253 in the Sep 7 weekly review is EX-253 and reconcile the electrical-issue status [ADW]\" - new, no equivalent already in the inbox. No content removed or renamed from RAW. Source: KNOWLEDGE/mining_operations_kb/RAW via the librarian compile protocol. ---",
+      "title": "A new `RAW/CIP/` folder appeared this pass with one file (`RE_ adw-2026-...",
+      "body": "",
       "action": ""
     }
   ]
