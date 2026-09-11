@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-09-11T11:11:32",
+  "generatedAt": "2026-09-11T17:06:35",
   "date": "2026-09-11",
   "runNumber": null,
-  "summary": "1. Total production landed within 1% of the daily target (22,754 BCM, -1.04%), but ore collapsed to -63.27% against target — the third near-zero ore day this fiscal cycle after Sep 5 (-90.6%) and Sep 8 (-93.7%), with the MTD ore cushion thinning from +10.39% (Sep 9) to +5.79% in a single day even as the total-line MTD gap itself narrowed slightly to -7.84%. 2. 2. Fleet-wide daily availability fell to 84.3% (core fleet 76.70%), driven by excavation dropping to 64.88% as EX-262 and EX-253 both stayed down the full 24 hours for a third straight day, joined by EX-340 and EX-263 losing several hours each to hydraulic and electric/aircon faults. 3. 3. A format check on [[fleet-availability-utilization]] found that the 112th-114th passes (Sep 7-9) omitted the per-fleet `| Fleet | Daily avail% | MTD avail% | Units | Total D.T hrs |` table this KB's own CLAUDE.md and the dashboard publish script both depend on — `publish_insights.py`'s `parse_fleet_au` function greps specifically for `| Excavator | ... |` and `| Dump Truck | ... |` table rows and takes the last match in the file, so without that table for three straight passes the published app's Excavator/Dump Truck fleet cards were almost certainly still showing Sep 6's stale figures (82.74%/91.90%) through the Sep 7-9 publish cycles. 4. The table is restored this pass. 5. Recommend a spot-check of the live app's fleet KPI cards to confirm whether they were in fact showing stale Sep 6 data through the Sep 7-9 publish windows, and to verify they now read Sep 10's 64.88%/91.85% figures once the next `wiki-insights-sync` publish runs. 6. EX-262's daily-report fault text still reads \"Cylinder Change Out and Hydraulic System,\" unchanged since 08-Sep, despite a same-day (10-Sep) email from JRAR's Jacobus Swart naming the actual work as a boom-welding job — worth a direct check on whether the daily report's fault-code text ever gets corrected to match. 7. No new INX-SUM survey workbook has landed for two full compile passes (114th, 115th) — Day 16 (Sep 10) remains the in-progress reading logged on 2026-09-10, longer than this article's typical one-day filing lag. 8. Worth a direct check with survey on whether Day 16 is still open or simply hasn't been filed. 9. A new `RAW/CIP/` folder appeared this pass with one file (`RE_ adw-2026-059 Launch of the ADW Re-Focusing Program.eml`) — the first CIP-labeled material this KB has seen. Left unread and out of scope for this dashboard-scoped run; flagging as a judgment call on whether `RAW/CIP/` should be added to the Important References scan going forward, since its subject line suggests site-level program content rather than routine production data. [[survey-volume-reconciliation]] was not updated — no new INX-SUM survey workbook has landed since the 114th pass. Important References and the Notion Task Feedback Log were not checked this pass; both are explicitly out of scope for this task's instructions (owned by the full-compile protocol described in the KB's own CLAUDE.md). `publish_insights.py` was NOT run this pass, per Step 3 — the `wiki-insights-sync` task publishes separately at 11:00/17:00. No content removed or renamed from RAW.",
+  "summary": "1. Day 16 (Sep 10) finalized unchanged at -9,604 BCM (-66.31%, the cycle's worst). 2. Day 17 (Sep 11, in progress) cuts sharply to -5,080 BCM (-28.74%) — the first reading below 60% in four days, though the workbook's loading-location comment is unchanged. 3. MTD survey sits -52,439 BCM (-18.3%) against trucked volume, and MTD survey vs target is -79,048 BCM (-27.58%) — only 42.98% of the 666,785 BCM monthly target with 14 days left, pushing the required daily rate to 27,155 BCM (up 26% from 21,509 at cycle start). 4. The 10-Sep HSE meeting names the mechanism directly for the first time: roughly 23,000 BCM of overspill on the ramp alone, 111,000 BCM accumulated total, none of it picked up in survey. 5. Maaden's utilization escalation (Katongo Kangwa, 8-Sep, High importance) is three days old and still unanswered. 6. His arithmetic: 16-17 productive hrs/day = 66.7-70.8% utilization; reaching 80% needs 19.2 hrs, meaning total daily delay must drop from 7-8 hrs to under 4.8, with meal break (2.0 hr) and \"others\" (1.0 hr) alone holding 3 of the 4 hours to find. 7. His delay-breakdown assumption is more favorable than the site's own 10-Sep report (core fleet availability 76.70%, excavation 64.88%) — accepting his framing as-is concedes a maintenance position better than the data supports. 8. This sat unread in `RAW/CIP/` rather than Important References until this pass (see CIP scope note below). 9. Stage 4 ramp running at 16% against a 10% maximum allowable gradient — the same 16% figure was logged against the Stage 5 ramp five weeks ago (103rd pass). One number, two stage labels; not resolvable from RAW as filed. Production workbooks show no Sep 11 data yet — Sept (11) tabs are empty templates or zero-row formula skeletons. Sep 10 figures carried forward unchanged from the 115th pass. No 11-Sep Daily Availability report has landed either. Fleet, tire, refuelling and workshop detail from the HSE meeting: trucks idle 6-6.5 hrs/shift against a 2.5-3 hr in-fleet best (single-lane access queuing at 50+ sec/stop named as the top contributor); tire availability 80% WTD/75% MTD with the site's one tire technician now on leave; go-line ran down to a 35,000 L tank with no delivery buffer; Friday 11-Sep workshop bookings conflict between the HSE meeting note and the planning email on which unit gets the 2,000-hr service. Written verbatim to `RAW/Meeting Notes/`, footnote source-anchors and `<empty-block/>` tags stripped per convention, registered in `_INGESTED.md`. Important References folder re-checked: 37 files, no new or updated content since the 105th-113th passes' last check. The folder holds 8 management-level files (client escalation, Director memorandum, GM directive thread, cost-exercise study, HIRM/PTO training); leaving it out of Important References is what let the Kangwa utilization escalation sit unread for three days. The per-fleet `| Excavator |` / `| Dump Truck |` availability table in [[fleet-availability-utilization]] was deliberately left at the 115th pass's Sep 10 figures — no new availability report landed this pass, so the dashboard publish script continues reading current data. Part C (Task Feedback Log): \"All Feedback\" data source queried directly (rows mode, full scan, 62 rows; cross-checked with a SQL WHERE-Status-not-Processed query) — zero unprocessed rows. All rows already carried Status = Processed from prior passes. No Wiki edits, no mismatches, no rows to mark. No content removed or renamed from RAW. ### Open items for Peter Confirm the CIP-folder-in-Important-References scope call above. Same 16% ramp gradient figure has now been attached to two different stages (Stage 5 at the 103rd pass, Stage 4 now) — needs a direct check on which stage it actually belongs to. Friday 11-Sep workshop booking conflict between the HSE meeting note (M262: 2,000-hr service) and the planning email (EX-123: 2,000-hr service, EX-262: boom welding) — affects how EX-262's downtime gets attributed.",
   "kpis": [
     {
       "label": "MTD BCM",
@@ -12,7 +12,7 @@
     },
     {
       "label": "Survey Gap",
-      "value": "-66.3%",
+      "value": "-18.3%",
       "delta": "survey vs trucks MTD",
       "good": false
     },
@@ -189,114 +189,44 @@
   },
   "equipment": [
     {
-      "unit": "EX-262",
-      "type": "Excavator",
-      "status": "warning",
+      "unit": "PC-263",
+      "type": "",
+      "status": "scheduled",
       "avail": "",
       "util": "",
       "bd_hrs": "",
-      "note": "'s boom-welding repair finish within the week, or does the standing \"cylinder change out\" fault text keep unde",
-      "comment": "Cylinder Change Out and Hydraulic  System"
-    },
-    {
-      "unit": "EX-253",
-      "type": "Excavator",
-      "status": "warning",
-      "avail": "",
-      "util": "",
-      "bd_hrs": "",
-      "note": "44d (Swing Bearing Failure, since 28-Jul)",
-      "comment": "Swing Braring Failure"
-    },
-    {
-      "unit": "EX-340",
-      "type": "Excavator",
-      "status": "down",
-      "avail": "",
-      "util": "",
-      "bd_hrs": "",
-      "note": "losing 5.5h to hydraulic issues (suction manifold oil temperature high, day; hydraulic temperature high, night",
-      "comment": "A/C Not Working"
-    },
-    {
-      "unit": "EX-263",
-      "type": "Excavator",
-      "status": "warning",
-      "avail": "",
-      "util": "",
-      "bd_hrs": "",
-      "note": "losing 4.5h to electric/aircon faults (A/C not working, then A/C fan not working).",
+      "note": "lost about 9.5 hours to hydraulic issues last week. The wheel dozer is due back end of September (2-3 weeks), ",
       "comment": ""
-    },
-    {
-      "unit": "EX-123",
-      "type": "Excavator",
-      "status": "warning",
-      "avail": "",
-      "util": "",
-      "bd_hrs": "",
-      "note": "all logged only short daily-inspection/GET stops (0-0.5h), keeping the fleet's non-faulted units clean.",
-      "comment": "Replace Bucket Tips"
-    },
-    {
-      "unit": "EX-247",
-      "type": "Excavator",
-      "status": "warning",
-      "avail": "",
-      "util": "",
-      "bd_hrs": "",
-      "note": "all logged only short daily-inspection/GET stops (0-0.5h), keeping the fleet's non-faulted units clean.",
-      "comment": "Install Bucket Tips"
-    },
-    {
-      "unit": "EX-398",
-      "type": "Excavator",
-      "status": "warning",
-      "avail": "",
-      "util": "",
-      "bd_hrs": "",
-      "note": "all logged only short daily-inspection/GET stops (0-0.5h), keeping the fleet's non-faulted units clean.",
-      "comment": ""
-    },
-    {
-      "unit": "DT-128",
-      "type": "Haul Truck",
-      "status": "warning",
-      "avail": "45.83%",
-      "util": "",
-      "bd_hrs": "",
-      "note": "was the day's worst performer at 13h down (45.83% avail) across four logged stoppages — engine oil leaking, a ",
-      "comment": "Engine Oil Leaking"
     }
   ],
   "followUps": [
     {
       "priority": "HIGH",
-      "title": "EX-262's daily-report fault text still reads \"Cylinder Change Out and Hy...",
+      "title": "**Maaden's utilization escalation (Katongo Kangwa, 8-Sep, High importanc...",
+      "body": "",
+      "action": ""
+    },
+    {
+      "priority": "HIGH",
+      "title": "**Stage 4 ramp running at 16% against a 10% maximum allowable gradient**...",
+      "body": "",
+      "action": ""
+    },
+    {
+      "priority": "HIGH",
+      "title": "Fleet, tire, refuelling and workshop detail from the HSE meeting: trucks...",
       "body": "",
       "action": ""
     },
     {
       "priority": "MONITOR",
-      "title": "**Recommend a spot-check of the live app's fleet KPI cards** to confirm ...",
+      "title": "**Two new meeting notes (Part A), both 10-Sep:** an open-pit planning me...",
       "body": "",
       "action": ""
     },
     {
       "priority": "MONITOR",
-      "title": "LT-200's true operational status remains unconfirmed; the Notion inbox t...",
-      "body": "",
-      "action": ""
-    },
-    {
-      "priority": "MONITOR",
-      "title": "No new INX-SUM survey workbook has landed for two full compile passes (1...",
-      "body": "",
-      "action": ""
-    },
-    {
-      "priority": "MONITOR",
-      "title": "A new `RAW/CIP/` folder appeared this pass with one file (`RE_ adw-2026-...",
+      "title": "**Production workbooks show no Sep 11 data yet** — Sept (11) tabs are em...",
       "body": "",
       "action": ""
     }
