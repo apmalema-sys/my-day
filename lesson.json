@@ -1,15 +1,15 @@
 {
-  "date": "2026-09-07",
-  "topic": "Lost GET — Reporting and Recovery",
-  "title": "Lost GET — Reporting and Recovery",
-  "body": "One missed bucket tooth that rides a truck to the ROM pad and into the primary crusher turns into liner damage, days of plant downtime, and a stopped feed — all from something that costs nothing to catch at the loading face. At ADW that damage bill dwarfs the few minutes it takes to stop and check.",
+  "date": "2026-09-11",
+  "topic": "Loading, Hauling, and Tipping",
+  "title": "Loading, Hauling, and Tipping",
+  "body": "Most of the production loss on a shift — backloading, tire damage, a slow cycle — traces back to the same handful of discipline gaps at the loading face and the dump. A crew that keeps spotting, face-loading, and berm discipline tight runs a cleaner, faster cycle without adding a single truck.",
   "keyPoints": [
-    "Stop first, ask questions second. Any suspected GET loss halts that machine immediately — don't finish the pass \"just to be sure.\"",
-    "Isolate and report fast: supervisor cordons the area, logs time/location/GPS, and pulls in Survey, Drill & Blast, Load & Haul, and Safety together — not sequentially.",
-    "Track the material, not just the search. If it's not found on the spot, the muck's destination (pit → stockpile → ROM pad → crusher) gets documented and followed.",
-    "The ROM pad loader operator is the last line of defense — every load gets eyeballed for the missing piece before it reaches the crusher.",
-    "Prevention beats recovery: pre-start and daily GET checks, and training operators to recognize the feel/sound of a lost tooth, stop most of these before they start."
+    "Spotting is a fixed sequence, not a guess: single horn means stop, double horn means go, and the bucket position — not the excavator tracks — is the reference the truck reverses to.",
+    "Load a straight face, always. Pocket loading is not allowed, and side loading needs written site manager consent plus a risk assessment and supervision — it's an exception, never routine.",
+    "Backloading has six known causes: too many trucks for the cycle, poor fragmentation, face cleanup in progress, inconsistent spotting, worn or bare GET, or side/pocket loading against procedure. Diagnose which one before you pull a truck off the face.",
+    "No tipping without a berm built to at least half the rear-wheel height. Short berm means no tipping until it's rebuilt — that's the control that stops run-off, not driver judgment.",
+    "On ramps and declines: retarder or exhaust brake to hold speed, correct gear engaged, no U-turns except at switchback tires, no parking on an incline unless the truck is broken down."
   ],
-  "apply": "Any excavator or loader working fresh muck near the crusher feed — a quick visual GET check before it starts loading is cheaper than an afternoon with the crusher down.",
-  "generatedAt": "2026-09-07T19:49:30"
+  "apply": "Walk a loading pad edge yourself rather than trusting the report — the two-meter setback from the crest is an easy one for an operator to creep on over a shift, and it's exactly the kind of gap that doesn't show up until someone's standing there.",
+  "generatedAt": "2026-09-11T10:18:47"
 }
