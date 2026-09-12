@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-11T17:06:35",
+  "generatedAt": "2026-09-12T11:06:57",
   "date": "2026-09-11",
   "runNumber": null,
   "summary": "1. Day 16 (Sep 10) finalized unchanged at -9,604 BCM (-66.31%, the cycle's worst). 2. Day 17 (Sep 11, in progress) cuts sharply to -5,080 BCM (-28.74%) — the first reading below 60% in four days, though the workbook's loading-location comment is unchanged. 3. MTD survey sits -52,439 BCM (-18.3%) against trucked volume, and MTD survey vs target is -79,048 BCM (-27.58%) — only 42.98% of the 666,785 BCM monthly target with 14 days left, pushing the required daily rate to 27,155 BCM (up 26% from 21,509 at cycle start). 4. The 10-Sep HSE meeting names the mechanism directly for the first time: roughly 23,000 BCM of overspill on the ramp alone, 111,000 BCM accumulated total, none of it picked up in survey. 5. Maaden's utilization escalation (Katongo Kangwa, 8-Sep, High importance) is three days old and still unanswered. 6. His arithmetic: 16-17 productive hrs/day = 66.7-70.8% utilization; reaching 80% needs 19.2 hrs, meaning total daily delay must drop from 7-8 hrs to under 4.8, with meal break (2.0 hr) and \"others\" (1.0 hr) alone holding 3 of the 4 hours to find. 7. His delay-breakdown assumption is more favorable than the site's own 10-Sep report (core fleet availability 76.70%, excavation 64.88%) — accepting his framing as-is concedes a maintenance position better than the data supports. 8. This sat unread in `RAW/CIP/` rather than Important References until this pass (see CIP scope note below). 9. Stage 4 ramp running at 16% against a 10% maximum allowable gradient — the same 16% figure was logged against the Stage 5 ramp five weeks ago (103rd pass). One number, two stage labels; not resolvable from RAW as filed. Production workbooks show no Sep 11 data yet — Sept (11) tabs are empty templates or zero-row formula skeletons. Sep 10 figures carried forward unchanged from the 115th pass. No 11-Sep Daily Availability report has landed either. Fleet, tire, refuelling and workshop detail from the HSE meeting: trucks idle 6-6.5 hrs/shift against a 2.5-3 hr in-fleet best (single-lane access queuing at 50+ sec/stop named as the top contributor); tire availability 80% WTD/75% MTD with the site's one tire technician now on leave; go-line ran down to a 35,000 L tank with no delivery buffer; Friday 11-Sep workshop bookings conflict between the HSE meeting note and the planning email on which unit gets the 2,000-hr service. Written verbatim to `RAW/Meeting Notes/`, footnote source-anchors and `<empty-block/>` tags stripped per convention, registered in `_INGESTED.md`. Important References folder re-checked: 37 files, no new or updated content since the 105th-113th passes' last check. The folder holds 8 management-level files (client escalation, Director memorandum, GM directive thread, cost-exercise study, HIRM/PTO training); leaving it out of Important References is what let the Kangwa utilization escalation sit unread for three days. The per-fleet `| Excavator |` / `| Dump Truck |` availability table in [[fleet-availability-utilization]] was deliberately left at the 115th pass's Sep 10 figures — no new availability report landed this pass, so the dashboard publish script continues reading current data. Part C (Task Feedback Log): \"All Feedback\" data source queried directly (rows mode, full scan, 62 rows; cross-checked with a SQL WHERE-Status-not-Processed query) — zero unprocessed rows. All rows already carried Status = Processed from prior passes. No Wiki edits, no mismatches, no rows to mark. No content removed or renamed from RAW. ### Open items for Peter Confirm the CIP-folder-in-Important-References scope call above. Same 16% ramp gradient figure has now been attached to two different stages (Stage 5 at the 103rd pass, Stage 4 now) — needs a direct check on which stage it actually belongs to. Friday 11-Sep workshop booking conflict between the HSE meeting note (M262: 2,000-hr service) and the planning email (EX-123: 2,000-hr service, EX-262: boom welding) — affects how EX-262's downtime gets attributed.",
@@ -153,18 +153,18 @@
   "fleet": {
     "availDaily": "84.3%",
     "availMtd": "86.12%",
-    "exAvail": "51.2%",
+    "exAvail": "77.5%",
     "exUnits": 6,
-    "dtAvail": "91.5%",
-    "dtUnits": 22,
+    "dtAvail": "99.2%",
+    "dtUnits": 20,
     "excavators": [
       {
         "unit": "EX-340",
-        "avail": "77.1%"
+        "avail": "97.9%"
       },
       {
         "unit": "EX-262",
-        "avail": "0.0%"
+        "avail": "93.8%"
       },
       {
         "unit": "EX-253",
@@ -172,7 +172,7 @@
       },
       {
         "unit": "EX-263",
-        "avail": "81.2%"
+        "avail": "97.9%"
       },
       {
         "unit": "EX-247",
@@ -184,8 +184,8 @@
       }
     ],
     "exBasis": "5/6",
-    "pdfDate": "10-09",
-    "dtBasis": "22 active ≥8h"
+    "pdfDate": "11-09",
+    "dtBasis": "20 active ≥8h"
   },
   "equipment": [
     {
