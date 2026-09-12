@@ -1,15 +1,15 @@
 {
-  "date": "2026-09-11",
-  "topic": "Loading, Hauling, and Tipping",
-  "title": "Loading, Hauling, and Tipping",
-  "body": "Most of the production loss on a shift — backloading, tire damage, a slow cycle — traces back to the same handful of discipline gaps at the loading face and the dump. A crew that keeps spotting, face-loading, and berm discipline tight runs a cleaner, faster cycle without adding a single truck.",
+  "date": "2026-09-12",
+  "topic": "Lost GET — Reporting and Recovery",
+  "title": "Lost GET — Reporting and Recovery",
+  "body": "One missed tooth that rides a truck to the ROM pad and into the primary crusher turns into liner damage, hours of plant downtime, and a jammed-liner repair that's a safety event in its own right. At ADW the cost of stopping the dig for ten minutes is always smaller than the cost of letting a lost tooth pass through — the whole procedure exists to make sure crews act on that math in the moment, not after the fact.",
   "keyPoints": [
-    "Spotting is a fixed sequence, not a guess: single horn means stop, double horn means go, and the bucket position — not the excavator tracks — is the reference the truck reverses to.",
-    "Load a straight face, always. Pocket loading is not allowed, and side loading needs written site manager consent plus a risk assessment and supervision — it's an exception, never routine.",
-    "Backloading has six known causes: too many trucks for the cycle, poor fragmentation, face cleanup in progress, inconsistent spotting, worn or bare GET, or side/pocket loading against procedure. Diagnose which one before you pull a truck off the face.",
-    "No tipping without a berm built to at least half the rear-wheel height. Short berm means no tipping until it's rebuilt — that's the control that stops run-off, not driver judgment.",
-    "On ramps and declines: retarder or exhaust brake to hold speed, correct gear engaged, no U-turns except at switchback tires, no parking on an incline unless the truck is broken down."
+    "Stop first, every time. Any suspected GET loss means the equipment stops immediately — no \"finish the pass and check after.\"",
+    "Report with specifics: equipment ID, operator, GPS location, and exactly what and how many pieces are missing, notified to Survey, Drill & Blast, Load & Haul, and Safety together.",
+    "Recovery is controlled, not a scramble — visual search, GPS-pinpointed digging, and material tracked to wherever it ends up (pit, stockpile, ROM pad, crusher) if it isn't found on the spot.",
+    "If it's not recovered before the material moves on, the loader operator feeding the crusher is the last line of defense — every load gets eyeballed for the missing piece at the ROM pad.",
+    "Prevention beats recovery: pre-start and daily GET checks, full documentation on every change-out (including single-tooth swaps), and operators trained to recognize the feel and sound of a lost tooth or lip."
   ],
-  "apply": "Walk a loading pad edge yourself rather than trusting the report — the two-meter setback from the crest is an easy one for an operator to creep on over a shift, and it's exactly the kind of gap that doesn't show up until someone's standing there.",
-  "generatedAt": "2026-09-11T10:18:47"
+  "apply": "Any excavator or loader working a fresh muck pile after blasting — a lost tooth in broken rock is far easier to miss than one on a clean floor, so that's where a stop-and-check habit pays off.",
+  "generatedAt": "2026-09-12T10:29:59"
 }
