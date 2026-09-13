@@ -1,15 +1,15 @@
 {
-  "date": "2026-09-12",
-  "topic": "Lost GET — Reporting and Recovery",
-  "title": "Lost GET — Reporting and Recovery",
-  "body": "One missed tooth that rides a truck to the ROM pad and into the primary crusher turns into liner damage, hours of plant downtime, and a jammed-liner repair that's a safety event in its own right. At ADW the cost of stopping the dig for ten minutes is always smaller than the cost of letting a lost tooth pass through — the whole procedure exists to make sure crews act on that math in the moment, not after the fact.",
+  "date": "2026-09-13",
+  "topic": "LHD Cycle Evaluation",
+  "title": "LHD Cycle Evaluation",
+  "body": "Every minute lost in load, haul, dump, or return is a minute the fleet isn't moving material — and at ADW right now, with utilization gaps of 6-6.5 idle hours per shift against a 2.5-3 hour best-case, those minutes are the difference between hitting daily target and another shortfall meeting. You can't fix a bottleneck you haven't located.",
   "keyPoints": [
-    "Stop first, every time. Any suspected GET loss means the equipment stops immediately — no \"finish the pass and check after.\"",
-    "Report with specifics: equipment ID, operator, GPS location, and exactly what and how many pieces are missing, notified to Survey, Drill & Blast, Load & Haul, and Safety together.",
-    "Recovery is controlled, not a scramble — visual search, GPS-pinpointed digging, and material tracked to wherever it ends up (pit, stockpile, ROM pad, crusher) if it isn't found on the spot.",
-    "If it's not recovered before the material moves on, the loader operator feeding the crusher is the last line of defense — every load gets eyeballed for the missing piece at the ROM pad.",
-    "Prevention beats recovery: pre-start and daily GET checks, full documentation on every change-out (including single-tooth swaps), and operators trained to recognize the feel and sound of a lost tooth or lip."
+    "The cycle breaks into five stages — load, haul (loaded), dump, return (empty), idle. Time each one separately, not just total cycle time. Aggregate numbers hide where the waste actually lives.",
+    "Loading-phase waste (under-filled buckets, oversized rock from poor fragmentation, loader misalignment) shows up downstream as low payload and slow cycles — trace it back to the face, not the truck.",
+    "Dumping-phase delays are often a dozer/tip-face problem, not a truck problem — poor floor level or queuing at the dump adds dead time that looks like a hauling issue.",
+    "Operator variability is the single biggest lever ADW's own Kaizen work identified — two operators on the same route, same truck, can post meaningfully different cycle times. That's a coaching gap, not an equipment gap.",
+    "ADW doesn't currently capture per-stage cycle time in any workbook — only aggregate distance/time and delay-reason codes. A one-shift manual time-motion study by a foreman is the only way to see the real breakdown right now."
   ],
-  "apply": "Any excavator or loader working a fresh muck pile after blasting — a lost tooth in broken rock is far easier to miss than one on a clean floor, so that's where a stop-and-check habit pays off.",
-  "generatedAt": "2026-09-12T10:29:59"
+  "apply": "Next time you're at a loading face or dump point, time one full cycle by stage on your phone — if idle or queue time is eating more than load or haul time, that's your bottleneck, not the truck count.",
+  "generatedAt": "2026-09-13T14:41:40"
 }
