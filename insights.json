@@ -1,13 +1,13 @@
 {
-  "generatedAt": "2026-09-12T17:27:18",
-  "date": "2026-09-12",
+  "generatedAt": "2026-09-13T15:06:40",
+  "date": "2026-09-13",
   "runNumber": null,
-  "summary": "1. Total production +5.17% vs target, waste -5.32%. 2. MTD narrows to -7.4% (from -7.84%); MTD ore widens to +7.93%. 3. EX-262 recovers same day, after roughly 3.5 days down (cylinder change out and hydraulic system, since 08-Sep). 4. Overall fleet daily availability climbs to 85.31% (MTD 86.04%), Core Fleet Daily 78.66%. 5. Dump Trucks post 95.95% daily availability, +10.95 points over MTD. 6. Survey Day 18 (Sep 12, in progress) flips to the first positive daily gap since Sep 4: trucks 12,090 / survey 16,020, gap +3,930 BCM (+24.53%) — survey reads above the truck tally for the first time in two weeks. 7. MTD survey-vs-truck gap narrows to -48,509 BCM (-16.03%) from -18.3% at the 116th pass. 8. Abel Eben Pienaar (Maaden/JRAR leadership) escalates the survey gap directly to Peter, calling the figures \"NOT acceptable,\" asking that the dispatch-admin capture go live 12-Sep, and that load counts be physically checked. 9. The weekly operational review deck (week ending 11-Sep) surfaces a 33,047 BCM broken-stock reconciliation gap between the client-report figure (164,371 BCM) and the deck's own survey-based Stage 4D/5 split (197,418 BCM), which the deck itself flags for reconciliation before a rehandle plan. Six standing open questions resolve or partially resolve via the Task Feedback Log (Part C), none of them mismatches: the Sep 7 10.5-hour crusher \"Maintenance\" stop was planned; the Day 14+ survey gap's loading-location/overspill cause is confirmed (not a residual reporting-integrity effect); the 870-B501 grade control \"9,945 BCM\" figure is a units error (should read tons); the Stage 4 ramp's 16% gradient issue is closed by taking the ramp out of service rather than regrading it (Stage 4-vs-Stage 5 naming ambiguity stays open); LT-200's long-standing-down status is closed by instruction to stop chasing it, not by a confirmed root cause; the external-survey-audit SOW has moved to supplier bidding (discipline choice not restated). Two rows confirmed already-Done tasks with no KB-relevant open question (a personal SGR-refund follow-up, out of scope; a DT-operator leave-papers task, which surfaces the new HR RAW file below). New HR file: `RAW/HR/DT Leave Overlap Tracker.xlsx` — October dump-truck operator arrivals/departures, net-balanced (9 in, 9 out) but with two dates showing departures with no confirmed same-day arrival (20-Oct, 26-Oct). Cross-referenced against the same-day Task Feedback Log reply committing to staggered departures. Written verbatim to `RAW/Meeting Notes/`, footnote source-anchors stripped per convention, registered in `_INGESTED.md`. Important References folder re-checked: 37 files, no new content since the 104th-116th passes' last check. CIP folder re-checked: 8 files, no new content since the 116th pass. Part C (Task Feedback Log): 8 unprocessed rows (all Status blank, all logged 2026-09-12 — the known blank-Status gap, not the \"New\" view). No task/feedback mismatches. No content removed or renamed from RAW. ---",
+  "summary": "1. Sep 12 production narrowly beat target (+0.58%, 23,126 BCM) but ore missed by 8.71%, ending Sep 11's three-day ore-beat run; MTD total gap widened slightly to -6.99% while MTD ore narrowed to +6.97%, and crusher stockpile throughput remains under a third of the linear plan pace (29.79% MTD) after a 7h33m maintenance stop. 2. 2. Survey Day 18 (Sep 12) finalized at trucks 23,126 / survey 27,719, gap +4,593 BCM (+16.57%) — higher than the in-progress reading logged a day earlier and the second consecutive positive daily gap, with the comment field reading \"All EXC is inside the survey calculation area\" for the first time since early June, which narrowed the cumulative MTD survey-vs-truck gap to -13.29%. 3. 3. Fleet availability eased to 84.67% daily (core fleet 76.86%, down from Sep 11's 78.66%) as EX-102 and DR-140 both recovered same day while EX-327 (support excavator) opened a fresh full-day fault, and Peter's own weekly HOD safety round named four separate missing-barrier findings — Finger 3's uncontained overflow, the Southwest Dump's missing guiding beams, and two locations of unbarricaded parked equipment — as one standards-and-verification gap rather than four unrelated incidents. 4. Confirm the survey boundary correction holds for a third consecutive day before treating it as a genuine change in loading practice rather than a two-day exception inside a longer negative run. 5. Install the Finger 3 catchment berm and the Southwest Dump guiding beams before further tipping on those faces — the HOD round's two highest-consequence findings, both flagged as preventable by a weekly edge-protection checklist that does not yet exist. 6. Still no record of a reply to Abel Pienaar's Sep 12 escalation on the survey dispute, or confirmation the dispatch-admin capture implementation went live as he was told to expect. 7. EX-327 (support excavator) opened its first full day down the same day EX-102 — the fleet's other Support Excavator unit — recovered; worth watching whether this is an isolated fault or a pattern worth its own tracking line. 8. Important References, the CIP folder, and the Notion Task Feedback Log were not checked this pass — those run under the separate full-scope \"compile mining operations KB\" protocol. ### Wiki compile Updated [[daily-production-report]] (Sep 12 production/MTD/crusher/drilling detail, EX-102 and DR-140 recoveries, EX-327 fresh fault, Day 18 survey finalization), [[fleet-availability-utilization]] (Sep 12 fleet-wide Daily/MTD table, per-unit fault detail, EX-102/DR-140/LT-285 recoveries, EX-327 fresh fault), [[survey-volume-reconciliation]] (Day 18 finalized reading, RESOLVED marker on the in-progress-vs-finalized open question, MTD-vs-target detail), [[safety-inspection-patterns]] (new HOD safety observation round — five ranked findings, root-cause framing, three standards recommendations) — `Last updated` bumped to 2026-09-13 (118th pass) on all four. 9. No content removed or renamed from RAW. ---",
   "kpis": [
     {
       "label": "MTD BCM",
-      "value": "351,137",
-      "delta": "-7.4% vs target",
+      "value": "374,263",
+      "delta": "-7.0% vs target",
       "good": false
     },
     {
@@ -18,13 +18,13 @@
     },
     {
       "label": "Crusher MTD",
-      "value": "29%",
-      "delta": "35,620 / 124,000 LCM",
+      "value": "30%",
+      "delta": "36,942 / 124,000 LCM",
       "good": null
     },
     {
       "label": "Days Remain",
-      "value": "13",
+      "value": "12",
       "delta": "",
       "good": null
     }
@@ -155,23 +155,30 @@
       "actual": 12090,
       "target": 11496,
       "half": true
+    },
+    {
+      "date": "2026-09-12",
+      "label": "12 Sep",
+      "actual": 23126,
+      "target": 22993,
+      "half": false
     }
   ],
   "fleet": {
-    "availDaily": "85.31%",
-    "availMtd": "86.04%",
-    "exAvail": "77.5%",
+    "availDaily": "84.67%",
+    "availMtd": "85.93%",
+    "exAvail": "63.8%",
     "exUnits": 6,
-    "dtAvail": "99.2%",
-    "dtUnits": 20,
+    "dtAvail": "96.6%",
+    "dtUnits": 22,
     "excavators": [
       {
         "unit": "EX-340",
-        "avail": "97.9%"
+        "avail": "50.0%"
       },
       {
         "unit": "EX-262",
-        "avail": "93.8%"
+        "avail": "95.8%"
       },
       {
         "unit": "EX-253",
@@ -179,11 +186,11 @@
       },
       {
         "unit": "EX-263",
-        "avail": "97.9%"
+        "avail": "79.2%"
       },
       {
         "unit": "EX-247",
-        "avail": "97.9%"
+        "avail": "93.8%"
       },
       {
         "unit": "EX-1200",
@@ -191,119 +198,113 @@
       }
     ],
     "exBasis": "5/6",
-    "pdfDate": "11-09",
-    "dtBasis": "20 active ≥8h"
+    "pdfDate": "12-09",
+    "dtBasis": "22 active ≥8h"
   },
   "equipment": [
     {
-      "unit": "EX-262",
+      "unit": "EX-102",
       "type": "Excavator",
-      "status": "scheduled",
+      "status": "warning",
       "avail": "",
       "util": "",
       "bd_hrs": "",
-      "note": "hold in service after its Sep 11 recovery, or does the unfixed underlying repair (the daily report's fault tex",
+      "note": "recovers — is this an isolated hammer-noise fault or does the Support Excavator fleet have a recurring pattern",
+      "comment": "Boom Cylinder Jack Remove"
+    },
+    {
+      "unit": "DR-140",
+      "type": "Drill",
+      "status": "down",
+      "avail": "",
+      "util": "",
+      "bd_hrs": "",
+      "note": "running with zero downtime. **",
       "comment": ""
     },
     {
-      "unit": "EX-253",
+      "unit": "EX-327",
       "type": "Excavator",
       "status": "down",
       "avail": "",
       "util": "",
       "bd_hrs": "",
-      "note": "and EX-262 (recovered same day this pass, see above).",
-      "comment": "Swing Braring Failure"
+      "note": "opens the same day",
+      "comment": "Noise From Hammer"
     },
     {
-      "unit": "EX-123",
-      "type": "Excavator",
+      "unit": "DR-125",
+      "type": "Drill",
       "status": "down",
       "avail": "",
       "util": "",
       "bd_hrs": "",
-      "note": "has cleared and rejoined loading (block 524, 4 trucks)",
+      "note": "(each logging only short daily-inspection stops) plus",
       "comment": ""
     },
     {
-      "unit": "EX-247",
-      "type": "Excavator",
-      "status": "down",
-      "avail": "97.92%",
-      "util": "",
-      "bd_hrs": "",
-      "note": "all logged only short daily-inspection/GET stops (0.5h each, 97.92%)",
-      "comment": "2000 Hrs Service"
-    },
-    {
-      "unit": "EX-263",
-      "type": "Excavator",
+      "unit": "DR-139",
+      "type": "Drill",
       "status": "down",
       "avail": "",
       "util": "",
       "bd_hrs": "",
-      "note": "'s stop was a GET bucket-tip replacement rather than a plain check.",
+      "note": "(each logging only short daily-inspection stops) plus",
       "comment": ""
     },
     {
-      "unit": "EX-340",
-      "type": "Excavator",
-      "status": "down",
-      "avail": "97.92%",
-      "util": "",
-      "bd_hrs": "",
-      "note": "all logged only short daily-inspection/GET stops (0.5h each, 97.92%)",
-      "comment": "Cylinder Change Out and Hydraulic  System"
-    },
-    {
-      "unit": "EX-398",
-      "type": "Excavator",
-      "status": "down",
-      "avail": "97.92%",
-      "util": "",
-      "bd_hrs": "",
-      "note": "all logged only short daily-inspection/GET stops (0.5h each, 97.92%)",
-      "comment": "Cylinder Clam Bolt Remove"
-    },
-    {
-      "unit": "DT-245",
-      "type": "Haul Truck",
+      "unit": "DR-297",
+      "type": "Drill",
       "status": "down",
       "avail": "",
       "util": "",
       "bd_hrs": "",
-      "note": "in breakdown. By 09:19 Sep 12",
+      "note": "(each logging only short daily-inspection stops) plus",
+      "comment": "Engine Overheating"
+    },
+    {
+      "unit": "DR-303",
+      "type": "Drill",
+      "status": "down",
+      "avail": "",
+      "util": "",
+      "bd_hrs": "",
+      "note": "(each logging only short daily-inspection stops) plus",
+      "comment": ""
+    },
+    {
+      "unit": "DR-341",
+      "type": "Drill",
+      "status": "down",
+      "avail": "",
+      "util": "",
+      "bd_hrs": "",
+      "note": "(each logging only short daily-inspection stops) plus",
       "comment": ""
     }
   ],
   "followUps": [
     {
       "priority": "HIGH",
-      "title": "**Six standing open questions resolve or partially resolve via the Task ...",
+      "title": "EX-327 (support excavator) opened its first full day down the same day E...",
       "body": "",
       "action": ""
     },
     {
       "priority": "MONITOR",
-      "title": "**EX-262 recovers same day, after roughly 3.5 days down** (cylinder chan...",
+      "title": "Confirm the survey boundary correction holds for a third consecutive day...",
       "body": "",
       "action": ""
     },
     {
       "priority": "MONITOR",
-      "title": "**Survey Day 18 (Sep 12, in progress) flips to the first positive daily ...",
+      "title": "Install the Finger 3 catchment berm and the Southwest Dump guiding beams...",
       "body": "",
       "action": ""
     },
     {
       "priority": "MONITOR",
-      "title": "**Abel Eben Pienaar (Maaden/JRAR leadership) escalates the survey gap di...",
-      "body": "",
-      "action": ""
-    },
-    {
-      "priority": "MONITOR",
-      "title": "**The weekly operational review deck (week ending 11-Sep) surfaces a 33,...",
+      "title": "Still no record of a reply to Abel Pienaar's Sep 12 escalation on the su...",
       "body": "",
       "action": ""
     }
