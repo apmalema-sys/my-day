@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-09-13T15:06:40",
-  "date": "2026-09-13",
+  "generatedAt": "2026-09-14T15:06:23",
+  "date": "2026-09-14",
   "runNumber": null,
-  "summary": "1. Sep 12 production narrowly beat target (+0.58%, 23,126 BCM) but ore missed by 8.71%, ending Sep 11's three-day ore-beat run; MTD total gap widened slightly to -6.99% while MTD ore narrowed to +6.97%, and crusher stockpile throughput remains under a third of the linear plan pace (29.79% MTD) after a 7h33m maintenance stop. 2. 2. Survey Day 18 (Sep 12) finalized at trucks 23,126 / survey 27,719, gap +4,593 BCM (+16.57%) — higher than the in-progress reading logged a day earlier and the second consecutive positive daily gap, with the comment field reading \"All EXC is inside the survey calculation area\" for the first time since early June, which narrowed the cumulative MTD survey-vs-truck gap to -13.29%. 3. 3. Fleet availability eased to 84.67% daily (core fleet 76.86%, down from Sep 11's 78.66%) as EX-102 and DR-140 both recovered same day while EX-327 (support excavator) opened a fresh full-day fault, and Peter's own weekly HOD safety round named four separate missing-barrier findings — Finger 3's uncontained overflow, the Southwest Dump's missing guiding beams, and two locations of unbarricaded parked equipment — as one standards-and-verification gap rather than four unrelated incidents. 4. Confirm the survey boundary correction holds for a third consecutive day before treating it as a genuine change in loading practice rather than a two-day exception inside a longer negative run. 5. Install the Finger 3 catchment berm and the Southwest Dump guiding beams before further tipping on those faces — the HOD round's two highest-consequence findings, both flagged as preventable by a weekly edge-protection checklist that does not yet exist. 6. Still no record of a reply to Abel Pienaar's Sep 12 escalation on the survey dispute, or confirmation the dispatch-admin capture implementation went live as he was told to expect. 7. EX-327 (support excavator) opened its first full day down the same day EX-102 — the fleet's other Support Excavator unit — recovered; worth watching whether this is an isolated fault or a pattern worth its own tracking line. 8. Important References, the CIP folder, and the Notion Task Feedback Log were not checked this pass — those run under the separate full-scope \"compile mining operations KB\" protocol. ### Wiki compile Updated [[daily-production-report]] (Sep 12 production/MTD/crusher/drilling detail, EX-102 and DR-140 recoveries, EX-327 fresh fault, Day 18 survey finalization), [[fleet-availability-utilization]] (Sep 12 fleet-wide Daily/MTD table, per-unit fault detail, EX-102/DR-140/LT-285 recoveries, EX-327 fresh fault), [[survey-volume-reconciliation]] (Day 18 finalized reading, RESOLVED marker on the in-progress-vs-finalized open question, MTD-vs-target detail), [[safety-inspection-patterns]] (new HOD safety observation round — five ranked findings, root-cause framing, three standards recommendations) — `Last updated` bumped to 2026-09-13 (118th pass) on all four. 9. No content removed or renamed from RAW. ---",
+  "summary": "1. No new production workbook or survey INX-SUM data has landed since the 118th pass. 2. Part C found 5 unprocessed Task Feedback Log rows (all Status blank), all resolved, no mismatches: Peter's reply to Pienaar's 12-Sep escalation confirms the dispatch-admin capture is NOT yet live (a data clerk is being moved to dispatch by Tuesday) and that the two recent positive survey days trace to loading staying inside the survey boundary, not to a fix taking effect; the 33,047 BCM broken-stock gap is attributed to a stale, not-yet-updated client report rather than a genuine reconciliation failure; the Finger 3 catchment berm and EPSA/Stage 5 barricading from this pass's own new HOD observation both confirm closed same-day; and the parking-and-barricading standard task closes with a decision not to write one — the maintenance superintendent addressed it verbally with the team instead. 3. Both of the 118th pass's carried-forward open questions in [[daily-production-report]] and [[survey-volume-reconciliation]] (Pienaar's reply, the 33,047 BCM gap) are now resolved. 4. The Southwest Dump guiding-beams finding from the new HOD round remains open — it already has its own separate, still-open Notion task with no linked feedback row. 5. Important References folder re-checked: 37 files, no new content since the 104th-117th passes (newest remains 4-Sep). 6. CIP folder re-checked: 8 files, no new content since the 116th/117th passes (newest remains 11-Sep). 7. Tasks: none created this pass — every action item surfacing from Parts A/B/C either already has a live Notion task (Southwest Dump guiding beams) or closed same-day via the Task Feedback Log rows processed above. 8. No content removed or renamed from RAW. ---",
   "kpis": [
     {
       "label": "MTD BCM",
@@ -167,14 +167,14 @@
   "fleet": {
     "availDaily": "84.67%",
     "availMtd": "85.93%",
-    "exAvail": "63.8%",
+    "exAvail": "52.5%",
     "exUnits": 6,
-    "dtAvail": "96.6%",
-    "dtUnits": 22,
+    "dtAvail": "97.7%",
+    "dtUnits": 21,
     "excavators": [
       {
         "unit": "EX-340",
-        "avail": "50.0%"
+        "avail": "0.0%"
       },
       {
         "unit": "EX-262",
@@ -186,7 +186,7 @@
       },
       {
         "unit": "EX-263",
-        "avail": "79.2%"
+        "avail": "72.9%"
       },
       {
         "unit": "EX-247",
@@ -198,8 +198,8 @@
       }
     ],
     "exBasis": "5/6",
-    "pdfDate": "12-09",
-    "dtBasis": "22 active ≥8h"
+    "pdfDate": "13-09",
+    "dtBasis": "21 active ≥8h"
   },
   "equipment": [
     {
@@ -210,7 +210,7 @@
       "util": "",
       "bd_hrs": "",
       "note": "recovers — is this an isolated hammer-noise fault or does the Support Excavator fleet have a recurring pattern",
-      "comment": "Boom Cylinder Jack Remove"
+      "comment": ""
     },
     {
       "unit": "DR-140",
@@ -260,7 +260,7 @@
       "util": "",
       "bd_hrs": "",
       "note": "(each logging only short daily-inspection stops) plus",
-      "comment": "Engine Overheating"
+      "comment": ""
     },
     {
       "unit": "DR-303",
@@ -286,25 +286,19 @@
   "followUps": [
     {
       "priority": "HIGH",
-      "title": "EX-327 (support excavator) opened its first full day down the same day E...",
+      "title": "**Part B's gap-check caught four files the dashboard-scoped 118th pass h...",
+      "body": "",
+      "action": ""
+    },
+    {
+      "priority": "HIGH",
+      "title": "**Part C found 5 unprocessed Task Feedback Log rows (all Status blank), ...",
       "body": "",
       "action": ""
     },
     {
       "priority": "MONITOR",
-      "title": "Confirm the survey boundary correction holds for a third consecutive day...",
-      "body": "",
-      "action": ""
-    },
-    {
-      "priority": "MONITOR",
-      "title": "Install the Finger 3 catchment berm and the Southwest Dump guiding beams...",
-      "body": "",
-      "action": ""
-    },
-    {
-      "priority": "MONITOR",
-      "title": "Still no record of a reply to Abel Pienaar's Sep 12 escalation on the su...",
+      "title": "Both of the 118th pass's carried-forward open questions in [[daily-produ...",
       "body": "",
       "action": ""
     }
