@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-09-14T15:06:23",
+  "generatedAt": "2026-09-15T09:43:46",
   "date": "2026-09-14",
-  "runNumber": null,
+  "runNumber": 119,
   "summary": "1. No new production workbook or survey INX-SUM data has landed since the 118th pass. 2. Part C found 5 unprocessed Task Feedback Log rows (all Status blank), all resolved, no mismatches: Peter's reply to Pienaar's 12-Sep escalation confirms the dispatch-admin capture is NOT yet live (a data clerk is being moved to dispatch by Tuesday) and that the two recent positive survey days trace to loading staying inside the survey boundary, not to a fix taking effect; the 33,047 BCM broken-stock gap is attributed to a stale, not-yet-updated client report rather than a genuine reconciliation failure; the Finger 3 catchment berm and EPSA/Stage 5 barricading from this pass's own new HOD observation both confirm closed same-day; and the parking-and-barricading standard task closes with a decision not to write one — the maintenance superintendent addressed it verbally with the team instead. 3. Both of the 118th pass's carried-forward open questions in [[daily-production-report]] and [[survey-volume-reconciliation]] (Pienaar's reply, the 33,047 BCM gap) are now resolved. 4. The Southwest Dump guiding-beams finding from the new HOD round remains open — it already has its own separate, still-open Notion task with no linked feedback row. 5. Important References folder re-checked: 37 files, no new content since the 104th-117th passes (newest remains 4-Sep). 6. CIP folder re-checked: 8 files, no new content since the 116th/117th passes (newest remains 11-Sep). 7. Tasks: none created this pass — every action item surfacing from Parts A/B/C either already has a live Notion task (Southwest Dump guiding beams) or closed same-day via the Task Feedback Log rows processed above. 8. No content removed or renamed from RAW. ---",
   "kpis": [
     {
@@ -167,14 +167,14 @@
   "fleet": {
     "availDaily": "84.67%",
     "availMtd": "85.93%",
-    "exAvail": "52.5%",
+    "exAvail": "65.4%",
     "exUnits": 6,
-    "dtAvail": "97.7%",
-    "dtUnits": 21,
+    "dtAvail": "95.0%",
+    "dtUnits": 22,
     "excavators": [
       {
         "unit": "EX-340",
-        "avail": "0.0%"
+        "avail": "39.6%"
       },
       {
         "unit": "EX-262",
@@ -186,7 +186,7 @@
       },
       {
         "unit": "EX-263",
-        "avail": "72.9%"
+        "avail": "97.9%"
       },
       {
         "unit": "EX-247",
@@ -198,8 +198,8 @@
       }
     ],
     "exBasis": "5/6",
-    "pdfDate": "13-09",
-    "dtBasis": "21 active ≥8h"
+    "pdfDate": "14-09",
+    "dtBasis": "22 active ≥8h"
   },
   "equipment": [
     {
