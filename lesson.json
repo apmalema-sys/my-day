@@ -1,15 +1,15 @@
 {
-  "date": "2026-09-13",
-  "topic": "LHD Cycle Evaluation",
-  "title": "LHD Cycle Evaluation",
-  "body": "Every minute lost in load, haul, dump, or return is a minute the fleet isn't moving material — and at ADW right now, with utilization gaps of 6-6.5 idle hours per shift against a 2.5-3 hour best-case, those minutes are the difference between hitting daily target and another shortfall meeting. You can't fix a bottleneck you haven't located.",
+  "date": "2026-09-15",
+  "topic": "Mobile Equipment Operations (Dozer, Breaker, Loader, Refuelling)",
+  "title": "Mobile Equipment Operations (Dozer, Breaker, Loader, Refuelling)",
+  "body": "ADW runs a mixed fleet — dozers, hydraulic breakers, wheel loaders, water pumps, LVs — all working close to haul roads, the ROM pad, and dump edges. Small procedural lapses on this equipment (wrong gear, no three-point mounting, engine running at the fuel bay) turn into GET damage, dropped-object injuries, or fire incidents fast. Refuelling alone already has four logged incidents from missing supervision.",
   "keyPoints": [
-    "The cycle breaks into five stages — load, haul (loaded), dump, return (empty), idle. Time each one separately, not just total cycle time. Aggregate numbers hide where the waste actually lives.",
-    "Loading-phase waste (under-filled buckets, oversized rock from poor fragmentation, loader misalignment) shows up downstream as low payload and slow cycles — trace it back to the face, not the truck.",
-    "Dumping-phase delays are often a dozer/tip-face problem, not a truck problem — poor floor level or queuing at the dump adds dead time that looks like a hauling issue.",
-    "Operator variability is the single biggest lever ADW's own Kaizen work identified — two operators on the same route, same truck, can post meaningfully different cycle times. That's a coaching gap, not an equipment gap.",
-    "ADW doesn't currently capture per-stage cycle time in any workbook — only aggregate distance/time and delay-reason codes. A one-shift manual time-motion study by a foreman is the only way to see the real breakdown right now."
+    "**Dozer:** 1st gear forward, 2nd gear reverse, full stop before changing direction. Steer with blade tilt cylinders, not steering clutches, once the blade is loaded — saves the undercarriage and cuts uneven GET wear.",
+    "**Hydraulic rock breaker:** windscreen guard fitted, lights and amber strobe on at all times, seatbelt on. It's there to clear oversize at the crusher feed in place — not a general-purpose hammer.",
+    "**Boarding any machine:** three points of contact, always — two hands one foot, or two feet one hand. Face the machine, never jump, nothing carried in the hands (lanyard or hoist instead).",
+    "**Refuelling:** engine off, ignition off, key removed, no phones or open flame in the zone, spill kit staged. This is the exact failure mode behind NCR 25-037, the gas-station near-miss, the MG-85 wall strike, and the June diesel overflow — same missing-supervision pattern every time.",
+    "**Parking:** drive-through by default, 50 m clear of the loader turning circle at the ROM pad, never behind operating equipment."
   ],
-  "apply": "Next time you're at a loading face or dump point, time one full cycle by stage on your phone — if idle or queue time is eating more than load or haul time, that's your bottleneck, not the truck count.",
-  "generatedAt": "2026-09-13T14:41:40"
+  "apply": "With the go-line fuel bay still mid-upgrade (second dispensing point, extra tank pushed to next year), expect trucks queuing tighter at the pump — walk the refuelling zone once this shift and confirm engines are actually off and the spotter/attendant setup is being followed, not just assumed.",
+  "generatedAt": "2026-09-15T09:38:14"
 }
