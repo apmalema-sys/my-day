@@ -1,0 +1,121 @@
+{
+  "generatedAt": "2026-09-15T09:55:48",
+  "articles": [
+    {
+      "slug": "mshem-06-01-general-ehss-rules",
+      "title": "MSHEM-06.01 General EHSS Rules",
+      "status": "established",
+      "lastUpdated": "2026-05-28",
+      "summary": "MSHEM-06.01 is Maaden's corporate sub-element setting out the minimum Environment, Health, Safety, and Security (EHSS) rules that apply to every Maaden facility, plant, and site. Revision 01 (dated 31-Jul-2025) introduces the formal Life Saving Rules procedure in Appendix B. The standard is built around a few core principles: enforce rules every time, comply with the most stringent regulation in play, document and review the management system, and treat every person — employee or contractor — as accountable.",
+      "sections": [
+        {
+          "heading": "Purpose and scope",
+          "blocks": [
+            {
+              "type": "p",
+              "text": "MSHEM-06.01 establishes the minimum EHSS practices required across all Maaden and its business units. Every facility, plant, or site must interpret the standard against its own operations, but the floor is set corporately."
+            },
+            {
+              "type": "p",
+              "text": "The standard applies to all Maaden employees, contractor employees, and visitors. ADW falls under it as a business unit operating under Maaden."
+            }
+          ]
+        },
+        {
+          "heading": "Core management system requirements",
+          "blocks": [
+            {
+              "type": "ul",
+              "items": [
+                "**A formal management system must be developed and maintained** that meets the intent of every applicable requirement. Any change goes through the Management of Change procedure.",
+                "**A Sub-Element Administrator is assigned** with responsibility for compliance.",
+                "**Roles and responsibilities are documented and communicated** across the organization.",
+                "**The most stringent requirement applies** when local regulation and MSHEM rules differ. Local, regional, and national regulations are the minimum.",
+                "**Local permits, licenses, and authority approvals** are identified and registered in the management system.",
+                "**EHSS rules are enforced every time they are violated:** not only when a loss occurs. Outcome doesn't excuse the breach. (§5.1.11)",
+                "**Recommended actions have clear owners and target dates.** First change to a due date is approved by Director-level; second and subsequent changes by SVP-level."
+              ]
+            }
+          ]
+        },
+        {
+          "heading": "Life Saving Rules",
+          "blocks": [
+            {
+              "type": "p",
+              "text": "Section 5.2 of MSHEM-06.01 references the Life Saving Rules procedure in Appendix B (see life saving rules). Key requirements:"
+            },
+            {
+              "type": "ul",
+              "items": [
+                "**The LSRs must be displayed and promulgated** across all business units' facilities, plants, and sites, and disseminated to all personnel including contractors and visitors.",
+                "**The LSRs are enforced and regularly discussed** with employees at toolbox talks and EHSS meetings.",
+                "**Verification and assurance processes** must be in place to confirm the LSRs are being used.",
+                "**All leaders use and implement the Leader's Verification Guidelines.**"
+              ]
+            },
+            {
+              "type": "p",
+              "text": "The current nine LSRs are listed in life saving rules."
+            }
+          ]
+        },
+        {
+          "heading": "Common sense and the \"ask if unsure\" rule",
+          "blocks": [
+            {
+              "type": "p",
+              "text": "§5.1.15: All personnel including contractors are encouraged to use common sense when it comes to health and safety. If anyone is unsure of the proper procedure or the safety hazards, they're encouraged — without fear or favor — to ask for assistance or instructions. This is the practical companion to the right to stop work in the LSR procedure."
+            }
+          ]
+        },
+        {
+          "heading": "Why this matters for load-and-haul",
+          "blocks": [
+            {
+              "type": "p",
+              "text": "The General EHSS Rules sit above every operational SOP, PTO, and SWI in the system. Whatever Peter writes for daily operations — toolbox talks, supervisor instructions, incident write-ups, mitigation plans — has to be consistent with MSHEM-06.01 as the corporate floor. Two specific cross-cuts worth keeping in mind:"
+            },
+            {
+              "type": "ul",
+              "items": [
+                "**The \"enforce every time, not only when something happens\" principle** is the answer to any argument that lets a near-miss or repeat unsafe act slide.",
+                "**The most-stringent-requirement rule** matters when ADW's site procedures and the relevant Saudi Arabia mining regulation differ — whichever is stricter is the floor."
+              ]
+            }
+          ]
+        },
+        {
+          "heading": "Document references inside MSHEM-06.01",
+          "blocks": [
+            {
+              "type": "p",
+              "text": "The standard references several attachments and procedures:"
+            },
+            {
+              "type": "ul",
+              "items": [
+                "**Appendix B:** Life Saving Rules Procedure (see life saving rules)",
+                "**MSHEM Glossary Index:** for all defined terms",
+                "**MSHEM-01.04:** EHSS Awareness and Communication (used for Lessons Learned dissemination)",
+                "**MSHEM Framework and Policy:** sets management commitment, accountability, responsibilities",
+                "**MSHEM Sub-Element-13.01:** Clarification, Exemptions and Variance"
+              ]
+            },
+            {
+              "type": "p",
+              "text": "These cross-references are worth tracking — they tell Peter where the source-of-truth document lives for each adjacent topic."
+            }
+          ]
+        }
+      ],
+      "related": [
+        "life saving rules",
+        "lost get reporting recovery",
+        "high walls",
+        "traffic management",
+        "ehss-rules-leader-verification (article to be drafted as the leader's verification framework is extracted from the source)"
+      ]
+    }
+  ]
+}

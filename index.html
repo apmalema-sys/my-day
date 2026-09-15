@@ -233,6 +233,7 @@
   .navitem[data-v="events"] svg{color:#FF9500;}
   .navitem[data-v="handover"] svg{color:#FF3B30;}
   .navitem[data-v="lesson"] svg{color:#30B0C7;}
+  .navitem[data-v="knowledge"] svg{color:#8944D6;}
 
   /* ---- insights ---- */
   .ins-header{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px;margin:2px 4px 14px;}
@@ -398,6 +399,31 @@
   .les-apply-lbl{font-size:.64rem;color:var(--accent);font-weight:700;text-transform:uppercase;letter-spacing:.06em;margin-bottom:8px;}
   .les-apply-text{font-size:.85rem;color:var(--txt);line-height:1.55;}
 
+  /* ---- knowledge (MSHEM) ---- */
+  .mshem-card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px;margin:0 0 12px;}
+  .mshem-card-head{display:flex;align-items:flex-start;justify-content:space-between;gap:10px;}
+  .mshem-title{font-size:.95rem;font-weight:700;color:var(--txt);line-height:1.3;}
+  .mshem-status{font-size:.62rem;font-weight:700;text-transform:uppercase;letter-spacing:.05em;padding:3px 8px;border-radius:20px;flex-shrink:0;white-space:nowrap;background:rgba(48,176,199,.12);color:#0E7C90;}
+  .mshem-status.emerging{background:rgba(255,149,0,.12);color:#C86E00;}
+  .mshem-status.speculative{background:rgba(142,142,147,.15);color:var(--muted);}
+  .mshem-summary{font-size:.85rem;color:var(--txt);line-height:1.5;margin-top:8px;}
+  .mshem-meta{font-size:.68rem;color:var(--muted);margin-top:8px;}
+  .mshem-details{margin-top:12px;}
+  .mshem-details summary{font-size:.82rem;font-weight:600;color:var(--accent);list-style:none;cursor:pointer;padding:4px 0;}
+  .mshem-details summary::-webkit-details-marker{display:none;}
+  .mshem-details summary::before{content:"▸ ";}
+  .mshem-details[open] summary::before{content:"▾ ";}
+  .mshem-sec{margin-top:14px;}
+  .mshem-sec-h{font-size:.72rem;font-weight:700;color:var(--muted);text-transform:uppercase;letter-spacing:.05em;margin-bottom:6px;}
+  .mshem-p{font-size:.83rem;color:var(--txt);line-height:1.5;margin:0 0 8px;}
+  .mshem-kp-list{background:var(--card);border:1px solid var(--line);border-radius:14px;margin:0 0 10px;overflow:hidden;}
+  .mshem-kp{font-size:.83rem;color:var(--txt);line-height:1.5;padding:10px 14px 10px 28px;border-bottom:1px solid var(--line);position:relative;}
+  .mshem-kp:last-child{border-bottom:none;}
+  .mshem-kp::before{content:"•";color:var(--accent);position:absolute;left:12px;}
+  .mshem-related{font-size:.72rem;color:var(--muted);line-height:1.5;margin-top:14px;padding-top:12px;border-top:1px solid var(--line);}
+  .mshem-related-lbl{font-weight:700;color:var(--txt);}
+  .mshem-empty{font-size:.85rem;color:var(--muted);line-height:1.55;text-align:center;padding:40px 16px;}
+
   /* ---- cycle time log ---- */
   .cyc-card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:13px 14px;margin:0 0 10px;}
   .cyc-card-top{display:flex;align-items:center;justify-content:space-between;gap:8px;}
@@ -520,6 +546,11 @@
       <div id="lesson-content"></div>
     </section>
 
+    <!-- KNOWLEDGE -->
+    <section class="view" id="view-knowledge">
+      <div id="knowledge-content"></div>
+    </section>
+
     <!-- HANDOVER -->
     <section class="view" id="view-handover">
       <div class="shiftrow" style="display:flex;gap:8px;margin:2px 4px 12px;">
@@ -569,6 +600,10 @@
     <button class="navitem" data-v="lesson">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
       <span>Lesson</span>
+    </button>
+    <button class="navitem" data-v="knowledge">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
+      <span>Knowledge</span>
     </button>
   </aside>
 </div>
@@ -1162,7 +1197,7 @@ document.getElementById("btn-save-sync").addEventListener("click",()=>{
 document.querySelectorAll("[data-close]").forEach(b=>b.addEventListener("click",closeSheets));
 
 /* ---------- tabs ---------- */
-const titles={cycles:"Cycle Time Log",events:"Events log",insights:"Daily Dashboard",inspect:"Operation Inspection",lesson:"Daily Mining Lesson",handover:"Shift Handover"};
+const titles={cycles:"Cycle Time Log",events:"Events log",insights:"Daily Dashboard",inspect:"Operation Inspection",lesson:"Daily Mining Lesson",handover:"Shift Handover",knowledge:"Knowledge"};
 let inspTab="ops";
 let activeView="insights";
 const drawer=document.getElementById("drawer"),drawerScrim=document.getElementById("drawer-scrim");
@@ -1177,7 +1212,8 @@ const TAB_COLORS={
   inspect:["#34C759","#1E9E48"],
   events:["#FF9500","#C86E00"],
   handover:["#FF3B30","#D70015"],
-  lesson:["#30B0C7","#0E7C90"]
+  lesson:["#30B0C7","#0E7C90"],
+  knowledge:["#8944D6","#6B32B0"]
 };
 function applyAccent(v){const c=TAB_COLORS[v];if(!c)return;const r=document.documentElement.style;r.setProperty("--accent",c[0]);r.setProperty("--accent2",c[1]);}
 document.querySelectorAll("[data-v]").forEach(tab=>{
@@ -1186,7 +1222,7 @@ document.querySelectorAll("[data-v]").forEach(tab=>{
     document.querySelectorAll("[data-v]").forEach(t=>t.classList.toggle("active",t===tab));
     document.querySelectorAll(".view").forEach(s=>s.classList.toggle("active",s.id==="view-"+v));
     document.getElementById("hdr-title").textContent=titles[v];
-    document.getElementById("fab").style.display=(v==="inspect"||v==="insights"||v==="lesson"||v==="handover")?"none":"flex";
+    document.getElementById("fab").style.display=(v==="inspect"||v==="insights"||v==="lesson"||v==="handover"||v==="knowledge")?"none":"flex";
     const dEl=document.getElementById("hdr-date");
     if(v==="cycles"){dEl.textContent=new Date().toLocaleDateString("en-AU",{weekday:"long",day:"numeric",month:"long"});}
     else if(v==="inspect"){dEl.textContent=inspTab==="lsr"?"LSR & SOPs":"Tick · note · close";}
@@ -1194,8 +1230,9 @@ document.querySelectorAll("[data-v]").forEach(tab=>{
     else if(v==="insights"){dEl.textContent=insightsData&&insightsData.date?insightsData.date:"";}
     else if(v==="lesson"){const l=lessonData||todayLesson();dEl.textContent=l?l.topic:"";}
     else if(v==="handover"){dEl.textContent=ho.shift+" shift · "+todayStr();}
+    else if(v==="knowledge"){dEl.textContent="Maaden MSHEM";}
     else dEl.textContent="";
-    if(v==="cycles")renderCycles();else if(v==="inspect"){if(inspTab==="ops")renderInspect();else renderLSR();}else if(v==="events")renderEvents();else if(v==="insights")renderInsights();else if(v==="lesson")renderLesson();else if(v==="handover")renderHandover();
+    if(v==="cycles")renderCycles();else if(v==="inspect"){if(inspTab==="ops")renderInspect();else renderLSR();}else if(v==="events")renderEvents();else if(v==="insights")renderInsights();else if(v==="lesson")renderLesson();else if(v==="handover")renderHandover();else if(v==="knowledge")renderKnowledge();
   });
 });
 document.getElementById("fab").addEventListener("click",()=>{if(activeView==="events")openLogSheet();else if(activeView==="cycles")openCycleSheet();});
@@ -1902,6 +1939,55 @@ function renderLesson(){
   el.innerHTML=html;
 }
 
+/* ---------- knowledge (MSHEM) ---------- */
+let knowledgeData=null;
+function fetchKnowledge(){
+  if(!location.protocol.startsWith("http"))return;
+  fetch("knowledge.json?t="+Date.now(),{cache:"no-store"})
+    .then(r=>r.ok?r.json():null)
+    .then(d=>{if(d){knowledgeData=d;if(activeView==="knowledge")renderKnowledge();}})
+    .catch(()=>{});
+}
+function renderBlock(b){
+  if(b.type==="ul"){
+    return `<div class="mshem-kp-list">${b.items.map(i=>`<div class="mshem-kp">${mdInline(i)}</div>`).join("")}</div>`;
+  }
+  return `<div class="mshem-p">${mdInline(b.text)}</div>`;
+}
+function renderKnowledge(){
+  const el=document.getElementById("knowledge-content");
+  const arts=(knowledgeData&&knowledgeData.articles)||[];
+  if(!arts.length){
+    el.innerHTML=`<div class="mshem-empty">No MSHEM articles published yet.<br>They'll appear here as the mining KB compiles them.</div>`;
+    return;
+  }
+  let html=`<div class="ins-header">
+    <div class="ins-date">MAADEN MSHEM</div>
+    <div class="ins-run">${arts.length} article${arts.length===1?"":"s"} · corporate Safety, Health &amp; Environment Management system</div>
+  </div>`;
+  arts.forEach((a,idx)=>{
+    html+=`<div class="mshem-card">
+      <div class="mshem-card-head">
+        <div class="mshem-title">${esc(a.title)}</div>
+        <span class="mshem-status ${esc(a.status)}">${esc(a.status)}</span>
+      </div>
+      ${a.summary?`<div class="mshem-summary">${mdInline(a.summary)}</div>`:""}
+      ${a.lastUpdated?`<div class="mshem-meta">Last updated ${esc(a.lastUpdated)}</div>`:""}
+      <details class="mshem-details"${idx===0?" open":""}>
+        <summary>Read full article</summary>
+        ${(a.sections||[]).map(sec=>`
+          <div class="mshem-sec">
+            <div class="mshem-sec-h">${esc(sec.heading)}</div>
+            ${(sec.blocks||[]).map(renderBlock).join("")}
+          </div>
+        `).join("")}
+        ${a.related&&a.related.length?`<div class="mshem-related"><span class="mshem-related-lbl">Related:</span> ${a.related.map(esc).join(" · ")}</div>`:""}
+      </details>
+    </div>`;
+  });
+  el.innerHTML=html;
+}
+
 /* ---------- boot ---------- */
 applyAccent("insights");                  // Insights is the home view
 renderInsights();
@@ -1910,7 +1996,8 @@ document.getElementById("hdr-date").textContent=insightsData&&insightsData.date?
 document.getElementById("fab").style.display="none";
 fetchInsights();                          // pull latest wiki insights (published as insights.json)
 fetchLesson();                            // pull today's KB-generated lesson (published as lesson.json)
-document.addEventListener("visibilitychange",()=>{if(!document.hidden){fetchInsights();fetchLesson();}});
+fetchKnowledge();                         // pull MSHEM knowledge articles (published as knowledge.json)
+document.addEventListener("visibilitychange",()=>{if(!document.hidden){fetchInsights();fetchLesson();fetchKnowledge();}});
 </script>
 </body>
 </html>
