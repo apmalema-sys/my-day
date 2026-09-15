@@ -1,30 +1,30 @@
 {
-  "generatedAt": "2026-09-15T09:43:46",
+  "generatedAt": "2026-09-15T15:06:21",
   "date": "2026-09-14",
   "runNumber": 119,
   "summary": "1. No new production workbook or survey INX-SUM data has landed since the 118th pass. 2. Part C found 5 unprocessed Task Feedback Log rows (all Status blank), all resolved, no mismatches: Peter's reply to Pienaar's 12-Sep escalation confirms the dispatch-admin capture is NOT yet live (a data clerk is being moved to dispatch by Tuesday) and that the two recent positive survey days trace to loading staying inside the survey boundary, not to a fix taking effect; the 33,047 BCM broken-stock gap is attributed to a stale, not-yet-updated client report rather than a genuine reconciliation failure; the Finger 3 catchment berm and EPSA/Stage 5 barricading from this pass's own new HOD observation both confirm closed same-day; and the parking-and-barricading standard task closes with a decision not to write one — the maintenance superintendent addressed it verbally with the team instead. 3. Both of the 118th pass's carried-forward open questions in [[daily-production-report]] and [[survey-volume-reconciliation]] (Pienaar's reply, the 33,047 BCM gap) are now resolved. 4. The Southwest Dump guiding-beams finding from the new HOD round remains open — it already has its own separate, still-open Notion task with no linked feedback row. 5. Important References folder re-checked: 37 files, no new content since the 104th-117th passes (newest remains 4-Sep). 6. CIP folder re-checked: 8 files, no new content since the 116th/117th passes (newest remains 11-Sep). 7. Tasks: none created this pass — every action item surfacing from Parts A/B/C either already has a live Notion task (Southwest Dump guiding beams) or closed same-day via the Task Feedback Log rows processed above. 8. No content removed or renamed from RAW. ---",
   "kpis": [
     {
       "label": "MTD BCM",
-      "value": "374,263",
-      "delta": "-7.0% vs target",
-      "good": false
+      "value": "423,336",
+      "delta": "+5.2% vs target",
+      "good": true
     },
     {
       "label": "Survey Gap",
-      "value": "+24.5%",
+      "value": "-12.9%",
       "delta": "survey vs trucks MTD",
-      "good": true
+      "good": false
     },
     {
       "label": "Crusher MTD",
       "value": "30%",
-      "delta": "36,942 / 124,000 LCM",
+      "delta": "37,414 / 124,000 LCM",
       "good": null
     },
     {
       "label": "Days Remain",
-      "value": "12",
+      "value": "10",
       "delta": "",
       "good": null
     }
@@ -162,11 +162,25 @@
       "actual": 23126,
       "target": 22993,
       "half": false
+    },
+    {
+      "date": "2026-09-13",
+      "label": "13 Sep",
+      "actual": 23250,
+      "target": 22993,
+      "half": false
+    },
+    {
+      "date": "2026-09-14",
+      "label": "14 Sep",
+      "actual": 25823,
+      "target": 22993,
+      "half": false
     }
   ],
   "fleet": {
-    "availDaily": "84.67%",
-    "availMtd": "85.93%",
+    "availDaily": "85.52%",
+    "availMtd": "85.85%",
     "exAvail": "65.4%",
     "exUnits": 6,
     "dtAvail": "95.0%",
@@ -203,84 +217,84 @@
   },
   "equipment": [
     {
-      "unit": "EX-102",
+      "unit": "EX-340",
       "type": "Excavator",
       "status": "warning",
-      "avail": "",
+      "avail": "39.58%",
       "util": "",
       "bd_hrs": "",
-      "note": "recovers — is this an isolated hammer-noise fault or does the Support Excavator fleet have a recurring pattern",
-      "comment": ""
+      "note": "recovers same day, after roughly 39 hours down.** The hydraulic-temperature-high/engine-not-start fault opened",
+      "comment": "Hydraulic Temperature High"
     },
     {
-      "unit": "DR-140",
-      "type": "Drill",
-      "status": "down",
-      "avail": "",
-      "util": "",
-      "bd_hrs": "",
-      "note": "running with zero downtime. **",
-      "comment": ""
-    },
-    {
-      "unit": "EX-327",
+      "unit": "EX-253",
       "type": "Excavator",
       "status": "down",
       "avail": "",
       "util": "",
       "bd_hrs": "",
-      "note": "opens the same day",
-      "comment": "Noise From Hammer"
+      "note": "48d",
+      "comment": "Swing Braring Failure"
     },
     {
-      "unit": "DR-125",
-      "type": "Drill",
+      "unit": "EX-263",
+      "type": "Excavator",
+      "status": "scheduled",
+      "avail": "",
+      "util": "",
+      "bd_hrs": "",
+      "note": "all logged only short (0.5-1.5h) daily-inspection, service or minor-warning stops",
+      "comment": ""
+    },
+    {
+      "unit": "EX-123",
+      "type": "Excavator",
+      "status": "scheduled",
+      "avail": "",
+      "util": "",
+      "bd_hrs": "",
+      "note": "all logged only short (0.5-1.5h) daily-inspection, service or minor-warning stops",
+      "comment": ""
+    },
+    {
+      "unit": "EX-247",
+      "type": "Excavator",
+      "status": "scheduled",
+      "avail": "",
+      "util": "",
+      "bd_hrs": "",
+      "note": "all logged only short (0.5-1.5h) daily-inspection, service or minor-warning stops",
+      "comment": "L 03 Warning Continue Alarm"
+    },
+    {
+      "unit": "EX-262",
+      "type": "Excavator",
+      "status": "scheduled",
+      "avail": "",
+      "util": "",
+      "bd_hrs": "",
+      "note": "all logged only short (0.5-1.5h) daily-inspection, service or minor-warning stops",
+      "comment": ""
+    },
+    {
+      "unit": "EX-398",
+      "type": "Excavator",
+      "status": "scheduled",
+      "avail": "",
+      "util": "",
+      "bd_hrs": "",
+      "note": "'s included a 250-hr service plus a night GET stop installing new bucket tips.",
+      "comment": "250 Hrs Service"
+    },
+    {
+      "unit": "DT-106",
+      "type": "Haul Truck",
       "status": "down",
       "avail": "",
       "util": "",
       "bd_hrs": "",
-      "note": "(each logging only short daily-inspection stops) plus",
-      "comment": ""
-    },
-    {
-      "unit": "DR-139",
-      "type": "Drill",
-      "status": "down",
-      "avail": "",
-      "util": "",
-      "bd_hrs": "",
-      "note": "(each logging only short daily-inspection stops) plus",
-      "comment": ""
-    },
-    {
-      "unit": "DR-297",
-      "type": "Drill",
-      "status": "down",
-      "avail": "",
-      "util": "",
-      "bd_hrs": "",
-      "note": "(each logging only short daily-inspection stops) plus",
-      "comment": ""
-    },
-    {
-      "unit": "DR-303",
-      "type": "Drill",
-      "status": "down",
-      "avail": "",
-      "util": "",
-      "bd_hrs": "",
-      "note": "(each logging only short daily-inspection stops) plus",
-      "comment": ""
-    },
-    {
-      "unit": "DR-341",
-      "type": "Drill",
-      "status": "down",
-      "avail": "",
-      "util": "",
-      "bd_hrs": "",
-      "note": "(each logging only short daily-inspection stops) plus",
-      "comment": ""
+      "note": "(7h, suspension problem carried from the night before, clears by 12:30 PM) both recover.",
+      "comment": "Suspension Problem"
     }
   ],
   "followUps": [
