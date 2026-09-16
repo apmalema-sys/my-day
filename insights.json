@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-09-15T15:06:21",
-  "date": "2026-09-14",
-  "runNumber": 119,
-  "summary": "1. No new production workbook or survey INX-SUM data has landed since the 118th pass. 2. Part C found 5 unprocessed Task Feedback Log rows (all Status blank), all resolved, no mismatches: Peter's reply to Pienaar's 12-Sep escalation confirms the dispatch-admin capture is NOT yet live (a data clerk is being moved to dispatch by Tuesday) and that the two recent positive survey days trace to loading staying inside the survey boundary, not to a fix taking effect; the 33,047 BCM broken-stock gap is attributed to a stale, not-yet-updated client report rather than a genuine reconciliation failure; the Finger 3 catchment berm and EPSA/Stage 5 barricading from this pass's own new HOD observation both confirm closed same-day; and the parking-and-barricading standard task closes with a decision not to write one — the maintenance superintendent addressed it verbally with the team instead. 3. Both of the 118th pass's carried-forward open questions in [[daily-production-report]] and [[survey-volume-reconciliation]] (Pienaar's reply, the 33,047 BCM gap) are now resolved. 4. The Southwest Dump guiding-beams finding from the new HOD round remains open — it already has its own separate, still-open Notion task with no linked feedback row. 5. Important References folder re-checked: 37 files, no new content since the 104th-117th passes (newest remains 4-Sep). 6. CIP folder re-checked: 8 files, no new content since the 116th/117th passes (newest remains 11-Sep). 7. Tasks: none created this pass — every action item surfacing from Parts A/B/C either already has a live Notion task (Southwest Dump guiding beams) or closed same-day via the Task Feedback Log rows processed above. 8. No content removed or renamed from RAW. ---",
+  "generatedAt": "2026-09-16T15:06:12",
+  "date": "2026-09-15",
+  "runNumber": 120,
+  "summary": "1. This session verified that work (consistent, no discrepancies), corrected one factual error it introduced — a \"second LV-speeding case\" that was actually the same case as the 119th-pass procedure review — and completed everything left undone. 2. Sep 13: 23,250 BCM/62,775 t (+1.1% vs target), ore -26.5%. 3. Sep 14: 25,823 BCM/69,722.1 t (+25.1%, the cycle's strongest single-day surplus), ore -67.0% (the cycle's worst ore miss) — three straight days of worsening ore misses (Sep 12 -8.7%, Sep 13 -26.5%, Sep 14 -67.0%) masked by waste overshoot. 4. Survey: Sep 14 gap -6.3%, Sep 15 (same-day finalized) +8.3%. 5. The September Monthly Production Plan was reissued mid-month at a lower total (598,598 t, down from 666,785 BCM) — confirmed against the survey workbook's own Monthly Target field, which dropped by the identical amount the same day. 6. A formal Ma'aden/JRAR Minutes of Meeting (14-Sep) sets the first-ever dated commissioning date for EX-253's 48-day-old swing-bearing repair (15-Sep) and formally escalates the Zaid supply-chain issue. 7. A new NCR (WL-24 light damage, skipped end-of-shift walkaround) closes with a mandatory signed checklist control rather than a one-off fix — the same standards-and-verification gap this KB tracked in the 118th-pass HOD barricading finding, recurring in a different discipline. 8. Part C found 3 unprocessed Task Feedback Log rows (all Status blank), all resolved, no mismatches: Peter's reply sets a standing precedence rule — Daily Availability Final Reports outrank the Production A&U workbook whenever they disagree — resolving the long-standing DT-108 recovered-vs-planned-down contradiction; confirms the Jul 21 \"DT incident\" stand-down was the same DT-109 truck from the Jul 20 high-wall contact, not a second incident; and points to the already-registered DT-109 investigation emails, confirming no newer closure document has landed (the investigation remains open/unsettled). 9. Important References folder re-checked: 38 files (1 new — the Ma'aden/JRAR Minutes of Meeting, synthesized into `Outputs/important-references-analysis_2026-09-15.md`). CIP folder re-checked: 8 files (1 new — a meeting invite, no operational content). No content removed or renamed from RAW.",
   "kpis": [
     {
       "label": "MTD BCM",
@@ -181,14 +181,14 @@
   "fleet": {
     "availDaily": "85.52%",
     "availMtd": "85.85%",
-    "exAvail": "65.4%",
+    "exAvail": "79.2%",
     "exUnits": 6,
-    "dtAvail": "95.0%",
-    "dtUnits": 22,
+    "dtAvail": "93.6%",
+    "dtUnits": 23,
     "excavators": [
       {
         "unit": "EX-340",
-        "avail": "39.6%"
+        "avail": "95.8%"
       },
       {
         "unit": "EX-262",
@@ -196,11 +196,11 @@
       },
       {
         "unit": "EX-253",
-        "avail": "0.0%"
+        "avail": "31.2%"
       },
       {
         "unit": "EX-263",
-        "avail": "97.9%"
+        "avail": null
       },
       {
         "unit": "EX-247",
@@ -211,9 +211,9 @@
         "avail": null
       }
     ],
-    "exBasis": "5/6",
-    "pdfDate": "14-09",
-    "dtBasis": "22 active ≥8h"
+    "exBasis": "4/6",
+    "pdfDate": "15-09",
+    "dtBasis": "23 active ≥8h"
   },
   "equipment": [
     {
@@ -224,7 +224,7 @@
       "util": "",
       "bd_hrs": "",
       "note": "recovers same day, after roughly 39 hours down.** The hydraulic-temperature-high/engine-not-start fault opened",
-      "comment": "Hydraulic Temperature High"
+      "comment": ""
     },
     {
       "unit": "EX-253",
@@ -264,7 +264,7 @@
       "util": "",
       "bd_hrs": "",
       "note": "all logged only short (0.5-1.5h) daily-inspection, service or minor-warning stops",
-      "comment": "L 03 Warning Continue Alarm"
+      "comment": "Welding Job"
     },
     {
       "unit": "EX-262",
@@ -284,7 +284,7 @@
       "util": "",
       "bd_hrs": "",
       "note": "'s included a 250-hr service plus a night GET stop installing new bucket tips.",
-      "comment": "250 Hrs Service"
+      "comment": ""
     },
     {
       "unit": "DT-106",
@@ -294,25 +294,19 @@
       "util": "",
       "bd_hrs": "",
       "note": "(7h, suspension problem carried from the night before, clears by 12:30 PM) both recover.",
-      "comment": "Suspension Problem"
+      "comment": ""
     }
   ],
   "followUps": [
     {
       "priority": "HIGH",
-      "title": "**Part B's gap-check caught four files the dashboard-scoped 118th pass h...",
-      "body": "",
-      "action": ""
-    },
-    {
-      "priority": "HIGH",
-      "title": "**Part C found 5 unprocessed Task Feedback Log rows (all Status blank), ...",
+      "title": "**Part B's gap-check found two full missed production days (Sep 13, Sep ...",
       "body": "",
       "action": ""
     },
     {
       "priority": "MONITOR",
-      "title": "Both of the 118th pass's carried-forward open questions in [[daily-produ...",
+      "title": "**Part C found 3 unprocessed Task Feedback Log rows (all Status blank), ...",
       "body": "",
       "action": ""
     }
