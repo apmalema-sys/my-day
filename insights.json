@@ -1,30 +1,30 @@
 {
-  "generatedAt": "2026-09-16T15:06:12",
-  "date": "2026-09-15",
-  "runNumber": 120,
-  "summary": "1. This session verified that work (consistent, no discrepancies), corrected one factual error it introduced — a \"second LV-speeding case\" that was actually the same case as the 119th-pass procedure review — and completed everything left undone. 2. Sep 13: 23,250 BCM/62,775 t (+1.1% vs target), ore -26.5%. 3. Sep 14: 25,823 BCM/69,722.1 t (+25.1%, the cycle's strongest single-day surplus), ore -67.0% (the cycle's worst ore miss) — three straight days of worsening ore misses (Sep 12 -8.7%, Sep 13 -26.5%, Sep 14 -67.0%) masked by waste overshoot. 4. Survey: Sep 14 gap -6.3%, Sep 15 (same-day finalized) +8.3%. 5. The September Monthly Production Plan was reissued mid-month at a lower total (598,598 t, down from 666,785 BCM) — confirmed against the survey workbook's own Monthly Target field, which dropped by the identical amount the same day. 6. A formal Ma'aden/JRAR Minutes of Meeting (14-Sep) sets the first-ever dated commissioning date for EX-253's 48-day-old swing-bearing repair (15-Sep) and formally escalates the Zaid supply-chain issue. 7. A new NCR (WL-24 light damage, skipped end-of-shift walkaround) closes with a mandatory signed checklist control rather than a one-off fix — the same standards-and-verification gap this KB tracked in the 118th-pass HOD barricading finding, recurring in a different discipline. 8. Part C found 3 unprocessed Task Feedback Log rows (all Status blank), all resolved, no mismatches: Peter's reply sets a standing precedence rule — Daily Availability Final Reports outrank the Production A&U workbook whenever they disagree — resolving the long-standing DT-108 recovered-vs-planned-down contradiction; confirms the Jul 21 \"DT incident\" stand-down was the same DT-109 truck from the Jul 20 high-wall contact, not a second incident; and points to the already-registered DT-109 investigation emails, confirming no newer closure document has landed (the investigation remains open/unsettled). 9. Important References folder re-checked: 38 files (1 new — the Ma'aden/JRAR Minutes of Meeting, synthesized into `Outputs/important-references-analysis_2026-09-15.md`). CIP folder re-checked: 8 files (1 new — a meeting invite, no operational content). No content removed or renamed from RAW.",
+  "generatedAt": "2026-09-16T16:36:52",
+  "date": "2026-09-16",
+  "runNumber": 121,
+  "summary": "1. Sep 15 total production beat target by +14.1% (23,560 BCM) for a fourth straight daily beat, but ore production was zero against a 1,877.2 BCM target (-100%) — the worst single-day ore reading logged, extending the ore-miss streak that opened Sep 12 to four straight days; MTD total gap widened to +5.6%, MTD ore surplus narrowed to +51.0% (a target-base effect, not real recovery), and crusher stockpile throughput remains under a third of linear plan pace (30.8% MTD) after the heaviest single maintenance stop this cycle (9h45m). 2. 2. Fleet availability posted its best combined reading in several passes (87.49% daily, 80.63% core fleet) as EX-253's swing-bearing failure — standing since 28-Jul, tracked in every pass for 49 days — finally shows a close-out date, and two other long-standing faults (EX-327's hammer noise, WT-304's generator fault) both drop off the down-list entirely the same day; DZ-249 remains the one fault that does not resolve, now a second full day down. 3. 3. The survey gap reverses sharply negative (-29.9%, the worst since Sep 10) after three of the prior four days ran positive or near-flat, on a return of the three-excavator heap/overspill loading pattern; this pass's cross-check of the newly finalized day against the Client Meeting Report's own truck total surfaces new evidence that the whole `2609NN-INX-SUM` workbook family reports the *prior* calendar day rather than the file's own date — which would mean the 120th pass's closing \"Day 21 (Sep 15)\" section is actually Sep 14 data. 4. Flagged for a human check, not corrected retroactively. 5. Ore bottoming at zero on Sep 15 (after -8.7%, -26.5%, -67.0% on the three preceding days) is worth a direct check on which blocks are being worked — this reads more like a sequencing shift toward an all-waste phase than four independent misses. 6. Drilling missed its target for the first time in several days (-27.8%) the same day as the zero-ore reading, with no drill-rig fault logged in the Availability report — worth confirming whether it is linked to the same sequencing shift or a standalone rig/crew issue. 7. Two items outside this pass's dashboard scope are flagged for the next full-scope \"compile mining operations KB\" pass: a contact incident between SA-173 and SA-209 on the Mansourah 1 Main Ramp (16-Sep 05:30, Medical Treatment classification, no injuries, operators suspended pending investigation) in `Incidents report/`; and a site-leadership \"ADW Re-Focusing Program\" safety/productivity communication from Joe Coleman (new on site) to the full JRAR leadership team, cc Peter, in `Maintanance Shedules/`. 8. Both registered at index level only this pass. 9. The date-label question flagged above needs a direct human check against the original `260915-INX-SUM.xlsx` and `260916-INX-SUM.xlsx` files (both unedited in RAW) before any relabeling — see [[survey-volume-reconciliation]]'s Open Questions for the specific cross-check evidence. Source: `Production report/Sep 26/September Client Meeting Report.xlsx` (Sept (15) tab, new), `DailyAvailability_Final_Report (15-09-2025 ).pdf` (new), `Survey Data/Sep 26/260916-INX-SUM.xlsx` (new); `September Block Info.xlsx`, `September Distance report.xlsx`, `DPR-September-2026.xlsx`, `September Daily Drill Meters Report.xlsx`, `Daily Drill Sampling Record-2026.xlsx`, `Equipment running hours report -.xlsx`, `September A & U.xlsx` (all Sept (15) tabs, cross-check only); `Incidents report/16-09-26 - SA 173 and SA 209 Make Contact.pdf` and cover `.msg` (registered, flagged, not compiled); `Maintanance Shedules/RE adw-2026-059 Launch of the ADW Re-Focusing Program.msg` (registered, flagged, not compiled). --- ### Wiki compile Updated [[daily-production-report]] (Sep 15 production, crusher, and machinery detail — zero-ore day, heaviest crusher maintenance stop this cycle), [[fleet-availability-utilization]] (Sep 15 fleet-wide detail — EX-253 recovery after 49 days, EX-327 and WT-304 both resolve, DZ-249 escalates to a second full day down), [[survey-volume-reconciliation]] (Sep 15 detail, the sharp negative reversal, and the new date-label evidence) — `Last updated` bumped to 2026-09-16 (121st pass) on all three. `Sources:` lines updated on all three with the new RAW file aliases. No content removed or renamed from RAW.",
   "kpis": [
     {
       "label": "MTD BCM",
-      "value": "423,336",
-      "delta": "+5.2% vs target",
+      "value": "446,896",
+      "delta": "+5.6% vs target",
       "good": true
     },
     {
       "label": "Survey Gap",
-      "value": "-12.9%",
+      "value": "-12.1%",
       "delta": "survey vs trucks MTD",
       "good": false
     },
     {
       "label": "Crusher MTD",
-      "value": "30%",
-      "delta": "37,414 / 124,000 LCM",
+      "value": "31%",
+      "delta": "38,205 / 124,000 LCM",
       "good": null
     },
     {
       "label": "Days Remain",
-      "value": "10",
+      "value": "9",
       "delta": "",
       "good": null
     }
@@ -176,11 +176,18 @@
       "actual": 25823,
       "target": 22993,
       "half": false
+    },
+    {
+      "date": "2026-09-15",
+      "label": "15 Sep",
+      "actual": 23560,
+      "target": 22993,
+      "half": false
     }
   ],
   "fleet": {
-    "availDaily": "85.52%",
-    "availMtd": "85.85%",
+    "availDaily": "87.49%",
+    "availMtd": "85.96%",
     "exAvail": "79.2%",
     "exUnits": 6,
     "dtAvail": "93.6%",
@@ -217,96 +224,108 @@
   },
   "equipment": [
     {
-      "unit": "EX-340",
+      "unit": "EX-253",
       "type": "Excavator",
       "status": "warning",
-      "avail": "39.58%",
+      "avail": "",
       "util": "",
       "bd_hrs": "",
-      "note": "recovers same day, after roughly 39 hours down.** The hydraulic-temperature-high/engine-not-start fault opened",
-      "comment": ""
+      "note": "hold its recovery, or does the swing-bearing repair prove to be a temporary fix after 49 days down?** Worth wa",
+      "comment": "Swing Braring Failure"
     },
     {
-      "unit": "EX-253",
+      "unit": "EX-327",
       "type": "Excavator",
       "status": "down",
       "avail": "",
       "util": "",
       "bd_hrs": "",
-      "note": "48d",
-      "comment": "Swing Braring Failure"
+      "note": "is back to full availability.",
+      "comment": ""
     },
     {
-      "unit": "EX-263",
-      "type": "Excavator",
-      "status": "scheduled",
+      "unit": "WT-304",
+      "type": "Water Truck",
+      "status": "down",
       "avail": "",
       "util": "",
       "bd_hrs": "",
-      "note": "all logged only short (0.5-1.5h) daily-inspection, service or minor-warning stops",
+      "note": "which the 120th pass tracked entering its 5th day down (generator cannot start, since 10-Sep), likewise does n",
       "comment": ""
     },
     {
       "unit": "EX-123",
       "type": "Excavator",
-      "status": "scheduled",
+      "status": "down",
       "avail": "",
       "util": "",
       "bd_hrs": "",
-      "note": "all logged only short (0.5-1.5h) daily-inspection, service or minor-warning stops",
+      "note": "(0.5h daily inspection)",
       "comment": ""
     },
     {
       "unit": "EX-247",
       "type": "Excavator",
-      "status": "scheduled",
-      "avail": "",
+      "status": "down",
+      "avail": "93.75%",
       "util": "",
       "bd_hrs": "",
-      "note": "all logged only short (0.5-1.5h) daily-inspection, service or minor-warning stops",
+      "note": "(1.5h — a concurrent daily-inspection/breakdown plus a welding job on attach-and-work-tools, both 11:30 AM-1:0",
       "comment": "Welding Job"
     },
     {
       "unit": "EX-262",
       "type": "Excavator",
-      "status": "scheduled",
-      "avail": "",
-      "util": "",
-      "bd_hrs": "",
-      "note": "all logged only short (0.5-1.5h) daily-inspection, service or minor-warning stops",
-      "comment": ""
-    },
-    {
-      "unit": "EX-398",
-      "type": "Excavator",
-      "status": "scheduled",
-      "avail": "",
-      "util": "",
-      "bd_hrs": "",
-      "note": "'s included a 250-hr service plus a night GET stop installing new bucket tips.",
-      "comment": ""
-    },
-    {
-      "unit": "DT-106",
-      "type": "Haul Truck",
       "status": "down",
       "avail": "",
       "util": "",
       "bd_hrs": "",
-      "note": "(7h, suspension problem carried from the night before, clears by 12:30 PM) both recover.",
+      "note": "(1h daily inspection)",
+      "comment": ""
+    },
+    {
+      "unit": "EX-340",
+      "type": "Excavator",
+      "status": "down",
+      "avail": "",
+      "util": "",
+      "bd_hrs": "",
+      "note": "(1h daily inspection).",
+      "comment": ""
+    },
+    {
+      "unit": "EX-263",
+      "type": "Excavator",
+      "status": "down",
+      "avail": "",
+      "util": "",
+      "bd_hrs": "",
+      "note": "logged no stoppages at all — fully available for the day.",
       "comment": ""
     }
   ],
   "followUps": [
     {
       "priority": "HIGH",
-      "title": "**Part B's gap-check found two full missed production days (Sep 13, Sep ...",
+      "title": "Ore bottoming at zero on Sep 15 (after -8.7%, -26.5%, -67.0% on the thre...",
+      "body": "",
+      "action": ""
+    },
+    {
+      "priority": "HIGH",
+      "title": "Drilling missed its target for the first time in several days (-27.8%) t...",
       "body": "",
       "action": ""
     },
     {
       "priority": "MONITOR",
-      "title": "**Part C found 3 unprocessed Task Feedback Log rows (all Status blank), ...",
+      "title": "**Two items outside this pass's dashboard scope are flagged for the next...",
+      "body": "",
+      "action": ""
+    },
+    {
+      "priority": "MONITOR",
+      "title": "The date-label question flagged above needs a direct human check against...",
       "body": "",
       "action": ""
     }
