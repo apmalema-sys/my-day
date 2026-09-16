@@ -1,15 +1,15 @@
 {
-  "date": "2026-09-15",
-  "topic": "Mobile Equipment Operations (Dozer, Breaker, Loader, Refuelling)",
-  "title": "Mobile Equipment Operations (Dozer, Breaker, Loader, Refuelling)",
-  "body": "ADW runs a mixed fleet — dozers, hydraulic breakers, wheel loaders, water pumps, LVs — all working close to haul roads, the ROM pad, and dump edges. Small procedural lapses on this equipment (wrong gear, no three-point mounting, engine running at the fuel bay) turn into GET damage, dropped-object injuries, or fire incidents fast. Refuelling alone already has four logged incidents from missing supervision.",
+  "date": "2026-09-16",
+  "topic": "MSHEM-06.01 General EHSS Rules",
+  "title": "MSHEM-06.01 General EHSS Rules",
+  "body": "When a near-miss gets waved off because \"nothing happened,\" that's the exact gap MSHEM-06.01 exists to close — and it's how the same unsafe act repeats until it isn't a near-miss anymore. ADW runs under this standard whether or not the specific rule matches local habit.",
   "keyPoints": [
-    "**Dozer:** 1st gear forward, 2nd gear reverse, full stop before changing direction. Steer with blade tilt cylinders, not steering clutches, once the blade is loaded — saves the undercarriage and cuts uneven GET wear.",
-    "**Hydraulic rock breaker:** windscreen guard fitted, lights and amber strobe on at all times, seatbelt on. It's there to clear oversize at the crusher feed in place — not a general-purpose hammer.",
-    "**Boarding any machine:** three points of contact, always — two hands one foot, or two feet one hand. Face the machine, never jump, nothing carried in the hands (lanyard or hoist instead).",
-    "**Refuelling:** engine off, ignition off, key removed, no phones or open flame in the zone, spill kit staged. This is the exact failure mode behind NCR 25-037, the gas-station near-miss, the MG-85 wall strike, and the June diesel overflow — same missing-supervision pattern every time.",
-    "**Parking:** drive-through by default, 50 m clear of the loader turning circle at the ROM pad, never behind operating equipment."
+    "Enforce every violation, every time — not just the ones that cause a loss. Outcome doesn't excuse the breach (§5.1.11).",
+    "Where site SOP and Saudi regulation disagree, the stricter one wins. Never assume the local way is the floor.",
+    "The nine Life Saving Rules must be visible, discussed at toolbox talks, and actually verified in use — not just posted on a board.",
+    "Every corrective action needs a named owner and a target date. Pushing that date isn't a supervisor call — first slip needs Director sign-off, second needs SVP.",
+    "\"Ask if unsure\" is a real rule, not a throwaway line — it's the everyday partner to the right to stop work."
   ],
-  "apply": "With the go-line fuel bay still mid-upgrade (second dispensing point, extra tank pushed to next year), expect trucks queuing tighter at the pump — walk the refuelling zone once this shift and confirm engines are actually off and the spotter/attendant setup is being followed, not just assumed.",
-  "generatedAt": "2026-09-15T09:38:14"
+  "apply": "If you catch a bypassed brake check, a skipped LOTO step, or a shortcut at the loading face and it didn't lead to anything — write it up and enforce it anyway, because that's the exact scenario this standard was built for.",
+  "generatedAt": "2026-09-16T10:58:42"
 }
