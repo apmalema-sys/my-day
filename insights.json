@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-09-16T16:36:52",
+  "generatedAt": "2026-09-17T15:06:44",
   "date": "2026-09-16",
-  "runNumber": 121,
-  "summary": "1. Sep 15 total production beat target by +14.1% (23,560 BCM) for a fourth straight daily beat, but ore production was zero against a 1,877.2 BCM target (-100%) — the worst single-day ore reading logged, extending the ore-miss streak that opened Sep 12 to four straight days; MTD total gap widened to +5.6%, MTD ore surplus narrowed to +51.0% (a target-base effect, not real recovery), and crusher stockpile throughput remains under a third of linear plan pace (30.8% MTD) after the heaviest single maintenance stop this cycle (9h45m). 2. 2. Fleet availability posted its best combined reading in several passes (87.49% daily, 80.63% core fleet) as EX-253's swing-bearing failure — standing since 28-Jul, tracked in every pass for 49 days — finally shows a close-out date, and two other long-standing faults (EX-327's hammer noise, WT-304's generator fault) both drop off the down-list entirely the same day; DZ-249 remains the one fault that does not resolve, now a second full day down. 3. 3. The survey gap reverses sharply negative (-29.9%, the worst since Sep 10) after three of the prior four days ran positive or near-flat, on a return of the three-excavator heap/overspill loading pattern; this pass's cross-check of the newly finalized day against the Client Meeting Report's own truck total surfaces new evidence that the whole `2609NN-INX-SUM` workbook family reports the *prior* calendar day rather than the file's own date — which would mean the 120th pass's closing \"Day 21 (Sep 15)\" section is actually Sep 14 data. 4. Flagged for a human check, not corrected retroactively. 5. Ore bottoming at zero on Sep 15 (after -8.7%, -26.5%, -67.0% on the three preceding days) is worth a direct check on which blocks are being worked — this reads more like a sequencing shift toward an all-waste phase than four independent misses. 6. Drilling missed its target for the first time in several days (-27.8%) the same day as the zero-ore reading, with no drill-rig fault logged in the Availability report — worth confirming whether it is linked to the same sequencing shift or a standalone rig/crew issue. 7. Two items outside this pass's dashboard scope are flagged for the next full-scope \"compile mining operations KB\" pass: a contact incident between SA-173 and SA-209 on the Mansourah 1 Main Ramp (16-Sep 05:30, Medical Treatment classification, no injuries, operators suspended pending investigation) in `Incidents report/`; and a site-leadership \"ADW Re-Focusing Program\" safety/productivity communication from Joe Coleman (new on site) to the full JRAR leadership team, cc Peter, in `Maintanance Shedules/`. 8. Both registered at index level only this pass. 9. The date-label question flagged above needs a direct human check against the original `260915-INX-SUM.xlsx` and `260916-INX-SUM.xlsx` files (both unedited in RAW) before any relabeling — see [[survey-volume-reconciliation]]'s Open Questions for the specific cross-check evidence. Source: `Production report/Sep 26/September Client Meeting Report.xlsx` (Sept (15) tab, new), `DailyAvailability_Final_Report (15-09-2025 ).pdf` (new), `Survey Data/Sep 26/260916-INX-SUM.xlsx` (new); `September Block Info.xlsx`, `September Distance report.xlsx`, `DPR-September-2026.xlsx`, `September Daily Drill Meters Report.xlsx`, `Daily Drill Sampling Record-2026.xlsx`, `Equipment running hours report -.xlsx`, `September A & U.xlsx` (all Sept (15) tabs, cross-check only); `Incidents report/16-09-26 - SA 173 and SA 209 Make Contact.pdf` and cover `.msg` (registered, flagged, not compiled); `Maintanance Shedules/RE adw-2026-059 Launch of the ADW Re-Focusing Program.msg` (registered, flagged, not compiled). --- ### Wiki compile Updated [[daily-production-report]] (Sep 15 production, crusher, and machinery detail — zero-ore day, heaviest crusher maintenance stop this cycle), [[fleet-availability-utilization]] (Sep 15 fleet-wide detail — EX-253 recovery after 49 days, EX-327 and WT-304 both resolve, DZ-249 escalates to a second full day down), [[survey-volume-reconciliation]] (Sep 15 detail, the sharp negative reversal, and the new date-label evidence) — `Last updated` bumped to 2026-09-16 (121st pass) on all three. `Sources:` lines updated on all three with the new RAW file aliases. No content removed or renamed from RAW.",
+  "runNumber": 122,
+  "summary": "1. Leadership transition, now formal and client-visible. 2. Eben Pienaar's farewell gathering (15-Sep, newly ingested meeting note) and a separate, dated Project Management Handover email (16-Sep, cc six named Maaden stakeholders plus JRAR's ADW Seniors) both landed this week — Eben hands ADW PM responsibilities to Joe Coleman \"effective immediately.\" Joe's own first written direction to site leadership the same day (inside the still-live ADW Re-Focusing Program thread) gives an independent, positive first-days read on workshop standards and pit-side signage/barricade discipline, and confirms the daily 07:30 Ops/Maintenance meeting continues. 3. All three documents converge on the same transition; none of them reset the equipment-availability/utilization focus already in motion. 2. 4. A new Week 38-39 (15-28 Sep) Maaden plan deck opens six brand-new 860-elevation shots (860-514 to 860-520) — the first time this KB has tracked drilling at that elevation — alongside 20,787 m of drilling and 702 kt of blasting across the fortnight; Week 38 plans 405,540 t (24,471 t ore at 4.71 g/t, all the fortnight's SHG), Week 39 397,281 t (17,124 t ore at a much thinner 0.89 g/t). 5. Part C found zero unprocessed Task Feedback Log rows — the log is fully caught up (last row logged 2026-09-14 06:40, already Processed); no Wiki edits, no mismatches. 6. EX-253's 49-day swing-bearing stoppage clearing and Sep 15's zero-ore day (already reported at the 121st pass) sit directly under this pass's leadership-transition messaging — see the compound-insight cross-reference in `Outputs/important-references-analysis_2026-09-16.md`. 7. Important References folder: 39 files (1 new — the PM Handover email). 8. Synthesized into `Outputs/important-references-analysis_2026-09-16.md` alongside the Re-Focusing Program follow-up thread. 9. CIP folder not re-checked this pass — scope was the 121st pass's two deferred items plus the one genuinely new Important References file, not a fresh full-folder rescan; no new CIP content flagged since the 116th/117th-pass check. No content removed or renamed from RAW.",
   "kpis": [
     {
       "label": "MTD BCM",
@@ -188,10 +188,10 @@
   "fleet": {
     "availDaily": "87.49%",
     "availMtd": "85.96%",
-    "exAvail": "79.2%",
+    "exAvail": "67.5%",
     "exUnits": 6,
-    "dtAvail": "93.6%",
-    "dtUnits": 23,
+    "dtAvail": "95.2%",
+    "dtUnits": 22,
     "excavators": [
       {
         "unit": "EX-340",
@@ -203,11 +203,11 @@
       },
       {
         "unit": "EX-253",
-        "avail": "31.2%"
+        "avail": "0.0%"
       },
       {
         "unit": "EX-263",
-        "avail": null
+        "avail": "52.1%"
       },
       {
         "unit": "EX-247",
@@ -218,9 +218,9 @@
         "avail": null
       }
     ],
-    "exBasis": "4/6",
-    "pdfDate": "15-09",
-    "dtBasis": "23 active ≥8h"
+    "exBasis": "5/6",
+    "pdfDate": "16-09",
+    "dtBasis": "22 active ≥8h"
   },
   "equipment": [
     {
@@ -231,7 +231,7 @@
       "util": "",
       "bd_hrs": "",
       "note": "hold its recovery, or does the swing-bearing repair prove to be a temporary fix after 49 days down?** Worth wa",
-      "comment": "Swing Braring Failure"
+      "comment": "Low Oil Level Warning"
     },
     {
       "unit": "EX-327",
@@ -271,7 +271,7 @@
       "util": "",
       "bd_hrs": "",
       "note": "(1.5h — a concurrent daily-inspection/breakdown plus a welding job on attach-and-work-tools, both 11:30 AM-1:0",
-      "comment": "Welding Job"
+      "comment": "Install Bucket Tips"
     },
     {
       "unit": "EX-262",
@@ -281,7 +281,7 @@
       "util": "",
       "bd_hrs": "",
       "note": "(1h daily inspection)",
-      "comment": ""
+      "comment": "Install New Bucket Tips"
     },
     {
       "unit": "EX-340",
@@ -301,7 +301,7 @@
       "util": "",
       "bd_hrs": "",
       "note": "logged no stoppages at all — fully available for the day.",
-      "comment": ""
+      "comment": "Repalced Bucket"
     }
   ],
   "followUps": [
