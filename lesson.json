@@ -1,15 +1,15 @@
 {
-  "date": "2026-09-17",
-  "topic": "NCR Patterns at ADW",
-  "title": "NCR Patterns at ADW",
-  "body": "The NCR corpus isn't random — it clusters at Stage 4, Stage 6, and the ROM pad, and at the exact hours supervision is thinnest. Ignore that pattern and you keep writing up the same failure mode in a new location instead of fixing the coverage gap that causes it.",
+  "date": "2026-09-18",
+  "topic": "Lost GET — Reporting and Recovery",
+  "title": "Lost GET — Reporting and Recovery",
+  "body": "A missing tooth or shroud that rides through the cycle unnoticed ends up in the primary crusher — that's severe liner damage, a plant stoppage, and a jammed-liner repair that's one of the ugliest safety jobs on site. It's entirely preventable, and it's expensive precisely because it's preventable.",
   "keyPoints": [
-    "Eight of nineteen NCRs sit at Stage 4, five at Stage 6, two at the ROM pad — the highest-stakes ground is also where supervision coverage is weakest. Treat that overlap as a staffing problem, not bad luck.",
-    "Incidents cluster at shift transitions: pre-dawn (04:00-06:30) before day shift supervisors are on site, and late day shift (16:00-17:20) when handover focus pulls supervisors off the floor. Build deliberate presence into those windows, don't assume the roster covers it.",
-    "\"Refuse the truck\" incidents (Galih, Syukur) share one gap: no formal verify-before-refuse step. An operator citing a defect from memory, without re-inspecting equipment that's since been repaired, costs production in the hundreds to low-thousands of tons per shift. Close that gap with a mandatory joint inspection before any refusal is accepted.",
-    "People NCR'd once often resurface as supervisors later (Sadiq Ali, John Konneh). That can be the process working — correction into responsibility — or it can be forced rotation covering a manpower gap. Don't assume either; check which one it actually is before relying on it.",
-    "A control that exists on paper but isn't spot-checked isn't a control — the WL-24 walkaround fix only holds if supervisors actually verify the signed checklist weekly, not just file it."
+    "Stop first, always. If GET loss is suspected or confirmed, the operator stops immediately — no \"finish the pass and check after.\"",
+    "Report with specifics: equipment ID, operator, GPS location, and exactly what's missing. Vague reports slow the search and widen the isolation zone.",
+    "Survey pinpoints the search area, especially on ore blocks where muck moves fast through load-and-haul — the window to recover closes quickly.",
+    "If it isn't found, the loader operator at the ROM pad feeding the crusher is the last line of defense — every load gets a visual check before it's fed.",
+    "Prevention beats recovery every time: pre-start GET checks, documented change-outs (including single-tooth replacements), and operators trained to recognize the feel/sound of a lost tooth."
   ],
-  "apply": "If you're near Stage 4, Stage 6, or the ROM pad during a shift transition, that's exactly the coincidence this pattern predicts — make sure a supervisor is actually there, not just rostered to be.",
-  "generatedAt": "2026-09-17T17:48:28"
+  "apply": "Any loading face working broken ground after a blast — that's exactly where a tooth or adapter separates unnoticed, so a five-second GET check at bucket cycle start costs nothing next to a crusher rebuild.",
+  "generatedAt": "2026-09-18T09:39:22"
 }
