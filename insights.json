@@ -1,30 +1,30 @@
 {
-  "generatedAt": "2026-09-17T15:06:44",
-  "date": "2026-09-16",
-  "runNumber": 122,
-  "summary": "1. Leadership transition, now formal and client-visible. 2. Eben Pienaar's farewell gathering (15-Sep, newly ingested meeting note) and a separate, dated Project Management Handover email (16-Sep, cc six named Maaden stakeholders plus JRAR's ADW Seniors) both landed this week — Eben hands ADW PM responsibilities to Joe Coleman \"effective immediately.\" Joe's own first written direction to site leadership the same day (inside the still-live ADW Re-Focusing Program thread) gives an independent, positive first-days read on workshop standards and pit-side signage/barricade discipline, and confirms the daily 07:30 Ops/Maintenance meeting continues. 3. All three documents converge on the same transition; none of them reset the equipment-availability/utilization focus already in motion. 2. 4. A new Week 38-39 (15-28 Sep) Maaden plan deck opens six brand-new 860-elevation shots (860-514 to 860-520) — the first time this KB has tracked drilling at that elevation — alongside 20,787 m of drilling and 702 kt of blasting across the fortnight; Week 38 plans 405,540 t (24,471 t ore at 4.71 g/t, all the fortnight's SHG), Week 39 397,281 t (17,124 t ore at a much thinner 0.89 g/t). 5. Part C found zero unprocessed Task Feedback Log rows — the log is fully caught up (last row logged 2026-09-14 06:40, already Processed); no Wiki edits, no mismatches. 6. EX-253's 49-day swing-bearing stoppage clearing and Sep 15's zero-ore day (already reported at the 121st pass) sit directly under this pass's leadership-transition messaging — see the compound-insight cross-reference in `Outputs/important-references-analysis_2026-09-16.md`. 7. Important References folder: 39 files (1 new — the PM Handover email). 8. Synthesized into `Outputs/important-references-analysis_2026-09-16.md` alongside the Re-Focusing Program follow-up thread. 9. CIP folder not re-checked this pass — scope was the 121st pass's two deferred items plus the one genuinely new Important References file, not a fresh full-folder rescan; no new CIP content flagged since the 116th/117th-pass check. No content removed or renamed from RAW.",
+  "generatedAt": "2026-09-18T15:07:04",
+  "date": "2026-09-18",
+  "runNumber": 124,
+  "summary": "1. Sep 17 total production beat target for a sixth straight day (+4,003.7 BCM, +19.4%), but ore stayed at zero for a third consecutive day (Sep 15-17, target 1,877.2 BCM each day) — the longest zero-ore run this KB has tracked, extending the miss streak that opened Sep 12 to six straight days of shortfall. 2. No ore has moved since Sep 14. 3. Material split ran 100% Stage 5 for a second straight day. 4. MTD total surplus widened to +6.6%; MTD ore surplus narrowed further to +37.6% as the ore total stays flat against an accruing target — a target-base effect, not recovery. 2. 5. EX-253 stayed down the full 24 hours for a second consecutive day on the same fault chain (Hydraulic Oil Leakage, then Swing Oil Level Low/Swing Problem) that opened the evening of 16-Sep, one day after the unit's 49-day swing-bearing failure cleared. 6. Fleet-wide Overall Daily still improved to 87.67% (from 86.26%) on Dump Truck and Drill Rig strength. 7. DR-341's 1,500-hour service also ran a second full day, now showing a committed three-day close (18-Sep 5:30 AM) if it holds — the longest single drill-rig stop this KB has logged this cycle. 3. 8. Blast #17 fired overnight (finishing ~3:00 AM), ending the no-blast gap that opened Sep 16 — area 870-513 with PS & high spot, 26,093 BCM, 14,874 kg explosive. 9. This is the same blast the 123rd pass's meeting-note compile had flagged without a matching workbook figure (\"drilling red day, blast finished ~3am\"); this pass supplies the figure. Drilling itself posted its first beat in three days (+1.9%), though entirely pre-split (PS) metreage, not production drilling. Survey reconciliation for the same day came in at -0.39% (trucks 24,645 / survey 24,550) — the tightest gap this KB has tracked, on a single-excavator exception comment, and the fourth consecutive confirmation of the file-N-reports-day-(N-1) publishing lag. Part C queried the Task Feedback Log's \"All Feedback\" view directly by SQL (top 15 rows by Date Logged descending) — all already Processed, newest row still 2026-09-14 06:40:24Z. Zero unprocessed rows, no Wiki edits, no mismatches, nothing to mark. Notion Notes & References: one new item — Peter's own gate-pass log entry on the Mohammad Said fitness-for-duty stand-down (123rd pass), adding process detail (interim coverage, replacement ETA confirmed in writing) not carried in the original HR email thread. Registered and compiled as a second source on an already-known event, not a new finding. Important References folder re-checked: 40 files, no new content since the 123rd pass (newest remains the 17-Sep gate-pass assistance email, already registered). Important References folder re-checked: 40 files, no new content since the 123rd pass. No new `Outputs/important-references-analysis_*.md` entry this pass — nothing new to synthesize. Notion Notes & References: full scan, 14 rows — 13 already ingested, 1 new (Gate pass release — Mohammad Said, filed untagged but self-evidently ADW content; registered and compiled per the standing rule). Task Feedback Log: queried directly by SQL, all Processed, zero unprocessed rows, no mismatches, nothing to mark. No content removed or renamed from RAW.",
   "kpis": [
     {
       "label": "MTD BCM",
-      "value": "446,896",
-      "delta": "+5.6% vs target",
+      "value": "495,256",
+      "delta": "+6.6% vs target",
       "good": true
     },
     {
       "label": "Survey Gap",
-      "value": "-12.1%",
+      "value": "-11.6%",
       "delta": "survey vs trucks MTD",
       "good": false
     },
     {
       "label": "Crusher MTD",
-      "value": "31%",
-      "delta": "38,205 / 124,000 LCM",
+      "value": "35%",
+      "delta": "42,964 / 124,000 LCM",
       "good": null
     },
     {
       "label": "Days Remain",
-      "value": "9",
+      "value": "7",
       "delta": "",
       "good": null
     }
@@ -183,23 +183,37 @@
       "actual": 23560,
       "target": 22993,
       "half": false
+    },
+    {
+      "date": "2026-09-16",
+      "label": "16 Sep",
+      "actual": 23715,
+      "target": 22993,
+      "half": false
+    },
+    {
+      "date": "2026-09-17",
+      "label": "17 Sep",
+      "actual": 24645,
+      "target": 22993,
+      "half": false
     }
   ],
   "fleet": {
-    "availDaily": "87.49%",
-    "availMtd": "85.96%",
-    "exAvail": "67.5%",
+    "availDaily": "87.67%",
+    "availMtd": "86.08%",
+    "exAvail": "75.4%",
     "exUnits": 6,
-    "dtAvail": "95.2%",
+    "dtAvail": "96.0%",
     "dtUnits": 22,
     "excavators": [
       {
         "unit": "EX-340",
-        "avail": "95.8%"
+        "avail": "97.9%"
       },
       {
         "unit": "EX-262",
-        "avail": "95.8%"
+        "avail": "97.9%"
       },
       {
         "unit": "EX-253",
@@ -207,11 +221,11 @@
       },
       {
         "unit": "EX-263",
-        "avail": "52.1%"
+        "avail": "83.3%"
       },
       {
         "unit": "EX-247",
-        "avail": "93.8%"
+        "avail": "97.9%"
       },
       {
         "unit": "EX-1200",
@@ -219,7 +233,7 @@
       }
     ],
     "exBasis": "5/6",
-    "pdfDate": "16-09",
+    "pdfDate": "17-09",
     "dtBasis": "22 active ≥8h"
   },
   "equipment": [
@@ -230,28 +244,28 @@
       "avail": "",
       "util": "",
       "bd_hrs": "",
-      "note": "hold its recovery, or does the swing-bearing repair prove to be a temporary fix after 49 days down?** Worth wa",
-      "comment": "Low Oil Level Warning"
+      "note": "'s current fault clear inside a normal repair window, or does it become a second extended stoppage after the o",
+      "comment": "Hydraulic Oil Leakage"
     },
     {
-      "unit": "EX-327",
+      "unit": "DR-341",
+      "type": "Drill",
+      "status": "scheduled",
+      "avail": "",
+      "util": "",
+      "bd_hrs": "",
+      "note": "'s 1,500-hour service and backlog run to its now-committed close (18-Sep 5:30 AM), or does it slip further?** ",
+      "comment": ""
+    },
+    {
+      "unit": "EX-263",
       "type": "Excavator",
-      "status": "down",
-      "avail": "",
+      "status": "warning",
+      "avail": "83.33%",
       "util": "",
       "bd_hrs": "",
-      "note": "is back to full availability.",
-      "comment": ""
-    },
-    {
-      "unit": "WT-304",
-      "type": "Water Truck",
-      "status": "down",
-      "avail": "",
-      "util": "",
-      "bd_hrs": "",
-      "note": "which the 120th pass tracked entering its 5th day down (generator cannot start, since 10-Sep), likewise does n",
-      "comment": ""
+      "note": "opens a fresh two-stop day — A/C Not Working, logged separately by day (3:30-4:00 PM) and night (7:00-10:30 PM",
+      "comment": "A/C Not Working"
     },
     {
       "unit": "EX-123",
@@ -260,18 +274,8 @@
       "avail": "",
       "util": "",
       "bd_hrs": "",
-      "note": "(0.5h daily inspection)",
+      "note": "all logged only short (0.5-1h) daily-inspection stops.",
       "comment": ""
-    },
-    {
-      "unit": "EX-247",
-      "type": "Excavator",
-      "status": "down",
-      "avail": "93.75%",
-      "util": "",
-      "bd_hrs": "",
-      "note": "(1.5h — a concurrent daily-inspection/breakdown plus a welding job on attach-and-work-tools, both 11:30 AM-1:0",
-      "comment": "Install Bucket Tips"
     },
     {
       "unit": "EX-262",
@@ -280,8 +284,8 @@
       "avail": "",
       "util": "",
       "bd_hrs": "",
-      "note": "(1h daily inspection)",
-      "comment": "Install New Bucket Tips"
+      "note": "all logged only short (0.5-1h) daily-inspection stops.",
+      "comment": "A/C Not Working"
     },
     {
       "unit": "EX-340",
@@ -290,18 +294,28 @@
       "avail": "",
       "util": "",
       "bd_hrs": "",
-      "note": "(1h daily inspection).",
+      "note": "all logged only short (0.5-1h) daily-inspection stops.",
       "comment": ""
     },
     {
-      "unit": "EX-263",
+      "unit": "EX-398",
       "type": "Excavator",
       "status": "down",
       "avail": "",
       "util": "",
       "bd_hrs": "",
-      "note": "logged no stoppages at all — fully available for the day.",
-      "comment": "Repalced Bucket"
+      "note": "all logged only short (0.5-1h) daily-inspection stops.",
+      "comment": ""
+    },
+    {
+      "unit": "DT-109",
+      "type": "Haul Truck",
+      "status": "warning",
+      "avail": "72.92%",
+      "util": "",
+      "bd_hrs": "",
+      "note": "lost 6.5h to an Air Filter Warning (11:00 AM-5:30 PM, 72.92% avail) — a lighter reading than Sep 16's three-fa",
+      "comment": "Air Filter Warning"
     }
   ],
   "followUps": [
