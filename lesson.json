@@ -1,15 +1,15 @@
 {
-  "date": "2026-09-19",
-  "topic": "OEE Framework",
-  "title": "OEE Framework",
-  "body": "ADW's trucks and excavators sit at 90%+ mechanical availability, yet tonnage still comes up short — because the losses aren't in the machines, they're in Performance (standby, waiting for excavator, no location) and Quality (wrong-tip events, crusher bin starvation). If you only watch availability, you'll think the fleet is fine while output keeps bleeding out through dispatch and sequencing gaps.",
+  "date": "2026-09-22",
+  "topic": "Production Data Stack",
+  "title": "Production Data Stack",
+  "body": "When a number looks wrong — low utilization, a crusher stoppage, a drilling miss — pulling one workbook in isolation gets you a guess, not a cause. ADW's own history shows this: survey-vs-truck gaps get blamed on \"reporting\" when the real driver was loading position, and faults get flagged before anyone checked whether diesel burn already gave it away days earlier.",
   "keyPoints": [
-    "Availability tells you the machine is capable of running, not that it's producing — don't let a strong A&U number talk you out of chasing standby time.",
-    "Dump truck utilization runs 15-25 points below availability at ADW. That gap is the Performance loss, and it's driven by dispatch sequencing and face availability, not mechanical condition.",
-    "Quality in load-and-haul means the load went to the right place at the right spec — wrong-tip NCRs and crusher bin-choke stoppages are quality failures even though the truck completed a cycle.",
-    "The three factors compound multiplicatively (OEE = A × P × Q ÷ 10,000), so a strong Availability number can still mask a weak overall result if Performance and Quality are dragging.",
-    "This lines up with the Kaizen finding: people and process, not equipment, are the primary constraint on output here."
+    "Four workbooks measure the same day at different depths: running-hours log (raw meter/diesel) → A&U (productive vs standby split) → daily report (KPI summary) → INX-SUM survey (independent ground-truth check). Each layer strips something the one below kept.",
+    "When a daily report number looks bad, read down the stack: daily report tells you what and roughly when, A&U tells you which unit and which reason code, running-hours log confirms the raw hours and names the operator, INX-SUM tells you if the fleet actually moved the ground or just logged loads.",
+    "A high truck count with a low survey number isn't automatically a counting or honesty problem — check loading position against the survey calculation area first. Ground moved outside the surveyed polygon reads as a gap that isn't one.",
+    "Diesel burn out of ratio with running hours in the raw log is an early fault signal — it shows up there before it becomes a breakdown line in A&U.",
+    "Don't conclude \"underperformance\" from one layer alone. The stack exists because no single workbook answers the whole question."
   ],
-  "apply": "When you're at the loading face or ROM pad, don't just check if machines are running — watch for standby causes (waiting on excavator, no location) and confirm trucks are tipping to the correct blend location, since those are the two loss categories actually costing tonnes.",
-  "generatedAt": "2026-09-19T10:21:16"
+  "apply": "If a unit's utilization or a block's tonnage looks off at the loading face or crusher feed, pull the running-hours log and A&U reason column before assuming it's an operator or equipment problem — the answer is usually sitting one layer down, not in the summary number itself.",
+  "generatedAt": "2026-09-22T10:46:54"
 }
