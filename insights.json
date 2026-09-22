@@ -1,18 +1,18 @@
 {
-  "generatedAt": "2026-09-21T15:09:59",
-  "date": "2026-09-18",
-  "runNumber": 124,
-  "summary": "1. Sep 17 total production beat target for a sixth straight day (+4,003.7 BCM, +19.4%), but ore stayed at zero for a third consecutive day (Sep 15-17, target 1,877.2 BCM each day) — the longest zero-ore run this KB has tracked, extending the miss streak that opened Sep 12 to six straight days of shortfall. 2. No ore has moved since Sep 14. 3. Material split ran 100% Stage 5 for a second straight day. 4. MTD total surplus widened to +6.6%; MTD ore surplus narrowed further to +37.6% as the ore total stays flat against an accruing target — a target-base effect, not recovery. 2. 5. EX-253 stayed down the full 24 hours for a second consecutive day on the same fault chain (Hydraulic Oil Leakage, then Swing Oil Level Low/Swing Problem) that opened the evening of 16-Sep, one day after the unit's 49-day swing-bearing failure cleared. 6. Fleet-wide Overall Daily still improved to 87.67% (from 86.26%) on Dump Truck and Drill Rig strength. 7. DR-341's 1,500-hour service also ran a second full day, now showing a committed three-day close (18-Sep 5:30 AM) if it holds — the longest single drill-rig stop this KB has logged this cycle. 3. 8. Blast #17 fired overnight (finishing ~3:00 AM), ending the no-blast gap that opened Sep 16 — area 870-513 with PS & high spot, 26,093 BCM, 14,874 kg explosive. 9. This is the same blast the 123rd pass's meeting-note compile had flagged without a matching workbook figure (\"drilling red day, blast finished ~3am\"); this pass supplies the figure. Drilling itself posted its first beat in three days (+1.9%), though entirely pre-split (PS) metreage, not production drilling. Survey reconciliation for the same day came in at -0.39% (trucks 24,645 / survey 24,550) — the tightest gap this KB has tracked, on a single-excavator exception comment, and the fourth consecutive confirmation of the file-N-reports-day-(N-1) publishing lag. Part C queried the Task Feedback Log's \"All Feedback\" view directly by SQL (top 15 rows by Date Logged descending) — all already Processed, newest row still 2026-09-14 06:40:24Z. Zero unprocessed rows, no Wiki edits, no mismatches, nothing to mark. Notion Notes & References: one new item — Peter's own gate-pass log entry on the Mohammad Said fitness-for-duty stand-down (123rd pass), adding process detail (interim coverage, replacement ETA confirmed in writing) not carried in the original HR email thread. Registered and compiled as a second source on an already-known event, not a new finding. Important References folder re-checked: 40 files, no new content since the 123rd pass (newest remains the 17-Sep gate-pass assistance email, already registered). Important References folder re-checked: 40 files, no new content since the 123rd pass. No new `Outputs/important-references-analysis_*.md` entry this pass — nothing new to synthesize. Notion Notes & References: full scan, 14 rows — 13 already ingested, 1 new (Gate pass release — Mohammad Said, filed untagged but self-evidently ADW content; registered and compiled per the standing rule). Task Feedback Log: queried directly by SQL, all Processed, zero unprocessed rows, no mismatches, nothing to mark. No content removed or renamed from RAW.",
+  "generatedAt": "2026-09-22T10:58:33",
+  "date": "2026-09-22",
+  "runNumber": null,
+  "summary": "1. Total production beat target every day (+2.7% to +12.8%), and ore resumed Sep 18 (1,116 BCM, ending a three-day zero-ore run) but then missed its own daily target by 46-88% on each of the following three days (Sep 19 -71.9%, Sep 20 -45.5%, Sep 21 -78.5%). 2. MTD total surplus held in a narrow +6.9% to +7.1% band across all four days; MTD ore surplus kept narrowing (37.1% down to 25.3%) purely on the target-base effect, since the ore total itself barely moved. 2. 3. EX-253's fault, open since 16-Sep and carried across four prior passes as an unconfirmed theory, is now root-caused in writing: a swing motor and swing gearbox failure with three broken slew-gear teeth. 4. A 21-Sep maintenance email (Louw Weideman to Joe Coleman) puts the replacement slew gear and bearing's in-country arrival at 08-Oct-2026, plus 3-5 days customs clearance before release to site — meaning the unit will run at least three weeks down from this point, a materially longer repair than the original 49-day saga's single-fault window. 5. The same email confirms DT-128's parallel fault (down since 18-Sep) as a cylinder-head problem mixing coolant with engine oil at 34,892 hours, with a replacement engine already in stock and the swap under way. 3. 6. Drilling swung from a beat (Sep 18, +13.95%) to a complete zero-meter shutdown (Sep 21, -100%, avail 100%/util 0%) as two blasts fired on consecutive days (Sep 20, Sep 21) and drew drilling stock down from 23,358 BCM to 3,268 BCM. 7. A Sep 19 pit-constraint meeting had already flagged blocks 513/514 depleting in 2-3 days — faster than a 5-day field estimate — two days ahead of the Sep 21 shutdown, and the Sep 21 shift meeting logs 65.5 cumulative standby hours pending an unresolved decision on shutting down Stage 4 versus scaling back the wall. 8. Survey reconciliation flipped positive for the first time in over a week: Sep 19 (+10.07%) and Sep 20 (+4.11%) narrowed the cumulative MTD gap from -11.49% to -9.69%, with the monthly target now 84.05% achieved and 4 days left in the fiscal cycle. 9. See [[survey-volume-reconciliation]]. A new Saudi National Day blasting restriction is now active: the new magazine manager (Hamid) is limiting police escorts to one trip per blast and capping loads to roughly 32-35 t, forcing a split-location workaround — a direct constraint on blast cadence for the rest of the month. See [[blasting-and-drilling]]. The Sep 21 monthly production and spatial-compliance review reports September actual production roughly 411K t short of the original 1.8M t quarterly forecast, with spatial compliance at 87% tonnage / 72% area, both below the 85% goal. Peter set a stretch target of >1.6M t by month-end. A fatigue-reporting trust gap surfaced at the 20-Sep weekly HSE meeting (operators fear job/badge loss for honest self-reporting) alongside a strong YTD lagging-indicator record (769,363 man-hours, zero LTIs since Mar 2023). A haul truck entered the pit at 8% fuel (20-Sep) and DT-243 ran out of fuel entirely the next day, with a standing instruction not to report fuel shortages on the group chat overruled in real time. See [[safety-inspection-patterns]]. Two open dust-suppression pump faults surfaced at the same HSE meeting and the following day's Stage 4/5 planning meeting — one traced to a supplier (Jamil) that has not serviced the unit since 12-Aug, a second to chemical wear on a different pump — alongside an open EX-123 fire-suppression fault with ZAID technicians due the following week. No new source material has landed since roughly Sep 21 4 PM (checked against current file mtimes) — this is a backlog catch-up, not a same-day pass. No content removed or renamed from RAW.",
   "kpis": [
     {
       "label": "MTD BCM",
-      "value": "495,256",
-      "delta": "+6.6% vs target",
+      "value": "574,833",
+      "delta": "+7.1% vs target",
       "good": true
     },
     {
       "label": "Survey Gap",
-      "value": "-11.6%",
+      "value": "-9.7%",
       "delta": "survey vs trucks MTD",
       "good": false
     },
@@ -24,7 +24,7 @@
     },
     {
       "label": "Days Remain",
-      "value": "7",
+      "value": "3",
       "delta": "",
       "good": null
     }
@@ -197,14 +197,42 @@
       "actual": 24645,
       "target": 22993,
       "half": false
+    },
+    {
+      "date": "2026-09-18",
+      "label": "18 Sep",
+      "actual": 12121,
+      "target": 11496,
+      "half": true
+    },
+    {
+      "date": "2026-09-19",
+      "label": "19 Sep",
+      "actual": 23281,
+      "target": 22993,
+      "half": false
+    },
+    {
+      "date": "2026-09-20",
+      "label": "20 Sep",
+      "actual": 21204,
+      "target": 22993,
+      "half": false
+    },
+    {
+      "date": "2026-09-21",
+      "label": "21 Sep",
+      "actual": 22971,
+      "target": 22993,
+      "half": false
     }
   ],
   "fleet": {
-    "availDaily": "87.67%",
-    "availMtd": "86.08%",
-    "exAvail": "69.8%",
+    "availDaily": "87.03%",
+    "availMtd": "86.48%",
+    "exAvail": "66.1%",
     "exUnits": 6,
-    "dtAvail": "95.9%",
+    "dtAvail": "92.2%",
     "dtUnits": 22,
     "excavators": [
       {
@@ -213,7 +241,7 @@
       },
       {
         "unit": "EX-262",
-        "avail": "89.6%"
+        "avail": "72.9%"
       },
       {
         "unit": "EX-253",
@@ -221,7 +249,7 @@
       },
       {
         "unit": "EX-263",
-        "avail": "91.7%"
+        "avail": "93.8%"
       },
       {
         "unit": "EX-247",
@@ -233,113 +261,119 @@
       }
     ],
     "exBasis": "4/6",
-    "pdfDate": "20-09",
+    "pdfDate": "21-09",
     "dtBasis": "22 active ≥8h"
   },
   "equipment": [
     {
-      "unit": "EX-253",
+      "unit": "EX-102",
       "type": "Excavator",
-      "status": "warning",
+      "status": "partial",
       "avail": "",
       "util": "",
       "bd_hrs": "",
-      "note": "'s current fault clear inside a normal repair window, or does it become a second extended stoppage after the o",
+      "note": "'s escalation from a 22-hour partial stoppage (Sep 19) to a full 24-hour \"Down\" status (Sep 20) reflect a wors",
+      "comment": ""
+    },
+    {
+      "unit": "DR-139",
+      "type": "Drill",
+      "status": "scheduled",
+      "avail": "0.00%",
+      "util": "",
+      "bd_hrs": "",
+      "note": "opens a planned full-day stop** for a 750-hour service (24 DT hrs, 0.00% avail, \"Down\" status) — the drill fle",
+      "comment": ""
+    },
+    {
+      "unit": "EX-253",
+      "type": "Excavator",
+      "status": "down",
+      "avail": "",
+      "util": "",
+      "bd_hrs": "",
+      "note": "'s slew-gear repair has?** - Carried forward — does",
       "comment": "Hydraulic Oil Leakage"
     },
     {
-      "unit": "DR-341",
-      "type": "Drill",
-      "status": "scheduled",
-      "avail": "",
+      "unit": "EX-262",
+      "type": "Excavator",
+      "status": "warning",
+      "avail": "89.58%",
       "util": "",
       "bd_hrs": "",
-      "note": "'s 1,500-hour service and backlog run to its now-committed close (18-Sep 5:30 AM), or does it slip further?** ",
+      "note": "lost 2.5h to a paired Daily Check/A/C fault (89.58%).",
       "comment": ""
     },
     {
       "unit": "EX-263",
       "type": "Excavator",
-      "status": "warning",
-      "avail": "83.33%",
-      "util": "",
-      "bd_hrs": "",
-      "note": "opens a fresh two-stop day — A/C Not Working, logged separately by day (3:30-4:00 PM) and night (7:00-10:30 PM",
-      "comment": "Hydraulic Temperature High"
-    },
-    {
-      "unit": "EX-123",
-      "type": "Excavator",
       "status": "down",
       "avail": "",
       "util": "",
       "bd_hrs": "",
-      "note": "all logged only short (0.5-1h) daily-inspection stops.",
-      "comment": ""
-    },
-    {
-      "unit": "EX-262",
-      "type": "Excavator",
-      "status": "down",
-      "avail": "",
-      "util": "",
-      "bd_hrs": "",
-      "note": "all logged only short (0.5-1h) daily-inspection stops.",
-      "comment": "A/C Not Working"
-    },
-    {
-      "unit": "EX-340",
-      "type": "Excavator",
-      "status": "down",
-      "avail": "",
-      "util": "",
-      "bd_hrs": "",
-      "note": "all logged only short (0.5-1h) daily-inspection stops.",
+      "note": "repeatedly since June.",
       "comment": ""
     },
     {
       "unit": "EX-398",
       "type": "Excavator",
       "status": "down",
+      "avail": "87.50%",
+      "util": "",
+      "bd_hrs": "",
+      "note": "lost 3h to a bucket replacement (87.50%). **",
+      "comment": ""
+    },
+    {
+      "unit": "DT-128",
+      "type": "Haul Truck",
+      "status": "down",
       "avail": "",
       "util": "",
       "bd_hrs": "",
-      "note": "all logged only short (0.5-1h) daily-inspection stops.",
-      "comment": "Replace Bucket"
+      "note": "'s engine swap (started 21-Sep) complete inside a normal window, or does the replacement-engine job run long t",
+      "comment": "Engine Coolant Temperature High"
     },
     {
-      "unit": "DT-109",
-      "type": "Haul Truck",
-      "status": "warning",
-      "avail": "72.92%",
+      "unit": "WD-145",
+      "type": "Water Dozer",
+      "status": "down",
+      "avail": "",
       "util": "",
       "bd_hrs": "",
-      "note": "lost 6.5h to an Air Filter Warning (11:00 AM-5:30 PM, 72.92% avail) — a lighter reading than Sep 16's three-fa",
-      "comment": ""
+      "note": "55d",
+      "comment": "Front Axle Brakes worn out"
     }
   ],
   "followUps": [
     {
       "priority": "HIGH",
-      "title": "Ore bottoming at zero on Sep 15 (after -8.7%, -26.5%, -67.0% on the thre...",
-      "body": "",
-      "action": ""
-    },
-    {
-      "priority": "HIGH",
-      "title": "Drilling missed its target for the first time in several days (-27.8%) t...",
+      "title": "Two open dust-suppression pump faults surfaced at the same HSE meeting a...",
       "body": "",
       "action": ""
     },
     {
       "priority": "MONITOR",
-      "title": "**Two items outside this pass's dashboard scope are flagged for the next...",
+      "title": "Survey reconciliation flipped positive for the first time in over a week...",
       "body": "",
       "action": ""
     },
     {
       "priority": "MONITOR",
-      "title": "The date-label question flagged above needs a direct human check against...",
+      "title": "A new Saudi National Day blasting restriction is now active: the new mag...",
+      "body": "",
+      "action": ""
+    },
+    {
+      "priority": "MONITOR",
+      "title": "The Sep 21 monthly production and spatial-compliance review reports Sept...",
+      "body": "",
+      "action": ""
+    },
+    {
+      "priority": "MONITOR",
+      "title": "A fatigue-reporting trust gap surfaced at the 20-Sep weekly HSE meeting ...",
       "body": "",
       "action": ""
     }
