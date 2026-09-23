@@ -1,15 +1,15 @@
 {
-  "date": "2026-09-22",
-  "topic": "Production Data Stack",
-  "title": "Production Data Stack",
-  "body": "When a number looks wrong — low utilization, a crusher stoppage, a drilling miss — pulling one workbook in isolation gets you a guess, not a cause. ADW's own history shows this: survey-vs-truck gaps get blamed on \"reporting\" when the real driver was loading position, and faults get flagged before anyone checked whether diesel burn already gave it away days earlier.",
+  "date": "2026-09-23",
+  "topic": "Production Vision 2025",
+  "title": "Production Vision 2025",
+  "body": "When the ten points get treated as a poster on the wall instead of a daily checklist, the gaps show up exactly where ADW keeps bleeding tons — waste stripping falls behind while ore holds steady, because ore is what gets chased when time runs short. Chasing ore now borrows against bench access later.",
   "keyPoints": [
-    "Four workbooks measure the same day at different depths: running-hours log (raw meter/diesel) → A&U (productive vs standby split) → daily report (KPI summary) → INX-SUM survey (independent ground-truth check). Each layer strips something the one below kept.",
-    "When a daily report number looks bad, read down the stack: daily report tells you what and roughly when, A&U tells you which unit and which reason code, running-hours log confirms the raw hours and names the operator, INX-SUM tells you if the fleet actually moved the ground or just logged loads.",
-    "A high truck count with a low survey number isn't automatically a counting or honesty problem — check loading position against the survey calculation area first. Ground moved outside the surveyed polygon reads as a gap that isn't one.",
-    "Diesel burn out of ratio with running hours in the raw log is an early fault signal — it shows up there before it becomes a breakdown line in A&U.",
-    "Don't conclude \"underperformance\" from one layer alone. The stack exists because no single workbook answers the whole question."
+    "Volume/hour beats volume/day. A fleet that grinds for six hours and sits for six is not the same as one that runs steady for twelve — available hours are the denominator, so closing availability-utilization gaps is the actual job, not a side metric.",
+    "Excavator positioning sets the pace for the whole fleet. Too far off the face, wrong angle, poor berm clearance — that's where backloading and idle truck time start, not at the truck.",
+    "Bench height has to be right, not just safe. Too low and you're loading in five passes instead of two; too high and you've created a hazard. Both cost production.",
+    "Mine sequentially. Stripping layers progressively keeps face height consistent and lets grade control do its job — cherry-picking faces creates the congestion that makes everything downstream harder.",
+    "Safety and productivity aren't opposites here — a plan that hits target by cutting corners on Life Saving Rules isn't actually running to vision, it's borrowing against the next incident."
   ],
-  "apply": "If a unit's utilization or a block's tonnage looks off at the loading face or crusher feed, pull the running-hours log and A&U reason column before assuming it's an operator or equipment problem — the answer is usually sitting one layer down, not in the summary number itself.",
-  "generatedAt": "2026-09-22T10:46:54"
+  "apply": "Check whether waste is genuinely getting stripped ahead of the ore blocks you're feeding, or whether the crews are quietly prioritizing ore faces because they're easier — that trade looks fine on today's tonnage report and shows up as a bench-access problem in a few weeks.",
+  "generatedAt": "2026-09-23T05:35:24"
 }
