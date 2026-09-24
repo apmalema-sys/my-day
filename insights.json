@@ -1,13 +1,13 @@
 {
-  "generatedAt": "2026-09-24T11:32:24",
-  "date": "2026-09-23",
+  "generatedAt": "2026-09-24T11:44:43",
+  "date": "2026-09-24",
   "runNumber": null,
-  "summary": "1. The Excavator-398 approach incident (Sep 21, Richard/Production Supervisor) moves from an open leadership-response item to a scheduled, structured investigation. 2. Two new sources — a PM pre-investigation meeting and Peter's own detailed investigation brief — confirm the classification (Line of Fire, Maaden Life Saving Rules), set the interview for Sep 23 14:30, 45 minutes max, run by Safety Superintendent Collins and HR with Peter explicitly excluded from the room. 3. The site's approach procedure surfaces in full for the first time in this KB: 50 m (radio the operator), 30 m (confirm bucket down), 10 m (confirm operator out of cab). 4. A Fair Culture evidence framework shows every gate — deliberate harm, D&A testing, foresight, rule-workability, personal history — still open, and the existing operator statement is flagged as currently unusable (merged questionnaire answers, no witness or independent translator). 5. Richard has not been suspended as of this pass. 6. See [[people-machinery-interaction]] (primary record) and [[safety-inspection-patterns]]. 2. 7. A Stage 5 870RL hanging-edge clearance did not fully remove the hazard; the planned 830RL overspill loading was suspended and formally reported to the client. 8. This is the primary written source behind a Task Feedback Log entry from Sep 20 that had no Wiki article attached to it at the time — it now supplies the missing context, including that loading had not yet resumed as of the record's writing. 9. See [[overspill-material-management]]. 3. Drilling is running ahead of its own daily plan (~3,000 m/day vs. 2,600 m/day) with four days targeted to clear blocks 160 remnant and 161, against a stepped next-month volume target (1.85M → 1.95M → 2M). A material-sourcing risk surfaces: the current romper (beach) supply will not sustain the full week, with three alternatives under discussion and no decision made. See [[blasting-and-drilling]]. 4. A new site-level diagnostic tool — an hourly per-excavator productivity log with truck/operator gap root-cause tracking (dispatch allocation vs. truck availability vs. operator shortage) — targets the standing 85%/90% utilization-vs-availability gap this KB has tracked through September. Templates are currently blank. See [[fleet-availability-utilization]]. 5. Task Feedback Log: 80/80 rows Processed, zero unprocessed, no mismatches. Nothing to mark this pass. 6. Important References: the D8 dozer loan request (registered at index level only by the morning's dashboard-scoped pass) is now fully synthesized — Maaden's stated premise that the ADW wheel dozer's repair is nearly done is wrong; the unit (WD-145) is at its 57th consecutive day down. Joe Coleman's reply does not correct the record. See [[fleet-availability-utilization]] and `Outputs/important-references-analysis_2026-09-23.md`. 7. A life-saving-rules refresher session names the site's full nine-rule list explicitly for the first time in this KB's tracking, triggered by a finding that personnel know the rules exist but can't clearly explain field application. A three-week pit-rescue steering-committee exercise is planned for January. See [[safety-inspection-patterns]]. 8. Two candidate meeting-note pages created 2026-09-23 were checked and found empty (no content at fetch time) — not ingested, flagged for a later re-check. A JD (Job Description Form) for the Production Superintendent role, signed by Peter Dotto, was found cloud-only in RAW/HR, hydrated, and OCR'd — a standard administrative role document with no new operational content, registered for provenance only. Four Notion Notes & References rows were ingested (the two above plus the productivity log and a personal IMS training reference); nine other rows in that database remain confirmed non-mining/personal. Source: `Meeting Notes/daily-client-review-meeting_2026-09-23.md`, `Meeting Notes/pre-investigation-meeting-with-pm_2026-09-23.md`; `Notes & References/excavator-398-approach-incident-richard_2026-09-22.md`, `stage5-870rl-hanging-edge-client-notification_2026-09-19.md`, `supervisor-hourly-productivity-log_2026-09-19.md`, `ims-training-7-day-handout_2026-06-29.md`; `HR/JD for Peter Dotto (Production Superintendent).pdf`; `Outputs/important-references-analysis_2026-09-23.md`; Notion Task Feedback Log (queried, 80/80 Processed, zero unprocessed). Tasks: none created this pass — the open items above (investigation outcome, romper-supply decision, hanging-edge re-inspection, D8 dozer loan answer) are all already tracked as named, dated open questions in their respective articles with an expected next-check point, not standalone action items needing a separate inbox task. ### Wiki compile Updated [[people-machinery-interaction]] (full Excavator-398 investigation record — timeline, 50/30/10 m procedure, evidence gaps, Fair Culture assessment), [[safety-inspection-patterns]] (investigation-governance summary, life-saving-rules refresher, pit-rescue steering committee), [[blasting-and-drilling]] (drilling pace vs. plan, romper-supply risk, next-month target trajectory), [[workshop-maintenance-planning]] (MG2 towers permit, dust-suppression spray-timing debate, shroud repair), [[overspill-material-management]] (Stage 5 870RL hanging-edge/830RL loading-suspension update), [[fleet-availability-utilization]] (Supervisor Hourly Productivity Log cross-reference) — six articles' `Last updated` bumped to 2026-09-23. `Sources:` lines updated on all six with the new RAW file aliases. No content removed or renamed from RAW. ---",
+  "summary": "1. Sep 23 lands essentially flat against the production target (-0.13%), but every BCM moved was waste — ore came in at zero for the first time this article has tracked, a seventh consecutive ore-target miss. 2. Total 20,615 BCM against a 20,641 BCM target; waste alone beat its own target by 9.86%. 3. MTD holds at +6.24% (614,017 BCM), narrowing from Sep 22's +6.48% as the zero-ore day drags the ore surplus down further. 4. Crusher stockpile throughput lifts to 36.09% of the monthly plan as downtime recovers sharply from Sep 22's 13h10m (the worst logged in this article) to 2h49m. 5. Fleet-wide, Overall Daily availability eased to 87.78% and Core Fleet Daily to 81.14% as EX-253 completes an eighth full day down and EX-123 a second full day down on its Hydraulic Oil Leaking fault, while DT-108's 2,000-hour service closes and a first-time fault opens on Track Dozer DZ-248 (Track Completely Worn-out). 6. See [[daily-production-report]] and [[fleet-availability-utilization]]. 2. 7. A blast-reporting discrepancy surfaces between two tabs of the same workbook: the Sept (23) tab's own Yesterday-Blast field records Blast #20 firing on Sep 22 (860_517+518, 36,124 BCM), directly contradicting the Sept (22) tab's own same-day production block, which this KB already compiled as \"No blast fired.\" Not resolved this pass. 3. 8. A new Non-Conformance Report (HSEQ-NCR-ADW-26-021) records a second Line-of-Fire/50:30:10 HME Approach Rule finding against Production Supervisor Richard Meager, dated the night of 22-Sep, one day after the Excavator-398 approach incident already under active investigation in this KB for the same supervisor and the same rule. 9. Peter's own Project Manager comment on the form recommends a formal disciplinary review \"including consideration of termination of employment,\" citing a reported history of prior speeding violations and verbal warnings. Does the zero-ore day reflect a genuine face-sequencing gap or a one-day allocation choice to run waste-only? Worth checking against the next populated tab and [[blasting-and-drilling]]. Does EX-123's Hydraulic Oil Leaking fault, now two full days down, become a second standing multi-week excavator stoppage alongside EX-253? Does DZ-248's Track Completely Worn-out fault clear quickly, or become the ancillary fleet's next standing multi-day stoppage? Which blast record is right on Sep 22 — the production tab's \"No blast fired,\" or the following day's \"Yesterday Blast\" entry for Blast #20? Is the new NCR against Richard Meager a second, separate incident from the Excavator-398 investigation, or a restatement of the same event under a different reporting form? This needs Peter's read before it goes anywhere in the Wiki, given the termination recommendation already on the record. Carried forward — does the D8 dozer loan request get resolved by Saturday, and does it change WD-145's repair priority (58 days down and counting)? Source: `Production report/Sep 26/September Client Meeting Report.xlsx` (Sept (23) tab); `Maintanance Shedules/Sep 26/DailyAvailability_Final_Report (23-09-2025 ).pdf`; `NCR/NCR - Richard.pdf`; `Maintanance Shedules/Sep 26/RE Planned work for Friday 250902026.msg`. `September Block Info.xlsx`, `September A & U.xlsx`, `DPR-September-2026.xlsx`, `September Daily Drill Meters Report.xlsx`, `Equipment running hours report -.xlsx`, and `DPR and A&U- September.docx` registered, cross-check only. No new survey workbook landed this pass. Tasks: none created this pass. The NCR item above is a judgment call flagged for Peter directly rather than turned into a standalone task; the rest of the open items are logged in the affected articles' own Open Questions sections. [[survey-volume-reconciliation]] was not touched — no new survey workbook landed since the last pass. Important References, Notes & References, and Task Feedback Log workflows were not run this pass, per the task's own instructions (they ran in the prior day's full-scope pass). No content removed or renamed from RAW. ---",
   "kpis": [
     {
       "label": "MTD BCM",
-      "value": "593,402",
-      "delta": "+6.5% vs target",
+      "value": "614,017",
+      "delta": "+6.2% vs target",
       "good": true
     },
     {
@@ -19,12 +19,12 @@
     {
       "label": "Crusher MTD",
       "value": "36%",
-      "delta": "44,475 / 124,000 LCM",
+      "delta": "44,754 / 124,000 LCM",
       "good": null
     },
     {
       "label": "Days Remain",
-      "value": "2",
+      "value": "1",
       "delta": "",
       "good": null
     }
@@ -232,11 +232,18 @@
       "actual": 18569,
       "target": 22993,
       "half": false
+    },
+    {
+      "date": "2026-09-23",
+      "label": "23 Sep",
+      "actual": 20615,
+      "target": 22993,
+      "half": false
     }
   ],
   "fleet": {
-    "availDaily": "88.15%",
-    "availMtd": "86.70%",
+    "availDaily": "87.78%",
+    "availMtd": "86.74%",
     "exAvail": "78.3%",
     "exUnits": 6,
     "dtAvail": "93.8%",
@@ -289,81 +296,99 @@
       "avail": "",
       "util": "",
       "bd_hrs": "",
-      "note": "'s Sep 21 (Engine Cut Off, now cleared) and",
+      "note": "'s and",
       "comment": "Hydraulic Oil Leaking"
     },
     {
-      "unit": "DT-106",
+      "unit": "DT-108",
       "type": "Haul Truck",
-      "status": "down",
-      "avail": "54.17%",
+      "status": "scheduled",
+      "avail": "60.42%",
       "util": "",
       "bd_hrs": "",
-      "note": "'s fresh full-day tyre breakdown (Tyre Air Pressure Low, opened 21-Sep) closes at 4:30 PM 22-Sep** — 11h logge",
+      "note": "'s planned 2,000-hour service and valve lash job (opened 22-Sep 5:30 PM) closes at 3:00 PM 23-Sep** — 9.5h log",
       "comment": ""
     },
     {
-      "unit": "DT-128",
-      "type": "Haul Truck",
-      "status": "scheduled",
-      "avail": "",
-      "util": "",
-      "bd_hrs": "",
-      "note": "'s engine-coolant fault has, or does it close inside a normal service window?** - **Does Joe Coleman's Saturda",
-      "comment": "Engine Coolant Temperature High"
-    },
-    {
-      "unit": "EX-263",
-      "type": "Excavator",
+      "unit": "DZ-248",
+      "type": "Track Dozer",
       "status": "warning",
       "avail": "",
       "util": "",
       "bd_hrs": "",
-      "note": "'s Sep 22 (Hydraulic Oil Leaking, cleared same day) faults represent a genuine excavator-reliability pattern w",
-      "comment": ""
+      "note": "'s Track Completely Worn-out fault clear quickly, or does it become the ancillary fleet's next standing multi-",
+      "comment": "Track Completely Worn-out"
     },
     {
       "unit": "EX-247",
       "type": "Excavator",
       "status": "warning",
-      "avail": "41.67%",
+      "avail": "",
       "util": "",
       "bd_hrs": "",
-      "note": "opens a fresh Hydraulic Leaking fault, 14h, 41.67% avail (08:30 AM-10:30 PM).",
+      "note": "'s repeated short-duration hydraulic/leak faults this week represent a genuine excavator-reliability pattern w",
       "comment": ""
     },
     {
       "unit": "EX-262",
       "type": "Excavator",
-      "status": "down",
-      "avail": "",
+      "status": "scheduled",
+      "avail": "100%",
       "util": "",
       "bd_hrs": "",
-      "note": "/",
+      "note": "all log only short planned inspection or service stops (0-1h, 95.83-100% avail).",
+      "comment": ""
+    },
+    {
+      "unit": "EX-263",
+      "type": "Excavator",
+      "status": "scheduled",
+      "avail": "100%",
+      "util": "",
+      "bd_hrs": "",
+      "note": "all log only short planned inspection or service stops (0-1h, 95.83-100% avail).",
       "comment": ""
     },
     {
       "unit": "EX-340",
       "type": "Excavator",
-      "status": "down",
-      "avail": "",
+      "status": "scheduled",
+      "avail": "100%",
       "util": "",
       "bd_hrs": "",
-      "note": "/",
+      "note": "all log only short planned inspection or service stops (0-1h, 95.83-100% avail).",
       "comment": "250 Hrs Service"
     }
   ],
   "followUps": [
     {
-      "priority": "MONITOR",
-      "title": "Source",
-      "body": "`Meeting Notes/daily-client-review-meeting_2026-09-23.md`, `Meeting Notes/pre-investigation-meeting-with-pm_2026-09-23.md`; `Notes & References/excavator-398-approach-incident-richard_2026-09-22.md`, `stage5-870rl-hanging-edge-client-notification_2026-09-19.md`, `supervisor-hourly-productivity-log_2026-09-19.md`, `ims-training-7-day-handout_2026-06-29.md`; `HR/JD for Peter Dotto (Production Superintendent).pdf`; `Outputs/important-references-analysis_2026-09-23.md`; Notion Task Feedback Log (queried, 80/80 Processed, zero unprocessed).",
+      "priority": "HIGH",
+      "title": "Does DZ-248's Track Completely Worn-out fault clear quickly, or become t...",
+      "body": "",
       "action": ""
     },
     {
       "priority": "MONITOR",
-      "title": "Tasks",
-      "body": "none created this pass — the open items above (investigation outcome, romper-supply decision, hanging-edge re-inspection, D8 dozer loan answer) are all already tracked as named, dated open questions in their respective articles with an expected next-check point, not standalone action items needing a separate inbox task. ### Wiki compile Updated [[people-machinery-interaction]] (full Excavator-398 investigation record — timeline, 50/30/10 m procedure, evidence gaps, Fair Culture assessment), [[safety-inspection-patterns]] (investigation-governance summary, life-saving-rules refresher, pit-rescue steering committee), [[blasting-and-drilling]] (drilling pace vs. plan, romper-supply risk, next-month target trajectory), [[workshop-maintenance-planning]] (MG2 towers permit, dust-suppression spray-timing debate, shroud repair), [[overspill-material-management]] (Stage 5 870RL hanging-edge/830RL loading-suspension update), [[fleet-availability-utilization]] (Supervisor Hourly Productivity Log cross-reference) — six articles' `Last updated` bumped to 2026-09-23. `Sources:` lines updated on all six with the new RAW file aliases. No content removed or renamed from RAW. ---",
+      "title": "Does EX-123's Hydraulic Oil Leaking fault, now two full days down, becom...",
+      "body": "",
+      "action": ""
+    },
+    {
+      "priority": "MONITOR",
+      "title": "Which blast record is right on Sep 22 — the production tab's \"No blast f...",
+      "body": "",
+      "action": ""
+    },
+    {
+      "priority": "MONITOR",
+      "title": "Is the new NCR against Richard Meager a second, separate incident from t...",
+      "body": "",
+      "action": ""
+    },
+    {
+      "priority": "MONITOR",
+      "title": "Carried forward — does the D8 dozer loan request get resolved by Saturda...",
+      "body": "",
       "action": ""
     }
   ]
