@@ -1,15 +1,15 @@
 {
-  "date": "2026-09-23",
-  "topic": "Production Vision 2025",
-  "title": "Production Vision 2025",
-  "body": "When the ten points get treated as a poster on the wall instead of a daily checklist, the gaps show up exactly where ADW keeps bleeding tons — waste stripping falls behind while ore holds steady, because ore is what gets chased when time runs short. Chasing ore now borrows against bench access later.",
+  "date": "2026-09-24",
+  "topic": "Refuelling-Area Safety Pattern",
+  "title": "Refuelling-Area Safety Pattern",
+  "body": "ADW has had four refuelling-point incidents in thirteen months: the MG-85 wall strike, a diesel overflow, a contractor fuel truck unloading with its driver asleep, and NCR 25-037. Every one was a supervision gap, not a fire-control gap. On the production side, go-line queues and a dry tank are now one of the three biggest drivers of truck idle hours.",
   "keyPoints": [
-    "Volume/hour beats volume/day. A fleet that grinds for six hours and sits for six is not the same as one that runs steady for twelve — available hours are the denominator, so closing availability-utilization gaps is the actual job, not a side metric.",
-    "Excavator positioning sets the pace for the whole fleet. Too far off the face, wrong angle, poor berm clearance — that's where backloading and idle truck time start, not at the truck.",
-    "Bench height has to be right, not just safe. Too low and you're loading in five passes instead of two; too high and you've created a hazard. Both cost production.",
-    "Mine sequentially. Stripping layers progressively keeps face height consistent and lets grade control do its job — cherry-picking faces creates the congestion that makes everything downstream harder.",
-    "Safety and productivity aren't opposites here — a plan that hits target by cutting corners on Life Saving Rules isn't actually running to vision, it's borrowing against the next incident."
+    "SOP 20 covers fire hazards (engine off, no phones, extinguisher, spill trays). It does not require a spotter. Any large HME backing into a tight bay needs a named assistant guiding it. MG-85 hit the wall because nobody was there.",
+    "No machine moves while the fuel truck or tanker is manoeuvring nearby. Both the gas-station and MG-85 events had a vehicle moving near an active delivery.",
+    "Check the handle and nozzle before every fill. A stone on the fuel handle caused the 24-Jun overflow, and the check takes seconds.",
+    "Check the spill kit and fire extinguisher at every fuelling point. Don't assume they're there. At the gas-station event, neither was on hand.",
+    "Fuel at shift change and start-up, not mid-shift. The go-line holds only 35,000 L, so one late delivery empties it. That happened on 8-Sep."
   ],
-  "apply": "Check whether waste is genuinely getting stripped ahead of the ore blocks you're feeding, or whether the crews are quietly prioritizing ore faces because they're easier — that trade looks fine on today's tonnage report and shows up as a bench-access problem in a few weeks.",
-  "generatedAt": "2026-09-23T05:35:24"
+  "apply": "At start-up, watch the North Go Line. Check whether an attendant is at the bay and whether the second dispensing point is actually in use. If trucks are queuing past 07:30, fix it on the spot rather than logging it as another lost hour.",
+  "generatedAt": "2026-09-24T05:43:56"
 }
