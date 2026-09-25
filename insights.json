@@ -1,257 +1,46 @@
 {
-  "generatedAt": "2026-09-24T11:44:43",
-  "date": "2026-09-24",
+  "generatedAt": "2026-09-25T11:32:19",
+  "date": "2026-09-25",
   "runNumber": null,
-  "summary": "1. Sep 23 lands essentially flat against the production target (-0.13%), but every BCM moved was waste — ore came in at zero for the first time this article has tracked, a seventh consecutive ore-target miss. 2. Total 20,615 BCM against a 20,641 BCM target; waste alone beat its own target by 9.86%. 3. MTD holds at +6.24% (614,017 BCM), narrowing from Sep 22's +6.48% as the zero-ore day drags the ore surplus down further. 4. Crusher stockpile throughput lifts to 36.09% of the monthly plan as downtime recovers sharply from Sep 22's 13h10m (the worst logged in this article) to 2h49m. 5. Fleet-wide, Overall Daily availability eased to 87.78% and Core Fleet Daily to 81.14% as EX-253 completes an eighth full day down and EX-123 a second full day down on its Hydraulic Oil Leaking fault, while DT-108's 2,000-hour service closes and a first-time fault opens on Track Dozer DZ-248 (Track Completely Worn-out). 6. See [[daily-production-report]] and [[fleet-availability-utilization]]. 2. 7. A blast-reporting discrepancy surfaces between two tabs of the same workbook: the Sept (23) tab's own Yesterday-Blast field records Blast #20 firing on Sep 22 (860_517+518, 36,124 BCM), directly contradicting the Sept (22) tab's own same-day production block, which this KB already compiled as \"No blast fired.\" Not resolved this pass. 3. 8. A new Non-Conformance Report (HSEQ-NCR-ADW-26-021) records a second Line-of-Fire/50:30:10 HME Approach Rule finding against Production Supervisor Richard Meager, dated the night of 22-Sep, one day after the Excavator-398 approach incident already under active investigation in this KB for the same supervisor and the same rule. 9. Peter's own Project Manager comment on the form recommends a formal disciplinary review \"including consideration of termination of employment,\" citing a reported history of prior speeding violations and verbal warnings. Does the zero-ore day reflect a genuine face-sequencing gap or a one-day allocation choice to run waste-only? Worth checking against the next populated tab and [[blasting-and-drilling]]. Does EX-123's Hydraulic Oil Leaking fault, now two full days down, become a second standing multi-week excavator stoppage alongside EX-253? Does DZ-248's Track Completely Worn-out fault clear quickly, or become the ancillary fleet's next standing multi-day stoppage? Which blast record is right on Sep 22 — the production tab's \"No blast fired,\" or the following day's \"Yesterday Blast\" entry for Blast #20? Is the new NCR against Richard Meager a second, separate incident from the Excavator-398 investigation, or a restatement of the same event under a different reporting form? This needs Peter's read before it goes anywhere in the Wiki, given the termination recommendation already on the record. Carried forward — does the D8 dozer loan request get resolved by Saturday, and does it change WD-145's repair priority (58 days down and counting)? Source: `Production report/Sep 26/September Client Meeting Report.xlsx` (Sept (23) tab); `Maintanance Shedules/Sep 26/DailyAvailability_Final_Report (23-09-2025 ).pdf`; `NCR/NCR - Richard.pdf`; `Maintanance Shedules/Sep 26/RE Planned work for Friday 250902026.msg`. `September Block Info.xlsx`, `September A & U.xlsx`, `DPR-September-2026.xlsx`, `September Daily Drill Meters Report.xlsx`, `Equipment running hours report -.xlsx`, and `DPR and A&U- September.docx` registered, cross-check only. No new survey workbook landed this pass. Tasks: none created this pass. The NCR item above is a judgment call flagged for Peter directly rather than turned into a standalone task; the rest of the open items are logged in the affected articles' own Open Questions sections. [[survey-volume-reconciliation]] was not touched — no new survey workbook landed since the last pass. Important References, Notes & References, and Task Feedback Log workflows were not run this pass, per the task's own instructions (they ran in the prior day's full-scope pass). No content removed or renamed from RAW. ---",
+  "summary": "1. The 25-Aug-24-Sep fiscal production month closed on Sep 24 at +6.02% on total BCM, but the crusher closed the same cycle at just 38.75% of plan. 2. Total BCM landed at 634,663 against a 598,598 BCM target, with the day itself essentially flat against its own daily target (+0.02%) and ore recovering off Sep 23's complete zero-ore day (though still -40.55% against its own daily target). 2. 3. Crusher stockpile-to-crusher throughput closed the month at 48,055.5 LCM against the 124,000 LCM plan, the widest shortfall of any KPI this article tracks this cycle, driven by roughly 5h47m of crusher downtime on the closing day alone (bin-level-low, big boulders, and a 4h42m \"crusher bin chowk\" stop). 3. 4. On the fleet side, DT-107 opened a fresh Engine Coolant Temperature High fault, the same fault type already open on DT-128 (now its seventh day down), while Track Dozer DZ-248's Track Completely Worn-out fault, first logged the day before, cleared the same morning it opened, and EX-253 and EX-123 extended their own standing stoppages to nine and three days down respectively. 5. See [[daily-production-report]] and [[fleet-availability-utilization]]. 6. DT-107's new engine-coolant fault is the pass's clearest watch item. 7. It opened at 3:30 AM on Sep 24 and stayed down the full 24 hours with no repair movement visible by report cutoff, mirroring DT-128's own still-open, multi-day version of the identical fault type. 8. See [[fleet-availability-utilization]]. 9. New longer-duration ancillary-fleet faults opened on WL-295 and WL-329 (Filter Cleaning/Daily Check/Adaptor Missing on WL-295; Fuel Tank Cracked plus Cutting Edge Replacement on WL-329, spanning into the next day) — both worth a repair-timeline check on the next pass. See [[fleet-availability-utilization]]. Sep 24's own survey reconciliation, which would close the fiscal month on the survey side, has not landed yet — the standing file-N-reports-day-(N-1) publishing lag means it is due on the next survey workbook. [[survey-volume-reconciliation]] still reflects Sep 23 (93.39% of the monthly target, one day left at that point). Worth checking on the next pass whether the survey-side close-out lands near the trucks-reported +6.02%, or below 100% the way every prior month has closed. New October forward-planning material landed but was not compiled this pass: an October 2026 monthly production/availability forecast and a Week 39+40 two-week forecast workbook, both registered for provenance and flagged for a future dedicated forecast-compile pass, consistent with this pass's dashboard-scoped time budget. See `RAW/_INGESTED.md`. Source: `Production report/Sep 26/September Client Meeting Report.xlsx` (Sept (24) tab); `Maintanance Shedules/Sep 26/DailyAvailability_Final_Report (24-09-2025 ).pdf`. `September Block Info.xlsx`, `September A & U.xlsx`, `DPR-September-2026.xlsx`, `September Daily Drill Meters Report.xlsx`, `Daily Drill Sampling Record-2026.xlsx`, `DPR and A&U- September.docx`, `September Distance report.xlsx` (Sept (24) tab, confirmed still empty), and `Grade Control September 2026.xlsx` (re-touched, Sep 24 rows added, no dashboard-relevant figure) registered, cross-check only. `Workshop Daily Task 25-Sep-2026.pdf` registered at index level, standing pattern. `FCST/Monthly/Oct 2026/*` and `FCST/Weekly/Week 39+40/*` registered for provenance, not compiled this pass. No new survey workbook landed this pass. Tasks: none created this pass. The open items above are logged in the affected articles' own Open Questions sections rather than dispatched as action items. [[survey-volume-reconciliation]] was not touched — no new survey workbook landed since the last pass. Important References, Notes & References, and Task Feedback Log workflows were not run this pass, per the task's own instructions. No content removed or renamed from RAW. ---",
   "kpis": [
     {
       "label": "MTD BCM",
-      "value": "614,017",
-      "delta": "+6.2% vs target",
+      "value": "634,663",
+      "delta": "+6.0% vs target",
       "good": true
     },
     {
       "label": "Survey Gap",
-      "value": "-10.0%",
+      "value": "-9.0%",
       "delta": "survey vs trucks MTD",
       "good": false
     },
     {
       "label": "Crusher MTD",
-      "value": "36%",
-      "delta": "44,754 / 124,000 LCM",
+      "value": "39%",
+      "delta": "48,056 / 124,000 LCM",
       "good": null
     },
     {
       "label": "Days Remain",
-      "value": "1",
+      "value": "0",
       "delta": "",
       "good": null
     }
   ],
-  "trend": [
-    {
-      "date": "2026-08-25",
-      "label": "25 Aug",
-      "actual": 22723,
-      "target": 22993,
-      "half": false
-    },
-    {
-      "date": "2026-08-26",
-      "label": "26 Aug",
-      "actual": 22475,
-      "target": 22993,
-      "half": false
-    },
-    {
-      "date": "2026-08-27",
-      "label": "27 Aug",
-      "actual": 20739,
-      "target": 22993,
-      "half": false
-    },
-    {
-      "date": "2026-08-28",
-      "label": "28 Aug",
-      "actual": 9455,
-      "target": 11496,
-      "half": true
-    },
-    {
-      "date": "2026-08-29",
-      "label": "29 Aug",
-      "actual": 20584,
-      "target": 22993,
-      "half": false
-    },
-    {
-      "date": "2026-08-30",
-      "label": "30 Aug",
-      "actual": 19065,
-      "target": 22993,
-      "half": false
-    },
-    {
-      "date": "2026-08-31",
-      "label": "31 Aug",
-      "actual": 16306,
-      "target": 22993,
-      "half": false
-    },
-    {
-      "date": "2026-09-01",
-      "label": "1 Sep",
-      "actual": 20181,
-      "target": 22993,
-      "half": false
-    },
-    {
-      "date": "2026-09-02",
-      "label": "2 Sep",
-      "actual": 21080,
-      "target": 22993,
-      "half": false
-    },
-    {
-      "date": "2026-09-03",
-      "label": "3 Sep",
-      "actual": 20615,
-      "target": 22993,
-      "half": false
-    },
-    {
-      "date": "2026-09-04",
-      "label": "4 Sep",
-      "actual": 12493,
-      "target": 11496,
-      "half": true
-    },
-    {
-      "date": "2026-09-05",
-      "label": "5 Sep",
-      "actual": 21638,
-      "target": 22993,
-      "half": false
-    },
-    {
-      "date": "2026-09-06",
-      "label": "6 Sep",
-      "actual": 20739,
-      "target": 22993,
-      "half": false
-    },
-    {
-      "date": "2026-09-07",
-      "label": "7 Sep",
-      "actual": 21266,
-      "target": 22993,
-      "half": false
-    },
-    {
-      "date": "2026-09-08",
-      "label": "8 Sep",
-      "actual": 22847,
-      "target": 22993,
-      "half": false
-    },
-    {
-      "date": "2026-09-09",
-      "label": "9 Sep",
-      "actual": 24087,
-      "target": 22993,
-      "half": false
-    },
-    {
-      "date": "2026-09-10",
-      "label": "10 Sep",
-      "actual": 22754,
-      "target": 22993,
-      "half": false
-    },
-    {
-      "date": "2026-09-11",
-      "label": "11 Sep",
-      "actual": 12090,
-      "target": 11496,
-      "half": true
-    },
-    {
-      "date": "2026-09-12",
-      "label": "12 Sep",
-      "actual": 23126,
-      "target": 22993,
-      "half": false
-    },
-    {
-      "date": "2026-09-13",
-      "label": "13 Sep",
-      "actual": 23250,
-      "target": 22993,
-      "half": false
-    },
-    {
-      "date": "2026-09-14",
-      "label": "14 Sep",
-      "actual": 25823,
-      "target": 22993,
-      "half": false
-    },
-    {
-      "date": "2026-09-15",
-      "label": "15 Sep",
-      "actual": 23560,
-      "target": 22993,
-      "half": false
-    },
-    {
-      "date": "2026-09-16",
-      "label": "16 Sep",
-      "actual": 23715,
-      "target": 22993,
-      "half": false
-    },
-    {
-      "date": "2026-09-17",
-      "label": "17 Sep",
-      "actual": 24645,
-      "target": 22993,
-      "half": false
-    },
-    {
-      "date": "2026-09-18",
-      "label": "18 Sep",
-      "actual": 12121,
-      "target": 11496,
-      "half": true
-    },
-    {
-      "date": "2026-09-19",
-      "label": "19 Sep",
-      "actual": 23281,
-      "target": 22993,
-      "half": false
-    },
-    {
-      "date": "2026-09-20",
-      "label": "20 Sep",
-      "actual": 21204,
-      "target": 22993,
-      "half": false
-    },
-    {
-      "date": "2026-09-21",
-      "label": "21 Sep",
-      "actual": 22971,
-      "target": 22993,
-      "half": false
-    },
-    {
-      "date": "2026-09-22",
-      "label": "22 Sep",
-      "actual": 18569,
-      "target": 22993,
-      "half": false
-    },
-    {
-      "date": "2026-09-23",
-      "label": "23 Sep",
-      "actual": 20615,
-      "target": 22993,
-      "half": false
-    }
-  ],
+  "trend": [],
   "fleet": {
-    "availDaily": "87.78%",
-    "availMtd": "86.74%",
-    "exAvail": "78.3%",
+    "availDaily": "87.7%",
+    "availMtd": "86.78%",
+    "exAvail": "77.5%",
     "exUnits": 6,
-    "dtAvail": "93.8%",
+    "dtAvail": "92.5%",
     "dtUnits": 22,
     "excavators": [
       {
         "unit": "EX-340",
-        "avail": "100.0%"
+        "avail": "97.9%"
       },
       {
         "unit": "EX-262",
@@ -263,7 +52,7 @@
       },
       {
         "unit": "EX-263",
-        "avail": "97.9%"
+        "avail": "95.8%"
       },
       {
         "unit": "EX-247",
@@ -275,119 +64,107 @@
       }
     ],
     "exBasis": "5/6",
-    "pdfDate": "23-09",
+    "pdfDate": "24-09",
     "dtBasis": "22 active ≥8h"
   },
   "equipment": [
     {
-      "unit": "EX-253",
-      "type": "Excavator",
-      "status": "down",
-      "avail": "",
-      "util": "",
-      "bd_hrs": "",
-      "note": "'s parallel multi-week outage leaves the fleet thin?",
-      "comment": "Hydraulic Oil Leakage"
-    },
-    {
-      "unit": "EX-123",
-      "type": "Excavator",
-      "status": "down",
-      "avail": "",
-      "util": "",
-      "bd_hrs": "",
-      "note": "'s and",
-      "comment": "Hydraulic Oil Leaking"
-    },
-    {
-      "unit": "DT-108",
+      "unit": "DT-107",
       "type": "Haul Truck",
-      "status": "scheduled",
-      "avail": "60.42%",
+      "status": "warning",
+      "avail": "",
       "util": "",
       "bd_hrs": "",
-      "note": "'s planned 2,000-hour service and valve lash job (opened 22-Sep 5:30 PM) closes at 3:00 PM 23-Sep** — 9.5h log",
-      "comment": ""
+      "note": "'s new Engine Coolant Temperature High fault become a second standing multi-day dump-truck stoppage alongside",
+      "comment": "Engine Coolant Temperature High"
+    },
+    {
+      "unit": "DT-128",
+      "type": "Haul Truck",
+      "status": "warning",
+      "avail": "",
+      "util": "",
+      "bd_hrs": "",
+      "note": "** (same fault type, now on day seven), or does it clear inside a normal repair window? - **Does",
+      "comment": "Engine Coolant Temperature High"
     },
     {
       "unit": "DZ-248",
       "type": "Track Dozer",
       "status": "warning",
-      "avail": "",
+      "avail": "79.17%",
       "util": "",
       "bd_hrs": "",
-      "note": "'s Track Completely Worn-out fault clear quickly, or does it become the ancillary fleet's next standing multi-",
+      "note": "'s Track Completely Worn-out fault (first logged in the Sep 23 entry) clears the same morning it was opened** ",
       "comment": "Track Completely Worn-out"
     },
     {
-      "unit": "EX-247",
+      "unit": "EX-253",
+      "type": "Excavator",
+      "status": "scheduled",
+      "avail": "",
+      "util": "",
+      "bd_hrs": "",
+      "note": "** (now nine days down)? - Carried forward — **does the October 4-11 crusher-shutdown excavator loan get forma",
+      "comment": "Hydraulic Oil Leakage"
+    },
+    {
+      "unit": "EX-123",
       "type": "Excavator",
       "status": "warning",
       "avail": "",
       "util": "",
       "bd_hrs": "",
-      "note": "'s repeated short-duration hydraulic/leak faults this week represent a genuine excavator-reliability pattern w",
-      "comment": ""
+      "note": "'s Hydraulic Oil Leaking fault (now three full days down) clear, or does it become a second standing multi-wee",
+      "comment": "Hydraulic Oil Leaking"
+    },
+    {
+      "unit": "EX-247",
+      "type": "Excavator",
+      "status": "down",
+      "avail": "97.92%",
+      "util": "",
+      "bd_hrs": "",
+      "note": "all log only short planned daily-check or GET-wear stops (0.5-1h, 95.83-97.92% avail)",
+      "comment": "Teeth Worn-out"
     },
     {
       "unit": "EX-262",
       "type": "Excavator",
-      "status": "scheduled",
-      "avail": "100%",
+      "status": "down",
+      "avail": "97.92%",
       "util": "",
       "bd_hrs": "",
-      "note": "all log only short planned inspection or service stops (0-1h, 95.83-100% avail).",
-      "comment": ""
-    },
-    {
-      "unit": "EX-263",
-      "type": "Excavator",
-      "status": "scheduled",
-      "avail": "100%",
-      "util": "",
-      "bd_hrs": "",
-      "note": "all log only short planned inspection or service stops (0-1h, 95.83-100% avail).",
-      "comment": ""
+      "note": "all log only short planned daily-check or GET-wear stops (0.5-1h, 95.83-97.92% avail)",
+      "comment": "Bucket Teeth Worn-out"
     },
     {
       "unit": "EX-340",
       "type": "Excavator",
-      "status": "scheduled",
-      "avail": "100%",
+      "status": "down",
+      "avail": "97.92%",
       "util": "",
       "bd_hrs": "",
-      "note": "all log only short planned inspection or service stops (0-1h, 95.83-100% avail).",
-      "comment": "250 Hrs Service"
+      "note": "all log only short planned daily-check or GET-wear stops (0.5-1h, 95.83-97.92% avail)",
+      "comment": ""
     }
   ],
   "followUps": [
     {
       "priority": "HIGH",
-      "title": "Does DZ-248's Track Completely Worn-out fault clear quickly, or become t...",
+      "title": "**Sep 24's own survey reconciliation, which would close the fiscal month...",
       "body": "",
       "action": ""
     },
     {
       "priority": "MONITOR",
-      "title": "Does EX-123's Hydraulic Oil Leaking fault, now two full days down, becom...",
+      "title": "**New longer-duration ancillary-fleet faults opened on WL-295 and WL-329...",
       "body": "",
       "action": ""
     },
     {
       "priority": "MONITOR",
-      "title": "Which blast record is right on Sep 22 — the production tab's \"No blast f...",
-      "body": "",
-      "action": ""
-    },
-    {
-      "priority": "MONITOR",
-      "title": "Is the new NCR against Richard Meager a second, separate incident from t...",
-      "body": "",
-      "action": ""
-    },
-    {
-      "priority": "MONITOR",
-      "title": "Carried forward — does the D8 dozer loan request get resolved by Saturda...",
+      "title": "**New October forward-planning material landed but was not compiled this...",
       "body": "",
       "action": ""
     }
