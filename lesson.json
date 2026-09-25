@@ -1,15 +1,15 @@
 {
-  "date": "2026-09-24",
-  "topic": "Refuelling-Area Safety Pattern",
-  "title": "Refuelling-Area Safety Pattern",
-  "body": "ADW has had four refuelling-point incidents in thirteen months: the MG-85 wall strike, a diesel overflow, a contractor fuel truck unloading with its driver asleep, and NCR 25-037. Every one was a supervision gap, not a fire-control gap. On the production side, go-line queues and a dry tank are now one of the three biggest drivers of truck idle hours.",
+  "date": "2026-09-25",
+  "topic": "Daily Production Report",
+  "title": "Daily Production Report",
+  "body": "The DPR gets read top to bottom for the total-movement line, which mostly looks fine — and that hides the real problems underneath it. At ADW, crusher stoppages logged as \"bin level low\" or \"stockpile full\" get treated as crusher issues when they're actually a load-and-haul sequencing failure, and that misread means the wrong fix gets ordered.",
   "keyPoints": [
-    "SOP 20 covers fire hazards (engine off, no phones, extinguisher, spill trays). It does not require a spotter. Any large HME backing into a tight bay needs a named assistant guiding it. MG-85 hit the wall because nobody was there.",
-    "No machine moves while the fuel truck or tanker is manoeuvring nearby. Both the gas-station and MG-85 events had a vehicle moving near an active delivery.",
-    "Check the handle and nozzle before every fill. A stone on the fuel handle caused the 24-Jun overflow, and the check takes seconds.",
-    "Check the spill kit and fire extinguisher at every fuelling point. Don't assume they're there. At the gas-station event, neither was on hand.",
-    "Fuel at shift change and start-up, not mid-shift. The go-line holds only 35,000 L, so one late delivery empties it. That happened on 8-Sep."
+    "Read the report bottom-up, not top-down: general comments first (catches calendar/operational noise like roster breaks or blast cleanup before you misjudge a real miss), then the crusher downtime log, then excavator availability vs. utilization, then drilling variance last.",
+    "In the crusher downtime log, \"bin level low\" means the pit isn't feeding the crusher fast enough — a haul-sequencing problem, not a mechanical one. \"Stockpile full\" is the opposite fault: the pit is feeding fine but downstream (stockpile/plant) can't absorb it. Don't let both get logged as \"crusher downtime\" without distinguishing which one it is.",
+    "A wide gap between excavator availability and utilization (e.g., 96% available, 72% utilized) means the machines are fine and the loss is dispatch, sequencing, or haul-road condition — chasing mechanical causes wastes time when the fix is upstream of the machine.",
+    "Blast overspill at switchbacks and ramp edges has a real, repeatable cost: roughly 3 excavator-hours per cleanup event. Treat it as a line item, not background noise — it recurs enough to plan around.",
+    "An \"ore ahead / waste behind\" month looks like a win on the total line but is a sequencing signal: the fleet is stripping ore faster than planned while waste falls behind, and the surplus evaporates fast once the easy ore face runs out."
   ],
-  "apply": "At start-up, watch the North Go Line. Check whether an attendant is at the bay and whether the second dispensing point is actually in use. If trucks are queuing past 07:30, fix it on the spot rather than logging it as another lost hour.",
-  "generatedAt": "2026-09-24T05:43:56"
+  "apply": "If the crusher logs a stoppage on shift, check the reason code before assuming it's a mechanical or crusher-side fault — bin-level-low or stockpile-full both point back at the pit and dispatch, not the plant.",
+  "generatedAt": "2026-09-25T09:13:09"
 }
