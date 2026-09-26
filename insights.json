@@ -1,50 +1,58 @@
 {
-  "generatedAt": "2026-09-25T11:32:19",
-  "date": "2026-09-25",
+  "generatedAt": "2026-09-26T11:32:10",
+  "date": "2026-09-26",
   "runNumber": null,
-  "summary": "1. The 25-Aug-24-Sep fiscal production month closed on Sep 24 at +6.02% on total BCM, but the crusher closed the same cycle at just 38.75% of plan. 2. Total BCM landed at 634,663 against a 598,598 BCM target, with the day itself essentially flat against its own daily target (+0.02%) and ore recovering off Sep 23's complete zero-ore day (though still -40.55% against its own daily target). 2. 3. Crusher stockpile-to-crusher throughput closed the month at 48,055.5 LCM against the 124,000 LCM plan, the widest shortfall of any KPI this article tracks this cycle, driven by roughly 5h47m of crusher downtime on the closing day alone (bin-level-low, big boulders, and a 4h42m \"crusher bin chowk\" stop). 3. 4. On the fleet side, DT-107 opened a fresh Engine Coolant Temperature High fault, the same fault type already open on DT-128 (now its seventh day down), while Track Dozer DZ-248's Track Completely Worn-out fault, first logged the day before, cleared the same morning it opened, and EX-253 and EX-123 extended their own standing stoppages to nine and three days down respectively. 5. See [[daily-production-report]] and [[fleet-availability-utilization]]. 6. DT-107's new engine-coolant fault is the pass's clearest watch item. 7. It opened at 3:30 AM on Sep 24 and stayed down the full 24 hours with no repair movement visible by report cutoff, mirroring DT-128's own still-open, multi-day version of the identical fault type. 8. See [[fleet-availability-utilization]]. 9. New longer-duration ancillary-fleet faults opened on WL-295 and WL-329 (Filter Cleaning/Daily Check/Adaptor Missing on WL-295; Fuel Tank Cracked plus Cutting Edge Replacement on WL-329, spanning into the next day) — both worth a repair-timeline check on the next pass. See [[fleet-availability-utilization]]. Sep 24's own survey reconciliation, which would close the fiscal month on the survey side, has not landed yet — the standing file-N-reports-day-(N-1) publishing lag means it is due on the next survey workbook. [[survey-volume-reconciliation]] still reflects Sep 23 (93.39% of the monthly target, one day left at that point). Worth checking on the next pass whether the survey-side close-out lands near the trucks-reported +6.02%, or below 100% the way every prior month has closed. New October forward-planning material landed but was not compiled this pass: an October 2026 monthly production/availability forecast and a Week 39+40 two-week forecast workbook, both registered for provenance and flagged for a future dedicated forecast-compile pass, consistent with this pass's dashboard-scoped time budget. See `RAW/_INGESTED.md`. Source: `Production report/Sep 26/September Client Meeting Report.xlsx` (Sept (24) tab); `Maintanance Shedules/Sep 26/DailyAvailability_Final_Report (24-09-2025 ).pdf`. `September Block Info.xlsx`, `September A & U.xlsx`, `DPR-September-2026.xlsx`, `September Daily Drill Meters Report.xlsx`, `Daily Drill Sampling Record-2026.xlsx`, `DPR and A&U- September.docx`, `September Distance report.xlsx` (Sept (24) tab, confirmed still empty), and `Grade Control September 2026.xlsx` (re-touched, Sep 24 rows added, no dashboard-relevant figure) registered, cross-check only. `Workshop Daily Task 25-Sep-2026.pdf` registered at index level, standing pattern. `FCST/Monthly/Oct 2026/*` and `FCST/Weekly/Week 39+40/*` registered for provenance, not compiled this pass. No new survey workbook landed this pass. Tasks: none created this pass. The open items above are logged in the affected articles' own Open Questions sections rather than dispatched as action items. [[survey-volume-reconciliation]] was not touched — no new survey workbook landed since the last pass. Important References, Notes & References, and Task Feedback Log workflows were not run this pass, per the task's own instructions. No content removed or renamed from RAW. ---",
+  "summary": "1. The new 25-Sep-24-Oct fiscal month opens on Sep 25 at -20.53% against its half-day Friday target, but ore beats its own target for the first time in nine days. 2. Total landed at 8,649 BCM against a 10,883.6 BCM target, with waste running 26.05% under target and ore running 34.67% over it, a reversal after eight straight ore-target misses through the end of September. 2. 3. The 26-Sep HOD meeting independently calls Sep 25 \"a red production day, approximately 23,000 tones, around 6,700 tones below plan,\" within about 700 t of the workbook's own variance, and pins roughly 5,000 t of the loss on equipment downtime, chiefly EX-262's extended service and hose leak and EX-263's new A/C fault. 3. 4. On the fleet side, EX-327 opens a Hydraulic Oil Leaking breakdown, the longest single stoppage in the day's report, while EX-123 and EX-253 both extend their own standing multi-day stoppages to four and ten days respectively, and WL-101's Accident Damage record, open since 01-Feb-26, finally closes after roughly 236 days. 5. See [[daily-production-report]] and [[fleet-availability-utilization]]. 6. The formal EOM sign-off for the closed 25-Aug-24-Sep cycle gives a Total Pit Mined Volume of 593,309 BCM, reading 99.12% of the 598,598 BCM monthly target — 9,899 BCM above the INX-SUM workbook's own running survey total for the same cycle (583,410 BCM, 97.46%). 7. The sign-off's own signature date reads \"August 25, 2026,\" a date that predates the cycle it closes; worth a direct check with the survey team on whether that is a template artifact. 8. See [[survey-volume-reconciliation]]. 9. EX-123's replacement part status needs confirming today. The HOD meeting reports a part \"reportedly ordered from Germany with 7-10-day ETA\" but flags that management wants documented proof of the order, the supplier confirmation, and a firm ETA — the unit has now been down four full days. If the 7-10 day window holds, EX-123 stays down into early October, overlapping the 4-11 October Maaden crusher-shutdown excavator loan already on the books. See [[fleet-availability-utilization]]. The October workbook's populated tab is mislabeled. It carries the header \"Sept (24)\" but its own date cell reads Friday 2026-09-25, meaning every subsequent tab in the series may run one day offset from its label. Worth flagging to the team producing the workbook so the day-25 pass does not misread a tab. DT-107 and DT-128 both remain down on matching Engine Coolant Temperature High faults, now on their second and eighth consecutive days respectively; the HOD meeting says DT-128's engine installation is targeted for completion by the afternoon of 27-Sep. No new daily INX-SUM survey workbook landed this pass — the newest file remains `260925-INX-SUM.xlsx`, already registered and compiled in the prior pass as Sep 24 data under the standing publishing-lag pattern. The next daily reading, covering Sep 25, is due on the next pass. Source: `Production report/Oct 26/October Client Meeting Report-.xlsx` (Sep 25 data); `Maintanance Shedules/Oct 26/DailyAvailability_Final_Report (25-09-2025 ).pdf`; `HOD Meetings/HOD Morning Meeting 26 Sep 26.msg`; `Survey Data/Sep 26/eom report sheet_sept_2026_signed.pdf`. `October Block Info.xlsx`, `October A & U.xlsx`, `DPR-October-2026.xlsx`, `October Daily Drill Meters Report-.xlsx`, `Daily Drill Sampling Record-2026.xlsx`, `DPR and A&U- October-2026.docx`, `Equipment running hours report -.xlsx`, and `Grade Control Sheet October 2026.xlsx` registered, cross-check only. `October Distance Report-.xlsx`'s newly populated \"Sep (25)\" tab registered, cross-check only, flagged for a future distance-focused pass. Tasks: none created this pass. The EX-123 parts-confirmation item and the tab-mislabeling flag are logged as open questions in the affected articles rather than dispatched as action items. Important References, Notes & References, and Task Feedback Log workflows were not run this pass, per the task's own instructions. No content removed or renamed from RAW. ---",
   "kpis": [
     {
       "label": "MTD BCM",
-      "value": "634,663",
-      "delta": "+6.0% vs target",
-      "good": true
+      "value": "8,649",
+      "delta": "-20.5% vs target",
+      "good": false
     },
     {
       "label": "Survey Gap",
-      "value": "-9.0%",
+      "value": "-8.8%",
       "delta": "survey vs trucks MTD",
       "good": false
     },
     {
       "label": "Crusher MTD",
-      "value": "39%",
-      "delta": "48,056 / 124,000 LCM",
+      "value": "2%",
+      "delta": "2,000 / 124,000 LCM",
       "good": null
     },
     {
       "label": "Days Remain",
-      "value": "0",
+      "value": "29",
       "delta": "",
       "good": null
     }
   ],
-  "trend": [],
+  "trend": [
+    {
+      "date": "2026-09-25",
+      "label": "25 Sep",
+      "actual": 8649,
+      "target": 11496,
+      "half": true
+    }
+  ],
   "fleet": {
-    "availDaily": "87.7%",
-    "availMtd": "86.78%",
-    "exAvail": "77.5%",
+    "availDaily": "88.38%",
+    "availMtd": "86.85%",
+    "exAvail": "66.1%",
     "exUnits": 6,
-    "dtAvail": "92.5%",
-    "dtUnits": 22,
+    "dtAvail": "100.0%",
+    "dtUnits": 17,
     "excavators": [
       {
         "unit": "EX-340",
-        "avail": "97.9%"
+        "avail": null
       },
       {
         "unit": "EX-262",
-        "avail": "95.8%"
+        "avail": "85.4%"
       },
       {
         "unit": "EX-253",
@@ -52,7 +60,7 @@
       },
       {
         "unit": "EX-263",
-        "avail": "95.8%"
+        "avail": "81.2%"
       },
       {
         "unit": "EX-247",
@@ -63,60 +71,70 @@
         "avail": null
       }
     ],
-    "exBasis": "5/6",
-    "pdfDate": "24-09",
-    "dtBasis": "22 active ≥8h"
+    "exBasis": "4/6",
+    "pdfDate": "25-09",
+    "dtBasis": "17 active ≥8h"
   },
   "equipment": [
     {
-      "unit": "DT-107",
-      "type": "Haul Truck",
-      "status": "warning",
-      "avail": "",
-      "util": "",
-      "bd_hrs": "",
-      "note": "'s new Engine Coolant Temperature High fault become a second standing multi-day dump-truck stoppage alongside",
-      "comment": "Engine Coolant Temperature High"
-    },
-    {
-      "unit": "DT-128",
-      "type": "Haul Truck",
-      "status": "warning",
-      "avail": "",
-      "util": "",
-      "bd_hrs": "",
-      "note": "** (same fault type, now on day seven), or does it clear inside a normal repair window? - **Does",
-      "comment": "Engine Coolant Temperature High"
-    },
-    {
-      "unit": "DZ-248",
-      "type": "Track Dozer",
-      "status": "warning",
-      "avail": "79.17%",
-      "util": "",
-      "bd_hrs": "",
-      "note": "'s Track Completely Worn-out fault (first logged in the Sep 23 entry) clears the same morning it was opened** ",
-      "comment": "Track Completely Worn-out"
-    },
-    {
-      "unit": "EX-253",
+      "unit": "EX-327",
       "type": "Excavator",
-      "status": "scheduled",
+      "status": "warning",
       "avail": "",
       "util": "",
       "bd_hrs": "",
-      "note": "** (now nine days down)? - Carried forward — **does the October 4-11 crusher-shutdown excavator loan get forma",
-      "comment": "Hydraulic Oil Leakage"
+      "note": "'s hydraulic oil leak close on the 26-Sep morning as logged, or carry over?** - **Is",
+      "comment": "Hydraulic Oil Leaking"
     },
     {
       "unit": "EX-123",
       "type": "Excavator",
+      "status": "down",
+      "avail": "",
+      "util": "",
+      "bd_hrs": "",
+      "note": "is down until roughly 3-6 October, overlapping the 4-11 October crusher-shutdown excavator loan Maaden request",
+      "comment": "Hydraulic Oil Leaking"
+    },
+    {
+      "unit": "WL-101",
+      "type": "Wheel Loader",
+      "status": "returned",
+      "avail": "",
+      "util": "",
+      "bd_hrs": "",
+      "note": "back in production after the accident-damage record closed, or was the record closed administratively?** - Car",
+      "comment": "Accident Damage"
+    },
+    {
+      "unit": "EX-253",
+      "type": "Excavator",
       "status": "warning",
       "avail": "",
       "util": "",
       "bd_hrs": "",
-      "note": "'s Hydraulic Oil Leaking fault (now three full days down) clear, or does it become a second standing multi-wee",
-      "comment": "Hydraulic Oil Leaking"
+      "note": "stays down the full 24 hours for a tenth consecutive day**, both fault lines (Hydraulic Oil Leakage and Swing ",
+      "comment": "Hydraulic Oil Leakage"
+    },
+    {
+      "unit": "EX-262",
+      "type": "Excavator",
+      "status": "scheduled",
+      "avail": "85.42%",
+      "util": "",
+      "bd_hrs": "",
+      "note": "logs 3.5h at night (7:00-10:30 PM) for a 250-hour service plus bucket repair and radiator change-out, 85.42% a",
+      "comment": ""
+    },
+    {
+      "unit": "EX-263",
+      "type": "Excavator",
+      "status": "warning",
+      "avail": "81.25%",
+      "util": "",
+      "bd_hrs": "",
+      "note": "opens an A/C Compressor Faulty breakdown (3:30-8:00 PM), 4.5h, 81.25% avail.",
+      "comment": "A/C Compressore Faulty"
     },
     {
       "unit": "EX-247",
@@ -125,46 +143,42 @@
       "avail": "97.92%",
       "util": "",
       "bd_hrs": "",
-      "note": "all log only short planned daily-check or GET-wear stops (0.5-1h, 95.83-97.92% avail)",
-      "comment": "Teeth Worn-out"
-    },
-    {
-      "unit": "EX-262",
-      "type": "Excavator",
-      "status": "down",
-      "avail": "97.92%",
-      "util": "",
-      "bd_hrs": "",
-      "note": "all log only short planned daily-check or GET-wear stops (0.5-1h, 95.83-97.92% avail)",
-      "comment": "Bucket Teeth Worn-out"
+      "note": "logs a 0.5h night daily check (97.92%).",
+      "comment": ""
     },
     {
       "unit": "EX-340",
       "type": "Excavator",
-      "status": "down",
-      "avail": "97.92%",
+      "status": "warning",
+      "avail": "",
       "util": "",
       "bd_hrs": "",
-      "note": "all log only short planned daily-check or GET-wear stops (0.5-1h, 95.83-97.92% avail)",
+      "note": "needs attention to bucket teeth, shrouds and guards. Repeated bucket lip and shroud failures led to welders be",
       "comment": ""
     }
   ],
   "followUps": [
     {
-      "priority": "HIGH",
-      "title": "**Sep 24's own survey reconciliation, which would close the fiscal month...",
+      "priority": "MONITOR",
+      "title": "**EX-123's replacement part status needs confirming today.** The HOD mee...",
       "body": "",
       "action": ""
     },
     {
       "priority": "MONITOR",
-      "title": "**New longer-duration ancillary-fleet faults opened on WL-295 and WL-329...",
+      "title": "**The October workbook's populated tab is mislabeled.** It carries the h...",
       "body": "",
       "action": ""
     },
     {
       "priority": "MONITOR",
-      "title": "**New October forward-planning material landed but was not compiled this...",
+      "title": "**DT-107 and DT-128 both remain down on matching Engine Coolant Temperat...",
+      "body": "",
+      "action": ""
+    },
+    {
+      "priority": "MONITOR",
+      "title": "**No new daily INX-SUM survey workbook landed this pass** — the newest f...",
       "body": "",
       "action": ""
     }
