@@ -1,15 +1,15 @@
 {
-  "date": "2026-09-25",
-  "topic": "Daily Production Report",
-  "title": "Daily Production Report",
-  "body": "The DPR gets read top to bottom for the total-movement line, which mostly looks fine — and that hides the real problems underneath it. At ADW, crusher stoppages logged as \"bin level low\" or \"stockpile full\" get treated as crusher issues when they're actually a load-and-haul sequencing failure, and that misread means the wrong fix gets ordered.",
+  "date": "2026-09-26",
+  "topic": "Fleet Availability and Utilization",
+  "title": "Fleet Availability and Utilization",
+  "body": "ADW's core fleet is mostly fit to work: excavators ran 96% available against 79% usage and trucks 95% against 74% in the 10-Sep weekly figures. That gap is production lost by operations, not maintenance. It is also what Maaden's 80% utilization escalation is aimed at.",
   "keyPoints": [
-    "Read the report bottom-up, not top-down: general comments first (catches calendar/operational noise like roster breaks or blast cleanup before you misjudge a real miss), then the crusher downtime log, then excavator availability vs. utilization, then drilling variance last.",
-    "In the crusher downtime log, \"bin level low\" means the pit isn't feeding the crusher fast enough — a haul-sequencing problem, not a mechanical one. \"Stockpile full\" is the opposite fault: the pit is feeding fine but downstream (stockpile/plant) can't absorb it. Don't let both get logged as \"crusher downtime\" without distinguishing which one it is.",
-    "A wide gap between excavator availability and utilization (e.g., 96% available, 72% utilized) means the machines are fine and the loss is dispatch, sequencing, or haul-road condition — chasing mechanical causes wastes time when the fix is upstream of the machine.",
-    "Blast overspill at switchbacks and ramp edges has a real, repeatable cost: roughly 3 excavator-hours per cleanup event. Treat it as a line item, not background noise — it recurs enough to plan around.",
-    "An \"ore ahead / waste behind\" month looks like a win on the total line but is a sequencing signal: the fleet is stripping ore faster than planned while waste falls behind, and the surplus evaporates fast once the easy ore face runs out."
+    "Read availability and utilization as a pair. High availability with low utilization means dispatch, sequencing or face access, so fix it on shift. Low availability means a workshop problem. The two need different people and different fixes.",
+    "The 80% target needs 19.2 productive hours a day, and the site is running 16–17. Most of the 2–3 hours to recover sits in two lines: meal break (2.0 hrs) and \"others\" (1.0 hr). Tramming, blasting, pre-use, survey and fuelling add up to only about 1 hour.",
+    "\"Others\" is not a reason. If standby gets logged as \"others\", \"no job\" or \"truck shortage\" without a root cause, the delay breakdown Kangwa asked for can't be produced.",
+    "Say which denominator you are using. Counting 21 active trucks gives about 96% availability. Counting all 24 gives 80–85%. Leadership will challenge the flattering number.",
+    "Use the best trucks in the fleet as the benchmark. Some trucks idle 6–6.5 hrs a shift while the best run 2.5–3 hrs. The best trucks show what is achievable; the worst show where the losses are."
   ],
-  "apply": "If the crusher logs a stoppage on shift, check the reason code before assuming it's a mechanical or crusher-side fault — bin-level-low or stockpile-full both point back at the pit and dispatch, not the plant.",
-  "generatedAt": "2026-09-25T09:13:09"
+  "apply": "EX-253 and EX-123 are both down, so trucks will bunch at the remaining faces. Get supervisors to log each below-85% hour in the hourly productivity log and to split each \"truck shortage\" into dispatch, mechanical or operator.",
+  "generatedAt": "2026-09-26T10:57:03"
 }
