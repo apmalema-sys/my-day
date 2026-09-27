@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-09-27T11:32:08",
+  "generatedAt": "2026-09-27T11:35:48",
   "date": "2026-09-27",
   "runNumber": null,
-  "summary": "1. Sep 26 posts the fiscal cycle's sharpest ore miss and its heaviest single crusher stoppage. 2. Total production landed at 20,832 BCM against a 21,767.2 BCM target (-4.30%), with ore falling 84.34% short of its 1,979.6 BCM target — the biggest ore miss this cycle after Sep 25's beat. 2. 3. A single 9h05m day-shift crusher maintenance stop (7:55 AM-4:10 PM) drove the lowest daily crusher feed reading this cycle (2,160 BCM), pulling MTD crusher stockpile throughput to just 3.79% of the 124,000 LCM monthly plan through day 2 of 30. 3. 4. The excavator fleet posted its sharpest single-day availability drop this cycle (63.99% daily, down from 66.37%), with EX-253 and EX-123 both extending their standing multi-day stoppages to eleven and five days respectively, while a follow-up maintenance email confirms DT-128's engine swap is nearly complete (release targeted end of day 27-Sep) and finally diagnoses DT-107's fault as coolant leaking onto pistons on cylinders 1 and 9. 5. See [[daily-production-report]] and [[fleet-availability-utilization]]. 6. The 27-Sep HOD meeting calls Sep 26 production RED against a stepped-up ~71,000 t target (actual 56,296 t, within 50 t of the workbook's own 56,246.4 t total) — the fourth different target figure this KB has seen cited across the last four HOD meetings (61-62k, then 70-75k, then a specific 71,000 t), still unreconciled with the workbook's own 58,771.44 t Sep 26 target. 7. The meeting says the October plan has not yet been formally received. 8. EX-123's swing control valve repair attempt (DRA-assisted) failed. 9. The team is investigating alternative options while the original 7-10 day replacement-parts ETA still stands; PC2000 parts remain a separate concern with an ETA around 6 October. WL-101 and WL-329 both open new faults the day after their prior faults cleared — WL-101's Engine Warning fault (77.08% avail) comes one day after its roughly 236-day Accident Damage record closed; WL-329's three concurrent jobs (SOS hydraulic/radiator action, 250-hour service, tyre change-out, 68.75% avail) follow directly after its Fuel Tank Cracked fault cleared inside a day. DT-344 opens a new Tire Puncher #04 breakdown (12h, 50.00% avail), adding to the tire-availability pressure the HOD meeting separately flags as a critical constraint (seven urgent tires, eleven sitting with the repair supplier roughly six weeks past a normal turnaround). No new daily INX-SUM survey workbook landed this pass — the newest file remains `260926-INX-SUM.xlsx`, already registered and compiled as Sep 25 data. [[survey-volume-reconciliation]] is unchanged this pass; Sep 26's own survey reading is due on a future pass. Source: `Production report/Oct 26/October Client Meeting Report-.xlsx` (Sep 26 data); `Maintanance Shedules/Oct 26/DailyAvailability_Final_Report (26-09-2025 ).pdf`; `HOD Meetings/HOD Morning Meeting 27 Sep 26.msg`; `Maintanance Shedules/Oct 26/RE EX-253 - DT128 breakdowns .msg`. `October Block Info.xlsx`, `October A & U.xlsx`, `DPR-October-2026.xlsx`, `October Daily Drill Meters Report-.xlsx`, `Daily Drill Sampling Record-2026.xlsx`, `DPR and A&U- October-2026.docx`, `Equipment running hours report -.xlsx`, `Grade Control Sheet October 2026.xlsx`, and `DIESEL CONSUPTION REPORTS Sep-2026.xlsx` registered, cross-check only. `Weekly Operational Review 26-Sept-2026.pptx` registered at index level only — its own Production Summary table still reads mid-September figures, a stale template carry-over. `Workshop Daily Task 27-Sep-2026.pdf` (both Sep 26 and Oct 26 copies) registered at index level, the standing pattern. Tasks: none created this pass. The unreconciled HOD-meeting target line and EX-123's failed repair attempt are logged as open questions in the affected articles rather than dispatched as action items. Important References, Notes & References, and Task Feedback Log workflows were not run this pass, per the task's own instructions. No content removed or renamed from RAW. ---",
+  "summary": "1. 2026-09-27 (interactive full-RAW check, per Peter's \"Check all raw files\") — every file under RAW/ diffed against the ingestion registry; 19 genuinely unregistered files found and read in full; LV spot check adds new safety findings, an Overspill email corroborates an existing hazard record Key operational findings 1. 2. A full diff of all 1,097 files under RAW/ against `_INGESTED.md` turned up 19 files that had never been registered, spanning eight folders: three survey floor-elevation drawings, seven late-August \"INX-SUM (Mineable Area)\" reserve-tracking PDFs (a gap in an otherwise continuous daily sequence), two Maaden Plans emails, a second-revision post-blast grade-control plan, a WhatsApp dispatch snapshot, an HR holiday memo, a Workshop Daily Task sheet, two superseded FCST forecast workbooks, and two LSR training decks. 3. Every one was opened and read (not registered blind) before logging. 2. 4. The most substantive find is a 20-Sep monthly LV spot check (`Safety Report/FW_ LV spot check report-September 2026.eml` plus its docx attachment) carrying fourteen corrective-action findings never before in this KB: fire-extinguisher bracket and inspection-tag gaps on five vehicles, an inoperative LV-081 siren, and five separate pit-permit or medical-record gaps (missing blood groups, a duplicate old/new permit, an expired Maaden permit). 5. Only two of the fourteen show a confirmed close-out. 6. A second find, `Maaden Plans/Sep 26/Updates 830RL Overspill Loading Plan.msg`, is Peter's own primary email behind a hazard record this KB already carries (the Stage 5/870RL hanging-edge clearance that did not fully remove the hazard, added to [[overspill-material-management]] on 2026-09-23 from a secondary Notion note). 7. Added as a corroborating source; the article's own open question about whether the follow-up inspection confirmed the area safe remains unanswered by this earlier email. 8. Source: full RAW/ file listing diffed against `RAW/_INGESTED.md` (see that file's own 2026-09-27 full-tree-check entry for the complete 19-file table and matching methodology). 9. Tasks: none created this pass. Two items registered for provenance only, deliberately not compiled: `FCST/Weekly/Week 38+39/*` (superseded by the already-registered Week 39+40 forecast cycle) and the two LSR training decks (flagged as a candidate for a future dedicated LSR-article enrichment pass). This pass was interactive, not the scheduled dashboard-scoped compile — it does not touch [[daily-production-report]], [[fleet-availability-utilization]], or [[survey-volume-reconciliation]]. No content removed or renamed from RAW. ---",
   "kpis": [
     {
       "label": "MTD BCM",
@@ -166,27 +166,15 @@
   ],
   "followUps": [
     {
-      "priority": "HIGH",
-      "title": "**WL-101 and WL-329 both open new faults the day after their prior fault...",
-      "body": "",
-      "action": ""
-    },
-    {
-      "priority": "HIGH",
-      "title": "**DT-344 opens a new Tire Puncher #04 breakdown** (12h, 50.00% avail), a...",
-      "body": "",
+      "priority": "CRITICAL",
+      "title": "Tasks",
+      "body": "none created this pass. Two items registered for provenance only, deliberately not compiled: `FCST/Weekly/Week 38+39/*` (superseded by the already-registered Week 39+40 forecast cycle) and the two LSR training decks (flagged as a candidate for a future dedicated LSR-article enrichment pass). This pass was interactive, not the scheduled dashboard-scoped compile — it does not touch [[daily-production-report]], [[fleet-availability-utilization]], or [[survey-volume-reconciliation]]. No content removed or renamed from RAW. ---",
       "action": ""
     },
     {
       "priority": "MONITOR",
-      "title": "**EX-123's swing control valve repair attempt (DRA-assisted) failed.** T...",
-      "body": "",
-      "action": ""
-    },
-    {
-      "priority": "MONITOR",
-      "title": "**No new daily INX-SUM survey workbook landed this pass** — the newest f...",
-      "body": "",
+      "title": "Source",
+      "body": "full RAW/ file listing diffed against `RAW/_INGESTED.md` (see that file's own 2026-09-27 full-tree-check entry for the complete 19-file table and matching methodology).",
       "action": ""
     }
   ]
