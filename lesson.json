@@ -1,15 +1,15 @@
 {
-  "date": "2026-09-27",
-  "topic": "Safety Inspection Patterns",
-  "title": "Safety Inspection Patterns",
-  "body": "Every serious finding at ADW over the last two years traces back to the same handful of gaps — missing signage, weak supervision, and dust killing visibility — and they keep costing us tipping errors, exclusion-zone breaches, and near-misses at the same handful of locations. When we treat each one as a one-off instead of a pattern, the same failure just shows up again three months later wearing a different NCR number.",
+  "date": "2026-09-28",
+  "topic": "Weekly Mining Plan",
+  "title": "Weekly Mining Plan",
+  "body": "When the bi-weekly plan isn't cross-checked against what's actually running, a fault like EX-123's stays written out at 0% for four straight decks with no recovery date while another document shows it back in service — and Spatial Compliance misses (82-89% against 100%) sit unexplained for months because nobody re-raises them. The plan is only useful if you read it against reality, not on its own.",
   "keyPoints": [
-    "ROM pad is the highest-stakes location on site — it shows up in the SIF inspection, two major NCRs (DT-277 wrong-tipping, ZR-24 exclusion breach), and every monthly inspection. Unlabelled stockpile fingers plus high-grade material plus a history of wrong-tipping is a compounding risk, not three separate issues.",
-    "Supervision quality, not equipment or procedure, is the named root cause on the big NCRs. Proposed fixes are almost always supervisory (retraining, monitoring protocols) — track supervisor presence at ROM pad and switchbacks like a KPI, not an afterthought.",
-    "Switchbacks 1, 2, and 3 are structural repeat offenders because of ramp geometry — don't wait for a new finding there, assume the exposure is standing and check delineators and center-beam visibility every shift.",
-    "Supply-chain shortages (delineators, dust chemical, speed signage) show up disguised as safety findings. If a corrective action closes out as \"unavailability of X,\" that's a procurement escalation, not a closed loop.",
-    "Incidents cluster at shift-end, handover, and pre-dawn — the thinnest supervision windows. Extra attention at those times pays off disproportionately."
+    "The deck has three layers — retrospective, equipment availability grid, and forward schedule. Don't sequence off the forward numbers alone; check the retrospective for what actually happened last week first.",
+    "Treat every 0% or \"written out\" line on the availability grid as unverified until you check it against the current fleet/actuals report. This operation has run equipment write-outs and recovery dates that flatly contradict each other for weeks at a time.",
+    "The chronic gap here isn't availability, it's utilization — machines have repeatedly shown up available above plan while UA/use tracked below plan. That means idle and queue time on shift is the lever, not chasing more uptime.",
+    "Six focus items repeat deck after deck: spillage/overspill cleanup, dust, near-miss reporting, Stage 4D/Stage 6 simultaneous ops, fatigue management, hot-season prep. Recurring on the deck means unresolved on the ground — don't treat them as boilerplate.",
+    "A grade or compliance miss that goes unexplained once tends to stay unexplained — one Spatial Compliance gap sat open from early June to late July with no root cause because nobody owned the follow-up."
   ],
-  "apply": "Walk the ROM pad fingers and check they're still labelled and demarcated — that single gap has already produced two major NCRs (DT-277, ZR-24), both tied to dust cutting visibility right at that spot.",
-  "generatedAt": "2026-09-27T11:00:20"
+  "apply": "Before locking in loading sequence or truck allocation, check whether any excavator or drill rig on today's roster is listed at 0% in the current bi-weekly plan but shows as running in the fleet availability report — that exact mismatch has cost this site planning accuracy multiple times this year.",
+  "generatedAt": "2026-09-28T11:37:31"
 }
