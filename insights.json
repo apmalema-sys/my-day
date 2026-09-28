@@ -1,13 +1,13 @@
 {
-  "generatedAt": "2026-09-28T11:36:07",
-  "date": "2026-09-27",
+  "generatedAt": "2026-09-28T11:44:59",
+  "date": "2026-09-28",
   "runNumber": null,
-  "summary": "1. 2026-09-27 (second scheduled \"mining-kb-compile\" pass) -- Parts A/B/C: the weekly HSE/production meeting, empty at the prior pass's fetch time, surfaces fully transcribed; a September non-performance letter and financial penalties come to light; Task Feedback Log stays clean Key operational findings 1. 2. The Sunday weekly HSE & production meeting (Notion page created 13:10, flagged empty by the prior same-day full-scope pass) was re-checked and had since been fully transcribed (last edited 14:51). 3. Written verbatim to `RAW/Meeting Notes/mining-operations-weekly-hse-production-meeting_2026-09-27.md`, matching the standing weekly-HSE-meeting format (same shape as the 2026-09-20 edition). 2. 4. The meeting surfaces a September non-performance letter under the contract: month-end production landed at 1.6216 against a negotiated ~1.87 target, 470,000 tonnes behind year-to-date, with financial penalties (docking) to follow and contract language allowing for penalty escalation or contractor replacement in a sustained shortfall. 5. October's target is set at 1.82M t including 300,000 t of ore -- close to but not identical to the 1.85M t x 4-week figure already logged from the same day's separate October planning/Q3 review meeting; reconciling the two once the formal October plan lands is now an open question in [[daily-production-report]]. 6. Mark Wright arrives Monday night for a Tuesday meeting on the non-performance specifically. 3. 7. Maintenance picture gains a fifth open excavator-engine thread: EX-263's oil sample flags an engine issue, with the original engine due for collection from Zaid tomorrow. 8. Truck-129's engine, sent to MoMAQ for assessment, comes back scrap -- a C32 KDP replacement is quoted at 4-6 weeks. 9. Tire supply is now a named number: 42 Michelin tyres left in-country against Red Sea shipping disruption. A same-day client email corroborates the meeting's own fatigue-underreporting discussion: Maaden Safety Specialist Nasser Hussain Al Sharif calls the site's fatigue-trend dashboard \"clear and effective\" but requests a cause breakdown (poor sleep, overtime, night shift, heat exposure). Two new-cycle FCST forecast workbooks (Week 40+41) registered for provenance only, consistent with the standing deferral of full forecast-cycle synthesis. 6. Important References (41 files) and the Notion Notes & References Database (21 rows) both re-checked clean -- no new content since the 2026-09-23 full-scope pass. 7. Part C found zero unprocessed Task Feedback Log rows -- 83/83 Processed, confirming the prior same-day pass's three resolutions persisted, nothing new to action. 8. Wiki articles touched: [[safety-inspection-patterns]], [[fleet-availability-utilization]], [[daily-production-report]]. All bumped to `Last updated: 2026-09-27`. No content removed or renamed from RAW.",
+  "summary": "1. Sep 27 total production landed at 17,298 BCM against a 21,767.2 BCM target (-20.53%), but ore reversed sharply, beating its target by 108.27% — the largest ore beat this fiscal cycle has logged, following Sep 26's -84.34% miss. 2. 2. Crusher stockpile-to-crusher MTD throughput reached 4.71% of the 124,000 LCM monthly plan, up from Sep 26's 3.79%, on a day with 7h14m of combined crusher downtime, the longest single stop a 5h15m stockpile-full stoppage (1:45-6:30 PM). 3. 3. Excavator daily availability fell to 52.38%, the cycle's worst reading yet, with EX-123 and EX-253 both still down the full 24 hours (sixth and twelfth consecutive days) and two fresh stops opening the same day: EX-247 (Engine Cut Off, 12.5h, 47.92% avail) and EX-398 (planned welding job plus 500-hour service, 17.5h, 27.08% avail). 4. See [[daily-production-report]] and [[fleet-availability-utilization]]. 5. DT-131 and DT-243 both open fresh tire breakdowns the same day (Tyre #03 Problem and Tyre Flat #03, both from 5:30 AM, both 0.00% avail) — a second front of tire trouble alongside DT-344's carried-over Tire Puncher #04 fault, adding pressure to the standing 11-tire repair-supplier backlog and the 42-unit Michelin stock level already tracked in [[fleet-availability-utilization]]. 6. DT-107 and DT-128 remain down on matching Engine Coolant Temperature High faults, now on their fourth and tenth consecutive days respectively — no movement visible in today's Availability Report despite the engine-swap and cylinder-head-removal work described in the prior pass's maintenance updates. 7. MTD production sits at 46,779 BCM against a 54,418 BCM target (-14.04%), production day 3 of 30 in the 25-Sep-24-Oct fiscal cycle, days remaining 27. 8. Week-to-date -14.24% on total BCM but +78.51% on ore. 9. No new daily INX-SUM survey workbook landed this pass — the newest file remains `260927-INX-SUM.xlsx`, already registered and compiled in the prior pass as Sep 26 data. [[survey-volume-reconciliation]] is unchanged this pass; Sep 27's own survey reading is due on a future pass. Two new Project Finances items (`Budget 2027.msg`, `Clint Relationship .msg`) landed in RAW but were not registered this pass — they fall under the Important References workflow, which this dashboard-scoped task does not run, and the KB's own rule flags incoming financial/contract-terms material for review before ingest. Flagged for Peter or a future full-scope pass. Source: `Production report/Oct 26/October Client Meeting Report-.xlsx` (Sep 27 data); `Maintanance Shedules/Oct 26/DailyAvailability_Final_Report (27-09-2025 ).pdf`. `October Block Info.xlsx`, `October A & U.xlsx`, `DPR-October-2026.xlsx`, `October Daily Drill Meters Report-.xlsx`, `Daily Drill Sampling Record-2026.xlsx`, `DPR and A&U- October-2026.docx`, `Equipment running hours report -.xlsx`, `October Distance Report-.xlsx`, `Grade Control Sheet October 2026.xlsx`, and `DIESEL CONSUPTION REPORTS Sep-2026.xlsx` registered, cross-check only. No same-day HOD or HSE meeting note had landed in RAW as of this pass, so the fleet section carries no meeting-note corroboration this time. Tasks: none created this pass. The DT-131/DT-243 tire breakdowns and the unregistered Project Finances files are logged as open items in the affected articles/this entry rather than dispatched as action items. Important References, Notes & References, and Task Feedback Log workflows were not run this pass, per the task's own instructions. No content removed or renamed from RAW. ---",
   "kpis": [
     {
       "label": "MTD BCM",
-      "value": "29,481",
-      "delta": "-9.7% vs target",
+      "value": "46,779",
+      "delta": "-14.0% vs target",
       "good": false
     },
     {
@@ -18,13 +18,13 @@
     },
     {
       "label": "Crusher MTD",
-      "value": "4%",
-      "delta": "4,698 / 124,000 LCM",
+      "value": "5%",
+      "delta": "5,840 / 124,000 LCM",
       "good": null
     },
     {
       "label": "Days Remain",
-      "value": "28",
+      "value": "27",
       "delta": "",
       "good": null
     }
@@ -43,10 +43,21 @@
       "actual": 20832,
       "target": 22993,
       "half": false
+    },
+    {
+      "date": "2026-09-27",
+      "label": "27 Sep",
+      "actual": 17298,
+      "target": 22993,
+      "half": false
     }
   ],
   "fleet": {
+    "availDaily": "85.8%",
+    "availMtd": "86.8%",
+    "exAvail": "67.9%",
     "exUnits": 6,
+    "dtAvail": "90.7%",
     "dtUnits": 20,
     "excavators": [
       {
@@ -74,32 +85,30 @@
         "avail": null
       }
     ],
-    "exAvail": "67.9%",
     "exBasis": "5/6",
     "pdfDate": "27-09",
-    "dtAvail": "90.7%",
     "dtBasis": "20 active ≥8h"
   },
   "equipment": [
     {
-      "unit": "EX-263",
+      "unit": "EX-247",
       "type": "Excavator",
       "status": "down",
       "avail": "",
       "util": "",
       "bd_hrs": "",
-      "note": "now a fifth open excavator-engine thread, **does the swing-fleet size mismatch already flagged this pass (see ",
-      "comment": ""
+      "note": "/",
+      "comment": "Engine Cut Off"
     },
     {
-      "unit": "EX-253",
+      "unit": "EX-398",
       "type": "Excavator",
       "status": "down",
       "avail": "",
       "util": "",
       "bd_hrs": "",
-      "note": "'s parts, the tire-repair turnaround)? - Carried forward -- with",
-      "comment": "Hydraulic Oil Leakage"
+      "note": ") point to a deeper capacity problem given the standing swing-fleet size mismatch already flagged in the Sunda",
+      "comment": ""
     },
     {
       "unit": "EX-123",
@@ -108,35 +117,83 @@
       "avail": "",
       "util": "",
       "bd_hrs": "",
-      "note": "and the",
+      "note": "'s oil-sample finding, and now",
       "comment": "Hydraulic Oil Leaking"
     },
     {
-      "unit": "DT-107",
-      "type": "Haul Truck",
-      "status": "scheduled",
+      "unit": "EX-253",
+      "type": "Excavator",
+      "status": "down",
       "avail": "",
       "util": "",
       "bd_hrs": "",
-      "note": "'s fan-motor temporary fix. Multiple 2,000-hour services and drive-clearance jobs are scheduled across the fle",
-      "comment": "Engine Coolant Temperature High"
+      "note": "'s oil-sample finding, and now",
+      "comment": "Hydraulic Oil Leakage"
     },
     {
-      "unit": "DT-128",
+      "unit": "DT-131",
       "type": "Haul Truck",
       "status": "down",
       "avail": "",
       "util": "",
       "bd_hrs": "",
-      "note": "/Truck-129 pair already in this article.",
-      "comment": "Engine Coolant Temperature High"
+      "note": "'s and",
+      "comment": "Tyre #03 Problem"
+    },
+    {
+      "unit": "DT-243",
+      "type": "Haul Truck",
+      "status": "down",
+      "avail": "",
+      "util": "",
+      "bd_hrs": "",
+      "note": "'s same-day tire breakdowns draw on the same 11-tire repair-supplier backlog already tracked in this article**",
+      "comment": "Tyre Flat #03"
+    },
+    {
+      "unit": "EX-262",
+      "type": "Excavator",
+      "status": "down",
+      "avail": "97.92%",
+      "util": "",
+      "bd_hrs": "",
+      "note": "and EX-340 each log only short daily-check stops (0.5-1h, 95.83-97.92% avail).",
+      "comment": ""
+    },
+    {
+      "unit": "EX-263",
+      "type": "Excavator",
+      "status": "scheduled",
+      "avail": "",
+      "util": "",
+      "bd_hrs": "",
+      "note": "'s engine collection from Zaid happen as scheduled**, and does the oil-sample finding turn into a full engine ",
+      "comment": ""
     }
   ],
   "followUps": [
     {
       "priority": "MONITOR",
-      "title": "Wiki articles touched",
-      "body": "[[safety-inspection-patterns]], [[fleet-availability-utilization]], [[daily-production-report]]. All bumped to `Last updated: 2026-09-27`. No content removed or renamed from RAW.",
+      "title": "**DT-107 and DT-128 remain down on matching Engine Coolant Temperature H...",
+      "body": "",
+      "action": ""
+    },
+    {
+      "priority": "MONITOR",
+      "title": "**MTD production sits at 46,779 BCM against a 54,418 BCM target (-14.04%...",
+      "body": "",
+      "action": ""
+    },
+    {
+      "priority": "MONITOR",
+      "title": "**No new daily INX-SUM survey workbook landed this pass** — the newest f...",
+      "body": "",
+      "action": ""
+    },
+    {
+      "priority": "MONITOR",
+      "title": "**Two new Project Finances items (`Budget 2027.msg`, `Clint Relationship...",
+      "body": "",
       "action": ""
     }
   ]
