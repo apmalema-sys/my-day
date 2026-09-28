@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-09-27T11:35:48",
+  "generatedAt": "2026-09-28T11:36:07",
   "date": "2026-09-27",
   "runNumber": null,
-  "summary": "1. 2026-09-27 (interactive full-RAW check, per Peter's \"Check all raw files\") — every file under RAW/ diffed against the ingestion registry; 19 genuinely unregistered files found and read in full; LV spot check adds new safety findings, an Overspill email corroborates an existing hazard record Key operational findings 1. 2. A full diff of all 1,097 files under RAW/ against `_INGESTED.md` turned up 19 files that had never been registered, spanning eight folders: three survey floor-elevation drawings, seven late-August \"INX-SUM (Mineable Area)\" reserve-tracking PDFs (a gap in an otherwise continuous daily sequence), two Maaden Plans emails, a second-revision post-blast grade-control plan, a WhatsApp dispatch snapshot, an HR holiday memo, a Workshop Daily Task sheet, two superseded FCST forecast workbooks, and two LSR training decks. 3. Every one was opened and read (not registered blind) before logging. 2. 4. The most substantive find is a 20-Sep monthly LV spot check (`Safety Report/FW_ LV spot check report-September 2026.eml` plus its docx attachment) carrying fourteen corrective-action findings never before in this KB: fire-extinguisher bracket and inspection-tag gaps on five vehicles, an inoperative LV-081 siren, and five separate pit-permit or medical-record gaps (missing blood groups, a duplicate old/new permit, an expired Maaden permit). 5. Only two of the fourteen show a confirmed close-out. 6. A second find, `Maaden Plans/Sep 26/Updates 830RL Overspill Loading Plan.msg`, is Peter's own primary email behind a hazard record this KB already carries (the Stage 5/870RL hanging-edge clearance that did not fully remove the hazard, added to [[overspill-material-management]] on 2026-09-23 from a secondary Notion note). 7. Added as a corroborating source; the article's own open question about whether the follow-up inspection confirmed the area safe remains unanswered by this earlier email. 8. Source: full RAW/ file listing diffed against `RAW/_INGESTED.md` (see that file's own 2026-09-27 full-tree-check entry for the complete 19-file table and matching methodology). 9. Tasks: none created this pass. Two items registered for provenance only, deliberately not compiled: `FCST/Weekly/Week 38+39/*` (superseded by the already-registered Week 39+40 forecast cycle) and the two LSR training decks (flagged as a candidate for a future dedicated LSR-article enrichment pass). This pass was interactive, not the scheduled dashboard-scoped compile — it does not touch [[daily-production-report]], [[fleet-availability-utilization]], or [[survey-volume-reconciliation]]. No content removed or renamed from RAW. ---",
+  "summary": "1. 2026-09-27 (second scheduled \"mining-kb-compile\" pass) -- Parts A/B/C: the weekly HSE/production meeting, empty at the prior pass's fetch time, surfaces fully transcribed; a September non-performance letter and financial penalties come to light; Task Feedback Log stays clean Key operational findings 1. 2. The Sunday weekly HSE & production meeting (Notion page created 13:10, flagged empty by the prior same-day full-scope pass) was re-checked and had since been fully transcribed (last edited 14:51). 3. Written verbatim to `RAW/Meeting Notes/mining-operations-weekly-hse-production-meeting_2026-09-27.md`, matching the standing weekly-HSE-meeting format (same shape as the 2026-09-20 edition). 2. 4. The meeting surfaces a September non-performance letter under the contract: month-end production landed at 1.6216 against a negotiated ~1.87 target, 470,000 tonnes behind year-to-date, with financial penalties (docking) to follow and contract language allowing for penalty escalation or contractor replacement in a sustained shortfall. 5. October's target is set at 1.82M t including 300,000 t of ore -- close to but not identical to the 1.85M t x 4-week figure already logged from the same day's separate October planning/Q3 review meeting; reconciling the two once the formal October plan lands is now an open question in [[daily-production-report]]. 6. Mark Wright arrives Monday night for a Tuesday meeting on the non-performance specifically. 3. 7. Maintenance picture gains a fifth open excavator-engine thread: EX-263's oil sample flags an engine issue, with the original engine due for collection from Zaid tomorrow. 8. Truck-129's engine, sent to MoMAQ for assessment, comes back scrap -- a C32 KDP replacement is quoted at 4-6 weeks. 9. Tire supply is now a named number: 42 Michelin tyres left in-country against Red Sea shipping disruption. A same-day client email corroborates the meeting's own fatigue-underreporting discussion: Maaden Safety Specialist Nasser Hussain Al Sharif calls the site's fatigue-trend dashboard \"clear and effective\" but requests a cause breakdown (poor sleep, overtime, night shift, heat exposure). Two new-cycle FCST forecast workbooks (Week 40+41) registered for provenance only, consistent with the standing deferral of full forecast-cycle synthesis. 6. Important References (41 files) and the Notion Notes & References Database (21 rows) both re-checked clean -- no new content since the 2026-09-23 full-scope pass. 7. Part C found zero unprocessed Task Feedback Log rows -- 83/83 Processed, confirming the prior same-day pass's three resolutions persisted, nothing new to action. 8. Wiki articles touched: [[safety-inspection-patterns]], [[fleet-availability-utilization]], [[daily-production-report]]. All bumped to `Last updated: 2026-09-27`. No content removed or renamed from RAW.",
   "kpis": [
     {
       "label": "MTD BCM",
@@ -12,7 +12,7 @@
     },
     {
       "label": "Survey Gap",
-      "value": "+3.8%",
+      "value": "+18.8%",
       "delta": "survey vs trucks MTD",
       "good": true
     },
@@ -46,20 +46,16 @@
     }
   ],
   "fleet": {
-    "availDaily": "86.7%",
-    "availMtd": "86.84%",
-    "exAvail": "70.0%",
     "exUnits": 6,
-    "dtAvail": "96.8%",
-    "dtUnits": 23,
+    "dtUnits": 20,
     "excavators": [
       {
         "unit": "EX-340",
-        "avail": "95.8%"
+        "avail": "97.9%"
       },
       {
         "unit": "EX-262",
-        "avail": "83.3%"
+        "avail": "95.8%"
       },
       {
         "unit": "EX-253",
@@ -71,110 +67,76 @@
       },
       {
         "unit": "EX-247",
-        "avail": "72.9%"
+        "avail": "47.9%"
       },
       {
         "unit": "EX-1200",
         "avail": null
       }
     ],
+    "exAvail": "67.9%",
     "exBasis": "5/6",
-    "pdfDate": "26-09",
-    "dtBasis": "23 active ≥8h"
+    "pdfDate": "27-09",
+    "dtAvail": "90.7%",
+    "dtBasis": "20 active ≥8h"
   },
   "equipment": [
     {
-      "unit": "DT-344",
-      "type": "Haul Truck",
+      "unit": "EX-263",
+      "type": "Excavator",
       "status": "down",
-      "avail": "50.00%",
-      "util": "",
-      "bd_hrs": "",
-      "note": "opens a fresh Tire Puncher #04 breakdown** at 5:30 PM 26-Sep, 12h logged, 50.00% avail, the longest new dump-t",
-      "comment": "Tire Puncher #04"
-    },
-    {
-      "unit": "WL-101",
-      "type": "Wheel Loader",
-      "status": "warning",
       "avail": "",
       "util": "",
       "bd_hrs": "",
-      "note": "stay down on its new Engine Warning fault past today**, or clear inside a normal repair window the way its Acc",
+      "note": "now a fifth open excavator-engine thread, **does the swing-fleet size mismatch already flagged this pass (see ",
       "comment": ""
-    },
-    {
-      "unit": "WL-329",
-      "type": "Wheel Loader",
-      "status": "scheduled",
-      "avail": "68.75%",
-      "util": "",
-      "bd_hrs": "",
-      "note": "opens three concurrent jobs** — an SOS action on the hydraulic system and radiator coolant, a 250-hour service",
-      "comment": "Engine Warning"
     },
     {
       "unit": "EX-253",
       "type": "Excavator",
-      "status": "warning",
+      "status": "down",
       "avail": "",
       "util": "",
       "bd_hrs": "",
-      "note": "stays down the full 24 hours for an eleventh consecutive day**, both fault lines (Hydraulic Oil Leakage and Sw",
+      "note": "'s parts, the tire-repair turnaround)? - Carried forward -- with",
       "comment": "Hydraulic Oil Leakage"
     },
     {
       "unit": "EX-123",
       "type": "Excavator",
+      "status": "down",
+      "avail": "",
+      "util": "",
+      "bd_hrs": "",
+      "note": "and the",
+      "comment": "Hydraulic Oil Leaking"
+    },
+    {
+      "unit": "DT-107",
+      "type": "Haul Truck",
       "status": "scheduled",
       "avail": "",
       "util": "",
       "bd_hrs": "",
-      "note": "'s replacement-parts path change now that DRA's repair attempt has failed**, or does the team's \"alternative o",
-      "comment": "Hydraulic Oil Leaking"
+      "note": "'s fan-motor temporary fix. Multiple 2,000-hour services and drive-clearance jobs are scheduled across the fle",
+      "comment": "Engine Coolant Temperature High"
     },
     {
-      "unit": "EX-247",
-      "type": "Excavator",
-      "status": "warning",
-      "avail": "72.92%",
-      "util": "",
-      "bd_hrs": "",
-      "note": "logs the day's next-largest excavator stop**, two faults totaling 6.5h: a Boom Cylinder Hydraulic Oil Leaking ",
-      "comment": "Boom Cylinder Hydraulic Oil Leaking"
-    },
-    {
-      "unit": "EX-262",
-      "type": "Excavator",
+      "unit": "DT-128",
+      "type": "Haul Truck",
       "status": "down",
-      "avail": "83.33%",
+      "avail": "",
       "util": "",
       "bd_hrs": "",
-      "note": "loses 4h to a Bucket Cylinder Oil Leaking breakdown (9:30 AM-1:30 PM), 83.33% avail.",
-      "comment": "Bucket Cylinder Oil Leaking"
-    },
-    {
-      "unit": "EX-263",
-      "type": "Excavator",
-      "status": "down",
-      "avail": "97.92%",
-      "util": "",
-      "bd_hrs": "",
-      "note": "and EX-398 each log only short daily-check/GET-wear stops (0.5-1h, 95.83-97.92% avail).",
-      "comment": "Install Bucket Tips"
+      "note": "/Truck-129 pair already in this article.",
+      "comment": "Engine Coolant Temperature High"
     }
   ],
   "followUps": [
     {
-      "priority": "CRITICAL",
-      "title": "Tasks",
-      "body": "none created this pass. Two items registered for provenance only, deliberately not compiled: `FCST/Weekly/Week 38+39/*` (superseded by the already-registered Week 39+40 forecast cycle) and the two LSR training decks (flagged as a candidate for a future dedicated LSR-article enrichment pass). This pass was interactive, not the scheduled dashboard-scoped compile — it does not touch [[daily-production-report]], [[fleet-availability-utilization]], or [[survey-volume-reconciliation]]. No content removed or renamed from RAW. ---",
-      "action": ""
-    },
-    {
       "priority": "MONITOR",
-      "title": "Source",
-      "body": "full RAW/ file listing diffed against `RAW/_INGESTED.md` (see that file's own 2026-09-27 full-tree-check entry for the complete 19-file table and matching methodology).",
+      "title": "Wiki articles touched",
+      "body": "[[safety-inspection-patterns]], [[fleet-availability-utilization]], [[daily-production-report]]. All bumped to `Last updated: 2026-09-27`. No content removed or renamed from RAW.",
       "action": ""
     }
   ]
