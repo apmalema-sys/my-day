@@ -1,15 +1,15 @@
 {
-  "date": "2026-09-28",
-  "topic": "Weekly Mining Plan",
-  "title": "Weekly Mining Plan",
-  "body": "When the bi-weekly plan isn't cross-checked against what's actually running, a fault like EX-123's stays written out at 0% for four straight decks with no recovery date while another document shows it back in service — and Spatial Compliance misses (82-89% against 100%) sit unexplained for months because nobody re-raises them. The plan is only useful if you read it against reality, not on its own.",
+  "date": "2026-09-29",
+  "topic": "Workshop Maintenance Planning",
+  "title": "Workshop Maintenance Planning",
+  "body": "At ADW the daily availability report can read 90%-plus and still hide a rotting backlog — because a unit that's been down 60, 100, or 216 days simply drops out of the active count. If you're only watching the A&U number, you're blind to exactly the machines costing the most.",
   "keyPoints": [
-    "The deck has three layers — retrospective, equipment availability grid, and forward schedule. Don't sequence off the forward numbers alone; check the retrospective for what actually happened last week first.",
-    "Treat every 0% or \"written out\" line on the availability grid as unverified until you check it against the current fleet/actuals report. This operation has run equipment write-outs and recovery dates that flatly contradict each other for weeks at a time.",
-    "The chronic gap here isn't availability, it's utilization — machines have repeatedly shown up available above plan while UA/use tracked below plan. That means idle and queue time on shift is the lever, not chasing more uptime.",
-    "Six focus items repeat deck after deck: spillage/overspill cleanup, dust, near-miss reporting, Stage 4D/Stage 6 simultaneous ops, fatigue management, hot-season prep. Recurring on the deck means unresolved on the ground — don't treat them as boilerplate.",
-    "A grade or compliance miss that goes unexplained once tends to stay unexplained — one Spatial Compliance gap sat open from early June to late July with no root cause because nobody owned the follow-up."
+    "The Workshop Daily Task sheet has four blocks — daily maintenance/greasing, scheduled services, the breakdown register, and welding — and the breakdown register is where the real backlog lives, not the availability report.",
+    "Anything tagged \"waiting decision\" is not a parts or labor problem — it's a repair-or-replace call nobody has made. Chase the decision-maker, not the workshop.",
+    "External-supplier dependency is the long pole every time. A part sitting at Zahid or another outside shop for weeks or months needs its own escalation path — it isn't a workshop-capacity issue, so leaning on the workshop won't move it.",
+    "Generators and site infrastructure carry standing faults too, and because they're not production fleet, they never show up in the A&U view. No one is tracking spare power margin until a second unit fails.",
+    "The forward weekly schedule and the daily task sheet can legitimately disagree with what the availability report shows as completed — read the plan and the actual together, never one instead of the other."
   ],
-  "apply": "Before locking in loading sequence or truck allocation, check whether any excavator or drill rig on today's roster is listed at 0% in the current bi-weekly plan but shows as running in the fleet availability report — that exact mismatch has cost this site planning accuracy multiple times this year.",
-  "generatedAt": "2026-09-28T11:37:31"
+  "apply": "Before you sign off on any long-down unit, ask what stage it's actually stuck at — parts, labor, or an undecided repair-or-replace call — because each one needs a different push, and the wrong push wastes another day.",
+  "generatedAt": "2026-09-29T10:49:57"
 }
