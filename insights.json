@@ -1,30 +1,30 @@
 {
-  "generatedAt": "2026-09-29T11:30:34",
-  "date": "2026-09-29",
+  "generatedAt": "2026-09-30T11:32:14",
+  "date": "2026-09-30",
   "runNumber": null,
-  "summary": "1. 2026-09-29 (same-day deep-search follow-up, prompted by Peter after the dashboard pass below) — Maaden's official September production summary surfaces a third, unreconciled YTD-shortfall figure; September's own tonnage lands almost exactly on the recovery plan's target while missing Maaden's separate FCST baseline by 15% Key operational findings 1. 2. Peter flagged that files had changed since the dashboard-scoped pass below started, and asked for a deeper search across other files and emails. 3. A full re-scan of everything under `RAW/` modified since the dashboard pass's own read window found two genuinely new items: Maaden's official September Physical Summary (client-issued, sent as a site-wide notice and forwarded internally by new Project Manager Joe Coleman), and a second post-blast grade-control drawing (`860_B520_post blast_1st.pdf`, registered cross-check only). 4. The two files the dashboard pass actually sourced its Sep 28 KPIs from (the Client Meeting Report and Daily Availability Final Report) were confirmed unchanged since they were read — no correction needed to that pass's figures. 2. 5. September's Total Tonnes Mined (1,618,708 t) landed within 1.2% of the internal recovery plan's own 1,600,000 t September target — set back on 9-Sep in [[august-2026-performance-review-escalation]] — the first month of that recovery profile essentially hitting its number, with mine grade beating Maaden's forecast by 102%. 3. 6. Against Maaden's own separate official FCST baseline (1,914,622 t), the same September figure misses by -295,914 t (-15%) — a materially different bar than the recovery-plan target, with the gap between the two baselines itself unexplained in this KB's record. 7. A third YTD-shortfall figure now circulates alongside the two already tracked. 8. The 27-Sep weekly HSE meeting's \"470,000 tonnes behind YTD\" and new PM Joe Coleman's own rough \"roughly 800,000 tonnes behind\" estimate (explicitly flagged by Coleman himself as needing verification) now sit alongside the official summary's own YTD variance of -295,914 t (-2%). 9. None of the three reconcile. This is logged as an open, unresolved question in both [[august-2026-performance-review-escalation]] and [[daily-production-report]] — not resolved here. Coleman has called a 2-3 PM meeting the same day with Bud de Quay, Joy Mpinyuri, Peter Anthony, and Muhammad Usman specifically to reconcile the figures, names October-November as the year's two hardest months, and commits to reviewing Eben Pienaar's existing recovery plan alongside the new numbers. The outcome of that meeting is the natural next update to [[august-2026-performance-review-escalation]]. The Spatial Compliance row in the source PDF's text extraction reads as a possible 0%-vs-100% miss, but the extraction is ambiguous on this specific row — flagged for a direct visual check rather than treated as confirmed. Wiki articles touched: [[august-2026-performance-review-escalation]] (new dated section, bumped to `Last updated: 2026-09-29`), [[daily-production-report]] (cross-reference added to open questions). Tasks: none created this pass — the three-way YTD-shortfall contradiction is logged as an open question rather than dispatched as an action item, since Coleman's own same-day meeting is already in motion to address it. No content removed or renamed from RAW. ---",
+  "summary": "1. Sep 29 total production landed at 20,770 BCM against a 21,767.2 BCM target (-4.58%), while ore beat its own target by 205.36% — the largest ore beat this fiscal cycle has logged, reversing Sep 28's -63.98% miss and surpassing Sep 27's prior high of +108.27%. 2. 2. MTD ore recovered from Sep 28's first-ever negative MTD reading (-6.49%) back to +40.59%, and MTD total BCM narrowed its own deficit to -9.74% from Sep 28's -11.21%, even as drilling missed its daily target for the first time this fiscal cycle (2,557 m against 2,596.76 m, -1.53%) on a day the crusher lost 10.5 hours to a single maintenance stop, the heaviest single stoppage this cycle has logged. 3. 3. DT-128 cleared its eleven-day Engine Coolant Temperature High fault at 4:00 PM, lifting Overall Daily fleet availability to 88.02% from Sep 28's 86.49%, while EX-123 and EX-253 both stayed down the full 24 hours for an eighth and fourteenth consecutive day respectively. 4. See [[daily-production-report]] and [[fleet-availability-utilization]]. 5. DR-342 opened a fresh full-day drill stoppage (1500-hour service plus backlog jobs, 24 DT hrs, 0.00% avail) — the day's heaviest single drill-fleet stop and the likely driver of drilling's first target miss this cycle. 6. DT-242 opened a fresh Tyre Puncher #06 breakdown, still open at report close (19 DT hrs, 20.83% avail) — the newest entry on the standing tire-fault pattern already tracked in [[fleet-availability-utilization]]. 7. The HOD morning meeting (30-Sep) corroborates Sep 29's production exactly — \"Mining achieved approximately 56,079 tones yesterday,\" matching the workbook's own 56,079 t total to the tonne — and sets today's target at 60,000+ t, narrowing but not closing the standing gap between the workbook's own ~58,771 t daily target and the 60,000-70,000 t range recent meetings have cited. 8. The same meeting flags a data-continuity gap ahead of the 7-8 October Maaden VIP visit: Bilal, the live dashboard/data owner, is off site with Nigar as an untested backup, and a continuity meeting is to be arranged so Maaden's information flow does not interrupt. 9. No new daily INX-SUM survey workbook landed this pass — the newest file remains `260929-INX-SUM.xlsx`, already registered and compiled in the prior pass as Sep 28 data. [[survey-volume-reconciliation]] is unchanged this pass; Sep 29's own survey reading is due on a future pass. Source: `Production report/Oct 26/October Client Meeting Report-.xlsx` (Sep 29 data); `Maintanance Shedules/Oct 26/DailyAvailability_Final_Report (29-09-2025 ).pdf`; `HOD Meetings/HOD Morning Meeting 30 Sep 26.msg`. `Equipment running hours report -.xlsx`, `October A & U.xlsx`, `DPR-October-2026.xlsx`, `October Daily Drill Meters Report-.xlsx`, `Daily Drill Sampling Record-2026.xlsx`, `DPR and A&U- October-2026.docx`, `DIESEL CONSUPTION REPORTS Sep-2026.xlsx`, `October Block Info.xlsx`, and `Grade Control Sheet October 2026.xlsx` registered, cross-check only. Tasks: none created this pass. The DT-242 tire breakdown, the DR-342 drill stoppage, and the Bilal/Nigar dashboard-continuity gap are logged as open items in the affected articles/this entry rather than dispatched as action items. Important References, Notes & References, and Task Feedback Log workflows were not run this pass, per the task's own instructions. No content removed or renamed from RAW. ---",
   "kpis": [
     {
       "label": "MTD BCM",
-      "value": "67,642",
-      "delta": "-11.2% vs target",
+      "value": "88,412",
+      "delta": "-9.7% vs target",
       "good": false
     },
     {
       "label": "Survey Gap",
-      "value": "+13.0%",
+      "value": "-9.6%",
       "delta": "survey vs trucks MTD",
-      "good": true
+      "good": false
     },
     {
       "label": "Crusher MTD",
-      "value": "7%",
-      "delta": "8,637 / 124,000 LCM",
+      "value": "8%",
+      "delta": "9,753 / 124,000 LCM",
       "good": null
     },
     {
       "label": "Days Remain",
-      "value": "26",
+      "value": "25",
       "delta": "",
       "good": null
     }
@@ -57,23 +57,30 @@
       "actual": 20863,
       "target": 22993,
       "half": false
+    },
+    {
+      "date": "2026-09-29",
+      "label": "29 Sep",
+      "actual": 20770,
+      "target": 22993,
+      "half": false
     }
   ],
   "fleet": {
-    "availDaily": "86.49%",
-    "availMtd": "86.79%",
-    "exAvail": "77.5%",
+    "availDaily": "88.02%",
+    "availMtd": "86.83%",
+    "exAvail": "77.9%",
     "exUnits": 6,
-    "dtAvail": "92.5%",
-    "dtUnits": 22,
+    "dtAvail": "95.4%",
+    "dtUnits": 21,
     "excavators": [
       {
         "unit": "EX-340",
-        "avail": "97.9%"
+        "avail": "95.8%"
       },
       {
         "unit": "EX-262",
-        "avail": "95.8%"
+        "avail": "97.9%"
       },
       {
         "unit": "EX-253",
@@ -81,7 +88,7 @@
       },
       {
         "unit": "EX-263",
-        "avail": "95.8%"
+        "avail": "97.9%"
       },
       {
         "unit": "EX-247",
@@ -93,29 +100,39 @@
       }
     ],
     "exBasis": "5/6",
-    "pdfDate": "28-09",
-    "dtBasis": "22 active ≥8h"
+    "pdfDate": "29-09",
+    "dtBasis": "21 active ≥8h"
   },
   "equipment": [
     {
-      "unit": "EX-247",
-      "type": "Excavator",
-      "status": "down",
-      "avail": "97.92%",
-      "util": "",
-      "bd_hrs": "",
-      "note": "clears its Engine Cut Off breakdown**, logging only a 0.5h planned daily-check stop, 97.92% avail — a full rec",
-      "comment": ""
-    },
-    {
-      "unit": "EX-398",
-      "type": "Excavator",
-      "status": "scheduled",
+      "unit": "DT-128",
+      "type": "Haul Truck",
+      "status": "warning",
       "avail": "",
       "util": "",
       "bd_hrs": "",
-      "note": "'s fresh Hydraulic Oil Leaking stop, opening right after its overrun service cleared, and its now-second adapt",
-      "comment": "Hydraulic Oil Leaking"
+      "note": "hold its release through the next report**, or does the fresh Battery Warning stop (opened the same morning it",
+      "comment": "Engine Coolant Temperature High"
+    },
+    {
+      "unit": "EX-253",
+      "type": "Excavator",
+      "status": "warning",
+      "avail": "",
+      "util": "",
+      "bd_hrs": "",
+      "note": "'s fourteenth consecutive day down still track to the 08-Oct parts ETA**, now that its fault description reads",
+      "comment": "Hydraulic Oil Leakage"
+    },
+    {
+      "unit": "DR-342",
+      "type": "Drill",
+      "status": "scheduled",
+      "avail": "0.00%",
+      "util": "",
+      "bd_hrs": "",
+      "note": "opens a fresh full-day stop** for a 1500-hour service plus backlog jobs, 24 DT hrs, 0.00% avail — the heaviest",
+      "comment": ""
     },
     {
       "unit": "EX-123",
@@ -124,70 +141,72 @@
       "avail": "",
       "util": "",
       "bd_hrs": "250",
-      "note": "stays down the full 24 hours for a seventh consecutive day** on its Hydraulic Oil Leaking and 250 Hrs Service ",
+      "note": "stays down the full 24 hours for an eighth consecutive day** on its Hydraulic Oil Leaking and 250 Hrs Service ",
       "comment": "Hydraulic Oil Leaking"
     },
     {
-      "unit": "EX-253",
+      "unit": "EX-247",
       "type": "Excavator",
-      "status": "down",
-      "avail": "",
-      "util": "",
-      "bd_hrs": "",
-      "note": "'s boom/cylinder removal (targeted for today) mark the start of the full strip already tracked in this article",
-      "comment": "Hydraulic Oil Leakage"
-    },
-    {
-      "unit": "DT-131",
-      "type": "Haul Truck",
       "status": "warning",
-      "avail": "",
+      "avail": "97.92%",
       "util": "",
       "bd_hrs": "",
-      "note": "'s second same-day tire fault (\"Tyre Air Pressure Leakage #04,\" opening right as the first one clears) draw fr",
-      "comment": "Tyre #03 Problem"
+      "note": "and EX-398 each log only short daily-check or minor-fault stops (0.5-1h, 95.83-97.92% avail) — the fleet's fif",
+      "comment": ""
     },
     {
       "unit": "EX-262",
       "type": "Excavator",
-      "status": "down",
+      "status": "warning",
       "avail": "97.92%",
       "util": "",
       "bd_hrs": "",
-      "note": "and EX-340 each log only short daily-check or GET-install stops (0.5-1h, 95.83-97.92% avail).",
+      "note": "and EX-398 each log only short daily-check or minor-fault stops (0.5-1h, 95.83-97.92% avail) — the fleet's fif",
       "comment": ""
     },
     {
       "unit": "EX-263",
       "type": "Excavator",
-      "status": "down",
+      "status": "warning",
       "avail": "97.92%",
       "util": "",
       "bd_hrs": "",
-      "note": "and EX-340 each log only short daily-check or GET-install stops (0.5-1h, 95.83-97.92% avail).",
+      "note": "and EX-398 each log only short daily-check or minor-fault stops (0.5-1h, 95.83-97.92% avail) — the fleet's fif",
       "comment": ""
     },
     {
       "unit": "EX-340",
       "type": "Excavator",
-      "status": "down",
+      "status": "warning",
       "avail": "97.92%",
       "util": "",
       "bd_hrs": "",
-      "note": "and EX-340 each log only short daily-check or GET-install stops (0.5-1h, 95.83-97.92% avail).",
-      "comment": "Install NeW Bucket Tips"
+      "note": "and EX-398 each log only short daily-check or minor-fault stops (0.5-1h, 95.83-97.92% avail) — the fleet's fif",
+      "comment": "A/C Noise"
     }
   ],
   "followUps": [
     {
       "priority": "HIGH",
-      "title": "**The Spatial Compliance row in the source PDF's text extraction reads a...",
+      "title": "**DT-242 opened a fresh Tyre Puncher #06 breakdown**, still open at repo...",
       "body": "",
       "action": ""
     },
     {
       "priority": "MONITOR",
-      "title": "**Coleman has called a 2-3 PM meeting the same day** with Bud de Quay, J...",
+      "title": "**The HOD morning meeting (30-Sep) corroborates Sep 29's production exac...",
+      "body": "",
+      "action": ""
+    },
+    {
+      "priority": "MONITOR",
+      "title": "**The same meeting flags a data-continuity gap ahead of the 7-8 October ...",
+      "body": "",
+      "action": ""
+    },
+    {
+      "priority": "MONITOR",
+      "title": "**No new daily INX-SUM survey workbook landed this pass** — the newest f...",
       "body": "",
       "action": ""
     }
