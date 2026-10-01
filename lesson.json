@@ -1,15 +1,14 @@
 {
-  "date": "2026-09-29",
-  "topic": "Workshop Maintenance Planning",
-  "title": "Workshop Maintenance Planning",
-  "body": "At ADW the daily availability report can read 90%-plus and still hide a rotting backlog — because a unit that's been down 60, 100, or 216 days simply drops out of the active count. If you're only watching the A&U number, you're blind to exactly the machines costing the most.",
+  "date": "2026-10-01",
+  "topic": "Fatigue Management Pattern",
+  "title": "Fatigue Management Pattern",
+  "body": "DT-128 put a fully loaded truck into the Stage 6 high wall because the operator was asleep at the wheel 405 meters into the haul — road and berms were to design, the roster wasn't. When fatigue only gets caught at the point of a near-miss or a strike, you've already lost the chance to stop it.",
   "keyPoints": [
-    "The Workshop Daily Task sheet has four blocks — daily maintenance/greasing, scheduled services, the breakdown register, and welding — and the breakdown register is where the real backlog lives, not the availability report.",
-    "Anything tagged \"waiting decision\" is not a parts or labor problem — it's a repair-or-replace call nobody has made. Chase the decision-maker, not the workshop.",
-    "External-supplier dependency is the long pole every time. A part sitting at Zahid or another outside shop for weeks or months needs its own escalation path — it isn't a workshop-capacity issue, so leaning on the workshop won't move it.",
-    "Generators and site infrastructure carry standing faults too, and because they're not production fleet, they never show up in the A&U view. No one is tracking spare power margin until a second unit fails.",
-    "The forward weekly schedule and the daily task sheet can legitimately disagree with what the availability report shows as completed — read the plan and the actual together, never one instead of the other."
+    "The roster is the root cause until proven otherwise. DT-128's 13-on, 12-hour, 24-off pattern was judged unmanageable for fatigue — and it echoes DT-77 from January 2024, where the fix stopped at blaming the operator instead of the roster. Don't let a fatigue incident close as an individual failing if the schedule put them there.",
+    "12 hours is the hard cap, full stop. No operator works beyond it, and rotation overstays (crews running 5-7 months instead of 1-2) get HOD-arranged relief, not silence.",
+    "Self-reporting only works if people trust it. Operators are staying quiet because they fear losing their job or badge over a Fatigue Form. A form nobody trusts isn't a control — it's paperwork.",
+    "Watch the reporting gap, not just the count. September logged 16 clinic visits against 1 fatigue report, and Production logged 43 fatigue events to Workshop's 5 year-to-date. That gap is a flag that people are quietly absorbing fatigue as rest time instead of documenting it."
   ],
-  "apply": "Before you sign off on any long-down unit, ask what stage it's actually stuck at — parts, labor, or an undecided repair-or-replace call — because each one needs a different push, and the wrong push wastes another day.",
-  "generatedAt": "2026-09-29T10:49:57"
+  "apply": "If you're giving someone rest time off the books because they look worn down, log it on the Fatigue Form anyway — the trend data is only as good as what actually gets reported, and right now it's underselling the real picture.",
+  "generatedAt": "2026-10-01T11:07:33"
 }
