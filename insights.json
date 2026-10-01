@@ -1,18 +1,18 @@
 {
-  "generatedAt": "2026-09-30T11:32:14",
-  "date": "2026-09-30",
+  "generatedAt": "2026-10-01T11:32:48",
+  "date": "2026-10-01",
   "runNumber": null,
-  "summary": "1. Sep 29 total production landed at 20,770 BCM against a 21,767.2 BCM target (-4.58%), while ore beat its own target by 205.36% — the largest ore beat this fiscal cycle has logged, reversing Sep 28's -63.98% miss and surpassing Sep 27's prior high of +108.27%. 2. 2. MTD ore recovered from Sep 28's first-ever negative MTD reading (-6.49%) back to +40.59%, and MTD total BCM narrowed its own deficit to -9.74% from Sep 28's -11.21%, even as drilling missed its daily target for the first time this fiscal cycle (2,557 m against 2,596.76 m, -1.53%) on a day the crusher lost 10.5 hours to a single maintenance stop, the heaviest single stoppage this cycle has logged. 3. 3. DT-128 cleared its eleven-day Engine Coolant Temperature High fault at 4:00 PM, lifting Overall Daily fleet availability to 88.02% from Sep 28's 86.49%, while EX-123 and EX-253 both stayed down the full 24 hours for an eighth and fourteenth consecutive day respectively. 4. See [[daily-production-report]] and [[fleet-availability-utilization]]. 5. DR-342 opened a fresh full-day drill stoppage (1500-hour service plus backlog jobs, 24 DT hrs, 0.00% avail) — the day's heaviest single drill-fleet stop and the likely driver of drilling's first target miss this cycle. 6. DT-242 opened a fresh Tyre Puncher #06 breakdown, still open at report close (19 DT hrs, 20.83% avail) — the newest entry on the standing tire-fault pattern already tracked in [[fleet-availability-utilization]]. 7. The HOD morning meeting (30-Sep) corroborates Sep 29's production exactly — \"Mining achieved approximately 56,079 tones yesterday,\" matching the workbook's own 56,079 t total to the tonne — and sets today's target at 60,000+ t, narrowing but not closing the standing gap between the workbook's own ~58,771 t daily target and the 60,000-70,000 t range recent meetings have cited. 8. The same meeting flags a data-continuity gap ahead of the 7-8 October Maaden VIP visit: Bilal, the live dashboard/data owner, is off site with Nigar as an untested backup, and a continuity meeting is to be arranged so Maaden's information flow does not interrupt. 9. No new daily INX-SUM survey workbook landed this pass — the newest file remains `260929-INX-SUM.xlsx`, already registered and compiled in the prior pass as Sep 28 data. [[survey-volume-reconciliation]] is unchanged this pass; Sep 29's own survey reading is due on a future pass. Source: `Production report/Oct 26/October Client Meeting Report-.xlsx` (Sep 29 data); `Maintanance Shedules/Oct 26/DailyAvailability_Final_Report (29-09-2025 ).pdf`; `HOD Meetings/HOD Morning Meeting 30 Sep 26.msg`. `Equipment running hours report -.xlsx`, `October A & U.xlsx`, `DPR-October-2026.xlsx`, `October Daily Drill Meters Report-.xlsx`, `Daily Drill Sampling Record-2026.xlsx`, `DPR and A&U- October-2026.docx`, `DIESEL CONSUPTION REPORTS Sep-2026.xlsx`, `October Block Info.xlsx`, and `Grade Control Sheet October 2026.xlsx` registered, cross-check only. Tasks: none created this pass. The DT-242 tire breakdown, the DR-342 drill stoppage, and the Bilal/Nigar dashboard-continuity gap are logged as open items in the affected articles/this entry rather than dispatched as action items. Important References, Notes & References, and Task Feedback Log workflows were not run this pass, per the task's own instructions. No content removed or renamed from RAW. ---",
+  "summary": "1. 2026-10-01 — Health check (full quarterly) Audit: 46 of 46 Wiki articles scanned (quarterly full-audit trigger), every file machine-checked end to end for banned words, spelling, em-dash bullets, heading case and link resolution; the very large daily-log articles (daily-production-report, fleet-availability-utilization, survey-volume-reconciliation, safety-inspection-patterns, blasting-and-drilling, workshop-maintenance-planning, weekly-mining-plan) were not re-read line by line for prose or contradictions. 2. Outputs reviewed: 28 (all important-references analyses and ingest reviews; none flagged as promotion candidates this run). 3. RAW added since last check (2026-08-04): not individually counted; 32 files found with no `_INGESTED.md` entry (see pending). 4. Last health check was 2026-08-04; since then the daily compile passes through 2026-09-30 were the only edits. 5. Writing rules loaded from `ABOUT ME/writing-rules.md`. 6. American English applied (per the rules file, which overrides the skill's default US to UK direction). 7. Direct quotes, `[[aliases]]`, backticked names and RAW filenames left verbatim. 8. Auto-fixed: writing-rules: 314 fixes across 27 files. 281 British to American spellings (tyre to tire, metre to meter, utilisation to utilization, labelled, authorised, behaviour, fuelling, colour and similar); 28 \"going forward\" to \"from here\"; 2 \"aligns with\" to \"matches\" (fleet-availability-utilization, grade-control-june-2026); 3 title-case headings to sentence case (blasting-and-drilling x2, equipment-inspection-regime) em-dash bullets: 150 converted (`Term —` to `Term:`; where the bold text already ended in ? . or : the dash was dropped) across 15 files, mainly daily-production-report (37), fleet-availability-utilization (38), survey-volume-reconciliation (32), workshop-maintenance-planning (9), safety-inspection-patterns (8), blasting-and-drilling (8), weekly-mining-plan (7) backlinks: 0 broken wiki-article links to repoint (every `[[link]]` that is not a wiki slug is a RAW alias; see pending for the 96 unregistered ones). 3 inbound links added to the new article RAW registration: none. 9. The 32 unregistered files are binaries or emails without the frontmatter the auto-fix requires promotions: tire-damage-cost-pattern emerging to established (14 independent sources: incident report, escalation emails, tire analysis, meetings); 2027-fleet-budget-capacity-plan emerging to established (data workbook, request email, three meetings). INDEX statuses updated date-bump: Last updated set to 2026-10-01 on all 29 edited articles per the date-bump policy contradictions: no new cross-article contradictions found by the scan. Synthesizes the DT-128 ICAM roster root cause, the BUL six-day roster item, MSHEM 07 night-shift limit, the corporate 12-hour cap, and the September underreporting and trust gaps from 8 RAW aliases that were already registered. Added to INDEX.md; inbound links from people-machinery-interaction, life-saving-rules and safety-inspection-patterns Article candidates held (insufficient evidence): excavator-398 swing-radius incident: single event, already covered in people-machinery-interaction boarding-of-equipment, dozing, shovel-equipment-preventive-maintenance, ehss-rules-leader-verification: no RAW source in the KB; web search not run for these site-specific procedures Pending judgement: Unregistered RAW aliases: 96 distinct `[[aliases]]` cited in Sources lines (mostly availability-report-202609xx, september-client-meeting-report-sepNN, inx-sum-2609xx, september-au-sepNN, whatsapp-dispatch, plus 9 meeting aliases) have no `_INGESTED.md` entry. Registration needs a file-to-alias mapping from the compile passes. Carried forward from the 2026-08-04 check, now larger Unregistered RAW files (32): Survey Data/Sep 26 broken-stock .eml and MINEABLE AREA .pdf files (Aug 27 to Sep 1), Maaden Plans/Mitigation Plan/Week 36 Performance.eml, Safety Report/Introduction Paul Brider .eml, Weekly Operational Review 5-Sept pptx (4 copies incl. Deck Archive), RA/ Hanging Rocks forms, RA/MOC north go-line docs (27-09), Production Vision 2025/Pool/Suggested KPI's.docx, DailyAvailability 20-09 pdf, FCST Week 39+40 and 40+41 workbooks, LSR/MSHEM.pptx, Production report/Dispatch/PTT-20261001-WA0007.opus (untranscribed voice note). Some may be registered under a different path spelling Out-of-scope or malformed RAW: `RAW/NCR/_logo_tmp/` holds unpacked docx fragments (document.xml, images). Looks like leftover tooling output; not touched Stray files in the KB root: about 30 `.tmp_*` working files (some dated Sep 9 to Sep 28) and `.DS_Store`. Delete at your call Banned words left for judgement: \"worth noting\" (equipment-running-hours-log, safety-inspection-patterns, tire-damage-cost-pattern); \"serves as\" (common-operational-safety-baseline); \"stands as\" (daily-production-report); \"enhancement(s)/enhanced\" (ncr-patterns, safety-inspection-patterns, traffic-management); \"exceptional\" (survey-volume-reconciliation); \"empowered\" (life-saving-rules); \"innovation\" and \"world-class\", \"empowering\" in workshop-maintenance-planning and weekly-mining-plan are inside a quoted company mission or a named bench; \"excellent\" in tire-damage-cost-pattern is a quote. \"outstanding\" (about 30 uses) is the operational \"unresolved\" sense, per the 2026-07-01 ruling Title-case headings left: document-title style headings such as \"Daily Availability Final Report: June 6, 2026\" and \"Life Saving Rules\" are names, not violations; about 150 dated headings in the large logs not individually reviewed Statuses left as is: august-2026-forecast (waiting on a second month of actuals), equipment-running-hours-log and grade-control-june-2026 (single-workbook dependence), hot-season-hydraulic-fault-pattern, dump-management, in-pit-groundwater-management, loto-control-of-hazardous-energy, oee-framework (single or no independent source), daily-pit-inspection-template (stub) Stale rewrites: none flagged. Output promotion candidates: none flagged ---",
   "kpis": [
     {
       "label": "MTD BCM",
-      "value": "88,412",
-      "delta": "-9.7% vs target",
+      "value": "111,414",
+      "delta": "-6.9% vs target",
       "good": false
     },
     {
       "label": "Survey Gap",
-      "value": "-9.6%",
+      "value": "-11.5%",
       "delta": "survey vs trucks MTD",
       "good": false
     },
@@ -24,7 +24,7 @@
     },
     {
       "label": "Days Remain",
-      "value": "25",
+      "value": "24",
       "delta": "",
       "good": null
     }
@@ -69,18 +69,18 @@
   "fleet": {
     "availDaily": "88.02%",
     "availMtd": "86.83%",
-    "exAvail": "77.9%",
+    "exAvail": "75.8%",
     "exUnits": 6,
-    "dtAvail": "95.4%",
-    "dtUnits": 21,
+    "dtAvail": "92.7%",
+    "dtUnits": 22,
     "excavators": [
       {
         "unit": "EX-340",
-        "avail": "95.8%"
+        "avail": "97.9%"
       },
       {
         "unit": "EX-262",
-        "avail": "97.9%"
+        "avail": "95.8%"
       },
       {
         "unit": "EX-253",
@@ -92,7 +92,7 @@
       },
       {
         "unit": "EX-247",
-        "avail": "97.9%"
+        "avail": "87.5%"
       },
       {
         "unit": "EX-1200",
@@ -100,89 +100,49 @@
       }
     ],
     "exBasis": "5/6",
-    "pdfDate": "29-09",
-    "dtBasis": "21 active ≥8h"
+    "pdfDate": "30-09",
+    "dtBasis": "22 active ≥8h"
   },
   "equipment": [
     {
       "unit": "DT-128",
       "type": "Haul Truck",
-      "status": "warning",
+      "status": "scheduled",
       "avail": "",
       "util": "",
       "bd_hrs": "",
-      "note": "hold its release through the next report**, or does the fresh Battery Warning stop (opened the same morning it",
+      "note": "is back in service",
+      "comment": ""
+    },
+    {
+      "unit": "DT-107",
+      "type": "Haul Truck",
+      "status": "down",
+      "avail": "",
+      "util": "",
+      "bd_hrs": "",
+      "note": "engine strip starts",
       "comment": "Engine Coolant Temperature High"
     },
     {
-      "unit": "EX-253",
-      "type": "Excavator",
-      "status": "warning",
+      "unit": "DT-283",
+      "type": "Haul Truck",
+      "status": "down",
       "avail": "",
       "util": "",
       "bd_hrs": "",
-      "note": "'s fourteenth consecutive day down still track to the 08-Oct parts ETA**, now that its fault description reads",
-      "comment": "Hydraulic Oil Leakage"
+      "note": "needs a body liner, and",
+      "comment": "250 Hrs Service"
     },
     {
-      "unit": "DR-342",
-      "type": "Drill",
-      "status": "scheduled",
-      "avail": "0.00%",
-      "util": "",
-      "bd_hrs": "",
-      "note": "opens a fresh full-day stop** for a 1500-hour service plus backlog jobs, 24 DT hrs, 0.00% avail — the heaviest",
-      "comment": ""
-    },
-    {
-      "unit": "EX-123",
+      "unit": "EX-398",
       "type": "Excavator",
-      "status": "scheduled",
+      "status": "down",
       "avail": "",
       "util": "",
-      "bd_hrs": "250",
-      "note": "stays down the full 24 hours for an eighth consecutive day** on its Hydraulic Oil Leaking and 250 Hrs Service ",
-      "comment": "Hydraulic Oil Leaking"
-    },
-    {
-      "unit": "EX-247",
-      "type": "Excavator",
-      "status": "warning",
-      "avail": "97.92%",
-      "util": "",
       "bd_hrs": "",
-      "note": "and EX-398 each log only short daily-check or minor-fault stops (0.5-1h, 95.83-97.92% avail) — the fleet's fif",
-      "comment": ""
-    },
-    {
-      "unit": "EX-262",
-      "type": "Excavator",
-      "status": "warning",
-      "avail": "97.92%",
-      "util": "",
-      "bd_hrs": "",
-      "note": "and EX-398 each log only short daily-check or minor-fault stops (0.5-1h, 95.83-97.92% avail) — the fleet's fif",
-      "comment": ""
-    },
-    {
-      "unit": "EX-263",
-      "type": "Excavator",
-      "status": "warning",
-      "avail": "97.92%",
-      "util": "",
-      "bd_hrs": "",
-      "note": "and EX-398 each log only short daily-check or minor-fault stops (0.5-1h, 95.83-97.92% avail) — the fleet's fif",
-      "comment": ""
-    },
-    {
-      "unit": "EX-340",
-      "type": "Excavator",
-      "status": "warning",
-      "avail": "97.92%",
-      "util": "",
-      "bd_hrs": "",
-      "note": "and EX-398 each log only short daily-check or minor-fault stops (0.5-1h, 95.83-97.92% avail) — the fleet's fif",
-      "comment": "A/C Noise"
+      "note": "goes off for a bucket change today.",
+      "comment": "Replace Bucket"
     }
   ],
   "followUps": [
