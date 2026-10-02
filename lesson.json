@@ -1,14 +1,16 @@
 {
-  "date": "2026-10-01",
-  "topic": "Fatigue Management Pattern",
-  "title": "Fatigue Management Pattern",
-  "body": "DT-128 put a fully loaded truck into the Stage 6 high wall because the operator was asleep at the wheel 405 meters into the haul — road and berms were to design, the roster wasn't. When fatigue only gets caught at the point of a near-miss or a strike, you've already lost the chance to stop it.",
+  "date": "2026-10-02",
+  "topic": "People-Machinery Interaction",
+  "title": "People-Machinery Interaction",
+  "body": "Most people-machinery incidents come from one failure: someone walks into a machine's working zone without the operator knowing. At ADW that cost us a supervisor in September, terminated after approaching a running 398 excavator without radio contact, and DT-128 showed what a fatigued operator does to a high wall.",
   "keyPoints": [
-    "The roster is the root cause until proven otherwise. DT-128's 13-on, 12-hour, 24-off pattern was judged unmanageable for fatigue — and it echoes DT-77 from January 2024, where the fix stopped at blaming the operator instead of the roster. Don't let a fatigue incident close as an individual failing if the schedule put them there.",
-    "12 hours is the hard cap, full stop. No operator works beyond it, and rotation overstays (crews running 5-7 months instead of 1-2) get HOD-arranged relief, not silence.",
-    "Self-reporting only works if people trust it. Operators are staying quiet because they fear losing their job or badge over a Fatigue Form. A form nobody trusts isn't a control — it's paperwork.",
-    "Watch the reporting gap, not just the count. September logged 16 clinic visits against 1 fatigue report, and Production logged 43 fatigue events to Workshop's 5 year-to-date. That gap is a flag that people are quietly absorbing fatigue as rest time instead of documenting it."
+    "Three universal rules: the operator must have seen you, you wait for the machine to park with GET on the ground and a signal to approach, and no vehicle parks behind operating equipment.",
+    "Approach a running excavator in three checkpoints: radio at 50 m, confirm bucket down at 30 m, confirm operator out of the cab at 10 m.",
+    "No radio contact means you stop and wait in your vehicle. Richard's own words after the 398 interview: \"I should have stayed in my vehicle and waited.\"",
+    "A busy radio is not an excuse. Saud confirmed the channel was clear and Richard still didn't answer.",
+    "In the mining area, headlights and amber strobes stay on, and windows, mirrors and taillights stay clean. If any fail, park the machine and raise it.",
+    "Fatigue is part of this rule. DT-128 fell asleep loaded, and fatigue reporting is still not trusted on site."
   ],
-  "apply": "If you're giving someone rest time off the books because they look worn down, log it on the Fatigue Form anyway — the trend data is only as good as what actually gets reported, and right now it's underselling the real picture.",
-  "generatedAt": "2026-10-01T11:07:33"
+  "apply": "Watch light vehicles and supervisors approaching the loading faces and ROM pad during handover and after dark, and check whether they call by radio at 50 m before they close in.",
+  "generatedAt": "2026-10-02T16:40:21"
 }
