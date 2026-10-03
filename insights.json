@@ -1,18 +1,18 @@
 {
-  "generatedAt": "2026-10-02T11:42:39",
-  "date": "2026-10-01",
+  "generatedAt": "2026-10-03T03:39:08",
+  "date": "2026-10-02",
   "runNumber": null,
-  "summary": "1. 2026-10-01 (Notion Agentic Life OS scan) -- Mining Operations projects and trackers ingested; new article mining-projects-register Read-only scan of the Notion projects and the five tracker databases, then ingested as two RAW snapshots under `RAW/Notion Projects/`. 2. New Wiki article [[mining-projects-register]] (status emerging; added to INDEX) and a June baseline appended to [[survey-volume-reconciliation]]. 3. Two target figures conflict: the Mining Planning 2026 project states 20 Mt for 2026 and the Stage 6 page states 21 Mt. 4. Neither is reconciled; logged as an open question. 5. Stage 6 Early Start has nine of eleven tasks done but the recommendation and the \"which access closes first\" presentation are still open, and no decision is recorded in Notion or in the meeting notes. 6. Go-Line Operation Efficiency (ended Sep 30) and the A&U training (ended Sep 22) show every task unstarted. 7. Tracker data stops in mid-July apart from one Sep 5 cycle-time set. 8. The June tally-vs-survey data shows survey 14% above tallies, the reverse of the late-September gap. 9. The Sep 5 cycle times (31.5 to 32.3 min) are about 3 min above June and July. No tasks created; Peter's Inbox already holds the hot seating and daily-sheet items from this morning's pass. ---",
+  "summary": "1. 2026-10-02 (manual restructure, Peter's request) -- RAW folders reorganized: 28 top-level folders down to 17, typos fixed, citations and tasks updated Follows the safe clean-up earlier today. 2. Peter asked for the full restructure plus citation and nightly-compile updates. 3. RAW holds 1,166 files before and after; every file was verified at its mapped new path, none renamed or deleted. `PATH-MAP.md` (KB root) lists every old-to-new path, and `_TIDY_HOLD/2026-10-02-restructure/file-map.json` maps each file. 4. What changed Typos fixed: `Maintanance Shedules` is now `Maintenance Schedules` (it also absorbed `Friday Works - Manitanance` as `Friday Works`); `Quartely Production Inspection` is now `Quarterly Production Inspection`. 5. Merged: `Safety Report`, `Incidents report`, `NCR`, `RA/RA`, `RA/MOC`, `LSR`, `PTO`, `Maaden Induction` and `Audit - Internal Phase 1 - 2026` now sit under `Safety & Compliance/`. `SOP`, `SWI` and the four loose files in `Procedures` now sit under `Procedures/` (`SOP`, `SWI`, `General`). `Training` is now `HR/Training`. 6. Maaden Plans: 19 weekly folders now under `Weekly/` (`Weekly 25` renamed `Week 25`), 3 monthly folders under `Monthly/`, 3 traffic-assessment files under `Traffic Change Assessment/`, and the stray `Weekly Plan - Weeks (27-28).eml` filed in `Weekly/Week 27/`. 7. Month folders standardized: `June 26` and `July 26` are now `Jun 26` and `Jul 26` in Production report, Survey Data, Maintenance Schedules and Maaden Plans. 8. Kept as-is because scheduled tasks hard-code them: Production report, Survey Data, Grade Control & Stockpiles, FCST, Meeting Notes, Notes & References, Important References, HOD Meetings, Notion Projects, Project Finances, Production Vision 2025, CIP, HR. 9. Citations and tooling updated (1,137 path rewrites in 42 files) `RAW/_INGESTED.md` (835 rewrites), 22 Wiki articles, 5 Outputs reports, this KB's `CLAUDE.md` (new \"RAW Folder Layout\" section), 6 project briefs, and 9 generator scripts (`publish_insights.py` and `build_visual_report.py` read the workshop folder by path; the rest only mention paths in labels). Pre-edit copies are in `_TIDY_HOLD/2026-10-02-restructure/backup/`. Integrity check: 355 registry rows point at a path that does not exist, identical to the count before the restructure (older rows for files later moved into sub-folders). No row broke and none were repaired. Older CHANGELOG entries, project memory logs and EOD summaries were left as written; use `PATH-MAP.md` to translate their paths. The A&U refresh, Broken Stock dashboard and Mining kb afternoon compile tasks only name folders that did not change, so they needed no edit. Tasks stored only on Peter's Mac were not visible from this session and were not checked. Watch for Anyone or any automation dropping files into the old folder names (for example a new `Week 41` under `Maaden Plans/`, or the Oct 26 workshop sheets into `Maintanance Shedules`) will recreate the old folder. The next compile pass reads by mtime, so it still sees them, but they would need moving. `Wiki/weekly-mining-plan.md` mentions a Deck Archive subfolder that was moved to hold earlier today.",
   "kpis": [
     {
       "label": "MTD BCM",
-      "value": "111,414",
-      "delta": "-6.9% vs target",
+      "value": "135,253",
+      "delta": "-4.4% vs target",
       "good": false
     },
     {
       "label": "Survey Gap",
-      "value": "-16.0%",
+      "value": "-13.2%",
       "delta": "survey vs trucks MTD",
       "good": false
     },
@@ -24,7 +24,7 @@
     },
     {
       "label": "Days Remain",
-      "value": "24",
+      "value": "23",
       "delta": "",
       "good": null
     }
@@ -64,11 +64,18 @@
       "actual": 20770,
       "target": 22993,
       "half": false
+    },
+    {
+      "date": "2026-10-01",
+      "label": "1 Oct",
+      "actual": 23839,
+      "target": 22993,
+      "half": false
     }
   ],
   "fleet": {
-    "availDaily": "86.48%",
-    "availMtd": "86.82%",
+    "availDaily": "87.1%",
+    "availMtd": "87.1%",
     "exAvail": "77.1%",
     "exUnits": 6,
     "dtAvail": "92.0%",
@@ -107,22 +114,12 @@
     {
       "unit": "EX-123",
       "type": "Excavator",
-      "status": "down",
+      "status": "warning",
       "avail": "",
       "util": "",
       "bd_hrs": "",
-      "note": "if both stay down all 24 hours: about 5,974 BCM / 16,130 t each at the Sep 30 excavator fleet average of 248.9",
+      "note": "fault-description contradiction ever resolve, now unchanged across two consecutive Availability Reports while ",
       "comment": "Hydraulic Oil Leaking"
-    },
-    {
-      "unit": "DT-107",
-      "type": "Haul Truck",
-      "status": "down",
-      "avail": "",
-      "util": "",
-      "bd_hrs": "",
-      "note": "engine with internal coolant leak, strip-down in progress",
-      "comment": "Engine Coolant Temperature High"
     },
     {
       "unit": "EX-253",
@@ -131,76 +128,92 @@
       "avail": "",
       "util": "",
       "bd_hrs": "",
-      "note": "if both stay down all 24 hours: about 5,974 BCM / 16,130 t each at the Sep 30 excavator fleet average of 248.9",
+      "note": "'s sixteenth consecutive day down still track to the 08-Oct parts ETA? - Does",
       "comment": "Hydraulic Oil Leakage"
     },
     {
-      "unit": "WD-145",
-      "type": "Water Dozer",
-      "status": "down",
-      "avail": "",
+      "unit": "DT-282",
+      "type": "Haul Truck",
+      "status": "scheduled",
+      "avail": "27.08%",
       "util": "",
       "bd_hrs": "",
-      "note": "front axle at ALJ Komatsu for overhaul",
-      "comment": "Front Axle Brakes worn out"
-    },
-    {
-      "unit": "MG-266",
-      "type": "Motor Grader",
-      "status": "down",
-      "avail": "",
-      "util": "",
-      "bd_hrs": "",
-      "note": "engine at ALJ Komatsu",
-      "comment": "Engine Failure"
-    },
-    {
-      "unit": "GS-294",
-      "type": "Generator",
-      "status": "down",
-      "avail": "",
-      "util": "",
-      "bd_hrs": "",
-      "note": "AC alternator at a Saudi diesel facility",
+      "note": "opens a 2000-hour service plus backlog job and Engine Valve Lash** at 10:00 AM, still open at 3:30 AM the next",
       "comment": ""
     },
     {
-      "unit": "GS-17",
-      "type": "Generator",
+      "unit": "EX-247",
+      "type": "Excavator",
       "status": "down",
-      "avail": "",
+      "avail": "97.92%",
       "util": "",
       "bd_hrs": "",
-      "note": "water pump, parts complete, waiting labor",
+      "note": "and EX-398 each log only short 0.5-1h daily-check or inspection stops (95.83-97.92% avail)",
       "comment": ""
     },
     {
-      "unit": "LT-138",
-      "type": "",
+      "unit": "EX-262",
+      "type": "Excavator",
+      "status": "down",
+      "avail": "97.92%",
+      "util": "",
+      "bd_hrs": "",
+      "note": "and EX-398 each log only short 0.5-1h daily-check or inspection stops (95.83-97.92% avail)",
+      "comment": ""
+    },
+    {
+      "unit": "EX-263",
+      "type": "Excavator",
       "status": "down",
       "avail": "",
       "util": "",
       "bd_hrs": "",
-      "note": "in progress or waiting parts.",
+      "note": "also logs a GET job (Replace New Bucket Tips) alongside its daily check, no added downtime.",
+      "comment": "Replace New Bucket Tips"
+    },
+    {
+      "unit": "EX-340",
+      "type": "Excavator",
+      "status": "down",
+      "avail": "97.92%",
+      "util": "",
+      "bd_hrs": "",
+      "note": "and EX-398 each log only short 0.5-1h daily-check or inspection stops (95.83-97.92% avail)",
+      "comment": ""
+    },
+    {
+      "unit": "EX-398",
+      "type": "Excavator",
+      "status": "down",
+      "avail": "97.92%",
+      "util": "",
+      "bd_hrs": "",
+      "note": "and EX-398 each log only short 0.5-1h daily-check or inspection stops (95.83-97.92% avail)",
       "comment": ""
     }
   ],
   "followUps": [
     {
-      "priority": "HIGH",
-      "title": "EX-123's breakdown reason reads differently across the day's two primary...",
+      "priority": "MONITOR",
+      "title": "EX-123's fault-description contradiction is now unresolved across two co...",
       "body": "",
       "action": ""
     },
     {
       "priority": "MONITOR",
-      "title": "MTD for the new fiscal cycle (25-Sep to 24-Oct) sits at 111,414 BCM agai...",
+      "title": "The Oct 1 Equipment running hours report has not posted yet (its tabs st...",
       "body": "",
       "action": ""
     },
     {
       "priority": "MONITOR",
-      "title": "DT-110 and DT-130 bear watching: both faults were still open when the Av...",
+      "title": "DT-282's flagged 2000-hour service (opened 10 AM Oct 1, still open past ...",
+      "body": "",
+      "action": ""
+    },
+    {
+      "priority": "MONITOR",
+      "title": "The Stockpile Full crusher stop (2h51m, the heaviest single reason logge...",
       "body": "",
       "action": ""
     }
