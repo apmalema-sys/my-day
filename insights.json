@@ -1,30 +1,24 @@
 {
-  "generatedAt": "2026-10-03T03:39:08",
-  "date": "2026-10-02",
+  "generatedAt": "2026-10-04T17:03:39",
+  "date": "2026-10-04",
   "runNumber": null,
-  "summary": "1. 2026-10-02 (manual restructure, Peter's request) -- RAW folders reorganized: 28 top-level folders down to 17, typos fixed, citations and tasks updated Follows the safe clean-up earlier today. 2. Peter asked for the full restructure plus citation and nightly-compile updates. 3. RAW holds 1,166 files before and after; every file was verified at its mapped new path, none renamed or deleted. `PATH-MAP.md` (KB root) lists every old-to-new path, and `_TIDY_HOLD/2026-10-02-restructure/file-map.json` maps each file. 4. What changed Typos fixed: `Maintanance Shedules` is now `Maintenance Schedules` (it also absorbed `Friday Works - Manitanance` as `Friday Works`); `Quartely Production Inspection` is now `Quarterly Production Inspection`. 5. Merged: `Safety Report`, `Incidents report`, `NCR`, `RA/RA`, `RA/MOC`, `LSR`, `PTO`, `Maaden Induction` and `Audit - Internal Phase 1 - 2026` now sit under `Safety & Compliance/`. `SOP`, `SWI` and the four loose files in `Procedures` now sit under `Procedures/` (`SOP`, `SWI`, `General`). `Training` is now `HR/Training`. 6. Maaden Plans: 19 weekly folders now under `Weekly/` (`Weekly 25` renamed `Week 25`), 3 monthly folders under `Monthly/`, 3 traffic-assessment files under `Traffic Change Assessment/`, and the stray `Weekly Plan - Weeks (27-28).eml` filed in `Weekly/Week 27/`. 7. Month folders standardized: `June 26` and `July 26` are now `Jun 26` and `Jul 26` in Production report, Survey Data, Maintenance Schedules and Maaden Plans. 8. Kept as-is because scheduled tasks hard-code them: Production report, Survey Data, Grade Control & Stockpiles, FCST, Meeting Notes, Notes & References, Important References, HOD Meetings, Notion Projects, Project Finances, Production Vision 2025, CIP, HR. 9. Citations and tooling updated (1,137 path rewrites in 42 files) `RAW/_INGESTED.md` (835 rewrites), 22 Wiki articles, 5 Outputs reports, this KB's `CLAUDE.md` (new \"RAW Folder Layout\" section), 6 project briefs, and 9 generator scripts (`publish_insights.py` and `build_visual_report.py` read the workshop folder by path; the rest only mention paths in labels). Pre-edit copies are in `_TIDY_HOLD/2026-10-02-restructure/backup/`. Integrity check: 355 registry rows point at a path that does not exist, identical to the count before the restructure (older rows for files later moved into sub-folders). No row broke and none were repaired. Older CHANGELOG entries, project memory logs and EOD summaries were left as written; use `PATH-MAP.md` to translate their paths. The A&U refresh, Broken Stock dashboard and Mining kb afternoon compile tasks only name folders that did not change, so they needed no edit. Tasks stored only on Peter's Mac were not visible from this session and were not checked. Watch for Anyone or any automation dropping files into the old folder names (for example a new `Week 41` under `Maaden Plans/`, or the Oct 26 workshop sheets into `Maintanance Shedules`) will recreate the old folder. The next compile pass reads by mtime, so it still sees them, but they would need moving. `Wiki/weekly-mining-plan.md` mentions a Deck Archive subfolder that was moved to hold earlier today.",
+  "summary": "1. Ore was only 279 BCM (-86%) and stockpile-to-crusher posted a fourth zero-LCM day; the crusher was down 12.3 h (about 1,526 BCM / 4,121 t of feed at 124 BCM/h). 2. Excavators 62.50% (MTD 67.46%), EX-123 day 12 and EX-253 day 18 down; trucks 90.30%. 3. Lost hours converted: 15 excavator breakdown hours on running units about 4,577 BCM / 12,358 t; EX-123 and EX-253 48 h about 16,613 BCM / 44,855 t (fleet-average rate, estimate); 81.5 truck hours about 5,311 BCM / 14,339 t at 65.16 BCM/h, of which 27.5 tire hours about 1,792 BCM / 4,838 t. 4. Survey file 261004: +4,459 BCM (+15.5%) for the day, cumulative -12,547 BCM (-7.8%) from -17,006. 5. Broken stock 120,588 BCM ties to Oct 2's 144,866 less the day's 24,273. 6. The Weekly Operational Review deck now shows WTD 105,090 but its MTD (148,459) is still the Oct 2 value. 7. FCST Week 41+42 registered: EX-253 out the full fortnight, EX-123 back Oct 8. 8. Important References: folder re-checked, 45 files, no new content this pass. 9. Articles updated (Last updated bumped to 2026-10-04): daily-production-report, fleet-availability-utilization, survey-volume-reconciliation, blasting-and-drilling, weekly-mining-plan, safety-inspection-patterns, tire-damage-cost-pattern, equipment-running-hours-log, workshop-maintenance-planning. Part C (Task Feedback Log): queried for any row not Processed: none. No questions resolved from feedback, no mismatch. Two standing questions closed by data instead: the three-way WTD figure (80,817 through Friday + 24,273 Saturday = 105,090; week is Tue Sep 29 to Sat Oct 3) and EX247's status (down 11 h on day shift, cleared and ran 10.3 h at night). Part D (Notes & References): 26 rows scanned. Ingested: new \"Night Shift Incident - DT244 Tire Failure - 2026-10-03\" page and a `-revised` copy of \"Night Shift Notes - 2026-10-03\" (page edited 00:40 Oct 4). The rest were registered, unchanged or personal. Also registered the PM's reply to the night summary (HOD Meetings eml). Flags: (1) DT244 was released on a pre-use sheet that already recorded damage on tires 3-6; the 5-Whys finds a system gap (no stop rule, no night tire man). (2) Oct 3 ore -86% with 860-520 layer 1 LG closed out; next ore source unconfirmed. (3) Zero-LCM stockpile-to-crusher now four days. (4) The deck's MTD is a day stale (-3% shown, -0.8% actual). (5) EX-263 shows zero day-shift hours in the running-hours tab against 2 h down in the Availability Report. (6) EX-123 fault description still differs between the two reports (fourth report). (7) Peter's own notes show he edited the weekly deck slide 5 on Oct 4 and refer to a 4-11 Oct crusher shutdown; no crusher-shutdown document is in RAW yet. The three DT244 tire tasks and the DT-110/130/131 and broken-stock tasks already existed and were not duplicated.",
   "kpis": [
     {
       "label": "MTD BCM",
-      "value": "135,253",
-      "delta": "-4.4% vs target",
+      "value": "148,459",
+      "delta": "-3.0% vs target",
       "good": false
     },
     {
       "label": "Survey Gap",
-      "value": "-13.2%",
+      "value": "-10.3%",
       "delta": "survey vs trucks MTD",
       "good": false
     },
     {
-      "label": "Crusher MTD",
-      "value": "8%",
-      "delta": "9,753 / 124,000 LCM",
-      "good": null
-    },
-    {
       "label": "Days Remain",
-      "value": "23",
+      "value": "22",
       "delta": "",
       "good": null
     }
@@ -74,16 +68,12 @@
     }
   ],
   "fleet": {
-    "availDaily": "87.1%",
-    "availMtd": "87.1%",
-    "exAvail": "77.1%",
     "exUnits": 6,
-    "dtAvail": "92.0%",
-    "dtUnits": 22,
+    "dtUnits": 21,
     "excavators": [
       {
         "unit": "EX-340",
-        "avail": "95.8%"
+        "avail": "97.9%"
       },
       {
         "unit": "EX-262",
@@ -95,32 +85,22 @@
       },
       {
         "unit": "EX-263",
-        "avail": "95.8%"
+        "avail": "91.7%"
       },
       {
         "unit": "EX-247",
-        "avail": "97.9%"
+        "avail": "54.2%"
       },
       {
         "unit": "EX-1200",
         "avail": null
       }
     ],
+    "exAvail": "67.9%",
     "exBasis": "5/6",
-    "pdfDate": "01-10",
-    "dtBasis": "22 active ≥8h"
+    "pdfDate": "03-10"
   },
   "equipment": [
-    {
-      "unit": "EX-123",
-      "type": "Excavator",
-      "status": "warning",
-      "avail": "",
-      "util": "",
-      "bd_hrs": "",
-      "note": "fault-description contradiction ever resolve, now unchanged across two consecutive Availability Reports while ",
-      "comment": "Hydraulic Oil Leaking"
-    },
     {
       "unit": "EX-253",
       "type": "Excavator",
@@ -128,38 +108,28 @@
       "avail": "",
       "util": "",
       "bd_hrs": "",
-      "note": "'s sixteenth consecutive day down still track to the 08-Oct parts ETA? - Does",
+      "note": "is planned out until at least Oct 17 (day 32 by then). Is there a parts ETA or a decision to cap the unit as a",
       "comment": "Hydraulic Oil Leakage"
     },
     {
-      "unit": "DT-282",
-      "type": "Haul Truck",
+      "unit": "EX-123",
+      "type": "Excavator",
       "status": "scheduled",
-      "avail": "27.08%",
+      "avail": "",
       "util": "",
       "bd_hrs": "",
-      "note": "opens a 2000-hour service plus backlog job and Engine Valve Lash** at 10:00 AM, still open at 3:30 AM the next",
-      "comment": ""
+      "note": "'s fault description differs between the Availability Report (hydraulic leak, 250 h service) and the Client Me",
+      "comment": "Hydraulic Oil Leaking"
     },
     {
       "unit": "EX-247",
       "type": "Excavator",
       "status": "down",
-      "avail": "97.92%",
+      "avail": "71%",
       "util": "",
       "bd_hrs": "",
-      "note": "and EX-398 each log only short 0.5-1h daily-check or inspection stops (95.83-97.92% avail)",
-      "comment": ""
-    },
-    {
-      "unit": "EX-262",
-      "type": "Excavator",
-      "status": "down",
-      "avail": "97.92%",
-      "util": "",
-      "bd_hrs": "",
-      "note": "and EX-398 each log only short 0.5-1h daily-check or inspection stops (95.83-97.92% avail)",
-      "comment": ""
+      "note": "Oct 13. Planned excavator availability is 71% on Oct 4, 5 and 7, 65% on Oct 6 and 85% from Oct 8; fortnight av",
+      "comment": "Bucket Safety Guard Broken"
     },
     {
       "unit": "EX-263",
@@ -168,28 +138,48 @@
       "avail": "",
       "util": "",
       "bd_hrs": "",
-      "note": "also logs a GET job (Replace New Bucket Tips) alongside its daily check, no added downtime.",
-      "comment": "Replace New Bucket Tips"
+      "note": "Oct 15",
+      "comment": "Hydraulic Leaking"
+    },
+    {
+      "unit": "EX-262",
+      "type": "Excavator",
+      "status": "down",
+      "avail": "",
+      "util": "",
+      "bd_hrs": "",
+      "note": "Oct 9",
+      "comment": "A/C Not Working"
     },
     {
       "unit": "EX-340",
       "type": "Excavator",
       "status": "down",
-      "avail": "97.92%",
+      "avail": "",
       "util": "",
       "bd_hrs": "",
-      "note": "and EX-398 each log only short 0.5-1h daily-check or inspection stops (95.83-97.92% avail)",
+      "note": "Oct 6",
       "comment": ""
     },
     {
       "unit": "EX-398",
       "type": "Excavator",
       "status": "down",
-      "avail": "97.92%",
+      "avail": "",
       "util": "",
       "bd_hrs": "",
-      "note": "and EX-398 each log only short 0.5-1h daily-check or inspection stops (95.83-97.92% avail)",
-      "comment": ""
+      "note": "Oct 10",
+      "comment": "Replace Bucket Tips"
+    },
+    {
+      "unit": "DT-107",
+      "type": "Haul Truck",
+      "status": "down",
+      "avail": "",
+      "util": "",
+      "bd_hrs": "",
+      "note": "is on day 10 down (engine coolant temperature high).",
+      "comment": "Engine Coolant Temperature High"
     }
   ],
   "followUps": [
