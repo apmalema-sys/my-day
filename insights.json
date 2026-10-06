@@ -1,25 +1,25 @@
 {
-  "generatedAt": "2026-10-06T11:32:16",
-  "date": "2026-10-05",
+  "generatedAt": "2026-10-06T12:10:27",
+  "date": "2026-10-06",
   "runNumber": null,
-  "summary": "1. One file was genuinely unregistered (261004-SAFETY-BERM.pdf); every other file either matched a registration or a range row. 2. Nothing changed in RAW after 19:31 on Oct 5. 3. Important References still 45 files, no change. 4. Files read this pass that the earlier pass only registered on mtime: Block Info, A&U, Drill Meters, Distance, Drill Sampling Record, Diesel report, Grade Control sheet, Workshop Daily Task Oct 6 (rendered), safety berm drawing, mineable-area plan, block 860-519/520/521 plan, the .eml copy of the Nov 2025 budget thread. 5. The DPR and A&U .docx holds only embedded images (not extracted). 6. New findings: (1) Grade control: 860-520 layer 2 has only 3,710 t MG left and 860-520 layer 1 and 735-185 are closed, so the next ore block is needed within about two days. (2) Diesel Oct 4: 39,276 L, 1.85 L/BCM; Maaden receipts 1,470 L short of invoices over four days; running-hours and diesel report tie. (3) West Waste Dump safety berm averages 0.88 m (0.59 to 1.19 m); compliance against the half-tire-height rule cannot be judged until the CAT 777 tire height is confirmed. (4) Broken stock Oct 4 is 144,866 BCM on the Drill Meters sheet and 209,250 BCM on the Client Meeting Report. (5) Mineable-area plan: about 220,500 BCM remaining across 20 blocks, roughly 10 days at the required 21,287 BCM/day. (6) JRAR's own Nov 6, 2025 email treated 20 Mt as confirmed, which cuts against the contract-only reading in the 20 Mt dispute. (7) EX-340's 1,000 h service on Oct 6 removes the best excavator (403 BCM/h) for 12 h. (8) Block Info \"Daily KPI\" tab is a stale template (LTI-free days 402 vs 1,310 in the minutes). 7. Articles updated (Last updated 2026-10-05): daily-production-report, fleet-availability-utilization, blasting-and-drilling, survey-volume-reconciliation, dump-management, equipment-running-hours-log, maaden-2026-budget-and-ramp-up. 8. Tasks: no new tasks; the four Inbox tasks from the earlier pass stand. 9. Candidate for Peter: confirm the CAT 777 tire height and rebuild the West Waste Dump berm if below minimum (not created, no source for the minimum). ---",
+  "summary": "1. The Oct 5 survey reading is not in RAW yet. 2. Register updated in `RAW/_INGESTED.md`. 3. Articles updated (Last updated 2026-10-06): daily-production-report, fleet-availability-utilization, survey-volume-reconciliation (status note only). 4. Key operational findings Oct 5 posted 25,451 BCM against a 21,767 BCM target (+16.9%), and MTD moved back ahead of plan at 219,387 BCM (+0.8%). 5. Three things to flag: 1. 6. Ore fell to 341 BCM (-82.8%) because 860-520 layer 2 is nearly exhausted, with 2,789 t MG left at 921 t/day; the next ore is 860-522, with 9,975 t of LG on two dig benches not yet mined. 2. 7. EX-123 and EX-253 stayed down the full day, now day 14 and day 20 of the standing outages, together worth about 16,250 BCM at the fleet average (estimate). 3. 8. Overspill was 5,363 BCM (21% of the day's movement) and the stockpile-to-crusher line stayed at zero LCM for a sixth day, so the stockpile is not feeding the crusher. 9. Production recovery meeting with the Project Manager on Oct 7 afternoon, reviewing the catch-up plan against the 2026 20 Mt target. The Client's letters since August are attached to the email, but the attachments were not extracted this pass. Truck availability conflicts between sources: Client Meeting Report 96.03%, Availability Report 91.55%. The Availability Report governs under the 2026-09-15 rule, but the Client sheet needs correcting before it goes out. Broken stock does not roll forward. Neither Oct 4 opening figure (209,250 BCM Client Meeting Report, 144,866 BCM Drill Meters) plus the 38,513 BCM blast less 25,451 BCM mined gives the 194,039 BCM reported for Oct 5. Confirm the opening figure with Survey and Drill. Dashboard KPI wording: the Oct 4 section dropped the publish phrasings used on Oct 1 to 3 (\"MTD x BCM (y% vs target)\", the crusher plan phrase and \"days remaining\"). The Oct 5 section restores them exactly. The Oct 4 section was not rewritten. EX-123's fault description still conflicts across reports (fifth report). Recommend confirming with the workshop which stoppage is current. Drill standby on Stage 4D access (46.5 rig-hours) has no BCM conversion yet. Needs a drill-to-BCM rate before it can be converted. Not analyzed this pass: October Block Info, Diesel and the DPR/A&U .docx (re-saved Oct 6). The Daily Drill Sampling Record has no Oct 5 tab. Source: KNOWLEDGE/mining_operations_kb/RAW via the librarian compile protocol. Notion Notes & References and Task Feedback Log scans were not part of this RAW-scoped run. ---",
   "kpis": [
     {
       "label": "MTD BCM",
-      "value": "193,936",
-      "delta": "-1.0% vs target",
-      "good": false
+      "value": "219,387",
+      "delta": "+0.8% vs target",
+      "good": true
     },
     {
       "label": "Survey Gap",
-      "value": "-7.8%",
+      "value": "-12.2%",
       "delta": "survey vs trucks MTD",
       "good": false
     },
     {
       "label": "Days Remain",
-      "value": "20",
-      "delta": "after 4 Oct",
+      "value": "19",
+      "delta": "after 5 Oct",
       "good": null
     }
   ],
@@ -93,10 +93,21 @@
       "actual": 21204,
       "target": 21767,
       "half": false
+    },
+    {
+      "date": "2026-10-05",
+      "label": "5 Oct",
+      "actual": 25451,
+      "target": 21767,
+      "half": false
     }
   ],
   "fleet": {
+    "availDaily": "88.06%",
+    "availMtd": "86.88%",
+    "exAvail": "66.2%",
     "exUnits": 6,
+    "dtAvail": "91.55%",
     "dtUnits": 21,
     "excavators": [
       {
@@ -124,11 +135,20 @@
         "avail": null
       }
     ],
-    "exAvail": "66.2%",
     "exBasis": "5/6",
     "pdfDate": "05-10"
   },
   "equipment": [
+    {
+      "unit": "EX-253",
+      "type": "Excavator",
+      "status": "down",
+      "avail": "0.0%",
+      "util": "",
+      "bd_hrs": "",
+      "note": "0, total 94.7.",
+      "comment": "Hydraulic Oil Leakage"
+    },
     {
       "unit": "DT-107",
       "type": "Haul Truck",
@@ -140,6 +160,16 @@
       "comment": "Engine Coolant Temperature High"
     },
     {
+      "unit": "EX-263",
+      "type": "Excavator",
+      "status": "down",
+      "avail": "41.7%",
+      "util": "",
+      "bd_hrs": "",
+      "note": "7.8",
+      "comment": "Install New Bucket Tips"
+    },
+    {
       "unit": "DR-140",
       "type": "Drill",
       "status": "down",
@@ -148,16 +178,6 @@
       "bd_hrs": "",
       "note": "",
       "comment": "Feed Cylinder Oil Leaking"
-    },
-    {
-      "unit": "EX-263",
-      "type": "Excavator",
-      "status": "down",
-      "avail": "41.7%",
-      "util": "",
-      "bd_hrs": "",
-      "note": "",
-      "comment": "Install New Bucket Tips"
     },
     {
       "unit": "LV-035",
@@ -180,16 +200,6 @@
       "comment": "Tyre Change # 01,02,03,04"
     },
     {
-      "unit": "EX-253",
-      "type": "Excavator",
-      "status": "warning",
-      "avail": "0.0%",
-      "util": "",
-      "bd_hrs": "",
-      "note": "",
-      "comment": "Hydraulic Oil Leakage"
-    },
-    {
       "unit": "WD-145",
       "type": "Water Dozer",
       "status": "warning",
@@ -198,16 +208,6 @@
       "bd_hrs": "",
       "note": "",
       "comment": "Front Axle Brakes worn out"
-    },
-    {
-      "unit": "EX-123",
-      "type": "Excavator",
-      "status": "warning",
-      "avail": "4.2%",
-      "util": "",
-      "bd_hrs": "",
-      "note": "",
-      "comment": "Hydraulic Oil Leaking"
     },
     {
       "unit": "DR-303",
@@ -250,6 +250,16 @@
       "comment": "One Adaptor Bolt Missing"
     },
     {
+      "unit": "EX-327",
+      "type": "Excavator",
+      "status": "warning",
+      "avail": "93.8%",
+      "util": "",
+      "bd_hrs": "",
+      "note": "1.5 h, chisel replacement.",
+      "comment": "Replace Chisel"
+    },
+    {
       "unit": "DT-244",
       "type": "Haul Truck",
       "status": "warning",
@@ -260,14 +270,24 @@
       "comment": "Hydraulic Leaking"
     },
     {
-      "unit": "EX-327",
+      "unit": "EX-247",
       "type": "Excavator",
       "status": "warning",
-      "avail": "93.8%",
+      "avail": "95.8%",
       "util": "",
       "bd_hrs": "",
-      "note": "",
-      "comment": "Replace Chisel"
+      "note": "21.5",
+      "comment": "Coolant Lever Low"
+    },
+    {
+      "unit": "EX-262",
+      "type": "Excavator",
+      "status": "warning",
+      "avail": "95.8%",
+      "util": "",
+      "bd_hrs": "",
+      "note": "20.5",
+      "comment": "Bucket Protector Worn-out"
     },
     {
       "unit": "DT-243",
@@ -280,26 +300,6 @@
       "comment": "between the Tyre have rock"
     },
     {
-      "unit": "EX-247",
-      "type": "Excavator",
-      "status": "warning",
-      "avail": "95.8%",
-      "util": "",
-      "bd_hrs": "",
-      "note": "",
-      "comment": "Coolant Lever Low"
-    },
-    {
-      "unit": "EX-262",
-      "type": "Excavator",
-      "status": "warning",
-      "avail": "95.8%",
-      "util": "",
-      "bd_hrs": "",
-      "note": "",
-      "comment": "Bucket Protector Worn-out"
-    },
-    {
       "unit": "WL-329",
       "type": "Wheel Loader",
       "status": "warning",
@@ -310,6 +310,26 @@
       "comment": "Bucket Teeth Worn-out"
     },
     {
+      "unit": "EX-340",
+      "type": "Excavator",
+      "status": "warning",
+      "avail": "97.9%",
+      "util": "",
+      "bd_hrs": "",
+      "note": "21",
+      "comment": "Install New Bucket Tips"
+    },
+    {
+      "unit": "EX-398",
+      "type": "Excavator",
+      "status": "warning",
+      "avail": "97.9%",
+      "util": "",
+      "bd_hrs": "",
+      "note": "20.9",
+      "comment": ""
+    },
+    {
       "unit": "DR-297",
       "type": "Drill",
       "status": "warning",
@@ -318,16 +338,6 @@
       "bd_hrs": "",
       "note": "",
       "comment": "Hose Reel Nut Missing"
-    },
-    {
-      "unit": "EX-340",
-      "type": "Excavator",
-      "status": "warning",
-      "avail": "97.9%",
-      "util": "",
-      "bd_hrs": "",
-      "note": "",
-      "comment": "Install New Bucket Tips"
     },
     {
       "unit": "FT-144",
@@ -360,86 +370,6 @@
       "comment": "Engine Failure"
     },
     {
-      "unit": "DT-256",
-      "type": "Haul Truck",
-      "status": "warning",
-      "avail": "",
-      "util": "",
-      "bd_hrs": "",
-      "note": "with 12 h no job",
-      "comment": ""
-    },
-    {
-      "unit": "DT-277",
-      "type": "Haul Truck",
-      "status": "warning",
-      "avail": "",
-      "util": "",
-      "bd_hrs": "",
-      "note": "with 12 h no job",
-      "comment": ""
-    },
-    {
-      "unit": "DT-70",
-      "type": "Haul Truck",
-      "status": "warning",
-      "avail": "",
-      "util": "",
-      "bd_hrs": "",
-      "note": "with 12 h no job",
-      "comment": ""
-    },
-    {
-      "unit": "DT-275",
-      "type": "Haul Truck",
-      "status": "warning",
-      "avail": "",
-      "util": "",
-      "bd_hrs": "",
-      "note": "with 24 h no job (noted transferred to AJM)",
-      "comment": ""
-    },
-    {
-      "unit": "DT-276",
-      "type": "Haul Truck",
-      "status": "warning",
-      "avail": "",
-      "util": "",
-      "bd_hrs": "",
-      "note": "with 24 h no job (noted transferred to AJM)",
-      "comment": ""
-    },
-    {
-      "unit": "DT-80",
-      "type": "Haul Truck",
-      "status": "warning",
-      "avail": "",
-      "util": "",
-      "bd_hrs": "",
-      "note": "transferred to MM, and",
-      "comment": ""
-    },
-    {
-      "unit": "DT-82",
-      "type": "Haul Truck",
-      "status": "warning",
-      "avail": "",
-      "util": "",
-      "bd_hrs": "",
-      "note": "transferred to MM, and",
-      "comment": ""
-    },
-    {
-      "unit": "DT-71",
-      "type": "Haul Truck",
-      "status": "warning",
-      "avail": "",
-      "util": "",
-      "bd_hrs": "",
-      "note": "down 24 h each (hydraulic hose burst, dump box problem, workshop, engine warning). The working CAT 777 units m",
-      "comment": ""
-    },
-    {
       "unit": "ACN-018",
       "type": "",
       "status": "warning",
@@ -460,6 +390,16 @@
       "comment": "250 Hrs Service"
     },
     {
+      "unit": "EX-123",
+      "type": "Excavator",
+      "status": "scheduled",
+      "avail": "96.03%",
+      "util": "",
+      "bd_hrs": "",
+      "note": "'s fault still differs across sources. The Availability Report logs hydraulic oil leaking and a 250 h service.",
+      "comment": "Hydraulic Oil Leaking"
+    },
+    {
       "unit": "DT-79",
       "type": "Haul Truck",
       "status": "scheduled",
@@ -476,29 +416,47 @@
     "monthlyTarget": 598598,
     "normalTarget": 21767,
     "fridayTarget": 10884,
-    "lastReported": "2026-10-04",
-    "lastLabel": "4 Oct",
-    "mtd": 193936.0,
-    "targetToDate": 195905,
-    "trendSum": 193936,
-    "daysRemain": 20,
-    "normalRemain": 17,
+    "lastReported": "2026-10-05",
+    "lastLabel": "5 Oct",
+    "mtd": 219387.0,
+    "targetToDate": 217672,
+    "trendSum": 219387,
+    "daysRemain": 19,
+    "normalRemain": 16,
     "fridaysRemain": 3,
-    "remainingBcm": 404662,
-    "requiredNormal": 21874,
-    "requiredFriday": 10937
+    "remainingBcm": 379211,
+    "requiredNormal": 21669,
+    "requiredFriday": 10835
   },
   "followUps": [
     {
-      "priority": "MONITOR",
-      "title": "New findings",
-      "body": "(1) Grade control: 860-520 layer 2 has only 3,710 t MG left and 860-520 layer 1 and 735-185 are closed, so the next ore block is needed within about two days. (2) Diesel Oct 4: 39,276 L, 1.85 L/BCM; Maaden receipts 1,470 L short of invoices over four days; running-hours and diesel report tie. (3) West Waste Dump safety berm averages 0.88 m (0.59 to 1.19 m); compliance against the half-tire-height rule cannot be judged until the CAT 777 tire height is confirmed. (4) Broken stock Oct 4 is 144,866 BCM on the Drill Meters sheet and 209,250 BCM on the Client Meeting Report. (5) Mineable-area plan: about 220,500 BCM remaining across 20 blocks, roughly 10 days at the required 21,287 BCM/day. (6) JRAR's own Nov 6, 2025 email treated 20 Mt as confirmed, which cuts against the contract-only reading in the 20 Mt dispute. (7) EX-340's 1,000 h service on Oct 6 removes the best excavator (403 BCM/h) for 12 h. (8) Block Info \"Daily KPI\" tab is a stale template (LTI-free days 402 vs 1,310 in the minutes).",
+      "priority": "HIGH",
+      "title": "EX-123's fault description still conflicts across reports (fifth report)",
+      "body": "Recommend confirming with the workshop which stoppage is current.",
       "action": ""
     },
     {
       "priority": "MONITOR",
-      "title": "Tasks",
-      "body": "no new tasks; the four Inbox tasks from the earlier pass stand. Candidate for Peter: confirm the CAT 777 tire height and rebuild the West Waste Dump berm if below minimum (not created, no source for the minimum). ---",
+      "title": "Production recovery meeting with the Project Manager on Oct 7 afternoon,...",
+      "body": "",
+      "action": ""
+    },
+    {
+      "priority": "MONITOR",
+      "title": "Truck availability conflicts between sources: Client Meeting Report 96.0...",
+      "body": "",
+      "action": ""
+    },
+    {
+      "priority": "MONITOR",
+      "title": "Broken stock does not roll forward",
+      "body": "Neither Oct 4 opening figure (209,250 BCM Client Meeting Report, 144,866 BCM Drill Meters) plus the 38,513 BCM blast less 25,451 BCM mined gives the 194,039 BCM reported for Oct 5. Confirm the opening figure with Survey and Drill.",
+      "action": ""
+    },
+    {
+      "priority": "MONITOR",
+      "title": "Dashboard KPI wording: the Oct 4 section dropped the publish phrasings u...",
+      "body": "",
       "action": ""
     }
   ]
