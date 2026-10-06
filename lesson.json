@@ -1,14 +1,13 @@
 {
-  "date": "2026-10-03",
-  "topic": "MSHEM-06.01 General EHSS Rules",
-  "title": "MSHEM-06.01 General EHSS Rules",
-  "body": "The breach nobody calls out because nothing happened is the one that sets the precedent for the next. At ADW that looks like a skipped brake check or a truck speeding on the ramp getting waved through until someone gets hurt.",
+  "date": "2026-10-05",
+  "topic": "LOTO: Control of Hazardous Energy",
+  "title": "LOTO: Control of Hazardous Energy",
+  "body": "Maintenance on a stopped machine goes wrong when stored hydraulic pressure, a dead-looking circuit or a re-energised line catches someone inside the work zone. LSR 3 is a defined violation trigger, so a skipped isolation is a personal and reportable failure, not a paperwork slip.",
   "keyPoints": [
-    "Enforce every rule every time it's broken, not only after a loss. Outcome doesn't excuse the breach (§5.1.11).",
-    "Where local regulation and MSHEM differ, the stricter requirement is the floor. Brief your crews to the tighter one.",
-    "Anyone unsure of a procedure or hazard asks, without fear or favour (§5.1.15). That's the everyday partner to the right to stop work.",
-    "Every recommended action needs a named owner and a target date. First change to a due date goes to Director level; later changes go to SVP."
+    "Run all six SWI 21 steps before work starts: identify energy sources, notify affected people, isolate, lock and tag, release stored energy, then verify. Step 6 is the one that gets dropped under schedule pressure. Don't let it go.",
+    "Every authorised person puts on their own personal lock and takes the key with them. Nobody removes or shares another person's lock, including on shift change.",
+    "Stored energy means hydraulic lines, cylinders, pneumatic receivers and capacitors. Bleed or vent them. A machine that is switched off is not isolated."
   ],
-  "apply": "Pre-start brake tests and ramp speed: if an operator skips the check or runs hot on the ramp, correct it on the spot and log it, so it doesn't become \"that's how we do it\" by the end of the week.",
-  "generatedAt": "2026-10-03T20:07:09"
+  "apply": "Two repair jobs are in the workshop right now, the DT-128 engine swap and the EX-253 slew-gear repair, and hydraulic and stored-energy work on those machines is where a missed verify step is most likely; check the lock register and the verify step on both before anyone goes under the boom or the cab.",
+  "generatedAt": "2026-10-06T05:09:30"
 }
