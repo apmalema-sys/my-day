@@ -1,13 +1,13 @@
 {
-  "generatedAt": "2026-10-06T05:19:59",
+  "generatedAt": "2026-10-06T05:35:57",
   "date": "2026-10-05",
   "runNumber": null,
   "summary": "1. One file was genuinely unregistered (261004-SAFETY-BERM.pdf); every other file either matched a registration or a range row. 2. Nothing changed in RAW after 19:31 on Oct 5. 3. Important References still 45 files, no change. 4. Files read this pass that the earlier pass only registered on mtime: Block Info, A&U, Drill Meters, Distance, Drill Sampling Record, Diesel report, Grade Control sheet, Workshop Daily Task Oct 6 (rendered), safety berm drawing, mineable-area plan, block 860-519/520/521 plan, the .eml copy of the Nov 2025 budget thread. 5. The DPR and A&U .docx holds only embedded images (not extracted). 6. New findings: (1) Grade control: 860-520 layer 2 has only 3,710 t MG left and 860-520 layer 1 and 735-185 are closed, so the next ore block is needed within about two days. (2) Diesel Oct 4: 39,276 L, 1.85 L/BCM; Maaden receipts 1,470 L short of invoices over four days; running-hours and diesel report tie. (3) West Waste Dump safety berm averages 0.88 m (0.59 to 1.19 m); compliance against the half-tire-height rule cannot be judged until the CAT 777 tire height is confirmed. (4) Broken stock Oct 4 is 144,866 BCM on the Drill Meters sheet and 209,250 BCM on the Client Meeting Report. (5) Mineable-area plan: about 220,500 BCM remaining across 20 blocks, roughly 10 days at the required 21,287 BCM/day. (6) JRAR's own Nov 6, 2025 email treated 20 Mt as confirmed, which cuts against the contract-only reading in the 20 Mt dispute. (7) EX-340's 1,000 h service on Oct 6 removes the best excavator (403 BCM/h) for 12 h. (8) Block Info \"Daily KPI\" tab is a stale template (LTI-free days 402 vs 1,310 in the minutes). 7. Articles updated (Last updated 2026-10-05): daily-production-report, fleet-availability-utilization, blasting-and-drilling, survey-volume-reconciliation, dump-management, equipment-running-hours-log, maaden-2026-budget-and-ramp-up. 8. Tasks: no new tasks; the four Inbox tasks from the earlier pass stand. 9. Candidate for Peter: confirm the CAT 777 tire height and rebuild the West Waste Dump berm if below minimum (not created, no source for the minimum). ---",
   "kpis": [
     {
       "label": "MTD BCM",
-      "value": "148,459",
-      "delta": "-3.0% vs target",
+      "value": "193,936",
+      "delta": "-1.0% vs target",
       "good": false
     },
     {
@@ -15,6 +15,12 @@
       "value": "-7.8%",
       "delta": "survey vs trucks MTD",
       "good": false
+    },
+    {
+      "label": "Days Remain",
+      "value": "20",
+      "delta": "after 4 Oct",
+      "good": null
     }
   ],
   "trend": [
@@ -22,63 +28,70 @@
       "date": "2026-09-25",
       "label": "25 Sep",
       "actual": 8649,
-      "target": 11496,
+      "target": 10884,
       "half": true
     },
     {
       "date": "2026-09-26",
       "label": "26 Sep",
       "actual": 20832,
-      "target": 22993,
+      "target": 21767,
       "half": false
     },
     {
       "date": "2026-09-27",
       "label": "27 Sep",
       "actual": 17298,
-      "target": 22993,
+      "target": 21767,
       "half": false
     },
     {
       "date": "2026-09-28",
       "label": "28 Sep",
       "actual": 20863,
-      "target": 22993,
+      "target": 21767,
       "half": false
     },
     {
       "date": "2026-09-29",
       "label": "29 Sep",
       "actual": 20770,
-      "target": 22993,
+      "target": 21767,
+      "half": false
+    },
+    {
+      "date": "2026-09-30",
+      "label": "30 Sep",
+      "actual": 23002,
+      "target": 21767,
       "half": false
     },
     {
       "date": "2026-10-01",
       "label": "1 Oct",
       "actual": 23839,
-      "target": 22993,
+      "target": 21767,
       "half": false
     },
     {
       "date": "2026-10-02",
       "label": "2 Oct",
       "actual": 13206,
-      "target": 11496,
+      "target": 10884,
       "half": true
     },
     {
       "date": "2026-10-03",
       "label": "3 Oct",
       "actual": 24273,
-      "target": 22993,
+      "target": 21767,
       "half": false
     },
     {
       "date": "2026-10-04",
       "label": "4 Oct",
       "actual": 21204,
-      "target": 22993,
+      "target": 21767,
       "half": false
     }
   ],
@@ -117,9 +130,199 @@
   },
   "equipment": [
     {
-      "unit": "DT-256",
+      "unit": "DT-107",
       "type": "Haul Truck",
       "status": "down",
+      "avail": "0.0%",
+      "util": "",
+      "bd_hrs": "",
+      "note": "",
+      "comment": "Engine Coolant Temperature High"
+    },
+    {
+      "unit": "LT-137",
+      "type": "",
+      "status": "down",
+      "avail": "0.0%",
+      "util": "",
+      "bd_hrs": "",
+      "note": "",
+      "comment": "Engine Cannot Start"
+    },
+    {
+      "unit": "LV-020",
+      "type": "",
+      "status": "down",
+      "avail": "0.0%",
+      "util": "",
+      "bd_hrs": "",
+      "note": "",
+      "comment": "Clutch Problem"
+    },
+    {
+      "unit": "LV-035",
+      "type": "",
+      "status": "down",
+      "avail": "0.0%",
+      "util": "",
+      "bd_hrs": "",
+      "note": "",
+      "comment": "Steering Problem"
+    },
+    {
+      "unit": "WT-300",
+      "type": "Water Truck",
+      "status": "down",
+      "avail": "54.2%",
+      "util": "",
+      "bd_hrs": "",
+      "note": "",
+      "comment": "Tyre Puncher # 02"
+    },
+    {
+      "unit": "DT-109",
+      "type": "Haul Truck",
+      "status": "down",
+      "avail": "79.2%",
+      "util": "",
+      "bd_hrs": "",
+      "note": "",
+      "comment": "Tyre Puncher #P4"
+    },
+    {
+      "unit": "DT-281",
+      "type": "Haul Truck",
+      "status": "down",
+      "avail": "85.4%",
+      "util": "",
+      "bd_hrs": "",
+      "note": "",
+      "comment": "Some Pin Point is Dry"
+    },
+    {
+      "unit": "EX-123",
+      "type": "Excavator",
+      "status": "warning",
+      "avail": "0.0%",
+      "util": "",
+      "bd_hrs": "",
+      "note": "",
+      "comment": "Hydraulic Oil Leaking"
+    },
+    {
+      "unit": "EX-253",
+      "type": "Excavator",
+      "status": "warning",
+      "avail": "0.0%",
+      "util": "",
+      "bd_hrs": "",
+      "note": "",
+      "comment": "Hydraulic Oil Leakage"
+    },
+    {
+      "unit": "WD-145",
+      "type": "Water Dozer",
+      "status": "warning",
+      "avail": "0.0%",
+      "util": "",
+      "bd_hrs": "",
+      "note": "",
+      "comment": "Front Axle Brakes worn out"
+    },
+    {
+      "unit": "EX-247",
+      "type": "Excavator",
+      "status": "warning",
+      "avail": "45.8%",
+      "util": "",
+      "bd_hrs": "",
+      "note": "",
+      "comment": "Hydraulic Oil Leaking"
+    },
+    {
+      "unit": "EX-262",
+      "type": "Excavator",
+      "status": "warning",
+      "avail": "91.7%",
+      "util": "",
+      "bd_hrs": "",
+      "note": "",
+      "comment": "Alternative Belt Broken"
+    },
+    {
+      "unit": "DT-243",
+      "type": "Haul Truck",
+      "status": "warning",
+      "avail": "93.8%",
+      "util": "",
+      "bd_hrs": "",
+      "note": "",
+      "comment": "One Light Not Working"
+    },
+    {
+      "unit": "EX-326",
+      "type": "Excavator",
+      "status": "warning",
+      "avail": "95.8%",
+      "util": "",
+      "bd_hrs": "",
+      "note": "",
+      "comment": "Dust Coming Inside the Cabin"
+    },
+    {
+      "unit": "DT-70",
+      "type": "Haul Truck",
+      "status": "warning",
+      "avail": "97.9%",
+      "util": "",
+      "bd_hrs": "",
+      "note": "with 12 h no job",
+      "comment": ""
+    },
+    {
+      "unit": "WL-329",
+      "type": "Wheel Loader",
+      "status": "warning",
+      "avail": "97.9%",
+      "util": "",
+      "bd_hrs": "",
+      "note": "",
+      "comment": "Cutting Edge Plate Worn-out and  One Adaptor Crack"
+    },
+    {
+      "unit": "FT-144",
+      "type": "",
+      "status": "warning",
+      "avail": "100.0%",
+      "util": "",
+      "bd_hrs": "",
+      "note": "",
+      "comment": "C/O Air Compressor & Brake Air  lines"
+    },
+    {
+      "unit": "LV-049",
+      "type": "",
+      "status": "warning",
+      "avail": "100.0%",
+      "util": "",
+      "bd_hrs": "",
+      "note": "",
+      "comment": "Engine Failure"
+    },
+    {
+      "unit": "MG-266",
+      "type": "Motor Grader",
+      "status": "warning",
+      "avail": "100.0%",
+      "util": "",
+      "bd_hrs": "",
+      "note": "",
+      "comment": "Engine Failure"
+    },
+    {
+      "unit": "DT-256",
+      "type": "Haul Truck",
+      "status": "warning",
       "avail": "",
       "util": "",
       "bd_hrs": "",
@@ -129,17 +332,7 @@
     {
       "unit": "DT-277",
       "type": "Haul Truck",
-      "status": "down",
-      "avail": "",
-      "util": "",
-      "bd_hrs": "",
-      "note": "with 12 h no job",
-      "comment": ""
-    },
-    {
-      "unit": "DT-70",
-      "type": "Haul Truck",
-      "status": "down",
+      "status": "warning",
       "avail": "",
       "util": "",
       "bd_hrs": "",
@@ -149,7 +342,7 @@
     {
       "unit": "DT-275",
       "type": "Haul Truck",
-      "status": "down",
+      "status": "warning",
       "avail": "",
       "util": "",
       "bd_hrs": "",
@@ -159,7 +352,7 @@
     {
       "unit": "DT-276",
       "type": "Haul Truck",
-      "status": "down",
+      "status": "warning",
       "avail": "",
       "util": "",
       "bd_hrs": "",
@@ -169,7 +362,7 @@
     {
       "unit": "DT-80",
       "type": "Haul Truck",
-      "status": "down",
+      "status": "warning",
       "avail": "",
       "util": "",
       "bd_hrs": "",
@@ -179,7 +372,7 @@
     {
       "unit": "DT-82",
       "type": "Haul Truck",
-      "status": "down",
+      "status": "warning",
       "avail": "",
       "util": "",
       "bd_hrs": "",
@@ -195,8 +388,66 @@
       "bd_hrs": "",
       "note": "down 24 h each (hydraulic hose burst, dump box problem, workshop, engine warning). The working CAT 777 units m",
       "comment": ""
+    },
+    {
+      "unit": "ACN-018",
+      "type": "",
+      "status": "warning",
+      "avail": "",
+      "util": "",
+      "bd_hrs": "",
+      "note": "",
+      "comment": "Fuel Pump Faulty"
+    },
+    {
+      "unit": "DT-110",
+      "type": "Haul Truck",
+      "status": "scheduled",
+      "avail": "79.2%",
+      "util": "",
+      "bd_hrs": "",
+      "note": "",
+      "comment": "Service Brake Pedal Air Valve  Leaking"
+    },
+    {
+      "unit": "DT-244",
+      "type": "Haul Truck",
+      "status": "scheduled",
+      "avail": "97.9%",
+      "util": "",
+      "bd_hrs": "",
+      "note": "",
+      "comment": "250 Hrs Service"
+    },
+    {
+      "unit": "DT-79",
+      "type": "Haul Truck",
+      "status": "scheduled",
+      "avail": "100.0%",
+      "util": "",
+      "bd_hrs": "",
+      "note": "",
+      "comment": "250 H Service"
     }
   ],
+  "plan": {
+    "cycleStart": "2026-09-25",
+    "cycleEnd": "2026-10-24",
+    "monthlyTarget": 598598,
+    "normalTarget": 21767,
+    "fridayTarget": 10884,
+    "lastReported": "2026-10-04",
+    "lastLabel": "4 Oct",
+    "mtd": 193936.0,
+    "targetToDate": 195905,
+    "trendSum": 193936,
+    "daysRemain": 20,
+    "normalRemain": 17,
+    "fridaysRemain": 3,
+    "remainingBcm": 404662,
+    "requiredNormal": 21874,
+    "requiredFriday": 10937
+  },
   "followUps": [
     {
       "priority": "MONITOR",
