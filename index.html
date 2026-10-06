@@ -676,7 +676,7 @@ const LS_INSP="myday.inspection.v1",LS_INSPH="myday.insphistory.v1",LS_SYNC="myd
 /* SYNC_EMAIL: build-time DEFAULT for "Send to CoWork". Blanked in the public
    build so the address isn't exposed on a public URL — there the user sets it
    once on-device via Settings (stored in localStorage, never in the source). */
-const SYNC_EMAIL="a.p.malema@gmail.com";
+const SYNC_EMAIL="";
 function getSyncEmail(){return (localStorage.getItem(LS_SYNC)||SYNC_EMAIL||"").trim();}
 
 const INSPECT_SECTIONS=[
