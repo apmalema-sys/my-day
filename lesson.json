@@ -1,13 +1,13 @@
 {
-  "date": "2026-10-05",
-  "topic": "LOTO: Control of Hazardous Energy",
-  "title": "LOTO: Control of Hazardous Energy",
-  "body": "Maintenance on a stopped machine goes wrong when stored hydraulic pressure, a dead-looking circuit or a re-energised line catches someone inside the work zone. LSR 3 is a defined violation trigger, so a skipped isolation is a personal and reportable failure, not a paperwork slip.",
+  "date": "2026-10-06",
+  "topic": "Mining Projects Register",
+  "title": "Mining Projects Register",
+  "body": "Projects with no date, no owner, or two different targets drift without anyone noticing. At ADW, Go-Line and the A&U training are both past their end dates with nothing started, and the 2026 target still reads 20 Mt on one page and 21 Mt on another.",
   "keyPoints": [
-    "Run all six SWI 21 steps before work starts: identify energy sources, notify affected people, isolate, lock and tag, release stored energy, then verify. Step 6 is the one that gets dropped under schedule pressure. Don't let it go.",
-    "Every authorised person puts on their own personal lock and takes the key with them. Nobody removes or shares another person's lock, including on shift change.",
-    "Stored energy means hydraulic lines, cylinders, pneumatic receivers and capacitors. Bleed or vent them. A machine that is switched off is not isolated."
+    "A target only counts once it's settled in one place. Until Peter confirms whether 2026 is 20 Mt or 21 Mt, don't quote either figure to Maaden or use it for a year-end gap.",
+    "Every open item needs a date and an owner. Go-Line's four tasks are unstarted past their Sep 30 end date, and all eight A&U training days are still Not started past Sep 22. If a task has slipped past its end date, reset it today or call it dropped.",
+    "Get the decision on record. Stage 6 Early Start is worth about 333,000 t a month, but Notion has no decision, and the recommendation task is still open. Whatever gets approved needs a compliant second egress, a 10% ramp gradient (12% temporary), and catchment and berms in place before a bench opens."
   ],
-  "apply": "Two repair jobs are in the workshop right now, the DT-128 engine swap and the EX-253 slew-gear repair, and hydraulic and stored-energy work on those machines is where a missed verify step is most likely; check the lock register and the verify step on both before anyone goes under the boom or the cab.",
-  "generatedAt": "2026-10-06T05:09:30"
+  "apply": "The fuel bay had no power on Oct 1 and trucks were sent to the North Go-Line point. Expect fueling delays and queuing at shift change until the second container and the traffic change at that point are actually in place.",
+  "generatedAt": "2026-10-06T10:45:05"
 }
