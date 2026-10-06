@@ -676,7 +676,7 @@ const LS_INSP="myday.inspection.v1",LS_INSPH="myday.insphistory.v1",LS_SYNC="myd
 /* SYNC_EMAIL: build-time DEFAULT for "Send to CoWork". Blanked in the public
    build so the address isn't exposed on a public URL — there the user sets it
    once on-device via Settings (stored in localStorage, never in the source). */
-const SYNC_EMAIL="";
+const SYNC_EMAIL="a.p.malema@gmail.com";
 function getSyncEmail(){return (localStorage.getItem(LS_SYNC)||SYNC_EMAIL||"").trim();}
 
 const INSPECT_SECTIONS=[
@@ -1543,7 +1543,7 @@ function mtdTrendHTML(trend,proj){ // daily actual (bars) vs target line + Frida
       <div class="mtd-legend"><span class="k"><span class="sw bar"></span>Actual</span><span class="k"><span class="sw target"></span>Target</span>${catchLegend}</div>
       ${svg}
       <table class="mtd-tbl"><thead><tr><th>Day</th><th>Actual</th><th>Target</th><th>Var</th></tr></thead><tbody>${rows}</tbody></table>
-      <div class="mtd-cap">Bars = daily BCM vs the standardized July plan target (23.5k/day; Fridays half — single shift). Latest: <b class="${varCls}">${lastVar>0?"+":""}${fmtInt(lastVar)} BCM (${lastPct>0?"+":""}${lastPct.toFixed(1)}%)</b> vs target on ${esc(last.label||"")}.${catchCap}</div>
+      <div class="mtd-cap">Bars = daily BCM vs the standardized plan target from the Insights sync (Fridays half — single shift). Latest: <b class="${varCls}">${lastVar>0?"+":""}${fmtInt(lastVar)} BCM (${lastPct>0?"+":""}${lastPct.toFixed(1)}%)</b> vs target on ${esc(last.label||"")}.${catchCap}</div>
     </div>`;
 }
 function mdInline(s){return esc(s).replace(/\*\*(.+?)\*\*/g,"<b>$1</b>").replace(/`([^`]+)`/g,"<code>$1</code>");}
@@ -1579,7 +1579,7 @@ function computeProjection(kpis){
   if(mtd==null||daysRemain==null)return null;
   const total=prodMonthTotalDays(),elapsed=total-daysRemain;
   if(elapsed<=0)return null;
-  const monthlyTarget=PLAN_MONTHLY_BCM;
+  const monthlyTarget=(insightsData&&insightsData.plan&&insightsData.plan.monthlyTarget)||PLAN_MONTHLY_BCM; // plan of record from insights.json
   const pace=mtd/elapsed,proj=pace*total;
   // Catch-up weighted for Fridays (single/shift-change day = half a day's target). Remaining
   // effective days = full days + half the Fridays, so you need MORE on a full day and half that
