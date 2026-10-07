@@ -1,25 +1,31 @@
 {
-  "generatedAt": "2026-10-07T11:32:47",
-  "date": "2026-10-06",
+  "generatedAt": "2026-10-07T16:10:49",
+  "date": "2026-10-07",
   "runNumber": null,
-  "summary": "1. Part C: Task Feedback Log queried for any row without Status = Processed; none found, no open question resolved, no mismatch. 2. Part D: 29 Notes & References rows scanned; two new mining pages ingested (Night Shift Handover Summary Oct 5, Day Shift Notes Oct 6); the rest already in RAW or non-mining. 3. Articles updated (Last updated 2026-10-06): daily-production-report, fleet-availability-utilization, survey-volume-reconciliation, dump-management, safety-inspection-patterns, workshop-maintenance-planning, tire-damage-cost-pattern, 2027-fleet-budget-capacity-plan, blasting-and-drilling, lhd-cycle-evaluation, grading-and-road-construction. 4. Key findings Survey for Oct 5: trucks 25,451 BCM, survey 19,036 BCM, -6,415 BCM (-33.7%). 5. Cumulative gap -27,494 BCM (-14.3%, about 74,200 t), up from -21,079. 6. Survey MTD is 32.1% of plan; 21,406 BCM/day needed for the remaining 19 days. 7. EX340 and EX398 were loading outside the survey area. 8. Oct 5 was 68,700 t against a 70,000 t target in the HOD meeting; the Client Meeting Report uses a 58,771 t target for the same day. 9. Different targets in different documents; task filed. South Dump berm still below 1 m on Oct 6 and not fixed overnight; re-survey agreed for the afternoon. If the 1.5 m standard Peter fears is in use, all 12 Oct 4 survey points fail. EX340 stood by 3.3 h (about 1,340 BCM / 3,620 t at 403 BCM/h) and goes into a 12 h service (about 4,840 BCM / 13,060 t, planned). EX123 returned and EX263 went down on Oct 6, so excavator count is unchanged. The service is a 1,000 h service per the workshop plan and the HOD meeting; the voice memo says 2,000 h. Only grader operator resigned; tire supply has been \"firefighting\" for about eight weeks. Budget meeting: need 25 running trucks against 24, about 26 more people, contract specs not met (explosive capacity 18,000 L vs 40,000 L, no 6x6 bomb trucks, 2.5 m berm clause written for 785/789 trucks). Not resolved: Oct 5 broken stock (the .msg could not be opened); EX262 hourly rate for converting cycle overrun and drill standby to BCM. Duplicates searched first (an existing task covers fixing the berm height). ---",
+  "summary": "1. The new Maaden Plans Week 41+42 bundle (biweekly plan deck, drilling/blasting PDF, floor compliance map, blocks DXF/STR, planning email) landed in the same window but was not registered or read this pass; it sits outside the daily dashboard compile's scope and is left for the next full or delta compile. 2. Register updated in `RAW/_INGESTED.md`. 3. Articles updated (Last updated 2026-10-07): survey-volume-reconciliation. daily-production-report gained a short addendum (distance cross-check, three new dig plans); its dashboard KPIs are unchanged from the morning pass. 4. Key operational findings Three things from the Oct 6 survey reading: 1. 5. The daily truck-survey gap narrowed to -723 BCM (-3.28%), the tightest since Oct 1, continuing two straight days of improvement after Oct 4's -8,532 BCM and Oct 5's -6,415 BCM; only one excavator (EX-398) was flagged loading outside the survey calculation area, down from four on Oct 4 and two on Oct 5, consistent with Stage 4's reopening spreading loading back across more of the surveyed face. 2. 6. The cumulative Oct 1-6 gap is -28,217 BCM (-13.19%, about 76,186 t), survey MTD 213,955 BCM against a 598,598 BCM monthly plan (35.74% achieved), 18 days left at 21,369 BCM/day needed for Oct 8. 3. 7. The mineable-area plan now shows about 201,284 BCM remaining across 20 blocks, down from about 220,500 BCM on the Oct 5 plan: at the current survey rate that is roughly 9-10 days of reserve, tighter than the 18 calendar days left in the production cycle, because the block plan measures remaining reserve rather than the monthly BCM target. 8. Three new grade control dig plans opened on block 730, not yet mined: 730-176 (730-725 m bench: MG 617 BCM at 1.02 g/t, LG 516 BCM at 0.73 g/t; 725-720 m bench: LG 156 BCM at 0.64 g/t) and 730-186 (730-725 m bench: LG 1,141 BCM at 0.88 g/t). 9. Combined ore across the three plans is small (about 2,430 BCM) against about 12,770 BCM of waste. This is the first grade control work logged on either block. Broken stock remains unresolved. The 261007-broken stock.msg table is an image, the same limitation as the 261005 and 261006 broken-stock emails; the open question on reconciling the Client Meeting Report's and Drill Meters workbook's figures carries forward unchanged. Source: KNOWLEDGE/mining_operations_kb/RAW via the librarian compile protocol.",
   "kpis": [
     {
       "label": "MTD BCM",
-      "value": "219,387",
-      "delta": "+0.8% vs target",
+      "value": "242,172",
+      "delta": "+1.1% vs target",
       "good": true
     },
     {
       "label": "Survey Gap",
-      "value": "-12.2%",
+      "value": "-13.2%",
       "delta": "survey vs trucks MTD",
       "good": false
     },
     {
+      "label": "Crusher MTD",
+      "value": "20%",
+      "delta": "9,753 / 124,000 LCM",
+      "good": null
+    },
+    {
       "label": "Days Remain",
-      "value": "19",
-      "delta": "after 5 Oct",
+      "value": "18",
+      "delta": "after 6 Oct",
       "good": null
     }
   ],
@@ -100,14 +106,21 @@
       "actual": 25451,
       "target": 21767,
       "half": false
+    },
+    {
+      "date": "2026-10-06",
+      "label": "6 Oct",
+      "actual": 22785,
+      "target": 21767,
+      "half": false
     }
   ],
   "fleet": {
-    "availDaily": "88.06%",
-    "availMtd": "86.88%",
+    "availDaily": "87.37%",
+    "availMtd": "86.96%",
     "exAvail": "47.9%",
     "exUnits": 6,
-    "dtAvail": "91.55%",
+    "dtAvail": "92.02%",
     "dtUnits": 21,
     "excavators": [
       {
@@ -140,14 +153,14 @@
   },
   "equipment": [
     {
-      "unit": "DR-140",
-      "type": "Drill",
+      "unit": "EX-253",
+      "type": "Excavator",
       "status": "down",
       "avail": "0.0%",
       "util": "",
       "bd_hrs": "",
-      "note": "",
-      "comment": "Feed Cylinder Oil Leaking"
+      "note": "at the 353.0 BCM/h five-unit average; the 67 truck hours at the Client Meeting Report's 60.44 BCM/h fleet rate",
+      "comment": "Hydraulic Oil Leakage"
     },
     {
       "unit": "DT-107",
@@ -156,8 +169,18 @@
       "avail": "0.0%",
       "util": "",
       "bd_hrs": "",
-      "note": "",
+      "note": "24 h, engine coolant temperature high since 24-Sep (day 13 of this outage).",
       "comment": "Engine Coolant Temperature High"
+    },
+    {
+      "unit": "DR-140",
+      "type": "Drill",
+      "status": "down",
+      "avail": "0.0%",
+      "util": "",
+      "bd_hrs": "",
+      "note": "",
+      "comment": "Feed Cylinder Oil Leaking"
     },
     {
       "unit": "LV-047",
@@ -190,16 +213,6 @@
       "comment": "Engine Cannot Start"
     },
     {
-      "unit": "EX-340",
-      "type": "Excavator",
-      "status": "down",
-      "avail": "52.1%",
-      "util": "",
-      "bd_hrs": "",
-      "note": "",
-      "comment": "Bucket Safety Guard Missing"
-    },
-    {
       "unit": "WL-101",
       "type": "Wheel Loader",
       "status": "down",
@@ -210,23 +223,13 @@
       "comment": "Axel Oil Temperature High"
     },
     {
-      "unit": "EX-253",
-      "type": "Excavator",
-      "status": "warning",
-      "avail": "0.0%",
-      "util": "",
-      "bd_hrs": "",
-      "note": "",
-      "comment": "Hydraulic Oil Leakage"
-    },
-    {
       "unit": "EX-263",
       "type": "Excavator",
       "status": "warning",
       "avail": "0.0%",
       "util": "",
       "bd_hrs": "",
-      "note": "",
+      "note": "'s fault (engine coolant low / low power) is new as of 05-Oct; confirm with the workshop whether this is the s",
       "comment": "Engine Coolant Level Low Warning"
     },
     {
@@ -290,14 +293,14 @@
       "comment": "Tire Air Pressure Low"
     },
     {
-      "unit": "DT-282",
-      "type": "Haul Truck",
+      "unit": "EX-262",
+      "type": "Excavator",
       "status": "warning",
       "avail": "93.8%",
       "util": "",
       "bd_hrs": "",
-      "note": "",
-      "comment": "Transmission Warning"
+      "note": "1.5 h: windscreen broken (7:00-7:30 AM) then A/C not working (1:30-2:30 PM).",
+      "comment": "Windsreen Broken"
     },
     {
       "unit": "EX-247",
@@ -306,18 +309,18 @@
       "avail": "93.8%",
       "util": "",
       "bd_hrs": "",
-      "note": "",
+      "note": "1.5 h: daily check and a missing GET tooth (7:00-7:30 AM) then coolant level low (3:30-4:30 PM).",
       "comment": "A/C Fan toomuch Noise"
     },
     {
-      "unit": "EX-262",
-      "type": "Excavator",
+      "unit": "DT-282",
+      "type": "Haul Truck",
       "status": "warning",
       "avail": "93.8%",
       "util": "",
       "bd_hrs": "",
       "note": "",
-      "comment": "Windsreen Broken"
+      "comment": "Transmission Warning"
     },
     {
       "unit": "DT-106",
@@ -346,7 +349,17 @@
       "avail": "97.9%",
       "util": "",
       "bd_hrs": "",
-      "note": "down the full day, so the swap happened on the morning of Oct 6; the Oct 6 report will settle it. Excavators w",
+      "note": "'s resolved fault or unrelated.",
+      "comment": ""
+    },
+    {
+      "unit": "EX-398",
+      "type": "Excavator",
+      "status": "warning",
+      "avail": "97.9%",
+      "util": "",
+      "bd_hrs": "",
+      "note": "0.5 h: daily check only.",
       "comment": ""
     },
     {
@@ -400,6 +413,16 @@
       "comment": "Fuel Pump Faulty"
     },
     {
+      "unit": "EX-340",
+      "type": "Excavator",
+      "status": "scheduled",
+      "avail": "52.1%",
+      "util": "",
+      "bd_hrs": "",
+      "note": "'s 1,000 h service and bucket-guard stop are both still open past midnight into 07-Oct; confirm closure time o",
+      "comment": "Bucket Safety Guard Missing"
+    },
+    {
       "unit": "DZ-279",
       "type": "Track Dozer",
       "status": "scheduled",
@@ -426,47 +449,29 @@
     "monthlyTarget": 598598,
     "normalTarget": 21767,
     "fridayTarget": 10884,
-    "lastReported": "2026-10-05",
-    "lastLabel": "5 Oct",
-    "mtd": 219387.0,
-    "targetToDate": 217672,
-    "trendSum": 219387,
-    "daysRemain": 19,
-    "normalRemain": 16,
+    "lastReported": "2026-10-06",
+    "lastLabel": "6 Oct",
+    "mtd": 242172.0,
+    "targetToDate": 239439,
+    "trendSum": 242172,
+    "daysRemain": 18,
+    "normalRemain": 15,
     "fridaysRemain": 3,
-    "remainingBcm": 379211,
-    "requiredNormal": 21669,
-    "requiredFriday": 10835
+    "remainingBcm": 356426,
+    "requiredNormal": 21602,
+    "requiredFriday": 10801
   },
   "followUps": [
     {
-      "priority": "HIGH",
-      "title": "EX-123's fault description still conflicts across reports (fifth report)",
-      "body": "Recommend confirming with the workshop which stoppage is current.",
-      "action": ""
-    },
-    {
       "priority": "MONITOR",
-      "title": "Production recovery meeting with the Project Manager on Oct 7 afternoon,...",
+      "title": "Three new grade control dig plans opened on block 730, not yet mined: 73...",
       "body": "",
       "action": ""
     },
     {
       "priority": "MONITOR",
-      "title": "Truck availability conflicts between sources: Client Meeting Report 96.0...",
-      "body": "",
-      "action": ""
-    },
-    {
-      "priority": "MONITOR",
-      "title": "Broken stock does not roll forward",
-      "body": "Neither Oct 4 opening figure (209,250 BCM Client Meeting Report, 144,866 BCM Drill Meters) plus the 38,513 BCM blast less 25,451 BCM mined gives the 194,039 BCM reported for Oct 5. Confirm the opening figure with Survey and Drill.",
-      "action": ""
-    },
-    {
-      "priority": "MONITOR",
-      "title": "Dashboard KPI wording: the Oct 4 section dropped the publish phrasings u...",
-      "body": "",
+      "title": "Broken stock remains unresolved",
+      "body": "The 261007-broken stock.msg table is an image, the same limitation as the 261005 and 261006 broken-stock emails; the open question on reconciling the Client Meeting Report's and Drill Meters workbook's figures carries forward unchanged.",
       "action": ""
     }
   ]
