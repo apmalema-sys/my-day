@@ -1,13 +1,14 @@
 {
-  "date": "2026-10-06",
-  "topic": "Mining Projects Register",
-  "title": "Mining Projects Register",
-  "body": "Projects with no date, no owner, or two different targets drift without anyone noticing. At ADW, Go-Line and the A&U training are both past their end dates with nothing started, and the 2026 target still reads 20 Mt on one page and 21 Mt on another.",
+  "date": "2026-10-07",
+  "topic": "Mobile equipment operations",
+  "title": "Mobile equipment operations",
+  "body": "Refuelling and boarding are where small habits turn into fires, falls and equipment damage at ADW. The refuelling area has already produced four separate near-miss and overflow events, all with the same gap: nobody supervising the basics.",
   "keyPoints": [
-    "A target only counts once it's settled in one place. Until Peter confirms whether 2026 is 20 Mt or 21 Mt, don't quote either figure to Maaden or use it for a year-end gap.",
-    "Every open item needs a date and an owner. Go-Line's four tasks are unstarted past their Sep 30 end date, and all eight A&U training days are still Not started past Sep 22. If a task has slipped past its end date, reset it today or call it dropped.",
-    "Get the decision on record. Stage 6 Early Start is worth about 333,000 t a month, but Notion has no decision, and the recommendation task is still open. Whatever gets approved needs a compliant second egress, a 10% ramp gradient (12% temporary), and catchment and berms in place before a bench opens."
+    "Refuelling: engine off, ignition off, key out before the nozzle goes in. No smoking, no open flames and no phone in use inside the demarcated zone.",
+    "Spill control is part of the job, not a backup. Drip trays and absorbent material in place, and you know the spill response before you need it.",
+    "Boarding: three points of contact every time. Face the machine, never jump, and don't carry items in your hands. Use a lanyard or the cab hoist.",
+    "Dozing: doze in 1st gear and return in 2nd. Come to a full stop before changing from forward to reverse, and steer with blade tilt when the blade is loaded."
   ],
-  "apply": "The fuel bay had no power on Oct 1 and trucks were sent to the North Go-Line point. Expect fueling delays and queuing at shift change until the second container and the traffic change at that point are actually in place.",
-  "generatedAt": "2026-10-06T10:45:05"
+  "apply": "Before your first fuel stop, check the North Go-Line refuelling point: engine off, a spotter or attendant in place, and drip trays down. That bay has had queues and supply delays recently, and that's when steps get skipped.",
+  "generatedAt": "2026-10-07T11:47:46"
 }
