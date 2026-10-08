@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-07T16:10:49",
+  "generatedAt": "2026-10-08T11:32:50",
   "date": "2026-10-07",
   "runNumber": null,
   "summary": "1. The new Maaden Plans Week 41+42 bundle (biweekly plan deck, drilling/blasting PDF, floor compliance map, blocks DXF/STR, planning email) landed in the same window but was not registered or read this pass; it sits outside the daily dashboard compile's scope and is left for the next full or delta compile. 2. Register updated in `RAW/_INGESTED.md`. 3. Articles updated (Last updated 2026-10-07): survey-volume-reconciliation. daily-production-report gained a short addendum (distance cross-check, three new dig plans); its dashboard KPIs are unchanged from the morning pass. 4. Key operational findings Three things from the Oct 6 survey reading: 1. 5. The daily truck-survey gap narrowed to -723 BCM (-3.28%), the tightest since Oct 1, continuing two straight days of improvement after Oct 4's -8,532 BCM and Oct 5's -6,415 BCM; only one excavator (EX-398) was flagged loading outside the survey calculation area, down from four on Oct 4 and two on Oct 5, consistent with Stage 4's reopening spreading loading back across more of the surveyed face. 2. 6. The cumulative Oct 1-6 gap is -28,217 BCM (-13.19%, about 76,186 t), survey MTD 213,955 BCM against a 598,598 BCM monthly plan (35.74% achieved), 18 days left at 21,369 BCM/day needed for Oct 8. 3. 7. The mineable-area plan now shows about 201,284 BCM remaining across 20 blocks, down from about 220,500 BCM on the Oct 5 plan: at the current survey rate that is roughly 9-10 days of reserve, tighter than the 18 calendar days left in the production cycle, because the block plan measures remaining reserve rather than the monthly BCM target. 8. Three new grade control dig plans opened on block 730, not yet mined: 730-176 (730-725 m bench: MG 617 BCM at 1.02 g/t, LG 516 BCM at 0.73 g/t; 725-720 m bench: LG 156 BCM at 0.64 g/t) and 730-186 (730-725 m bench: LG 1,141 BCM at 0.88 g/t). 9. Combined ore across the three plans is small (about 2,430 BCM) against about 12,770 BCM of waste. This is the first grade control work logged on either block. Broken stock remains unresolved. The 261007-broken stock.msg table is an image, the same limitation as the 261005 and 261006 broken-stock emails; the open question on reconciling the Client Meeting Report's and Drill Meters workbook's figures carries forward unchanged. Source: KNOWLEDGE/mining_operations_kb/RAW via the librarian compile protocol.",
@@ -118,18 +118,18 @@
   "fleet": {
     "availDaily": "87.37%",
     "availMtd": "86.96%",
-    "exAvail": "47.9%",
+    "exAvail": "56.3%",
     "exUnits": 6,
     "dtAvail": "92.02%",
     "dtUnits": 21,
     "excavators": [
       {
         "unit": "EX-340",
-        "avail": "52.1%"
+        "avail": "91.7%"
       },
       {
         "unit": "EX-262",
-        "avail": "93.8%"
+        "avail": "97.9%"
       },
       {
         "unit": "EX-253",
@@ -141,7 +141,7 @@
       },
       {
         "unit": "EX-247",
-        "avail": "93.8%"
+        "avail": "91.7%"
       },
       {
         "unit": "EX-1200",
@@ -149,28 +149,18 @@
       }
     ],
     "exBasis": "5/6",
-    "pdfDate": "06-10"
+    "pdfDate": "07-10"
   },
   "equipment": [
     {
-      "unit": "EX-253",
+      "unit": "EX-263",
       "type": "Excavator",
       "status": "down",
       "avail": "0.0%",
       "util": "",
       "bd_hrs": "",
-      "note": "at the 353.0 BCM/h five-unit average; the 67 truck hours at the Client Meeting Report's 60.44 BCM/h fleet rate",
-      "comment": "Hydraulic Oil Leakage"
-    },
-    {
-      "unit": "DT-107",
-      "type": "Haul Truck",
-      "status": "down",
-      "avail": "0.0%",
-      "util": "",
-      "bd_hrs": "",
-      "note": "24 h, engine coolant temperature high since 24-Sep (day 13 of this outage).",
-      "comment": "Engine Coolant Temperature High"
+      "note": "arrived at the workshop about 22:00-23:00 on Oct 5 for washing and engine strip.",
+      "comment": "Engine Coolant Level Low Warning"
     },
     {
       "unit": "DR-140",
@@ -183,64 +173,114 @@
       "comment": "Feed Cylinder Oil Leaking"
     },
     {
+      "unit": "DT-107",
+      "type": "Haul Truck",
+      "status": "down",
+      "avail": "0.0%",
+      "util": "",
+      "bd_hrs": "",
+      "note": "",
+      "comment": "Engine Coolant Temperature High"
+    },
+    {
       "unit": "LV-047",
       "type": "",
       "status": "down",
-      "avail": "2.1%",
+      "avail": "0.0%",
       "util": "",
       "bd_hrs": "",
       "note": "",
       "comment": "Tyre Flat # 04"
     },
     {
-      "unit": "DT-110",
-      "type": "Haul Truck",
+      "unit": "EX-102",
+      "type": "Excavator",
       "status": "down",
-      "avail": "33.3%",
+      "avail": "41.7%",
       "util": "",
       "bd_hrs": "",
       "note": "",
-      "comment": "Tire Rotation"
+      "comment": "Hammer Low Power"
     },
     {
-      "unit": "DT-347",
-      "type": "Haul Truck",
+      "unit": "WL-295",
+      "type": "Wheel Loader",
       "status": "down",
-      "avail": "52.1%",
+      "avail": "41.7%",
       "util": "",
       "bd_hrs": "",
       "note": "",
-      "comment": "Engine Cannot Start"
+      "comment": "Gear Problem"
     },
     {
-      "unit": "WL-101",
+      "unit": "DR-341",
+      "type": "Drill",
+      "status": "down",
+      "avail": "79.2%",
+      "util": "",
+      "bd_hrs": "",
+      "note": "",
+      "comment": "Suction Head Cylinder Leaking"
+    },
+    {
+      "unit": "DZ-280",
+      "type": "Track Dozer",
+      "status": "down",
+      "avail": "83.3%",
+      "util": "",
+      "bd_hrs": "",
+      "note": "",
+      "comment": "Cutting Edge Change Out"
+    },
+    {
+      "unit": "WL-329",
       "type": "Wheel Loader",
       "status": "down",
       "avail": "87.5%",
       "util": "",
       "bd_hrs": "",
       "note": "",
-      "comment": "Axel Oil Temperature High"
+      "comment": "Adaptor Bolt Missing and Welding  Job"
     },
     {
-      "unit": "EX-263",
-      "type": "Excavator",
+      "unit": "DT-245",
+      "type": "Haul Truck",
+      "status": "down",
+      "avail": "89.6%",
+      "util": "",
+      "bd_hrs": "",
+      "note": "",
+      "comment": "Greasing"
+    },
+    {
+      "unit": "WT-304",
+      "type": "Water Truck",
+      "status": "down",
+      "avail": "89.6%",
+      "util": "",
+      "bd_hrs": "",
+      "note": "",
+      "comment": "Water Pump Not Start"
+    },
+    {
+      "unit": "DT-108",
+      "type": "Haul Truck",
       "status": "warning",
       "avail": "0.0%",
       "util": "",
       "bd_hrs": "",
-      "note": "'s fault (engine coolant low / low power) is new as of 05-Oct; confirm with the workshop whether this is the s",
-      "comment": "Engine Coolant Level Low Warning"
+      "note": "",
+      "comment": "Transmission Problem  (Troubleshooting )"
     },
     {
-      "unit": "EX-326",
+      "unit": "EX-253",
       "type": "Excavator",
       "status": "warning",
       "avail": "0.0%",
       "util": "",
       "bd_hrs": "",
       "note": "",
-      "comment": ""
+      "comment": "Hydraulic Oil Leakage"
     },
     {
       "unit": "WD-145",
@@ -253,104 +293,84 @@
       "comment": "Front Axle Brakes worn out"
     },
     {
-      "unit": "DT-128",
+      "unit": "DT-129",
       "type": "Haul Truck",
       "status": "warning",
-      "avail": "52.1%",
+      "avail": "50.0%",
       "util": "",
       "bd_hrs": "",
       "note": "",
-      "comment": "A/C Fan Problem"
+      "comment": ""
     },
     {
-      "unit": "WL-295",
-      "type": "Wheel Loader",
+      "unit": "DR-125",
+      "type": "Drill",
       "status": "warning",
-      "avail": "52.1%",
+      "avail": "79.2%",
       "util": "",
       "bd_hrs": "",
       "note": "",
-      "comment": "Air Filter Warning"
+      "comment": "Hydraulic Oil Leaking"
     },
     {
-      "unit": "DT-108",
-      "type": "Haul Truck",
+      "unit": "EX-247",
+      "type": "Excavator",
       "status": "warning",
-      "avail": "83.3%",
+      "avail": "91.7%",
       "util": "",
       "bd_hrs": "",
-      "note": "",
-      "comment": "Transmission Problem"
+      "note": "broken track light bolts (temporary weld).",
+      "comment": "Track Welding Job"
     },
     {
-      "unit": "DT-344",
+      "unit": "EX-340",
+      "type": "Excavator",
+      "status": "warning",
+      "avail": "91.7%",
+      "util": "",
+      "bd_hrs": "",
+      "note": "PC2000 on the first bench ([[night-shift-handover-summary-2026-10-06_2026-10-07]]).",
+      "comment": "Hydraulic Oil Leaking"
+    },
+    {
+      "unit": "DT-106",
       "type": "Haul Truck",
       "status": "warning",
       "avail": "91.7%",
       "util": "",
       "bd_hrs": "",
       "note": "",
-      "comment": "Tire Air Pressure Low"
+      "comment": "Seat Belt Not Good"
     },
     {
-      "unit": "EX-262",
-      "type": "Excavator",
+      "unit": "WL-101",
+      "type": "Wheel Loader",
       "status": "warning",
-      "avail": "93.8%",
-      "util": "",
-      "bd_hrs": "",
-      "note": "1.5 h: windscreen broken (7:00-7:30 AM) then A/C not working (1:30-2:30 PM).",
-      "comment": "Windsreen Broken"
-    },
-    {
-      "unit": "EX-247",
-      "type": "Excavator",
-      "status": "warning",
-      "avail": "93.8%",
-      "util": "",
-      "bd_hrs": "",
-      "note": "1.5 h: daily check and a missing GET tooth (7:00-7:30 AM) then coolant level low (3:30-4:30 PM).",
-      "comment": "A/C Fan toomuch Noise"
-    },
-    {
-      "unit": "DT-282",
-      "type": "Haul Truck",
-      "status": "warning",
-      "avail": "93.8%",
+      "avail": "91.7%",
       "util": "",
       "bd_hrs": "",
       "note": "",
-      "comment": "Transmission Warning"
-    },
-    {
-      "unit": "DT-106",
-      "type": "Haul Truck",
-      "status": "warning",
-      "avail": "95.8%",
-      "util": "",
-      "bd_hrs": "",
-      "note": "",
-      "comment": "A/C Not Working"
-    },
-    {
-      "unit": "LT-118",
-      "type": "",
-      "status": "warning",
-      "avail": "95.8%",
-      "util": "",
-      "bd_hrs": "",
-      "note": "",
-      "comment": "Faulty for Light"
+      "comment": "Air Filter Warning"
     },
     {
       "unit": "EX-123",
       "type": "Excavator",
       "status": "warning",
+      "avail": "93.8%",
+      "util": "",
+      "bd_hrs": "",
+      "note": "PC2000 on the first bench ([[night-shift-handover-summary-2026-10-06_2026-10-07]]).",
+      "comment": ""
+    },
+    {
+      "unit": "EX-262",
+      "type": "Excavator",
+      "status": "warning",
       "avail": "97.9%",
       "util": "",
       "bd_hrs": "",
-      "note": "'s resolved fault or unrelated.",
-      "comment": ""
+      "note": "joystick pilot-line leak, can run until lunch.",
+      "comment": "A/C Not Good"
     },
     {
       "unit": "EX-398",
@@ -359,8 +379,18 @@
       "avail": "97.9%",
       "util": "",
       "bd_hrs": "",
-      "note": "0.5 h: daily check only.",
+      "note": "PC2000 on the first bench ([[night-shift-handover-summary-2026-10-06_2026-10-07]]).",
       "comment": ""
+    },
+    {
+      "unit": "DT-282",
+      "type": "Haul Truck",
+      "status": "warning",
+      "avail": "97.9%",
+      "util": "",
+      "bd_hrs": "",
+      "note": "",
+      "comment": "Tyre Air Pressure Low"
     },
     {
       "unit": "FT-144",
@@ -393,16 +423,6 @@
       "comment": "Engine Failure"
     },
     {
-      "unit": "WL-329",
-      "type": "Wheel Loader",
-      "status": "warning",
-      "avail": "100.0%",
-      "util": "",
-      "bd_hrs": "",
-      "note": "",
-      "comment": "Steering Cover Bolt Loose"
-    },
-    {
       "unit": "ACN-018",
       "type": "",
       "status": "warning",
@@ -411,26 +431,6 @@
       "bd_hrs": "",
       "note": "",
       "comment": "Fuel Pump Faulty"
-    },
-    {
-      "unit": "EX-340",
-      "type": "Excavator",
-      "status": "scheduled",
-      "avail": "52.1%",
-      "util": "",
-      "bd_hrs": "",
-      "note": "'s 1,000 h service and bucket-guard stop are both still open past midnight into 07-Oct; confirm closure time o",
-      "comment": "Bucket Safety Guard Missing"
-    },
-    {
-      "unit": "DZ-279",
-      "type": "Track Dozer",
-      "status": "scheduled",
-      "avail": "95.8%",
-      "util": "",
-      "bd_hrs": "",
-      "note": "",
-      "comment": "Track Shoe Fixing"
     },
     {
       "unit": "DT-79",
