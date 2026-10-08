@@ -1,14 +1,15 @@
 {
-  "date": "2026-10-07",
-  "topic": "Mobile equipment operations",
-  "title": "Mobile equipment operations",
-  "body": "Refuelling and boarding are where small habits turn into fires, falls and equipment damage at ADW. The refuelling area has already produced four separate near-miss and overflow events, all with the same gap: nobody supervising the basics.",
+  "date": "2026-10-08",
+  "topic": "Production Data Stack",
+  "title": "Production Data Stack",
+  "body": "When a number looks wrong at ADW — low utilization, a crusher stoppage, a drilling miss — the knee-jerk move is to argue about the headline figure. That's wasted time if you haven't checked which layer of the data actually broke.",
   "keyPoints": [
-    "Refuelling: engine off, ignition off, key out before the nozzle goes in. No smoking, no open flames and no phone in use inside the demarcated zone.",
-    "Spill control is part of the job, not a backup. Drip trays and absorbent material in place, and you know the spill response before you need it.",
-    "Boarding: three points of contact every time. Face the machine, never jump, and don't carry items in your hands. Use a lanyard or the cab hoist.",
-    "Dozing: doze in 1st gear and return in 2nd. Come to a full stop before changing from forward to reverse, and steer with blade tilt when the blade is loaded."
+    "Four workbooks measure the same day from different depths: running-hours log (raw meter/diesel), A&U (productive vs standby split), daily report (KPI summary), INX-SUM survey (independent ground-truth check). Each layer strips out something the one below kept.",
+    "The running-hours log total should sit 80–150 machine-hours above A&U operating hours per day — that's meal, prayer, and refuel time being reclassified out, not noise. If the gap is way off that range, something's miscoded before you even look at ratios.",
+    "A high truck count with a low survey number doesn't mean the fleet underperformed — it usually means loading happened outside the survey calculation area. Check loading position before you blame production.",
+    "When investigating a flagged number, read down the stack in order: daily report (what/when) → A&U (which unit, which reason column) → running-hours log (raw hours, diesel, operator Emp. No) → INX-SUM (ground-truth check if the total looks off).",
+    "Diesel burn out of ratio with running hours in the hours log is an early fault signal — it shows up there before it ever becomes a breakdown reason in A&U."
   ],
-  "apply": "Before your first fuel stop, check the North Go-Line refuelling point: engine off, a spotter or attendant in place, and drip trays down. That bay has had queues and supply delays recently, and that's when steps get skipped.",
-  "generatedAt": "2026-10-07T11:47:46"
+  "apply": "If a unit's utilization looks low in the morning numbers, don't stop at the A&U percentage — pull the reason column and cross-check it against the running-hours log before you raise it in the client meeting.",
+  "generatedAt": "2026-10-08T12:04:34"
 }
