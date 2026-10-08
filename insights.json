@@ -1,31 +1,25 @@
 {
-  "generatedAt": "2026-10-08T11:32:50",
-  "date": "2026-10-07",
+  "generatedAt": "2026-10-08T15:47:23",
+  "date": "2026-10-08",
   "runNumber": null,
-  "summary": "1. The new Maaden Plans Week 41+42 bundle (biweekly plan deck, drilling/blasting PDF, floor compliance map, blocks DXF/STR, planning email) landed in the same window but was not registered or read this pass; it sits outside the daily dashboard compile's scope and is left for the next full or delta compile. 2. Register updated in `RAW/_INGESTED.md`. 3. Articles updated (Last updated 2026-10-07): survey-volume-reconciliation. daily-production-report gained a short addendum (distance cross-check, three new dig plans); its dashboard KPIs are unchanged from the morning pass. 4. Key operational findings Three things from the Oct 6 survey reading: 1. 5. The daily truck-survey gap narrowed to -723 BCM (-3.28%), the tightest since Oct 1, continuing two straight days of improvement after Oct 4's -8,532 BCM and Oct 5's -6,415 BCM; only one excavator (EX-398) was flagged loading outside the survey calculation area, down from four on Oct 4 and two on Oct 5, consistent with Stage 4's reopening spreading loading back across more of the surveyed face. 2. 6. The cumulative Oct 1-6 gap is -28,217 BCM (-13.19%, about 76,186 t), survey MTD 213,955 BCM against a 598,598 BCM monthly plan (35.74% achieved), 18 days left at 21,369 BCM/day needed for Oct 8. 3. 7. The mineable-area plan now shows about 201,284 BCM remaining across 20 blocks, down from about 220,500 BCM on the Oct 5 plan: at the current survey rate that is roughly 9-10 days of reserve, tighter than the 18 calendar days left in the production cycle, because the block plan measures remaining reserve rather than the monthly BCM target. 8. Three new grade control dig plans opened on block 730, not yet mined: 730-176 (730-725 m bench: MG 617 BCM at 1.02 g/t, LG 516 BCM at 0.73 g/t; 725-720 m bench: LG 156 BCM at 0.64 g/t) and 730-186 (730-725 m bench: LG 1,141 BCM at 0.88 g/t). 9. Combined ore across the three plans is small (about 2,430 BCM) against about 12,770 BCM of waste. This is the first grade control work logged on either block. Broken stock remains unresolved. The 261007-broken stock.msg table is an image, the same limitation as the 261005 and 261006 broken-stock emails; the open question on reconciling the Client Meeting Report's and Drill Meters workbook's figures carries forward unchanged. Source: KNOWLEDGE/mining_operations_kb/RAW via the librarian compile protocol.",
+  "summary": "1. The October production, A&U, drilling and grade-control workbooks carry no new tab since this morning's pass and were not re-read. 2. Register updated in `RAW/_INGESTED.md`. 3. Articles updated (Last updated 2026-10-08): survey-volume-reconciliation (new section). daily-production-report gained a short addendum resolving its \"Oct 7 survey reading not yet in RAW\" note; its four dashboard KPIs are otherwise unchanged from this morning's pass. fleet-availability-utilization not touched — no new availability or running-hours data landed this pass. 4. Key operational findings The Oct 7 survey reading closed out at -1,810 BCM (-8.00%) against a 24,428 BCM trucked total, widening from Oct 6's -723 BCM but well inside the -6,000 to -8,500 BCM range seen Oct 4-5. 5. Three things to flag: 1. 6. The cumulative gap through day 13 of the 30-day cycle is now -30,027 BCM (-12.69%), survey MTD 236,573 BCM against the 598,598 BCM plan (39.52% achieved), with 362,025 BCM and 17 days left requiring 21,295.6 BCM/day from Oct 9. 2. 7. The October Monthly Production Plan, issued today, sets the cycle's total movement target at 661,986 BCM — 63,388 BCM above the 598,598 BCM the survey workbook's own Monthly Target cell still carries; the August and September plans both saw the workbook catch up within one to fifteen days of release, so this reads as a lag rather than a live conflict, but the dashboard's running percentages still sit on the old 598,598 BCM baseline until the workbook updates. 3. 8. Today's mineable-area PDF attachment did not extract as the usual per-block mined/remaining table — it reads as a general site facilities layout (workshop, yard, fuel storage). 9. Flagged as a possible wrong attachment on the survey team's side rather than compiled as block data. Two excavators (EX-123, EX-340) were named loading 75% outside the survey calculation area on Oct 7, more than Oct 6's single flagged unit, which tracks with the wider daily gap. The boundary-position pattern that has driven every swing this cycle continues to hold. The October Distance Report's \"Oct (7)\" tab populated today, confirming the haul set already carried from the Client Meeting Report and DPR: ore legs on 860-522-1 (2.8 km) and 735-161-1/2 (4.0 km), waste legs on the same two blocks plus 860-502-1/2, 860-503-1/2, 860-509-1/2 (2.9-3.0 km) and 735-185-1/2 (4.5 km). No figures changed; cross-check only. Two open questions carried into [[survey-volume-reconciliation]]: whether the survey workbook's Monthly Target cell updates to 661,986 BCM in the coming days, and whether today's mineable-area attachment was simply the wrong drawing. Source: KNOWLEDGE/mining_operations_kb/RAW via the librarian compile protocol.",
   "kpis": [
     {
       "label": "MTD BCM",
-      "value": "242,172",
-      "delta": "+1.1% vs target",
+      "value": "266,600",
+      "delta": "+2.1% vs target",
       "good": true
     },
     {
       "label": "Survey Gap",
-      "value": "-13.2%",
+      "value": "-12.7%",
       "delta": "survey vs trucks MTD",
       "good": false
     },
     {
-      "label": "Crusher MTD",
-      "value": "20%",
-      "delta": "9,753 / 124,000 LCM",
-      "good": null
-    },
-    {
       "label": "Days Remain",
-      "value": "18",
-      "delta": "after 6 Oct",
+      "value": "17",
+      "delta": "after 7 Oct",
       "good": null
     }
   ],
@@ -113,14 +107,21 @@
       "actual": 22785,
       "target": 21767,
       "half": false
+    },
+    {
+      "date": "2026-10-07",
+      "label": "7 Oct",
+      "actual": 24428,
+      "target": 21767,
+      "half": false
     }
   ],
   "fleet": {
-    "availDaily": "87.37%",
-    "availMtd": "86.96%",
+    "availDaily": "85.18%",
+    "availMtd": "86.71%",
     "exAvail": "56.3%",
     "exUnits": 6,
-    "dtAvail": "92.02%",
+    "dtAvail": "91.01%",
     "dtUnits": 21,
     "excavators": [
       {
@@ -153,14 +154,14 @@
   },
   "equipment": [
     {
-      "unit": "EX-263",
+      "unit": "EX-253",
       "type": "Excavator",
       "status": "down",
       "avail": "0.0%",
       "util": "",
       "bd_hrs": "",
-      "note": "arrived at the workshop about 22:00-23:00 on Oct 5 for washing and engine strip.",
-      "comment": "Engine Coolant Level Low Warning"
+      "note": "at the 362.7 BCM/h five-unit average; the 75.5 truck hours at the Client Meeting Report's 65.77 BCM/h fleet ra",
+      "comment": "Hydraulic Oil Leakage"
     },
     {
       "unit": "DR-140",
@@ -199,7 +200,7 @@
       "avail": "41.7%",
       "util": "",
       "bd_hrs": "",
-      "note": "",
+      "note": "both logged new breakdowns today with no recorded \"Date Out\" — both still open at report time; confirm closure",
       "comment": "Hammer Low Power"
     },
     {
@@ -209,7 +210,7 @@
       "avail": "41.7%",
       "util": "",
       "bd_hrs": "",
-      "note": "",
+      "note": "both logged new breakdowns today with no recorded \"Date Out\" — both still open at report time; confirm closure",
       "comment": "Gear Problem"
     },
     {
@@ -265,22 +266,22 @@
     {
       "unit": "DT-108",
       "type": "Haul Truck",
-      "status": "warning",
+      "status": "partial",
       "avail": "0.0%",
       "util": "",
       "bd_hrs": "",
-      "note": "",
+      "note": "'s transmission fault escalated from a 4 h partial stop (Oct 6) to a full 24 h breakdown (Oct 7); confirm with",
       "comment": "Transmission Problem  (Troubleshooting )"
     },
     {
-      "unit": "EX-253",
+      "unit": "EX-263",
       "type": "Excavator",
       "status": "warning",
       "avail": "0.0%",
       "util": "",
       "bd_hrs": "",
-      "note": "",
-      "comment": "Hydraulic Oil Leakage"
+      "note": "'s standing fault is now in its third full day down (since 05-Oct); no repair timeline given this pass.",
+      "comment": "Engine Coolant Level Low Warning"
     },
     {
       "unit": "WD-145",
@@ -313,23 +314,13 @@
       "comment": "Hydraulic Oil Leaking"
     },
     {
-      "unit": "EX-247",
-      "type": "Excavator",
-      "status": "warning",
-      "avail": "91.7%",
-      "util": "",
-      "bd_hrs": "",
-      "note": "broken track light bolts (temporary weld).",
-      "comment": "Track Welding Job"
-    },
-    {
       "unit": "EX-340",
       "type": "Excavator",
       "status": "warning",
       "avail": "91.7%",
       "util": "",
       "bd_hrs": "",
-      "note": "PC2000 on the first bench ([[night-shift-handover-summary-2026-10-06_2026-10-07]]).",
+      "note": "2 h: hydraulic oil leaking (7:00-8:00 AM) then an A/C filter clean and noise complaint overnight into 08-Oct.",
       "comment": "Hydraulic Oil Leaking"
     },
     {
@@ -359,27 +350,7 @@
       "avail": "93.8%",
       "util": "",
       "bd_hrs": "",
-      "note": "PC2000 on the first bench ([[night-shift-handover-summary-2026-10-06_2026-10-07]]).",
-      "comment": ""
-    },
-    {
-      "unit": "EX-262",
-      "type": "Excavator",
-      "status": "warning",
-      "avail": "97.9%",
-      "util": "",
-      "bd_hrs": "",
-      "note": "joystick pilot-line leak, can run until lunch.",
-      "comment": "A/C Not Good"
-    },
-    {
-      "unit": "EX-398",
-      "type": "Excavator",
-      "status": "warning",
-      "avail": "97.9%",
-      "util": "",
-      "bd_hrs": "",
-      "note": "PC2000 on the first bench ([[night-shift-handover-summary-2026-10-06_2026-10-07]]).",
+      "note": "1.5 h: bucket not open, grease light, and the daily check, all planned on night shift (10:00-11:30 PM).",
       "comment": ""
     },
     {
@@ -391,6 +362,16 @@
       "bd_hrs": "",
       "note": "",
       "comment": "Tyre Air Pressure Low"
+    },
+    {
+      "unit": "EX-262",
+      "type": "Excavator",
+      "status": "warning",
+      "avail": "97.9%",
+      "util": "",
+      "bd_hrs": "",
+      "note": "",
+      "comment": "A/C Not Good"
     },
     {
       "unit": "FT-144",
@@ -433,6 +414,16 @@
       "comment": "Fuel Pump Faulty"
     },
     {
+      "unit": "EX-247",
+      "type": "Excavator",
+      "status": "scheduled",
+      "avail": "91.7%",
+      "util": "",
+      "bd_hrs": "",
+      "note": "2 h: undercarriage track welding (3:00-5:00 PM).",
+      "comment": "Track Welding Job"
+    },
+    {
       "unit": "DT-79",
       "type": "Haul Truck",
       "status": "scheduled",
@@ -449,29 +440,35 @@
     "monthlyTarget": 598598,
     "normalTarget": 21767,
     "fridayTarget": 10884,
-    "lastReported": "2026-10-06",
-    "lastLabel": "6 Oct",
-    "mtd": 242172.0,
-    "targetToDate": 239439,
-    "trendSum": 242172,
-    "daysRemain": 18,
-    "normalRemain": 15,
+    "lastReported": "2026-10-07",
+    "lastLabel": "7 Oct",
+    "mtd": 266600.0,
+    "targetToDate": 261206,
+    "trendSum": 266600,
+    "daysRemain": 17,
+    "normalRemain": 14,
     "fridaysRemain": 3,
-    "remainingBcm": 356426,
-    "requiredNormal": 21602,
-    "requiredFriday": 10801
+    "remainingBcm": 331998,
+    "requiredNormal": 21419,
+    "requiredFriday": 10710
   },
   "followUps": [
     {
       "priority": "MONITOR",
-      "title": "Three new grade control dig plans opened on block 730, not yet mined: 73...",
+      "title": "Two excavators (EX-123, EX-340) were named loading 75% outside the surve...",
       "body": "",
       "action": ""
     },
     {
       "priority": "MONITOR",
-      "title": "Broken stock remains unresolved",
-      "body": "The 261007-broken stock.msg table is an image, the same limitation as the 261005 and 261006 broken-stock emails; the open question on reconciling the Client Meeting Report's and Drill Meters workbook's figures carries forward unchanged.",
+      "title": "The October Distance Report's \"Oct (7)\" tab populated today, confirming ...",
+      "body": "",
+      "action": ""
+    },
+    {
+      "priority": "MONITOR",
+      "title": "Two open questions carried into [[survey-volume-reconciliation]]: whethe...",
+      "body": "",
       "action": ""
     }
   ]
