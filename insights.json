@@ -1,13 +1,13 @@
 {
-  "generatedAt": "2026-10-10T11:32:59",
-  "date": "2026-10-09",
+  "generatedAt": "2026-10-10T13:07:26",
+  "date": "2026-10-10",
   "runNumber": null,
-  "summary": "1. No new meeting notes. 2. All seven meetings created in the last 7 days (Oct 6-8) are already in RAW/Meeting Notes and registered. 3. Everything else carries mtimes already registered this morning. 4. Important References: re-checked, no new content this pass. 5. Task Feedback Log queried (All Feedback, newest first): the latest 30 rows are all Processed. 6. No open questions resolved, no mismatches, nothing to mark. 7. Notes & References scanned (36 rows). 8. One new item ingested: Incident Investigation - EX247 Handrail Damage (DT Reversing Contact), created Oct 9 12:44. 9. No ingested page was edited after its RAW copy. Non-mining rows skipped (mission statement, PARA, Essentialism, Dodoma refund letter, training handouts, prompt library, playbook, A3 scenario answers). Articles updated (Last updated 2026-10-09): fleet-availability-utilization, weekly-mining-plan, people-machinery-interaction, daily-production-report. FCST Weeks 42-43: 150,206 BCM (405,557 t) and 149,114 BCM (402,608 t), planned on five running excavators because EX-253 and EX-104 are at 0% and EX-263 is out Oct 11-15 for an engine blow-by. Week 42 sits within 0.1% of the Maaden deck's 405,223 t. The Week 42-43 Maaden deck is not in RAW yet. DT-275/276 show 85% in the rehandle group of the new grid but the Oct 8 A&U lists them as transferred to AJM; flagged. EX-247 handrail incident: truck reversed in before the excavator was ready. DT number, time, location, injuries and downtime are all unconfirmed, so no lost-hours conversion is possible yet; the per-hour rate for EX-247 (about 241 BCM / 651 t per hour) is recorded for when hours are known. One inbox task created in the Notion Tasks Database to confirm the incident facts (see captain's log).",
+  "summary": "1. No new survey reading (`261010-INX-SUM.xlsx`) has landed for Oct 9 production, so [[survey-volume-reconciliation]] carries no update this pass. 2. Articles updated (Last updated 2026-10-10): daily-production-report, fleet-availability-utilization. 3. Key operational findings Oct 9 posted 12,400 BCM against a 12,036.1 BCM target (+3.0%), the second daily beat in a row, narrowing MTD to 302,715 BCM against a 324,974.9 BCM target (-6.85%, up from Oct 8's -7.2%) at the fiscal cycle's exact halfway point (day 15 of 30, 15 days remaining). 4. Three things to flag: 1. 5. The ore shortfall eased slightly (MTD -49.52%, from Oct 8's -51.6%) as today's mix ran far more ore-heavy than Oct 8 — stripping ratio fell to 4.41 from 18.1 — but MTD ore is still the second-deepest gap logged this cycle, and only one block (735-160-1/2, SHG) produced any ore today. 2. 6. The crusher logged its tenth consecutive zero-LCM stockpile-to-crusher day (Sep 30-Oct 9); MTD throughput sits at 9,753 LCM against a 62,000 LCM plan (15.73%, down from 16.85%) as the plan keeps growing on a running total unchanged since Sep 29 — this gap is now the widest it has been all cycle in percentage terms. 3. 7. The Drill Meters workbook's opening/closing Broken Stock and Drilling Stock figures tied out exactly against the Client Meeting Report for the first time with a clean before/after reconciliation (178,339 to 165,939 BCM broken stock, down exactly by today's 12,400 BCM production; 32,255 to 47,038 BCM drilling stock) — the cleanest tie-out of these two fields logged this cycle, resolving the standing reconciliation question from the Oct 7-8 passes. 8. Fleet availability: excavators 70.24% (MTD 65.51%), trucks 92.56% (MTD 91.59%), drill rigs 85.42% (MTD 86.92%), heavy vehicles 99.18% (MTD 99.19%), overall 88.14% (MTD 86.83%) — the strongest daily reading logged this cycle on every fleet shown. 9. EX-247 dropped off the down list entirely (zero stoppage entries, not even a daily inspection), a change from Oct 8's 10 h open engine-low-power breakdown; no explicit close time was found anywhere read this pass, so the fault's status is inferred, not confirmed. EX-253 and EX-263 remain down the full 24 h (day 24 and day 5 of their respective standing outages), together an estimated 17,654 BCM / 47,666 t at the day's four-running-unit average rate (367.8 BCM/h). DT-107 and DT-108 also logged a full 24 h down (day 16 and day 3), together about 3,008 BCM / 8,123 t at the fleet truck rate; two new truck faults opened overnight — DT-110 (front-right suspension, 4.5 h) and DT-129 (tyre air pressure leak, 6.5 h) — both still open at report time. Support Excavator, Wheel Loader, and Track Dozer did not extract as clean per-fleet summary blocks from this pass's Availability Report PDF (a change from the prior several days' extraction), and one drill-rig breakdown (hydraulic hose burst, night shift, 3.5 h) could not be matched to a specific unit ID — both flagged as open questions rather than guessed. A new light vehicle fault (LV-047, tyre flat, Breakdown-coded, 24 h) appeared that is not the previously-tracked LV-049 opportunity stop. The two new overnight voice notes (PTT-20261010-WA0011/0014) and the EX-247 handrail incident photos are registered but not transcribed or analyzed. `publish_insights.py` was deliberately not run this pass — the `wiki-insights-sync` task publishes separately. Source: KNOWLEDGE/mining_operations_kb/RAW via the librarian compile protocol.",
   "kpis": [
     {
       "label": "MTD BCM",
-      "value": "290,315",
-      "delta": "-7.2% vs target",
+      "value": "302,715",
+      "delta": "-6.8% vs target",
       "good": false
     },
     {
@@ -15,6 +15,12 @@
       "value": "+3.8%",
       "delta": "survey vs trucks MTD",
       "good": true
+    },
+    {
+      "label": "Crusher MTD",
+      "value": "16%",
+      "delta": "9,753 / 124,000 LCM",
+      "good": null
     },
     {
       "label": "Days Remain",
@@ -124,11 +130,11 @@
     }
   ],
   "fleet": {
-    "availDaily": "86.33%",
-    "availMtd": "86.66%",
+    "availDaily": "88.14%",
+    "availMtd": "86.83%",
     "exAvail": "49.0%",
     "exUnits": 6,
-    "dtAvail": "91.96%",
+    "dtAvail": "92.56%",
     "dtUnits": 21,
     "excavators": [
       {
@@ -161,14 +167,14 @@
   },
   "equipment": [
     {
-      "unit": "EX-104",
+      "unit": "EX-253",
       "type": "Excavator",
       "status": "down",
-      "avail": "0%",
+      "avail": "0.0%",
       "util": "",
       "bd_hrs": "",
-      "note": "is at 0% (carried).",
-      "comment": ""
+      "note": "at the day's four-running-unit average of 367.8 BCM/h (17,654 BCM / 47,666 t combined)",
+      "comment": "Hydraulic Oil Leakage"
     },
     {
       "unit": "EX-263",
@@ -177,7 +183,7 @@
       "avail": "0.0%",
       "util": "",
       "bd_hrs": "",
-      "note": "'s engine job runs past Oct 15? - Are",
+      "note": "at the day's four-running-unit average of 367.8 BCM/h (17,654 BCM / 47,666 t combined)",
       "comment": "Engine Coolant Level Low Warning"
     },
     {
@@ -187,8 +193,18 @@
       "avail": "0.0%",
       "util": "",
       "bd_hrs": "",
-      "note": "",
+      "note": "at the Client Meeting Report's 62.7 BCM/h dump-truck fleet rate (3,008 BCM / 8,123 t combined)",
       "comment": "Engine Coolant Temperature High"
+    },
+    {
+      "unit": "DT-108",
+      "type": "Haul Truck",
+      "status": "down",
+      "avail": "0.0%",
+      "util": "",
+      "bd_hrs": "",
+      "note": "at the Client Meeting Report's 62.7 BCM/h dump-truck fleet rate (3,008 BCM / 8,123 t combined)",
+      "comment": "Transmission Problem  (Troubleshooting )"
     },
     {
       "unit": "LV-047",
@@ -251,26 +267,6 @@
       "comment": "Bucket Tips Worn-out"
     },
     {
-      "unit": "EX-253",
-      "type": "Excavator",
-      "status": "warning",
-      "avail": "0%",
-      "util": "",
-      "bd_hrs": "",
-      "note": "is at 0% for both weeks (swing drive and slew bearing damaged) and",
-      "comment": "Hydraulic Oil Leakage"
-    },
-    {
-      "unit": "DT-108",
-      "type": "Haul Truck",
-      "status": "warning",
-      "avail": "0.0%",
-      "util": "",
-      "bd_hrs": "",
-      "note": "",
-      "comment": "Transmission Problem  (Troubleshooting )"
-    },
-    {
       "unit": "WD-145",
       "type": "Water Dozer",
       "status": "warning",
@@ -288,6 +284,16 @@
       "util": "",
       "bd_hrs": "",
       "note": "",
+      "comment": ""
+    },
+    {
+      "unit": "DT-110",
+      "type": "Haul Truck",
+      "status": "warning",
+      "avail": "81.2%",
+      "util": "",
+      "bd_hrs": "",
+      "note": "'s new faults both opened late at night (2:00 AM and 11:00 PM) with no close time yet; confirm status next pas",
       "comment": ""
     },
     {
@@ -321,6 +327,26 @@
       "comment": "Cannot Start"
     },
     {
+      "unit": "EX-123",
+      "type": "Excavator",
+      "status": "warning",
+      "avail": "97.9%",
+      "util": "",
+      "bd_hrs": "",
+      "note": "0.5 h",
+      "comment": ""
+    },
+    {
+      "unit": "EX-262",
+      "type": "Excavator",
+      "status": "warning",
+      "avail": "97.9%",
+      "util": "",
+      "bd_hrs": "",
+      "note": "0.5 h",
+      "comment": "Bucket Welding Job"
+    },
+    {
       "unit": "LT-291",
       "type": "",
       "status": "warning",
@@ -351,6 +377,16 @@
       "comment": "Engine Failure"
     },
     {
+      "unit": "EX-247",
+      "type": "Excavator",
+      "status": "warning",
+      "avail": "",
+      "util": "",
+      "bd_hrs": "",
+      "note": "'s engine-low-power fault (open at Oct 8's report close) has no recorded close time anywhere read this pass; c",
+      "comment": ""
+    },
+    {
       "unit": "ACN-018",
       "type": "",
       "status": "warning",
@@ -361,46 +397,6 @@
       "comment": "Fuel Pump Faulty"
     },
     {
-      "unit": "EX-123",
-      "type": "Excavator",
-      "status": "scheduled",
-      "avail": "50%",
-      "util": "",
-      "bd_hrs": "",
-      "note": "each carry one half-day (50%) service day. Five running excavators is the planning base, against seven on the ",
-      "comment": ""
-    },
-    {
-      "unit": "EX-340",
-      "type": "Excavator",
-      "status": "scheduled",
-      "avail": "50%",
-      "util": "",
-      "bd_hrs": "",
-      "note": "each carry one half-day (50%) service day. Five running excavators is the planning base, against seven on the ",
-      "comment": ""
-    },
-    {
-      "unit": "EX-262",
-      "type": "Excavator",
-      "status": "scheduled",
-      "avail": "50%",
-      "util": "",
-      "bd_hrs": "",
-      "note": "each carry one half-day (50%) service day. Five running excavators is the planning base, against seven on the ",
-      "comment": "Bucket Welding Job"
-    },
-    {
-      "unit": "EX-398",
-      "type": "Excavator",
-      "status": "scheduled",
-      "avail": "50%",
-      "util": "",
-      "bd_hrs": "",
-      "note": "each carry one half-day (50%) service day. Five running excavators is the planning base, against seven on the ",
-      "comment": ""
-    },
-    {
       "unit": "DT-79",
       "type": "Haul Truck",
       "status": "scheduled",
@@ -409,16 +405,6 @@
       "bd_hrs": "",
       "note": "",
       "comment": "250 H Service"
-    },
-    {
-      "unit": "EX-247",
-      "type": "Excavator",
-      "status": "scheduled",
-      "avail": "",
-      "util": "",
-      "bd_hrs": "",
-      "note": "back in service, and does the handrail repair add downtime to the open engine fault? - Does the five-excavator",
-      "comment": ""
     }
   ],
   "plan": {
@@ -429,38 +415,26 @@
     "fridayTarget": 10884,
     "lastReported": "2026-10-08",
     "lastLabel": "8 Oct",
-    "mtd": 290315.0,
+    "mtd": 302715.0,
     "targetToDate": 282974,
     "trendSum": 290315,
     "daysRemain": 16,
     "normalRemain": 13,
     "fridaysRemain": 3,
-    "remainingBcm": 308283,
-    "requiredNormal": 21261,
-    "requiredFriday": 10630
+    "remainingBcm": 295883,
+    "requiredNormal": 20406,
+    "requiredFriday": 10203
   },
   "followUps": [
     {
       "priority": "HIGH",
-      "title": "DT-108's fault description disagrees between sources: the Availability R...",
+      "title": "Fleet availability: excavators 70.24% (MTD 65.51%), trucks 92.56% (MTD 9...",
       "body": "",
       "action": ""
     },
     {
-      "priority": "MONITOR",
-      "title": "Fleet availability: excavators 63.69% (MTD 64.92%), trucks 91.96% (MTD 9...",
-      "body": "",
-      "action": ""
-    },
-    {
-      "priority": "MONITOR",
-      "title": "`Equipment running hours report -.xlsx` has no \"Oct (8)\" tab yet, so the...",
-      "body": "",
-      "action": ""
-    },
-    {
-      "priority": "MONITOR",
-      "title": "A new forward dig-plan block model (`735_b160_map_orepro.pdf`, bench 730...",
+      "priority": "HIGH",
+      "title": "Support Excavator, Wheel Loader, and Track Dozer did not extract as clea...",
       "body": "",
       "action": ""
     }
