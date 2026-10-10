@@ -1,25 +1,25 @@
 {
-  "generatedAt": "2026-10-08T15:47:23",
-  "date": "2026-10-08",
+  "generatedAt": "2026-10-10T11:32:59",
+  "date": "2026-10-09",
   "runNumber": null,
-  "summary": "1. The October production, A&U, drilling and grade-control workbooks carry no new tab since this morning's pass and were not re-read. 2. Register updated in `RAW/_INGESTED.md`. 3. Articles updated (Last updated 2026-10-08): survey-volume-reconciliation (new section). daily-production-report gained a short addendum resolving its \"Oct 7 survey reading not yet in RAW\" note; its four dashboard KPIs are otherwise unchanged from this morning's pass. fleet-availability-utilization not touched — no new availability or running-hours data landed this pass. 4. Key operational findings The Oct 7 survey reading closed out at -1,810 BCM (-8.00%) against a 24,428 BCM trucked total, widening from Oct 6's -723 BCM but well inside the -6,000 to -8,500 BCM range seen Oct 4-5. 5. Three things to flag: 1. 6. The cumulative gap through day 13 of the 30-day cycle is now -30,027 BCM (-12.69%), survey MTD 236,573 BCM against the 598,598 BCM plan (39.52% achieved), with 362,025 BCM and 17 days left requiring 21,295.6 BCM/day from Oct 9. 2. 7. The October Monthly Production Plan, issued today, sets the cycle's total movement target at 661,986 BCM — 63,388 BCM above the 598,598 BCM the survey workbook's own Monthly Target cell still carries; the August and September plans both saw the workbook catch up within one to fifteen days of release, so this reads as a lag rather than a live conflict, but the dashboard's running percentages still sit on the old 598,598 BCM baseline until the workbook updates. 3. 8. Today's mineable-area PDF attachment did not extract as the usual per-block mined/remaining table — it reads as a general site facilities layout (workshop, yard, fuel storage). 9. Flagged as a possible wrong attachment on the survey team's side rather than compiled as block data. Two excavators (EX-123, EX-340) were named loading 75% outside the survey calculation area on Oct 7, more than Oct 6's single flagged unit, which tracks with the wider daily gap. The boundary-position pattern that has driven every swing this cycle continues to hold. The October Distance Report's \"Oct (7)\" tab populated today, confirming the haul set already carried from the Client Meeting Report and DPR: ore legs on 860-522-1 (2.8 km) and 735-161-1/2 (4.0 km), waste legs on the same two blocks plus 860-502-1/2, 860-503-1/2, 860-509-1/2 (2.9-3.0 km) and 735-185-1/2 (4.5 km). No figures changed; cross-check only. Two open questions carried into [[survey-volume-reconciliation]]: whether the survey workbook's Monthly Target cell updates to 661,986 BCM in the coming days, and whether today's mineable-area attachment was simply the wrong drawing. Source: KNOWLEDGE/mining_operations_kb/RAW via the librarian compile protocol.",
+  "summary": "1. No new meeting notes. 2. All seven meetings created in the last 7 days (Oct 6-8) are already in RAW/Meeting Notes and registered. 3. Everything else carries mtimes already registered this morning. 4. Important References: re-checked, no new content this pass. 5. Task Feedback Log queried (All Feedback, newest first): the latest 30 rows are all Processed. 6. No open questions resolved, no mismatches, nothing to mark. 7. Notes & References scanned (36 rows). 8. One new item ingested: Incident Investigation - EX247 Handrail Damage (DT Reversing Contact), created Oct 9 12:44. 9. No ingested page was edited after its RAW copy. Non-mining rows skipped (mission statement, PARA, Essentialism, Dodoma refund letter, training handouts, prompt library, playbook, A3 scenario answers). Articles updated (Last updated 2026-10-09): fleet-availability-utilization, weekly-mining-plan, people-machinery-interaction, daily-production-report. FCST Weeks 42-43: 150,206 BCM (405,557 t) and 149,114 BCM (402,608 t), planned on five running excavators because EX-253 and EX-104 are at 0% and EX-263 is out Oct 11-15 for an engine blow-by. Week 42 sits within 0.1% of the Maaden deck's 405,223 t. The Week 42-43 Maaden deck is not in RAW yet. DT-275/276 show 85% in the rehandle group of the new grid but the Oct 8 A&U lists them as transferred to AJM; flagged. EX-247 handrail incident: truck reversed in before the excavator was ready. DT number, time, location, injuries and downtime are all unconfirmed, so no lost-hours conversion is possible yet; the per-hour rate for EX-247 (about 241 BCM / 651 t per hour) is recorded for when hours are known. One inbox task created in the Notion Tasks Database to confirm the incident facts (see captain's log).",
   "kpis": [
     {
       "label": "MTD BCM",
-      "value": "266,600",
-      "delta": "+2.1% vs target",
-      "good": true
-    },
-    {
-      "label": "Survey Gap",
-      "value": "-12.7%",
-      "delta": "survey vs trucks MTD",
+      "value": "290,315",
+      "delta": "-7.2% vs target",
       "good": false
     },
     {
+      "label": "Survey Gap",
+      "value": "+3.8%",
+      "delta": "survey vs trucks MTD",
+      "good": true
+    },
+    {
       "label": "Days Remain",
-      "value": "17",
-      "delta": "after 7 Oct",
+      "value": "16",
+      "delta": "after 8 Oct",
       "good": null
     }
   ],
@@ -114,19 +114,26 @@
       "actual": 24428,
       "target": 21767,
       "half": false
+    },
+    {
+      "date": "2026-10-08",
+      "label": "8 Oct",
+      "actual": 23715,
+      "target": 21767,
+      "half": false
     }
   ],
   "fleet": {
-    "availDaily": "85.18%",
-    "availMtd": "86.71%",
-    "exAvail": "56.3%",
+    "availDaily": "86.33%",
+    "availMtd": "86.66%",
+    "exAvail": "49.0%",
     "exUnits": 6,
-    "dtAvail": "91.01%",
+    "dtAvail": "91.96%",
     "dtUnits": 21,
     "excavators": [
       {
         "unit": "EX-340",
-        "avail": "91.7%"
+        "avail": "97.9%"
       },
       {
         "unit": "EX-262",
@@ -142,36 +149,36 @@
       },
       {
         "unit": "EX-247",
-        "avail": "91.7%"
+        "avail": null
       },
       {
         "unit": "EX-1200",
         "avail": null
       }
     ],
-    "exBasis": "5/6",
-    "pdfDate": "07-10"
+    "exBasis": "4/6",
+    "pdfDate": "09-10"
   },
   "equipment": [
     {
-      "unit": "EX-253",
+      "unit": "EX-104",
+      "type": "Excavator",
+      "status": "down",
+      "avail": "0%",
+      "util": "",
+      "bd_hrs": "",
+      "note": "is at 0% (carried).",
+      "comment": ""
+    },
+    {
+      "unit": "EX-263",
       "type": "Excavator",
       "status": "down",
       "avail": "0.0%",
       "util": "",
       "bd_hrs": "",
-      "note": "at the 362.7 BCM/h five-unit average; the 75.5 truck hours at the Client Meeting Report's 65.77 BCM/h fleet ra",
-      "comment": "Hydraulic Oil Leakage"
-    },
-    {
-      "unit": "DR-140",
-      "type": "Drill",
-      "status": "down",
-      "avail": "0.0%",
-      "util": "",
-      "bd_hrs": "",
-      "note": "",
-      "comment": "Feed Cylinder Oil Leaking"
+      "note": "'s engine job runs past Oct 15? - Are",
+      "comment": "Engine Coolant Level Low Warning"
     },
     {
       "unit": "DT-107",
@@ -194,94 +201,74 @@
       "comment": "Tyre Flat # 04"
     },
     {
-      "unit": "EX-102",
-      "type": "Excavator",
-      "status": "down",
-      "avail": "41.7%",
-      "util": "",
-      "bd_hrs": "",
-      "note": "both logged new breakdowns today with no recorded \"Date Out\" — both still open at report time; confirm closure",
-      "comment": "Hammer Low Power"
-    },
-    {
-      "unit": "WL-295",
-      "type": "Wheel Loader",
-      "status": "down",
-      "avail": "41.7%",
-      "util": "",
-      "bd_hrs": "",
-      "note": "both logged new breakdowns today with no recorded \"Date Out\" — both still open at report time; confirm closure",
-      "comment": "Gear Problem"
-    },
-    {
-      "unit": "DR-341",
+      "unit": "DR-140",
       "type": "Drill",
       "status": "down",
-      "avail": "79.2%",
+      "avail": "45.8%",
       "util": "",
       "bd_hrs": "",
       "note": "",
-      "comment": "Suction Head Cylinder Leaking"
+      "comment": "Feed Cylinder Oil Leaking"
     },
     {
-      "unit": "DZ-280",
-      "type": "Track Dozer",
+      "unit": "DT-129",
+      "type": "Haul Truck",
       "status": "down",
-      "avail": "83.3%",
+      "avail": "72.9%",
       "util": "",
       "bd_hrs": "",
       "note": "",
-      "comment": "Cutting Edge Change Out"
+      "comment": "Front Right Side Suspension Down"
     },
     {
       "unit": "WL-329",
       "type": "Wheel Loader",
       "status": "down",
-      "avail": "87.5%",
+      "avail": "79.2%",
       "util": "",
       "bd_hrs": "",
       "note": "",
-      "comment": "Adaptor Bolt Missing and Welding  Job"
+      "comment": "Side Tips Adapter Change Out and  Teeth Welding"
     },
     {
-      "unit": "DT-245",
-      "type": "Haul Truck",
-      "status": "down",
-      "avail": "89.6%",
-      "util": "",
-      "bd_hrs": "",
-      "note": "",
-      "comment": "Greasing"
-    },
-    {
-      "unit": "WT-304",
+      "unit": "WT-300",
       "type": "Water Truck",
       "status": "down",
-      "avail": "89.6%",
+      "avail": "81.2%",
       "util": "",
       "bd_hrs": "",
       "note": "",
-      "comment": "Water Pump Not Start"
+      "comment": "Tyre Flat"
+    },
+    {
+      "unit": "WL-295",
+      "type": "Wheel Loader",
+      "status": "down",
+      "avail": "85.4%",
+      "util": "",
+      "bd_hrs": "",
+      "note": "",
+      "comment": "Bucket Tips Worn-out"
+    },
+    {
+      "unit": "EX-253",
+      "type": "Excavator",
+      "status": "warning",
+      "avail": "0%",
+      "util": "",
+      "bd_hrs": "",
+      "note": "is at 0% for both weeks (swing drive and slew bearing damaged) and",
+      "comment": "Hydraulic Oil Leakage"
     },
     {
       "unit": "DT-108",
       "type": "Haul Truck",
-      "status": "partial",
-      "avail": "0.0%",
-      "util": "",
-      "bd_hrs": "",
-      "note": "'s transmission fault escalated from a 4 h partial stop (Oct 6) to a full 24 h breakdown (Oct 7); confirm with",
-      "comment": "Transmission Problem  (Troubleshooting )"
-    },
-    {
-      "unit": "EX-263",
-      "type": "Excavator",
       "status": "warning",
       "avail": "0.0%",
       "util": "",
       "bd_hrs": "",
-      "note": "'s standing fault is now in its third full day down (since 05-Oct); no repair timeline given this pass.",
-      "comment": "Engine Coolant Level Low Warning"
+      "note": "",
+      "comment": "Transmission Problem  (Troubleshooting )"
     },
     {
       "unit": "WD-145",
@@ -294,8 +281,8 @@
       "comment": "Front Axle Brakes worn out"
     },
     {
-      "unit": "DT-129",
-      "type": "Haul Truck",
+      "unit": "DR-343",
+      "type": "Drill",
       "status": "warning",
       "avail": "50.0%",
       "util": "",
@@ -304,84 +291,44 @@
       "comment": ""
     },
     {
-      "unit": "DR-125",
-      "type": "Drill",
-      "status": "warning",
-      "avail": "79.2%",
-      "util": "",
-      "bd_hrs": "",
-      "note": "",
-      "comment": "Hydraulic Oil Leaking"
-    },
-    {
-      "unit": "EX-340",
-      "type": "Excavator",
-      "status": "warning",
-      "avail": "91.7%",
-      "util": "",
-      "bd_hrs": "",
-      "note": "2 h: hydraulic oil leaking (7:00-8:00 AM) then an A/C filter clean and noise complaint overnight into 08-Oct.",
-      "comment": "Hydraulic Oil Leaking"
-    },
-    {
-      "unit": "DT-106",
-      "type": "Haul Truck",
-      "status": "warning",
-      "avail": "91.7%",
-      "util": "",
-      "bd_hrs": "",
-      "note": "",
-      "comment": "Seat Belt Not Good"
-    },
-    {
-      "unit": "WL-101",
-      "type": "Wheel Loader",
-      "status": "warning",
-      "avail": "91.7%",
-      "util": "",
-      "bd_hrs": "",
-      "note": "",
-      "comment": "Air Filter Warning"
-    },
-    {
-      "unit": "EX-123",
-      "type": "Excavator",
+      "unit": "LT-198",
+      "type": "",
       "status": "warning",
       "avail": "93.8%",
       "util": "",
       "bd_hrs": "",
-      "note": "1.5 h: bucket not open, grease light, and the daily check, all planned on night shift (10:00-11:30 PM).",
-      "comment": ""
-    },
-    {
-      "unit": "DT-282",
-      "type": "Haul Truck",
-      "status": "warning",
-      "avail": "97.9%",
-      "util": "",
-      "bd_hrs": "",
       "note": "",
-      "comment": "Tyre Air Pressure Low"
-    },
-    {
-      "unit": "EX-262",
-      "type": "Excavator",
-      "status": "warning",
-      "avail": "97.9%",
-      "util": "",
-      "bd_hrs": "",
-      "note": "",
-      "comment": "A/C Not Good"
+      "comment": "Cannot Start"
     },
     {
       "unit": "FT-144",
       "type": "",
       "status": "warning",
-      "avail": "100.0%",
+      "avail": "95.8%",
       "util": "",
       "bd_hrs": "",
       "note": "",
       "comment": "C/O Air Compressor & Brake Air  lines"
+    },
+    {
+      "unit": "LT-118",
+      "type": "",
+      "status": "warning",
+      "avail": "95.8%",
+      "util": "",
+      "bd_hrs": "",
+      "note": "",
+      "comment": "Cannot Start"
+    },
+    {
+      "unit": "LT-291",
+      "type": "",
+      "status": "warning",
+      "avail": "97.9%",
+      "util": "",
+      "bd_hrs": "",
+      "note": "",
+      "comment": "Cannot Start"
     },
     {
       "unit": "LV-049",
@@ -414,14 +361,44 @@
       "comment": "Fuel Pump Faulty"
     },
     {
-      "unit": "EX-247",
+      "unit": "EX-123",
       "type": "Excavator",
       "status": "scheduled",
-      "avail": "91.7%",
+      "avail": "50%",
       "util": "",
       "bd_hrs": "",
-      "note": "2 h: undercarriage track welding (3:00-5:00 PM).",
-      "comment": "Track Welding Job"
+      "note": "each carry one half-day (50%) service day. Five running excavators is the planning base, against seven on the ",
+      "comment": ""
+    },
+    {
+      "unit": "EX-340",
+      "type": "Excavator",
+      "status": "scheduled",
+      "avail": "50%",
+      "util": "",
+      "bd_hrs": "",
+      "note": "each carry one half-day (50%) service day. Five running excavators is the planning base, against seven on the ",
+      "comment": ""
+    },
+    {
+      "unit": "EX-262",
+      "type": "Excavator",
+      "status": "scheduled",
+      "avail": "50%",
+      "util": "",
+      "bd_hrs": "",
+      "note": "each carry one half-day (50%) service day. Five running excavators is the planning base, against seven on the ",
+      "comment": "Bucket Welding Job"
+    },
+    {
+      "unit": "EX-398",
+      "type": "Excavator",
+      "status": "scheduled",
+      "avail": "50%",
+      "util": "",
+      "bd_hrs": "",
+      "note": "each carry one half-day (50%) service day. Five running excavators is the planning base, against seven on the ",
+      "comment": ""
     },
     {
       "unit": "DT-79",
@@ -432,6 +409,16 @@
       "bd_hrs": "",
       "note": "",
       "comment": "250 H Service"
+    },
+    {
+      "unit": "EX-247",
+      "type": "Excavator",
+      "status": "scheduled",
+      "avail": "",
+      "util": "",
+      "bd_hrs": "",
+      "note": "back in service, and does the handrail repair add downtime to the open engine fault? - Does the five-excavator",
+      "comment": ""
     }
   ],
   "plan": {
@@ -440,34 +427,40 @@
     "monthlyTarget": 598598,
     "normalTarget": 21767,
     "fridayTarget": 10884,
-    "lastReported": "2026-10-07",
-    "lastLabel": "7 Oct",
-    "mtd": 266600.0,
-    "targetToDate": 261206,
-    "trendSum": 266600,
-    "daysRemain": 17,
-    "normalRemain": 14,
+    "lastReported": "2026-10-08",
+    "lastLabel": "8 Oct",
+    "mtd": 290315.0,
+    "targetToDate": 282974,
+    "trendSum": 290315,
+    "daysRemain": 16,
+    "normalRemain": 13,
     "fridaysRemain": 3,
-    "remainingBcm": 331998,
-    "requiredNormal": 21419,
-    "requiredFriday": 10710
+    "remainingBcm": 308283,
+    "requiredNormal": 21261,
+    "requiredFriday": 10630
   },
   "followUps": [
     {
-      "priority": "MONITOR",
-      "title": "Two excavators (EX-123, EX-340) were named loading 75% outside the surve...",
+      "priority": "HIGH",
+      "title": "DT-108's fault description disagrees between sources: the Availability R...",
       "body": "",
       "action": ""
     },
     {
       "priority": "MONITOR",
-      "title": "The October Distance Report's \"Oct (7)\" tab populated today, confirming ...",
+      "title": "Fleet availability: excavators 63.69% (MTD 64.92%), trucks 91.96% (MTD 9...",
       "body": "",
       "action": ""
     },
     {
       "priority": "MONITOR",
-      "title": "Two open questions carried into [[survey-volume-reconciliation]]: whethe...",
+      "title": "`Equipment running hours report -.xlsx` has no \"Oct (8)\" tab yet, so the...",
+      "body": "",
+      "action": ""
+    },
+    {
+      "priority": "MONITOR",
+      "title": "A new forward dig-plan block model (`735_b160_map_orepro.pdf`, bench 730...",
       "body": "",
       "action": ""
     }
