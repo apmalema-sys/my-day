@@ -1,15 +1,15 @@
 {
-  "date": "2026-10-08",
-  "topic": "Production Data Stack",
-  "title": "Production Data Stack",
-  "body": "When a number looks wrong at ADW — low utilization, a crusher stoppage, a drilling miss — the knee-jerk move is to argue about the headline figure. That's wasted time if you haven't checked which layer of the data actually broke.",
+  "date": "2026-10-10",
+  "topic": "New Foremen Onboarding",
+  "title": "New Foremen Onboarding",
+  "body": "Most of the Stage 4, Stage 6, and ROM pad NCRs trace back to a supervisor who was on the ground but didn't catch or act on the problem. A foreman who's never been walked through field inspection, NCR writing, and coaching under pressure is going to repeat that pattern — not because they don't care, but because nobody built the habit.",
   "keyPoints": [
-    "Four workbooks measure the same day from different depths: running-hours log (raw meter/diesel), A&U (productive vs standby split), daily report (KPI summary), INX-SUM survey (independent ground-truth check). Each layer strips out something the one below kept.",
-    "The running-hours log total should sit 80–150 machine-hours above A&U operating hours per day — that's meal, prayer, and refuel time being reclassified out, not noise. If the gap is way off that range, something's miscoded before you even look at ratios.",
-    "A high truck count with a low survey number doesn't mean the fleet underperformed — it usually means loading happened outside the survey calculation area. Check loading position before you blame production.",
-    "When investigating a flagged number, read down the stack in order: daily report (what/when) → A&U (which unit, which reason column) → running-hours log (raw hours, diesel, operator Emp. No) → INX-SUM (ground-truth check if the total looks off).",
-    "Diesel burn out of ratio with running hours in the hours log is an early fault signal — it shows up there before it ever becomes a breakdown reason in A&U."
+    "Readiness isn't a one-day induction — it's four weeks: foundations, technical/field competency, leadership and communication, then a supervised full shift before sign-off.",
+    "The Week 4 call is three-way: Ready, Ready with support, or Not yet ready. A \"not yet\" needs a real additional-training path, not a shrug and a second attempt.",
+    "Shift handover gets its own module in Week 1 because so many incidents cluster right at shift start/end — poor handover discipline is a direct line to an NCR.",
+    "Coaching under pressure is a trained skill: when a PM fires five questions at once, the right move is to stay calm and ask what can improve, not defend every point.",
+    "Language barriers on a crew are a shift-readiness issue, not a side note — if a foreman can't communicate assertively under pressure, that's a Week 3 gap, not a personality quirk."
   ],
-  "apply": "If a unit's utilization looks low in the morning numbers, don't stop at the A&U percentage — pull the reason column and cross-check it against the running-hours log before you raise it in the client meeting.",
-  "generatedAt": "2026-10-08T12:04:34"
+  "apply": "If you've got a recently promoted foreman running a face or a dump point solo, don't just check their numbers — watch how they handle the next handover or the next pushback from a driver or PM. That's the tell on whether the onboarding actually took.",
+  "generatedAt": "2026-10-10T11:11:52"
 }
