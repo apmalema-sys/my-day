@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-10-10T13:07:26",
+  "generatedAt": "2026-10-11T11:32:39",
   "date": "2026-10-10",
   "runNumber": null,
-  "summary": "1. No new survey reading (`261010-INX-SUM.xlsx`) has landed for Oct 9 production, so [[survey-volume-reconciliation]] carries no update this pass. 2. Articles updated (Last updated 2026-10-10): daily-production-report, fleet-availability-utilization. 3. Key operational findings Oct 9 posted 12,400 BCM against a 12,036.1 BCM target (+3.0%), the second daily beat in a row, narrowing MTD to 302,715 BCM against a 324,974.9 BCM target (-6.85%, up from Oct 8's -7.2%) at the fiscal cycle's exact halfway point (day 15 of 30, 15 days remaining). 4. Three things to flag: 1. 5. The ore shortfall eased slightly (MTD -49.52%, from Oct 8's -51.6%) as today's mix ran far more ore-heavy than Oct 8 — stripping ratio fell to 4.41 from 18.1 — but MTD ore is still the second-deepest gap logged this cycle, and only one block (735-160-1/2, SHG) produced any ore today. 2. 6. The crusher logged its tenth consecutive zero-LCM stockpile-to-crusher day (Sep 30-Oct 9); MTD throughput sits at 9,753 LCM against a 62,000 LCM plan (15.73%, down from 16.85%) as the plan keeps growing on a running total unchanged since Sep 29 — this gap is now the widest it has been all cycle in percentage terms. 3. 7. The Drill Meters workbook's opening/closing Broken Stock and Drilling Stock figures tied out exactly against the Client Meeting Report for the first time with a clean before/after reconciliation (178,339 to 165,939 BCM broken stock, down exactly by today's 12,400 BCM production; 32,255 to 47,038 BCM drilling stock) — the cleanest tie-out of these two fields logged this cycle, resolving the standing reconciliation question from the Oct 7-8 passes. 8. Fleet availability: excavators 70.24% (MTD 65.51%), trucks 92.56% (MTD 91.59%), drill rigs 85.42% (MTD 86.92%), heavy vehicles 99.18% (MTD 99.19%), overall 88.14% (MTD 86.83%) — the strongest daily reading logged this cycle on every fleet shown. 9. EX-247 dropped off the down list entirely (zero stoppage entries, not even a daily inspection), a change from Oct 8's 10 h open engine-low-power breakdown; no explicit close time was found anywhere read this pass, so the fault's status is inferred, not confirmed. EX-253 and EX-263 remain down the full 24 h (day 24 and day 5 of their respective standing outages), together an estimated 17,654 BCM / 47,666 t at the day's four-running-unit average rate (367.8 BCM/h). DT-107 and DT-108 also logged a full 24 h down (day 16 and day 3), together about 3,008 BCM / 8,123 t at the fleet truck rate; two new truck faults opened overnight — DT-110 (front-right suspension, 4.5 h) and DT-129 (tyre air pressure leak, 6.5 h) — both still open at report time. Support Excavator, Wheel Loader, and Track Dozer did not extract as clean per-fleet summary blocks from this pass's Availability Report PDF (a change from the prior several days' extraction), and one drill-rig breakdown (hydraulic hose burst, night shift, 3.5 h) could not be matched to a specific unit ID — both flagged as open questions rather than guessed. A new light vehicle fault (LV-047, tyre flat, Breakdown-coded, 24 h) appeared that is not the previously-tracked LV-049 opportunity stop. The two new overnight voice notes (PTT-20261010-WA0011/0014) and the EX-247 handrail incident photos are registered but not transcribed or analyzed. `publish_insights.py` was deliberately not run this pass — the `wiki-insights-sync` task publishes separately. Source: KNOWLEDGE/mining_operations_kb/RAW via the librarian compile protocol.",
+  "summary": "1. 2026-10-10 (Notes & References catch-up, \"mining-kb-compile\" session, at Peter's request: no note is skipped) Peter said the Notes & References scan must not skip any note and that the weekly review must be compiled. 2. The afternoon pass above had skipped 11 rows as personal or non-mining. 3. All are now in RAW and compiled. 4. RAW (add-only). 10 new files in `RAW/Notes & References/`: the Weekly Review & Plan (Oct 3-9, plan Oct 10-16, word for word), Personal Mission Statement, Playbook (OmniFocus + Notion + Claude), Claude Prompt Library, 14-Day Claude x Notion Mastery Program, PARA (summary and URL only, clipped third-party article), Essentialism (properties only), SGR Dodoma refund letter (bank account number withheld), ADW Contract & Scope of Work Notion mirror, and the JRAR mission pointer row. 5. All 39 Notion rows now have a RAW copy. 6. Two new articles: `superintendent-weekly-review-and-planning.md` and `peter-work-system-and-reference-notes.md`, both in INDEX. 7. Appended sections (Last updated 2026-10-10, new aliases in Sources, open-question blocks) to: safety-inspection-patterns (PTO gap and Peter's link to the EX-247 contact; windrow delegation), brake-testing (ramp time study, goal-line tests), refuelling-area-safety-pattern, weekly-mining-plan, daily-production-report (dispatch report live Oct 10, 2027 budget at 90%), fatigue-management-pattern, crusher-feed-procedure, dump-management, high-walls, dust-suppression (PTO slots), adw-contract-scope-of-work. 8. CLAUDE.md Notes & References step 6 now reads \"Never skip a row\": no skipped-as-non-mining list, every row ingested and compiled. `_INGESTED.md` carries a correction and a row-count check. 9. The scheduled \"mining-kb-compile\" task prompt was not edited; it reads this CLAUDE.md. The Weekly Review's three tracker databases (Plan Tracker, Daily Self-Assessment, Role Scorecard) were not returned by the page fetch and are not in RAW.",
   "kpis": [
     {
       "label": "MTD BCM",
@@ -12,7 +12,7 @@
     },
     {
       "label": "Survey Gap",
-      "value": "+3.8%",
+      "value": "+7.5%",
       "delta": "survey vs trucks MTD",
       "good": true
     },
@@ -132,7 +132,7 @@
   "fleet": {
     "availDaily": "88.14%",
     "availMtd": "86.83%",
-    "exAvail": "49.0%",
+    "exAvail": "58.3%",
     "exUnits": 6,
     "dtAvail": "92.56%",
     "dtUnits": 21,
@@ -155,15 +155,15 @@
       },
       {
         "unit": "EX-247",
-        "avail": null
+        "avail": "95.8%"
       },
       {
         "unit": "EX-1200",
         "avail": null
       }
     ],
-    "exBasis": "4/6",
-    "pdfDate": "09-10"
+    "exBasis": "5/6",
+    "pdfDate": "10-10"
   },
   "equipment": [
     {
@@ -173,18 +173,8 @@
       "avail": "0.0%",
       "util": "",
       "bd_hrs": "",
-      "note": "at the day's four-running-unit average of 367.8 BCM/h (17,654 BCM / 47,666 t combined)",
+      "note": "'s return date known? It was down the full month of September and is still on the Oct 10 long-term list. - Why",
       "comment": "Hydraulic Oil Leakage"
-    },
-    {
-      "unit": "EX-263",
-      "type": "Excavator",
-      "status": "down",
-      "avail": "0.0%",
-      "util": "",
-      "bd_hrs": "",
-      "note": "at the day's four-running-unit average of 367.8 BCM/h (17,654 BCM / 47,666 t combined)",
-      "comment": "Engine Coolant Level Low Warning"
     },
     {
       "unit": "DT-107",
@@ -193,18 +183,8 @@
       "avail": "0.0%",
       "util": "",
       "bd_hrs": "",
-      "note": "at the Client Meeting Report's 62.7 BCM/h dump-truck fleet rate (3,008 BCM / 8,123 t combined)",
+      "note": "at the fleet truck rate). Not convertible: the two trucks that stood without operators and",
       "comment": "Engine Coolant Temperature High"
-    },
-    {
-      "unit": "DT-108",
-      "type": "Haul Truck",
-      "status": "down",
-      "avail": "0.0%",
-      "util": "",
-      "bd_hrs": "",
-      "note": "at the Client Meeting Report's 62.7 BCM/h dump-truck fleet rate (3,008 BCM / 8,123 t combined)",
-      "comment": "Transmission Problem  (Troubleshooting )"
     },
     {
       "unit": "LV-047",
@@ -217,54 +197,94 @@
       "comment": "Tyre Flat # 04"
     },
     {
-      "unit": "DR-140",
-      "type": "Drill",
+      "unit": "DT-110",
+      "type": "Haul Truck",
       "status": "down",
-      "avail": "45.8%",
+      "avail": "6.2%",
+      "util": "",
+      "bd_hrs": "",
+      "note": "suspension",
+      "comment": "Front Right Side Suspension Down"
+    },
+    {
+      "unit": "DT-128",
+      "type": "Haul Truck",
+      "status": "down",
+      "avail": "59%",
+      "util": "",
+      "bd_hrs": "",
+      "note": "59%",
+      "comment": "Tire Puncher"
+    },
+    {
+      "unit": "DT-108",
+      "type": "Haul Truck",
+      "status": "down",
+      "avail": "61%",
+      "util": "",
+      "bd_hrs": "",
+      "note": "61%",
+      "comment": "Transmission Problem  (Troubleshooting )"
+    },
+    {
+      "unit": "DT-130",
+      "type": "Haul Truck",
+      "status": "down",
+      "avail": "64.6%",
       "util": "",
       "bd_hrs": "",
       "note": "",
-      "comment": "Feed Cylinder Oil Leaking"
+      "comment": "Tyre Air Pressure Leak - P 05 & P 06"
     },
     {
       "unit": "DT-129",
       "type": "Haul Truck",
       "status": "down",
-      "avail": "72.9%",
+      "avail": "68.8%",
+      "util": "",
+      "bd_hrs": "",
+      "note": "was in the workshop from the start of the shift, one unit leaking air was parked, and loader 101 returned to w",
+      "comment": ""
+    },
+    {
+      "unit": "DR-303",
+      "type": "Drill",
+      "status": "down",
+      "avail": "68.8%",
       "util": "",
       "bd_hrs": "",
       "note": "",
-      "comment": "Front Right Side Suspension Down"
+      "comment": "Flushing Hose Problem"
     },
     {
-      "unit": "WL-329",
-      "type": "Wheel Loader",
+      "unit": "DR-140",
+      "type": "Drill",
       "status": "down",
       "avail": "79.2%",
       "util": "",
       "bd_hrs": "",
       "note": "",
-      "comment": "Side Tips Adapter Change Out and  Teeth Welding"
+      "comment": "Electrical Problem"
     },
     {
-      "unit": "WT-300",
-      "type": "Water Truck",
-      "status": "down",
-      "avail": "81.2%",
+      "unit": "EX-102",
+      "type": "Excavator",
+      "status": "warning",
+      "avail": "0.0%",
       "util": "",
       "bd_hrs": "",
       "note": "",
-      "comment": "Tyre Flat"
+      "comment": "Strobe Lights Not Working"
     },
     {
-      "unit": "WL-295",
-      "type": "Wheel Loader",
-      "status": "down",
-      "avail": "85.4%",
+      "unit": "EX-327",
+      "type": "Excavator",
+      "status": "warning",
+      "avail": "0.0%",
       "util": "",
       "bd_hrs": "",
       "note": "",
-      "comment": "Bucket Tips Worn-out"
+      "comment": "Hydraulic Hose Leakage"
     },
     {
       "unit": "WD-145",
@@ -277,84 +297,94 @@
       "comment": "Front Axle Brakes worn out"
     },
     {
-      "unit": "DR-343",
-      "type": "Drill",
+      "unit": "EX-263",
+      "type": "Excavator",
       "status": "warning",
-      "avail": "50.0%",
+      "avail": "90%",
+      "util": "",
+      "bd_hrs": "",
+      "note": "90%",
+      "comment": "Engine Coolant Level Low Warning"
+    },
+    {
+      "unit": "LT-119",
+      "type": "",
+      "status": "warning",
+      "avail": "91.7%",
       "util": "",
       "bd_hrs": "",
       "note": "",
-      "comment": ""
+      "comment": "Engine Not Starting ( Replace  Battery )"
     },
     {
-      "unit": "DT-110",
-      "type": "Haul Truck",
+      "unit": "WT-304",
+      "type": "Water Truck",
       "status": "warning",
-      "avail": "81.2%",
+      "avail": "91.7%",
       "util": "",
       "bd_hrs": "",
-      "note": "'s new faults both opened late at night (2:00 AM and 11:00 PM) with no close time yet; confirm status next pas",
-      "comment": ""
+      "note": "",
+      "comment": "Front Head Light NotWorking"
     },
     {
-      "unit": "LT-198",
+      "unit": "LT-291",
       "type": "",
       "status": "warning",
       "avail": "93.8%",
       "util": "",
       "bd_hrs": "",
       "note": "",
-      "comment": "Cannot Start"
+      "comment": "Cannot Start ( Replace Battery )"
+    },
+    {
+      "unit": "EX-247",
+      "type": "Excavator",
+      "status": "warning",
+      "avail": "95.8%",
+      "util": "",
+      "bd_hrs": "",
+      "note": "",
+      "comment": "Coolant Leaking"
+    },
+    {
+      "unit": "DT-106",
+      "type": "Haul Truck",
+      "status": "warning",
+      "avail": "97.9%",
+      "util": "",
+      "bd_hrs": "",
+      "note": "",
+      "comment": "One Light Not Working"
+    },
+    {
+      "unit": "DT-366",
+      "type": "Haul Truck",
+      "status": "warning",
+      "avail": "97.9%",
+      "util": "",
+      "bd_hrs": "",
+      "note": "",
+      "comment": "Hydraulic Oil Leakage"
+    },
+    {
+      "unit": "DT-70",
+      "type": "Haul Truck",
+      "status": "warning",
+      "avail": "100.0%",
+      "util": "",
+      "bd_hrs": "",
+      "note": "",
+      "comment": "Adjust Front Suspension LH"
     },
     {
       "unit": "FT-144",
       "type": "",
       "status": "warning",
-      "avail": "95.8%",
+      "avail": "100.0%",
       "util": "",
       "bd_hrs": "",
       "note": "",
       "comment": "C/O Air Compressor & Brake Air  lines"
-    },
-    {
-      "unit": "LT-118",
-      "type": "",
-      "status": "warning",
-      "avail": "95.8%",
-      "util": "",
-      "bd_hrs": "",
-      "note": "",
-      "comment": "Cannot Start"
-    },
-    {
-      "unit": "EX-123",
-      "type": "Excavator",
-      "status": "warning",
-      "avail": "97.9%",
-      "util": "",
-      "bd_hrs": "",
-      "note": "0.5 h",
-      "comment": ""
-    },
-    {
-      "unit": "EX-262",
-      "type": "Excavator",
-      "status": "warning",
-      "avail": "97.9%",
-      "util": "",
-      "bd_hrs": "",
-      "note": "0.5 h",
-      "comment": "Bucket Welding Job"
-    },
-    {
-      "unit": "LT-291",
-      "type": "",
-      "status": "warning",
-      "avail": "97.9%",
-      "util": "",
-      "bd_hrs": "",
-      "note": "",
-      "comment": "Cannot Start"
     },
     {
       "unit": "LV-049",
@@ -377,14 +407,14 @@
       "comment": "Engine Failure"
     },
     {
-      "unit": "EX-247",
-      "type": "Excavator",
+      "unit": "WL-101",
+      "type": "Wheel Loader",
       "status": "warning",
-      "avail": "",
+      "avail": "100.0%",
       "util": "",
       "bd_hrs": "",
-      "note": "'s engine-low-power fault (open at Oct 8's report close) has no recorded close time anywhere read this pass; c",
-      "comment": ""
+      "note": "",
+      "comment": "Air Filter Warning"
     },
     {
       "unit": "ACN-018",
@@ -397,6 +427,16 @@
       "comment": "Fuel Pump Faulty"
     },
     {
+      "unit": "DT-283",
+      "type": "Haul Truck",
+      "status": "scheduled",
+      "avail": "89.6%",
+      "util": "",
+      "bd_hrs": "",
+      "note": "in a 4D service; loader 295 with an issue (hydraulic work overnight). The night-shift voice note adds that",
+      "comment": ""
+    },
+    {
       "unit": "DT-79",
       "type": "Haul Truck",
       "status": "scheduled",
@@ -405,6 +445,16 @@
       "bd_hrs": "",
       "note": "",
       "comment": "250 H Service"
+    },
+    {
+      "unit": "WL-295",
+      "type": "Wheel Loader",
+      "status": "scheduled",
+      "avail": "100.0%",
+      "util": "",
+      "bd_hrs": "",
+      "note": "",
+      "comment": "500 Hrs Service"
     }
   ],
   "plan": {
