@@ -1,15 +1,14 @@
 {
-  "date": "2026-10-11",
-  "topic": "Life Saving Rules",
-  "title": "Life Saving Rules",
-  "body": "When an LSR breach gets waved through as a routine \"finding\" instead of flagged for what it is, the corrective-action loop never closes. That's the exact gap the BUL fatality review turned up at ADW: four of the eight post-fatality controls — honking protocol, travel plan, six-day roster cap, site-discipline rules — still aren't confirmed as standing practice here.",
+  "date": "2026-10-12",
+  "topic": "Internal audit and corrective-action closeout",
+  "title": "Internal audit and corrective-action closeout",
+  "body": "A finding marked \"Closed\" on a memo means nothing if the CAR, the action guide, and the physical fix don't all say the same thing — Phase 1 at ADW had exactly that gap: a closure memo claiming all nine deviations closed while the working CAR still showed three open with blank evidence fields. If you sign off a closure report that the paperwork underneath doesn't support, you own that gap when someone checks.",
   "keyPoints": [
-    "Nine LSRs exist corporate-wide; four are live on your crew every shift — Mobile Equipment, Line of Fire, Geotechnical Ground Control, and Energy Isolation.",
-    "Enforcement isn't outcome-based. Per MSHEM-06.01 §5.1.11, action gets taken every time a rule is violated, whether or not anything actually went wrong that time.",
-    "Anyone on site — operator, contractor, visitor — has the right to stop unsafe work on the spot, without exposing themselves to risk and without fear of retaliation. That's an expectation for your foremen, not a courtesy.",
-    "A violation goes to the area supervisor first, who notifies HSS immediately; only an independent LSR Committee (HSS, Legal, HR) rules on whether it was intentional.",
-    "The six-consecutive-day roster limit from the BUL list isn't verified as an ADW control — and it lines up directly with the fatigue root cause already found in the DT-128 high-wall strike. Don't assume someone else is tracking it."
+    "A finding isn't closed until all four documents agree: checklist (what's wrong), CAR (the fix and owner), action guide (the evidence standard), closure report (verified close). One document saying \"closed\" while another still shows \"open\" is a live discrepancy, not a technicality.",
+    "Evidence beats a status label every time — before/after photos, signed inspection logs, toolbox-talk attendance registers. A row that says \"CLOSED\" with a placeholder instead of real evidence is not actually closed.",
+    "Physical safety fixes (electrical installation, emergency stop switches, signage) are the ones most likely to get marked closed on a deadline before the work is actually verified on the ground. Those are exactly the ones worth a walk-past, not a desk check.",
+    "Pair every open finding with its accountability owner — delineation findings go nowhere without knowing which department is responsible for maintaining them in each zone."
   ],
-  "apply": "Line-of-fire discipline at the loading face and on the ramps is the category that erodes fastest — it's the one most likely to get normalized into \"that's just how we work the face,\" right up until it isn't.",
-  "generatedAt": "2026-10-11T11:28:32"
+  "apply": "Before you sign off any closeout — audit finding, NCR, or task feedback log item — walk the fix yourself rather than trusting the status column; the North Goline fuel area and haul-road signage are the two spots this KB's history shows get marked done on paper before they're actually done on site.",
+  "generatedAt": "2026-10-12T07:03:01"
 }
