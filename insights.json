@@ -1,20 +1,20 @@
 {
-  "generatedAt": "2026-10-12T11:32:21",
+  "generatedAt": "2026-10-13T11:32:27",
   "date": "2026-10-12",
   "runNumber": null,
-  "summary": "1. 2026-10-12 -- scope resolution for the three items flagged 2026-10-11 (\"JRAR Reports\", the dispatch tyre report, `Production report/Other Reports/`), per Peter's decision in chat Peter's decision on each: ingest both JRAR Reports docx and document the figure conflict rather than resolve it; ingest and compile the tyre report now; register `Production report/Other Reports/` as a recurring RAW location, ingesting the GM Weekly Meeting deck (already done by an earlier pass), the Maaden Performance Review decks, and Production Main Sheets now, with the Dispatch WhatsApp media registered at index level only. `CLAUDE.md`'s RAW Folder Layout section updated with both new locations. 2. Read and compiled: both September JRAR Reports docx (Original and Joe Revised), the Sep 1-Oct 10 dispatch tyre report `.msg` plus its attached by-dispatch PDF, the Q3 2026 and September 2026 Maaden Performance Review decks, and the September Production Main Sheets master workbook (structure only). 3. Registered by name only: the other eight months of Production Main Sheets, the Dispatch WhatsApp/voice-note dump, and the GM Weekly Meeting WhatsApp image. 4. Findings Joe Revised reframes September's ore-mined variance as +1% (160,604t budget / 161,717t achieved) against the already-ingested PDF's +9% (146,986t / 160,604t) — the budget figure in one version is the achieved figure in the other. 5. Not resolved; flagged for Peter to check with Joe directly. 6. Joe Revised adds a nine-event, 43,000 BCM / 98h September production-loss table with no equivalent in the PDF: largest single event is an 18-Sep dust suppression stand-down (10,800 BCM/18h), followed by a 20-Sep fuel bowser delay (13,600 BCM/6h) and a 10-Sep water truck breakdown (4,000 BCM/45h). 7. Tyre report: Sep 1-Oct 10 totals 670.95h / 27.96 days across 65 incidents, 528.45h / 22.02 days of that on dump trucks — matches the Oct 11 HOD meeting's figures exactly. 8. One entry, DT-346's 822.75-hour \"Replace Tire\" record (04-Aug to 07-Sep), exceeds the report's own stated total on its own and starts a month before the report's \"01 Sep\" window — doesn't reconcile, flagged as an open question. 9. The Q3 and September Performance Review decks (dated 12-Oct, the day of Maaden's own contractor review) name August's lead equipment faults with hours for the first time: CAT 6015 (Ex-253) swing fault, 679h/~157,700 BCM est.; CAT 6020 track/hydraulic failures, 324h/~73,500 BCM est. — combined estimate exceeds August's own 127,513 BCM shortfall against plan. The Production Main Sheets master workbook (one `.xlsm` per month) sits upstream of the whole [[production-data-stack]] model — per-unit tabs plus the same Client Meeting Report / A&U / DPR / Daily KPI content already tracked, one level closer to source. Its per-day tabs hold only the latest day's snapshot, not a running history; the Production BCM tab is the exception. Eight of the nine Production Main Sheets months (Jan-Aug 2026) were registered by name only, not opened. The Dispatch WhatsApp/voice-note dump and the GM Weekly Meeting WhatsApp image were registered at index level per Peter's decision, not analyzed.",
+  "summary": "1. One new meeting: the Oct 12 HOD meeting (created 04:15 UTC), written to `Meeting Notes/daily-hod-meeting_2026-10-12.md`. 2. All other meetings of the last eight days were already in RAW. 3. Read: `261012-INX-SUM.xlsx` (Oct 11 survey), Daily Availability Final Report for 11 Oct, Q4 recovery deck v15 (28 slides), Q4 equipment forecast, the Oct 6/7 budget emails, the Maaden Weeks 42-43 plan, the Oct 12 dispatch workbook (first two slots), and the Oct 11 workbooks again for lost-hour conversions. 4. Registered by name only: workbook v11 and the v1-v14 archive, four recovery-plan email threads, survey and maintenance PDFs, maps, one HR letter. 5. Important References: no new files. 6. Task Feedback Log: no row without Status Processed; nothing to resolve, no mismatch. 7. Notes & References (47 rows): new Night Shift Handover Summary 2026-10-11 and Day Shift Notes 2026-10-12, plus a second revision of the Weekly Review (Sunday brake-ramp study struck through). 8. Findings Survey: Oct 11 trucks 18,414 BCM vs survey 14,941, -3,473 (trucks 23.2% above), first negative day since Oct 7. 9. Cumulative gap -29,391 BCM (-9.36%) from -25,918. Survey MTD 313,934 BCM (47.42%), 61,191 BCM / 165,217 t behind pace; daily target rises to 26,773 BCM / 72,288 t from Oct 13. Oct 11 lost hours in volume: EX-253 and EX-263 down 48 h together, about 15,840 BCM / 42,768 t at the 330 BCM/h planned rate; gross excavator losses 22,911 BCM / 61,860 t (not additive, trucks limited the day). Q4 deck v15: 15.01 Mt at 11 Oct, 66,092 t/day needed against 54,685 t/day survey run rate; year-end 19.14 Mt on the current run (861 kt short), 19.46 Mt with crew and hot-seating (543 kt short), 20.19 Mt with Stage 6. Levers total 318 kt against the 238 kt in the Oct 11 call model. Q4 ore: 97,762 t mined against 155,910 t plan to date; 13,926 t/day needed from Oct 12 against 6,307 now. Go-line check Oct 12: tire inspection and signing averaged 1:26 per truck, about 10 trucks queued at 06:45; estimated loss about 317 BCM / 856 t a day (estimate at fleet average rate). Unread: the Maaden Q4 ore table (inline image) and several PDFs registered by name.",
   "kpis": [
     {
       "label": "MTD BCM",
-      "value": "324,911",
-      "delta": "-6.9% vs target",
+      "value": "343,325",
+      "delta": "-8.0% vs target",
       "good": false
     },
     {
       "label": "Survey Gap",
-      "value": "+8.9%",
+      "value": "-9.4%",
       "delta": "survey vs trucks MTD",
-      "good": true
+      "good": false
     },
     {
       "label": "Days Remain",
@@ -124,9 +124,11 @@
     }
   ],
   "fleet": {
-    "availDaily": "87.24%",
+    "availDaily": "86.91%",
     "availMtd": "86.87%",
+    "exAvail": "47.9%",
     "exUnits": 6,
+    "dtAvail": "88.18%",
     "dtUnits": 21,
     "excavators": [
       {
@@ -154,7 +156,6 @@
         "avail": null
       }
     ],
-    "exAvail": "47.9%",
     "exBasis": "4/6",
     "pdfDate": "11-10"
   },
@@ -166,7 +167,7 @@
       "avail": "0.0%",
       "util": "",
       "bd_hrs": "",
-      "note": "(swing system) and",
+      "note": "is 0 on every day to 31 Dec",
       "comment": "Hydraulic Oil Leakage"
     },
     {
@@ -176,18 +177,18 @@
       "avail": "0.0%",
       "util": "",
       "bd_hrs": "",
-      "note": "(engine, low power) still down at 10:00, DT 107, 108, 110, 131 and 282 down, and WD 145 and WT 304 down, with",
+      "note": "returns after a gap in mid-October",
       "comment": "Engine Coolant Level Low Warning"
     },
     {
-      "unit": "DT-107",
+      "unit": "DT-108",
       "type": "Haul Truck",
       "status": "down",
       "avail": "0.0%",
       "util": "",
       "bd_hrs": "",
-      "note": "",
-      "comment": "Engine Coolant Temperature High"
+      "note": ") are 72 truck-hours, 4,347 BCM / 11,737 t.",
+      "comment": "C/O L.H Final Drive"
     },
     {
       "unit": "DT-110",
@@ -196,7 +197,7 @@
       "avail": "0.0%",
       "util": "",
       "bd_hrs": "",
-      "note": "",
+      "note": ") are 72 truck-hours, 4,347 BCM / 11,737 t.",
       "comment": "Front Right Side Suspension Down"
     },
     {
@@ -218,6 +219,16 @@
       "bd_hrs": "",
       "note": "",
       "comment": "drifter problem"
+    },
+    {
+      "unit": "DT-107",
+      "type": "Haul Truck",
+      "status": "down",
+      "avail": "79.0%",
+      "util": "",
+      "bd_hrs": "",
+      "note": "is 0 in the sheet. Deck summary: excavators 79.0% October, 85.4% November, 85.0% December; dump trucks 85.0% e",
+      "comment": "Engine Coolant Temperature High"
     },
     {
       "unit": "WL-101",
@@ -250,6 +261,26 @@
       "comment": "Inflate Pos# 1"
     },
     {
+      "unit": "EX-123",
+      "type": "Excavator",
+      "status": "down",
+      "avail": "88.18%",
+      "util": "",
+      "bd_hrs": "",
+      "note": "0.5 h daily checks. Dump trucks 88.18% for the day, 90.93% MTD, 99.25 downtime hours across 35 units. Standing",
+      "comment": ""
+    },
+    {
+      "unit": "EX-262",
+      "type": "Excavator",
+      "status": "down",
+      "avail": "88.18%",
+      "util": "",
+      "bd_hrs": "",
+      "note": "0.5 h daily checks. Dump trucks 88.18% for the day, 90.93% MTD, 99.25 downtime hours across 35 units. Standing",
+      "comment": ""
+    },
+    {
       "unit": "DT-365",
       "type": "Haul Truck",
       "status": "down",
@@ -258,16 +289,6 @@
       "bd_hrs": "",
       "note": "",
       "comment": "Check L.H Front Susp ( greasing and  adjust  )"
-    },
-    {
-      "unit": "DT-108",
-      "type": "Haul Truck",
-      "status": "warning",
-      "avail": "0.0%",
-      "util": "",
-      "bd_hrs": "",
-      "note": "",
-      "comment": "C/O L.H Final Drive"
     },
     {
       "unit": "WD-145",
@@ -306,18 +327,8 @@
       "avail": "93.8%",
       "util": "",
       "bd_hrs": "",
-      "note": "",
+      "note": "1.5 h (lip shroud weld, 06:45-08:15)",
       "comment": "Weld Lip Shroud"
-    },
-    {
-      "unit": "EX-123",
-      "type": "Excavator",
-      "status": "warning",
-      "avail": "97.9%",
-      "util": "",
-      "bd_hrs": "",
-      "note": "on standby at mid-shift on Oct 11 while Stage 5 and overspill clearance still need loading capacity?",
-      "comment": ""
     },
     {
       "unit": "FT-144",
@@ -378,15 +389,15 @@
     "fridayTarget": 10884,
     "lastReported": "2026-10-08",
     "lastLabel": "8 Oct",
-    "mtd": 324911.0,
+    "mtd": 343325.0,
     "targetToDate": 282974,
     "trendSum": 290315,
     "daysRemain": 16,
     "normalRemain": 13,
     "fridaysRemain": 3,
-    "remainingBcm": 273687,
-    "requiredNormal": 18875,
-    "requiredFriday": 9437
+    "remainingBcm": 255273,
+    "requiredNormal": 17605,
+    "requiredFriday": 8803
   },
   "followUps": [
     {
