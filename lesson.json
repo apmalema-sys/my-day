@@ -1,14 +1,14 @@
 {
-  "date": "2026-10-12",
-  "topic": "Internal audit and corrective-action closeout",
-  "title": "Internal audit and corrective-action closeout",
-  "body": "A finding marked \"Closed\" on a memo means nothing if the CAR, the action guide, and the physical fix don't all say the same thing — Phase 1 at ADW had exactly that gap: a closure memo claiming all nine deviations closed while the working CAR still showed three open with blank evidence fields. If you sign off a closure report that the paperwork underneath doesn't support, you own that gap when someone checks.",
+  "date": "2026-10-13",
+  "topic": "July 2026 Mining Forecast",
+  "title": "July 2026 Mining Forecast",
+  "body": "At ADW the fleet plan can show 83% availability on a machine that's still delivering next to nothing in BCM, because \"available\" and \"producing\" are two different numbers. If you only check the top-line avail% in the morning report, you'll miss units that are mechanically fine but parked on swing or rehandle duty — and that gap is exactly where production shortfalls hide until month-end.",
   "keyPoints": [
-    "A finding isn't closed until all four documents agree: checklist (what's wrong), CAR (the fix and owner), action guide (the evidence standard), closure report (verified close). One document saying \"closed\" while another still shows \"open\" is a live discrepancy, not a technicality.",
-    "Evidence beats a status label every time — before/after photos, signed inspection logs, toolbox-talk attendance registers. A row that says \"CLOSED\" with a placeholder instead of real evidence is not actually closed.",
-    "Physical safety fixes (electrical installation, emergency stop switches, signage) are the ones most likely to get marked closed on a deadline before the work is actually verified on the ground. Those are exactly the ones worth a walk-past, not a desk check.",
-    "Pair every open finding with its accountability owner — delineation findings go nowhere without knowing which department is responsible for maintaining them in each zone."
+    "Availability and utilization are not the same metric — EX-263 sat at 83.1% planned availability but only 4.2% utilization in one fortnight because it was deliberately parked on swing cover. A fully available machine contributing almost nothing is a planning decision, not a breakdown, and it needs to show up in your head count the same way a down machine does.",
+    "A unit with \"no recovery window\" in the plan (like EX-104, offline the entire month on pump failure) quietly removes a full excavator's capacity from every daily target until someone forces a repair date onto the schedule.",
+    "Stacking two major services in the same week — even on your most reliable unit — compresses production without a single breakdown occurring. Check the service calendar for collisions before you commit to a daily number.",
+    "Forecasts are built on textbook conditions and explicitly exclude breakdowns, weather, and comms issues — treat the forecast BCM as a ceiling, not a commitment, once reality intervenes."
   ],
-  "apply": "Before you sign off any closeout — audit finding, NCR, or task feedback log item — walk the fix yourself rather than trusting the status column; the North Goline fuel area and haul-road signage are the two spots this KB's history shows get marked done on paper before they're actually done on site.",
-  "generatedAt": "2026-10-12T07:03:01"
+  "apply": "When you scan this morning's availability sheet, don't stop at the avail% column — cross-check which machines are flagged swing or rehandle, because that's where a \"healthy\" fleet count can still leave you short at the loading face.",
+  "generatedAt": "2026-10-13T14:40:30"
 }
