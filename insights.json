@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-10-13T14:53:49",
-  "date": "2026-10-13",
+  "generatedAt": "2026-10-14T11:31:14",
+  "date": "2026-10-14",
   "runNumber": null,
-  "summary": "1. Key operational findings Oct 12 posted 22,351 BCM against a 24,072.2 BCM target (-7.15%), a smaller miss than Oct 11's -23.50%, at day 18 of the 30-day fiscal cycle (12 days remaining). 2. MTD narrowed slightly to 365,676 BCM against 397,191.6 (-7.93%), the first improvement in four days after Oct 9's -6.85%, Oct 10's -6.91% and Oct 11's -7.98%. 3. Three things to flag: 1. 4. The split between waste and ore flipped sharply: waste missed by 29.44% (13,857 vs 19,637.3 BCM) while ore ran 91.52% over target (8,494 vs 4,435.0 BCM), the sharpest ore-over/waste-under split of the cycle, pulling the day's stripping ratio down to 1.63 from Oct 11's 5.00. 2. 5. The crusher logged its second straight zero-feed day (0 BCM, planned maintenance shutdown that began Oct 11); MTD throughput sits at 9,753 LCM against a 74,400 LCM plan (13.11%, down from Oct 11's 13.88%), with no reopening date given yet. 3. 6. Three excavators were down simultaneously for the first time this cycle: EX-253 and EX-263 on their standing faults (day 27 and day 8) plus EX-247 newly down 11 hours for a planned 1,000-hour service; a data-quality flag also opened on dump truck DT-346, which logged a full 24-hour \"down\" status against only a routine daily-inspection entry with no closing time recorded. 7. Fleet availability (Daily Availability Final Report, authoritative over the A&U workbook): excavators 63.69% day / 66.00% MTD, the weakest daily excavator reading logged this cycle; trucks 86.25% / 90.54%; drills 93.23% / 86.15%; overall 87.50% / 86.92%, core fleet 81.46%. 8. Lost volume: excavators (EX-253, EX-263, EX-247) 19,140 BCM / 51,678 t gross; dump trucks (DT-107, DT-108, DT-110) 4,348 BCM / 11,740 t — combined 23,488 BCM / 63,418 t, well above the day's 1,721 BCM target miss, confirming trucks rather than diggers set the day's pace. 9. WL-329's cutting-edge changeout, flagged open on Oct 11 after a 4.5 h breakdown, closed out after an 11.25 h GET changeout and bucket-weld repair spanning 11-Oct 11:45 PM to 12-Oct 4:45 PM. A new fault opened on WT-300 (water truck), down 22.25 h on a tyre puncture from 7:15 AM. Survey reading for Oct 12 production (261013-INX-SUM): trucks 22,351 BCM vs survey 23,093 BCM, +742 BCM (+3.21%) — survey back above trucks after Oct 11's single negative day. Cumulative gap narrows to -28,649 BCM (-8.50%) from -29,391 BCM (-9.36%). Survey MTD crosses the halfway mark for the first time this cycle at 50.91% of the 661,986 BCM monthly target; the daily rate needed from Oct 14 rises to 27,079.92 BCM, the steepest ask of the cycle so far. The A&U, DPR, Drill Meters, Drill Sampling, Equipment Running Hours, Running Hours Maaden, Distance Report and Grade Control Sheet workbooks gained Oct 12 tabs but were registered by name only, not deep-read (the Client Meeting Report and the Daily Availability Final Report cover the figures compiled this pass). DT-346's anomalous down-status entry and EX-247's day of \"no jobs\" standby even in its nominally-available hours are flagged as open questions, not resolved. The mineable-area PDF and the broken-stock email's inline-image table remain unread, consistent with prior passes. `publish_insights.py` was deliberately not run this pass — the `wiki-insights-sync` task publishes separately at 11:00/17:00. Source: KNOWLEDGE/mining_operations_kb/RAW via the librarian compile protocol.",
+  "summary": "1. Key operational findings Oct 13 posted 22,475 BCM against a 24,072.2 BCM target (-6.63%), narrower than Oct 12's -7.15% miss. 2. MTD narrowed to 388,151 BCM against 421,263.8 (-7.86%), the second straight day of improvement (Oct 11 -7.98%, Oct 12 -7.93%, Oct 13 -7.86%), at day 19 of the 30-day fiscal cycle (11 days remaining). 3. Three things to flag: 1. 4. The waste/ore split reversed back toward normal after Oct 12's unusually ore-heavy day: waste missed by 10.97% (17,484 vs 19,637.3 BCM) while ore ran 12.54% over target (4,991 vs 4,435.0 BCM), pulling the day's stripping ratio back up to 3.50 from Oct 12's 1.63. 2. 5. The crusher logged its third straight zero-feed day (0 BCM, the planned shutdown that began Oct 11); MTD throughput sits at 9,753 LCM against a 78,533 LCM plan (12.42%, down from Oct 12's 13.11%), with no reopening date given yet. 3. 6. The excavator fleet partially recovered as EX-247 returned from Oct 12's full-day 1,000-hour service (down only 2 h today on hydraulic leakage and an engine warning), lifting daily excavator availability to 69.05% from Oct 12's 63.69%; on the dump-truck side DT-108's final-drive changeout and DT-346's unreconciled 24-hour \"Daily Inspection\" anomaly both cleared, but a new brake-air-pressure fault opened on DT-130 (22.5 h, 6.25% avail, no time-out logged by report cut-off). 7. Fleet availability (Daily Availability Final Report, authoritative over the A&U workbook): excavators 69.05% day / 66.23% MTD; trucks 87.80% / 90.33%; drills 91.41% / 86.56%; overall 91.99% / 87.31%, core fleet 88.05% — the best overall daily reading since at least Oct 10. 8. Lost volume: excavators (EX-253, EX-263, EX-247) 16,440 BCM / 44,388 t gross; dump trucks (DT-107, DT-110, DT-130, DT-109) 5,128.4 BCM / 13,846.7 t — combined 21,568.4 BCM / 58,234.7 t, well above the day's 1,597.2 BCM target miss. 9. A Water Truck Tires email thread (Louw Weideman, 2026-10-14, 10:08 AM) asks procurement to source off-road-rated tyres for the water trucks, service truck, and fuel truck, citing repeated punctures — lands the same day WT-300 (second consecutive day on a tyre puncture, plus a fresh one overnight) and WT-304 (new tyre and brake air-pressure faults) both show tyre-related stoppages. Flag, not resolved: the Q4 recovery budget deck advanced to v29 (same scenarios as v28). A live email thread the same morning (Muneeb Ur Rehman, Joe Coleman, Ivan Anthony, Peter Anthony, 09:18-10:18 AM) disputes the deck's Slide 4 shortfall figure: Ma'aden's own letter states the contractor is behind target by approximately 500,000 tons, while the deck states a Jan-Sep shortfall of 1,310,877 t (-8.6%). Joe Coleman's reply argues the deck's 1.3 Mt figure is correct and agreed by both survey teams, suggesting Ma'aden's letter may have misread a 485,000 BCM figure as a tons figure — units, not magnitude, may be the actual discrepancy. No new survey file (261014-INX-SUM) has landed yet, so [[survey-volume-reconciliation]] was not updated this pass; its most recent reading remains Oct 12 production day (+742 BCM / +3.21% vs survey). The A&U, DPR, Drill Meters, Drill Sampling, Equipment Running Hours, Running Hours Maaden, and Grade Control Sheet workbooks gained Oct 13 tabs/edits but were registered by name only, not deep-read (the Client Meeting Report and the Daily Availability Final Report cover the figures compiled this pass). The October Distance Report was not updated this pass (no Oct 13 tab yet). The Q4 recovery deck v29 and its superseded _archive versions were registered by name only beyond the first six slides read. `publish_insights.py` was deliberately not run this pass — the `wiki-insights-sync` task publishes separately at 11:00/17:00. Source: KNOWLEDGE/mining_operations_kb/RAW via the librarian compile protocol.",
   "kpis": [
     {
       "label": "MTD BCM",
-      "value": "365,676",
+      "value": "388,151",
       "delta": "-7.9% vs target",
       "good": false
     },
@@ -18,7 +18,7 @@
     },
     {
       "label": "Crusher MTD",
-      "value": "13%",
+      "value": "12%",
       "delta": "9,753 / 124,000 LCM",
       "good": null
     },
@@ -130,11 +130,11 @@
     }
   ],
   "fleet": {
-    "availDaily": "87.50%",
-    "availMtd": "86.92%",
-    "exAvail": "50.0%",
+    "availDaily": "91.99%",
+    "availMtd": "87.31%",
+    "exAvail": "57.5%",
     "exUnits": 6,
-    "dtAvail": "86.25%",
+    "dtAvail": "87.80%",
     "dtUnits": 21,
     "excavators": [
       {
@@ -155,7 +155,7 @@
       },
       {
         "unit": "EX-247",
-        "avail": "54.2%"
+        "avail": "91.7%"
       },
       {
         "unit": "EX-1200",
@@ -163,7 +163,7 @@
       }
     ],
     "exBasis": "5/6",
-    "pdfDate": "12-10"
+    "pdfDate": "13-10"
   },
   "equipment": [
     {
@@ -173,7 +173,7 @@
       "avail": "0.0%",
       "util": "",
       "bd_hrs": "",
-      "note": "at the standing 330 BCM/h planned rate (15,840 BCM / 42,768 t combined, unchanged from Oct 11), plus",
+      "note": "at the standing 330 BCM/h planned rate (15,840 BCM / 42,768 t combined, unchanged since Oct 11), plus",
       "comment": "Hydraulic Oil Leakage"
     },
     {
@@ -183,7 +183,7 @@
       "avail": "0.0%",
       "util": "",
       "bd_hrs": "",
-      "note": "at the standing 330 BCM/h planned rate (15,840 BCM / 42,768 t combined, unchanged from Oct 11), plus",
+      "note": "at the standing 330 BCM/h planned rate (15,840 BCM / 42,768 t combined, unchanged since Oct 11), plus",
       "comment": "Engine Coolant Level Low Warning"
     },
     {
@@ -207,104 +207,114 @@
       "comment": "Front Right Side Suspension Down"
     },
     {
-      "unit": "WT-300",
-      "type": "Water Truck",
-      "status": "down",
-      "avail": "7.3%",
-      "util": "",
-      "bd_hrs": "",
-      "note": "",
-      "comment": "Tyre Punture"
-    },
-    {
       "unit": "DT-109",
       "type": "Haul Truck",
       "status": "down",
-      "avail": "68.8%",
+      "avail": "54.2%",
       "util": "",
       "bd_hrs": "",
       "note": "",
       "comment": "Check Hoist Pump"
     },
     {
-      "unit": "DR-125",
-      "type": "Drill",
+      "unit": "WT-300",
+      "type": "Water Truck",
       "status": "down",
-      "avail": "83.3%",
+      "avail": "70.8%",
       "util": "",
       "bd_hrs": "",
       "note": "",
-      "comment": "drifter problem ( C/O Drifter )"
+      "comment": "Tyre Punture"
     },
     {
-      "unit": "DT-108",
-      "type": "Haul Truck",
-      "status": "warning",
-      "avail": "0.0%",
+      "unit": "LV-048",
+      "type": "",
+      "status": "down",
+      "avail": "81.2%",
       "util": "",
       "bd_hrs": "",
       "note": "",
-      "comment": "C/O L.H Final Drive"
+      "comment": "Tire Puncher #P04"
+    },
+    {
+      "unit": "EX-327",
+      "type": "Excavator",
+      "status": "down",
+      "avail": "89.6%",
+      "util": "",
+      "bd_hrs": "",
+      "note": "",
+      "comment": "Replace Chisel"
+    },
+    {
+      "unit": "DT-130",
+      "type": "Haul Truck",
+      "status": "warning",
+      "avail": "6.2%",
+      "util": "",
+      "bd_hrs": "",
+      "note": "'s brake-air-pressure fault, opened 7:00 AM with no time-out recorded by report cut-off — confirm whether it c",
+      "comment": "Brake Air Pressure Low"
     },
     {
       "unit": "WD-145",
       "type": "Water Dozer",
       "status": "warning",
-      "avail": "0.0%",
+      "avail": "54.2%",
       "util": "",
       "bd_hrs": "",
       "note": "",
       "comment": "Front Axle Brakes worn out"
     },
     {
-      "unit": "EX-123",
-      "type": "Excavator",
+      "unit": "DZ-280",
+      "type": "Track Dozer",
       "status": "warning",
-      "avail": "89.17%",
+      "avail": "89.6%",
       "util": "",
       "bd_hrs": "",
-      "note": "also had an unrelated 0.25 h A/C-filter clean. The A&U workbook's \"Total/AVG\" line (89.17% avail, 64.17% util)",
-      "comment": "Clean A/C Filter"
+      "note": "",
+      "comment": "Hydraulic Hose Leaking (  Transmission Filter O ring Damage )"
     },
     {
-      "unit": "DR-343",
-      "type": "Drill",
+      "unit": "EX-247",
+      "type": "Excavator",
+      "status": "warning",
+      "avail": "91.7%",
+      "util": "",
+      "bd_hrs": "",
+      "note": "'s four distinct fault/compartment entries against only 2 logged breakdown hours — confirm the unit is back to",
+      "comment": "Hydraulic Oil Leaking"
+    },
+    {
+      "unit": "DT-242",
+      "type": "Haul Truck",
       "status": "warning",
       "avail": "91.7%",
       "util": "",
       "bd_hrs": "",
       "note": "",
-      "comment": "Charging accumulator"
+      "comment": "Transmission Problem"
     },
     {
-      "unit": "DT-246",
+      "unit": "DT-366",
       "type": "Haul Truck",
       "status": "warning",
-      "avail": "93.8%",
+      "avail": "95.8%",
       "util": "",
       "bd_hrs": "",
       "note": "",
-      "comment": "No Start ( N.F.F )"
+      "comment": "Side Mirror Bolt Loose"
     },
     {
-      "unit": "WL-329",
-      "type": "Wheel Loader",
+      "unit": "EX-123",
+      "type": "Excavator",
       "status": "warning",
-      "avail": "95.61%",
+      "avail": "96.67%",
       "util": "",
       "bd_hrs": "",
-      "note": "'s cutting-edge changeout, flagged open on Oct 11 after a 4.5 h breakdown, ran 11.25 h from 11-Oct 11:45 PM to",
-      "comment": "C/O G.E.T"
-    },
-    {
-      "unit": "DT-346",
-      "type": "Haul Truck",
-      "status": "warning",
-      "avail": "97.9%",
-      "util": "",
-      "bd_hrs": "",
-      "note": "'s \"Daily Inspection\" entry carrying a full 24-hour down status with no time-out — confirm whether this is a d",
-      "comment": ""
+      "note": "also had a GET bucket-tip replacement in the same window). The A&U workbook's \"Total/AVG\" line (96.67% avail, ",
+      "comment": "Replace Bucket Tips"
     },
     {
       "unit": "EX-262",
@@ -313,38 +323,18 @@
       "avail": "97.9%",
       "util": "",
       "bd_hrs": "",
-      "note": "each logged only a 0.5 h daily-inspection stop",
+      "note": "each logged only a 0.5 h daily-inspection stop (",
       "comment": ""
     },
     {
-      "unit": "EX-340",
-      "type": "Excavator",
-      "status": "warning",
-      "avail": "97.9%",
-      "util": "",
-      "bd_hrs": "",
-      "note": "each logged only a 0.5 h daily-inspection stop",
-      "comment": ""
-    },
-    {
-      "unit": "DR-140",
+      "unit": "DR-343",
       "type": "Drill",
       "status": "warning",
       "avail": "97.9%",
       "util": "",
       "bd_hrs": "",
       "note": "",
-      "comment": "Compressor overheating was  worked on"
-    },
-    {
-      "unit": "DT-367",
-      "type": "Haul Truck",
-      "status": "warning",
-      "avail": "97.9%",
-      "util": "",
-      "bd_hrs": "",
-      "note": "",
-      "comment": "L.H Mirror Bolts Loose"
+      "comment": "Hydraulic Hose Burst"
     },
     {
       "unit": "WT-304",
@@ -354,7 +344,7 @@
       "util": "",
       "bd_hrs": "",
       "note": "",
-      "comment": "Air Pipe Press Leak"
+      "comment": "Tyre Air Pressure Low"
     },
     {
       "unit": "FT-144",
@@ -365,6 +355,16 @@
       "bd_hrs": "",
       "note": "",
       "comment": "C/O Air Compressor & Brake Air  lines"
+    },
+    {
+      "unit": "FT-388",
+      "type": "",
+      "status": "warning",
+      "avail": "100.0%",
+      "util": "",
+      "bd_hrs": "",
+      "note": "",
+      "comment": "Replace Rear Tyres P7 & P8"
     },
     {
       "unit": "LV-049",
@@ -387,6 +387,26 @@
       "comment": "Engine Failure"
     },
     {
+      "unit": "DT-108",
+      "type": "Haul Truck",
+      "status": "warning",
+      "avail": "",
+      "util": "",
+      "bd_hrs": "",
+      "note": "down the prior three days on a left final-drive changeout, is clear of today's report — back in the fleet.** *",
+      "comment": ""
+    },
+    {
+      "unit": "DT-346",
+      "type": "Haul Truck",
+      "status": "warning",
+      "avail": "",
+      "util": "",
+      "bd_hrs": "",
+      "note": "flagged Oct 12 for an unreconciled 24-hour \"Daily Inspection\" entry, is also clear of today's report**, resolv",
+      "comment": ""
+    },
+    {
       "unit": "ACN-018",
       "type": "",
       "status": "warning",
@@ -395,26 +415,6 @@
       "bd_hrs": "",
       "note": "",
       "comment": "Fuel Pump Faulty"
-    },
-    {
-      "unit": "LV-047",
-      "type": "",
-      "status": "warning",
-      "avail": "",
-      "util": "",
-      "bd_hrs": "",
-      "note": "",
-      "comment": "Tyre Flat # 04"
-    },
-    {
-      "unit": "EX-247",
-      "type": "Excavator",
-      "status": "scheduled",
-      "avail": "54.2%",
-      "util": "",
-      "bd_hrs": "",
-      "note": "'s 11 service hours at its own 300 BCM/h planned rate (3,300 BCM / 8,910 t) — gross excavator shortfall 19,140",
-      "comment": ""
     },
     {
       "unit": "DT-79",
@@ -435,15 +435,15 @@
     "fridayTarget": 10884,
     "lastReported": "2026-10-08",
     "lastLabel": "8 Oct",
-    "mtd": 365676.0,
+    "mtd": 388151.0,
     "targetToDate": 282974,
     "trendSum": 290315,
     "daysRemain": 16,
     "normalRemain": 13,
     "fridaysRemain": 3,
-    "remainingBcm": 232922,
-    "requiredNormal": 16064,
-    "requiredFriday": 8032
+    "remainingBcm": 210447,
+    "requiredNormal": 14514,
+    "requiredFriday": 7257
   },
   "followUps": [
     {
@@ -453,14 +453,20 @@
       "action": ""
     },
     {
-      "priority": "HIGH",
-      "title": "WL-329's cutting-edge changeout, flagged open on Oct 11 after a 4.5 h br...",
+      "priority": "MONITOR",
+      "title": "A Water Truck Tires email thread (Louw Weideman, 2026-10-14, 10:08 AM) a...",
       "body": "",
       "action": ""
     },
     {
-      "priority": "HIGH",
-      "title": "Survey reading for Oct 12 production (261013-INX-SUM): trucks 22,351 BCM...",
+      "priority": "MONITOR",
+      "title": "**Flag, not resolved:** the Q4 recovery budget deck advanced to v29 (sam...",
+      "body": "",
+      "action": ""
+    },
+    {
+      "priority": "MONITOR",
+      "title": "No new survey file (261014-INX-SUM) has landed yet, so [[survey-volume-r...",
       "body": "",
       "action": ""
     }
