@@ -1,14 +1,15 @@
 {
-  "date": "2026-10-13",
-  "topic": "July 2026 Mining Forecast",
-  "title": "July 2026 Mining Forecast",
-  "body": "At ADW the fleet plan can show 83% availability on a machine that's still delivering next to nothing in BCM, because \"available\" and \"producing\" are two different numbers. If you only check the top-line avail% in the morning report, you'll miss units that are mechanically fine but parked on swing or rehandle duty — and that gap is exactly where production shortfalls hide until month-end.",
+  "date": "2026-10-14",
+  "topic": "Hydraulic rock breaker — operation, oversize handling, and operator technique",
+  "title": "Hydraulic rock breaker — operation, oversize handling, and operator technique",
+  "body": "Every hour the breaker spends blank-firing or prying boulders is an hour closer to a seized piston, a cracked tool, or a bent excavator stick — and a tool that dies in days instead of months means oversize backs up at the crusher or the loading face until someone's standing idle waiting on it.",
   "keyPoints": [
-    "Availability and utilization are not the same metric — EX-263 sat at 83.1% planned availability but only 4.2% utilization in one fortnight because it was deliberately parked on swing cover. A fully available machine contributing almost nothing is a planning decision, not a breakdown, and it needs to show up in your head count the same way a down machine does.",
-    "A unit with \"no recovery window\" in the plan (like EX-104, offline the entire month on pump failure) quietly removes a full excavator's capacity from every daily target until someone forces a repair date onto the schedule.",
-    "Stacking two major services in the same week — even on your most reliable unit — compresses production without a single breakdown occurring. Check the service calendar for collisions before you commit to a daily number.",
-    "Forecasts are built on textbook conditions and explicitly exclude breakdowns, weather, and comms issues — treat the forecast BCM as a ceiling, not a commitment, once reality intervenes."
+    "Breaker is for breaking rock only — not lifting, not sweeping, not prying material loose. Use the lower housing to move boulders.",
+    "Stop the instant the rock breaks. Blank firing — idle strokes after the break, or prying that lifts the piston off the tool — is the single biggest cause of hammer failure.",
+    "90° working angle, feed along the tool axis, max 15 seconds in one spot before stone dust dampens the impact and deforms the tip.",
+    "Never fire with the boom, stick, or bucket cylinder fully retracted or fully extended — that's structural damage to the excavator, not just the tool.",
+    "Stop immediately on excessive hose vibration (punctured accumulator) or visible hydraulic oil along the shaft (seal failure) — workshop job, not a field fix."
   ],
-  "apply": "When you scan this morning's availability sheet, don't stop at the avail% column — cross-check which machines are flagged swing or rehandle, because that's where a \"healthy\" fleet count can still leave you short at the loading face.",
-  "generatedAt": "2026-10-13T14:40:30"
+  "apply": "Watch the hammer operators at the ROM pad and loading face for the \"let it fall through and idle-strike\" habit — it's the fastest way to turn a good tool into next week's workshop backlog.",
+  "generatedAt": "2026-10-14T10:35:59"
 }
