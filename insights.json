@@ -1,18 +1,18 @@
 {
-  "generatedAt": "2026-10-15T11:32:58",
-  "date": "2026-10-14",
+  "generatedAt": "2026-10-16T11:32:13",
+  "date": "2026-10-16",
   "runNumber": null,
-  "summary": "1. One new: the Oct 14 call recorded as \"Meeting @Today\" (Stage 4/5 priority and equipment deployment with Ali, transcript contains profanity, kept verbatim). 2. New since the morning pass: 261014-INX-SUM.xlsx (read), its mineable-area PDF and broken-stock email (registered by name; drawing and inline-image table), Peter's one-page handwritten \"Recovery EOY-2026\" plan (ADW 2026.pdf, viewed), and two blank haul-distance sheet templates. 3. No Oct 14 tabs in the production workbooks yet. 4. Survey: Oct 13 production day trucks 22,475 vs survey 16,848 BCM, -5,627 BCM (-33.40%, 15,193 t). 5. Cumulative gap widens to -34,276 BCM (-9.69%, 92,545 t) from -28,649 (-8.50%). 6. Survey MTD 353,875 BCM = 53.46% of 661,986; behind target-to-date by 65,383 BCM / 176,534 t (-18.48%). 7. Required rate from Oct 15 rises to 28,010 BCM / 75,627 t a day, the highest of the cycle. 8. The survey comment names only EXC 6020 (123) on heap and EXC 6020 (340) on heap + 2.5 m. 9. Deployment meeting: Stage 4 first priority, Stage 5 second, Stage 6 only when 4/5 lack blasted material; EX-340 + EX-398 on Stage 4, EX-123 + PC2000 on Stage 5, EX-263 (6015) + 3 rental trucks on Stage 6, 1250 on the ROM pad with Sunny trucks. Stage 4 alone needs at least 14 trucks, leaving about 6 for Stage 5. Rental excavator preference 6015, then 1200, then 395; the room's view is that trucks, not excavators, are the gap. Measured haul distances (Oct 14, survey): Stage 4 to ROM 4.89 km, Stage 5 North 3.00, Stage 5 South 3.62. Hole size debate: start at 142 mm, 165 mm needs downhole drills; about half of drilling is in the wrong places. Night shift (voice note, auto-transcribed): EX-398 stopped 04:36 for a water-damaged ramp, edge cones not placed, two water trucks with punctures, 12,000 target called unlikely. Lost volume uses the 316 BCM/h fleet-average excavator rate (16,440 BCM over 52 h on Oct 13), flagged as an estimate; the EX-398 stop duration is not recorded, so no total is stated. EX-263 cylinder repair (about half a day, taken as 12 h) is about 3,794 BCM / 10,244 t if the unit would otherwise have loaded. Flags, not resolved. (1) The 435,000 and 410,000 monthly targets have no spoken unit; the Notion note says tons, but October's own target is 661,986 BCM (1,787,362 t). Same BCM-versus-tons ambiguity as the Ma'aden letter dispute logged this morning. (2) The Notion project note was still being edited when copied (last edit 13:40); re-check next pass. (3) The Oct 13 survey shortfall's cause is not stated; whether overspill loading outside the survey area explains it needs the Oct 14 dispatch by excavator. Part C (Task Feedback Log). The 40 most recent rows were queried; every row has Status = Processed, the latest dated Oct 10. Nothing to resolve, no task/feedback mismatch, nothing to mark. Part D (Notes & References). 47 rows scanned. Two new rows ingested: Night Shift Handover Summary 2026-10-13, and Project Meeting – Stage 4/5 Priority, Stage 6 Only Under Constraints – 2026-10-14. All other rows unchanged since their RAW copies (edit times compared with RAW date_added). The voice-note transcript clears the dispatch file PTT-20261014-WA0005.opus. Two meeting actions (get actual pit-to-ROM distances; run the updated truck cycle scenario) already existed as inbox tasks, so were not duplicated. The 261014 broken-stock email table and mineable-area PDF were not read for figures. The haul-distance PDFs are blank templates. Workbook Oct 14 tabs had not landed.",
+  "summary": "1. Three new Notion meeting notes written to RAW/Meeting Notes: `daily-client-review-meeting_2026-10-15`, `daily-hod-meeting_2026-10-15`, `q4-recovery-presentation-planning-meeting_2026-10-15`. 2. Contains personnel and HR remarks; compiled without redaction per standing authorization. 3. No RAW file changed since the morning pass. 4. Articles updated (Last updated 2026-10-16): q4-recovery-plan-2026, daily-production-report, blasting-and-drilling, safety-inspection-patterns, tire-damage-cost-pattern, workshop-maintenance-planning. 5. Important References re-checked, 46 files; the evacuation plan email (registered by name this morning) was read in full and analysed in Outputs/important-references-analysis_2026-10-16.md. 6. Key findings The Oct 14 result reads back consistently: 64,700 t is 23,963 BCM x 2.7, and the 89,700 t month-to-date gap is 33,222 BCM x 2.7. 7. The \"89,000 meters behind\" in the Notion summary of the client review is tons of production, not drilling. 8. Drilling record conflict: month-to-date shows 10,315 m ahead (HOD) while a drill stood 4 h and excavators stood for lack of muck. 9. Drilling stock closed Oct 14 at 18,476 BCM. Lost volume: one excavator stood 5 h on Oct 14 for no loading area, about 1,580 BCM / 4,266 t at the 316 BCM/h fleet average (Oct 13 rate, estimate). Drill hours have no meters-per-hour rate in the sources, so not converted. Client scenario: year-end 19.25 Mt with no change, 19.91 Mt with Fridays plus two excavators, 20 Mt only with hot seating (12 operators, from Nov 1), 6 rental 777 trucks plus a PC1200, and a single North Dump. Client version due Sunday Oct 18, review Monday Oct 19. The DT-Requirement deck family (v8) recommends 4 to 5 extra trucks; the Oct 15 scenario asks for 6 rental trucks. No tonnage is given for the combined scenario. Flagged in the article. Safety and security: hard hat rule restored for everyone outside at dispatch, magazine blast radius to camp unconfirmed (2.5 km estimated), evacuation plan issued (345 people to evacuate). Task Feedback Log queried newest first. Latest row is dated 2026-10-10 and every row is Processed. No resolutions, no mismatches, nothing to mark. Notes & References scanned (50 rows). New: Q4 Dump Truck Requirements & Action Plan Review 2026-10-15 and Night Shift Handover Summary 2026-10-14. Updated: Project Meeting Stage 4/5 Priority 2026-10-14 (edited after its RAW copy; `-revised` file written). All other rows already in RAW with no later edits. Which unit the 435,000 / 410,000 targets carry. Which scenario is the client figure of record (deck v8 vs the Oct 15 combined scenario). \"Armor 102\" unidentified. Drilling meters record versus parked drills. Stage 6 access still needs blasting first.",
   "kpis": [
     {
       "label": "MTD BCM",
-      "value": "388,151",
-      "delta": "-7.9% vs target",
+      "value": "412,114",
+      "delta": "-7.5% vs target",
       "good": false
     },
     {
       "label": "Survey Gap",
-      "value": "-9.7%",
+      "value": "-6.1%",
       "delta": "survey vs trucks MTD",
       "good": false
     },
@@ -130,20 +130,20 @@
     }
   ],
   "fleet": {
-    "availDaily": "91.99%",
-    "availMtd": "87.31%",
-    "exAvail": "39.2%",
+    "availDaily": "93.98%",
+    "availMtd": "87.79%",
+    "exAvail": "57.8%",
     "exUnits": 6,
-    "dtAvail": "87.80%",
+    "dtAvail": "90.92%",
     "dtUnits": 21,
     "excavators": [
       {
         "unit": "EX-340",
-        "avail": "97.9%"
+        "avail": null
       },
       {
         "unit": "EX-262",
-        "avail": "97.9%"
+        "avail": "95.8%"
       },
       {
         "unit": "EX-253",
@@ -151,31 +151,21 @@
       },
       {
         "unit": "EX-263",
-        "avail": "0.0%"
+        "avail": "68.8%"
       },
       {
         "unit": "EX-247",
-        "avail": "0.0%"
+        "avail": "66.7%"
       },
       {
         "unit": "EX-1200",
         "avail": null
       }
     ],
-    "exBasis": "5/6",
-    "pdfDate": "14-10"
+    "exBasis": "4/6",
+    "pdfDate": "15-10"
   },
   "equipment": [
-    {
-      "unit": "EX-247",
-      "type": "Excavator",
-      "status": "down",
-      "avail": "0.0%",
-      "util": "",
-      "bd_hrs": "",
-      "note": "** are still named as units to fix before the fleet can staff Stage 4 and Stage 5 with spares; a second parked",
-      "comment": "Left Side Boom Light Bolt Loose"
-    },
     {
       "unit": "EX-253",
       "type": "Excavator",
@@ -197,114 +187,124 @@
       "comment": "Engine Coolant Temperature High"
     },
     {
-      "unit": "DT-110",
-      "type": "Haul Truck",
-      "status": "down",
-      "avail": "31.2%",
-      "util": "",
-      "bd_hrs": "",
-      "note": "",
-      "comment": "Replace Front suspension RH"
-    },
-    {
       "unit": "LT-137",
       "type": "",
       "status": "down",
-      "avail": "52.1%",
+      "avail": "0.0%",
       "util": "",
       "bd_hrs": "",
       "note": "",
       "comment": "Eng No Start"
     },
     {
-      "unit": "DR-139",
-      "type": "Drill",
+      "unit": "WL-329",
+      "type": "Wheel Loader",
       "status": "down",
-      "avail": "68.8%",
+      "avail": "54.2%",
       "util": "",
       "bd_hrs": "",
       "note": "",
-      "comment": "Oil leakage from boom. Lifting  cylinder counterbalance valve"
+      "comment": "C/O Rear Tyres"
     },
     {
-      "unit": "WT-304",
-      "type": "Water Truck",
-      "status": "down",
-      "avail": "79.2%",
-      "util": "",
-      "bd_hrs": "",
-      "note": "",
-      "comment": "Tyre Air Pressure Low"
-    },
-    {
-      "unit": "DT-282",
-      "type": "Haul Truck",
-      "status": "down",
-      "avail": "83.3%",
-      "util": "",
-      "bd_hrs": "",
-      "note": "",
-      "comment": "C/O Tyre O.Ring"
-    },
-    {
-      "unit": "EX-263",
+      "unit": "EX-247",
       "type": "Excavator",
-      "status": "warning",
-      "avail": "0.0%",
+      "status": "down",
+      "avail": "66.7%",
       "util": "",
       "bd_hrs": "",
-      "note": "(CAT 6015):** a right-hand-side fault found during calibration needs a cylinder replacement; one is in stock a",
-      "comment": "Engine Coolant Level Low Warning"
+      "note": "** are still named as units to fix before the fleet can staff Stage 4 and Stage 5 with spares; a second parked",
+      "comment": "Engine low power RPM Derate to  1600rpm"
     },
     {
-      "unit": "LV-023",
+      "unit": "EX-326",
+      "type": "Excavator",
+      "status": "down",
+      "avail": "85.4%",
+      "util": "",
+      "bd_hrs": "",
+      "note": "",
+      "comment": "Noise From Eng Belt"
+    },
+    {
+      "unit": "LV-106",
       "type": "",
+      "status": "down",
+      "avail": "88.5%",
+      "util": "",
+      "bd_hrs": "",
+      "note": "",
+      "comment": "Punture Pos# 1"
+    },
+    {
+      "unit": "DR-303",
+      "type": "Drill",
       "status": "warning",
-      "avail": "31.2%",
+      "avail": "33.3%",
       "util": "",
       "bd_hrs": "",
       "note": "",
       "comment": ""
     },
     {
-      "unit": "DT-108",
-      "type": "Haul Truck",
-      "status": "warning",
-      "avail": "70.8%",
-      "util": "",
-      "bd_hrs": "",
-      "note": "",
-      "comment": "brake pedal pin worn out"
-    },
-    {
-      "unit": "DT-130",
-      "type": "Haul Truck",
-      "status": "warning",
-      "avail": "85.4%",
-      "util": "",
-      "bd_hrs": "",
-      "note": "",
-      "comment": "C/O Brake Relay"
-    },
-    {
       "unit": "LV-049",
       "type": "",
       "status": "warning",
-      "avail": "85.4%",
+      "avail": "54.2%",
       "util": "",
       "bd_hrs": "",
       "note": "",
       "comment": "Engine Failure"
     },
     {
-      "unit": "WT-300",
-      "type": "Water Truck",
+      "unit": "DT-108",
+      "type": "Haul Truck",
       "status": "warning",
-      "avail": "90.6%",
+      "avail": "56.2%",
       "util": "",
       "bd_hrs": "",
       "note": "",
-      "comment": "Inflate# 2"
+      "comment": "Adjust pressure for the park brake  release"
+    },
+    {
+      "unit": "EX-263",
+      "type": "Excavator",
+      "status": "warning",
+      "avail": "68.8%",
+      "util": "",
+      "bd_hrs": "",
+      "note": "(CAT 6015):** a right-hand-side fault found during calibration needs a cylinder replacement; one is in stock a",
+      "comment": "Engine Coolant Level Low Warning  (  REPLACING ENGINE )"
+    },
+    {
+      "unit": "DT-243",
+      "type": "Haul Truck",
+      "status": "warning",
+      "avail": "87.5%",
+      "util": "",
+      "bd_hrs": "",
+      "note": "",
+      "comment": "C/O Hose From Brake Valve To  Tank )"
+    },
+    {
+      "unit": "DT-106",
+      "type": "Haul Truck",
+      "status": "warning",
+      "avail": "91.7%",
+      "util": "",
+      "bd_hrs": "",
+      "note": "",
+      "comment": "Reomve Rock From Pos# 1"
+    },
+    {
+      "unit": "DT-130",
+      "type": "Haul Truck",
+      "status": "warning",
+      "avail": "91.7%",
+      "util": "",
+      "bd_hrs": "",
+      "note": "",
+      "comment": "A/C Not Working ( C/O Drayer )"
     },
     {
       "unit": "DT-131",
@@ -314,57 +314,17 @@
       "util": "",
       "bd_hrs": "",
       "note": "",
-      "comment": "Jump Start"
+      "comment": "Eng No Start ( C/O Batteries )"
     },
     {
-      "unit": "EX-398",
-      "type": "Excavator",
-      "status": "warning",
-      "avail": "97.9%",
-      "util": "",
-      "bd_hrs": "",
-      "note": ":** stopped at 04:36 on Oct 14 for a water-damaged ramp, restart pending the screening-material fix ([[night-s",
-      "comment": ""
-    },
-    {
-      "unit": "DR-140",
-      "type": "Drill",
-      "status": "warning",
-      "avail": "97.9%",
-      "util": "",
-      "bd_hrs": "",
-      "note": "",
-      "comment": "compressor over heating"
-    },
-    {
-      "unit": "DT-281",
+      "unit": "DT-128",
       "type": "Haul Truck",
       "status": "warning",
       "avail": "97.9%",
       "util": "",
       "bd_hrs": "",
       "note": "",
-      "comment": "C/O Pos# 6"
-    },
-    {
-      "unit": "EX-340",
-      "type": "Excavator",
-      "status": "warning",
-      "avail": "97.9%",
-      "util": "",
-      "bd_hrs": "",
-      "note": "",
-      "comment": "C/O Tips"
-    },
-    {
-      "unit": "ST-265",
-      "type": "",
-      "status": "warning",
-      "avail": "97.9%",
-      "util": "",
-      "bd_hrs": "",
-      "note": "",
-      "comment": "Punture Pos# 1"
+      "comment": "No Gear"
     },
     {
       "unit": "FT-144",
@@ -385,6 +345,16 @@
       "bd_hrs": "",
       "note": "",
       "comment": "Engine Failure"
+    },
+    {
+      "unit": "EX-398",
+      "type": "Excavator",
+      "status": "warning",
+      "avail": "",
+      "util": "",
+      "bd_hrs": "",
+      "note": ":** stopped at 04:36 on Oct 14 for a water-damaged ramp, restart pending the screening-material fix ([[night-s",
+      "comment": ""
     },
     {
       "unit": "ACN-018",
@@ -415,15 +385,15 @@
     "fridayTarget": 10884,
     "lastReported": "2026-10-08",
     "lastLabel": "8 Oct",
-    "mtd": 388151.0,
+    "mtd": 412114.0,
     "targetToDate": 282974,
     "trendSum": 290315,
     "daysRemain": 16,
     "normalRemain": 13,
     "fridaysRemain": 3,
-    "remainingBcm": 210447,
-    "requiredNormal": 14514,
-    "requiredFriday": 7257
+    "remainingBcm": 186484,
+    "requiredNormal": 12861,
+    "requiredFriday": 6430
   },
   "followUps": [
     {
@@ -433,20 +403,26 @@
       "action": ""
     },
     {
-      "priority": "MONITOR",
-      "title": "A Water Truck Tires email thread (Louw Weideman, 2026-10-14, 10:08 AM) a...",
+      "priority": "HIGH",
+      "title": "Dump truck faults moved both ways: DT-110 (front-right suspension, open ...",
+      "body": "",
+      "action": ""
+    },
+    {
+      "priority": "HIGH",
+      "title": "Ma'aden's Sultan Aljohani confirmed the Stage 4/5/6 priority and fleet a...",
       "body": "",
       "action": ""
     },
     {
       "priority": "MONITOR",
-      "title": "**Flag, not resolved:** the Q4 recovery budget deck advanced to v29 (sam...",
+      "title": "Survey reading for Oct 14 production (261015-INX-SUM): trucks 23,963 BCM...",
       "body": "",
       "action": ""
     },
     {
       "priority": "MONITOR",
-      "title": "No new survey file (261014-INX-SUM) has landed yet, so [[survey-volume-r...",
+      "title": "**Flag, not resolved:** a new JRAR planning deck family landed — \"ADW-Q4...",
       "body": "",
       "action": ""
     }
