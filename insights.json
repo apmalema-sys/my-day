@@ -1,13 +1,13 @@
 {
-  "generatedAt": "2026-10-16T11:32:13",
+  "generatedAt": "2026-10-16T14:14:49",
   "date": "2026-10-16",
   "runNumber": null,
-  "summary": "1. Three new Notion meeting notes written to RAW/Meeting Notes: `daily-client-review-meeting_2026-10-15`, `daily-hod-meeting_2026-10-15`, `q4-recovery-presentation-planning-meeting_2026-10-15`. 2. Contains personnel and HR remarks; compiled without redaction per standing authorization. 3. No RAW file changed since the morning pass. 4. Articles updated (Last updated 2026-10-16): q4-recovery-plan-2026, daily-production-report, blasting-and-drilling, safety-inspection-patterns, tire-damage-cost-pattern, workshop-maintenance-planning. 5. Important References re-checked, 46 files; the evacuation plan email (registered by name this morning) was read in full and analysed in Outputs/important-references-analysis_2026-10-16.md. 6. Key findings The Oct 14 result reads back consistently: 64,700 t is 23,963 BCM x 2.7, and the 89,700 t month-to-date gap is 33,222 BCM x 2.7. 7. The \"89,000 meters behind\" in the Notion summary of the client review is tons of production, not drilling. 8. Drilling record conflict: month-to-date shows 10,315 m ahead (HOD) while a drill stood 4 h and excavators stood for lack of muck. 9. Drilling stock closed Oct 14 at 18,476 BCM. Lost volume: one excavator stood 5 h on Oct 14 for no loading area, about 1,580 BCM / 4,266 t at the 316 BCM/h fleet average (Oct 13 rate, estimate). Drill hours have no meters-per-hour rate in the sources, so not converted. Client scenario: year-end 19.25 Mt with no change, 19.91 Mt with Fridays plus two excavators, 20 Mt only with hot seating (12 operators, from Nov 1), 6 rental 777 trucks plus a PC1200, and a single North Dump. Client version due Sunday Oct 18, review Monday Oct 19. The DT-Requirement deck family (v8) recommends 4 to 5 extra trucks; the Oct 15 scenario asks for 6 rental trucks. No tonnage is given for the combined scenario. Flagged in the article. Safety and security: hard hat rule restored for everyone outside at dispatch, magazine blast radius to camp unconfirmed (2.5 km estimated), evacuation plan issued (345 people to evacuate). Task Feedback Log queried newest first. Latest row is dated 2026-10-10 and every row is Processed. No resolutions, no mismatches, nothing to mark. Notes & References scanned (50 rows). New: Q4 Dump Truck Requirements & Action Plan Review 2026-10-15 and Night Shift Handover Summary 2026-10-14. Updated: Project Meeting Stage 4/5 Priority 2026-10-14 (edited after its RAW copy; `-revised` file written). All other rows already in RAW with no later edits. Which unit the 435,000 / 410,000 targets carry. Which scenario is the client figure of record (deck v8 vs the Oct 15 combined scenario). \"Armor 102\" unidentified. Drilling meters record versus parked drills. Stage 6 access still needs blasting first.",
+  "summary": "1. Key operational findings Oct 15 posted 24,304 BCM against a 24,072.2 BCM target (+0.96%), the first daily beat since Oct 12, and MTD narrowed to 436,418 BCM against 469,408.3 (-7.03%), a second straight day of improvement (Oct 13 -7.86%, Oct 14 -7.46%, Oct 15 -7.03%) at day 21 of the 30-day fiscal cycle (9 days remaining). 2. Three things to flag: 1. 3. Material split ran 19.77% Stage 4 / 80.23% Stage 5 -- a partial recovery from Oct 14's 100% Stage 5 day, with EX-340 and EX-247 both moving back into a Stage 4 compartment (730-170), though still short of the \"Stage 4 first\" priority Ma'aden's Sultan Aljohani confirmed in writing on Oct 15 morning. 2. 4. The crusher logged its fifth straight zero-feed day (0 BCM, the shutdown that began Oct 11); MTD throughput sits at 9,753 LCM against an 86,800 LCM plan (11.24%, down from Oct 14's 11.80%), with no reopening date given. 3. 5. Fleet availability moved in opposite directions on two of the cycle's most-flagged items: EX-263's standing engine-replacement fault (open since 05-Oct, \"REPLACING ENGINE\") finally cleared at 1:00 PM after 10 days and 230+ breakdown hours, while drilling missed target for the first time since Oct 10 (1,877 m against 2,562.8 m, -26.76%) on 60.5 fleet-wide day-shift standby hours \"due to lack of drilling area\" plus 16 night-shift hours lost to operator fatigue -- a crew/rostering constraint, not a mechanical one. 6. Fleet availability (Daily Availability Final Report, authoritative over the A&U workbook): excavators 75.60% day / 66.17% MTD, up sharply from Oct 14's 55.95%; trucks 93.39% / 90.57%; drills 85.68% / 86.84%; overall 94.07% / 88.21%, core fleet 91.27%. 7. Lost volume: excavators (EX-253 full day, EX-263 part day before clearing, EX-247 part day) 12,795 BCM / 34,546.5 t at planned rates, down sharply from Oct 14's 15,840-23,040 BCM range; dump trucks (DT-107, DT-109, DT-108) 2,638.4 BCM / 7,123.6 t at today's fleet rate. 8. Combined gross 15,433.4 BCM / 41,670.1 t. 9. EX-247's Oct 14 source conflict (Daily Availability Report: 24 h down at 0.00%; Client Meeting Report: 100% available) does not repeat today -- the two sources now broadly agree (66.67% avail / 8 h down per the Availability Report; 64.58% avail / 56.25% util per the Client Meeting Report, both citing the same engine-warning/low-power fault). Treated as the dispute resolving itself rather than confirmed; flagged below for the site to confirm. Flag, not resolved: a new \"ADW-Q4-Recovery Plan\" deck/workbook series (v1-Peter-edits through v4_FINAL) appeared in RAW today, named differently from both the existing ADW-Q4-Recovery-and-2027-Budget family tracked in [[q4-recovery-plan-2026]] and the ADW-Q4-DT-Requirement family flagged as a separate, uncompiled document family on 2026-10-16 morning. The naming suggests the site may have merged the two previously separate deck families into one, which would resolve that morning's open merge/split judgment call -- but the files were registered by name only this pass, not read, so this is inferred from filenames and version history, not confirmed content. Worth a dedicated read and compile pass rather than assuming the merge. No new survey file (261016-INX-SUM, carrying the Oct 15 production day's survey reading) had landed by this pass; [[survey-volume-reconciliation]] was not updated and still reflects the Oct 14 reading. The A&U, DPR, Drill Meters, Drill Sampling, Block Info, Equipment Running Hours, Running Hours Maaden, and Distance Report workbooks gained Oct 15 tabs/edits but were registered by name only, not deep-read (the Client Meeting Report and the Daily Availability Final Report cover the figures compiled this pass). Source: KNOWLEDGE/mining_operations_kb/RAW via the librarian compile protocol.",
   "kpis": [
     {
       "label": "MTD BCM",
-      "value": "412,114",
-      "delta": "-7.5% vs target",
+      "value": "436,418",
+      "delta": "-7.0% vs target",
       "good": false
     },
     {
@@ -18,7 +18,7 @@
     },
     {
       "label": "Crusher MTD",
-      "value": "12%",
+      "value": "11%",
       "delta": "9,753 / 124,000 LCM",
       "good": null
     },
@@ -130,11 +130,11 @@
     }
   ],
   "fleet": {
-    "availDaily": "93.98%",
-    "availMtd": "87.79%",
+    "availDaily": "94.07%",
+    "availMtd": "88.21%",
     "exAvail": "57.8%",
     "exUnits": 6,
-    "dtAvail": "90.92%",
+    "dtAvail": "93.39%",
     "dtUnits": 21,
     "excavators": [
       {
@@ -173,18 +173,8 @@
       "avail": "0.0%",
       "util": "",
       "bd_hrs": "",
-      "note": "** are still named as units to fix before the fleet can staff Stage 4 and Stage 5 with spares; a second parked",
+      "note": "(24 h at 330 BCM/h) 7,920 BCM / 21,384.0 t",
       "comment": "Hydraulic Oil Leakage"
-    },
-    {
-      "unit": "DT-107",
-      "type": "Haul Truck",
-      "status": "down",
-      "avail": "0.0%",
-      "util": "",
-      "bd_hrs": "",
-      "note": "",
-      "comment": "Engine Coolant Temperature High"
     },
     {
       "unit": "LT-137",
@@ -213,7 +203,7 @@
       "avail": "66.7%",
       "util": "",
       "bd_hrs": "",
-      "note": "** are still named as units to fix before the fleet can staff Stage 4 and Stage 5 with spares; a second parked",
+      "note": ": today's readings broadly agree across both sources for the first time since Oct 14's conflict — confirm with",
       "comment": "Engine low power RPM Derate to  1600rpm"
     },
     {
@@ -235,6 +225,16 @@
       "bd_hrs": "",
       "note": "",
       "comment": "Punture Pos# 1"
+    },
+    {
+      "unit": "DT-107",
+      "type": "Haul Truck",
+      "status": "warning",
+      "avail": "0.0%",
+      "util": "",
+      "bd_hrs": "",
+      "note": "'s standing coolant fault.",
+      "comment": "Engine Coolant Temperature High"
     },
     {
       "unit": "DR-303",
@@ -273,7 +273,7 @@
       "avail": "68.8%",
       "util": "",
       "bd_hrs": "",
-      "note": "(CAT 6015):** a right-hand-side fault found during calibration needs a cylinder replacement; one is in stock a",
+      "note": "'s engine-replacement fault has cleared — confirm whether the unit needs a break-in or monitoring period befor",
       "comment": "Engine Coolant Level Low Warning  (  REPLACING ENGINE )"
     },
     {
@@ -317,6 +317,16 @@
       "comment": "Eng No Start ( C/O Batteries )"
     },
     {
+      "unit": "EX-262",
+      "type": "Excavator",
+      "status": "warning",
+      "avail": "95.83%",
+      "util": "",
+      "bd_hrs": "",
+      "note": "(1 h, 95.83%) a planned GET tip changeout plus daily check.",
+      "comment": ""
+    },
+    {
       "unit": "DT-128",
       "type": "Haul Truck",
       "status": "warning",
@@ -325,6 +335,26 @@
       "bd_hrs": "",
       "note": "",
       "comment": "No Gear"
+    },
+    {
+      "unit": "EX-123",
+      "type": "Excavator",
+      "status": "warning",
+      "avail": "97.92%",
+      "util": "",
+      "bd_hrs": "",
+      "note": "(0.5 h, 97.92%) logged only a planned daily-check stop",
+      "comment": ""
+    },
+    {
+      "unit": "EX-398",
+      "type": "Excavator",
+      "status": "warning",
+      "avail": "97.92%",
+      "util": "",
+      "bd_hrs": "",
+      "note": "ran clean full days with no stoppage entry in this report's by-exception table, confirmed at 97.92% avail each",
+      "comment": ""
     },
     {
       "unit": "FT-144",
@@ -347,13 +377,13 @@
       "comment": "Engine Failure"
     },
     {
-      "unit": "EX-398",
+      "unit": "EX-340",
       "type": "Excavator",
       "status": "warning",
       "avail": "",
       "util": "",
       "bd_hrs": "",
-      "note": ":** stopped at 04:36 on Oct 14 for a water-damaged ramp, restart pending the screening-material fix ([[night-s",
+      "note": "now on a Stage 4 compartment (see [[daily-production-report]] for the material-split detail).",
       "comment": ""
     },
     {
@@ -385,15 +415,15 @@
     "fridayTarget": 10884,
     "lastReported": "2026-10-08",
     "lastLabel": "8 Oct",
-    "mtd": 412114.0,
+    "mtd": 436418.0,
     "targetToDate": 282974,
     "trendSum": 290315,
     "daysRemain": 16,
     "normalRemain": 13,
     "fridaysRemain": 3,
-    "remainingBcm": 186484,
-    "requiredNormal": 12861,
-    "requiredFriday": 6430
+    "remainingBcm": 162180,
+    "requiredNormal": 11185,
+    "requiredFriday": 5592
   },
   "followUps": [
     {
@@ -404,25 +434,19 @@
     },
     {
       "priority": "HIGH",
-      "title": "Dump truck faults moved both ways: DT-110 (front-right suspension, open ...",
+      "title": "EX-247's Oct 14 source conflict (Daily Availability Report: 24 h down at...",
       "body": "",
       "action": ""
     },
     {
       "priority": "HIGH",
-      "title": "Ma'aden's Sultan Aljohani confirmed the Stage 4/5/6 priority and fleet a...",
+      "title": "**Flag, not resolved:** a new \"ADW-Q4-Recovery Plan\" deck/workbook serie...",
       "body": "",
       "action": ""
     },
     {
       "priority": "MONITOR",
-      "title": "Survey reading for Oct 14 production (261015-INX-SUM): trucks 23,963 BCM...",
-      "body": "",
-      "action": ""
-    },
-    {
-      "priority": "MONITOR",
-      "title": "**Flag, not resolved:** a new JRAR planning deck family landed — \"ADW-Q4...",
+      "title": "No new survey file (261016-INX-SUM, carrying the Oct 15 production day's...",
       "body": "",
       "action": ""
     }
