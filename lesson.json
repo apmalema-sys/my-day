@@ -1,15 +1,15 @@
 {
-  "date": "2026-10-14",
-  "topic": "Hydraulic rock breaker — operation, oversize handling, and operator technique",
-  "title": "Hydraulic rock breaker — operation, oversize handling, and operator technique",
-  "body": "Every hour the breaker spends blank-firing or prying boulders is an hour closer to a seized piston, a cracked tool, or a bent excavator stick — and a tool that dies in days instead of months means oversize backs up at the crusher or the loading face until someone's standing idle waiting on it.",
+  "date": "2026-10-17",
+  "topic": "Loading, Hauling, and Tipping",
+  "title": "Loading, Hauling, and Tipping",
+  "body": "Every backloading problem, every chipped windscreen, every tire shredded in a pocket, and every dump-edge scare traces back to someone skipping a step in this cycle. Get spotting and tipping discipline right and the rest of the shift runs itself; get it wrong and it shows up as lost tons and NCRs by end of day.",
   "keyPoints": [
-    "Breaker is for breaking rock only — not lifting, not sweeping, not prying material loose. Use the lower housing to move boulders.",
-    "Stop the instant the rock breaks. Blank firing — idle strokes after the break, or prying that lifts the piston off the tool — is the single biggest cause of hammer failure.",
-    "90° working angle, feed along the tool axis, max 15 seconds in one spot before stone dust dampens the impact and deforms the tip.",
-    "Never fire with the boom, stick, or bucket cylinder fully retracted or fully extended — that's structural damage to the excavator, not just the tool.",
-    "Stop immediately on excessive hose vibration (punctured accumulator) or visible hydraulic oil along the shaft (seal failure) — workshop job, not a field fix."
+    "Spotting is a two-signal language: single horn = stop, double horn = go. The excavator bucket is the reference point for reversing in, not the tracks — if the signal and the bucket position disagree, trust the bucket.",
+    "Load a straight face, never a pocket. Pockets feel faster in the moment but cost production and chew up tires in hard rock — it's a false shortcut every time.",
+    "Two-meter rule on single and double benching: stay off the crest edge, no exceptions, even when the face is running clean.",
+    "Backloading has six usual suspects — too many trucks for the cycle, poor fragmentation, spillage cleanup, bad spotting, worn GET, or someone side-loading. If it shows up, don't guess — check the six and fix the actual cause.",
+    "No tipping until the berm is built to half the rear wheel height. If it's short, rebuild it before the first truck backs in — that berm is the only thing standing between a truck and a run-off."
   ],
-  "apply": "Watch the hammer operators at the ROM pad and loading face for the \"let it fall through and idle-strike\" habit — it's the fastest way to turn a good tool into next week's workshop backlog.",
-  "generatedAt": "2026-10-14T10:35:59"
+  "apply": "Watch the switchback and loading-face positioning calls — trucks coming in flat and excavators following the edge instead of cutting into the heave protects tonnage; a crew that starts repositioning constantly is burning production time for no tons gained.",
+  "generatedAt": "2026-10-17T06:16:39"
 }
