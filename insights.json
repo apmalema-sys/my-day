@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-16T14:14:49",
+  "generatedAt": "2026-10-17T11:32:16",
   "date": "2026-10-16",
   "runNumber": null,
   "summary": "1. Key operational findings Oct 15 posted 24,304 BCM against a 24,072.2 BCM target (+0.96%), the first daily beat since Oct 12, and MTD narrowed to 436,418 BCM against 469,408.3 (-7.03%), a second straight day of improvement (Oct 13 -7.86%, Oct 14 -7.46%, Oct 15 -7.03%) at day 21 of the 30-day fiscal cycle (9 days remaining). 2. Three things to flag: 1. 3. Material split ran 19.77% Stage 4 / 80.23% Stage 5 -- a partial recovery from Oct 14's 100% Stage 5 day, with EX-340 and EX-247 both moving back into a Stage 4 compartment (730-170), though still short of the \"Stage 4 first\" priority Ma'aden's Sultan Aljohani confirmed in writing on Oct 15 morning. 2. 4. The crusher logged its fifth straight zero-feed day (0 BCM, the shutdown that began Oct 11); MTD throughput sits at 9,753 LCM against an 86,800 LCM plan (11.24%, down from Oct 14's 11.80%), with no reopening date given. 3. 5. Fleet availability moved in opposite directions on two of the cycle's most-flagged items: EX-263's standing engine-replacement fault (open since 05-Oct, \"REPLACING ENGINE\") finally cleared at 1:00 PM after 10 days and 230+ breakdown hours, while drilling missed target for the first time since Oct 10 (1,877 m against 2,562.8 m, -26.76%) on 60.5 fleet-wide day-shift standby hours \"due to lack of drilling area\" plus 16 night-shift hours lost to operator fatigue -- a crew/rostering constraint, not a mechanical one. 6. Fleet availability (Daily Availability Final Report, authoritative over the A&U workbook): excavators 75.60% day / 66.17% MTD, up sharply from Oct 14's 55.95%; trucks 93.39% / 90.57%; drills 85.68% / 86.84%; overall 94.07% / 88.21%, core fleet 91.27%. 7. Lost volume: excavators (EX-253 full day, EX-263 part day before clearing, EX-247 part day) 12,795 BCM / 34,546.5 t at planned rates, down sharply from Oct 14's 15,840-23,040 BCM range; dump trucks (DT-107, DT-109, DT-108) 2,638.4 BCM / 7,123.6 t at today's fleet rate. 8. Combined gross 15,433.4 BCM / 41,670.1 t. 9. EX-247's Oct 14 source conflict (Daily Availability Report: 24 h down at 0.00%; Client Meeting Report: 100% available) does not repeat today -- the two sources now broadly agree (66.67% avail / 8 h down per the Availability Report; 64.58% avail / 56.25% util per the Client Meeting Report, both citing the same engine-warning/low-power fault). Treated as the dispute resolving itself rather than confirmed; flagged below for the site to confirm. Flag, not resolved: a new \"ADW-Q4-Recovery Plan\" deck/workbook series (v1-Peter-edits through v4_FINAL) appeared in RAW today, named differently from both the existing ADW-Q4-Recovery-and-2027-Budget family tracked in [[q4-recovery-plan-2026]] and the ADW-Q4-DT-Requirement family flagged as a separate, uncompiled document family on 2026-10-16 morning. The naming suggests the site may have merged the two previously separate deck families into one, which would resolve that morning's open merge/split judgment call -- but the files were registered by name only this pass, not read, so this is inferred from filenames and version history, not confirmed content. Worth a dedicated read and compile pass rather than assuming the merge. No new survey file (261016-INX-SUM, carrying the Oct 15 production day's survey reading) had landed by this pass; [[survey-volume-reconciliation]] was not updated and still reflects the Oct 14 reading. The A&U, DPR, Drill Meters, Drill Sampling, Block Info, Equipment Running Hours, Running Hours Maaden, and Distance Report workbooks gained Oct 15 tabs/edits but were registered by name only, not deep-read (the Client Meeting Report and the Daily Availability Final Report cover the figures compiled this pass). Source: KNOWLEDGE/mining_operations_kb/RAW via the librarian compile protocol.",
@@ -132,7 +132,7 @@
   "fleet": {
     "availDaily": "94.07%",
     "availMtd": "88.21%",
-    "exAvail": "57.8%",
+    "exAvail": "25.0%",
     "exUnits": 6,
     "dtAvail": "93.39%",
     "dtUnits": 21,
@@ -143,7 +143,7 @@
       },
       {
         "unit": "EX-262",
-        "avail": "95.8%"
+        "avail": null
       },
       {
         "unit": "EX-253",
@@ -151,29 +151,49 @@
       },
       {
         "unit": "EX-263",
-        "avail": "68.8%"
+        "avail": null
       },
       {
         "unit": "EX-247",
-        "avail": "66.7%"
+        "avail": "50.0%"
       },
       {
         "unit": "EX-1200",
         "avail": null
       }
     ],
-    "exBasis": "4/6",
-    "pdfDate": "15-10"
+    "exBasis": "2/6",
+    "pdfDate": "16-10"
   },
   "equipment": [
+    {
+      "unit": "DT-107",
+      "type": "Haul Truck",
+      "status": "down",
+      "avail": "0%",
+      "util": "",
+      "bd_hrs": "",
+      "note": "at 0%. That is 21 productive trucks against the 26 to 27 the recovery plan says are needed from November ([[q4",
+      "comment": "Engine Coolant Temperature High"
+    },
+    {
+      "unit": "DT-109",
+      "type": "Haul Truck",
+      "status": "down",
+      "avail": "0%",
+      "util": "",
+      "bd_hrs": "",
+      "note": "at 0%. That is 21 productive trucks against the 26 to 27 the recovery plan says are needed from November ([[q4",
+      "comment": "Engine Failure"
+    },
     {
       "unit": "EX-253",
       "type": "Excavator",
       "status": "down",
-      "avail": "0.0%",
+      "avail": "0%",
       "util": "",
       "bd_hrs": "",
-      "note": "(24 h at 330 BCM/h) 7,920 BCM / 21,384.0 t",
+      "note": "is at 0% for both weeks (about 90,800 t, 33,600 BCM, a week not in the forecast).",
       "comment": "Hydraulic Oil Leakage"
     },
     {
@@ -187,174 +207,54 @@
       "comment": "Eng No Start"
     },
     {
-      "unit": "WL-329",
-      "type": "Wheel Loader",
-      "status": "down",
-      "avail": "54.2%",
-      "util": "",
-      "bd_hrs": "",
-      "note": "",
-      "comment": "C/O Rear Tyres"
-    },
-    {
       "unit": "EX-247",
       "type": "Excavator",
       "status": "down",
-      "avail": "66.7%",
+      "avail": "50.0%",
       "util": "",
       "bd_hrs": "",
-      "note": ": today's readings broadly agree across both sources for the first time since Oct 14's conflict — confirm with",
+      "note": "",
       "comment": "Engine low power RPM Derate to  1600rpm"
     },
     {
-      "unit": "EX-326",
-      "type": "Excavator",
-      "status": "down",
-      "avail": "85.4%",
-      "util": "",
-      "bd_hrs": "",
-      "note": "",
-      "comment": "Noise From Eng Belt"
-    },
-    {
-      "unit": "LV-106",
-      "type": "",
-      "status": "down",
-      "avail": "88.5%",
-      "util": "",
-      "bd_hrs": "",
-      "note": "",
-      "comment": "Punture Pos# 1"
-    },
-    {
-      "unit": "DT-107",
-      "type": "Haul Truck",
-      "status": "warning",
-      "avail": "0.0%",
-      "util": "",
-      "bd_hrs": "",
-      "note": "'s standing coolant fault.",
-      "comment": "Engine Coolant Temperature High"
-    },
-    {
-      "unit": "DR-303",
-      "type": "Drill",
-      "status": "warning",
-      "avail": "33.3%",
-      "util": "",
-      "bd_hrs": "",
-      "note": "",
-      "comment": ""
-    },
-    {
-      "unit": "LV-049",
-      "type": "",
-      "status": "warning",
-      "avail": "54.2%",
-      "util": "",
-      "bd_hrs": "",
-      "note": "",
-      "comment": "Engine Failure"
-    },
-    {
-      "unit": "DT-108",
-      "type": "Haul Truck",
-      "status": "warning",
-      "avail": "56.2%",
-      "util": "",
-      "bd_hrs": "",
-      "note": "",
-      "comment": "Adjust pressure for the park brake  release"
-    },
-    {
-      "unit": "EX-263",
-      "type": "Excavator",
-      "status": "warning",
-      "avail": "68.8%",
-      "util": "",
-      "bd_hrs": "",
-      "note": "'s engine-replacement fault has cleared — confirm whether the unit needs a break-in or monitoring period befor",
-      "comment": "Engine Coolant Level Low Warning  (  REPLACING ENGINE )"
-    },
-    {
-      "unit": "DT-243",
-      "type": "Haul Truck",
-      "status": "warning",
-      "avail": "87.5%",
-      "util": "",
-      "bd_hrs": "",
-      "note": "",
-      "comment": "C/O Hose From Brake Valve To  Tank )"
-    },
-    {
-      "unit": "DT-106",
-      "type": "Haul Truck",
+      "unit": "DZ-279",
+      "type": "Track Dozer",
       "status": "warning",
       "avail": "91.7%",
       "util": "",
       "bd_hrs": "",
       "note": "",
-      "comment": "Reomve Rock From Pos# 1"
+      "comment": "Cat Data Link ( Harnss Repair )"
     },
     {
-      "unit": "DT-130",
-      "type": "Haul Truck",
+      "unit": "LV-105",
+      "type": "",
       "status": "warning",
-      "avail": "91.7%",
+      "avail": "93.8%",
       "util": "",
       "bd_hrs": "",
       "note": "",
-      "comment": "A/C Not Working ( C/O Drayer )"
+      "comment": "C/O Pos# 4"
     },
     {
-      "unit": "DT-131",
-      "type": "Haul Truck",
+      "unit": "EX-123",
+      "type": "Excavator",
       "status": "warning",
       "avail": "95.8%",
       "util": "",
       "bd_hrs": "",
       "note": "",
-      "comment": "Eng No Start ( C/O Batteries )"
+      "comment": "Eng No Start ( Servo Fault )"
     },
     {
-      "unit": "EX-262",
-      "type": "Excavator",
-      "status": "warning",
-      "avail": "95.83%",
-      "util": "",
-      "bd_hrs": "",
-      "note": "(1 h, 95.83%) a planned GET tip changeout plus daily check.",
-      "comment": ""
-    },
-    {
-      "unit": "DT-128",
+      "unit": "DT-246",
       "type": "Haul Truck",
       "status": "warning",
       "avail": "97.9%",
       "util": "",
       "bd_hrs": "",
       "note": "",
-      "comment": "No Gear"
-    },
-    {
-      "unit": "EX-123",
-      "type": "Excavator",
-      "status": "warning",
-      "avail": "97.92%",
-      "util": "",
-      "bd_hrs": "",
-      "note": "(0.5 h, 97.92%) logged only a planned daily-check stop",
-      "comment": ""
-    },
-    {
-      "unit": "EX-398",
-      "type": "Excavator",
-      "status": "warning",
-      "avail": "97.92%",
-      "util": "",
-      "bd_hrs": "",
-      "note": "ran clean full days with no stoppage entry in this report's by-exception table, confirmed at 97.92% avail each",
-      "comment": ""
+      "comment": "Eng No Start ( Jump Stat )"
     },
     {
       "unit": "FT-144",
@@ -367,6 +267,16 @@
       "comment": "C/O Air Compressor & Brake Air  lines"
     },
     {
+      "unit": "LV-049",
+      "type": "",
+      "status": "warning",
+      "avail": "100.0%",
+      "util": "",
+      "bd_hrs": "",
+      "note": "",
+      "comment": "Engine Failure"
+    },
+    {
       "unit": "MG-266",
       "type": "Motor Grader",
       "status": "warning",
@@ -377,13 +287,33 @@
       "comment": "Engine Failure"
     },
     {
-      "unit": "EX-340",
-      "type": "Excavator",
+      "unit": "DT-108",
+      "type": "Haul Truck",
       "status": "warning",
       "avail": "",
       "util": "",
       "bd_hrs": "",
-      "note": "now on a Stage 4 compartment (see [[daily-production-report]] for the material-split detail).",
+      "note": "), two Sany trucks (",
+      "comment": ""
+    },
+    {
+      "unit": "DT-277",
+      "type": "Haul Truck",
+      "status": "warning",
+      "avail": "",
+      "util": "",
+      "bd_hrs": "",
+      "note": ") on rehandle",
+      "comment": ""
+    },
+    {
+      "unit": "DT-256",
+      "type": "Haul Truck",
+      "status": "warning",
+      "avail": "",
+      "util": "",
+      "bd_hrs": "",
+      "note": ") on rehandle",
       "comment": ""
     },
     {
