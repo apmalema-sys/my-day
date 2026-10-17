@@ -1,18 +1,18 @@
 {
-  "generatedAt": "2026-10-17T11:32:16",
-  "date": "2026-10-16",
+  "generatedAt": "2026-10-17T14:10:08",
+  "date": "2026-10-17",
   "runNumber": null,
-  "summary": "1. Key operational findings Oct 15 posted 24,304 BCM against a 24,072.2 BCM target (+0.96%), the first daily beat since Oct 12, and MTD narrowed to 436,418 BCM against 469,408.3 (-7.03%), a second straight day of improvement (Oct 13 -7.86%, Oct 14 -7.46%, Oct 15 -7.03%) at day 21 of the 30-day fiscal cycle (9 days remaining). 2. Three things to flag: 1. 3. Material split ran 19.77% Stage 4 / 80.23% Stage 5 -- a partial recovery from Oct 14's 100% Stage 5 day, with EX-340 and EX-247 both moving back into a Stage 4 compartment (730-170), though still short of the \"Stage 4 first\" priority Ma'aden's Sultan Aljohani confirmed in writing on Oct 15 morning. 2. 4. The crusher logged its fifth straight zero-feed day (0 BCM, the shutdown that began Oct 11); MTD throughput sits at 9,753 LCM against an 86,800 LCM plan (11.24%, down from Oct 14's 11.80%), with no reopening date given. 3. 5. Fleet availability moved in opposite directions on two of the cycle's most-flagged items: EX-263's standing engine-replacement fault (open since 05-Oct, \"REPLACING ENGINE\") finally cleared at 1:00 PM after 10 days and 230+ breakdown hours, while drilling missed target for the first time since Oct 10 (1,877 m against 2,562.8 m, -26.76%) on 60.5 fleet-wide day-shift standby hours \"due to lack of drilling area\" plus 16 night-shift hours lost to operator fatigue -- a crew/rostering constraint, not a mechanical one. 6. Fleet availability (Daily Availability Final Report, authoritative over the A&U workbook): excavators 75.60% day / 66.17% MTD, up sharply from Oct 14's 55.95%; trucks 93.39% / 90.57%; drills 85.68% / 86.84%; overall 94.07% / 88.21%, core fleet 91.27%. 7. Lost volume: excavators (EX-253 full day, EX-263 part day before clearing, EX-247 part day) 12,795 BCM / 34,546.5 t at planned rates, down sharply from Oct 14's 15,840-23,040 BCM range; dump trucks (DT-107, DT-109, DT-108) 2,638.4 BCM / 7,123.6 t at today's fleet rate. 8. Combined gross 15,433.4 BCM / 41,670.1 t. 9. EX-247's Oct 14 source conflict (Daily Availability Report: 24 h down at 0.00%; Client Meeting Report: 100% available) does not repeat today -- the two sources now broadly agree (66.67% avail / 8 h down per the Availability Report; 64.58% avail / 56.25% util per the Client Meeting Report, both citing the same engine-warning/low-power fault). Treated as the dispute resolving itself rather than confirmed; flagged below for the site to confirm. Flag, not resolved: a new \"ADW-Q4-Recovery Plan\" deck/workbook series (v1-Peter-edits through v4_FINAL) appeared in RAW today, named differently from both the existing ADW-Q4-Recovery-and-2027-Budget family tracked in [[q4-recovery-plan-2026]] and the ADW-Q4-DT-Requirement family flagged as a separate, uncompiled document family on 2026-10-16 morning. The naming suggests the site may have merged the two previously separate deck families into one, which would resolve that morning's open merge/split judgment call -- but the files were registered by name only this pass, not read, so this is inferred from filenames and version history, not confirmed content. Worth a dedicated read and compile pass rather than assuming the merge. No new survey file (261016-INX-SUM, carrying the Oct 15 production day's survey reading) had landed by this pass; [[survey-volume-reconciliation]] was not updated and still reflects the Oct 14 reading. The A&U, DPR, Drill Meters, Drill Sampling, Block Info, Equipment Running Hours, Running Hours Maaden, and Distance Report workbooks gained Oct 15 tabs/edits but were registered by name only, not deep-read (the Client Meeting Report and the Daily Availability Final Report cover the figures compiled this pass). Source: KNOWLEDGE/mining_operations_kb/RAW via the librarian compile protocol.",
+  "summary": "1. Key operational findings Oct 16 posted 12,834 BCM against a 12,036.1 BCM target (+6.63%), MTD 449,252 BCM (-6.69% vs target), day 22 of 30 (8 days remaining). 2. Three things to flag: 1. 3. The day's composition is the story, not the total: waste missed by 24.23% (7,440 against 9,818.6 BCM, the cycle's largest waste miss) while ore beat its target by 143.25% (5,394 against 2,217.5 BCM, the cycle's largest ore surplus), with Stage 4 share recovering further to 37.92% -- continuing the gradual return toward Ma'aden's written \"Stage 4 first\" priority. 4. The general comment \"Yesterday was Roster break\" explains the smallest absolute daily total this cycle despite the target beat, and accounts for the cluster of 12 h standby entries across the excavator fleet. 2. 5. EX-247's standing low-power/derate fault cleared at 5:30 PM after 12 h down, and for the second day running the Daily Availability Final Report and the Client Meeting Report read the fault identically (12 h, 50.00% avail) -- treating the Oct 14 source conflict as resolved rather than a recurring pattern. 3. 6. DT-109 is logged down the full 24 h for a second day, but today's report calls the fault \"Engine Failure\" (Engine) where yesterday's called it \"No Gear\" (Power Train), both dated to the same 15-Oct 11 PM opening with no clearing event between the two reports -- flagged for maintenance to confirm whether this is one incident reclassified or two separate faults. 7. Fleet availability (Daily Availability Final Report, authoritative over the A&U workbook): excavators 77.98% day / 66.91% MTD, up from Oct 15's 75.60%; trucks 93.15% / 90.73%; drills 96.88% / 87.47% -- the cycle's biggest drilling surplus (1,846 m against 1,281.4 m target, +44.06%), after Oct 15's standby-driven miss eased off; overall 97.23% / 88.77%, core fleet 96.17%. 8. Lost volume: excavators (EX-253 full day, EX-247 12 h before clearing, EX-123 1 h) 11,950 BCM / 32,265.0 t at planned rates; dump trucks (DT-107, DT-109, DT-130, DT-246) 3,517.1 BCM / 9,496.1 t at today's 61.17 BCM/h fleet rate. 9. Combined gross 15,467.1 BCM / 41,761.1 t. The Client Meeting Report's own \"MTD Actual Survey\" cell jumped from 388,268 to 409,572 BCM between the Oct 15 and Oct 16 tabs. By the one-day reporting lag tracked since Oct 9, this is read as the Oct 15 production day's survey figure, even though the standalone 261016-INX-SUM.xlsx workbook has still not landed in RAW on its own. Treated that way, the cumulative survey-versus-trucks gap widens to -26,846 BCM (-6.55% of survey), reversing the narrowing trend running since Oct 13 (Oct 13 -9.69%, Oct 14 -6.14%, now -6.55%). This reading is inferred from the lagged MTD cell, not read from a dated file with its own daily figure and loading-location comment -- flagged in [[survey-volume-reconciliation]] to confirm once the workbook lands. Flag, not resolved (new this pass): two new document families appeared in `Maaden Plans/` -- an ADW Shutdown Preparedness deck/workbook/email set, and an \"ADW - 2027 readiness presentation\" email in the Q4 Recovery Plans folder. Both registered by name only, not read or compiled. The shutdown-preparedness subject matter overlaps the crusher-shutdown narrative already running in daily-production-report and is worth a dedicated read on a future full compile pass. The A&U, DPR, Drill Meters, Block Info, DPR and A&U docx, Equipment Running Hours, Running Hours Maaden, and Distance Report workbooks gained Oct 16 tabs but were registered by name only, not deep-read (the Client Meeting Report and the Daily Availability Final Report cover the figures compiled this pass). Source: KNOWLEDGE/mining_operations_kb/RAW via the librarian compile protocol.",
   "kpis": [
     {
       "label": "MTD BCM",
-      "value": "436,418",
-      "delta": "-7.0% vs target",
+      "value": "449,252",
+      "delta": "-6.7% vs target",
       "good": false
     },
     {
       "label": "Survey Gap",
-      "value": "-6.1%",
+      "value": "-6.5%",
       "delta": "survey vs trucks MTD",
       "good": false
     },
@@ -130,11 +130,11 @@
     }
   ],
   "fleet": {
-    "availDaily": "94.07%",
-    "availMtd": "88.21%",
+    "availDaily": "97.23%",
+    "availMtd": "88.77%",
     "exAvail": "25.0%",
     "exUnits": 6,
-    "dtAvail": "93.39%",
+    "dtAvail": "93.15%",
     "dtUnits": 21,
     "excavators": [
       {
@@ -167,34 +167,24 @@
   },
   "equipment": [
     {
-      "unit": "DT-107",
-      "type": "Haul Truck",
-      "status": "down",
-      "avail": "0%",
-      "util": "",
-      "bd_hrs": "",
-      "note": "at 0%. That is 21 productive trucks against the 26 to 27 the recovery plan says are needed from November ([[q4",
-      "comment": "Engine Coolant Temperature High"
-    },
-    {
-      "unit": "DT-109",
-      "type": "Haul Truck",
-      "status": "down",
-      "avail": "0%",
-      "util": "",
-      "bd_hrs": "",
-      "note": "at 0%. That is 21 productive trucks against the 26 to 27 the recovery plan says are needed from November ([[q4",
-      "comment": "Engine Failure"
-    },
-    {
       "unit": "EX-253",
       "type": "Excavator",
       "status": "down",
-      "avail": "0%",
+      "avail": "0.0%",
       "util": "",
       "bd_hrs": "",
-      "note": "is at 0% for both weeks (about 90,800 t, 33,600 BCM, a week not in the forecast).",
+      "note": "(24 h at 330 BCM/h) 7,920 BCM / 21,384.0 t",
       "comment": "Hydraulic Oil Leakage"
+    },
+    {
+      "unit": "DT-107",
+      "type": "Haul Truck",
+      "status": "down",
+      "avail": "0.0%",
+      "util": "",
+      "bd_hrs": "",
+      "note": "",
+      "comment": "Engine Coolant Temperature High"
     },
     {
       "unit": "LT-137",
@@ -213,8 +203,18 @@
       "avail": "50.0%",
       "util": "",
       "bd_hrs": "",
-      "note": "",
+      "note": "has now matched across both sources for two consecutive days (Oct 15 and Oct 16) after Oct 14's flat contradic",
       "comment": "Engine low power RPM Derate to  1600rpm"
+    },
+    {
+      "unit": "DT-109",
+      "type": "Haul Truck",
+      "status": "warning",
+      "avail": "0.0%",
+      "util": "",
+      "bd_hrs": "",
+      "note": "'s fault description changed from \"No Gear\" (Power Train) on Oct 15 to \"Engine Failure\" (Engine) on Oct 16, bo",
+      "comment": "Engine Failure"
     },
     {
       "unit": "DZ-279",
@@ -243,7 +243,7 @@
       "avail": "95.8%",
       "util": "",
       "bd_hrs": "",
-      "note": "",
+      "note": "(1 h at 430 BCM/h) 430 BCM / 1,161.0 t — combined excavator shortfall 11,950 BCM / 32,265.0 t. Dump trucks at ",
       "comment": "Eng No Start ( Servo Fault )"
     },
     {
@@ -255,6 +255,16 @@
       "bd_hrs": "",
       "note": "",
       "comment": "Eng No Start ( Jump Stat )"
+    },
+    {
+      "unit": "EX-263",
+      "type": "Excavator",
+      "status": "warning",
+      "avail": "99.17%",
+      "util": "",
+      "bd_hrs": "",
+      "note": "logged two 12 h standby stops (roster break, then no jobs) but no breakdown. The A&U workbook's \"Total/AVG\" li",
+      "comment": ""
     },
     {
       "unit": "FT-144",
@@ -287,33 +297,33 @@
       "comment": "Engine Failure"
     },
     {
-      "unit": "DT-108",
-      "type": "Haul Truck",
+      "unit": "EX-262",
+      "type": "Excavator",
       "status": "warning",
       "avail": "",
       "util": "",
       "bd_hrs": "",
-      "note": "), two Sany trucks (",
+      "note": "and EX-398 each logged only a 12 h roster-break standby stop with no mechanical fault — the day's general comm",
       "comment": ""
     },
     {
-      "unit": "DT-277",
-      "type": "Haul Truck",
+      "unit": "EX-340",
+      "type": "Excavator",
       "status": "warning",
       "avail": "",
       "util": "",
       "bd_hrs": "",
-      "note": ") on rehandle",
+      "note": "and EX-398 each logged only a 12 h roster-break standby stop with no mechanical fault — the day's general comm",
       "comment": ""
     },
     {
-      "unit": "DT-256",
-      "type": "Haul Truck",
+      "unit": "EX-398",
+      "type": "Excavator",
       "status": "warning",
       "avail": "",
       "util": "",
       "bd_hrs": "",
-      "note": ") on rehandle",
+      "note": "and EX-398 each logged only a 12 h roster-break standby stop with no mechanical fault — the day's general comm",
       "comment": ""
     },
     {
@@ -345,15 +355,15 @@
     "fridayTarget": 10884,
     "lastReported": "2026-10-08",
     "lastLabel": "8 Oct",
-    "mtd": 436418.0,
+    "mtd": 449252.0,
     "targetToDate": 282974,
     "trendSum": 290315,
     "daysRemain": 16,
     "normalRemain": 13,
     "fridaysRemain": 3,
-    "remainingBcm": 162180,
-    "requiredNormal": 11185,
-    "requiredFriday": 5592
+    "remainingBcm": 149346,
+    "requiredNormal": 10300,
+    "requiredFriday": 5150
   },
   "followUps": [
     {
@@ -363,20 +373,14 @@
       "action": ""
     },
     {
-      "priority": "HIGH",
-      "title": "EX-247's Oct 14 source conflict (Daily Availability Report: 24 h down at...",
-      "body": "",
-      "action": ""
-    },
-    {
-      "priority": "HIGH",
-      "title": "**Flag, not resolved:** a new \"ADW-Q4-Recovery Plan\" deck/workbook serie...",
+      "priority": "MONITOR",
+      "title": "The Client Meeting Report's own \"MTD Actual Survey\" cell jumped from 388...",
       "body": "",
       "action": ""
     },
     {
       "priority": "MONITOR",
-      "title": "No new survey file (261016-INX-SUM, carrying the Oct 15 production day's...",
+      "title": "**Flag, not resolved (new this pass):** two new document families appear...",
       "body": "",
       "action": ""
     }
