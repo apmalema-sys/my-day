@@ -1,15 +1,15 @@
 {
-  "date": "2026-10-17",
-  "topic": "Loading, Hauling, and Tipping",
-  "title": "Loading, Hauling, and Tipping",
-  "body": "Every backloading problem, every chipped windscreen, every tire shredded in a pocket, and every dump-edge scare traces back to someone skipping a step in this cycle. Get spotting and tipping discipline right and the rest of the shift runs itself; get it wrong and it shows up as lost tons and NCRs by end of day.",
+  "date": "2026-10-18",
+  "topic": "Lost GET — Reporting and Recovery",
+  "title": "Lost GET — Reporting and Recovery",
+  "body": "A missing tooth, adapter, or shroud that gets loaded, hauled, and dumped into the crusher turns into a liner strike — major plant downtime and a real injury risk from a rock-out or jammed liner repair. Every hour spent chasing a GET piece through the crusher costs far more than the five minutes it takes to stop and search for it at the face.",
   "keyPoints": [
-    "Spotting is a two-signal language: single horn = stop, double horn = go. The excavator bucket is the reference point for reversing in, not the tracks — if the signal and the bucket position disagree, trust the bucket.",
-    "Load a straight face, never a pocket. Pockets feel faster in the moment but cost production and chew up tires in hard rock — it's a false shortcut every time.",
-    "Two-meter rule on single and double benching: stay off the crest edge, no exceptions, even when the face is running clean.",
-    "Backloading has six usual suspects — too many trucks for the cycle, poor fragmentation, spillage cleanup, bad spotting, worn GET, or someone side-loading. If it shows up, don't guess — check the six and fix the actual cause.",
-    "No tipping until the berm is built to half the rear wheel height. If it's short, rebuild it before the first truck backs in — that berm is the only thing standing between a truck and a run-off."
+    "Stop first, every time. The moment GET loss is suspected, the operator halts — don't keep digging while a piece is unaccounted for.",
+    "Report with specifics: equipment ID, operator, time, GPS location, and exactly what's missing — that's what lets Survey and the search crew actually find it.",
+    "Recovery is controlled, not frantic — visual search, GPS-pinpointed excavation, and tracking the material's path to pit, stockpile, ROM pad, or crusher if it isn't found right away.",
+    "If it's not recovered on the spot, the chain doesn't stop — surveyors mark the area after the next blast, the excavator operator keeps watching that position, and the ROM pad loader operator is the last line of defense before the primary crusher.",
+    "Prevention beats recovery — pre-start and daily GET checks, and operators trained to recognize the feel and sound of a lost tooth before it's gone."
   ],
-  "apply": "Watch the switchback and loading-face positioning calls — trucks coming in flat and excavators following the edge instead of cutting into the heave protects tonnage; a crew that starts repositioning constantly is burning production time for no tons gained.",
-  "generatedAt": "2026-10-17T06:16:39"
+  "apply": "At the loading face, if an excavator operator reports a rough dig or an odd sound on the bucket, don't wave it off as normal wear — treat it as a possible GET loss and get it checked before that bucket load moves anywhere near the crusher feed.",
+  "generatedAt": "2026-10-18T13:14:29"
 }
