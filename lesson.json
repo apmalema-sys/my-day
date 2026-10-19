@@ -1,15 +1,15 @@
 {
-  "date": "2026-10-18",
-  "topic": "Lost GET — Reporting and Recovery",
-  "title": "Lost GET — Reporting and Recovery",
-  "body": "A missing tooth, adapter, or shroud that gets loaded, hauled, and dumped into the crusher turns into a liner strike — major plant downtime and a real injury risk from a rock-out or jammed liner repair. Every hour spent chasing a GET piece through the crusher costs far more than the five minutes it takes to stop and search for it at the face.",
+  "date": "2026-10-19",
+  "topic": "LHD Cycle Evaluation",
+  "title": "LHD Cycle Evaluation",
+  "body": "When nobody breaks the load-haul-dump cycle into its five stages, slow fill times and bucket hang-ups hide inside the daily tonnage number until they've cost a shift's worth of production — like the Oct 6 EX262 check, where every truck's bucket time ran over benchmark and nobody caught it until someone stood at the viewpoint with a stopwatch.",
   "keyPoints": [
-    "Stop first, every time. The moment GET loss is suspected, the operator halts — don't keep digging while a piece is unaccounted for.",
-    "Report with specifics: equipment ID, operator, time, GPS location, and exactly what's missing — that's what lets Survey and the search crew actually find it.",
-    "Recovery is controlled, not frantic — visual search, GPS-pinpointed excavation, and tracking the material's path to pit, stockpile, ROM pad, or crusher if it isn't found right away.",
-    "If it's not recovered on the spot, the chain doesn't stop — surveyors mark the area after the next blast, the excavator operator keeps watching that position, and the ROM pad loader operator is the last line of defense before the primary crusher.",
-    "Prevention beats recovery — pre-start and daily GET checks, and operators trained to recognize the feel and sound of a lost tooth before it's gone."
+    "Five stages, always: load, haul loaded, dump, return empty, idle. If you can't say which one is bleeding time, you're guessing at the fix.",
+    "The daily workbooks give aggregate output, not per-stage breakdown — the only way to find the real bottleneck is direct observation at the face or the dump.",
+    "Operator variability is the single biggest lever from the Kaizen work — same machine, same face, different operators, different cycle times. That's a training fix, not an equipment fix.",
+    "Fragmentation, face height, and loader positioning at the loading phase set the ceiling for everything downstream — bad blast rock slows fill time no matter how good the operator is.",
+    "A breakdown pattern often shows up first as recurring delay-reason codes before it shows up as a full stoppage — if a unit keeps logging the same hydraulic or final-drive flag, that's your early warning, not the eventual down day."
   ],
-  "apply": "At the loading face, if an excavator operator reports a rough dig or an odd sound on the bucket, don't wave it off as normal wear — treat it as a possible GET loss and get it checked before that bucket load moves anywhere near the crusher feed.",
-  "generatedAt": "2026-10-18T13:14:29"
+  "apply": "Pick one truck-excavator pair on your face and time three cycles against the 4.0 min fill / 32 s bucket benchmark — if you're running long like EX262 did on Oct 6, that's volume walking out the door before the shift even ends.",
+  "generatedAt": "2026-10-19T05:39:52"
 }
