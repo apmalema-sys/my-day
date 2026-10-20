@@ -1,15 +1,15 @@
 {
-  "date": "2026-10-19",
-  "topic": "LHD Cycle Evaluation",
-  "title": "LHD Cycle Evaluation",
-  "body": "When nobody breaks the load-haul-dump cycle into its five stages, slow fill times and bucket hang-ups hide inside the daily tonnage number until they've cost a shift's worth of production — like the Oct 6 EX262 check, where every truck's bucket time ran over benchmark and nobody caught it until someone stood at the viewpoint with a stopwatch.",
+  "date": "2026-10-20",
+  "topic": "LOTO: Control of Hazardous Energy",
+  "title": "LOTO: Control of Hazardous Energy",
+  "body": "Every machine that still has hydraulic pressure, electrical charge, or a loaded spring can hurt someone the moment they think it's \"just stopped.\" At ADW, the step that gets skipped under time pressure is always the same one — verification — and that's the step that actually proves the energy is gone.",
   "keyPoints": [
-    "Five stages, always: load, haul loaded, dump, return empty, idle. If you can't say which one is bleeding time, you're guessing at the fix.",
-    "The daily workbooks give aggregate output, not per-stage breakdown — the only way to find the real bottleneck is direct observation at the face or the dump.",
-    "Operator variability is the single biggest lever from the Kaizen work — same machine, same face, different operators, different cycle times. That's a training fix, not an equipment fix.",
-    "Fragmentation, face height, and loader positioning at the loading phase set the ceiling for everything downstream — bad blast rock slows fill time no matter how good the operator is.",
-    "A breakdown pattern often shows up first as recurring delay-reason codes before it shows up as a full stoppage — if a unit keeps logging the same hydraulic or final-drive flag, that's your early warning, not the eventual down day."
+    "LOTO applies to any stored or residual energy — electrical, hydraulic, pneumatic, mechanical, thermal, chemical — not just power that's switched on.",
+    "Six steps, no shortcuts: prepare, notify, isolate, apply lockout/tagout, release stored energy, verify. Skipping to \"isolate and lock\" without verifying is how someone gets hurt on equipment everyone assumed was dead.",
+    "Personal lock principle: each authorized person applies and holds their own lock. No one else removes it — the person doing the work is the only one who can vouch the isolation is still good.",
+    "LOTO is the operational form of LSR 3 (Energy Isolation). A LOTO failure isn't a paperwork miss — it's a defined Life Saving Rule violation.",
+    "It's the third layer of the inspection cascade: pre-start catches the obvious, daily inspection catches what's developing, LOTO controls the state while someone's hands are actually in the machine."
   ],
-  "apply": "Pick one truck-excavator pair on your face and time three cycles against the 4.0 min fill / 32 s bucket benchmark — if you're running long like EX262 did on Oct 6, that's volume walking out the door before the shift even ends.",
-  "generatedAt": "2026-10-19T05:39:52"
+  "apply": "Walk the workshop and check locks against whoever's working — if a lock's missing, extra, or someone else's name is on a tag that isn't theirs, that's not a formality gap, that's an open LSR 3 exposure right now.",
+  "generatedAt": "2026-10-20T13:53:53"
 }
