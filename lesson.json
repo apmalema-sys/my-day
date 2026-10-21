@@ -1,15 +1,15 @@
 {
-  "date": "2026-10-20",
-  "topic": "LOTO: Control of Hazardous Energy",
-  "title": "LOTO: Control of Hazardous Energy",
-  "body": "Every machine that still has hydraulic pressure, electrical charge, or a loaded spring can hurt someone the moment they think it's \"just stopped.\" At ADW, the step that gets skipped under time pressure is always the same one — verification — and that's the step that actually proves the energy is gone.",
+  "date": "2026-10-21",
+  "topic": "Mining Projects Register",
+  "title": "Mining Projects Register",
+  "body": "At ADW right now two live projects (Go-Line Operation Efficiency, A&U Training) have sat with every task showing \"Not started\" weeks past their own deadlines, and two separate pages quote different 2026 targets (20 Mt vs 21 Mt) with nobody having reconciled them. A project that looks closed on paper but isn't, or a number nobody has confirmed, costs you a month of effort pointed the wrong way before anyone notices.",
   "keyPoints": [
-    "LOTO applies to any stored or residual energy — electrical, hydraulic, pneumatic, mechanical, thermal, chemical — not just power that's switched on.",
-    "Six steps, no shortcuts: prepare, notify, isolate, apply lockout/tagout, release stored energy, verify. Skipping to \"isolate and lock\" without verifying is how someone gets hurt on equipment everyone assumed was dead.",
-    "Personal lock principle: each authorized person applies and holds their own lock. No one else removes it — the person doing the work is the only one who can vouch the isolation is still good.",
-    "LOTO is the operational form of LSR 3 (Energy Isolation). A LOTO failure isn't a paperwork miss — it's a defined Life Saving Rule violation.",
-    "It's the third layer of the inspection cascade: pre-start catches the obvious, daily inspection catches what's developing, LOTO controls the state while someone's hands are actually in the machine."
+    "A task with a deadline and no closing update isn't \"probably fine\" — it's stalled. Silence in Notion means someone stopped working it, not that it's quietly progressing.",
+    "When two official sources give different numbers for the same target, use neither until you've personally confirmed which one is live. Committing fleet or shift decisions against an unreconciled figure wastes the decision, not just the data entry.",
+    "Every open recommendation or decision needs a named owner and a date attached to it — Stage 6's access-closure decision has sat open since Sep 24 with no one visibly driving it to a close.",
+    "Before you commit a date to the client (like the 7-day fuel buffer), confirm the physical pieces are actually sourced — tank, contractor, approvals — not just that someone agreed to it in a meeting.",
+    "A tracker that stops updating (pit inspections stopped Jul 8, DustEx log has gaps) is a signal to go look, not a reason to assume the underlying process stopped too."
   ],
-  "apply": "Walk the workshop and check locks against whoever's working — if a lock's missing, extra, or someone else's name is on a tag that isn't theirs, that's not a formality gap, that's an open LSR 3 exposure right now.",
-  "generatedAt": "2026-10-20T13:53:53"
+  "apply": "Before you sign off on anything tied to Stage 6 or the fuel bay build, ask for the actual status, not the project page — those are the two items most likely to be quietly stuck right now.",
+  "generatedAt": "2026-10-21T05:36:40"
 }
