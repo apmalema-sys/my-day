@@ -1,15 +1,15 @@
 {
   "date": "2026-10-21",
-  "topic": "Mining Projects Register",
-  "title": "Mining Projects Register",
-  "body": "At ADW right now two live projects (Go-Line Operation Efficiency, A&U Training) have sat with every task showing \"Not started\" weeks past their own deadlines, and two separate pages quote different 2026 targets (20 Mt vs 21 Mt) with nobody having reconciled them. A project that looks closed on paper but isn't, or a number nobody has confirmed, costs you a month of effort pointed the wrong way before anyone notices.",
+  "topic": "Safe Overtaking of Water Trucks",
+  "title": "Safe Overtaking of Water Trucks",
+  "body": "DT operators are currently overtaking water trucks on corners, on gradient, with no radio call, and while the truck is still moving — stacking four SOP violations into one maneuver. That's the exact setup for a berm overrun or a high-wall contact on a switchback, not a hypothetical.",
   "keyPoints": [
-    "A task with a deadline and no closing update isn't \"probably fine\" — it's stalled. Silence in Notion means someone stopped working it, not that it's quietly progressing.",
-    "When two official sources give different numbers for the same target, use neither until you've personally confirmed which one is live. Committing fleet or shift decisions against an unreconciled figure wastes the decision, not just the data entry.",
-    "Every open recommendation or decision needs a named owner and a date attached to it — Stage 6's access-closure decision has sat open since Sep 24 with no one visibly driving it to a close.",
-    "Before you commit a date to the client (like the 7-day fuel buffer), confirm the physical pieces are actually sourced — tank, contractor, approvals — not just that someone agreed to it in a meeting.",
-    "A tracker that stops updating (pit inspections stopped Jul 8, DustEx log has gaps) is a signal to go look, not a reason to assume the underlying process stopped too."
+    "Radio the water truck operator first and get a \"clear to pass\" before overtaking — hearing you is not the same as confirming it's safe.",
+    "No overtaking on switchbacks or blind corners. Forward visibility drops mid-turn and the outside berm is the only thing stopping an overrun.",
+    "No overtaking on gradient. Uphill 40 km/h and downhill 30 km/h are ceilings — the speed differential on a ramp is exactly where sightline and braking distance are already worst.",
+    "Never overtake a vehicle that's still moving without that operator's confirmation. They may be turning into a spray pattern or reversing to top up and not see you coming.",
+    "Can't raise the bowser operator on radio? You don't overtake. Follow at distance or wait for them to pull over."
   ],
-  "apply": "Before you sign off on anything tied to Stage 6 or the fuel bay build, ask for the actual status, not the project page — those are the two items most likely to be quietly stuck right now.",
-  "generatedAt": "2026-10-21T05:36:40"
+  "apply": "Any overtake of a water truck today that skips the radio call, happens on a corner or ramp gradient, or passes a truck still in motion is a finding on the spot — and the same four stacked together again goes through as an LSR 6 (Mobile Equipment) matter.",
+  "generatedAt": "2026-10-21T05:40:55"
 }
