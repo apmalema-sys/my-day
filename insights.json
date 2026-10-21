@@ -1,18 +1,18 @@
 {
-  "generatedAt": "2026-10-20T11:32:49",
-  "date": "2026-10-19",
+  "generatedAt": "2026-10-21T11:32:14",
+  "date": "2026-10-20",
   "runNumber": null,
-  "summary": "1. Two new meeting notes written to RAW/Meeting Notes: the Oct 19 Daily HOD meeting and the safety meeting with the supervision team after Madden shut the pit for dust. 2. A third Oct 19 meeting page (created 12:01 UTC) is still a blank template; not written, re-check next pass. 3. The two transcripts contain audio loops (\"Thank you\", \"I don't know\"), abbreviated in RAW with a bracketed note. 4. Recovery Plan v7 FINAL (12 slides) and a Workshop Section deck landed; headline numbers unchanged from v6 (19.41 Mt current run, 20.17 Mt with the plan), plus the Nov 1 readiness table, fleet plan and workshop constraints. 5. Revenue Budget ADW 2027 v4 landed in JRAR Reports (v1-v3 archived); registered with a short summary, totals are uncached formulas. 6. No new production or survey workbook changes since the afternoon pass. 7. Important References re-checked, 46 files, no change. 8. Key operational points. 9. Oct 18 about 60,600 t (matches 22,475 BCM); month to date 1.32 Mt against a 1.787 Mt target, projected 1.66 to 1.67 Mt. Dust: plant cut water at about 02:00, Madden shut the pit; verbal warnings for all supervisors and a reissued commitment letter. Fuel bay: client was promised 7 days of fuel on site, tanks not on site, contractor not yet sourced. PTW: Marlon vetoed over half the proposed receivers and issuers; training Oct 21, 28, 29. EX-340 still down (10,320 BCM, about 27,860 t per full day at 430 BCM/h). Task Feedback Log queried with a Status-not-Processed filter: no unprocessed rows, no question resolutions, no task/feedback mismatches, nothing marked. The Oct 10-16 weekly review was edited after its RAW copy but only link wording changed, so no revised copy was written. Personal and training rows skipped. Not done. publish_insights.py not run (wiki-insights-sync handles it). Revenue Budget numbers not analysed beyond the first tab. Source: KNOWLEDGE/mining_operations_kb/RAW via the librarian compile protocol.",
+  "summary": "1. Key operational findings The Oct 19 production day posted 19,065 BCM against a 24,072.2 BCM target (-20.80%), the cycle's second-largest daily miss, and MTD widened sharply to 511,376 BCM against 553,661.0 BCM (-7.64%), reversing four straight days of narrowing (Oct 16 -6.69%, Oct 17 -7.06%, Oct 18 -7.04%, Oct 19 -7.64%). 2. Three things stand out: 1. 3. Gross fleet lost volume across the excavator and dump-truck faults came to 28,412.8 BCM, 1.49 times today's own output -- the first day this cycle lost volume has clearly exceeded production rather than nearly matching it, with EX-247, EX-253 and EX-340 alone accounting for 20,280 BCM of the excavator shortfall. 2. 4. EX-340's hydraulic-leakage breakdown cleared at 5:30 PM after two full days down, but EX-247 reappeared in the Daily Availability Final Report's by-exception fault table at 0.00% avail after being read as suspended for two straight reports (Oct 17, Oct 18) -- reversing a pattern this KB had treated as resolved. 3. 5. An LV-93 rollover at about 00:30 on Oct 20, just after this report's cutoff, sent one person to a clinic for a suspected head injury (the other two examined and cleared) with vehicle damage to the antenna, glass, mirror, snorkel and differential hub, classified high potential and major production loss. 6. Confirm with maintenance whether EX-247's return to the active fault table is permanent or a one-day reporting artifact -- the unit has swung between \"suspended\" and \"active 24h down\" twice this cycle already. 7. Confirm LV-93's return-to-service date and whether its downtime shows against the light-vehicle fleet from the Oct 20 report onward; the Oct 19 report predates the incident. 8. Yesterday's blast (Oct 18, blast no. 17, 850-501 PS, 300 kg explosives) logs 0 BCM blasted volume -- confirm whether the survey measurement is pending or this is a data gap. 9. The Q4 Recovery Plan deck family split into two parallel version tracks today (v9_FINAL and a separately-edited \"_v4_FINAL_Muneeb\" variant) -- worth a dedicated read to confirm both track the same plan before the next full compile pass. The Grade Control Sheet, the Recovery Plan/DT-Requirement version bumps, the new Cost Management rental-cost-per-BCM files, the Revenue Budget re-save, the August forecast re-save, the PTO safety berm, the Dispatch reconciliation workbook, and the HR CV thread were registered by name only, not opened. No new standalone survey file (261020-INX-SUM) has landed, so [[survey-volume-reconciliation]] was not updated this pass. `publish_insights.py` was deliberately not run this pass -- the `wiki-insights-sync` task publishes separately at 11:00/17:00. Source: KNOWLEDGE/mining_operations_kb/RAW via the librarian compile protocol.",
   "kpis": [
     {
       "label": "MTD BCM",
-      "value": "492,311",
-      "delta": "-7.0% vs target",
+      "value": "511,376",
+      "delta": "-7.6% vs target",
       "good": false
     },
     {
       "label": "Survey Gap",
-      "value": "-4.5%",
+      "value": "-4.4%",
       "delta": "survey vs trucks MTD",
       "good": false
     },
@@ -130,20 +130,20 @@
     }
   ],
   "fleet": {
-    "availDaily": "92.69%",
-    "availMtd": "89.29%",
-    "exAvail": "45.8%",
+    "availDaily": "93.47%",
+    "availMtd": "89.51%",
+    "exAvail": "42.5%",
     "exUnits": 6,
-    "dtAvail": "91.25%",
+    "dtAvail": "90.83%",
     "dtUnits": 21,
     "excavators": [
       {
         "unit": "EX-340",
-        "avail": "50.0%"
+        "avail": "95.8%"
       },
       {
         "unit": "EX-262",
-        "avail": "97.9%"
+        "avail": "29.2%"
       },
       {
         "unit": "EX-253",
@@ -151,7 +151,7 @@
       },
       {
         "unit": "EX-263",
-        "avail": "81.2%"
+        "avail": "87.5%"
       },
       {
         "unit": "EX-247",
@@ -163,7 +163,7 @@
       }
     ],
     "exBasis": "5/6",
-    "pdfDate": "19-10"
+    "pdfDate": "20-10"
   },
   "equipment": [
     {
@@ -173,18 +173,8 @@
       "avail": "0.0%",
       "util": "",
       "bd_hrs": "",
-      "note": "(24 h at 330 BCM/h) 7,920 BCM / 21,384.0 t",
+      "note": "); dump-truck shortfall 3,852.8 BCM / 10,402.4 t at today's 55.04 BCM/h fleet rate. Combined gross 28,412.8 BC",
       "comment": "Hydraulic Oil Leakage"
-    },
-    {
-      "unit": "EX-247",
-      "type": "Excavator",
-      "status": "down",
-      "avail": "0.0%",
-      "util": "",
-      "bd_hrs": "",
-      "note": "excluded, suspended under the separate workshop-repair estimate above). Dump trucks at today's 60.70 BCM/h fle",
-      "comment": "Engine low power RPM Derate to  1600rpm"
     },
     {
       "unit": "DT-107",
@@ -193,58 +183,58 @@
       "avail": "0.0%",
       "util": "",
       "bd_hrs": "",
-      "note": "",
+      "note": "(engine coolant temperature high, since 24-Sep) remains down the full 24 h, now day 26 -- still the longest-st",
       "comment": "Engine Coolant Temperature High"
     },
     {
-      "unit": "EX-340",
+      "unit": "EX-262",
       "type": "Excavator",
       "status": "down",
-      "avail": "50.0%",
+      "avail": "29.2%",
       "util": "",
       "bd_hrs": "",
-      "note": "(24 h at 430 BCM/h) 10,320 BCM / 27,864.0 t -- combined excavator shortfall 18,240 BCM / 49,248.0 t (",
-      "comment": "Replace Motor Fan Radiator"
+      "note": "logged only a brief 0.5 h daily-inspection stop",
+      "comment": "Lip Shroud is Worn-out"
     },
     {
-      "unit": "LV-047",
-      "type": "",
-      "status": "down",
-      "avail": "50.0%",
-      "util": "",
-      "bd_hrs": "",
-      "note": "",
-      "comment": "Tire Puncher"
-    },
-    {
-      "unit": "WL-329",
+      "unit": "WL-295",
       "type": "Wheel Loader",
       "status": "down",
-      "avail": "58.3%",
+      "avail": "33.3%",
       "util": "",
       "bd_hrs": "",
       "note": "",
-      "comment": "One Cutting Edge Missing"
+      "comment": "C/O Revars Alarm"
     },
     {
-      "unit": "ST-265",
+      "unit": "LT-137",
       "type": "",
       "status": "down",
-      "avail": "87.5%",
+      "avail": "79.2%",
       "util": "",
       "bd_hrs": "",
       "note": "",
-      "comment": "Replace Tire - P 03, P 04"
+      "comment": "Eng No Start"
     },
     {
-      "unit": "WT-300",
-      "type": "Water Truck",
+      "unit": "EX-263",
+      "type": "Excavator",
       "status": "down",
       "avail": "87.5%",
       "util": "",
       "bd_hrs": "",
-      "note": "",
-      "comment": "Tyre Air Pressure Low # P 02, P 07"
+      "note": "); dump-truck shortfall 3,852.8 BCM / 10,402.4 t at today's 55.04 BCM/h fleet rate. Combined gross 28,412.8 BC",
+      "comment": "Hydraulic Hose Brust"
+    },
+    {
+      "unit": "EX-247",
+      "type": "Excavator",
+      "status": "warning",
+      "avail": "0.0%",
+      "util": "",
+      "bd_hrs": "",
+      "note": "reappears in the by-exception fault table after two straight reports where it was absent and read as suspended",
+      "comment": "Engine low power RPM Derate to  1600rpm"
     },
     {
       "unit": "DT-109",
@@ -257,164 +247,104 @@
       "comment": "Engine Failure"
     },
     {
-      "unit": "DR-139",
+      "unit": "DR-341",
       "type": "Drill",
       "status": "warning",
-      "avail": "50.0%",
+      "avail": "4.2%",
       "util": "",
       "bd_hrs": "",
       "note": "",
       "comment": ""
     },
     {
-      "unit": "DT-246",
+      "unit": "DT-110",
       "type": "Haul Truck",
       "status": "warning",
-      "avail": "50.0%",
+      "avail": "30.2%",
+      "util": "",
+      "bd_hrs": "",
+      "note": "",
+      "comment": "Brake Jammed"
+    },
+    {
+      "unit": "LT-290",
+      "type": "",
+      "status": "warning",
+      "avail": "33.3%",
       "util": "",
       "bd_hrs": "",
       "note": "",
       "comment": ""
     },
     {
-      "unit": "DT-243",
-      "type": "Haul Truck",
+      "unit": "DR-303",
+      "type": "Drill",
       "status": "warning",
       "avail": "81.2%",
       "util": "",
       "bd_hrs": "",
       "note": "",
-      "comment": "Monitor System Not Working"
+      "comment": "Faulty stabilizer error was done"
     },
     {
-      "unit": "DT-245",
-      "type": "Haul Truck",
-      "status": "warning",
-      "avail": "83.3%",
-      "util": "",
-      "bd_hrs": "",
-      "note": "",
-      "comment": "brake Not proper working"
-    },
-    {
-      "unit": "DR-140",
-      "type": "Drill",
-      "status": "warning",
-      "avail": "91.7%",
-      "util": "",
-      "bd_hrs": "",
-      "note": "'s new 11.5 h electrical fault, opened overnight and not cleared by cutoff -- confirm the repair timeline; the",
-      "comment": ""
-    },
-    {
-      "unit": "WT-114",
-      "type": "Water Truck",
-      "status": "warning",
-      "avail": "91.7%",
-      "util": "",
-      "bd_hrs": "",
-      "note": "",
-      "comment": "Replace Tire"
-    },
-    {
-      "unit": "DR-125",
-      "type": "Drill",
+      "unit": "EX-123",
+      "type": "Excavator",
       "status": "warning",
       "avail": "93.8%",
       "util": "",
       "bd_hrs": "",
-      "note": "cleared.",
-      "comment": ""
+      "note": "); dump-truck shortfall 3,852.8 BCM / 10,402.4 t at today's 55.04 BCM/h fleet rate. Combined gross 28,412.8 BC",
+      "comment": "Engine Not Starting"
     },
     {
-      "unit": "DT-283",
-      "type": "Haul Truck",
+      "unit": "EX-340",
+      "type": "Excavator",
       "status": "warning",
-      "avail": "93.8%",
+      "avail": "95.8%",
       "util": "",
       "bd_hrs": "",
-      "note": "",
-      "comment": "Rock Stuck in Between the Tire"
+      "note": "); dump-truck shortfall 3,852.8 BCM / 10,402.4 t at today's 55.04 BCM/h fleet rate. Combined gross 28,412.8 BC",
+      "comment": ""
     },
     {
       "unit": "DT-367",
-      "type": "Haul Truck",
-      "status": "warning",
-      "avail": "93.8%",
-      "util": "",
-      "bd_hrs": "",
-      "note": "",
-      "comment": "Tire Change Out"
-    },
-    {
-      "unit": "DZ-248",
-      "type": "Track Dozer",
-      "status": "warning",
-      "avail": "93.8%",
-      "util": "",
-      "bd_hrs": "",
-      "note": "",
-      "comment": "safety link warning is coming"
-    },
-    {
-      "unit": "LV-035",
-      "type": "",
-      "status": "warning",
-      "avail": "93.8%",
-      "util": "",
-      "bd_hrs": "",
-      "note": "",
-      "comment": "Replace Tire"
-    },
-    {
-      "unit": "LV-049",
-      "type": "",
-      "status": "warning",
-      "avail": "93.8%",
-      "util": "",
-      "bd_hrs": "",
-      "note": "",
-      "comment": "Engine Failure"
-    },
-    {
-      "unit": "DT-110",
       "type": "Haul Truck",
       "status": "warning",
       "avail": "95.8%",
       "util": "",
       "bd_hrs": "",
       "note": "",
-      "comment": "Brake Jammed ( Reset Chassis  Control Module )"
+      "comment": "Hand Rail Braken and Welding Job"
     },
     {
-      "unit": "LT-285",
+      "unit": "LV-048",
       "type": "",
+      "status": "warning",
+      "avail": "95.8%",
+      "util": "",
+      "bd_hrs": "",
+      "note": "",
+      "comment": "Punture Tyre"
+    },
+    {
+      "unit": "EX-398",
+      "type": "Excavator",
+      "status": "warning",
+      "avail": "97.9%",
+      "util": "",
+      "bd_hrs": "",
+      "note": "shows 0 B/D hours.",
+      "comment": ""
+    },
+    {
+      "unit": "DT-246",
+      "type": "Haul Truck",
       "status": "warning",
       "avail": "97.9%",
       "util": "",
       "bd_hrs": "",
       "note": "",
-      "comment": "Engine Not Starting"
-    },
-    {
-      "unit": "EX-123",
-      "type": "Excavator",
-      "status": "warning",
-      "avail": "97.92%",
-      "util": "",
-      "bd_hrs": "",
-      "note": "each logged only a brief planned daily-inspection stop (0.5 h, 97.92% avail). **",
-      "comment": "Install New Bucket Tips"
-    },
-    {
-      "unit": "EX-262",
-      "type": "Excavator",
-      "status": "warning",
-      "avail": "97.92%",
-      "util": "",
-      "bd_hrs": "",
-      "note": "each logged only a brief planned daily-inspection stop (0.5 h, 97.92% avail). **",
-      "comment": ""
+      "comment": "Strobe Light Bracket Welding  Removed"
     },
     {
       "unit": "FT-144",
@@ -427,8 +357,8 @@
       "comment": "C/O Air Compressor & Brake Air  lines"
     },
     {
-      "unit": "MG-266",
-      "type": "Motor Grader",
+      "unit": "LV-049",
+      "type": "",
       "status": "warning",
       "avail": "100.0%",
       "util": "",
@@ -447,16 +377,6 @@
       "comment": "Fuel Pump Faulty"
     },
     {
-      "unit": "LT-137",
-      "type": "",
-      "status": "warning",
-      "avail": "",
-      "util": "",
-      "bd_hrs": "",
-      "note": "",
-      "comment": "Eng No Start"
-    },
-    {
       "unit": "DT-79",
       "type": "Haul Truck",
       "status": "scheduled",
@@ -465,16 +385,6 @@
       "bd_hrs": "",
       "note": "",
       "comment": "250 H Service"
-    },
-    {
-      "unit": "EX-102",
-      "type": "Excavator",
-      "status": "scheduled",
-      "avail": "",
-      "util": "",
-      "bd_hrs": "",
-      "note": "'s 18 h combined support-excavator stop (track shoes, chisel, 250-hour service) was the heaviest ancillary-fle",
-      "comment": ""
     }
   ],
   "plan": {
@@ -485,26 +395,38 @@
     "fridayTarget": 10884,
     "lastReported": "2026-10-08",
     "lastLabel": "8 Oct",
-    "mtd": 492311.0,
+    "mtd": 511376.0,
     "targetToDate": 282974,
     "trendSum": 290315,
     "daysRemain": 16,
     "normalRemain": 13,
     "fridaysRemain": 3,
-    "remainingBcm": 106287,
-    "requiredNormal": 7330,
-    "requiredFriday": 3665
+    "remainingBcm": 87222,
+    "requiredNormal": 6015,
+    "requiredFriday": 3008
   },
   "followUps": [
     {
-      "priority": "MONITOR",
-      "title": "The required daily survey recovery rate keeps climbing: 31,821.5 BCM for...",
+      "priority": "HIGH",
+      "title": "Confirm with maintenance whether EX-247's return to the active fault tab...",
       "body": "",
       "action": ""
     },
     {
       "priority": "MONITOR",
-      "title": "Four additional files registered in RAW this pass -- the Oct 19 mineable...",
+      "title": "Confirm LV-93's return-to-service date and whether its downtime shows ag...",
+      "body": "",
+      "action": ""
+    },
+    {
+      "priority": "MONITOR",
+      "title": "Yesterday's blast (Oct 18, blast no",
+      "body": "17, 850-501 PS, 300 kg explosives) logs 0 BCM blasted volume -- confirm whether the survey measurement is pending or this is a data gap.",
+      "action": ""
+    },
+    {
+      "priority": "MONITOR",
+      "title": "The Q4 Recovery Plan deck family split into two parallel version tracks ...",
       "body": "",
       "action": ""
     }
