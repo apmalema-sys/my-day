@@ -1,13 +1,13 @@
 {
-  "generatedAt": "2026-10-22T11:32:05",
-  "date": "2026-10-21",
+  "generatedAt": "2026-10-23T11:32:33",
+  "date": "2026-10-23",
   "runNumber": null,
-  "summary": "1. 2026-10-21 (rerun 2, ~14:35) -- Geotech folder: pumping capacity email New folder `RAW/Geotech/` with one file, the Ma'aden geotechnical thread on pumping capacity and operating hours. 2. Folder registered as a recurring location in the KB CLAUDE.md. 3. No push notification.",
+  "summary": "1. The Oct 22 morning meeting (last edited 10:18 UTC) was already in RAW, written at 11:13 UTC. 2. Articles updated (Last updated 2026-10-23): q4-recovery-plan-2026 (two sections), tire-damage-cost-pattern, superintendent-weekly-review-and-planning, INDEX. 3. Files read: Milestone Plan Deck v13 and Workbook v12 (diffed against v12 and v11), TIRE_CONSUMPTION_REPORT_2026.pptx, the YTD tire consumption email thread and its inspection-form PDF, the Daily Coordination Meetings email. 4. Registered by name only: Workshop Daily Task 23-Oct (image-only), 261022 mineable-area PDF and broken-stock email (image tables), HR evaluation v4 (HR record, not compiled). 5. No new production data: DPR, Client Meeting Report, A&U, running hours, diesel and the availability report are unchanged since the 2026-10-22 pass (latest Oct 21), so survey and fleet articles were not touched and no new lost-hours figures exist this pass. 6. Key operational findings Plan v13 (basis 24 h x 85% availability x 80% use = 16.32 h/day, 68% utilization): lands 20.02 Mt (+20 kt); v7 20.04 Mt, v12 19.99 Mt. 7. Recovery weeks W45-W52 at 421-451 kt vs monthly plan 414-415 kt; W44 369 kt vs 414 kt. 27 trucks give 66,933 t/day; 21 trucks 56,822-58,167 t/day. 8. Basis: availability and use factors per Peter 23-Oct in the workbook; excavator capacity 1,519 BCM/h (Q4 recovery model). 9. Dates: 6 trucks 4-Nov (was 31-Oct), extra 6020 16-Nov (was 11-Nov), Friday day shift from 6-Nov (was 23-Oct; 12 h, 15.7-16.0 kt/shift). The v7 conflict with the real Oct 23 plan is closed by this change. Tires: 460 tires, SAR 5,812,947 (3-Jan to 16-Oct). Sep SAR 1,272,044, Oct 1-16 SAR 756,192. 27.00-R49 MN (73 tires, 3,832,500) and BKT (30 tires, 1,209,600) = 87% of spend. Four MM-transferred trucks (Goodyear, about 2,000 h) and seven new trucks (Bridgestone, 2,000-2,600 h, 26 tires replaced) named as main drivers. Twice-weekly pit inspections and a tire defect form are the response. Coordination: morning meeting 07:15-07:40 trial and a new 17:15 meeting from Saturday 24-Oct. Contradictions flagged, not resolved: 85% planning availability vs 53.12% excavator availability on Oct 21 (Availability Report); 4-Nov truck date vs Ma'aden's spoken 10-day/3-week commitments; 6020 16-Nov vs about 20-Nov (rehearsal); earlier KB tire figure SAR 3.6M (Sep 27) vs 5.81M (16-Oct) cutoff unclear. Important References: 47 files re-checked, none new; Outputs/important-references-analysis_2026-10-23.md. Part C (Task Feedback Log): All Feedback queried newest first; every row is Processed (newest Oct 10). Nothing marked, no questions resolved, no mismatches. Part D (Notes & References): newest edit still Night Shift Handover 2026-10-18 (edited Oct 19), already in RAW. Notion tasks created (Inbox, \" [ADW]\", Assignee Peter, no Life Area/Project/dates, no Meeting relation as both come from emails): Review the tire defect inspection form and send feedback to Louw; Send comments to Joe on the 07:15 trial and the new 17:15 coordination meeting before Saturday. Not duplicated: twice-weekly tyre inspection invite (task exists), tyre failure location log (exists). Late files (read in the same pass): Recovery Plan FINAL_v2 (current run 19.45 Mt, Recovery Plan 20.18 Mt, +183 kt), Mixed Scenarios v2 (19.90 / 19.98 / 20.06 Mt), Workshop Section v2; DT Requirement v20 by name. New contradictions: Mixed v2 counts Fridays from 23-Oct vs Milestone v13 from 6-Nov; three different landings (20.02 / 20.06 / 20.18 Mt) from different lever sets. Workbook v12 formula cells have no cached values; figures come from the deck. The attached \".msg\" of the tire thread was not read separately. `publish_insights.py` not run.",
   "kpis": [
     {
       "label": "MTD BCM",
-      "value": "511,376",
-      "delta": "-7.6% vs target",
+      "value": "555,055",
+      "delta": "-7.8% vs target",
       "good": false
     },
     {
@@ -15,12 +15,6 @@
       "value": "-4.4%",
       "delta": "survey vs trucks MTD",
       "good": false
-    },
-    {
-      "label": "Crusher MTD",
-      "value": "10%",
-      "delta": "9,753 / 124,000 LCM",
-      "good": null
     },
     {
       "label": "Days Remain",
@@ -130,11 +124,11 @@
     }
   ],
   "fleet": {
-    "availDaily": "93.47%",
-    "availMtd": "89.51%",
+    "availDaily": "93.65%",
+    "availMtd": "89.88%",
     "exAvail": "35.4%",
     "exUnits": 6,
-    "dtAvail": "90.83%",
+    "dtAvail": "87.68%",
     "dtUnits": 21,
     "excavators": [
       {
@@ -167,34 +161,14 @@
   },
   "equipment": [
     {
-      "unit": "EX-247",
-      "type": "Excavator",
+      "unit": "DT-110",
+      "type": "Haul Truck",
       "status": "down",
       "avail": "0.0%",
       "util": "",
       "bd_hrs": "",
-      "note": "work is nearly complete.",
-      "comment": "Engine low power RPM Derate to  1600rpm"
-    },
-    {
-      "unit": "EX-253",
-      "type": "Excavator",
-      "status": "down",
-      "avail": "0.0%",
-      "util": "",
-      "bd_hrs": "",
-      "note": "estimated at",
-      "comment": "Hydraulic Oil Leakage"
-    },
-    {
-      "unit": "EX-262",
-      "type": "Excavator",
-      "status": "down",
-      "avail": "0.0%",
-      "util": "",
-      "bd_hrs": "",
-      "note": "lip shroud: out time and the Oct 21 carry-over hours. - Engine lead time and cost for",
-      "comment": "Lip Shroud is Worn-out"
+      "note": "fuel truck on its two-weekly. Rental grader: PO/PR to extend to the end of January (the transcript first says ",
+      "comment": "Brake Jammed"
     },
     {
       "unit": "DT-107",
@@ -203,7 +177,7 @@
       "avail": "0.0%",
       "util": "",
       "bd_hrs": "",
-      "note": "(coolant temperature high, since 24-Sep) and",
+      "note": "",
       "comment": "Engine Coolant Temperature High"
     },
     {
@@ -215,6 +189,16 @@
       "bd_hrs": "",
       "note": "",
       "comment": "Eng No Start"
+    },
+    {
+      "unit": "DT-108",
+      "type": "Haul Truck",
+      "status": "down",
+      "avail": "64.6%",
+      "util": "",
+      "bd_hrs": "",
+      "note": "fuel truck on its two-weekly. Rental grader: PO/PR to extend to the end of January (the transcript first says ",
+      "comment": "Brake Air Pressure"
     },
     {
       "unit": "DT-128",
@@ -243,7 +227,7 @@
       "avail": "83.3%",
       "util": "",
       "bd_hrs": "",
-      "note": "'s hydraulic-leak breakdown from Oct 17-19 is gone from the table. The two figures disagree on",
+      "note": "| 1.5 | Standby, waiting for grade control | 396.92 | 595.4 | 1,607.5 | |",
       "comment": "Hydraulic Oil Leaking"
     },
     {
@@ -287,24 +271,14 @@
       "comment": "Engine Failure"
     },
     {
-      "unit": "DT-110",
-      "type": "Haul Truck",
+      "unit": "EX-253",
+      "type": "Excavator",
       "status": "warning",
       "avail": "0.0%",
       "util": "",
       "bd_hrs": "",
       "note": "",
-      "comment": "Brake Jammed"
-    },
-    {
-      "unit": "DT-108",
-      "type": "Haul Truck",
-      "status": "warning",
-      "avail": "64.6%",
-      "util": "",
-      "bd_hrs": "",
-      "note": "",
-      "comment": "Brake Air Pressure"
+      "comment": "Hydraulic Oil Leakage"
     },
     {
       "unit": "EX-263",
@@ -313,7 +287,7 @@
       "avail": "93.8%",
       "util": "",
       "bd_hrs": "",
-      "note": "during night shift and was recovered.",
+      "note": "operates; a looped hose needs attention.",
       "comment": ""
     },
     {
@@ -327,23 +301,23 @@
       "comment": "Replaced Tire - P 01"
     },
     {
-      "unit": "EX-123",
-      "type": "Excavator",
-      "status": "warning",
-      "avail": "97.9%",
-      "util": "",
-      "bd_hrs": "",
-      "note": "1.5 h (engine not starting, then daily check)",
-      "comment": ""
-    },
-    {
       "unit": "EX-398",
       "type": "Excavator",
       "status": "warning",
       "avail": "97.9%",
       "util": "",
       "bd_hrs": "",
-      "note": "rates), trucks 3,845 BCM / 10,381 t at 59.38 BCM/h.",
+      "note": "| 3.0 | Standby, waiting for grade control | 300.81 | 902.4 | 2,436.6 | |",
+      "comment": ""
+    },
+    {
+      "unit": "EX-123",
+      "type": "Excavator",
+      "status": "warning",
+      "avail": "97.9%",
+      "util": "",
+      "bd_hrs": "",
+      "note": "needs a weld on a cracked keeper plate at the H-ring pin block.",
       "comment": ""
     },
     {
@@ -377,6 +351,26 @@
       "comment": "Fuel Pump Faulty"
     },
     {
+      "unit": "EX-262",
+      "type": "Excavator",
+      "status": "scheduled",
+      "avail": "0.00%",
+      "util": "",
+      "bd_hrs": "",
+      "note": ": Availability Report (0.00%, down) against Client Meeting Report (405.07 BCM/h, 98% availability) for Oct 21.",
+      "comment": "Lip Shroud is Worn-out"
+    },
+    {
+      "unit": "EX-247",
+      "type": "Excavator",
+      "status": "scheduled",
+      "avail": "0.0%",
+      "util": "",
+      "bd_hrs": "",
+      "note": "return to service on Oct 22 hold? It has swung between suspended and 24 h down several times this cycle. - The",
+      "comment": "Engine low power RPM Derate to  1600rpm"
+    },
+    {
       "unit": "DT-79",
       "type": "Haul Truck",
       "status": "scheduled",
@@ -395,44 +389,32 @@
     "fridayTarget": 10884,
     "lastReported": "2026-10-08",
     "lastLabel": "8 Oct",
-    "mtd": 511376.0,
+    "mtd": 555055.0,
     "targetToDate": 282974,
     "trendSum": 290315,
     "daysRemain": 16,
     "normalRemain": 13,
     "fridaysRemain": 3,
-    "remainingBcm": 87222,
-    "requiredNormal": 6015,
-    "requiredFriday": 3008
+    "remainingBcm": 43543,
+    "requiredNormal": 3003,
+    "requiredFriday": 1501
   },
   "followUps": [
     {
       "priority": "MONITOR",
-      "title": "Survey 261021: Oct 20 day -1,999 BCM (-10.63%); cumulative gap -23,485 B...",
+      "title": "Tires: 460 tires, SAR 5,812,947 (3-Jan to 16-Oct)",
+      "body": "Sep SAR 1,272,044, Oct 1-16 SAR 756,192. 27.00-R49 MN (73 tires, 3,832,500) and BKT (30 tires, 1,209,600) = 87% of spend. Four MM-transferred trucks (Goodyear, about 2,000 h) and seven new trucks (Bridgestone, 2,000-2,600 h, 26 tires replaced) named as main drivers. Twice-weekly pit inspections and a tire defect form are the response.",
+      "action": ""
+    },
+    {
+      "priority": "MONITOR",
+      "title": "Coordination: morning meeting 07:15-07:40 trial and a new 17:15 meeting ...",
       "body": "",
       "action": ""
     },
     {
       "priority": "MONITOR",
-      "title": "Ma'aden workshop: YTD 14.18 Mt, 760 kt (5.1%) below plan; primary excava...",
-      "body": "",
-      "action": ""
-    },
-    {
-      "priority": "MONITOR",
-      "title": "Contradictions flagged, not resolved: extra 6020 arrival (about 20-Nov i...",
-      "body": "",
-      "action": ""
-    },
-    {
-      "priority": "MONITOR",
-      "title": "Safety: a fuel bay operator worked five days on an expired competency pe...",
-      "body": "",
-      "action": ""
-    },
-    {
-      "priority": "MONITOR",
-      "title": "Files registered by name only (not deep-read): Oct 21 in-place edits of ...",
+      "title": "Contradictions flagged, not resolved: 85% planning availability vs 53.12...",
       "body": "",
       "action": ""
     }
