@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-10-23T11:32:33",
+  "generatedAt": "2026-10-24T11:32:38",
   "date": "2026-10-23",
   "runNumber": null,
-  "summary": "1. The Oct 22 morning meeting (last edited 10:18 UTC) was already in RAW, written at 11:13 UTC. 2. Articles updated (Last updated 2026-10-23): q4-recovery-plan-2026 (two sections), tire-damage-cost-pattern, superintendent-weekly-review-and-planning, INDEX. 3. Files read: Milestone Plan Deck v13 and Workbook v12 (diffed against v12 and v11), TIRE_CONSUMPTION_REPORT_2026.pptx, the YTD tire consumption email thread and its inspection-form PDF, the Daily Coordination Meetings email. 4. Registered by name only: Workshop Daily Task 23-Oct (image-only), 261022 mineable-area PDF and broken-stock email (image tables), HR evaluation v4 (HR record, not compiled). 5. No new production data: DPR, Client Meeting Report, A&U, running hours, diesel and the availability report are unchanged since the 2026-10-22 pass (latest Oct 21), so survey and fleet articles were not touched and no new lost-hours figures exist this pass. 6. Key operational findings Plan v13 (basis 24 h x 85% availability x 80% use = 16.32 h/day, 68% utilization): lands 20.02 Mt (+20 kt); v7 20.04 Mt, v12 19.99 Mt. 7. Recovery weeks W45-W52 at 421-451 kt vs monthly plan 414-415 kt; W44 369 kt vs 414 kt. 27 trucks give 66,933 t/day; 21 trucks 56,822-58,167 t/day. 8. Basis: availability and use factors per Peter 23-Oct in the workbook; excavator capacity 1,519 BCM/h (Q4 recovery model). 9. Dates: 6 trucks 4-Nov (was 31-Oct), extra 6020 16-Nov (was 11-Nov), Friday day shift from 6-Nov (was 23-Oct; 12 h, 15.7-16.0 kt/shift). The v7 conflict with the real Oct 23 plan is closed by this change. Tires: 460 tires, SAR 5,812,947 (3-Jan to 16-Oct). Sep SAR 1,272,044, Oct 1-16 SAR 756,192. 27.00-R49 MN (73 tires, 3,832,500) and BKT (30 tires, 1,209,600) = 87% of spend. Four MM-transferred trucks (Goodyear, about 2,000 h) and seven new trucks (Bridgestone, 2,000-2,600 h, 26 tires replaced) named as main drivers. Twice-weekly pit inspections and a tire defect form are the response. Coordination: morning meeting 07:15-07:40 trial and a new 17:15 meeting from Saturday 24-Oct. Contradictions flagged, not resolved: 85% planning availability vs 53.12% excavator availability on Oct 21 (Availability Report); 4-Nov truck date vs Ma'aden's spoken 10-day/3-week commitments; 6020 16-Nov vs about 20-Nov (rehearsal); earlier KB tire figure SAR 3.6M (Sep 27) vs 5.81M (16-Oct) cutoff unclear. Important References: 47 files re-checked, none new; Outputs/important-references-analysis_2026-10-23.md. Part C (Task Feedback Log): All Feedback queried newest first; every row is Processed (newest Oct 10). Nothing marked, no questions resolved, no mismatches. Part D (Notes & References): newest edit still Night Shift Handover 2026-10-18 (edited Oct 19), already in RAW. Notion tasks created (Inbox, \" [ADW]\", Assignee Peter, no Life Area/Project/dates, no Meeting relation as both come from emails): Review the tire defect inspection form and send feedback to Louw; Send comments to Joe on the 07:15 trial and the new 17:15 coordination meeting before Saturday. Not duplicated: twice-weekly tyre inspection invite (task exists), tyre failure location log (exists). Late files (read in the same pass): Recovery Plan FINAL_v2 (current run 19.45 Mt, Recovery Plan 20.18 Mt, +183 kt), Mixed Scenarios v2 (19.90 / 19.98 / 20.06 Mt), Workshop Section v2; DT Requirement v20 by name. New contradictions: Mixed v2 counts Fridays from 23-Oct vs Milestone v13 from 6-Nov; three different landings (20.02 / 20.06 / 20.18 Mt) from different lever sets. Workbook v12 formula cells have no cached values; figures come from the deck. The attached \".msg\" of the tire thread was not read separately. `publish_insights.py` not run.",
+  "summary": "1. The only note edited since Oct 22 (Mining Site Daily Operations Morning Meeting) is already in RAW. 2. Articles updated (Last updated 2026-10-23): daily-production-report, fleet-availability-utilization, survey-volume-reconciliation, q4-recovery-plan-2026, 2027-fleet-budget-capacity-plan, brake-testing, INDEX, QUESTIONS. 3. Files read: 261023-INX-SUM (staged, cloud-only), Oct 22 tabs of the Client Meeting Report, DPR, A&U and Distance Report, Daily Availability Final Report 22-10-2026 (missed by the morning registration), Flash Report #7 (staged), CIP \"Fleet Utilization & Reporting integrity\" email with its two nested attachments, Milestone Plan Deck v15 (diffed v13-v15), Recovery Plan FINAL_v3, Mixed Scenarios Deck v3, Recovery and 2027 Budget Deck v32, Week 44+45 and November 2026 forecast Summary tabs (v5). 4. Name only: DT Requirement v21, Mixed Scenarios Workbook v3, Milestone Workbook v13, Nov Equipment Availability (Ma'aden), Dispatch Data Reconciliation 22-10, grade control, block info and drill workbooks. 5. Key operational findings Oct 22: trucks 19,375 BCM / 52,313 t vs 24,072 BCM target (-4,697 BCM, -19.5%); survey 19,746 BCM (+371, +1.88%). 6. Ore 7,967 BCM (+3,532 vs target), waste 11,408 BCM (-8,229, -41.9%), strip ratio 1.43. 7. Drilling 2,913 m vs 2,563 m (+350 m). 8. Crusher 3,512 BCM / 9,482 t, 35 min bin-low stops. 9. Survey 261023: cumulative gap -22,575 BCM (-4.09%, -60,953 t), narrowed from -4.31%. MTD survey 551,855 BCM = 83.36% of 661,986; behind pace 65,999 BCM (178,196 t). Needed 55,065 BCM/day (148,677 t/day) for the 2 days left, 2.5x the plan day; at the Oct 22 rate the month ends about 70,639 BCM (190,725 t) short. Lost hours Oct 22, each unit's own BCM/h (t = BCM x 2.7): running units 11.5 h = 3,928 BCM / 10,606 t (EX-123 3 h 1,196 BCM / 3,228 t; EX-263 6 h 1,824 BCM / 4,924 t; EX-262 1.5 h 570 BCM / 1,538 t; EX-340 0.5 h 199 BCM / 537 t; EX-398 0.5 h 140 BCM / 379 t); EX-398 standby 5 h (no material) 1,402 BCM / 3,787 t. Estimates: EX-253 down 24 h at EX-263's 303.92 BCM/h = 7,294 BCM / 19,694 t; EX-247 breakdown 8 h = 2,244 BCM / 6,058 t and 16 h standby \"no jobs\" = 4,488 BCM / 12,117 t at 280.48 BCM/h. Total 64.5 h = about 19,356 BCM / 52,261 t gross (net miss 4,697 BCM). Basis: excavator availability 74.40% (Final Report, governs), utilization 72% (Client Meeting Report). The Client Meeting Report shows 90% excavator and 97% truck availability the same day. Final Report: trucks 86.96%, drills 79.43%, overall 95.22% / MTD 89.96%. Brake cluster Oct 20-22: DT-110 brake jammed twice (44.75 h down), DT-129 brake air pressure low, LV-48 brake failure (Flash Report #7, near miss, parking brake stopped it, investigation open). EX-123 hydraulic leak open again from 05:00 Oct 23. Joe Coleman (PM) asks Ayman to chair a Fleet Utilization & Reporting integrity meeting. Nested material: 6-Sep deck (two same-input trucks reported 1,116 and 961 BCM) and Sep idle-loss analysis (517.5 h, 34,673 BCM at 67 BCM/h, 29,287 L fuel). Plans: Milestone v15 lands 20.03 Mt; FINAL_v3 20.18 Mt (+181 kt) on data to 21-Oct; Mixed v3 scenario 1b 20.06 Mt; deck v32 adds the 2027 plan (22.5 Mt, 9 excavators, 26 peak trucks). Forecasts v5: Nov 1,955,359 t (67,426 t/day), W44 432 kt, W45 420 kt. Contradictions flagged, not resolved: W44 forecast 432 kt vs Recovery Plan 369 kt vs plan 414 kt; Nov forecast 67,426 t/day on 21 trucks vs prior-pass truck-haul 56,822-58,167 t/day; Client Meeting Report vs Final Report availability; EX-253 downtime start 16-Sep vs 25-Aug; LV-48 absent from the Oct 22 availability table; truck productivity 57.79 vs 53.1 BCM/h. Important References: 47 files re-checked, none new; afternoon section appended to Outputs/important-references-analysis_2026-10-23.md. Part C (Task Feedback Log): query for rows not Processed returned zero. Nothing marked, no questions resolved, no mismatches. Part D (Notes & References): newest row by Last Edited is still Night Shift Handover 2026-10-18 (edited Oct 19). Nothing new or edited. Notion tasks created (Inbox, \" [ADW]\", no Life Area/Project/dates, no Meeting relation): Review the fleet utilization and reporting integrity attachments before Ayman's meeting (Peter); Explain EX-247 standby of about 16 h after return to service on 22-Oct (Peter); Follow up the LV-48 brake failure investigation (Flash Report #7) with HSEQ and maintenance (unassigned). Caveats. 261023-INX-SUM and Flash Report #7 were cloud-only (not downloaded) on the device and were staged to read. Budget deck v32 was read from the text layer (slides 1-24 shown). The v5 forecasts changed at 11:10 UTC during the pass; headline totals re-read after the change and unchanged.",
   "kpis": [
     {
       "label": "MTD BCM",
@@ -12,7 +12,7 @@
     },
     {
       "label": "Survey Gap",
-      "value": "-4.4%",
+      "value": "-4.1%",
       "delta": "survey vs trucks MTD",
       "good": false
     },
@@ -124,16 +124,12 @@
     }
   ],
   "fleet": {
-    "availDaily": "93.65%",
-    "availMtd": "89.88%",
-    "exAvail": "35.4%",
     "exUnits": 6,
-    "dtAvail": "87.68%",
     "dtUnits": 21,
     "excavators": [
       {
         "unit": "EX-340",
-        "avail": "83.3%"
+        "avail": "54.2%"
       },
       {
         "unit": "EX-262",
@@ -145,30 +141,31 @@
       },
       {
         "unit": "EX-263",
-        "avail": "93.8%"
+        "avail": "85.4%"
       },
       {
         "unit": "EX-247",
-        "avail": "0.0%"
+        "avail": null
       },
       {
         "unit": "EX-1200",
         "avail": null
       }
     ],
-    "exBasis": "5/6",
-    "pdfDate": "21-10"
+    "exAvail": "34.9%",
+    "exBasis": "4/6",
+    "pdfDate": "23-10"
   },
   "equipment": [
     {
-      "unit": "DT-110",
-      "type": "Haul Truck",
+      "unit": "EX-253",
+      "type": "Excavator",
       "status": "down",
       "avail": "0.0%",
       "util": "",
       "bd_hrs": "",
-      "note": "fuel truck on its two-weekly. Rental grader: PO/PR to extend to the end of January (the transcript first says ",
-      "comment": "Brake Jammed"
+      "note": "start of downtime: 16-Sep (Final Report event), 25-Aug (recovery deck, 49 days listed).",
+      "comment": "Hydraulic Oil Leakage"
     },
     {
       "unit": "DT-107",
@@ -177,7 +174,7 @@
       "avail": "0.0%",
       "util": "",
       "bd_hrs": "",
-      "note": "",
+      "note": "available from 8-Nov",
       "comment": "Engine Coolant Temperature High"
     },
     {
@@ -191,64 +188,44 @@
       "comment": "Eng No Start"
     },
     {
-      "unit": "DT-108",
-      "type": "Haul Truck",
+      "unit": "WT-300",
+      "type": "Water Truck",
       "status": "down",
-      "avail": "64.6%",
-      "util": "",
-      "bd_hrs": "",
-      "note": "fuel truck on its two-weekly. Rental grader: PO/PR to extend to the end of January (the transcript first says ",
-      "comment": "Brake Air Pressure"
-    },
-    {
-      "unit": "DT-128",
-      "type": "Haul Truck",
-      "status": "down",
-      "avail": "75.0%",
+      "avail": "50.0%",
       "util": "",
       "bd_hrs": "",
       "note": "",
-      "comment": "Door Problem"
+      "comment": "Pump Pipe Leak"
     },
     {
-      "unit": "DT-367",
+      "unit": "DT-243",
       "type": "Haul Truck",
       "status": "down",
-      "avail": "81.2%",
+      "avail": "60.4%",
       "util": "",
       "bd_hrs": "",
       "note": "",
-      "comment": "Replace Tire"
+      "comment": "Door Lock Not Proper Working"
     },
     {
-      "unit": "EX-340",
+      "unit": "EX-247",
       "type": "Excavator",
       "status": "down",
-      "avail": "83.3%",
+      "avail": "62.50%",
       "util": "",
       "bd_hrs": "",
-      "note": "| 1.5 | Standby, waiting for grade control | 396.92 | 595.4 | 1,607.5 | |",
-      "comment": "Hydraulic Oil Leaking"
+      "note": "62.50% (9 h; engine low power and hose leak closed 14:30 after open since 15-Oct).",
+      "comment": ""
     },
     {
-      "unit": "EX-102",
-      "type": "Excavator",
+      "unit": "LV-106",
+      "type": "",
       "status": "down",
       "avail": "83.3%",
       "util": "",
       "bd_hrs": "",
       "note": "",
-      "comment": "Replace One Light"
-    },
-    {
-      "unit": "DR-297",
-      "type": "Drill",
-      "status": "down",
-      "avail": "89.6%",
-      "util": "",
-      "bd_hrs": "",
-      "note": "",
-      "comment": "Feed Rope Cut ( C/O )"
+      "comment": "Tyre Flat - P 02"
     },
     {
       "unit": "DR-341",
@@ -271,53 +248,73 @@
       "comment": "Engine Failure"
     },
     {
-      "unit": "EX-253",
-      "type": "Excavator",
-      "status": "warning",
-      "avail": "0.0%",
-      "util": "",
-      "bd_hrs": "",
-      "note": "",
-      "comment": "Hydraulic Oil Leakage"
-    },
-    {
       "unit": "EX-263",
       "type": "Excavator",
       "status": "warning",
-      "avail": "93.8%",
+      "avail": "75.00%",
       "util": "",
       "bd_hrs": "",
-      "note": "operates; a looped hose needs attention.",
-      "comment": ""
-    },
-    {
-      "unit": "ST-265",
-      "type": "",
-      "status": "warning",
-      "avail": "93.8%",
-      "util": "",
-      "bd_hrs": "",
-      "note": "",
-      "comment": "Replaced Tire - P 01"
-    },
-    {
-      "unit": "EX-398",
-      "type": "Excavator",
-      "status": "warning",
-      "avail": "97.9%",
-      "util": "",
-      "bd_hrs": "",
-      "note": "| 3.0 | Standby, waiting for grade control | 300.81 | 902.4 | 2,436.6 | |",
-      "comment": ""
+      "note": "75.00% (6 h hydraulic hose).",
+      "comment": "Faulty Motor Cover Removed"
     },
     {
       "unit": "EX-123",
       "type": "Excavator",
       "status": "warning",
+      "avail": "93.75%",
+      "util": "",
+      "bd_hrs": "",
+      "note": "93.75%, then a new hydraulic oil leak at 05:00 on Oct 23 still open.",
+      "comment": "Hyd Oil Leak"
+    },
+    {
+      "unit": "DT-244",
+      "type": "Haul Truck",
+      "status": "warning",
+      "avail": "95.8%",
+      "util": "",
+      "bd_hrs": "",
+      "note": "",
+      "comment": "Transmission Warning"
+    },
+    {
+      "unit": "DR-139",
+      "type": "Drill",
+      "status": "warning",
       "avail": "97.9%",
       "util": "",
       "bd_hrs": "",
-      "note": "needs a weld on a cracked keeper plate at the H-ring pin block.",
+      "note": "",
+      "comment": "Dust Collactor Fault"
+    },
+    {
+      "unit": "LT-293",
+      "type": "",
+      "status": "warning",
+      "avail": "97.9%",
+      "util": "",
+      "bd_hrs": "",
+      "note": "",
+      "comment": "Cannot Start"
+    },
+    {
+      "unit": "EX-340",
+      "type": "Excavator",
+      "status": "warning",
+      "avail": "97.92%",
+      "util": "",
+      "bd_hrs": "",
+      "note": "97.92%",
+      "comment": ""
+    },
+    {
+      "unit": "EX-398",
+      "type": "Excavator",
+      "status": "warning",
+      "avail": "97.92%",
+      "util": "",
+      "bd_hrs": "",
+      "note": "97.92%. - Trucks down:",
       "comment": ""
     },
     {
@@ -351,34 +348,34 @@
       "comment": "Fuel Pump Faulty"
     },
     {
-      "unit": "EX-262",
-      "type": "Excavator",
-      "status": "scheduled",
-      "avail": "0.00%",
+      "unit": "DT-110",
+      "type": "Haul Truck",
+      "status": "warning",
+      "avail": "",
       "util": "",
       "bd_hrs": "",
-      "note": ": Availability Report (0.00%, down) against Client Meeting Report (405.07 BCM/h, 98% availability) for Oct 21.",
-      "comment": "Lip Shroud is Worn-out"
-    },
-    {
-      "unit": "EX-247",
-      "type": "Excavator",
-      "status": "scheduled",
-      "avail": "0.0%",
-      "util": "",
-      "bd_hrs": "",
-      "note": "return to service on Oct 22 hold? It has swung between suspended and 24 h down several times this cycle. - The",
-      "comment": "Engine low power RPM Derate to  1600rpm"
+      "note": "",
+      "comment": "Brake Jammed"
     },
     {
       "unit": "DT-79",
       "type": "Haul Truck",
       "status": "scheduled",
-      "avail": "100.0%",
+      "avail": "89.6%",
       "util": "",
       "bd_hrs": "",
       "note": "",
       "comment": "250 H Service"
+    },
+    {
+      "unit": "EX-262",
+      "type": "Excavator",
+      "status": "scheduled",
+      "avail": "93.75%",
+      "util": "",
+      "bd_hrs": "",
+      "note": "93.75% (250 h service 12:00-13:30).",
+      "comment": "Lip Shroud is Worn-out"
     }
   ],
   "plan": {
@@ -401,20 +398,32 @@
   },
   "followUps": [
     {
-      "priority": "MONITOR",
-      "title": "Tires: 460 tires, SAR 5,812,947 (3-Jan to 16-Oct)",
-      "body": "Sep SAR 1,272,044, Oct 1-16 SAR 756,192. 27.00-R49 MN (73 tires, 3,832,500) and BKT (30 tires, 1,209,600) = 87% of spend. Four MM-transferred trucks (Goodyear, about 2,000 h) and seven new trucks (Bridgestone, 2,000-2,600 h, 26 tires replaced) named as main drivers. Twice-weekly pit inspections and a tire defect form are the response.",
+      "priority": "HIGH",
+      "title": "Lost hours Oct 22, each unit's own BCM/h (t = BCM x 2.7): running units ...",
+      "body": "",
       "action": ""
     },
     {
-      "priority": "MONITOR",
-      "title": "Coordination: morning meeting 07:15-07:40 trial and a new 17:15 meeting ...",
+      "priority": "HIGH",
+      "title": "Basis: excavator availability 74.40% (Final Report, governs), utilizatio...",
+      "body": "",
+      "action": ""
+    },
+    {
+      "priority": "HIGH",
+      "title": "Brake cluster Oct 20-22: DT-110 brake jammed twice (44.75 h down), DT-12...",
       "body": "",
       "action": ""
     },
     {
       "priority": "MONITOR",
-      "title": "Contradictions flagged, not resolved: 85% planning availability vs 53.12...",
+      "title": "Survey 261023: cumulative gap -22,575 BCM (-4.09%, -60,953 t), narrowed ...",
+      "body": "",
+      "action": ""
+    },
+    {
+      "priority": "MONITOR",
+      "title": "Joe Coleman (PM) asks Ayman to chair a Fleet Utilization & Reporting int...",
       "body": "",
       "action": ""
     }
