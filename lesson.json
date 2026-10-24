@@ -1,15 +1,15 @@
 {
-  "date": "2026-10-21",
-  "topic": "Safe Overtaking of Water Trucks",
-  "title": "Safe Overtaking of Water Trucks",
-  "body": "DT operators are currently overtaking water trucks on corners, on gradient, with no radio call, and while the truck is still moving — stacking four SOP violations into one maneuver. That's the exact setup for a berm overrun or a high-wall contact on a switchback, not a hypothetical.",
+  "date": "2026-10-24",
+  "topic": "NCR Patterns at ADW",
+  "title": "NCR Patterns at ADW",
+  "body": "Nineteen NCRs on file and the same names, locations, and timing keep repeating — Sadiq Ali got NCR'd again six days after his first, and two separate NCR numbers have now been issued twice to different people. When a corrective action isn't verified and the register isn't controlled, the same breach just resurfaces under a new date.",
   "keyPoints": [
-    "Radio the water truck operator first and get a \"clear to pass\" before overtaking — hearing you is not the same as confirming it's safe.",
-    "No overtaking on switchbacks or blind corners. Forward visibility drops mid-turn and the outside berm is the only thing stopping an overrun.",
-    "No overtaking on gradient. Uphill 40 km/h and downhill 30 km/h are ceilings — the speed differential on a ramp is exactly where sightline and braking distance are already worst.",
-    "Never overtake a vehicle that's still moving without that operator's confirmation. They may be turning into a spray pattern or reversing to top up and not see you coming.",
-    "Can't raise the bowser operator on radio? You don't overtake. Follow at distance or wait for them to pull over."
+    "NCRs cluster at shift transitions — late day shift (16:00-17:20) and pre-dawn (04:16-06:30). That's when supervision is thinnest: handover focus pulls supervisors off the floor, and the day-shift supervisor isn't on site yet. Treat those windows as higher-risk, not routine.",
+    "Location concentration tracks the highest-stakes ground — Stage 4, Stage 6, and the ROM pad account for most of the corpus. If you're walking those areas during a shift change, you're walking into the exact conditions that produce NCRs.",
+    "A corrective action only holds if someone checks it happened. The WL-24 light-damage NCR fixed the gap by making the end-of-shift walkaround a signed checklist item with weekly spot-checks — not just a toolbox talk. Verbal expectations without a verification step get skipped.",
+    "\"Verify before refuse\" applies to equipment, not just people. The Syukur/DT110 case cost ~1,500 tons because an operator refused a truck based on a transmission complaint from three months earlier, without re-inspecting it after repair. A refusal needs a fresh inspection, not a memory.",
+    "NCR numbers must be unique or the whole trail breaks. Two number collisions this year (26-012, 26-021) mean two different findings get conflated in any audit or closeout count — check the number before you file, not after."
   ],
-  "apply": "Any overtake of a water truck today that skips the radio call, happens on a corner or ramp gradient, or passes a truck still in motion is a finding on the spot — and the same four stacked together again goes through as an LSR 6 (Mobile Equipment) matter.",
-  "generatedAt": "2026-10-21T05:40:55"
+  "apply": "At shift change near the ROM pad or Stage 4/6, confirm the outgoing operator actually did their end-of-shift walkaround and sign-off before you accept the handover as clean.",
+  "generatedAt": "2026-10-24T07:06:28"
 }
