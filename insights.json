@@ -1,14 +1,14 @@
 {
-  "generatedAt": "2026-10-28T10:24:38",
-  "date": "2026-10-24",
+  "generatedAt": "2026-10-28T11:32:44",
+  "date": "2026-10-28",
   "runNumber": null,
-  "summary": "1. An untitled \"Meeting @Today\" page (created 07:32, edited 08:46 UTC) is empty and was not ingested. 2. Articles updated (Last updated 2026-10-24): daily-production-report, fleet-availability-utilization, survey-volume-reconciliation, q4-recovery-plan-2026, brake-testing, dust-suppression, in-pit-groundwater-management, INDEX, QUESTIONS. 3. Read in full: 261024-INX-SUM, Oct 23 tabs of the Client Meeting Report, DPR and A&U, Daily Availability Final Report 23-10-2026 (7 pages), LV048 Failure report, Rental water tank truck inspection, water tanker pump failures email, pumping capacity thread, Recovery Plan FINAL_v5, Milestone Deck v20, Recovery and 2027 Budget Deck v34, rental equipment Gantt (PDF and workbook), \"Urgent Request\" and \"Email for Yahya\" emails, Production Employee Commitments letter v4. 4. Name only: Mixed Scenarios v5, Workshop Section v4, DT Requirement v23, Milestone Workbook v18, FCST workbooks saved after the last pass, drill/block/grade control/running hours/diesel workbooks, Dispatch Data Reconciliation 23-10, HR attendance and evaluation files, mineable-area PDF, broken stock email, dig map. 5. Oct 24 tabs in the site workbooks are empty templates. 6. Key operational findings Oct 23 (Friday roster break): trucks 11,005 BCM / 29,713.5 t vs 12,036.11 BCM Friday target (-1,031 BCM, -2,784 t, -8.57%); survey 8,208 BCM. 7. Waste 5,549 BCM (-4,270 vs target), ore 5,456 BCM (+3,239). 8. Crusher 2,788 BCM / 7,527.6 t with 3 h 18 min of stops. 9. Drilling 1,582 m vs 1,281 m. Survey 261024: cumulative gap -25,372 BCM (-68,504 t), -4.53%, widened from -4.09%. Survey MTD 560,063 BCM = 84.60% of 661,986; 101,923 BCM (275,192 t) needed in the final day, 4.6x the plan day. Best case (34,393 BCM day) still ends 67,530 BCM (182,331 t) short. Lost hours Oct 23, each unit's own BCM/h (t = BCM x 2.7). A&U basis: 51 h = about 13,753 BCM / 37,132 t (EX-263 3.5 h breakdown 976 BCM / 2,637 t and 9.5 h no-job standby 2,650 / 7,156; EX-123, EX-262, EX-340, EX-398 0.5 h each = 749 BCM / 2,023 t; estimates: EX-253 down 24 h at EX-263's 279 BCM/h = 6,696 BCM / 18,079 t, EX-247 12 h at EX-398's 223.38 BCM/h = 2,680 BCM / 7,238 t). Final Report basis (governs): 72 h = about 25,680 BCM / 69,335 t. Crusher 3.3 h = about 444 BCM / 1,200 t (estimate). Roster-break standby (inside the Friday target) about 20,656 BCM / 55,771 t. Basis: excavators 57.27% available (Final Report), 39% utilized (Client Meeting Report); trucks 88.46% / 42%; Client Meeting Report shows 95% and 98% availability. Overall 93.84% daily, 89.89% MTD. Plans: FINAL_v5 20.16 Mt (+160 kt vs 20 Mt; v3 20.18 Mt); Milestone v20 recovery cumulative 20.01 Mt; budget deck v34 why-behind 72,070 BCM / 194,589 t and 66,680 t/day required vs 57,468 t/day run rate. Rental fleet PO-009398: 6 x CAT 777E (2-4 Nov window) and 1 x CAT 6020B (16-19 Nov), 14 operators; PO approval outstanding, all Gantt tasks 0%. Ma'aden (Yahya Albarakati, 23-Oct) approves Ajeer manpower via Earth Pulse Mining with operator review, written JRAR responsibility and safety/security checks, and says the recovery plan is still awaited. Water tankers: pump engines fail from 24/7 duty; PTO hydraulic conversion proposed. Rental water truck 5952 EBA condemned (missing licence, insurance, registration). LV-048 failure report: shock/bracket/banjo bolt damage, 19 tires YTD. Contradictions flagged, not resolved: excavator availability 57.27% vs 95% (EX-262 24.5 h down vs 2,325 BCM produced); Friday ore 14,731 / 13,476 / 12,973.5 t; strip ratio 1.29 vs 1.02; broken stock 244 kt vs 304 kt; LV-48 breakdown vs near miss; 6 vs 10 rental trucks and 6020B vs 6028; recovery landing 20.16 vs 20.01 Mt. Important References: 47 files re-checked, none new or modified; Outputs/important-references-analysis_2026-10-24.md written (cross-reads of today's findings against the contract triggers). Part C (Task Feedback Log): query for rows not Processed returned zero. Nothing marked, no questions resolved, no mismatches. Part D (Notes & References): newest row by Last Edited is still Night Shift Handover 2026-10-18 (edited Oct 19). Nothing new or edited. Notion tasks created (Inbox, \" [ADW]\", no Life Area/Project/dates; 9 with Meeting relation to the Oct 24 note): Submit the operations staff list to Jack for driver's license scheduling (Peter); Agree the quarantine of three operators with Jack and have their machine disinfected (Peter); Review James's response and adjust the store plan (Peter); Chase the bulk emulsion supply from MCS; Check the dispatch area generator (frequency above 50 Hz trips the UPS); Request a telehandler from Jack (Peter); Reply again to the IAS email on its restrictions; Collect the 25 damaged Yanmar pumps and send two to Jinta; Confirm the supplier will replace condemned water truck 5952 EBA; Send the proposed operators' CVs to Ma'aden under the Ajeer approval (Peter); Confirm 6 or 10 rental CAT 777E trucks and 6020B or 6028 in the PO-009398 schedule (Peter); Reconcile Oct 23 excavator availability Final Report vs Client Meeting Report (Peter). Duplicate check against all [ADW] tasks since Oct 15: none matched. Cloud-only files were staged to read. The meeting transcript is auto-generated; its tonnage figures match the workbooks (52,312 t and 29,714 t) but ore, quarantine and names are as spoken. Health detail on quarantined operators is held at action level only. The FCST workbooks saved after the last pass were not re-read.",
+  "summary": "1. Articles updated (Last updated 2026-10-28): daily-production-report, fleet-availability-utilization, survey-volume-reconciliation, q4-recovery-plan-2026, weekly-mining-plan, safety-inspection-patterns, blasting-and-drilling, august-2026-performance-review-escalation, INDEX, QUESTIONS. 2. Sources read this pass: INX-SUM 261025/261026/261027, Client Meeting Reports (Oct 24 to Oct 27), October EOM Report and signed EOM sheet, Daily Availability Final Reports Oct 24-27, GM Weekly Operational Review 25-Oct, Weekly Plan ADW W44-45, November Production Plan. 3. Files listed in RAW/_INGESTED.md as name-only were not parsed (scanned PDFs, maps, DXF/STR, DPR, Diesel, Drill reports). 4. Key operational findings Daily (trucks): Oct 24 22,041 BCM (-8.44%), Oct 25 18,352 (-19.60%), Oct 26 18,879 (-17.88%), Oct 27 17,081 BCM (-25.70%; waste -8,962, ore +3,053). 5. October close: 607,476 BCM / 1,640,185 t vs 661,986 BCM: -54,510 BCM (-147,177 t). 6. Ore 99,045 vs 121,961 BCM (-18.8%). 7. Week 44 to Oct 27: 146,642 t vs 182,126 t plan: -35,484 t (-19.5%, about -13,142 BCM). 8. Crusher stops Oct 24-27: about 3,524 BCM / 9,514 t lost (estimate at each day's own feed rate). 9. Oct 25 and 26 stockpile-full 8 h 14 min and 3 h 55 min. Lost equipment hours (Final Report): 276 h, about 92,431 BCM / 249,563 t (each unit at its own BCM/h rate; fleet substitutes labeled estimates in the article). Survey: gap -14,027 BCM at 261027; signed EOM 592,714 BCM; Nov survey +5,582 BCM. Contradictions flagged, not resolved: Client Meeting Report daily target (22,827 / 22,990 BCM) vs Maaden W44-45 plan (60,426 / 60,850 t); Client Meeting Report availability vs Final Report; FCST vs Maaden deck. Project Manager memo flags a possible third non-performance letter (see q4-recovery-plan-2026). Important References: 2 new emails (\"Immediate Expectations - Workplace Conduct...\", \"RE_ Drill bit specification\"); analysis in Outputs/important-references-analysis_2026-10-28.md. Part C (Task Feedback Log): zero unprocessed rows. Part D (Notes & References): one new row (HOD risk observation 2026-10-23) written to RAW/Notes & References/hod-risk-observation-2026-10-23_2026-10-25.md. Notion tasks created (10, Status Inbox, no Life Area/Project/dates): fire suppression confirmation with James; fire suppression cost recovery; 6020 offloading documentation; written mobilization concerns and safety timeline; production report dashboard with stage/area breakdown; idle vs running maintenance dashboards; coach operators on empty trucks out of pit; ROM pad lighting plant move (JJ); Go-Line toilet fixes (Samad); brief supervisors on 1-Nov conduct rules. Duplicate check against 40 recent [ADW] tasks found none.",
   "kpis": [
     {
       "label": "Survey Gap",
-      "value": "-4.5%",
+      "value": "-2.4%",
       "delta": "survey vs trucks MTD",
-      "good": false
+      "good": true
     },
     {
       "label": "Days Remain",
@@ -53,23 +53,23 @@
   },
   "equipment": [
     {
-      "unit": "EX-123",
+      "unit": "EX-253",
       "type": "Excavator",
       "status": "down",
       "avail": "0.0%",
       "util": "",
       "bd_hrs": "",
-      "note": "6.5 h (Final) vs 0.5 h breakdown (A&U)",
-      "comment": "MAIN HYDRAULIC Pump 3,4 Failure"
+      "note": ": the worse diagnosis (swing drive and slew bearing) changes the return-to-work date; no date given.",
+      "comment": "Hydraulic Oil Leakage"
     },
     {
       "unit": "DT-107",
       "type": "Haul Truck",
       "status": "down",
-      "avail": "0.0%",
+      "avail": "40%",
       "util": "",
       "bd_hrs": "",
-      "note": "(coolant, since 24-Sep) and",
+      "note": "down, no data). Average idle about 4 h in 24 h per truck; idle share 30-40% of operating time against a benchm",
       "comment": "COOLANT LEAKING FROM CRACK  CYLINDER HEAD L.H"
     },
     {
@@ -123,14 +123,14 @@
       "comment": "Tyre Air Pressure Low P 01"
     },
     {
-      "unit": "EX-253",
+      "unit": "EX-123",
       "type": "Excavator",
       "status": "warning",
-      "avail": "0.00%",
+      "avail": "0.0%",
       "util": "",
       "bd_hrs": "",
-      "note": "0.00% (24 h, swing and hydraulic leak, open since 16-Sep).",
-      "comment": "Hydraulic Oil Leakage"
+      "note": "pump 3 and 4 failure: parts lead time and return date are not in any source. At the Oct 25-27 rate (394 to 402",
+      "comment": "MAIN HYDRAULIC Pump 3,4 Failure"
     },
     {
       "unit": "DT-109",
@@ -176,31 +176,11 @@
       "unit": "EX-263",
       "type": "Excavator",
       "status": "warning",
-      "avail": "85.42%",
+      "avail": "93.8%",
       "util": "",
       "bd_hrs": "",
-      "note": "85.42% (3.5 h, faulty motor cover removed).",
+      "note": "'s rate (same model, estimate; neither ran)",
       "comment": "Replace O-Ring Grease Hose"
-    },
-    {
-      "unit": "EX-262",
-      "type": "Excavator",
-      "status": "warning",
-      "avail": "91.7%",
-      "util": "",
-      "bd_hrs": "",
-      "note": "run on Oct 23? A&U shows 2,325 BCM and 10 h operating; the Final Report shows 24.5 h down on a lip shroud. - W",
-      "comment": "Replace Bucket Tips"
-    },
-    {
-      "unit": "EX-340",
-      "type": "Excavator",
-      "status": "warning",
-      "avail": "95.8%",
-      "util": "",
-      "bd_hrs": "",
-      "note": "11 h (Final) vs 0.5 h",
-      "comment": ""
     },
     {
       "unit": "EX-398",
@@ -209,8 +189,18 @@
       "avail": "95.8%",
       "util": "",
       "bd_hrs": "",
-      "note": "2.5 h vs 0.5 h",
+      "note": "'s 308.23 BCM/h (same model, estimate). Oct 24 example:",
       "comment": "Bucket Teeth Worn-out"
+    },
+    {
+      "unit": "EX-340",
+      "type": "Excavator",
+      "status": "warning",
+      "avail": "95.8%",
+      "util": "",
+      "bd_hrs": "",
+      "note": "'s rate and",
+      "comment": ""
     },
     {
       "unit": "FT-144",
@@ -223,13 +213,13 @@
       "comment": "C/O Air Compressor & Brake Air  lines"
     },
     {
-      "unit": "LV-48",
-      "type": "",
+      "unit": "EX-247",
+      "type": "Excavator",
       "status": "warning",
       "avail": "",
       "util": "",
       "bd_hrs": "",
-      "note": "a breakdown or a near miss?",
+      "note": "on Oct 27 at",
       "comment": ""
     },
     {
@@ -241,6 +231,16 @@
       "bd_hrs": "",
       "note": "",
       "comment": "Fuel Pump Faulty"
+    },
+    {
+      "unit": "EX-262",
+      "type": "Excavator",
+      "status": "scheduled",
+      "avail": "96%",
+      "util": "",
+      "bd_hrs": "",
+      "note": "168 h stick and bucket replacement on the W44 schedule from Oct 25: when? At 395 BCM/h it removes about 66,400",
+      "comment": "Replace Bucket Tips"
     },
     {
       "unit": "DT-79",
@@ -256,32 +256,32 @@
   "plan": null,
   "followUps": [
     {
-      "priority": "HIGH",
-      "title": "Survey 261024: cumulative gap -25,372 BCM (-68,504 t), -4.53%, widened f...",
-      "body": "",
-      "action": ""
-    },
-    {
-      "priority": "HIGH",
-      "title": "Rental fleet PO-009398: 6 x CAT 777E (2-4 Nov window) and 1 x CAT 6020B ...",
-      "body": "",
-      "action": ""
-    },
-    {
-      "priority": "HIGH",
-      "title": "Water tankers: pump engines fail from 24/7 duty; PTO hydraulic conversio...",
+      "priority": "MONITOR",
+      "title": "October close: 607,476 BCM / 1,640,185 t vs 661,986 BCM: -54,510 BCM (-1...",
       "body": "",
       "action": ""
     },
     {
       "priority": "MONITOR",
-      "title": "Lost hours Oct 23, each unit's own BCM/h (t = BCM x 2.7)",
-      "body": "A&U basis: 51 h = about 13,753 BCM / 37,132 t (EX-263 3.5 h breakdown 976 BCM / 2,637 t and 9.5 h no-job standby 2,650 / 7,156; EX-123, EX-262, EX-340, EX-398 0.5 h each = 749 BCM / 2,023 t; estimates: EX-253 down 24 h at EX-263's 279 BCM/h = 6,696 BCM / 18,079 t, EX-247 12 h at EX-398's 223.38 BCM/h = 2,680 BCM / 7,238 t). Final Report basis (governs): 72 h = about 25,680 BCM / 69,335 t. Crusher 3.3 h = about 444 BCM / 1,200 t (estimate). Roster-break standby (inside the Friday target) about 20,656 BCM / 55,771 t.",
+      "title": "Week 44 to Oct 27: 146,642 t vs 182,126 t plan: -35,484 t (-19.5%, about...",
+      "body": "",
       "action": ""
     },
     {
       "priority": "MONITOR",
-      "title": "Basis: excavators 57.27% available (Final Report), 39% utilized (Client ...",
+      "title": "Crusher stops Oct 24-27: about 3,524 BCM / 9,514 t lost (estimate at eac...",
+      "body": "",
+      "action": ""
+    },
+    {
+      "priority": "MONITOR",
+      "title": "Lost equipment hours (Final Report): 276 h, about 92,431 BCM / 249,563 t...",
+      "body": "",
+      "action": ""
+    },
+    {
+      "priority": "MONITOR",
+      "title": "Survey: gap -14,027 BCM at 261027; signed EOM 592,714 BCM; Nov survey +5...",
       "body": "",
       "action": ""
     }
