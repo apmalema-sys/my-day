@@ -1,19 +1,19 @@
 {
-  "generatedAt": "2026-10-28T11:32:44",
-  "date": "2026-10-28",
+  "generatedAt": "2026-10-29T11:32:02",
+  "date": "2026-10-29",
   "runNumber": null,
-  "summary": "1. Articles updated (Last updated 2026-10-28): daily-production-report, fleet-availability-utilization, survey-volume-reconciliation, q4-recovery-plan-2026, weekly-mining-plan, safety-inspection-patterns, blasting-and-drilling, august-2026-performance-review-escalation, INDEX, QUESTIONS. 2. Sources read this pass: INX-SUM 261025/261026/261027, Client Meeting Reports (Oct 24 to Oct 27), October EOM Report and signed EOM sheet, Daily Availability Final Reports Oct 24-27, GM Weekly Operational Review 25-Oct, Weekly Plan ADW W44-45, November Production Plan. 3. Files listed in RAW/_INGESTED.md as name-only were not parsed (scanned PDFs, maps, DXF/STR, DPR, Diesel, Drill reports). 4. Key operational findings Daily (trucks): Oct 24 22,041 BCM (-8.44%), Oct 25 18,352 (-19.60%), Oct 26 18,879 (-17.88%), Oct 27 17,081 BCM (-25.70%; waste -8,962, ore +3,053). 5. October close: 607,476 BCM / 1,640,185 t vs 661,986 BCM: -54,510 BCM (-147,177 t). 6. Ore 99,045 vs 121,961 BCM (-18.8%). 7. Week 44 to Oct 27: 146,642 t vs 182,126 t plan: -35,484 t (-19.5%, about -13,142 BCM). 8. Crusher stops Oct 24-27: about 3,524 BCM / 9,514 t lost (estimate at each day's own feed rate). 9. Oct 25 and 26 stockpile-full 8 h 14 min and 3 h 55 min. Lost equipment hours (Final Report): 276 h, about 92,431 BCM / 249,563 t (each unit at its own BCM/h rate; fleet substitutes labeled estimates in the article). Survey: gap -14,027 BCM at 261027; signed EOM 592,714 BCM; Nov survey +5,582 BCM. Contradictions flagged, not resolved: Client Meeting Report daily target (22,827 / 22,990 BCM) vs Maaden W44-45 plan (60,426 / 60,850 t); Client Meeting Report availability vs Final Report; FCST vs Maaden deck. Project Manager memo flags a possible third non-performance letter (see q4-recovery-plan-2026). Important References: 2 new emails (\"Immediate Expectations - Workplace Conduct...\", \"RE_ Drill bit specification\"); analysis in Outputs/important-references-analysis_2026-10-28.md. Part C (Task Feedback Log): zero unprocessed rows. Part D (Notes & References): one new row (HOD risk observation 2026-10-23) written to RAW/Notes & References/hod-risk-observation-2026-10-23_2026-10-25.md. Notion tasks created (10, Status Inbox, no Life Area/Project/dates): fire suppression confirmation with James; fire suppression cost recovery; 6020 offloading documentation; written mobilization concerns and safety timeline; production report dashboard with stage/area breakdown; idle vs running maintenance dashboards; coach operators on empty trucks out of pit; ROM pad lighting plant move (JJ); Go-Line toilet fixes (Samad); brief supervisors on 1-Nov conduct rules. Duplicate check against 40 recent [ADW] tasks found none.",
+  "summary": "1. Delta pass against the 2026-10-28 11:11 UTC state. 2. Page fetched (Oct 10): body identical to the RAW copy and the page now sits under a \"Daily HOD meeting\" parent, so it was a re-parenting, not a content change. 3. No -revised files written. 4. Sources read: Client Meeting Report / A&U / DPR tab Oct (28); Daily Availability Final Report 28-10; Workshop Daily Task 29-Oct (OCR); SCM Gantt 28Oct2026 (all tabs); the two SCM emails; Heading Updated deck; Milestone Plan deck v23 and workbook v21; Recovery Plan FINAL v6. 5. Registered in RAW/_INGESTED.md (name-only: .m4a, broken-stock email image, mineable-area map, DT requirement workbook v24, workbooks with re-synced mtimes). 6. Articles updated (Last updated 2026-10-29): daily-production-report, fleet-availability-utilization, q4-recovery-plan-2026, QUESTIONS. survey-volume-reconciliation unchanged: the Oct 28 survey (261029-INX-SUM) is not in RAW yet. 7. Key operational findings Oct 28: 14,229 BCM / 38,418 t vs 22,989.69 BCM: -8,760.69 BCM (-23,654 t), -38.1%. 8. November MTD 68,541 BCM vs 91,958.76: -23,417.76 (-25.5%). 9. Week 44 to date 185,061 t vs 242,552 t plan (-23.7%). Cause in report: no access to blasted material in Blocks 850-518/519, Stage 5. EX-262 stood by 24 h, EX-247 12 h; EX-123 and EX-253 still down 24 h each. Lost hours (BCM/t): EX-340 1.5 h = 595 BCM / 1,607 t (396.88 BCM/h); EX-263 0.5 h + 5.5 h operational delay = 1,784 BCM / 4,815 t (297.22 BCM/h); EX-398 1 h = 310 BCM / 837 t (310 BCM/h); EX-123 24 h and EX-253 24 h = 8,033 BCM / 21,689 t each (334.7 BCM/h fleet average, estimate); EX-262 standby 24 h = 8,033 BCM / 21,689 t (estimate); EX-247 standby 12 h = 3,720 BCM / 10,044 t (estimate); 97 truck hours = 4,778 BCM / 12,901 t (49.26 BCM/h, estimate); crusher 3.02 h (DRA side problem) = about 428 BCM / 1,155 t. Capacity rows overlap and do not sum to the shortfall. Availability (Final Report): overall 94.88% daily / 90.61% MTD; excavators 69.64%; dump trucks 88.45%; drill rigs 78.39%. Recovery: PO-009398 signed 28 Oct; trucks 2 Nov (2) and 7 Nov (4), 6020B transport 18 Nov; lowbeds, PDI, gate passes at 0% on 28 Oct. Landings: 20.15 Mt (FINAL v6), 20.00 Mt (Heading Updated), 19.89 Mt (realistic, basis survey rate 53.5 kt/day, 21 running trucks, 85% rental availability). Joe Coleman: 20 Mt will not be made. Truck working dates conflict across documents (open question). Important References: folder unchanged; SCM Updates signals analyzed in Outputs/important-references-analysis_2026-10-29.md. Part C (Task Feedback Log): one unprocessed row (2026-10-28 12:28 UTC, \"This is drilling and blasting context, drop it.\"), linked to the Done task \"Raise downhole drill approval (165 mm holes in waste) with Bud during the Oct 15 visit [ADW]\". It closes that task; no open question attached, no mismatch. Part D (Notes & References): latest row is the HOD risk observation of 2026-10-25 (already ingested); no new or edited rows. Notion tasks created: 1 (Inbox, Assignee Peter): \"Confirm which year-end landing (19.89, 20.00 or 20.15 Mt) goes to Ma'aden in the Q4 recovery slides 1-2 [ADW]\". Duplicate check: none found. Other asks in the emails (rework slides 1-2) were already built by Peter (v22/v23 on 29 Oct per his captain's log), so no task. Limits: audio note not transcribed; workshop-plan unit IDs not legible; no RAW file modified or deleted.",
   "kpis": [
     {
       "label": "Survey Gap",
-      "value": "-2.4%",
+      "value": "-4.5%",
       "delta": "survey vs trucks MTD",
-      "good": true
+      "good": false
     },
     {
       "label": "Days Remain",
-      "value": "1",
-      "delta": "",
+      "value": "27",
+      "delta": "in production month",
       "good": null
     }
   ],
@@ -24,11 +24,11 @@
     "excavators": [
       {
         "unit": "EX-340",
-        "avail": "95.8%"
+        "avail": "93.8%"
       },
       {
         "unit": "EX-262",
-        "avail": "91.7%"
+        "avail": null
       },
       {
         "unit": "EX-253",
@@ -36,7 +36,7 @@
       },
       {
         "unit": "EX-263",
-        "avail": "93.8%"
+        "avail": "97.9%"
       },
       {
         "unit": "EX-247",
@@ -47,80 +47,60 @@
         "avail": null
       }
     ],
-    "exAvail": "70.3%",
-    "exBasis": "4/6",
-    "pdfDate": "27-10"
+    "exAvail": "63.9%",
+    "exBasis": "3/6",
+    "pdfDate": "28-10"
   },
   "equipment": [
     {
-      "unit": "EX-253",
-      "type": "Excavator",
-      "status": "down",
-      "avail": "0.0%",
-      "util": "",
-      "bd_hrs": "",
-      "note": ": the worse diagnosis (swing drive and slew bearing) changes the return-to-work date; no date given.",
-      "comment": "Hydraulic Oil Leakage"
-    },
-    {
-      "unit": "DT-107",
-      "type": "Haul Truck",
-      "status": "down",
-      "avail": "40%",
-      "util": "",
-      "bd_hrs": "",
-      "note": "down, no data). Average idle about 4 h in 24 h per truck; idle share 30-40% of operating time against a benchm",
-      "comment": "COOLANT LEAKING FROM CRACK  CYLINDER HEAD L.H"
-    },
-    {
-      "unit": "WD-145",
-      "type": "Water Dozer",
-      "status": "down",
-      "avail": "75.0%",
-      "util": "",
-      "bd_hrs": "",
-      "note": "",
-      "comment": "Supporting Plate that is Touching  the Tyre"
-    },
-    {
-      "unit": "DR-139",
+      "unit": "DR-343",
       "type": "Drill",
       "status": "down",
-      "avail": "77.1%",
+      "avail": "39.6%",
       "util": "",
       "bd_hrs": "",
       "note": "",
-      "comment": "C/O Drifter"
+      "comment": "Shank broken, replaced with new  shank"
     },
     {
-      "unit": "WT-304",
-      "type": "Water Truck",
-      "status": "down",
-      "avail": "81.2%",
-      "util": "",
-      "bd_hrs": "",
-      "note": "",
-      "comment": "Tyre Flat - P 02"
-    },
-    {
-      "unit": "DT-110",
+      "unit": "DT-281",
       "type": "Haul Truck",
       "status": "down",
-      "avail": "89.6%",
+      "avail": "39.6%",
       "util": "",
       "bd_hrs": "",
       "note": "",
-      "comment": "Maaden Inspection"
+      "comment": "Tyre Flat P-05"
     },
     {
-      "unit": "DT-344",
-      "type": "Haul Truck",
+      "unit": "DZ-279",
+      "type": "Track Dozer",
       "status": "down",
-      "avail": "89.6%",
+      "avail": "39.6%",
       "util": "",
       "bd_hrs": "",
       "note": "",
-      "comment": "Tyre Air Pressure Low P 01"
+      "comment": "Ripper Teeth Worn-out"
+    },
+    {
+      "unit": "DR-342",
+      "type": "Drill",
+      "status": "down",
+      "avail": "85.4%",
+      "util": "",
+      "bd_hrs": "",
+      "note": "",
+      "comment": "Shank adapter change out and pull  jaw worn out, bolt broken  (replaced)"
+    },
+    {
+      "unit": "DZ-248",
+      "type": "Track Dozer",
+      "status": "down",
+      "avail": "87.5%",
+      "util": "",
+      "bd_hrs": "",
+      "note": "",
+      "comment": "Cutting Change Out"
     },
     {
       "unit": "EX-123",
@@ -129,8 +109,38 @@
       "avail": "0.0%",
       "util": "",
       "bd_hrs": "",
-      "note": "pump 3 and 4 failure: parts lead time and return date are not in any source. At the Oct 25-27 rate (394 to 402",
+      "note": "down 24 h (main hydraulic pump 3,4 failure, since Oct 24 10:30)",
       "comment": "MAIN HYDRAULIC Pump 3,4 Failure"
+    },
+    {
+      "unit": "EX-253",
+      "type": "Excavator",
+      "status": "warning",
+      "avail": "0.0%",
+      "util": "",
+      "bd_hrs": "",
+      "note": "down 24 h (hydraulic oil leak and swing, since Sep 16)",
+      "comment": "Hydraulic Oil Leakage"
+    },
+    {
+      "unit": "DT-107",
+      "type": "Haul Truck",
+      "status": "warning",
+      "avail": "0.0%",
+      "util": "",
+      "bd_hrs": "",
+      "note": "\"engine coolant temperature high\"; the Final Report shows engine failure and cracked cylinder head. A&U lists",
+      "comment": "COOLANT LEAKING FROM CRACK  CYLINDER HEAD L.H"
+    },
+    {
+      "unit": "DR-125",
+      "type": "Drill",
+      "status": "warning",
+      "avail": "0.0%",
+      "util": "",
+      "bd_hrs": "",
+      "note": "",
+      "comment": ""
     },
     {
       "unit": "DT-109",
@@ -143,44 +153,94 @@
       "comment": "Engine Failure"
     },
     {
-      "unit": "LV-049",
-      "type": "",
-      "status": "warning",
-      "avail": "0.0%",
-      "util": "",
-      "bd_hrs": "",
-      "note": "",
-      "comment": "Engine Failure"
-    },
-    {
-      "unit": "DR-125",
+      "unit": "DR-139",
       "type": "Drill",
       "status": "warning",
-      "avail": "25.0%",
+      "avail": "39.6%",
       "util": "",
       "bd_hrs": "",
       "note": "",
       "comment": ""
+    },
+    {
+      "unit": "DT-110",
+      "type": "Haul Truck",
+      "status": "warning",
+      "avail": "50.0%",
+      "util": "",
+      "bd_hrs": "",
+      "note": "",
+      "comment": ""
+    },
+    {
+      "unit": "WT-304",
+      "type": "Water Truck",
+      "status": "warning",
+      "avail": "58.3%",
+      "util": "",
+      "bd_hrs": "",
+      "note": "",
+      "comment": "Generator Not Working ( Replace  New Water Pump )"
+    },
+    {
+      "unit": "DR-140",
+      "type": "Drill",
+      "status": "warning",
+      "avail": "70.8%",
+      "util": "",
+      "bd_hrs": "",
+      "note": "",
+      "comment": "Fault drifter"
+    },
+    {
+      "unit": "DT-245",
+      "type": "Haul Truck",
+      "status": "warning",
+      "avail": "79.2%",
+      "util": "",
+      "bd_hrs": "",
+      "note": "",
+      "comment": "Transmission Problem"
+    },
+    {
+      "unit": "DR-297",
+      "type": "Drill",
+      "status": "warning",
+      "avail": "91.7%",
+      "util": "",
+      "bd_hrs": "",
+      "note": "",
+      "comment": "Changing dust collector filter"
     },
     {
       "unit": "DT-128",
       "type": "Haul Truck",
       "status": "warning",
-      "avail": "33.3%",
+      "avail": "91.7%",
       "util": "",
       "bd_hrs": "",
       "note": "",
-      "comment": ""
+      "comment": "Tyre Air Pressure Low"
     },
     {
-      "unit": "EX-263",
+      "unit": "EX-340",
       "type": "Excavator",
       "status": "warning",
       "avail": "93.8%",
       "util": "",
       "bd_hrs": "",
-      "note": "'s rate (same model, estimate; neither ran)",
-      "comment": "Replace O-Ring Grease Hose"
+      "note": "1.5 h (bucket teeth, bucket pin)",
+      "comment": "Bucket Welding Job"
+    },
+    {
+      "unit": "LT-285",
+      "type": "",
+      "status": "warning",
+      "avail": "93.8%",
+      "util": "",
+      "bd_hrs": "",
+      "note": "",
+      "comment": "Engine Not Start"
     },
     {
       "unit": "EX-398",
@@ -189,18 +249,58 @@
       "avail": "95.8%",
       "util": "",
       "bd_hrs": "",
-      "note": "'s 308.23 BCM/h (same model, estimate). Oct 24 example:",
-      "comment": "Bucket Teeth Worn-out"
+      "note": "1 h (hydraulic oil leak).",
+      "comment": "Hydraulic Oil Leakage"
     },
     {
-      "unit": "EX-340",
-      "type": "Excavator",
+      "unit": "LV-066",
+      "type": "",
       "status": "warning",
       "avail": "95.8%",
       "util": "",
       "bd_hrs": "",
-      "note": "'s rate and",
+      "note": "",
+      "comment": "Tyre Flat"
+    },
+    {
+      "unit": "WT-300",
+      "type": "Water Truck",
+      "status": "warning",
+      "avail": "95.8%",
+      "util": "",
+      "bd_hrs": "",
+      "note": "",
+      "comment": "Front Head Light Not Working"
+    },
+    {
+      "unit": "EX-263",
+      "type": "Excavator",
+      "status": "warning",
+      "avail": "97.9%",
+      "util": "",
+      "bd_hrs": "",
+      "note": "0.5 h",
       "comment": ""
+    },
+    {
+      "unit": "DT-106",
+      "type": "Haul Truck",
+      "status": "warning",
+      "avail": "97.9%",
+      "util": "",
+      "bd_hrs": "",
+      "note": "",
+      "comment": "Engine Not Starting"
+    },
+    {
+      "unit": "DT-347",
+      "type": "Haul Truck",
+      "status": "warning",
+      "avail": "97.9%",
+      "util": "",
+      "bd_hrs": "",
+      "note": "",
+      "comment": "Mirror Bolt Loose RH"
     },
     {
       "unit": "FT-144",
@@ -213,13 +313,33 @@
       "comment": "C/O Air Compressor & Brake Air  lines"
     },
     {
+      "unit": "LV-049",
+      "type": "",
+      "status": "warning",
+      "avail": "100.0%",
+      "util": "",
+      "bd_hrs": "",
+      "note": "",
+      "comment": "Engine Failure"
+    },
+    {
+      "unit": "EX-262",
+      "type": "Excavator",
+      "status": "warning",
+      "avail": "",
+      "util": "",
+      "bd_hrs": "",
+      "note": "do not appear in the Final Report as down; the A&U and Client Meeting Report show them on standby (24 h and 12",
+      "comment": ""
+    },
+    {
       "unit": "EX-247",
       "type": "Excavator",
       "status": "warning",
       "avail": "",
       "util": "",
       "bd_hrs": "",
-      "note": "on Oct 27 at",
+      "note": "do not appear in the Final Report as down; the A&U and Client Meeting Report show them on standby (24 h and 12",
       "comment": ""
     },
     {
@@ -231,16 +351,6 @@
       "bd_hrs": "",
       "note": "",
       "comment": "Fuel Pump Faulty"
-    },
-    {
-      "unit": "EX-262",
-      "type": "Excavator",
-      "status": "scheduled",
-      "avail": "96%",
-      "util": "",
-      "bd_hrs": "",
-      "note": "168 h stick and bucket replacement on the W44 schedule from Oct 25: when? At 395 BCM/h it removes about 66,400",
-      "comment": "Replace Bucket Tips"
     },
     {
       "unit": "DT-79",
@@ -256,32 +366,26 @@
   "plan": null,
   "followUps": [
     {
-      "priority": "MONITOR",
-      "title": "October close: 607,476 BCM / 1,640,185 t vs 661,986 BCM: -54,510 BCM (-1...",
+      "priority": "HIGH",
+      "title": "Recovery: PO-009398 signed 28 Oct; trucks 2 Nov (2) and 7 Nov (4), 6020B...",
       "body": "",
       "action": ""
     },
     {
       "priority": "MONITOR",
-      "title": "Week 44 to Oct 27: 146,642 t vs 182,126 t plan: -35,484 t (-19.5%, about...",
+      "title": "Cause in report: no access to blasted material in Blocks 850-518/519, Stage 5",
+      "body": "EX-262 stood by 24 h, EX-247 12 h; EX-123 and EX-253 still down 24 h each.",
+      "action": ""
+    },
+    {
+      "priority": "MONITOR",
+      "title": "Lost hours (BCM/t): EX-340 1.5 h = 595 BCM / 1,607 t (396.88 BCM/h); EX-...",
       "body": "",
       "action": ""
     },
     {
       "priority": "MONITOR",
-      "title": "Crusher stops Oct 24-27: about 3,524 BCM / 9,514 t lost (estimate at eac...",
-      "body": "",
-      "action": ""
-    },
-    {
-      "priority": "MONITOR",
-      "title": "Lost equipment hours (Final Report): 276 h, about 92,431 BCM / 249,563 t...",
-      "body": "",
-      "action": ""
-    },
-    {
-      "priority": "MONITOR",
-      "title": "Survey: gap -14,027 BCM at 261027; signed EOM 592,714 BCM; Nov survey +5...",
+      "title": "Availability (Final Report): overall 94.88% daily / 90.61% MTD; excavato...",
       "body": "",
       "action": ""
     }
